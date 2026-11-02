@@ -24,6 +24,12 @@ python zm4_toolbox.py
 python zm4_toolbox.py --startup-check report.json
 ```
 
+九转 RL 策略自检（需已安装 torch）：
+
+```bash
+python zm4_toolbox.py --jiuzhuan-rl-check report.json
+```
+
 ## 目录结构
 
 - `zm4_toolbox.py`：主程序与页面注册
@@ -39,6 +45,22 @@ python zm4_toolbox.py --startup-check report.json
 
 - `requests`、`pycryptodome`、`Pillow`：基础依赖
 - `torch`：仅九转强化学习模型推理需要，不使用该功能可不安装
+
+### 打包版使用九转 RL 策略
+
+打包版不内置 `torch`（体积过大），但可以读取本机已安装的 torch：
+
+1. 安装与本工具箱内置解释器相同版本的 Python（当前为 3.15）；
+2. 执行 `python -m pip install torch --index-url https://download.pytorch.org/whl/cpu`；
+3. 重新打开工具箱，选择「九转金丹」中的 RL 策略即可，程序会自动从注册表定位该 Python 的 `site-packages`。
+
+可用以下命令验证：
+
+```bash
+造梦西游4活动工具箱.exe --jiuzhuan-rl-check report.json
+```
+
+报告 `ok=true` 即表示 torch 与模型加载正常。
 
 ## 安全说明
 

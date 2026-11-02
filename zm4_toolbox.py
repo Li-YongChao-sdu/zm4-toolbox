@@ -9686,6 +9686,24 @@ def main():
     app.root.after(30_000, app._schedule_check)
     if "--schedule-run" in sys.argv:
         app.root.after(800, app._start_scheduled_task_run)
+    if len(sys.argv) == 3 and sys.argv[1] == "--jiuzhuan-rl-check":
+        # 九转 RL 策略离线检查：加载 torch 与模型权重后退出，不连接游戏。
+        check_path = os.path.abspath(sys.argv[2])
+        def finish_rl_check():
+            report = {"ok": False, "frozen": bool(getattr(sys, "frozen", False))}
+            try:
+                from jiuzhuan_rl import warmup, _MODEL_DIR
+                info = warmup()
+                import torch
+                report.update({"ok": True, "torch": torch.__version__,
+                               "model_dir": str(_MODEL_DIR),
+                               "info": info})
+            except Exception as exc:
+                report["error"] = str(exc)
+            with open(check_path, "w", encoding="utf-8") as check_file:
+                json.dump(report, check_file, ensure_ascii=False, indent=2)
+            root.destroy()
+        root.after(500, finish_rl_check)
     if len(sys.argv) == 3 and sys.argv[1] == "--startup-check":
         # 离线启动检查：实际创建所有页面后自动退出，不登录游戏。
         check_path = os.path.abspath(sys.argv[2])

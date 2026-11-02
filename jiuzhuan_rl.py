@@ -4,6 +4,7 @@
 只替换选点逻辑为已训练的神经网络（torch 依赖，lazy 加载，不影响其它策略）。
 """
 from __future__ import annotations
+import os
 import sys
 from pathlib import Path
 
@@ -27,16 +28,54 @@ _MODEL_DIR = Path(__file__).resolve().parent / 'jiuzhuan_rl_model'
 _predictor = None
 
 
+def _add_frozen_python_paths():
+    """打包版从本机 Python 加载 torch：同版本的标准库与 site-packages 追加到 sys.path。"""
+    if not getattr(sys, 'frozen', False):
+        return []
+    added = []
+    version = '%d.%d' % sys.version_info[:2]
+    short = 'Python%d%d' % sys.version_info[:2]
+    candidates = []
+    roaming = os.environ.get('APPDATA')
+    local = os.environ.get('LOCALAPPDATA')
+    if roaming:
+        candidates.append(os.path.join(roaming, 'Python', short, 'site-packages'))
+    if local:
+        candidates.append(os.path.join(local, 'Programs', 'Python', short, 'Lib', 'site-packages'))
+        candidates.append(os.path.join(local, 'Programs', 'Python', short, 'Lib'))
+    try:
+        import winreg
+        for hive in (winreg.HKEY_CURRENT_USER, winreg.HKEY_LOCAL_MACHINE):
+            try:
+                key = winreg.OpenKey(hive, r'Software\Python\PythonCore' + '\\' + version + r'\InstallPath')
+                base = winreg.QueryValue(key, None)
+                winreg.CloseKey(key)
+                if base:
+                    candidates.append(os.path.join(base, 'Lib'))
+                    candidates.append(os.path.join(base, 'Lib', 'site-packages'))
+            except OSError:
+                pass
+    except Exception:
+        pass
+    for path in candidates:
+        if path and os.path.isdir(path) and path not in sys.path:
+            sys.path.append(path)
+            added.append(path)
+    return added
+
+
 def _load_predictor():
     global _predictor
     if _predictor is not None:
         return _predictor
+    _add_frozen_python_paths()
     try:
         import torch  # noqa: F401  仅在本策略被选中时才需要 torch
     except ImportError as e:
         raise RuntimeError(
-            '未安装 torch，无法使用 RL 策略。请用运行本工具箱的同一 Python 版本执行：'
-            'python -m pip install torch --index-url https://download.pytorch.org/whl/cpu'
+            '未安装 torch，无法使用 RL 策略。请安装与本工具箱打包版本相同的 Python %d.%d，'
+            '再执行：python -m pip install torch --index-url https://download.pytorch.org/whl/cpu'
+            % sys.version_info[:2]
         ) from e
     torch.set_num_threads(1)
     sys.path.insert(0, str(_MODEL_DIR))
