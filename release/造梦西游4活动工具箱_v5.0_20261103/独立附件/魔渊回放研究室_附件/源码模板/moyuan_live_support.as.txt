@@ -1,0 +1,276 @@
+      // Diagnostic input automation. Does not change seed, attributes or game result.
+      private static var macroSamples:Array = [];
+      private static var macroSelected:int = 0;
+      private static var macroArmed:Boolean = false;
+      private static var macroAutoRetry:Boolean = true;
+      private static var macroStage:Stage;
+      private static var macroLabel:TextField;
+      private static var macroControls:Sprite;
+      private static var macroHotkeys:Object = {};
+      private static var macroActive:SimulateServerFrame;
+      private static var macroLoaders:Array = [];
+      private var macroRunning:Boolean = false;
+      private var macroSchedule:Object;
+      private var macroHeld:Object = {};
+      private var macroLastFrame:int = -1;
+      private var macroEvents:Array = [];
+      private var macroUser:UserVO;
+      private var macroSource:Object;
+
+      public static function installControl(s:Stage) : void
+      {
+         if(s == null || macroStage != null) return;
+         macroStage = s;
+         s.addEventListener("keyDown",onMacroControl,true,10000);
+         s.addEventListener("keyUp",onMacroKeyUp,true,10000);
+         s.addEventListener("keyDown",onMacroControl,false,10000);
+         s.addEventListener("keyUp",onMacroKeyUp,false,10000);
+         s.addEventListener("deactivate",onMacroFocusLost);
+         macroLabel = new TextField();
+         macroLabel.width = 480;
+         macroLabel.height = 46;
+         macroLabel.x = Math.max(8,s.stageWidth-488);
+         macroLabel.y = 320;
+         macroLabel.background = true;
+         macroLabel.backgroundColor = 0x18212C;
+         macroLabel.textColor = 0xFFFFFF;
+         macroLabel.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF);
+         macroLabel.mouseEnabled = false;
+         s.addChild(macroLabel);
+         macroControls = new Sprite();
+         macroControls.x = Math.max(8,s.stageWidth-488);
+         macroControls.y = 368;
+         s.addChild(macroControls);
+         addMacroButton("切换样本",117,0);
+         addMacroButton("持续预备/取消",119,120);
+         addMacroButton("急停",120,240);
+         addMacroButton("自动重试开关",118,360);
+         showMacro("未预备；可点下方按钮，或F6切换／F8预备／F9急停");
+         emitMacro({event:"controls_ready",version:2});
+      }
+
+      private static function addMacroButton(text:String,code:int,xpos:int) : void
+      {
+         var button:Sprite = new Sprite();
+         button.name = String(code);
+         button.x = xpos;
+         button.buttonMode = true;
+         button.graphics.beginFill(code == 120 ? 0xA83232 : 0x275D88);
+         button.graphics.drawRoundRect(0,0,118,28,6,6);
+         button.graphics.endFill();
+         var label:TextField = new TextField();
+         label.defaultTextFormat = new TextFormat("Microsoft YaHei",13,0xFFFFFF,true);
+         label.text = text;
+         label.x = 5;
+         label.y = 3;
+         label.width = 110;
+         label.height = 24;
+         label.mouseEnabled = false;
+         label.selectable = false;
+         button.addChild(label);
+         button.addEventListener("click",onMacroClick);
+         macroControls.addChild(button);
+      }
+
+      private static function onMacroClick(e:MouseEvent) : void
+      {
+         e.stopImmediatePropagation();
+         handleMacroCommand(int(e.currentTarget.name));
+      }
+
+      private static function onMacroFocusLost(e:Event) : void
+      {
+         macroHotkeys = {};
+      }
+
+      private static function showMacro(text:String) : void
+      {
+         if(macroLabel != null && macroStage != null)
+         {
+            macroLabel.text = "实战 R6 / " + (macroSamples.length > 0 ? macroSamples[macroSelected].name : "未导入实战操作") + " / 持续预备:" + (macroArmed ? "开" : "关") + " / 自动重试:" + (macroAutoRetry ? "开" : "关") + "\n" + text;
+            if(macroLabel.parent == macroStage)
+               macroStage.setChildIndex(macroLabel,macroStage.numChildren - 1);
+            if(macroControls != null && macroControls.parent == macroStage)
+               macroStage.setChildIndex(macroControls,macroStage.numChildren - 1);
+         }
+         trace("[FRAME_MACRO] " + text);
+      }
+
+      private static function onMacroKeyUp(e:KeyboardEvent) : void
+      {
+         if(e.keyCode == 117 || e.keyCode == 118 || e.keyCode == 119 || e.keyCode == 120)
+         {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            delete macroHotkeys[String(e.keyCode)];
+         }
+      }
+
+      private static function onMacroControl(e:KeyboardEvent) : void
+      {
+         if(e.keyCode != 117 && e.keyCode != 118 && e.keyCode != 119 && e.keyCode != 120) return;
+         e.preventDefault();
+         e.stopImmediatePropagation();
+         if(macroHotkeys[String(e.keyCode)]) return;
+         macroHotkeys[String(e.keyCode)] = true;
+         handleMacroCommand(int(e.keyCode));
+      }
+
+      private static function handleMacroCommand(code:int) : void
+      {
+         if(code == 118) { macroAutoRetry = !macroAutoRetry; showMacro("自动重试：" + (macroAutoRetry ? "开" : "关")); return; }
+         if(code == 120)
+         {
+            macroArmed = false; macroAutoRetry = false;
+            if(macroActive != null) macroActive.stopMacro("用户急停",true);
+            showMacro("已急停，手动操作可用");
+         }
+         else if(code == 117)
+         {
+            if(macroActive != null) return;
+            if(macroSamples.length == 0) return;
+            macroSelected = (macroSelected + 1) % macroSamples.length;
+            macroArmed = false;
+            showMacro("已选择；F8预备下一次魔渊第九层");
+         }
+         else
+         {
+            if(macroActive != null)
+            {
+               macroArmed = false;
+               macroActive.stopMacro("F8取消",true);
+               return;
+            }
+            if(macroSamples.length == 0) return;
+            macroArmed = !macroArmed;
+            showMacro(macroArmed ? "已预备：进入单人魔渊第九层时执行；重新挑战继续；F9急停" : "已取消预备");
+            emitMacro({event:"armed",armed:macroArmed,sample:(macroSamples.length > 0 ? macroSamples[macroSelected].name : "未导入实战操作")});
+         }
+      }
+
+      public static function liveDialogSeen(info:Object) : void { emitMacro(info); }
+      public static function get liveAutoRetryAllowed() : Boolean { return macroAutoRetry && macroArmed && macroSamples.length > 0; }
+      public static function liveResultArrived(win:Boolean) : void
+      {
+         if(win) { macroArmed = false; macroAutoRetry = false; if(macroActive != null) macroActive.stopMacro("通关成功",true); showMacro("通关成功，已停止持续预备与自动重试，请核对成绩"); }
+      }
+      public static function liveRetryClicked() : void { showMacro("失败后自动重新挑战；F9急停"); }
+
+      private static function emitMacro(obj:Object) : void
+      {
+         trace("[FRAME_MACRO] " + JSON.stringify(obj));
+      }
+
+      private static function onMacroTelemetry(e:Event) : void
+      {
+         var loader:URLLoader = e.currentTarget as URLLoader;
+         var index:int = macroLoaders.indexOf(loader);
+         if(index >= 0) macroLoaders.splice(index,1);
+         loader.removeEventListener("complete",onMacroTelemetry);
+         loader.removeEventListener("ioError",onMacroTelemetry);
+         loader.removeEventListener("securityError",onMacroTelemetry);
+      }
+
+      private function beginMacro() : void
+      {
+         var manager:BattleModelManager = BattleModelManager.getIns();
+         if(!macroArmed || manager.levelInfo == null || manager.levelInfo.id != 300109) return;
+         if(manager.levelParam == null || manager.levelParam.isVideo || manager.levelParam.isMultiplayer ||
+            manager.levelParam.logic == null || manager.levelParam.logic.users.length != 1)
+         {
+            showMacro("未启动：只支持单人实战第九层");
+            return;
+         }
+         macroUser = manager.levelParam.logic.users[0].getCurrentUVO();
+         if(macroUser == null || macroUser.charID != int(macroSamples[macroSelected].charID))
+         {
+            macroArmed = false;
+            showMacro("未启动：角色或心法与导入操作不一致");
+            emitMacro({event:"rejected",reason:"requires_wukong_second"});
+            return;
+         }
+         macroSource = macroSamples[macroSelected];
+         macroSchedule = macroSource.schedule;
+         macroRunning = true;
+         macroActive = this;
+         emitMacro({event:"started",sample:macroSource.name,sourceReport:macroSource.reportId,
+                    sourceSeed:macroSource.seed,sourceEndFrame:macroSource.endFrame,
+                    sourceKeyboard:macroSource.keyboard,sourceEvents:macroSource.events,
+                    actualCharID:macroUser.charID,actualLevel:macroUser.level,
+                    sourceHeart:2,currentFrame:this.f});
+         showMacro("执行中：按逻辑帧运行；F9急停。使用本局角色与随机种子");
+      }
+
+      private function applyMacroFrame() : void
+      {
+         if(!macroRunning || macroLastFrame == this.f) return;
+         macroLastFrame = this.f;
+         var events:Array = macroSchedule[String(this.f)] as Array;
+         if(events != null)
+         {
+            for each(var event:Object in events)
+            {
+               var sourceCode:int = int(event.key);
+               var isUp:Boolean = sourceCode > 300;
+               var base:int = isUp ? sourceCode - 300 : sourceCode;
+               var action:int = int(macroSource.keyboard[String(base)]);
+               var mapped:int = base;
+               if(action > 0)
+               {
+                  mapped = macroUser.keyBoard.getKeyCodeByAction(action);
+                  if(mapped <= 0)
+                  {
+                     stopMacro("技能键位无法匹配，已停止",true);
+                     return;
+                  }
+               }
+               var code:int = mapped + (isUp ? 300 : 0);
+               recordInput({key:code,objs:[],uid:macroUser.userId,playerIndex:1});
+               if(isUp) delete macroHeld[String(mapped)];
+               else macroHeld[String(mapped)] = true;
+               macroEvents.push({frame:this.f,sourceKey:sourceCode,appliedKey:code,action:action});
+            }
+         }
+         if(this.f > int(macroSource.endFrame))
+         {
+            stopMacro("源操作序列结束；已松键并交还手动控制，战斗正常继续",true);
+            return;
+         }
+         if(this.f % 30 == 0)
+         {
+            if(macroEvents.length > 0)
+            {
+               emitMacro({event:"inputs",sample:macroSource.name,events:macroEvents});
+               macroEvents = [];
+            }
+            showMacro("执行帧 " + this.f + "/" + macroSource.endFrame + "；F9急停");
+         }
+      }
+
+      private function stopMacro(reason:String,releaseKeys:Boolean) : void
+      {
+         if(!macroRunning) return;
+         if(releaseKeys && _frameObj != null)
+         {
+            for(var key:String in macroHeld)
+               recordInput({key:int(key)+300,objs:[],uid:macroUser.userId,playerIndex:1});
+         }
+         macroHeld = {};
+         emitMacro({event:"stopped",sample:macroSource.name,frame:this.f,reason:reason,events:macroEvents});
+         macroEvents = [];
+         macroRunning = false;
+         macroActive = null;
+         showMacro(reason);
+      }
+
+      private static function researchLoadLive(input:Object) : void
+      {
+         if(!models.GameData.playerIsInTown || macroActive != null) throw new Error("请回主城并停止实战操作后导入");
+         if(input.clientVersion != 5870 || input.copyId != 300109 || input.sample == null) throw new Error("实战操作版本或副本不匹配");
+         var sample:Object = input.sample;
+         if(sample.schedule == null || sample.keyboard == null || sample.endFrame < 0 || sample.endFrame > 18000) throw new Error("实战操作不完整");
+         if(sample.charID == null) throw new Error("缺少角色心法");
+         macroArmed = false; macroSamples = [sample]; macroSelected = 0;
+         installControl(researchStage);
+         showMacro("已导入。点击实战预备，再手动进入第九层；实战使用服务器本局种子，不修改人物属性");
+      }

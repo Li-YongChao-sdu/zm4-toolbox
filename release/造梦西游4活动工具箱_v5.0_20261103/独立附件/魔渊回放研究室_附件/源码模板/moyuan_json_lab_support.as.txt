@@ -1,0 +1,163 @@
+      private static var researchStage:Stage;
+      private static var researchFile:FileReference;
+      private static var researchOriginal:Object;
+      private static var researchFrames:Array = [];
+      private static var researchTruncated:Boolean = false;
+      private static var researchControls:Sprite;
+
+      public static function installResearchRoom(s:Stage) : void
+      {
+         if(s == null || researchStage != null) return;
+         researchStage = s;
+         researchControls = new Sprite();
+         researchControls.x = Math.max(8,s.stageWidth - 488);
+         researchControls.y = 52;
+         s.addChild(researchControls);
+         researchButton("导入回放/实战JSON",0,"import");
+         researchButton("导出本场结果",160,"save");
+         researchButton("研究室：收起",320,"hide");
+         researchButton("批量读取榜单",0,"batch",34);
+         researchButton("回放连测开关",160,"queue_auto",34);
+         researchButton("下一份回放",320,"queue_next",34);
+         researchButton("导出批量结果",0,"queue_save",68);
+         researchButton("读取自身快照",160,"snapshot_read",68);
+         researchButton("导出自身快照",320,"snapshot_save",68);
+         researchButton("停止录制并松键",0,"manual_stop",102);
+         researchButton("保留并导出本次",160,"manual_keep",102);
+         researchButton("丢弃本次录像",320,"manual_discard",102);
+         researchManualStatus = new TextField();
+         researchManualStatus.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF);
+         researchManualStatus.background = true; researchManualStatus.backgroundColor = 0x18212C;
+         researchManualStatus.width = 476; researchManualStatus.height = 64; researchManualStatus.y = 136;
+         researchManualStatus.wordWrap = true; researchControls.addChild(researchManualStatus);
+         researchManualMessage("手动录制：进入魔渊第九层自动临时记录，默认不保留。");
+         researchButton("实战：持续预备/取消",0,"live_arm",204);
+         researchButton("实战急停",160,"live_stop",204);
+         researchButton("自动重新挑战开关",320,"live_retry",204);
+         researchInstallProgress(s);
+         s.addEventListener(KeyboardEvent.KEY_DOWN,onResearchQueueKey);
+         showObserver("JSON研究室：导入本地录像，由原生引擎运行；不提交成绩");
+      }
+
+      private static function researchButton(labelText:String,xpos:int,kind:String,ypos:int = 0,target:Sprite = null) : void
+      {
+         var button:Sprite = new Sprite();
+         button.x = xpos; button.y = ypos; button.name = kind; button.buttonMode = true;
+         button.graphics.beginFill(0x275D88);
+         button.graphics.drawRoundRect(0,0,152,28,6,6);
+         button.graphics.endFill();
+         var label:TextField = new TextField();
+         label.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF,true);
+         label.text = labelText; label.width = 148; label.height = 24;
+         label.x = 4; label.y = 3; label.mouseEnabled = false;
+         button.addChild(label); button.addEventListener(MouseEvent.CLICK,onResearchClick);
+         (target != null ? target : researchControls).addChild(button);
+      }
+
+      private static function onResearchClick(e:MouseEvent) : void
+      {
+         e.stopImmediatePropagation();
+         var kind:String = e.currentTarget.name;
+         if(kind == "live_arm") { if(macroSamples.length == 0) { showObserver("请先导入网页导出的实战操作JSON"); return; } handleMacroCommand(119); return; }
+         if(kind == "live_retry") { handleMacroCommand(118); return; }
+         if(kind == "live_stop") { handleMacroCommand(120); return; }
+         if(researchManualCommand(kind)) return;
+         if(researchBatchCommand(kind)) return;
+         if(kind == "hide")
+         {
+            var visible:Boolean = !researchControls.getChildAt(0).visible;
+            for(var n:int = 0; n < researchControls.numChildren; n++) if(n != 2) researchControls.getChildAt(n).visible = visible;
+            if(researchBatchPanel != null) researchBatchPanel.visible = visible && researchBatchPanel.visible;
+            return;
+         }
+         if(kind == "save")
+         {
+            if(researchOriginal == null || replayAssessment == null || !replayFinished || replayReport == null ||
+               replayReport.lab == null || replayReport.lab.mode != "research_json_v1")
+            {
+               showObserver("尚无已完成的本地回放结果，不能把未完成记作失败");
+               return;
+            }
+            var result:Object = {format:"zm4-research-result-v1",clientVersion:5870,
+               input:researchOriginal,assessment:replayAssessment,states:researchFrames,
+               truncated:researchTruncated,scoreSubmitted:false};
+            researchFile = new FileReference();
+            researchFile.save(JSON.stringify(result),"zm4_research_result.json");
+            return;
+         }
+         var manager:BattleModelManager = BattleModelManager.getIns();
+         if(researchQueueLoading || (manager.levelParam != null && manager.levelParam.isVideo && researchOriginal != null && !replayFinished))
+         { showObserver("当前研究回放正在加载或运行，请完成后再导入"); return; }
+         if(manager.levelParam != null && manager.levelParam.logic != null && !manager.levelParam.isVideo && macroResearchBattleActive(manager))
+         {
+            showObserver("请先退出当前实战、回到主城后再导入研究JSON");
+            return;
+         }
+         researchFile = new FileReference();
+         researchFile.addEventListener(Event.SELECT,onResearchSelected);
+         researchFile.addEventListener(Event.COMPLETE,onResearchLoaded);
+         researchFile.browse([new FileFilter("JSON回放","*.json")]);
+      }
+
+      private static function macroResearchBattleActive(manager:BattleModelManager) : Boolean
+      {
+         return !models.GameData.playerIsInTown && manager.levelInfo != null && manager.levelInfo.id == 300109;
+      }
+
+      private static function onResearchSelected(e:Event) : void
+      {
+         researchFile.load();
+      }
+
+      private static function onResearchLoaded(e:Event) : void
+      {
+         try
+         {
+            var text:String = researchFile.data.toString();
+            if(text.charCodeAt(0) == 65279) text = text.substr(1);
+            var input:Object = JSON.parse(text);
+            if(input.format == "zm4-live-input-v1") { researchLoadLive(input); return; }
+            researchImportQueue(input);
+         }
+         catch(error:Error)
+         {
+            showObserver("研究室导入失败：" + String(error));
+         }
+      }
+
+      private static function researchRunResponse(input:Object) : void
+      {
+         try
+         {
+            var response:Object = JSON.parse(JSON.stringify(input.response != null ? input.response : input));
+            if(response.report == null && response.sceneInfo != null) response = {code:200,report:response};
+            var report:Object = response.report;
+            if(report == null || int(report.copyId) != 300109 || report.sceneInfo == null ||
+               report.sceneInfo.playerInfos == null || report.sceneInfo.playerInfos.length != 1 ||
+               report.sceneInfo.playerInfos[0].p1 == null || report.sceneInfo.playerInfos[0].p1.equipments == null ||
+               report.frames == null || report.frames.length == 0 || report.playerResult == null || report.playerResult.length == 0)
+               throw new Error("需要本期魔渊第九层、单人完整回放");
+            if(report.cg == null || String(report.cg).length == 0) throw new Error("缺少原始配置版本路径cg");
+            if(report.sceneInfo.randomSeed == null || isNaN(Number(report.sceneInfo.randomSeed)) ||
+               Number(report.sceneInfo.randomSeed) != int(report.sceneInfo.randomSeed)) throw new Error("缺少有效32位整数种子");
+            researchOriginal = JSON.parse(JSON.stringify(response));
+            researchFrames = []; researchTruncated = false;
+            report.lab = {mode:"research_json_v1",sourceReportId:report.reportId,
+               sourceResult:JSON.parse(JSON.stringify(report.playerResult)),runtimeValidated:false};
+            report.sceneInfo.score = 0;
+            report.playerResult[0].result = 0;
+            report.playerResult[0].bossHp = 1;
+            report.playerResult[0].life = 0;
+            report.playerResult[0].param = "local_unverified";
+            researchQueueLoading = true;
+            researchProgressPrepare(input,report);
+            ApplicationFacade.getInstance().sendNotification("CMD_PLAY_VIDEO",{localResponse:response});
+         }
+         catch(error:Error)
+         {
+            researchQueueAuto = false;
+            researchQueueLoading = false;
+            researchProgressUpdate(0,"加载失败");
+            showObserver("研究室导入失败：" + String(error));
+         }
+      }

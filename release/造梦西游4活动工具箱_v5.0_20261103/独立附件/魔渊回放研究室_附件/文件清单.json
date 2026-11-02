@@ -1,0 +1,115 @@
+{
+  "release": "20261024_trial_privacy_checked",
+  "files": [
+    {
+      "path": "original/v5870.swf",
+      "bytes": 2733454,
+      "sha256": "54d267971105016bea7708560f1f350f05ee15c1fbb246d54041ee1f51efae49"
+    },
+    {
+      "path": "patched_as/controllers/battle/qc2/gameovers/GameOverZhuXie.as",
+      "bytes": 5193,
+      "sha256": "abf234e85b1ca62030a9b02766039b45f637adcdf310ada08157124e0040eca0"
+    },
+    {
+      "path": "patched_as/controllers/battle/qc2/maplogic/MapZhuXie.as",
+      "bytes": 16127,
+      "sha256": "3b2b2cf01896006a0f1a13dcd119d0f6faee7e13f383592986f7b5f15eb1258e"
+    },
+    {
+      "path": "patched_as/controllers/battle/qc2/PlayPvpVideoCmd.as",
+      "bytes": 5872,
+      "sha256": "276da73a874ca5357d5ab9c9888dc1e2b0fc6b0c6aafea19a125812ff2fd6df0"
+    },
+    {
+      "path": "patched_as/controllers/battle/qc2/PlayVideoServerFrame.as",
+      "bytes": 4132,
+      "sha256": "b0d964bd065580b76d3449fce42a789da2783a934503318c4246a34c4fd6337c"
+    },
+    {
+      "path": "patched_as/controllers/battle/qc2/SimulateServerFrame.as",
+      "bytes": 95301,
+      "sha256": "d7a3056fb58454617a4dcb6d8d344d9183080db70f808da85dca0abdcfd49851"
+    },
+    {
+      "path": "patched_as/org/idream/pomelo/Pomelo.as",
+      "bytes": 11324,
+      "sha256": "388ab4940f0093fe1c2c2e9aee6987a2b9245de13001a62e6663ea62fb6d28f5"
+    },
+    {
+      "path": "v5870.moyuan_json_lab.swf",
+      "bytes": 2753272,
+      "sha256": "b1c24adff98c69db2d86204a5503c36f05622010c2f0fe999acb811a5fa36c67"
+    },
+    {
+      "path": "启动.cmd",
+      "bytes": 50,
+      "sha256": "efc007606b99799656d614266023d1aabc366bcc2ee3925d1e8663ad3745f4ad"
+    },
+    {
+      "path": "开始前必读.md",
+      "bytes": 4589,
+      "sha256": "f447ad396185fad30702edac9692e83c824ccdd4b30dcff5ffb52d28a38cb0c7"
+    },
+    {
+      "path": "源码模板/moyuan_batch_lab_support.as.txt",
+      "bytes": 22445,
+      "sha256": "1682475a5c858f65976a504b75023183c9597384e97aec0a7d383f68e6b3ed6c"
+    },
+    {
+      "path": "源码模板/moyuan_gameover_retry.as.txt",
+      "bytes": 5193,
+      "sha256": "abf234e85b1ca62030a9b02766039b45f637adcdf310ada08157124e0040eca0"
+    },
+    {
+      "path": "源码模板/moyuan_json_lab_support.as.txt",
+      "bytes": 9207,
+      "sha256": "8d8f0d92e59e5083bda2a26c60c2644eb07aaf30b23f32806279cf443699a978"
+    },
+    {
+      "path": "源码模板/moyuan_live_support.as.txt",
+      "bytes": 12718,
+      "sha256": "629303fb81670e94a5274077228090aa9624597ccc60116a4465dd752285e3de"
+    },
+    {
+      "path": "源码模板/moyuan_manual_record_support.as.txt",
+      "bytes": 7662,
+      "sha256": "bf265d2884ce1297d163bf40f64411dbb7353314e6c758fcbbe70d2e793901a5"
+    },
+    {
+      "path": "源码模板/moyuan_progress_support.as.txt",
+      "bytes": 4417,
+      "sha256": "751a3ce8ed177707c754694b6180872faa24eddd5e96ed14c45a842666cdd3f9"
+    },
+    {
+      "path": "研究室.html",
+      "bytes": 11034,
+      "sha256": "e3fccea710e518ce8e4bf6b48172b8f1d1388465bacb2793d2a9a35a20c2e164"
+    },
+    {
+      "path": "研究室.js",
+      "bytes": 27656,
+      "sha256": "a5463b5738089e617687de28648a624209f591b171dff143a018647115982d31"
+    },
+    {
+      "path": "示例/悟空第二心法_实战操作示例.json",
+      "bytes": 5731,
+      "sha256": "e18023c29e610fba1c2e752bca1b457684222ccfc0946453d5ef6ce6cf432081"
+    },
+    {
+      "path": "示例/玉兔_50份公开榜单录像.json",
+      "bytes": 12200773,
+      "sha256": "7fdbcad61fe463255602747db8e4a8cef5b2786bd438dd8f5684f9659bb2797c"
+    },
+    {
+      "path": "重新编译.cmd",
+      "bytes": 816,
+      "sha256": "4220d8eb108e8deeee8395f97ab3b51ec36e5773068e40bb53536e5f8e1b7839"
+    },
+    {
+      "path": "隐私检查说明.txt",
+      "bytes": 706,
+      "sha256": "de8e64459765365cb79d965cc9573938e544400c347a1711e7dc9e974d113eb2"
+    }
+  ]
+}

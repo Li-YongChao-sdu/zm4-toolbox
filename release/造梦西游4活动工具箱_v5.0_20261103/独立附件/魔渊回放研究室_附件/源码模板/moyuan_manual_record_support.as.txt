@@ -1,0 +1,136 @@
+      private static var researchManualContext:Object;
+      private static var researchManualServer:SimulateServerFrame;
+      private static var researchManualPending:Object;
+      private static var researchManualRecording:Boolean = false;
+      private static var researchManualStopped:Boolean = false;
+      private static var researchManualReleasing:Boolean = false;
+      private static var researchManualHeld:Object = {};
+      private static var researchManualStatus:TextField;
+
+      private static function researchManualMessage(text:String) : void
+      {
+         if(researchManualStatus != null) researchManualStatus.text = text;
+      }
+
+      public static function researchManualResponse(route:String, reply:Object) : void
+      {
+         if(route == "connector.entryHandler.entry")
+         {
+            researchManualContext = null; researchManualPending = null;
+            researchManualRecording = false; researchManualStopped = false; researchManualServer = null;
+            return;
+         }
+         if(route != "scene.onlineCopyHandler.openZhuXieChallenge") return;
+         researchManualContext = null; researchManualPending = null;
+         researchManualRecording = false; researchManualStopped = false; researchManualHeld = {};
+         if(reply == null || reply.code != 200 || reply.isOnline || Number(reply.dungeonId) != 300109 ||
+            reply.userdata == null || reply.userdata.p1 == null || reply.randomSeed == null) return;
+         try
+         {
+            researchManualContext = {userdata:JSON.parse(JSON.stringify(reply.userdata)),randomSeed:reply.randomSeed};
+         }
+         catch(error:Error) { researchManualContext = null; }
+      }
+
+      private static function researchManualBegin(server:SimulateServerFrame) : void
+      {
+         researchManualServer = null; researchManualPending = null;
+         researchManualRecording = false; researchManualStopped = false; researchManualHeld = {};
+         var manager:BattleModelManager = BattleModelManager.getIns();
+         if(researchManualContext == null || manager.levelInfo == null || manager.levelInfo.id != 300109 ||
+            manager.levelParam == null || manager.levelParam.isVideo || manager.levelParam.isMultiplayer) return;
+         researchManualServer = server; researchManualRecording = true;
+         researchManualMessage("正在临时录制本局手动操作（官方逻辑帧）。点停止后选择保留；默认丢弃。\n停止只松键和停止录制，不暂停Boss或取消正常结算。");
+      }
+
+      private static function researchManualBlocked(server:SimulateServerFrame, key:Object) : Boolean
+      {
+         if(server != researchManualServer || researchManualReleasing) return false;
+         if(researchManualStopped && Number(key.key) < 300) return true;
+         var code:int = int(key.key);
+         if(code < 300) researchManualHeld[String(code)] = JSON.parse(JSON.stringify(key));
+         else delete researchManualHeld[String(code - 300)];
+         return false;
+      }
+
+      private static function researchManualStop(releaseKeys:Boolean) : void
+      {
+         if(!researchManualRecording || researchManualServer == null) return;
+         var server:SimulateServerFrame = researchManualServer;
+         if(releaseKeys)
+         {
+            researchManualReleasing = true;
+            try
+            {
+               for each(var held:Object in researchManualHeld)
+               {
+                  var up:Object = JSON.parse(JSON.stringify(held)); up.key = int(up.key) + 300; up.objs = [];
+                  server.addSendKey(up);
+               }
+            }
+            finally { researchManualReleasing = false; }
+         }
+         researchManualHeld = {}; researchManualRecording = false; researchManualStopped = releaseKeys;
+         try
+         {
+            var frames:Array = JSON.parse(JSON.stringify(server.frames)) as Array;
+            frames.push({currFrame:server.f + 1});
+            var wrapper:Object = JSON.parse(JSON.stringify(researchManualContext.userdata));
+            var report:Object = {reportId:"local_manual_" + new Date().time,copyId:300109,
+               cg:models.managers.GlobalData.CurrCg,sceneInfo:{randomSeed:researchManualContext.randomSeed,
+                  playerInfos:[wrapper],score:0},frames:frames,
+               playerResult:[{playerId:wrapper.playerId,result:0,bossHp:1,life:0,param:"local_manual_unverified"}],
+               lab:{mode:"manual_recording",partial:releaseKeys,runtimeValidated:false,serverBestReplaced:false}};
+            researchManualPending = {format:"zm4-research-input-v1",clientVersion:5870,response:{code:200,report:report},
+               recording:{source:"native_SimulateServerFrame",partial:releaseKeys,endFrame:server.f,retained:false}};
+            researchManualMessage("已停止录制：" + frames.length + "条记录，结束帧" + server.f +
+               "。默认不保留。\n点保留并导出，或丢弃。开始下一局/退出存档会丢弃未保留内容。");
+         }
+         catch(error:Error)
+         {
+            researchManualPending = null; researchManualMessage("生成临时录像失败：" + String(error));
+         }
+      }
+
+      private static function researchManualLeave(server:SimulateServerFrame) : void
+      {
+         if(server != researchManualServer) return;
+         if(researchManualRecording) researchManualStop(false);
+         researchManualServer = null; researchManualStopped = false;
+      }
+
+      private static function researchManualCommand(kind:String) : Boolean
+      {
+         if(kind == "manual_stop")
+         {
+            if(researchManualRecording) researchManualStop(true);
+            else researchManualMessage(researchManualPending != null ? "本局已停止，可保留导出或丢弃；默认不保留。" : "没有可停止的手动录制。仅支持正常进入魔渊第九层的单人实战。");
+            return true;
+         }
+         if(kind == "manual_discard")
+         {
+            if(researchManualRecording) researchManualStop(true);
+            researchManualPending = null; researchManualStopped = false;
+            researchManualMessage("已丢弃本次本地录像，可继续手动操作。不会删除或更改服务器录像。");
+            return true;
+         }
+         if(kind == "manual_keep")
+         {
+            if(researchManualRecording) { researchManualMessage("请先停止录制，再决定保留；当前仍在临时记录。"); return true; }
+            if(researchManualPending == null) { researchManualMessage("没有待保留的本次录像；请先进入第九层手动挑战。"); return true; }
+            researchFile = new FileReference();
+            researchFile.addEventListener(Event.COMPLETE,function(e:Event):void
+            {
+               researchManualMessage("本次本地录像已导出。可在网页导入录像JSON中编辑和回放；未替换服务器历史最佳。");
+            });
+            researchFile.addEventListener(Event.CANCEL,function(e:Event):void
+            {
+               researchManualMessage("已取消保存，录像仍为临时内容，默认不保留；可重新导出或丢弃。");
+            });
+            var saved:Object = JSON.parse(JSON.stringify(researchManualPending)); saved.recording.retained = true;
+            researchFile.save(JSON.stringify(saved),"zm4_manual_recording.json");
+            researchManualStopped = false;
+            return true;
+         }
+         return false;
+      }

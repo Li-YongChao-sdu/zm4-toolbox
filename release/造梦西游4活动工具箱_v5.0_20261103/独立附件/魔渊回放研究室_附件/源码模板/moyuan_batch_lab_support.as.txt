@@ -1,0 +1,372 @@
+      private static var researchBatchPanel:Sprite;
+      private static var researchBatchMode:String = "count";
+      private static var researchBatchFields:Object = {};
+      private static var researchBatchBusy:Boolean = false;
+      private static var researchBatchGeneration:int = 0;
+      private static var researchBatchTimer:uint = 0;
+      private static var researchBatchConfig:Object;
+      private static var researchBatchPage:int = 1;
+      private static var researchBatchSeen:Object = {};
+      private static var researchBatchSeenCount:int = 0;
+      private static var researchBatchPending:Array = [];
+      private static var researchBatchReports:Array = [];
+      private static var researchBatchFailures:Array = [];
+      private static var researchBatchExhausted:Boolean = false;
+      private static var researchBatchReason:String = "not_started";
+      private static var researchBatchMax:int = 0;
+      private static var researchQueue:Array = [];
+      private static var researchQueueIndex:int = -1;
+      private static var researchQueueAuto:Boolean = false;
+      private static var researchQueueResults:Array = [];
+      private static var researchQueueRecorded:int = -1;
+      private static var researchQueueLoading:Boolean = false;
+      private static var researchOwnSnapshot:Object;
+      private static var researchSnapshotBusy:Boolean = false;
+
+      private static function onResearchQueueKey(e:KeyboardEvent) : void
+      {
+         if(e.keyCode == 120)
+         {
+            researchQueueAuto = false;
+            showObserver("已停止后续本地连测，当前回放可继续");
+         }
+      }
+
+      private static function researchBatchCommand(kind:String) : Boolean
+      {
+         if(kind == "snapshot_read") { researchReadOwnSnapshot(); return true; }
+         if(kind == "snapshot_save")
+         {
+            if(researchOwnSnapshot == null) { showObserver("未捕获登录快照，请重新进入存档。换装或切心法后也需重新进入"); return true; }
+            if(researchOwnSnapshot.panelAtRead == null) { showObserver("请先点击读取自身快照并核对原生面板，再导出"); return true; }
+            if(researchOwnSnapshot.contextStatus == "sword_context_missing") { showObserver("剑意上下文未读取，暂不导出缺失配置；请打开自身背包后重新读取"); return true; }
+            researchFile = new FileReference();
+            researchFile.save(JSON.stringify(researchOwnSnapshot),"zm4_own_snapshot.json");
+            return true;
+         }
+         if(kind == "batch")
+         {
+            if(researchBatchPanel == null) researchBuildBatchPanel();
+            else researchBatchPanel.visible = !researchBatchPanel.visible;
+            return true;
+         }
+         if(kind == "batch_mode")
+         {
+            researchBatchMode = researchBatchMode == "count" ? "range" : "count";
+            showObserver(researchBatchMode == "count" ? "读取模式：前N份（20—100份，不是前N名）" : "读取模式：名次区间，包含边界同名次所有记录");
+            return true;
+         }
+         if(kind == "batch_start") { researchStartBatch(); return true; }
+         if(kind == "batch_stop")
+         {
+            researchBatchGeneration++; researchBatchBusy = false;
+            if(researchBatchTimer != 0) clearTimeout(researchBatchTimer);
+            researchBatchReason = "user_stopped";
+            showObserver("已停止后续读取，保留" + researchBatchReports.length + "份，可导出部分结果");
+            return true;
+         }
+         if(kind == "batch_save")
+         {
+            if(researchBatchConfig == null) { showObserver("请先读取榜单"); return true; }
+            researchFile = new FileReference();
+            researchFile.save(JSON.stringify({format:"zm4-replay-bundle-v1",clientVersion:5870,
+               request:researchBatchConfig,capturedAtMs:new Date().time,complete:researchBatchReason == "target_reached" || researchBatchReason == "range_or_board_exhausted",
+               stopReason:researchBatchReason,reports:researchBatchReports,failures:researchBatchFailures,
+               maxCount:researchBatchMax}),"zm4_replay_bundle.json");
+            return true;
+         }
+         if(kind == "queue_auto")
+         {
+            researchQueueAuto = !researchQueueAuto;
+            showObserver(researchQueueAuto ? "本地回放连测已开启；F9停止，不执行真实挑战" : "本地回放连测已关闭");
+            if(researchQueueAuto && replayFinished && researchQueueIndex + 1 < researchQueue.length) researchNextQueue();
+            return true;
+         }
+         if(kind == "queue_next") { researchNextQueue(); return true; }
+         if(kind == "queue_save")
+         {
+            researchFile = new FileReference();
+            researchFile.save(JSON.stringify({format:"zm4-research-batch-results-v1",clientVersion:5870,
+               total:researchQueue.length,completed:researchQueueResults.length,results:researchQueueResults,
+               scoreSubmitted:false}),"zm4_batch_results.json");
+            return true;
+         }
+         return false;
+      }
+
+      private static function researchMergeSnapshotContext(source:Object) : void
+      {
+         if(researchOwnSnapshot == null || source == null) return;
+         var p:Object = researchOwnSnapshot.wrapper.p1;
+         for each(var key:String in ["swordYi","sword","swordShi"])
+         {
+            if(source[key] == null || source[key] is Boolean) continue;
+            var value:Object = source[key];
+            if(value.hasOwnProperty("p1")) value = value.p1;
+            if(value != null && !(value is Boolean)) p[key] = JSON.parse(JSON.stringify(value));
+         }
+      }
+
+      public static function researchCaptureLoginSnapshot(route:String, reply:Object) : void
+      {
+         if(route == "connector.entryHandler.entry") { researchOwnSnapshot = null; return; }
+         if(reply == null || reply.code != 200) return;
+         if(route != "scene.playerHandler.enterScene")
+         {
+            if(researchOwnSnapshot != null)
+            {
+               var extra:Object = reply.curRecord != null ? reply.curRecord : reply;
+               if(extra.rid == null || String(extra.rid) == String(researchOwnSnapshot.wrapper.rid)) researchMergeSnapshotContext(extra);
+            }
+            return;
+         }
+         researchOwnSnapshot = null;
+         try
+         {
+            var record:Object = reply.curRecord;
+            var user:Object = reply.user;
+            if(record == null || user == null || record.p1 == null || record.userId == null || record._id == null ||
+               user.name == null || user.vipLevel == null || Number(record.userId) != Number(user._id)) return;
+            researchOwnSnapshot = {format:"zm4-own-snapshot-v1",capturedAtMs:new Date().time,
+               wrapper:{uid:record.userId,playerId:record.userId,rid:record._id,name:user.name,vipLevel:user.vipLevel,
+                  p1:JSON.parse(JSON.stringify(record.p1))},sourceRoute:"scene.playerHandler.enterScene",
+               captureMode:"normal_login_response_plus_context",contextStatus:"awaiting_read",
+               refreshHint:"换装或切换心法后退出存档再进入，重新捕获；读取后核对原生面板"};
+            researchMergeSnapshotContext(record);
+         }
+         catch(error:Error) { researchOwnSnapshot = null; }
+      }
+
+      private static function researchReadOwnSnapshot() : void
+      {
+         if(researchOwnSnapshot == null)
+         {
+            showObserver("未捕获登录快照：请使用本版主文件重新进入存档；不会重复发送登录请求");
+            return;
+         }
+         if(!models.GameData.playerIsInTown) { showObserver("请回主城读取并核对人物面板"); return; }
+         try
+         {
+            var info:Object = models.managers.UserModelManager.getIns().getCurretPlayerInfo();
+            if(info == null || Number(info.userId) != Number(researchOwnSnapshot.wrapper.uid)) throw new Error("当前人物身份与登录快照不一致，请重新进入存档");
+            var p:Object = researchOwnSnapshot.wrapper.p1;
+            if(models.managers.ClickRoleHead.pNum == 1)
+            {
+               var yi:Object = modules.sword.model.SwordModelManager.getIns().getSwordYi();
+               if(yi != null && !(yi is Boolean) && (yi.hasOwnProperty("lv") || yi.hasOwnProperty("attr"))) p.swordYi = JSON.parse(JSON.stringify(yi));
+               var sword:Object = modules.sword.model.SwordModelManager.getIns().body;
+               if(sword != null && sword.p1 != null) p.sword = JSON.parse(JSON.stringify(sword.p1));
+               var shi:Object = modules.sword.model.SwordModelManager.getIns().getSwordShi();
+               if(shi != null && !(shi is Boolean)) p.swordShi = JSON.parse(JSON.stringify(shi));
+            }
+            var u:UserVO = info.p1;
+            if(int(p.professionType) == 2) u = info.p1.children;
+            if(u == null) throw new Error("当前心法人物尚未初始化");
+            researchOwnSnapshot.panelAtRead = {capturedAtMs:new Date().time,heart:p.professionType,
+               hpMax:u.allhpMax,mpMax:u.allmpMax,atk:u.allatk,phyDef:u.allphyDef,hit:u.allhit,dodge:u.alldodge,
+               critical:u.allcritical,toughness:u.alltoughness,soulCritical:u.allsoulCritical,
+               soulToughness:u.allsoulToughness,soulAtk:u.allsoulAtk,soulPhydef:u.allsoulPhydef};
+            researchOwnSnapshot.contextStatus = p.swordYi != null ? "sword_context_present_panel_captured" : "sword_context_missing";
+            showObserver("快照：生命" + u.allhpMax + " 攻击" + u.allatk + " 魔法" + u.allmpMax + " 闪避" + (u.alldodge * 100).toFixed(2) +
+               "%；剑意" + (p.swordYi != null ? "已附带" : "未读取，请先打开自身背包后重试") + "。核对面板后导出；换装仍需重新进入存档。");
+         }
+         catch(error:Error) { showObserver("读取快照上下文失败：" + String(error)); }
+      }
+
+      private static function researchBuildBatchPanel() : void
+      {
+         researchBatchPanel = new Sprite();
+         researchBatchPanel.graphics.beginFill(0x18212C,0.96);
+         researchBatchPanel.graphics.drawRect(0,0,480,180); researchBatchPanel.graphics.endFill();
+         researchBatchPanel.x = Math.max(8,researchStage.stageWidth - 488); researchBatchPanel.y = 280;
+         researchStage.addChild(researchBatchPanel);
+         researchField("activity","期数", "4",0,0);
+         researchField("role","角色1—7", "1",160,0);
+         researchButton("切换份数/名次",320,"batch_mode",0,researchBatchPanel);
+         researchField("count","份数20—100","50",0,36);
+         researchField("start","起始名次","1",160,36);
+         researchField("end","结束名次","100",320,36);
+         researchButton("开始读取",0,"batch_start",76,researchBatchPanel);
+         researchButton("停止读取",160,"batch_stop",76,researchBatchPanel);
+         researchButton("导出录像包",320,"batch_save",76,researchBatchPanel);
+         var legend:TextField = new TextField();
+         legend.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF);
+         legend.width = 476; legend.height = 65; legend.y = 110;
+         legend.text = "角色：1悟空 2唐僧 3八戒 4沙僧 5小白龙 6玉兔 7哪吒\n默认前50份；切换名次模式后读取起止名次（含并列）。\n读取完再点导出。仅查询榜单和录像，不挑战、不消费。";
+         researchBatchPanel.addChild(legend);
+      }
+
+      private static function researchField(key:String,labelText:String,value:String,xpos:int,ypos:int) : void
+      {
+         var label:TextField = new TextField();
+         label.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF);
+         label.text = labelText; label.width = 90; label.height = 28; label.x = xpos; label.y = ypos;
+         researchBatchPanel.addChild(label);
+         var field:TextField = new TextField();
+         field.type = TextFieldType.INPUT; field.restrict = "0-9"; field.background = true;
+         field.backgroundColor = 0xFFFFFF; field.textColor = 0; field.border = true;
+         field.width = 55; field.height = 26; field.x = xpos + 94; field.y = ypos;
+         field.text = value; researchBatchPanel.addChild(field); researchBatchFields[key] = field;
+      }
+
+      private static function researchStartBatch() : void
+      {
+         if(researchBatchBusy) { showObserver("正在读取，请等待或停止当前任务"); return; }
+         var manager:BattleModelManager = BattleModelManager.getIns();
+         if(!models.GameData.playerIsInTown) { showObserver("请先退出副本或回放，回到主城后再批量读取榜单"); return; }
+         var activity:int = int(researchBatchFields.activity.text);
+         var role:int = int(researchBatchFields.role.text);
+         var count:int = int(researchBatchFields.count.text);
+         var start:int = int(researchBatchFields.start.text);
+         var end:int = int(researchBatchFields.end.text);
+         if(activity < 1 || role < 1 || role > 7 || (researchBatchMode == "count" && (count < 20 || count > 100)) ||
+            (researchBatchMode == "range" && (start < 1 || end < start || end > 100)))
+         { showObserver("参数错误：期数>=1，角色1—7；份数20—100，或名次1—100"); return; }
+         researchBatchConfig = {activity:activity,role:role,mode:researchBatchMode,count:count,startRank:start,endRank:end};
+         researchBatchGeneration++; researchBatchBusy = true; researchBatchPage = 1;
+         researchBatchSeen = {}; researchBatchSeenCount = 0; researchBatchPending = [];
+         researchBatchReports = []; researchBatchFailures = []; researchBatchExhausted = false;
+         researchBatchReason = "running"; researchBatchMax = 0;
+         researchReadRankPage();
+      }
+
+      private static function researchRequest(route:String,payload:Object,callback:Function) : void
+      {
+         var generation:int = researchBatchGeneration;
+         var completed:Boolean = false;
+         var timer:uint = 0;
+         var done:Function = function(reply:Object):void
+         {
+            if(completed || generation != researchBatchGeneration || !researchBatchBusy) return;
+            completed = true; clearTimeout(timer); researchBatchTimer = 0;
+            try { callback(reply); }
+            catch(error:Error) { researchBatchFailures.push({route:route,error:String(error)}); researchFinishBatch("server_error"); }
+         };
+         var request:RequestVO = new RequestVO(route,payload,done);
+         request.allwayCallBack = done;
+         timer = setTimeout(function():void
+         {
+            if(completed || generation != researchBatchGeneration || !researchBatchBusy) return;
+            completed = true; researchBatchBusy = false; researchBatchGeneration++;
+            researchBatchReason = "timeout";
+            researchBatchFailures.push({route:route,error:"timeout"});
+            showObserver("读取超时，已保留" + researchBatchReports.length + "份；可导出部分包");
+         },35000);
+         researchBatchTimer = timer;
+         ApplicationFacade.getInstance().sendNotification("cmdRequestServer",request);
+      }
+
+      private static function researchReadRankPage() : void
+      {
+         if(!researchBatchBusy) return;
+         if(researchBatchPage > 100) { researchFinishBatch("page_limit"); return; }
+         researchRequest("scene.onlineCopyHandler.getRank",{index:researchBatchConfig.activity,type:researchBatchConfig.role,page:researchBatchPage},function(reply:Object):void
+         {
+            if(reply == null || reply.code != 200 || !(reply.rows is Array))
+            { researchFinishBatch("server_error"); return; }
+            var fresh:int = 0;
+            var beyond:Boolean = false;
+            researchBatchPending = [];
+            for each(var value:Object in reply.rows)
+            {
+               var row:Object;
+               try { row = value is String ? JSON.parse(String(value)) : value; }
+               catch(error:Error) { researchBatchFailures.push({error:"invalid_rank_row"}); continue; }
+               if(row == null || row.rank == null || isNaN(Number(row.rank)) || Number(row.rank) < 0)
+               { researchBatchFailures.push({error:"missing_rank"}); continue; }
+               var key:String = String(row.reportId != null ? row.reportId : row.id);
+               if(researchBatchSeen[key]) continue;
+               researchBatchSeen[key] = true; researchBatchSeenCount++; fresh++;
+               var rank:int = int(row.rank) + 1;
+               if(researchBatchConfig.mode == "range")
+               {
+                  if(rank < researchBatchConfig.startRank) continue;
+                  if(rank > researchBatchConfig.endRank) { beyond = true; continue; }
+               }
+               if(row.reportId == null || String(row.reportId).length == 0)
+               { researchBatchFailures.push({rank:row.rank,error:"missing_report_id"}); continue; }
+               researchBatchPending.push(row);
+            }
+            researchBatchMax = int(reply.maxCount);
+            researchBatchExhausted = reply.rows.length == 0 || fresh == 0 || beyond ||
+               (researchBatchMax > 0 && researchBatchSeenCount >= researchBatchMax);
+            researchReadNextReport();
+         });
+      }
+
+      private static function researchReadNextReport() : void
+      {
+         if(!researchBatchBusy) return;
+         if(researchBatchConfig.mode == "count" && researchBatchReports.length >= researchBatchConfig.count)
+         { researchFinishBatch("target_reached"); return; }
+         if(researchBatchPending.length == 0)
+         {
+            if(researchBatchExhausted) { researchFinishBatch("range_or_board_exhausted"); return; }
+            researchBatchPage++; researchReadRankPage(); return;
+         }
+         var row:Object = researchBatchPending.shift();
+         var generation:int = researchBatchGeneration;
+         researchRequest("copyReport.copyReportHandler.getReport",{reportId:row.reportId},function(reply:Object):void
+         {
+            var report:Object = reply != null ? reply.report : null;
+            if(reply != null && reply.code == 200 && report != null && String(report.reportId) == String(row.reportId) && report.sceneInfo != null &&
+               report.sceneInfo.playerInfos != null && report.sceneInfo.playerInfos.length == 1 &&
+               report.sceneInfo.playerInfos[0].p1 != null &&
+               report.frames != null && report.frames.length > 0)
+            {
+               var player:Object = report.sceneInfo.playerInfos[0];
+               researchBatchReports.push({metadata:{name:row.name,rank:row.rank,score:row.score,
+                  reportId:row.reportId,roleType:researchBatchConfig.role,heart:player.p1.professionType,
+                  seed:report.sceneInfo.randomSeed,nativePlaybackVerified:false},response:reply});
+            }
+            else researchBatchFailures.push({reportId:row.reportId,rank:row.rank,error:"report_unavailable_or_incomplete"});
+            showObserver("批量读取：" + researchBatchReports.length + "份；第" + researchBatchPage + "页；完成后点导出录像包");
+            setTimeout(function():void { if(generation == researchBatchGeneration && researchBatchBusy) researchReadNextReport(); },200);
+         });
+      }
+
+      private static function researchFinishBatch(reason:String) : void
+      {
+         researchBatchBusy = false; researchBatchReason = reason;
+         if(researchBatchTimer != 0) clearTimeout(researchBatchTimer);
+         showObserver("读取结束：" + researchBatchReports.length + "份，未取得" + researchBatchFailures.length + "份；请点导出录像包");
+      }
+
+      private static function researchImportQueue(input:Object) : void
+      {
+         var samples:Array;
+         if(input.format == "zm4-research-queue-v1") samples = input.samples as Array;
+         else if(input.format == "zm4-replay-bundle-v1") samples = input.reports as Array;
+         else samples = [{label:"单份回放",response:input.response != null ? input.response : input}];
+         if(samples == null || samples.length == 0 || samples.length > 1000) throw new Error("队列为空或超出1000份上限");
+         researchQueue = JSON.parse(JSON.stringify(samples)) as Array;
+         researchQueueIndex = 0; researchQueueRecorded = -1; researchQueueResults = [];
+         researchRunResponse(researchQueue[0]);
+      }
+
+      private static function researchNextQueue() : void
+      {
+         if(researchQueueLoading || (!replayFinished && researchOriginal != null)) { showObserver("当前回放正在加载或尚未完成，不能跳到下一份"); return; }
+         if(researchQueueIndex + 1 >= researchQueue.length) { researchQueueAuto = false; showObserver("本地队列已结束，可导出批量结果"); return; }
+         researchQueueIndex++;
+         researchRunResponse(researchQueue[researchQueueIndex]);
+      }
+
+      public static function researchAfterComplete(report:Object) : Boolean
+      {
+         if(report == null || report.lab == null || report.lab.mode != "research_json_v1") return false;
+         if(replayAssessment != null && researchQueueRecorded != researchQueueIndex)
+         {
+            researchQueueResults.push({index:researchQueueIndex,label:researchQueue[researchQueueIndex].label,
+               input:researchOriginal,assessment:JSON.parse(JSON.stringify(replayAssessment)),truncated:researchTruncated});
+            researchQueueRecorded = researchQueueIndex;
+         }
+         researchProgressUpdate(QCOnServerFrame2.cliCurrFrame,"本段已结束");
+         if(researchQueueAuto && researchQueueIndex + 1 < researchQueue.length)
+         {
+            setTimeout(function():void { if(researchQueueAuto) researchNextQueue(); },700);
+            return true;
+         }
+         researchQueueAuto = false;
+         return false;
+      }

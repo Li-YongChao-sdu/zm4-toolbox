@@ -1,0 +1,56 @@
+      private static var researchProgressPanel:Sprite;
+      private static var researchProgressText:TextField;
+      private static var researchProgressBar:Sprite;
+      private static var researchProgressLabel:String = "";
+      private static var researchProgressSeed:String = "";
+      private static var researchProgressSeedIndex:int = 0;
+      private static var researchProgressSeedCount:int = 0;
+      private static var researchProgressEnd:int = 0;
+      private static var researchProgressActive:Boolean = false;
+
+      private static function researchInstallProgress(s:Stage) : void
+      {
+         researchProgressPanel = new Sprite(); researchProgressPanel.mouseEnabled = false; researchProgressPanel.mouseChildren = false;
+         researchProgressPanel.graphics.beginFill(0x18212C,0.94); researchProgressPanel.graphics.drawRoundRect(0,0,480,104,8,8); researchProgressPanel.graphics.endFill();
+         researchProgressPanel.x = Math.max(8,s.stageWidth - 488); researchProgressPanel.y = Math.max(8,s.stageHeight - 112);
+         researchProgressText = new TextField(); researchProgressText.defaultTextFormat = new TextFormat("Microsoft YaHei",12,0xFFFFFF);
+         researchProgressText.x = 8; researchProgressText.y = 4; researchProgressText.width = 464; researchProgressText.height = 81; researchProgressText.wordWrap = true;
+         researchProgressPanel.addChild(researchProgressText); researchProgressBar = new Sprite(); researchProgressBar.x = 8; researchProgressBar.y = 91;
+         researchProgressPanel.addChild(researchProgressBar); researchProgressPanel.visible = false; s.addChild(researchProgressPanel);
+      }
+
+      private static function researchProgressPrepare(input:Object, report:Object) : void
+      {
+         researchProgressActive = true; researchProgressSeed = String(report.sceneInfo.randomSeed);
+         researchProgressLabel = input.label != null ? String(input.label) : (input.metadata != null && input.metadata.name != null ? String(input.metadata.name) : String(report.reportId));
+         researchProgressEnd = int(report.frames[report.frames.length - 1].currFrame);
+         var seen:Object = {}; var count:int = 0;
+         researchProgressSeedIndex = 0;
+         for each(var sample:Object in researchQueue)
+         {
+            var response:Object = sample.response != null ? sample.response : sample;
+            var r:Object = response.report != null ? response.report : response;
+            if(r.sceneInfo == null || r.sceneInfo.randomSeed == null) continue;
+            var key:String = String(r.sceneInfo.randomSeed);
+            if(seen[key]) continue;
+            seen[key] = true; count++;
+            if(key == researchProgressSeed) researchProgressSeedIndex = count;
+         }
+         researchProgressSeedCount = count;
+         researchProgressUpdate(0,"加载中");
+      }
+
+      private static function researchProgressUpdate(frame:int, phase:String) : void
+      {
+         if(!researchProgressActive || researchProgressPanel == null) return;
+         var ratio:Number = researchProgressEnd > 0 ? Math.max(0,Math.min(1,Number(frame) / researchProgressEnd)) : 0;
+         researchProgressPanel.visible = true;
+         researchProgressPanel.x = Math.max(8,researchStage.stageWidth - 488);
+         researchProgressPanel.y = Math.max(8,researchStage.stageHeight - 112);
+         if(researchProgressPanel.parent == researchStage) researchStage.setChildIndex(researchProgressPanel,researchStage.numChildren - 1);
+         researchProgressText.text = "回放 " + (researchQueueIndex + 1) + "/" + researchQueue.length + "；种子 " + researchProgressSeedIndex + "/" + researchProgressSeedCount + "：" + researchProgressSeed +
+            "\n" + researchProgressLabel + "\n" + phase + "；逻辑帧 " + frame + "/" + researchProgressEnd + "（" + (ratio * 100).toFixed(1) + "%）" +
+            "\n队列已完成 " + researchQueueResults.length + "/" + researchQueue.length + "；后续连测" + (researchQueueAuto ? "开启" : "关闭");
+         researchProgressBar.graphics.clear(); researchProgressBar.graphics.beginFill(0x425466); researchProgressBar.graphics.drawRect(0,0,464,6); researchProgressBar.graphics.endFill();
+         researchProgressBar.graphics.beginFill(0x4DC9A0); researchProgressBar.graphics.drawRect(0,0,464 * ratio,6); researchProgressBar.graphics.endFill();
+      }
