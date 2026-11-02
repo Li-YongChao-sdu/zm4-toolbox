@@ -1,0 +1,39 @@
+{
+  "RECORD": [
+    {
+      "id": "101",
+      "type": "1",
+      "integral": "200",
+      "iconId": "101.png",
+      "taskId": "1"
+    },
+    {
+      "id": "102",
+      "type": "2",
+      "integral": "200",
+      "iconId": "102.png",
+      "taskId": "2"
+    },
+    {
+      "id": "103",
+      "type": "3",
+      "integral": "200",
+      "iconId": "103.png",
+      "taskId": "4"
+    },
+    {
+      "id": "104",
+      "type": "4",
+      "integral": "200",
+      "iconId": "104.png",
+      "taskId": "3"
+    },
+    {
+      "id": "105",
+      "type": "5",
+      "integral": "200",
+      "iconId": "105V1.png",
+      "taskId": "5"
+    }
+  ]
+}

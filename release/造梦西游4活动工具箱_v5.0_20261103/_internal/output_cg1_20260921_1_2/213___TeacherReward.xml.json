@@ -1,0 +1,100 @@
+{
+  "RECORD": [
+    {
+      "id": "101",
+      "level": "30",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4060",
+      "type": "1"
+    },
+    {
+      "id": "102",
+      "level": "40",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4061",
+      "type": "1"
+    },
+    {
+      "id": "103",
+      "level": "50",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4062",
+      "type": "1"
+    },
+    {
+      "id": "104",
+      "level": "60",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4063",
+      "type": "1"
+    },
+    {
+      "id": "105",
+      "level": "70",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4064",
+      "type": "1"
+    },
+    {
+      "id": "106",
+      "level": "80",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4170",
+      "type": "1"
+    },
+    {
+      "id": "107",
+      "level": "90",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4171",
+      "type": "1"
+    },
+    {
+      "id": "108",
+      "level": "100",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4187",
+      "type": "1"
+    },
+    {
+      "id": "109",
+      "level": "110",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4205",
+      "type": "1"
+    },
+    {
+      "id": "110",
+      "level": "120",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4206",
+      "type": "1"
+    },
+    {
+      "id": "111",
+      "level": "130",
+      "powerMin": "1000",
+      "teacherTime": "0",
+      "rewardId": "4239",
+      "type": "1"
+    },
+    {
+      "id": "201",
+      "level": "70",
+      "powerMin": "120000",
+      "teacherTime": "10",
+      "rewardId": "4059",
+      "type": "2"
+    }
+  ]
+}

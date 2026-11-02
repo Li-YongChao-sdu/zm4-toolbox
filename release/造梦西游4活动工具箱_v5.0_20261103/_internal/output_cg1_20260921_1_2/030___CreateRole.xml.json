@@ -1,0 +1,46 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "roleID": "2001",
+      "roleName": "孙悟空",
+      "isOpen": "1"
+    },
+    {
+      "id": "2",
+      "roleID": "2002",
+      "roleName": "唐三藏",
+      "isOpen": "1"
+    },
+    {
+      "id": "3",
+      "roleID": "2003",
+      "roleName": "猪八戒",
+      "isOpen": "1"
+    },
+    {
+      "id": "4",
+      "roleID": "2004",
+      "roleName": "沙悟净",
+      "isOpen": "1"
+    },
+    {
+      "id": "5",
+      "roleID": "2005",
+      "roleName": "小白龙",
+      "isOpen": "1"
+    },
+    {
+      "id": "6",
+      "roleID": "20001",
+      "roleName": "玉兔儿",
+      "isOpen": "1"
+    },
+    {
+      "id": "7",
+      "roleID": "20002",
+      "roleName": "哪吒",
+      "isOpen": "1"
+    }
+  ]
+}

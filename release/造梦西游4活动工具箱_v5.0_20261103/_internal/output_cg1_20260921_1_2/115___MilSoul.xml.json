@@ -1,0 +1,67 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "5",
+      "rewardId": "4048"
+    },
+    {
+      "id": "2",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "10",
+      "rewardId": "4049"
+    },
+    {
+      "id": "3",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "20",
+      "rewardId": "4050"
+    },
+    {
+      "id": "4",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "30",
+      "rewardId": "4051"
+    },
+    {
+      "id": "5",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "50",
+      "rewardId": "4052"
+    },
+    {
+      "id": "6",
+      "random": "1;2;3;4;5;6;7;8;9;0",
+      "freeWeight": "10;10;10;10;10;10;10;10;10;10",
+      "ticketWeight": "10;10;10;10;10;10;10;10;10;10",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "70",
+      "rewardId": "4053"
+    },
+    {
+      "id": "7",
+      "random": "6;7;8;9",
+      "freeWeight": "20;30;30;20",
+      "ticketWeight": "10;20;30;40",
+      "fillSignPointTicket": "100",
+      "reSignPointTicket": "100",
+      "rewardId": "4054"
+    }
+  ]
+}

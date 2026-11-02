@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <trainValue>50</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <trainValue>100</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <trainValue>150</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <trainValue>230</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <trainValue>350</trainValue>
+  </RECORD>
+</RECORDS>

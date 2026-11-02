@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <speedDown>10</speedDown>
+    <speedUp>20</speedUp>
+    <bottom>580</bottom>
+    <lineLength>145</lineLength>
+    <fish1>{"posY":370,"speedX":6,"scale":0.5,"changeId":144100022,"changeNum":1,"giveId":143200016,"name":"鬼影乌贼","index":1,"scaleXY":1}</fish1>
+    <fish2>{"posY":535,"speedX":1.5,"scale":0.5,"changeId":144100020,"changeNum":1,"giveId":143200017,"name":"海龟","index":2,"scaleXY":1.1}</fish2>
+    <fish3>{"posY":320,"speedX":2,"scale":0.6,"changeId":144100021,"changeNum":1,"giveId":143200015,"name":"刺豚","index":3,"scaleXY":0.8}</fish3>
+    <fish4>{"posY":490,"speedX":4,"scale":0.5,"changeId":144100022,"changeNum":1,"giveId":143200016,"name":"蓝点马鲛","index":4,"scaleXY":1}</fish4>
+    <fish5>{"posY":430,"speedX":3,"scale":0.5,"changeId":144100021,"changeNum":1,"giveId":143200015,"name":"珊瑚鱼","index":5,"scaleXY":1}</fish5>
+    <fish6>{"posY":270,"speedX":5,"scale":1,"changeId":144100021,"changeNum":1,"giveId":143200015,"name":"水母","index":6,"scaleXY":1}</fish6>
+    <hookId>144100020;144100022;144100021</hookId>
+    <cd>0</cd>
+    <fishProgress>{"2":144100021,"4":144100022,"5":144100020}</fishProgress>
+    <fishProgressNum>{"2":4,"4":2,"5":1}</fishProgressNum>
+    <activeId>1428</activeId>
+    <taskClass>100</taskClass>
+  </RECORD>
+</RECORDS>

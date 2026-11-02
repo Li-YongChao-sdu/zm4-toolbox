@@ -1,0 +1,68 @@
+{
+  "RECORD": [
+    {
+      "id": "160100001",
+      "name": "资质果",
+      "type": "1",
+      "num": "1",
+      "resetAttr": "hpQualification;atkQualification;defQualification",
+      "order": "1"
+    },
+    {
+      "id": "160200001",
+      "name": "生命果",
+      "type": "1",
+      "num": "1",
+      "resetAttr": "hpQualification",
+      "order": "2"
+    },
+    {
+      "id": "160200002",
+      "name": "攻击果",
+      "type": "1",
+      "num": "1",
+      "resetAttr": "atkQualification",
+      "order": "3"
+    },
+    {
+      "id": "160200003",
+      "name": "防御果",
+      "type": "1",
+      "num": "1",
+      "resetAttr": "defQualification",
+      "order": "4"
+    },
+    {
+      "id": "136100001",
+      "name": "三色花",
+      "type": "2",
+      "num": "1",
+      "resetAttr": "hpQualification;atkQualification;defQualification",
+      "order": "1"
+    },
+    {
+      "id": "136200001",
+      "name": "朱丹花",
+      "type": "2",
+      "num": "1",
+      "resetAttr": "hpQualification",
+      "order": "2"
+    },
+    {
+      "id": "136200002",
+      "name": "苍翠花",
+      "type": "2",
+      "num": "1",
+      "resetAttr": "atkQualification",
+      "order": "3"
+    },
+    {
+      "id": "136200003",
+      "name": "流金花",
+      "type": "2",
+      "num": "1",
+      "resetAttr": "defQualification",
+      "order": "4"
+    }
+  ]
+}

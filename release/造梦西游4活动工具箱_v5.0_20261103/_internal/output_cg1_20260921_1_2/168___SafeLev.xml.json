@@ -1,0 +1,24 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "name": "vip",
+      "content": "btn_vip"
+    },
+    {
+      "id": "2",
+      "name": "商城",
+      "content": "btn_sc"
+    },
+    {
+      "id": "3",
+      "name": "首冲",
+      "content": "btn_shouchong"
+    },
+    {
+      "id": "4",
+      "name": "累计充值",
+      "content": "btn_czhk"
+    }
+  ]
+}

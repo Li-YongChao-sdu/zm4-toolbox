@@ -1,0 +1,12 @@
+{
+  "RECORD": {
+    "id": "1",
+    "freeRefresh": "1001",
+    "ticketRefresh": "1002",
+    "ticket": "400",
+    "weekNum": "5",
+    "showNum": "3",
+    "shenyuRefreshTicket": "200",
+    "dailyMax": "50"
+  }
+}

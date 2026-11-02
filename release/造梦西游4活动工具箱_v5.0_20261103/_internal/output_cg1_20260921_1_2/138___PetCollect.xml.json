@@ -1,0 +1,36 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "type": "1",
+      "item1": "{\"id\":178100001,\"name\":\"玲珑鳞\",\"level\":38,\"collectNum\":6,\"tripleCollectNum\":18,\"index\":1}",
+      "item2": "{\"id\":178200001,\"name\":\"血焰珠\",\"level\":56,\"collectNum\":5,\"tripleCollectNum\":15,\"index\":2}",
+      "item3": "{\"id\":178300001,\"name\":\"七煞髓\",\"level\":80,\"collectNum\":4,\"tripleCollectNum\":12,\"index\":3}",
+      "item4": "{\"id\":178400001,\"name\":\"青罡金\",\"level\":90,\"collectNum\":3,\"tripleCollectNum\":9,\"index\":4}",
+      "item5": "{\"id\":178600001,\"name\":\"幽影砂\",\"level\":100,\"collectNum\":3,\"tripleCollectNum\":9,\"index\":5}",
+      "collectTime": "120",
+      "triplecollectPointTicket": "150",
+      "dayMax": "3",
+      "everyMinutes": "6",
+      "reducePointTicket": "5",
+      "activeId": "1429",
+      "petLevel": "38"
+    },
+    {
+      "id": "2",
+      "type": "2",
+      "item1": "{\"id\":109200001,\"name\":\"炎晶\",\"level\":38,\"collectNum\":4,\"tripleCollectNum\":12,\"index\":1}",
+      "item2": "{\"id\":109200002,\"name\":\"沙晶\",\"level\":56,\"collectNum\":3,\"tripleCollectNum\":9,\"index\":2}",
+      "item3": "{\"id\":109200003,\"name\":\"木晶\",\"level\":80,\"collectNum\":3,\"tripleCollectNum\":9,\"index\":3}",
+      "item4": "{\"id\":109300004,\"name\":\"瑰晶\",\"level\":90,\"collectNum\":3,\"tripleCollectNum\":9,\"index\":4}",
+      "item5": "-1",
+      "collectTime": "120",
+      "triplecollectPointTicket": "100",
+      "dayMax": "3",
+      "everyMinutes": "12",
+      "reducePointTicket": "5",
+      "activeId": "1449",
+      "petLevel": "38"
+    }
+  ]
+}

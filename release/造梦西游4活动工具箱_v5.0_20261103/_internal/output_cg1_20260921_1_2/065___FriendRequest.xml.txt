@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <newRewardId>4018</newRewardId>
+    <newLevel>20</newLevel>
+    <newDescribe>活动时间：2015年9月1日-9月15日 
+
+9月1日起注册的新玩家，在活动期间内输入邀请码，并且等级达到20级，就可以领取一个大礼包。
+
+
+
+
+温馨提示：邀请码区分大小写；一个账号只能领取一次礼包</newDescribe>
+    <oldRewardId>4019;4020;4021</oldRewardId>
+    <oldFriendNum>3;10;20</oldFriendNum>
+    <oldDescribe>活动时间：2015年9月1日-9月15日
+
+等级达到44级，可以通过下方按钮获取邀请码，邀请你的朋友一起加入
+造梦西游4，再将“邀请码”发给你的朋友进行输入，你的朋友达到20级并领取奖励，达指定人数之后你就可以获得超值好礼！！！
+
+
+
+温馨提示：邀请码区分大小写；一个账号只能领取一次礼包 </oldDescribe>
+    <shelfTime>2014/12/29-16:43:11</shelfTime>
+    <underTime>2015/12/29-16:43:11</underTime>
+    <url>http://huodong2.4399.com/zmxy4/invite/</url>
+  </RECORD>
+</RECORDS>

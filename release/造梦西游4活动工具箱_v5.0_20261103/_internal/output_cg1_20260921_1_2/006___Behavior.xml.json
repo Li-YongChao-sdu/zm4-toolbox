@@ -1,0 +1,1147 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "name": "Patrol",
+      "type": "sel"
+    },
+    {
+      "id": "2",
+      "name": "Seek",
+      "type": "sel"
+    },
+    {
+      "id": "3",
+      "name": "AttackSeq",
+      "type": "seq"
+    },
+    {
+      "id": "4",
+      "name": "Flee",
+      "type": "sel"
+    },
+    {
+      "id": "5",
+      "name": "AttackSel",
+      "type": "sel"
+    },
+    {
+      "id": "6",
+      "name": "RandChild",
+      "value": {},
+      "type": "sel"
+    },
+    {
+      "id": "101",
+      "name": "GetHurting",
+      "type": "con"
+    },
+    {
+      "id": "102",
+      "name": "GetManOnView",
+      "type": "con"
+    },
+    {
+      "id": "103",
+      "name": "GetCanSkill",
+      "type": "con"
+    },
+    {
+      "id": "1031",
+      "name": "GetInAttack1Range",
+      "type": "con"
+    },
+    {
+      "id": "1032",
+      "name": "GetInAttack2Range",
+      "type": "con"
+    },
+    {
+      "id": "1033",
+      "name": "GetInAttack3Range",
+      "type": "con"
+    },
+    {
+      "id": "1034",
+      "name": "GetInAttack4Range",
+      "type": "con"
+    },
+    {
+      "id": "1041",
+      "name": "GetInSkill1Range",
+      "type": "con"
+    },
+    {
+      "id": "1042",
+      "name": "GetInSkill2Range",
+      "type": "con"
+    },
+    {
+      "id": "1043",
+      "name": "GetInSkill3Range",
+      "type": "con"
+    },
+    {
+      "id": "1044",
+      "name": "GetInSkill4Range",
+      "type": "con"
+    },
+    {
+      "id": "1045",
+      "name": "GetInSkill5Range",
+      "type": "con"
+    },
+    {
+      "id": "1049",
+      "name": "GetInAoyiSkillRange",
+      "type": "con"
+    },
+    {
+      "id": "105",
+      "name": "GetInSeekRange",
+      "type": "con"
+    },
+    {
+      "id": "106",
+      "name": "GetNoAttacking",
+      "type": "con"
+    },
+    {
+      "id": "107",
+      "name": "GetNoThreat",
+      "type": "con"
+    },
+    {
+      "id": "108",
+      "name": "GetHasThreat",
+      "type": "con"
+    },
+    {
+      "id": "109000001",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.01"
+    },
+    {
+      "id": "109001050",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.01,0.5"
+    },
+    {
+      "id": "109000050",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.5"
+    },
+    {
+      "id": "109050100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.5,1"
+    },
+    {
+      "id": "109050075",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.5,0.75"
+    },
+    {
+      "id": "109050090",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.5,0.9"
+    },
+    {
+      "id": "109070080",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.7,0.8"
+    },
+    {
+      "id": "109080090",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.8,0.9"
+    },
+    {
+      "id": "109085100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.85,1"
+    },
+    {
+      "id": "109000070",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.7"
+    },
+    {
+      "id": "109000075",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.75"
+    },
+    {
+      "id": "109000080",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.8"
+    },
+    {
+      "id": "109000085",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.85"
+    },
+    {
+      "id": "109050085",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.5,0.85"
+    },
+    {
+      "id": "109000099",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.99"
+    },
+    {
+      "id": "109000090",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.90"
+    },
+    {
+      "id": "109000095",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.95"
+    },
+    {
+      "id": "109000066",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.66"
+    },
+    {
+      "id": "109066100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.66,1"
+    },
+    {
+      "id": "109033066",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.33,0.66"
+    },
+    {
+      "id": "109000033",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.33"
+    },
+    {
+      "id": "109000020",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.2"
+    },
+    {
+      "id": "109020100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.2,1"
+    },
+    {
+      "id": "109090100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.9,1.1"
+    },
+    {
+      "id": "109000100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,1"
+    },
+    {
+      "id": "109070100",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.7,1"
+    },
+    {
+      "id": "109035070",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0.35,0.7"
+    },
+    {
+      "id": "109000035",
+      "name": "GetHp",
+      "type": "con",
+      "value": "0,0.35"
+    },
+    {
+      "id": "111001",
+      "name": "GetAttCD",
+      "value": "1000",
+      "type": "con"
+    },
+    {
+      "id": "111002",
+      "name": "GetAttCD",
+      "value": "2000",
+      "type": "con"
+    },
+    {
+      "id": "1110025",
+      "name": "GetAttCD",
+      "value": "2500",
+      "type": "con"
+    },
+    {
+      "id": "111003",
+      "name": "GetAttCD",
+      "value": "3000",
+      "type": "con"
+    },
+    {
+      "id": "111004",
+      "name": "GetAttCD",
+      "value": "4000",
+      "type": "con"
+    },
+    {
+      "id": "111005",
+      "name": "GetAttCD",
+      "value": "5000",
+      "type": "con"
+    },
+    {
+      "id": "111006",
+      "name": "GetAttCD",
+      "value": "6000",
+      "type": "con"
+    },
+    {
+      "id": "111007",
+      "name": "GetAttCD",
+      "value": "7000",
+      "type": "con"
+    },
+    {
+      "id": "111008",
+      "name": "GetAttCD",
+      "value": "8000",
+      "type": "con"
+    },
+    {
+      "id": "111009",
+      "name": "GetAttCD",
+      "value": "9000",
+      "type": "con"
+    },
+    {
+      "id": "111010",
+      "name": "GetAttCD",
+      "value": "10000",
+      "type": "con"
+    },
+    {
+      "id": "111012",
+      "name": "GetAttCD",
+      "value": "12000",
+      "type": "con"
+    },
+    {
+      "id": "111013",
+      "name": "GetAttCD",
+      "value": "13000",
+      "type": "con"
+    },
+    {
+      "id": "111015",
+      "name": "GetAttCD",
+      "value": "15000",
+      "type": "con"
+    },
+    {
+      "id": "111017",
+      "name": "GetAttCD",
+      "value": "17000",
+      "type": "con"
+    },
+    {
+      "id": "111018",
+      "name": "GetAttCD",
+      "value": "18000",
+      "type": "con"
+    },
+    {
+      "id": "111020",
+      "name": "GetAttCD",
+      "value": "20000",
+      "type": "con"
+    },
+    {
+      "id": "111022",
+      "name": "GetAttCD",
+      "value": "22000",
+      "type": "con"
+    },
+    {
+      "id": "111024",
+      "name": "GetAttCD",
+      "value": "24000",
+      "type": "con"
+    },
+    {
+      "id": "111025",
+      "name": "GetAttCD",
+      "value": "25000",
+      "type": "con"
+    },
+    {
+      "id": "111030",
+      "name": "GetAttCD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "111035",
+      "name": "GetAttCD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "111040",
+      "name": "GetAttCD",
+      "value": "40000",
+      "type": "con"
+    },
+    {
+      "id": "111045",
+      "name": "GetAttCD",
+      "value": "45000",
+      "type": "con"
+    },
+    {
+      "id": "111050",
+      "name": "GetAttCD",
+      "value": "50000",
+      "type": "con"
+    },
+    {
+      "id": "111060",
+      "name": "GetAttCD",
+      "value": "60000",
+      "type": "con"
+    },
+    {
+      "id": "111999",
+      "name": "GetAttCD",
+      "value": "999000",
+      "type": "con"
+    },
+    {
+      "id": "11210075",
+      "name": "GetSkill1CD",
+      "value": "7500",
+      "type": "con"
+    },
+    {
+      "id": "1121010",
+      "name": "GetSkill1CD",
+      "value": "10000",
+      "type": "con"
+    },
+    {
+      "id": "1121012",
+      "name": "GetSkill1CD",
+      "value": "12000",
+      "type": "con"
+    },
+    {
+      "id": "1121015",
+      "name": "GetSkill1CD",
+      "value": "15000",
+      "type": "con"
+    },
+    {
+      "id": "1121020",
+      "name": "GetSkill1CD",
+      "value": "20000",
+      "type": "con"
+    },
+    {
+      "id": "1121030",
+      "name": "GetSkill1CD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "1122010",
+      "name": "GetSkill2CD",
+      "value": "10000",
+      "type": "con"
+    },
+    {
+      "id": "1122012",
+      "name": "GetSkill2CD",
+      "value": "12000",
+      "type": "con"
+    },
+    {
+      "id": "1122015",
+      "name": "GetSkill2CD",
+      "value": "15000",
+      "type": "con"
+    },
+    {
+      "id": "1122020",
+      "name": "GetSkill2CD",
+      "value": "20000",
+      "type": "con"
+    },
+    {
+      "id": "1122030",
+      "name": "GetSkill2CD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "1123010",
+      "name": "GetSkill3CD",
+      "value": "10000",
+      "type": "con"
+    },
+    {
+      "id": "1123012",
+      "name": "GetSkill3CD",
+      "value": "12000",
+      "type": "con"
+    },
+    {
+      "id": "1123015",
+      "name": "GetSkill3CD",
+      "value": "15000",
+      "type": "con"
+    },
+    {
+      "id": "1123020",
+      "name": "GetSkill3CD",
+      "value": "20000",
+      "type": "con"
+    },
+    {
+      "id": "1123025",
+      "name": "GetSkill3CD",
+      "value": "25000",
+      "type": "con"
+    },
+    {
+      "id": "1123030",
+      "name": "GetSkill3CD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "1131030",
+      "name": "GetAoyiSkillCD",
+      "value": "30000",
+      "type": "con"
+    },
+    {
+      "id": "1131060",
+      "name": "GetAoyiSkillCD",
+      "value": "60000",
+      "type": "con"
+    },
+    {
+      "id": "114001",
+      "name": "GetNoInWalkRectRange",
+      "type": "con",
+      "value": "580,100,280,390"
+    },
+    {
+      "id": "115001",
+      "name": "GetInWalkRectRange",
+      "type": "con",
+      "value": "580,100,280,390"
+    },
+    {
+      "id": "115002",
+      "name": "GetInWalkRectRange",
+      "type": "con",
+      "value": "580,390,280,100"
+    },
+    {
+      "id": "115101",
+      "name": "GetInWalkRectRange",
+      "type": "con",
+      "value": "580,250,280,290"
+    },
+    {
+      "id": "201",
+      "name": "GotoPatrol",
+      "type": "ac"
+    },
+    {
+      "id": "2020001",
+      "name": "GotoWait",
+      "value": "100",
+      "type": "ac"
+    },
+    {
+      "id": "2020004",
+      "name": "GotoWait",
+      "value": "400",
+      "type": "ac"
+    },
+    {
+      "id": "2020005",
+      "name": "GotoWait",
+      "value": "500",
+      "type": "ac"
+    },
+    {
+      "id": "2020006",
+      "name": "GotoWait",
+      "value": "600",
+      "type": "ac"
+    },
+    {
+      "id": "202001",
+      "name": "GotoWait",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2020013",
+      "name": "GotoWait",
+      "value": "1300",
+      "type": "ac"
+    },
+    {
+      "id": "2020015",
+      "name": "GotoWait",
+      "value": "1500",
+      "type": "ac"
+    },
+    {
+      "id": "2020016",
+      "name": "GotoWait",
+      "value": "1600",
+      "type": "ac"
+    },
+    {
+      "id": "202002",
+      "name": "GotoWait",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "2020022",
+      "name": "GotoWait",
+      "value": "2200",
+      "type": "ac"
+    },
+    {
+      "id": "2020026",
+      "name": "GotoWait",
+      "value": "2600",
+      "type": "ac"
+    },
+    {
+      "id": "202003",
+      "name": "GotoWait",
+      "value": "3000",
+      "type": "ac"
+    },
+    {
+      "id": "202004",
+      "name": "GotoWait",
+      "value": "4000",
+      "type": "ac"
+    },
+    {
+      "id": "202005",
+      "name": "GotoWait",
+      "value": "5000",
+      "type": "ac"
+    },
+    {
+      "id": "202000001",
+      "name": "GotoWait",
+      "value": "500,1000",
+      "type": "ac"
+    },
+    {
+      "id": "20200050012",
+      "name": "GotoWait",
+      "value": "500,1200",
+      "type": "ac"
+    },
+    {
+      "id": "20200070015",
+      "name": "GotoWait",
+      "value": "750,1500",
+      "type": "ac"
+    },
+    {
+      "id": "202001002",
+      "name": "GotoWait",
+      "value": "1000,2000",
+      "type": "ac"
+    },
+    {
+      "id": "20200100015",
+      "name": "GotoWait",
+      "value": "1000,1500",
+      "type": "ac"
+    },
+    {
+      "id": "202001003",
+      "name": "GotoWait",
+      "value": "1000,3000",
+      "type": "ac"
+    },
+    {
+      "id": "202002003",
+      "name": "GotoWait",
+      "value": "2000,3000",
+      "type": "ac"
+    },
+    {
+      "id": "202002004",
+      "name": "GotoWait",
+      "value": "2000,4000",
+      "type": "ac"
+    },
+    {
+      "id": "202003004",
+      "name": "GotoWait",
+      "value": "3000,4000",
+      "type": "ac"
+    },
+    {
+      "id": "202003005",
+      "name": "GotoWait",
+      "value": "3000,5000",
+      "type": "ac"
+    },
+    {
+      "id": "202003006",
+      "name": "GotoWait",
+      "value": "3000,6000",
+      "type": "ac"
+    },
+    {
+      "id": "202010011",
+      "name": "GotoWait",
+      "value": "10000,11000",
+      "type": "ac"
+    },
+    {
+      "id": "202000002",
+      "name": "GotoWait",
+      "value": "500,2000",
+      "type": "ac"
+    },
+    {
+      "id": "2031",
+      "name": "GotoAttack1",
+      "value": "attack1",
+      "type": "ac"
+    },
+    {
+      "id": "2032",
+      "name": "GotoAttack2",
+      "value": "attack2",
+      "type": "ac"
+    },
+    {
+      "id": "2033",
+      "name": "GotoAttack3",
+      "value": "attack3",
+      "type": "ac"
+    },
+    {
+      "id": "2034",
+      "name": "GotoAttack4",
+      "value": "attack4",
+      "type": "ac"
+    },
+    {
+      "id": "2041",
+      "name": "GotoSkill1",
+      "value": "effect1",
+      "type": "ac"
+    },
+    {
+      "id": "2042",
+      "name": "GotoSkill2",
+      "value": "effect2",
+      "type": "ac"
+    },
+    {
+      "id": "2043",
+      "name": "GotoSkill3",
+      "value": "effect3",
+      "type": "ac"
+    },
+    {
+      "id": "2044",
+      "name": "GotoSkill4",
+      "value": "effect4",
+      "type": "ac"
+    },
+    {
+      "id": "2045",
+      "name": "GotoSkill5",
+      "value": "effect5",
+      "type": "ac"
+    },
+    {
+      "id": "2049",
+      "name": "GotoAoyiSkill",
+      "value": "aoyiSkill",
+      "type": "ac"
+    },
+    {
+      "id": "205",
+      "name": "GotoSeek",
+      "value": "0",
+      "type": "ac"
+    },
+    {
+      "id": "206",
+      "name": "GotoNextWithHurt",
+      "value": "0",
+      "type": "ac"
+    },
+    {
+      "id": "2070005",
+      "name": "GotoAway",
+      "value": "500",
+      "type": "ac"
+    },
+    {
+      "id": "207001",
+      "name": "GotoAway",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2070015",
+      "name": "GotoAway",
+      "value": "1500",
+      "type": "ac"
+    },
+    {
+      "id": "207002",
+      "name": "GotoAway",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "207003",
+      "name": "GotoAway",
+      "value": "3000",
+      "type": "ac"
+    },
+    {
+      "id": "2070000007",
+      "name": "GotoAway",
+      "value": "500,750",
+      "type": "ac"
+    },
+    {
+      "id": "207000001",
+      "name": "GotoAway",
+      "value": "500,1000",
+      "type": "ac"
+    },
+    {
+      "id": "20700050012",
+      "name": "GotoAway",
+      "value": "500,1200",
+      "type": "ac"
+    },
+    {
+      "id": "20700070015",
+      "name": "GotoAway",
+      "value": "750,1500",
+      "type": "ac"
+    },
+    {
+      "id": "20700150020",
+      "name": "GotoAway",
+      "value": "1500,2000",
+      "type": "ac"
+    },
+    {
+      "id": "20700100015",
+      "name": "GotoAway",
+      "value": "1000,1500",
+      "type": "ac"
+    },
+    {
+      "id": "207001002",
+      "name": "GotoAway",
+      "value": "1000,2000",
+      "type": "ac"
+    },
+    {
+      "id": "207001003",
+      "name": "GotoAway",
+      "value": "1000,3000",
+      "type": "ac"
+    },
+    {
+      "id": "207002003",
+      "name": "GotoAway",
+      "value": "2000,3000",
+      "type": "ac"
+    },
+    {
+      "id": "207002004",
+      "name": "GotoAway",
+      "value": "2000,4000",
+      "type": "ac"
+    },
+    {
+      "id": "208",
+      "name": "GotoRandAttack",
+      "value": "effect2,effect3",
+      "type": "ac"
+    },
+    {
+      "id": "2091",
+      "name": "GotoAttack1Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "20911",
+      "name": "GotoAttack1Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2092",
+      "name": "GotoAttack2Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "20921",
+      "name": "GotoAttack2Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2093",
+      "name": "GotoAttack3Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "2094",
+      "name": "GotoAttack4Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "2101",
+      "name": "GotoSkill1Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "21011",
+      "name": "GotoSkill1Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2102",
+      "name": "GotoSkill2Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "21021",
+      "name": "GotoSkill2Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2103",
+      "name": "GotoSkill3Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "2104",
+      "name": "GotoSkill4Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "21041",
+      "name": "GotoSkill4Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2105",
+      "name": "GotoSkill5Range",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "21051",
+      "name": "GotoSkill5Range",
+      "value": "1000",
+      "type": "ac"
+    },
+    {
+      "id": "2109",
+      "name": "GotoAoyiSkillRange",
+      "value": "2000",
+      "type": "ac"
+    },
+    {
+      "id": "211",
+      "name": "GotoWalkBack",
+      "type": "ac"
+    },
+    {
+      "id": "211001",
+      "name": "GotoWalkBack",
+      "type": "ac",
+      "value": "1000"
+    },
+    {
+      "id": "2110015",
+      "name": "GotoWalkBack",
+      "type": "ac",
+      "value": "1500"
+    },
+    {
+      "id": "211002",
+      "name": "GotoWalkBack",
+      "type": "ac",
+      "value": "2000"
+    },
+    {
+      "id": "211003",
+      "name": "GotoWalkBack",
+      "type": "ac",
+      "value": "3000"
+    },
+    {
+      "id": "211006",
+      "name": "GotoWalkBack",
+      "type": "ac",
+      "value": "6000"
+    },
+    {
+      "id": "212",
+      "name": "GotoJump",
+      "type": "ac",
+      "value": "1000"
+    },
+    {
+      "id": "213",
+      "name": "GotoFollow",
+      "type": "ac"
+    },
+    {
+      "id": "214",
+      "name": "GotoFollowPath",
+      "type": "ac"
+    },
+    {
+      "id": "2140200",
+      "name": "GotoFollowPath",
+      "type": "ac",
+      "value2": "200"
+    },
+    {
+      "id": "2140300",
+      "name": "GotoFollowPath",
+      "type": "ac",
+      "value2": "300"
+    },
+    {
+      "id": "2150011",
+      "name": "GotoWalkInRectRange",
+      "type": "ac",
+      "value": "580,100,280,390",
+      "value2": "1000,2000"
+    },
+    {
+      "id": "2150012",
+      "name": "GotoWalkInRectRange",
+      "type": "ac",
+      "value": "580,100,280,390",
+      "value2": "2000,4000"
+    },
+    {
+      "id": "2150013",
+      "name": "GotoWalkInRectRange",
+      "type": "ac",
+      "value": "580,100,280,390",
+      "value2": "3000,6000"
+    },
+    {
+      "id": "2150023",
+      "name": "GotoWalkInRectRange",
+      "type": "ac",
+      "value": "580,390,280,100",
+      "value2": "3000,6000"
+    },
+    {
+      "id": "2151011",
+      "name": "GotoWalkInRectRange",
+      "type": "ac",
+      "value": "580,250,280,290",
+      "value2": "1000,2000"
+    },
+    {
+      "id": "216270",
+      "name": "GotoOutByAngle",
+      "type": "ac",
+      "value": "270"
+    },
+    {
+      "id": "500001",
+      "name": "GetChildNum",
+      "type": "con",
+      "value": "0,1"
+    },
+    {
+      "id": "500203",
+      "name": "GetChildNum",
+      "type": "con",
+      "value": "2,3"
+    },
+    {
+      "id": "500002",
+      "name": "GetChildNum",
+      "type": "con",
+      "value": "0,2"
+    },
+    {
+      "id": "500304",
+      "name": "GetChildNum",
+      "type": "con",
+      "value": "3,4"
+    }
+  ]
+}

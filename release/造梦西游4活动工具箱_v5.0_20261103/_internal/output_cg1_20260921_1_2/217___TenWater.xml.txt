@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <water>1;2;3;4</water>
+    <num>6;6;9;7</num>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <water>1;2;3;4</water>
+    <num>6;7;9;6</num>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <water>1;2;3;4</water>
+    <num>6;8;9;5</num>
+  </RECORD>
+</RECORDS>

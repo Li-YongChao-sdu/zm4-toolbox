@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>5000000</id>
+    <rewardId>4189;4190;4191</rewardId>
+    <myDevote>90</myDevote>
+    <drumAgainPointTicket>100</drumAgainPointTicket>
+    <forwardNum>180;360</forwardNum>
+    <buffRewardId>32007;42007;72007</buffRewardId>
+  </RECORD>
+  <RECORD>
+    <id>20000000</id>
+    <rewardId>4192;4193;4194</rewardId>
+    <myDevote>360</myDevote>
+    <drumAgainPointTicket>100</drumAgainPointTicket>
+    <forwardNum>180;360</forwardNum>
+    <buffRewardId>32007;42007;72007</buffRewardId>
+  </RECORD>
+  <RECORD>
+    <id>45000000</id>
+    <rewardId>4195;4196;4197</rewardId>
+    <myDevote>810</myDevote>
+    <drumAgainPointTicket>100</drumAgainPointTicket>
+    <forwardNum>180;360</forwardNum>
+    <buffRewardId>32007;42007;72007</buffRewardId>
+  </RECORD>
+  <RECORD>
+    <id>70000000</id>
+    <rewardId>4198;4199;4200</rewardId>
+    <myDevote>1260</myDevote>
+    <drumAgainPointTicket>100</drumAgainPointTicket>
+    <forwardNum>180;360</forwardNum>
+    <buffRewardId>32007;42007;72007</buffRewardId>
+  </RECORD>
+  <RECORD>
+    <id>100000000</id>
+    <rewardId>4201;4202;4203</rewardId>
+    <myDevote>1800</myDevote>
+    <drumAgainPointTicket>100</drumAgainPointTicket>
+    <forwardNum>180;360</forwardNum>
+    <buffRewardId>32007;42007;72007</buffRewardId>
+  </RECORD>
+</RECORDS>

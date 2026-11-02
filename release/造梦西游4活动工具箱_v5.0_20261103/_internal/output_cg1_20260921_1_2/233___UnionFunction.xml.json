@@ -1,0 +1,14 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "unionLevel": "1",
+      "startFunction": "lianmengfuli"
+    },
+    {
+      "id": "2",
+      "unionLevel": "1",
+      "startFunction": "lianmenggongxian"
+    }
+  ]
+}

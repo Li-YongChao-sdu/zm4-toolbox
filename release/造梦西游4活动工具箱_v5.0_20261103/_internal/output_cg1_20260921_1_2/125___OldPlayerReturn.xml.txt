@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <offlineTime>30</offlineTime>
+    <activityTime>7</activityTime>
+    <buffSceneId>20028;32051;42050;72055</buffSceneId>
+    <returnScore>0;30;80;200</returnScore>
+    <rewardId>51161;51157;51158;51159</rewardId>
+    <mallId>60001</mallId>
+    <mallIds>50001;50002;50003;50004;50005;50006;50007;50008;50009;50010;50011;60001</mallIds>
+  </RECORD>
+</RECORDS>

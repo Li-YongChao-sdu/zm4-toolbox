@@ -1,0 +1,11 @@
+{
+  "RECORD": {
+    "id": "1",
+    "dungeonId": "2135",
+    "score": "170;200;230;270;300;999",
+    "xinYuanBi": "19;20;21;22;23;24",
+    "activityId": "1140",
+    "buffScore": "270",
+    "buffSceneId": "42051"
+  }
+}

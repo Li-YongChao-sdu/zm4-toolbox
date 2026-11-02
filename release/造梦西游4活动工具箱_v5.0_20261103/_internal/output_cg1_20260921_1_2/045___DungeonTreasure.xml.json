@@ -1,0 +1,30 @@
+{
+  "RECORD": [
+    {
+      "id": "2127",
+      "dungeonId": "2126",
+      "activityId": "1081",
+      "resetType": "2",
+      "resetNum": "1",
+      "rewardId": "51163",
+      "tip": "本周剩余奖励次数：num次",
+      "roleLevel": "80",
+      "openDungeonId": "46",
+      "challengeAgainPointTicket": "400",
+      "emptyBagNum": "3"
+    },
+    {
+      "id": "2173",
+      "dungeonId": "2173",
+      "activityId": "1390",
+      "resetType": "2",
+      "resetNum": "5",
+      "rewardId": "52255",
+      "tip": "本周剩余奖励次数：num次",
+      "roleLevel": "30",
+      "openDungeonId": "46",
+      "challengeAgainPointTicket": "200",
+      "emptyBagNum": "2"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <pushNum>1</pushNum>
+    <titleId>1001;1002;1003;1004</titleId>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <pushNum>2</pushNum>
+    <titleId>2001;2002;2003;2004;2005;2006;2007;2008;2009</titleId>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <pushNum>3</pushNum>
+    <titleId>3001;3002;3003;3004;3005;3006;3007;3008;3009;3010;3011;3012</titleId>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <pushNum>3</pushNum>
+    <titleId>4001;4002;4003;4004;4005;4006</titleId>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <pushNum>1</pushNum>
+    <titleId>5001;5002;5003;5004;5005</titleId>
+  </RECORD>
+</RECORDS>

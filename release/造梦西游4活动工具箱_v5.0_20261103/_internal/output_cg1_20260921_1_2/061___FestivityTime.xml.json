@@ -1,0 +1,468 @@
+{
+  "RECORD": [
+    {
+      "id": "1008",
+      "openTime": "478",
+      "isCycle": "0",
+      "openTimeDescribe": "春节期间开放",
+      "describe": "可捕抓新型坐骑草泥马",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2001",
+      "openTime": "4",
+      "isCycle": "0",
+      "openTimeDescribe": "长期开放",
+      "describe": "获得坐骑装备",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2007",
+      "openTime": "8",
+      "isCycle": "0",
+      "openTimeDescribe": "长期开放",
+      "describe": "获得被动技能丹药",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2026",
+      "openTime": "22",
+      "isCycle": "0",
+      "openTimeDescribe": "长期开放",
+      "describe": "获得坐骑装备",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2029",
+      "openTime": "159",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "七夕副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2033",
+      "openTime": "440",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "广寒宫副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2034",
+      "openTime": "37",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "守卫须弥山副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2035",
+      "openTime": "44",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "万圣节",
+      "continueTime": "86400"
+    },
+    {
+      "id": "6001",
+      "openTime": "53",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "罗汉堂",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2044",
+      "openTime": "57",
+      "isCycle": "0",
+      "openTimeDescribe": "长期开放",
+      "describe": "获得坐骑装备",
+      "continueTime": "86400"
+    },
+    {
+      "id": "1014",
+      "openTime": "67",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "圣诞活动",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2050",
+      "openTime": "101",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "简单刑天",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2051",
+      "openTime": "101",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "噩梦刑天",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2052",
+      "openTime": "120",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "五一副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2053",
+      "openTime": "2026766",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "挑战威廉锁-暑假",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2089",
+      "openTime": "2026768",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "挑战威廉-暑假",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2054",
+      "openTime": "154",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "四象",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2055",
+      "openTime": "160",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "七夕副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2056",
+      "openTime": "167",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "拜师观音",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2057",
+      "openTime": "441",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "广寒宫副本2",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2058",
+      "openTime": "210",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁铜礼包",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2059",
+      "openTime": "211",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁银礼包",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2060",
+      "openTime": "212",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁金礼包",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2061",
+      "openTime": "217",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "年兽副本-简单",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2062",
+      "openTime": "218",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "年兽副本-困难",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2085",
+      "openTime": "819",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "年兽副本-地狱",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2063",
+      "openTime": "248",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "挑战威廉时光之舟",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2064",
+      "openTime": "250",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2065",
+      "openTime": "251",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2066",
+      "openTime": "252",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2121",
+      "openTime": "1058",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "锁云阁",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2067",
+      "openTime": "314",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "守卫须弥山副本",
+      "continueTime": "86400"
+    },
+    {
+      "id": "1023",
+      "openTime": "428",
+      "isCycle": "0",
+      "openTimeDescribe": "春节期间开放",
+      "describe": "可捕抓新型坐骑烈焰草泥马",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2081",
+      "openTime": "101",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "地狱刑天",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2083",
+      "openTime": "674",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "花园",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2084",
+      "openTime": "675",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "花园",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2086",
+      "openTime": "852",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "造梦玄女",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2087",
+      "openTime": "853",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "造梦玄女",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2091",
+      "openTime": "885",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "黄金战猿副本-简单",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2092",
+      "openTime": "886",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "黄金战猿副本-困难",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2135",
+      "openTime": "1140",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "地藏之愿",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2136",
+      "openTime": "1151",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "浪里个浪",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2138",
+      "openTime": "1179",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "仙境危机",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2139",
+      "openTime": "1179",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "仙境危机",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2140",
+      "openTime": "1427",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "王母试炼-普通",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2141",
+      "openTime": "1427",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "王母试炼-困难",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2174",
+      "openTime": "1427",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "王母试炼-普通",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2175",
+      "openTime": "1427",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "王母试炼-困难",
+      "continueTime": "86400"
+    },
+    {
+      "id": "1191",
+      "openTime": "5110",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "航海寻宝",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2156",
+      "openTime": "1259",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "缉妖令-普通",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2157",
+      "openTime": "1260",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "缉妖令-噩梦",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2161",
+      "openTime": "1439",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "玉兔逐月",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2164",
+      "openTime": "1322",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "缉妖令-普通",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2165",
+      "openTime": "1323",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "缉妖令-噩梦",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2166",
+      "openTime": "1320",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "福果来活动",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2151",
+      "openTime": "1253",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "谷仓鼠患",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2152",
+      "openTime": "1253",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "谷仓鼠患",
+      "continueTime": "86400"
+    },
+    {
+      "id": "2153",
+      "openTime": "1253",
+      "isCycle": "0",
+      "openTimeDescribe": "活动时间开放",
+      "describe": "谷仓鼠患",
+      "continueTime": "86400"
+    }
+  ]
+}

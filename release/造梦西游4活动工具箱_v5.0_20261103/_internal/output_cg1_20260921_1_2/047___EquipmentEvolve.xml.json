@@ -1,0 +1,40 @@
+{
+  "RECORD": [
+    {
+      "id": "215000006",
+      "name": "锦囊",
+      "evolvePropId": "143200013;143200014",
+      "evolvePropNum": "9;1",
+      "evolveEquipmentId": "0",
+      "newEquipmentId": "225000006",
+      "order": "1"
+    },
+    {
+      "id": "225000006",
+      "name": "茱萸香囊",
+      "evolvePropId": "143200013;143200014",
+      "evolvePropNum": "9;1",
+      "evolveEquipmentId": "215000006",
+      "newEquipmentId": "235000009",
+      "order": "2"
+    },
+    {
+      "id": "235000009",
+      "name": "金丝茱萸香囊",
+      "evolvePropId": "143200013;143200014",
+      "evolvePropNum": "9;1",
+      "evolveEquipmentId": "215000006",
+      "newEquipmentId": "245000012",
+      "order": "3"
+    },
+    {
+      "id": "245000012",
+      "name": "锦绣茱萸香囊",
+      "evolvePropId": "143200013;143200014",
+      "evolvePropNum": "9;1",
+      "evolveEquipmentId": "215000006",
+      "newEquipmentId": "265000013",
+      "order": "4"
+    }
+  ]
+}

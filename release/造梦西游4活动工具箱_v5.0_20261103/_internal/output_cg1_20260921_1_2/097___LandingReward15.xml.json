@@ -1,0 +1,244 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "levelType": "1",
+      "day": "1",
+      "type": "item",
+      "subType": "196000004",
+      "count": "1"
+    },
+    {
+      "id": "2",
+      "levelType": "1",
+      "day": "2",
+      "type": "item",
+      "subType": "172300001",
+      "count": "10"
+    },
+    {
+      "id": "3",
+      "levelType": "1",
+      "day": "3",
+      "type": "item",
+      "subType": "106000001",
+      "count": "1"
+    },
+    {
+      "id": "4",
+      "levelType": "1",
+      "day": "4",
+      "type": "item",
+      "subType": "196000005",
+      "count": "1"
+    },
+    {
+      "id": "5",
+      "levelType": "1",
+      "day": "5",
+      "type": "item",
+      "subType": "197100006",
+      "count": "1"
+    },
+    {
+      "id": "6",
+      "levelType": "1",
+      "day": "6",
+      "type": "item",
+      "subType": "150100001",
+      "count": "1"
+    },
+    {
+      "id": "7",
+      "levelType": "1",
+      "day": "7",
+      "type": "item",
+      "subType": "157100001",
+      "count": "1"
+    },
+    {
+      "id": "8",
+      "levelType": "1",
+      "day": "8",
+      "type": "item",
+      "subType": "196000005",
+      "count": "1"
+    },
+    {
+      "id": "9",
+      "levelType": "1",
+      "day": "9",
+      "type": "item",
+      "subType": "106100002",
+      "count": "1"
+    },
+    {
+      "id": "10",
+      "levelType": "1",
+      "day": "10",
+      "type": "item",
+      "subType": "145300001",
+      "count": "1"
+    },
+    {
+      "id": "11",
+      "levelType": "1",
+      "day": "11",
+      "type": "item",
+      "subType": "150100001",
+      "count": "1"
+    },
+    {
+      "id": "12",
+      "levelType": "1",
+      "day": "12",
+      "type": "item",
+      "subType": "196000005",
+      "count": "1"
+    },
+    {
+      "id": "13",
+      "levelType": "1",
+      "day": "13",
+      "type": "item",
+      "subType": "172300001",
+      "count": "10"
+    },
+    {
+      "id": "14",
+      "levelType": "1",
+      "day": "14",
+      "type": "item",
+      "subType": "106100002",
+      "count": "1"
+    },
+    {
+      "id": "15",
+      "levelType": "1",
+      "day": "15",
+      "type": "item",
+      "subType": "197200005",
+      "count": "1"
+    },
+    {
+      "id": "16",
+      "levelType": "2",
+      "day": "1",
+      "type": "item",
+      "subType": "197100006",
+      "count": "1"
+    },
+    {
+      "id": "17",
+      "levelType": "2",
+      "day": "2",
+      "type": "item",
+      "subType": "165100001",
+      "count": "3"
+    },
+    {
+      "id": "18",
+      "levelType": "2",
+      "day": "3",
+      "type": "item",
+      "subType": "172300001",
+      "count": "20"
+    },
+    {
+      "id": "19",
+      "levelType": "2",
+      "day": "4",
+      "type": "item",
+      "subType": "106200003",
+      "count": "1"
+    },
+    {
+      "id": "20",
+      "levelType": "2",
+      "day": "5",
+      "type": "item",
+      "subType": "150200003",
+      "count": "1"
+    },
+    {
+      "id": "21",
+      "levelType": "2",
+      "day": "6",
+      "type": "item",
+      "subType": "165100001",
+      "count": "3"
+    },
+    {
+      "id": "22",
+      "levelType": "2",
+      "day": "7",
+      "type": "item",
+      "subType": "197200005",
+      "count": "1"
+    },
+    {
+      "id": "23",
+      "levelType": "2",
+      "day": "8",
+      "type": "item",
+      "subType": "145300001",
+      "count": "3"
+    },
+    {
+      "id": "24",
+      "levelType": "2",
+      "day": "9",
+      "type": "item",
+      "subType": "150100001",
+      "count": "2"
+    },
+    {
+      "id": "25",
+      "levelType": "2",
+      "day": "10",
+      "type": "item",
+      "subType": "196200001",
+      "count": "1"
+    },
+    {
+      "id": "26",
+      "levelType": "2",
+      "day": "11",
+      "type": "item",
+      "subType": "172300001",
+      "count": "20"
+    },
+    {
+      "id": "27",
+      "levelType": "2",
+      "day": "12",
+      "type": "item",
+      "subType": "150200003",
+      "count": "1"
+    },
+    {
+      "id": "28",
+      "levelType": "2",
+      "day": "13",
+      "type": "item",
+      "subType": "166200001",
+      "count": "3"
+    },
+    {
+      "id": "29",
+      "levelType": "2",
+      "day": "14",
+      "type": "item",
+      "subType": "172300001",
+      "count": "20"
+    },
+    {
+      "id": "30",
+      "levelType": "2",
+      "day": "15",
+      "type": "item",
+      "subType": "196200001",
+      "count": "1"
+    }
+  ]
+}

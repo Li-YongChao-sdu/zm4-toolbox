@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <roleConditions>1</roleConditions>
+    <wardRobeArmor>341010701</wardRobeArmor>
+    <wardRobeWeapon>342010701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+  <RECORD>
+    <roleConditions>2</roleConditions>
+    <wardRobeArmor>341020701</wardRobeArmor>
+    <wardRobeWeapon>342020701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+  <RECORD>
+    <roleConditions>3</roleConditions>
+    <wardRobeArmor>341030701</wardRobeArmor>
+    <wardRobeWeapon>342030701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+  <RECORD>
+    <roleConditions>4</roleConditions>
+    <wardRobeArmor>341040701</wardRobeArmor>
+    <wardRobeWeapon>342040701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+  <RECORD>
+    <roleConditions>5</roleConditions>
+    <wardRobeArmor>341050701</wardRobeArmor>
+    <wardRobeWeapon>342050701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+  <RECORD>
+    <roleConditions>6</roleConditions>
+    <wardRobeArmor>341060701</wardRobeArmor>
+    <wardRobeWeapon>342060701</wardRobeWeapon>
+    <buffid>19007002;23002702</buffid>
+  </RECORD>
+</RECORDS>

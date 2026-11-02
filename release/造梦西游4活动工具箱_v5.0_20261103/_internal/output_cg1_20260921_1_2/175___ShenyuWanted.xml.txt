@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <freeRefresh>1001</freeRefresh>
+    <ticketRefresh>1002</ticketRefresh>
+    <ticket>400</ticket>
+    <weekNum>5</weekNum>
+    <showNum>3</showNum>
+    <shenyuRefreshTicket>200</shenyuRefreshTicket>
+    <dailyMax>50</dailyMax>
+  </RECORD>
+</RECORDS>

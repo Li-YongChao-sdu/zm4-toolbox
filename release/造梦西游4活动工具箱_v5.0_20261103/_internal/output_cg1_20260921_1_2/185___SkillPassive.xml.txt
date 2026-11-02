@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>10001</id>
+    <name>热血</name>
+    <attributeType>hpMax</attributeType>
+    <describe>生命上限增加</describe>
+    <ResourcesId>10001</ResourcesId>
+  </RECORD>
+  <RECORD>
+    <id>10002</id>
+    <name>魔泉</name>
+    <attributeType>mpMax</attributeType>
+    <describe>魔法上限增加</describe>
+    <ResourcesId>10002</ResourcesId>
+  </RECORD>
+  <RECORD>
+    <id>10003</id>
+    <name>狂暴</name>
+    <attributeType>critical</attributeType>
+    <describe>暴击率增加%</describe>
+    <ResourcesId>10003</ResourcesId>
+  </RECORD>
+  <RECORD>
+    <id>10004</id>
+    <name>光之永恒</name>
+    <attributeType>reHP</attributeType>
+    <describe>每秒回血增加</describe>
+    <ResourcesId>10004</ResourcesId>
+  </RECORD>
+  <RECORD>
+    <id>10005</id>
+    <name>月之辉煌</name>
+    <attributeType>reMP</attributeType>
+    <describe>每秒回魔增加</describe>
+    <ResourcesId>10005</ResourcesId>
+  </RECORD>
+</RECORDS>

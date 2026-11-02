@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2003</id>
+    <difficult>1;2;3;4;5;6;7;8;9;10;11;12</difficult>
+    <roleLevel>20;26;32;38;44;50;56;62;68;74;80;86</roleLevel>
+  </RECORD>
+  <RECORD>
+    <id>2020</id>
+    <difficult>1;2;3;4;5;6;7;8;9;10;11;12</difficult>
+    <roleLevel>20;26;32;38;44;50;56;62;68;74;80;86</roleLevel>
+  </RECORD>
+  <RECORD>
+    <id>2046</id>
+    <difficult>1;2;3;4;5;6;7;8;9;10;11;12</difficult>
+    <roleLevel>20;26;32;38;44;50;56;62;68;74;80;86</roleLevel>
+  </RECORD>
+  <RECORD>
+    <id>2056</id>
+    <difficult>1</difficult>
+    <roleLevel>20</roleLevel>
+  </RECORD>
+</RECORDS>

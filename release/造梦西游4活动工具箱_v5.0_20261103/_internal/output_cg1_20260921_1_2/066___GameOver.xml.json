@@ -1,0 +1,79 @@
+{
+  "RECORD": [
+    {
+      "id": "0",
+      "score": "0",
+      "time": "3;-1",
+      "status": "0;10",
+      "totalScore": "0;1",
+      "fuScore": "0;19",
+      "xinyuanScore": "0;149",
+      "summerSurfingScore": "0;2999",
+      "pantaoScore": "0;4",
+      "gucangScore": "0;30",
+      "zhuyueScore": "0;1200",
+      "putishuScore": "0;199",
+      "zhuxieScore": "0;199"
+    },
+    {
+      "id": "1",
+      "score": "1",
+      "time": "1.5;3",
+      "status": "10;30",
+      "totalScore": "2;3",
+      "fuScore": "20;39",
+      "xinyuanScore": "150;179",
+      "summerSurfingScore": "3000;4999",
+      "pantaoScore": "5;9",
+      "gucangScore": "31;60",
+      "zhuyueScore": "1201;2400",
+      "putishuScore": "200;319",
+      "zhuxieScore": "200;319"
+    },
+    {
+      "id": "2",
+      "score": "2",
+      "time": "0.75;1.5",
+      "status": "30;70",
+      "totalScore": "4;4",
+      "fuScore": "40;59",
+      "xinyuanScore": "180;229",
+      "summerSurfingScore": "5000;6999",
+      "pantaoScore": "10;12",
+      "gucangScore": "61;90",
+      "zhuyueScore": "2401;3200",
+      "putishuScore": "320;449",
+      "zhuxieScore": "320;449"
+    },
+    {
+      "id": "3",
+      "score": "3",
+      "time": "0.375;0.75",
+      "status": "70;90",
+      "totalScore": "5;6",
+      "fuScore": "60;79",
+      "xinyuanScore": "230;269",
+      "summerSurfingScore": "7000;8499",
+      "pantaoScore": "13;15",
+      "gucangScore": "91;120",
+      "zhuyueScore": "3200;4100",
+      "putishuScore": "450;599",
+      "zhuxieScore": "450;999"
+    },
+    {
+      "id": "4",
+      "score": "4",
+      "time": "0;0.375",
+      "status": "90;100",
+      "totalScore": "7;8",
+      "fuScore": "80;999",
+      "xinyuanScore": "270;9999",
+      "summerSurfingScore": "8500;999999",
+      "pantaoScore": "16;9999",
+      "gucangScore": "121;9999",
+      "zhuyueScore": "4101;9999",
+      "putishuScore": "600;9999",
+      "zhuxieScore": "1000;99999"
+    }
+  ]
+}

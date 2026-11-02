@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>夏季15天签到奖励</name>
+    <open_ticket>2399</open_ticket>
+    <open_itemId>197200005;106100002;165100001;199200031</open_itemId>
+    <open_count>1;1;3;1</open_count>
+    <tips>解锁15天登录高级奖励
+额外赠送</tips>
+    <tips2>确定花费num点券解锁15天登录高级奖励吗？</tips2>
+    <continueTime>25</continueTime>
+    <bgFrame>1</bgFrame>
+    <activityId>261282</activityId>
+    <day>15</day>
+  </RECORD>
+</RECORDS>

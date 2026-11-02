@@ -1,0 +1,16 @@
+{
+  "RECORD": {
+    "id": "1",
+    "hpNum": "3",
+    "weekNum": "3",
+    "startPageNum": "9",
+    "endPageNum": "15",
+    "floorsMax": "3",
+    "endDunId": "51101",
+    "colNum": "4",
+    "tip": "小怪;精英;篝火;不明事件;关底BOSS;商店;文本;最终BOSS;追随宠物",
+    "resetTime": "300",
+    "randomNum": "3",
+    "initialize": "1024,1"
+  }
+}

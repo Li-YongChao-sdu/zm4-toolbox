@@ -1,0 +1,20 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "activityId": "1420",
+      "activityTime": "29",
+      "dailyTime": "1",
+      "buffId": "32064;42052;72056",
+      "icon": "60101.png;60102.png;60103.png;60104.png;60105.png;60106.png;60107.png"
+    },
+    {
+      "id": "2",
+      "activityId": "1406",
+      "activityTime": "29",
+      "dailyTime": "1",
+      "buffId": "32064;42052;72056",
+      "icon": "60101.png;60102.png;60103.png;60104.png;60105.png;60106.png;60107.png"
+    }
+  ]
+}

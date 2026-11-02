@@ -1,0 +1,188 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "horseId": "1000800",
+      "openProbability": "0.6;0.2;0.1;0;0",
+      "hpQualification": "320;520",
+      "atkQualification": "430;730",
+      "defQualification": "330;550"
+    },
+    {
+      "id": "2",
+      "horseId": "1000900",
+      "openProbability": "0.6;0.2;0.1;0;0",
+      "hpQualification": "620;830",
+      "atkQualification": "650;870",
+      "defQualification": "550;740"
+    },
+    {
+      "id": "3",
+      "horseId": "1001000",
+      "openProbability": "0.6;0.2;0.1;0;0",
+      "hpQualification": "320;430",
+      "atkQualification": "620;750",
+      "defQualification": "320;430"
+    },
+    {
+      "id": "4",
+      "horseId": "1000500",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "450;610",
+      "atkQualification": "450;610",
+      "defQualification": "450;610"
+    },
+    {
+      "id": "5",
+      "horseId": "1001100",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "800;960",
+      "atkQualification": "660;800",
+      "defQualification": "770;930"
+    },
+    {
+      "id": "6",
+      "horseId": "1001200",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "480;680",
+      "atkQualification": "590;830",
+      "defQualification": "510;720"
+    },
+    {
+      "id": "7",
+      "horseId": "1001300",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "670;1000",
+      "atkQualification": "440;700",
+      "defQualification": "520;800"
+    },
+    {
+      "id": "8",
+      "horseId": "1000600",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "410;670",
+      "atkQualification": "410;670",
+      "defQualification": "410;670"
+    },
+    {
+      "id": "9",
+      "horseId": "1001400",
+      "openProbability": "0.6;0.2;0;0;0",
+      "hpQualification": "690;930",
+      "atkQualification": "690;930",
+      "defQualification": "690;930"
+    },
+    {
+      "id": "10",
+      "horseId": "1001500",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "670;900",
+      "atkQualification": "770;1030",
+      "defQualification": "660;880"
+    },
+    {
+      "id": "11",
+      "horseId": "1001700",
+      "openProbability": "0.6;0.2;0.1;0;0",
+      "hpQualification": "660;880",
+      "atkQualification": "770;1030",
+      "defQualification": "670;900"
+    },
+    {
+      "id": "12",
+      "horseId": "1001800",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "790;1060",
+      "atkQualification": "780;1040",
+      "defQualification": "760;1020"
+    },
+    {
+      "id": "13",
+      "horseId": "1001900",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "740;990",
+      "atkQualification": "810;1090",
+      "defQualification": "780;1040"
+    },
+    {
+      "id": "14",
+      "horseId": "1002000",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "750;1010",
+      "atkQualification": "850;1140",
+      "defQualification": "720;970"
+    },
+    {
+      "id": "15",
+      "horseId": "1002100",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "690;930",
+      "atkQualification": "730;980",
+      "defQualification": "690;930"
+    },
+    {
+      "id": "16",
+      "horseId": "1002200",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "690;930",
+      "atkQualification": "730;980",
+      "defQualification": "690;930"
+    },
+    {
+      "id": "17",
+      "horseId": "1002300",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "850;930",
+      "atkQualification": "850;980",
+      "defQualification": "760;930"
+    },
+    {
+      "id": "18",
+      "horseId": "1002500",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "850;930",
+      "atkQualification": "850;980",
+      "defQualification": "760;930"
+    },
+    {
+      "id": "19",
+      "horseId": "1003200",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "690;930",
+      "atkQualification": "730;980",
+      "defQualification": "660;890"
+    },
+    {
+      "id": "20",
+      "horseId": "1004100",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "840;920",
+      "atkQualification": "900;1000",
+      "defQualification": "780;940"
+    },
+    {
+      "id": "21",
+      "horseId": "1004600",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "850;1140",
+      "atkQualification": "920;1230",
+      "defQualification": "780;940"
+    },
+    {
+      "id": "22",
+      "horseId": "1005200",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "800;1070",
+      "atkQualification": "970;1300",
+      "defQualification": "780;1040"
+    },
+    {
+      "id": "23",
+      "horseId": "1005400",
+      "openProbability": "0.6;0.2;0.1;0.05;0",
+      "hpQualification": "800;1070",
+      "atkQualification": "970;1300",
+      "defQualification": "780;1040"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "RECORD": [
+    {
+      "id": "730000001",
+      "name": "绝仙阵",
+      "part": "sword",
+      "classType": "Jue",
+      "quality": "3",
+      "reHP": "0",
+      "reMP": "0",
+      "effect1": "9000200",
+      "describe": "遁迹潜形：使角色隐身10秒，令敌人无法看清他的所在和动作",
+      "resourceId": "2729"
+    },
+    {
+      "id": "730000002",
+      "name": "戮仙阵",
+      "part": "sword",
+      "classType": "Lu",
+      "quality": "3",
+      "reHP": "0",
+      "reMP": "0",
+      "effect1": "9000100",
+      "describe": "屠戮四方：对敌人造成伤害并附加消亡诅咒",
+      "resourceId": "2730"
+    },
+    {
+      "id": "730000003",
+      "name": "陷仙阵",
+      "part": "sword",
+      "classType": "Xian",
+      "quality": "3",
+      "reHP": "0",
+      "reMP": "0",
+      "effect1": "9000300",
+      "describe": "凌空一击：竖剑下砸，对碰到的目标造成伤害并禁止回血",
+      "resourceId": "2731"
+    },
+    {
+      "id": "730000004",
+      "name": "诛仙阵",
+      "part": "sword",
+      "classType": "Zhu",
+      "quality": "3",
+      "reHP": "0",
+      "reMP": "0",
+      "effect1": "9000400",
+      "describe": "横扫四方：积蓄能量后大范围横扫四周",
+      "resourceId": "2732"
+    },
+    {
+      "id": "730000005",
+      "name": "四剑归一",
+      "part": "sword",
+      "classType": "SiJian",
+      "quality": "4",
+      "reHP": "1;2",
+      "reMP": "0",
+      "effect1": "9000500",
+      "describe": "诛仙剑阵:剑影虚化为剑阵，对阵内敌人造成伤害使其沉默和减速",
+      "resourceId": "2747"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "RECORD": [
+    {
+      "id": "1001",
+      "describe": "解决突发事件1次（循环任务）",
+      "type": "1",
+      "target": "-1",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "2001",
+      "describe": "总产速达到\n20个每分钟",
+      "type": "2",
+      "target": "20",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "2002",
+      "describe": "总产速达到\n80个每分钟",
+      "type": "2",
+      "target": "80",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "2003",
+      "describe": "总产速达到\n380个每分钟",
+      "type": "2",
+      "target": "380",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "2004",
+      "describe": "总产速达到\n2900个每分钟",
+      "type": "2",
+      "target": "2900",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "2005",
+      "describe": "总产速达到\n1.5万个每分钟",
+      "type": "2",
+      "target": "15000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "2006",
+      "describe": "总产速达到\n4.6万个每分钟",
+      "type": "2",
+      "target": "46000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "2007",
+      "describe": "总产速达到\n10万个每分钟",
+      "type": "2",
+      "target": "100000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "2008",
+      "describe": "总产速达到\n13万个每分钟",
+      "type": "2",
+      "target": "130000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "2009",
+      "describe": "总产速达到\n21万个每分钟",
+      "type": "2",
+      "target": "210000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "2010",
+      "describe": "总产速达到\n31万个每分钟",
+      "type": "2",
+      "target": "310000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "2011",
+      "describe": "总产速达到\n57万个每分钟",
+      "type": "2",
+      "target": "570000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "3001",
+      "describe": "累计产量达到\n2.1万个仙桃",
+      "type": "3",
+      "target": "21000",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "3002",
+      "describe": "累计产量达到\n11万个仙桃",
+      "type": "3",
+      "target": "110000",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "3003",
+      "describe": "累计产量达到\n78万个仙桃",
+      "type": "3",
+      "target": "780000",
+      "getScore": "200",
+      "buffId": "-1"
+    },
+    {
+      "id": "3004",
+      "describe": "累计产量达到\n600万个仙桃",
+      "type": "3",
+      "target": "6000000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "3005",
+      "describe": "累计产量达到\n3300万个仙桃",
+      "type": "3",
+      "target": "33000000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "3006",
+      "describe": "累计产量达到\n12000万个仙桃",
+      "type": "3",
+      "target": "120000000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "3007",
+      "describe": "累计产量达到\n24000万个仙桃",
+      "type": "3",
+      "target": "240000000",
+      "getScore": "300",
+      "buffId": "-1"
+    },
+    {
+      "id": "3008",
+      "describe": "累计产量达到\n39000万个仙桃",
+      "type": "3",
+      "target": "390000000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "3009",
+      "describe": "累计产量达到\n63000万个仙桃",
+      "type": "3",
+      "target": "630000000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "3010",
+      "describe": "累计产量达到\n130000万个仙桃",
+      "type": "3",
+      "target": "1300000000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "3011",
+      "describe": "累计产量达到\n230000万个仙桃",
+      "type": "3",
+      "target": "2300000000",
+      "getScore": "400",
+      "buffId": "-1"
+    },
+    {
+      "id": "1000",
+      "describe": "每日buff",
+      "type": "0",
+      "target": "-1",
+      "getScore": "-1",
+      "buffId": "20031,51028;20032,51029;20033,51030;20034,51031"
+    }
+  ]
+}

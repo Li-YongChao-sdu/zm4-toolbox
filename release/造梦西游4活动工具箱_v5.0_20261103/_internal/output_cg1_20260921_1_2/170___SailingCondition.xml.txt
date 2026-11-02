@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <ID>1</ID>
+    <CombineID>1</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>2</ID>
+    <CombineID>2</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>3</ID>
+    <CombineID>3</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>4</ID>
+    <CombineID>4</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>5</ID>
+    <CombineID>5</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>6</ID>
+    <CombineID>6</CombineID>
+  </RECORD>
+  <RECORD>
+    <ID>7</ID>
+    <CombineID>7</CombineID>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,4072 @@
+{
+  "RECORD": [
+    {
+      "id": "1126",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2126",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1326",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2326",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1526",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2526",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1127",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2127",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1327",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2327",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1527",
+      "taskId": "10001",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "1"
+    },
+    {
+      "id": "2527",
+      "taskId": "10002;10003",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "2"
+    },
+    {
+      "id": "1128",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2128",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1328",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2328",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1528",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2528",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1129",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2129",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1329",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2329",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1529",
+      "taskId": "10001;10017;10018;10009",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2529",
+      "taskId": "10002;10003;10017;10018;10009",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1130",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2130",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1330",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2330",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1530",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2530",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1131",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2131",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1331",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2331",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1531",
+      "taskId": "10001;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2531",
+      "taskId": "10002;10003;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1132",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2132",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1332",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2332",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1532",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2532",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1133",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2133",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1333",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2333",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1533",
+      "taskId": "10004;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2533",
+      "taskId": "10005;10006;10009;10017;10018;10028",
+      "specialTaskId": "10032",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1134",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2134",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1334",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2334",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1534",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2534",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1135",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2135",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1335",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2335",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1535",
+      "taskId": "10004;10012;10020;10021;10028",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2535",
+      "taskId": "10005;10006;10012;10020;10021;10028",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1136",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2136",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1336",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2336",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1536",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2536",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1137",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2137",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1337",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2337",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1537",
+      "taskId": "10004;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2537",
+      "taskId": "10005;10006;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1138",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2138",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1338",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2338",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1538",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2538",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1139",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2139",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1339",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2339",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1539",
+      "taskId": "10022;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2539",
+      "taskId": "10023;10024;10012;10020;10021;10029",
+      "specialTaskId": "10033",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1140",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2140",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1340",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2340",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1540",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2540",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1141",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2141",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1341",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2341",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1541",
+      "taskId": "10022;10025;10026;10027;10029",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2541",
+      "taskId": "10023;10024;10025;10026;10027;10029",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1142",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2142",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1342",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2342",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1542",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2542",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1143",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2143",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1343",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2343",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1543",
+      "taskId": "10022;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2543",
+      "taskId": "10023;10024;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1144",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2144",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1344",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2344",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "10031",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1544",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2544",
+      "taskId": "10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1145",
+      "taskId": "10035;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2145",
+      "taskId": "10036;10037;10025;10026;10027;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1345",
+      "taskId": "10035;10025;10026;10027;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2345",
+      "taskId": "10036;10037;10025;10026;10027;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1545",
+      "taskId": "10035;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2545",
+      "taskId": "10036;10037;10025;10026;10027;10030",
+      "specialTaskId": "10034",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1146",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2146",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1346",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2346",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1546",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2546",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1147",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2147",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1347",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2347",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1547",
+      "taskId": "10035;10038;10039;10040;10030",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2547",
+      "taskId": "10036;10037;10038;10039;10040;10030",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1148",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2148",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1348",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2348",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1548",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2548",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1149",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2149",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1349",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2349",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1549",
+      "taskId": "10035;10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2549",
+      "taskId": "10036;10037;10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1150",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2150",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1350",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2350",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "10041",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1550",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2550",
+      "taskId": "10038;10039;10040;10043",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1151",
+      "taskId": "10038;10039;10040;10043;10044",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2151",
+      "taskId": "10038;10039;10040;10043;10045;10046",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1351",
+      "taskId": "10038;10039;10040;10043;10044",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2351",
+      "taskId": "10038;10039;10040;10043;10045;10046",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1551",
+      "taskId": "10038;10039;10040;10043;10044",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2551",
+      "taskId": "10038;10039;10040;10043;10045;10046",
+      "specialTaskId": "10042",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1152",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2152",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1352",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2352",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1552",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2552",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1153",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2153",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1353",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2353",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1553",
+      "taskId": "10047;10048;10049;10043;10044",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2553",
+      "taskId": "10047;10048;10049;10043;10045;10046",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1154",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2154",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1354",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2354",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1554",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2554",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1155",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2155",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1355",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2355",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "10050",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1555",
+      "taskId": "10047;10048;10049;10052;10044",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2555",
+      "taskId": "10047;10048;10049;10052;10045;10046",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1156",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2156",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1356",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2356",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1556",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2556",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1157",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2157",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1357",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2357",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1557",
+      "taskId": "10047;10048;10049;10052;10053",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2557",
+      "taskId": "10047;10048;10049;10052;10054;10055",
+      "specialTaskId": "10051",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1158",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2158",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1358",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2358",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1558",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2558",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1159",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2159",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1359",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2359",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1559",
+      "taskId": "10056;10057;10058;10052;10053",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "2559",
+      "taskId": "10056;10057;10058;10052;10054;10055",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "4"
+    },
+    {
+      "id": "1160",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2160",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1360",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2360",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1560",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2560",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1161",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2161",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1361",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2361",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "10060",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1561",
+      "taskId": "10056;10057;10058;10061;10053",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2561",
+      "taskId": "10056;10057;10058;10061;10054;10055",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1162",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2162",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1362",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2362",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1562",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2562",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1163",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2163",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1363",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2363",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1563",
+      "taskId": "10056;10057;10058;10061;10062",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2563",
+      "taskId": "10056;10057;10058;10061;10063;10064",
+      "specialTaskId": "10059",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1164",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2164",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1364",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2364",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1564",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2564",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1165",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2165",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1365",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2365",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1565",
+      "taskId": "10065;10066;10067;10061;10062",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2565",
+      "taskId": "10065;10066;10067;10061;10063;10064",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1166",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2166",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1366",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2366",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1566",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2566",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1167",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2167",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1367",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2367",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1567",
+      "taskId": "10065;10066;10067;10070;10062",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2567",
+      "taskId": "10065;10066;10067;10070;10063;10064",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1168",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2168",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1368",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2368",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1568",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2568",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1169",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2169",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1369",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2369",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1569",
+      "taskId": "10065;10066;10067;10070;10071",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2569",
+      "taskId": "10065;10066;10067;10070;10072;10073",
+      "specialTaskId": "10068",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1170",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2170",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1370",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2370",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1570",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2570",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1171",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2171",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1371",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2371",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1571",
+      "taskId": "10074;10075;10076;10070;10071",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2571",
+      "taskId": "10074;10075;10076;10070;10072;10073",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1172",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2172",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1372",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2372",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "10069",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1572",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2572",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1173",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2173",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1373",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2373",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1573",
+      "taskId": "10074;10075;10076;10078;10071",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2573",
+      "taskId": "10074;10075;10076;10078;10072;10073",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1174",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2174",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1374",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2374",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1574",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2574",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1175",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2175",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1375",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2375",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1575",
+      "taskId": "10074;10075;10076;10078;10079",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2575",
+      "taskId": "10074;10075;10076;10078;10080;10081",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1176",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2176",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1376",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2376",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1576",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2576",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1177",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2177",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1377",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2377",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1577",
+      "taskId": "10083;10084;10085;10078;10079",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2577",
+      "taskId": "10083;10084;10085;10078;10080;10081",
+      "specialTaskId": "10077",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1178",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2178",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1378",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2378",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1578",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2578",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1179",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2179",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1379",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2379",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "10082",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1579",
+      "taskId": "10083;10084;10085;10087;10079",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2579",
+      "taskId": "10083;10084;10085;10087;10080;10081",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1180",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2180",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1380",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2380",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1580",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2580",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1181",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2181",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1381",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2381",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1581",
+      "taskId": "10083;10084;10085;10087;10088",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2581",
+      "taskId": "10083;10084;10085;10087;10089;10090",
+      "specialTaskId": "10086",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1182",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2182",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1382",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2382",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1582",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2582",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1183",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2183",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1383",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2383",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1583",
+      "taskId": "10092;10093;10094;10087;10088",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2583",
+      "taskId": "10092;10093;10094;10087;10089;10090",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1184",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2184",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1384",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2384",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1584",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2584",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1185",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2185",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1385",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2385",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "10110",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1585",
+      "taskId": "10092;10093;10094;10096;10088",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2585",
+      "taskId": "10092;10093;10094;10096;10089;10090",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1186",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2186",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1386",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2386",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1586",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2586",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1187",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2187",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1387",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2387",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1587",
+      "taskId": "10092;10093;10094;10096;10097",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2587",
+      "taskId": "10092;10093;10094;10096;10098;10099",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1188",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2188",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1388",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2388",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1588",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2588",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1189",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2189",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1389",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2389",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1589",
+      "taskId": "10100;10101;10102;10096;10097",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2589",
+      "taskId": "10100;10101;10102;10096;10098;10099",
+      "specialTaskId": "10095",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1190",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2190",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1390",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2390",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1590",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2590",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1191",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2191",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1391",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2391",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "10117",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1591",
+      "taskId": "10100;10101;10102;10103;10097",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2591",
+      "taskId": "10100;10101;10102;10103;10098;10099",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1192",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2192",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1392",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2392",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1592",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2592",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1193",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2193",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1393",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2393",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1593",
+      "taskId": "10100;10101;10102;10103;10104",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2593",
+      "taskId": "10100;10101;10102;10103;10105;10106",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1194",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2194",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1394",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2394",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1594",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2594",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1195",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2195",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1395",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2395",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1595",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2595",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10111",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1196",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2196",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1396",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2396",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1596",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2596",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1197",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2197",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1397",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2397",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10118",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1597",
+      "taskId": "10107;10108;10109;10103;10104",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2597",
+      "taskId": "10107;10108;10109;10103;10105;10106",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1198",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2198",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1398",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2398",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1598",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2598",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1199",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2199",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1399",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2399",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "1599",
+      "taskId": "10107;10108;10109;10116;10112",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "2599",
+      "taskId": "10107;10108;10109;10116;10113;10114",
+      "specialTaskId": "10115",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11100",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21100",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13100",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23100",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15100",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25100",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11101",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21101",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13101",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23101",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15101",
+      "taskId": "10121;10122;10123;10116;10112",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25101",
+      "taskId": "10121;10122;10123;10116;10113;10114",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11102",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21102",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13102",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23102",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15102",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25102",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11103",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21103",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13103",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23103",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "10119",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15103",
+      "taskId": "10121;10122;10123;10124;10112",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25103",
+      "taskId": "10121;10122;10123;10124;10113;10114",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11104",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21104",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13104",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23104",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15104",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25104",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11105",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21105",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13105",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23105",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15105",
+      "taskId": "10121;10122;10123;10124;10125",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25105",
+      "taskId": "10121;10122;10123;10124;10126;10127",
+      "specialTaskId": "10120",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11106",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21106",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13106",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23106",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15106",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25106",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11107",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21107",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13107",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23107",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15107",
+      "taskId": "10128;10129;10130;10124;10125",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25107",
+      "taskId": "10128;10129;10130;10124;10126;10127",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11108",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21108",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13108",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23108",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15108",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25108",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11109",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21109",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13109",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23109",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "10131",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15109",
+      "taskId": "10128;10129;10130;10133;10125",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25109",
+      "taskId": "10128;10129;10130;10133;10126;10127",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11110",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21110",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13110",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23110",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15110",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25110",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "10132",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11111",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21111",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13111",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23111",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15111",
+      "taskId": "10128;10129;10130;10133;10134",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25111",
+      "taskId": "10128;10129;10130;10133;10135;10136",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11112",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21112",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13112",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23112",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15112",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25112",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11113",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21113",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13113",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23113",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15113",
+      "taskId": "10138;10139;10140;10133;10134",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25113",
+      "taskId": "10138;10139;10140;10133;10135;10136",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11114",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21114",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13114",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23114",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15114",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25114",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11115",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21115",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13115",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23115",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "10137",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15115",
+      "taskId": "10138;10139;10140;10142;10134",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25115",
+      "taskId": "10138;10139;10140;10142;10135;10136",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11116",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21116",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13116",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23116",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15116",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25116",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11117",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21117",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13117",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23117",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15117",
+      "taskId": "10138;10139;10140;10142;10143",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25117",
+      "taskId": "10138;10139;10140;10142;10144;10145",
+      "specialTaskId": "10141",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11118",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21118",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13118",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23118",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15118",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25118",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11119",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21119",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13119",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23119",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15119",
+      "taskId": "10147;10148;10149;10142;10143",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25119",
+      "taskId": "10147;10148;10149;10142;10144;10145",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11120",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21120",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13120",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23120",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15120",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25120",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11121",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21121",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13121",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23121",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "10146",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15121",
+      "taskId": "10147;10148;10149;10151;10143",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25121",
+      "taskId": "10147;10148;10149;10151;10144;10145",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11122",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21122",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13122",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23122",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15122",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25122",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11123",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21123",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13123",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23123",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15123",
+      "taskId": "10147;10148;10149;10151;10152",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25123",
+      "taskId": "10147;10148;10149;10151;10153;10154",
+      "specialTaskId": "10150",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11124",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21124",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13124",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23124",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15124",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25124",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11125",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21125",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13125",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23125",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15125",
+      "taskId": "10156;10157;10158;10151;10152",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25125",
+      "taskId": "10156;10157;10158;10151;10153;10154",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11126",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21126",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13126",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23126",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15126",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25126",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11127",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21127",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13127",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23127",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "10155",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15127",
+      "taskId": "10156;10157;10158;10160;10152",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25127",
+      "taskId": "10156;10157;10158;10160;10153;10154",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11128",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21128",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13128",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23128",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15128",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25128",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11129",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21129",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13129",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23129",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15129",
+      "taskId": "10156;10157;10158;10160;10162",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25129",
+      "taskId": "10156;10157;10158;10160;10163;10164",
+      "specialTaskId": "10159",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11130",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21130",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13130",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23130",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15130",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25130",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11131",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21131",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13131",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23131",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15131",
+      "taskId": "10166;10167;10168;10160;10162",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25131",
+      "taskId": "10166;10167;10168;10160;10163;10164",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11132",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21132",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13132",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23132",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15132",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25132",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11133",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21133",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13133",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23133",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "10165",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15133",
+      "taskId": "10166;10167;10168;10170;10162",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25133",
+      "taskId": "10166;10167;10168;10170;10163;10164",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11134",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21134",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13134",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23134",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15134",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25134",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11135",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21135",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13135",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23135",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15135",
+      "taskId": "10166;10167;10168;10170;10172",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25135",
+      "taskId": "10166;10167;10168;10170;10173;10174",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11136",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21136",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13136",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23136",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15136",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "10179",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25136",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "10179",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11137",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21137",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13137",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23137",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15137",
+      "taskId": "10176;10177;10178;10170;10172",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25137",
+      "taskId": "10176;10177;10178;10170;10173;10174",
+      "specialTaskId": "10169",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "11138",
+      "taskId": "10176;10177;10178;10180;10172",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "21138",
+      "taskId": "10176;10177;10178;10180;10173;10174",
+      "specialTaskId": "-1",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "13138",
+      "taskId": "10176;10177;10178;10180;10172",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "23138",
+      "taskId": "10176;10177;10178;10180;10173;10174",
+      "specialTaskId": "10175",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "15138",
+      "taskId": "10176;10177;10178;10180;10172",
+      "specialTaskId": "10179",
+      "refreshTaskNum": "5"
+    },
+    {
+      "id": "25138",
+      "taskId": "10176;10177;10178;10180;10173;10174",
+      "specialTaskId": "10179",
+      "refreshTaskNum": "5"
+    }
+  ]
+}

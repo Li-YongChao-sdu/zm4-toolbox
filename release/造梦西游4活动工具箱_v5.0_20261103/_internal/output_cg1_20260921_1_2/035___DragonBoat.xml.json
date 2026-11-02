@@ -1,0 +1,44 @@
+{
+  "RECORD": [
+    {
+      "id": "5000000",
+      "rewardId": "4189;4190;4191",
+      "myDevote": "90",
+      "drumAgainPointTicket": "100",
+      "forwardNum": "180;360",
+      "buffRewardId": "32007;42007;72007"
+    },
+    {
+      "id": "20000000",
+      "rewardId": "4192;4193;4194",
+      "myDevote": "360",
+      "drumAgainPointTicket": "100",
+      "forwardNum": "180;360",
+      "buffRewardId": "32007;42007;72007"
+    },
+    {
+      "id": "45000000",
+      "rewardId": "4195;4196;4197",
+      "myDevote": "810",
+      "drumAgainPointTicket": "100",
+      "forwardNum": "180;360",
+      "buffRewardId": "32007;42007;72007"
+    },
+    {
+      "id": "70000000",
+      "rewardId": "4198;4199;4200",
+      "myDevote": "1260",
+      "drumAgainPointTicket": "100",
+      "forwardNum": "180;360",
+      "buffRewardId": "32007;42007;72007"
+    },
+    {
+      "id": "100000000",
+      "rewardId": "4201;4202;4203",
+      "myDevote": "1800",
+      "drumAgainPointTicket": "100",
+      "forwardNum": "180;360",
+      "buffRewardId": "32007;42007;72007"
+    }
+  ]
+}

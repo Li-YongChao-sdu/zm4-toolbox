@@ -1,0 +1,40 @@
+{
+  "RECORD": [
+    {
+      "roleConditions": "1",
+      "wardRobeArmor": "341010701",
+      "wardRobeWeapon": "342010701",
+      "buffid": "19007002;23002702"
+    },
+    {
+      "roleConditions": "2",
+      "wardRobeArmor": "341020701",
+      "wardRobeWeapon": "342020701",
+      "buffid": "19007002;23002702"
+    },
+    {
+      "roleConditions": "3",
+      "wardRobeArmor": "341030701",
+      "wardRobeWeapon": "342030701",
+      "buffid": "19007002;23002702"
+    },
+    {
+      "roleConditions": "4",
+      "wardRobeArmor": "341040701",
+      "wardRobeWeapon": "342040701",
+      "buffid": "19007002;23002702"
+    },
+    {
+      "roleConditions": "5",
+      "wardRobeArmor": "341050701",
+      "wardRobeWeapon": "342050701",
+      "buffid": "19007002;23002702"
+    },
+    {
+      "roleConditions": "6",
+      "wardRobeArmor": "341060701",
+      "wardRobeWeapon": "342060701",
+      "buffid": "19007002;23002702"
+    }
+  ]
+}

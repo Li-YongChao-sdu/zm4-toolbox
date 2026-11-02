@@ -16,9 +16,13 @@ account*.json
 account.local.json
 config_review_*/
 
-# 打包与发布产物
+# 打包与发布产物（release/ 下的 EXE 与 ZIP 需要提交）
 build/
 dist/
 *.rar
 *.zip
 *.exe
+!release/
+!release/*.zip
+!release/**/*.exe
+

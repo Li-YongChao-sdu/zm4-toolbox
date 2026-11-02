@@ -1,0 +1,550 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "originalFashionId": "301011201;302011201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "2",
+      "originalFashionId": "301021201;302021201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "3",
+      "originalFashionId": "301031201;302031201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "4",
+      "originalFashionId": "301041201;302041201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "5",
+      "originalFashionId": "301051201;302051201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "16",
+      "originalFashionId": "301061201;302061201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "67",
+      "originalFashionId": "301071201;302071201",
+      "url": "yinglong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "6",
+      "originalFashionId": "301011301;302011301",
+      "url": "xianyu_wk",
+      "quality_4_url": {}
+    },
+    {
+      "id": "7",
+      "originalFashionId": "301021301;302021301",
+      "url": "xianyu_ts",
+      "quality_4_url": {}
+    },
+    {
+      "id": "8",
+      "originalFashionId": "301031301;302031301",
+      "url": "xianyu_bj",
+      "quality_4_url": {}
+    },
+    {
+      "id": "9",
+      "originalFashionId": "301041301;302041301",
+      "url": "xianyu_wj",
+      "quality_4_url": {}
+    },
+    {
+      "id": "10",
+      "originalFashionId": "301051301;302051301",
+      "url": "xianyu_lm",
+      "quality_4_url": {}
+    },
+    {
+      "id": "17",
+      "originalFashionId": "301061301;302061301",
+      "url": "xianyu_yt",
+      "quality_4_url": {}
+    },
+    {
+      "id": "68",
+      "originalFashionId": "301071301;302071301",
+      "url": "xianyu_nezha",
+      "quality_4_url": {}
+    },
+    {
+      "id": "11",
+      "originalFashionId": "301011501;302011501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "12",
+      "originalFashionId": "301021501;302021501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "13",
+      "originalFashionId": "301031501;302031501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "14",
+      "originalFashionId": "301041501;302041501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "15",
+      "originalFashionId": "301051501;302051501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "18",
+      "originalFashionId": "301061501;302061501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "69",
+      "originalFashionId": "301071501;302071501",
+      "url": "zhongqiu",
+      "quality_4_url": {}
+    },
+    {
+      "id": "19",
+      "originalFashionId": "301011601;302011601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "20",
+      "originalFashionId": "301021601;302021601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "21",
+      "originalFashionId": "301031601;302031601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "22",
+      "originalFashionId": "301041601;302041601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "23",
+      "originalFashionId": "301051601;302051601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "24",
+      "originalFashionId": "301061601;302061601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "70",
+      "originalFashionId": "301071601;302071601",
+      "url": "yuegong",
+      "quality_4_url": {}
+    },
+    {
+      "id": "25",
+      "originalFashionId": "301010401;302010401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "26",
+      "originalFashionId": "301020401;302020401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "27",
+      "originalFashionId": "301030401;302030401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "28",
+      "originalFashionId": "301040401;302040401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "29",
+      "originalFashionId": "301050401;302050401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "30",
+      "originalFashionId": "301060401;302060401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "71",
+      "originalFashionId": "301070401;302070401",
+      "url": "zhuanlun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "31",
+      "originalFashionId": "301011101;302011101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "32",
+      "originalFashionId": "301021101;302021101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "33",
+      "originalFashionId": "301031101;302031101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "34",
+      "originalFashionId": "301041101;302041101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "35",
+      "originalFashionId": "301051101;302051101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "36",
+      "originalFashionId": "301061101;302061101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "72",
+      "originalFashionId": "301071101;302071101",
+      "url": "jijiaV1",
+      "quality_4_url": {}
+    },
+    {
+      "id": "37",
+      "originalFashionId": "301010001;302010001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "38",
+      "originalFashionId": "301020001;302020001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "39",
+      "originalFashionId": "301030001;302030001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "40",
+      "originalFashionId": "301040001;302040001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "41",
+      "originalFashionId": "301050001;302050001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "42",
+      "originalFashionId": "301060001;302060001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "73",
+      "originalFashionId": "301070001;302070001",
+      "url": "erlang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "43",
+      "originalFashionId": "301010101;302010101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "44",
+      "originalFashionId": "301020101;302020101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "45",
+      "originalFashionId": "301030101;302030101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "46",
+      "originalFashionId": "301040101;302040101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "47",
+      "originalFashionId": "301050101;302050101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "48",
+      "originalFashionId": "301060101;302060101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "74",
+      "originalFashionId": "301070101;302070101",
+      "url": "shaonian",
+      "quality_4_url": {}
+    },
+    {
+      "id": "49",
+      "originalFashionId": "301011701;302011701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "50",
+      "originalFashionId": "301021701;302021701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "51",
+      "originalFashionId": "301031701;302031701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "52",
+      "originalFashionId": "301041701;302041701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "53",
+      "originalFashionId": "301051701;302051701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "54",
+      "originalFashionId": "301061701;302061701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "75",
+      "originalFashionId": "301071701;302071701",
+      "url": "youming",
+      "quality_4_url": {}
+    },
+    {
+      "id": "55",
+      "originalFashionId": "301010601;302010601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "56",
+      "originalFashionId": "301020601;302020601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "57",
+      "originalFashionId": "301030601;302030601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "58",
+      "originalFashionId": "301040601;302040601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "59",
+      "originalFashionId": "301050601;302050601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "60",
+      "originalFashionId": "301060601;302060601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "76",
+      "originalFashionId": "301070601;302070601",
+      "url": "shengdan",
+      "quality_4_url": {}
+    },
+    {
+      "id": "61",
+      "originalFashionId": "301011801;302011801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "62",
+      "originalFashionId": "301021801;302021801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "63",
+      "originalFashionId": "301031801;302031801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "64",
+      "originalFashionId": "301041801;302041801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "65",
+      "originalFashionId": "301051801;302051801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "66",
+      "originalFashionId": "301061801;302061801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "77",
+      "originalFashionId": "301071801;302071801",
+      "url": "yinYang",
+      "quality_4_url": "yinYang_Jin"
+    },
+    {
+      "id": "78",
+      "originalFashionId": "301012101;302012101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "79",
+      "originalFashionId": "301022101;302022101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "80",
+      "originalFashionId": "301032101;302032101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "81",
+      "originalFashionId": "301042101;302042101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "82",
+      "originalFashionId": "301052101;302052101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "83",
+      "originalFashionId": "301062101;302062101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "84",
+      "originalFashionId": "301072101;302072101",
+      "url": "dunhuang",
+      "quality_4_url": {}
+    },
+    {
+      "id": "85",
+      "originalFashionId": "301012201;302012201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "86",
+      "originalFashionId": "301022201;302022201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "87",
+      "originalFashionId": "301032201;302032201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "88",
+      "originalFashionId": "301042201;302042201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "89",
+      "originalFashionId": "301052201;302052201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "90",
+      "originalFashionId": "301062201;302062201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    },
+    {
+      "id": "91",
+      "originalFashionId": "301072201;302072201",
+      "url": "hongyun",
+      "quality_4_url": {}
+    }
+  ]
+}

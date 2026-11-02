@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <level>70</level>
+    <power>120000</power>
+    <describe>师傅领进门，修行在个人</describe>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <level>1</level>
+    <power>100</power>
+    <describe>我是忠实玩家，求师傅</describe>
+  </RECORD>
+</RECORDS>

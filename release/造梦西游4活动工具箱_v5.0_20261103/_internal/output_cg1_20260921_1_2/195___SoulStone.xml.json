@@ -1,0 +1,274 @@
+{
+  "RECORD": [
+    {
+      "id": "10010001",
+      "name": "1级鬼势",
+      "text": "鬼势：站立不动积蓄力量，使伤害提升，最大积蓄时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"time\",\"minTime\":1000,\"maxTime\":3000,\"addBuff\":[21010201]}],\"type\":\"do1sec\",\"cd\":2000,\"ac\":\"idle\",\"class\":\"S10010001\"}"
+    },
+    {
+      "id": "10010002",
+      "name": "2级鬼势",
+      "text": "鬼势：站立不动积蓄力量，使伤害提升，最大积蓄时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"time\",\"minTime\":1000,\"maxTime\":3000,\"addBuff\":[21010302]}],\"type\":\"do1sec\",\"cd\":2500,\"ac\":\"idle\",\"class\":\"S10010001\"}"
+    },
+    {
+      "id": "10010003",
+      "name": "3级鬼势",
+      "text": "鬼势：站立不动积蓄力量，使伤害提升，最大积蓄时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"time\",\"minTime\":1000,\"maxTime\":3000,\"addBuff\":[21010303]}],\"type\":\"do1sec\",\"cd\":3000,\"ac\":\"idle\",\"class\":\"S10010001\"}"
+    },
+    {
+      "id": "10010004",
+      "name": "4级鬼势",
+      "text": "鬼势：站立不动积蓄力量，使伤害提升，最大积蓄时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"time\",\"minTime\":1000,\"maxTime\":3000,\"addBuff\":[21010404]}],\"type\":\"do1sec\",\"cd\":3500,\"ac\":\"idle\",\"class\":\"S10010001\"}"
+    },
+    {
+      "id": "10010005",
+      "name": "5级鬼势",
+      "text": "鬼势：站立不动积蓄力量，使伤害提升，最大积蓄时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"time\",\"minTime\":1000,\"maxTime\":3000,\"addBuff\":[21010405]}],\"type\":\"do1sec\",\"cd\":4000,\"ac\":\"idle\",\"class\":\"S10010001\"}"
+    },
+    {
+      "id": "10020001",
+      "name": "1级鬼殇",
+      "text": "鬼殇：提升攻击并受伤增加，血量越低效果越强，30%血量达到最高",
+      "effect": "Buff",
+      "number": "22010201;22011201",
+      "randomnumber": {},
+      "param": {}
+    },
+    {
+      "id": "10020002",
+      "name": "2级鬼殇",
+      "text": "鬼殇：提升攻击并受伤增加，血量越低效果越强，30%血量达到最高",
+      "effect": "Buff",
+      "number": "22010302;22011302",
+      "randomnumber": {},
+      "param": {}
+    },
+    {
+      "id": "10020003",
+      "name": "3级鬼殇",
+      "text": "鬼殇：提升攻击并受伤增加，血量越低效果越强，30%血量达到最高",
+      "effect": "Buff",
+      "number": "22010303;22011303",
+      "randomnumber": {},
+      "param": {}
+    },
+    {
+      "id": "10020004",
+      "name": "4级鬼殇",
+      "text": "鬼殇：提升攻击并受伤增加，血量越低效果越强，30%血量达到最高",
+      "effect": "Buff",
+      "number": "22010404;22011404",
+      "randomnumber": {},
+      "param": {}
+    },
+    {
+      "id": "10020005",
+      "name": "5级鬼殇",
+      "text": "鬼殇：提升攻击并受伤增加，血量越低效果越强，30%血量达到最高",
+      "effect": "Buff",
+      "number": "22010405;22011405",
+      "randomnumber": {},
+      "param": {}
+    },
+    {
+      "id": "10030001",
+      "name": "1级鬼气",
+      "text": "鬼气：每行动一定距离，回复一定比例魔法，技能位移无效",
+      "effect": "Buff",
+      "number": "23010201",
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"addMP\",\"byBuff\":23010201,\"acs\":[2,3,6,7,8]}],\"type\":\"do1sec\",\"class\":\"S10030001\"}"
+    },
+    {
+      "id": "10030002",
+      "name": "2级鬼气",
+      "text": "鬼气：每行动一定距离，回复一定比例魔法，技能位移无效",
+      "effect": "Buff",
+      "number": "23010302",
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"addMP\",\"byBuff\":23010302,\"acs\":[2,3,6,7,8]}],\"type\":\"do1sec\",\"class\":\"S10030001\"}"
+    },
+    {
+      "id": "10030003",
+      "name": "3级鬼气",
+      "text": "鬼气：每行动一定距离，回复一定比例魔法，技能位移无效",
+      "effect": "Buff",
+      "number": "23010303",
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"addMP\",\"byBuff\":23010303,\"acs\":[2,3,6,7,8]}],\"type\":\"do1sec\",\"class\":\"S10030001\"}"
+    },
+    {
+      "id": "10030004",
+      "name": "4级鬼气",
+      "text": "鬼气：每行动一定距离，回复一定比例魔法，技能位移无效",
+      "effect": "Buff",
+      "number": "23010404",
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"addMP\",\"byBuff\":23010404,\"acs\":[2,3,6,7,8]}],\"type\":\"do1sec\",\"class\":\"S10030001\"}"
+    },
+    {
+      "id": "10030005",
+      "name": "5级鬼气",
+      "text": "鬼气：每行动一定距离，回复一定比例魔法，技能位移无效",
+      "effect": "Buff",
+      "number": "23010405",
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"type\":\"addMP\",\"byBuff\":23010405,\"acs\":[2,3,6,7,8]}],\"type\":\"do1sec\",\"class\":\"S10030001\"}"
+    },
+    {
+      "id": "10040001",
+      "name": "1级灵心",
+      "text": "灵心：未受伤时间越长，免伤buff越强，最大时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[41010201]}],\"type\":\"hurtAddBuff\",\"minTime\":0,\"maxTime\":3000,\"cd\":3000,\"class\":\"S10040001\"}"
+    },
+    {
+      "id": "10040002",
+      "name": "2级灵心",
+      "text": "灵心：未受伤时间越长，免伤buff越强，最大时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[41010302]}],\"type\":\"hurtAddBuff\",\"minTime\":0,\"maxTime\":3000,\"cd\":3000,\"class\":\"S10040001\"}"
+    },
+    {
+      "id": "10040003",
+      "name": "3级灵心",
+      "text": "灵心：未受伤时间越长，免伤buff越强，最大时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[41010303]}],\"type\":\"hurtAddBuff\",\"minTime\":0,\"maxTime\":3000,\"cd\":3000,\"class\":\"S10040001\"}"
+    },
+    {
+      "id": "10040004",
+      "name": "4级灵心",
+      "text": "灵心：未受伤时间越长，免伤buff越强，最大时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[41010404]}],\"type\":\"hurtAddBuff\",\"minTime\":0,\"maxTime\":3000,\"cd\":3000,\"class\":\"S10040001\"}"
+    },
+    {
+      "id": "10040005",
+      "name": "5级灵心",
+      "text": "灵心：未受伤时间越长，免伤buff越强，最大时长：3秒",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[41010405]}],\"type\":\"hurtAddBuff\",\"minTime\":0,\"maxTime\":3000,\"cd\":3000,\"class\":\"S10040001\"}"
+    },
+    {
+      "id": "10050001",
+      "name": "1级灵甲",
+      "text": "灵甲：损失血量的一定比例将转化为护盾",
+      "effect": "Buff",
+      "number": "42010201",
+      "randomnumber": {},
+      "param": "{\"byBuff\":42010201,\"addBuff\":42011201,\"type\":\"huDun\",\"cd\":2000,\"class\":\"S10050001\"}"
+    },
+    {
+      "id": "10050002",
+      "name": "2级灵甲",
+      "text": "灵甲：损失血量的一定比例将转化为护盾",
+      "effect": "Buff",
+      "number": "42010302",
+      "randomnumber": {},
+      "param": "{\"byBuff\":42010302,\"addBuff\":42011302,\"type\":\"huDun\",\"cd\":2000,\"class\":\"S10050001\"}"
+    },
+    {
+      "id": "10050003",
+      "name": "3级灵甲",
+      "text": "灵甲：损失血量的一定比例将转化为护盾",
+      "effect": "Buff",
+      "number": "42010303",
+      "randomnumber": {},
+      "param": "{\"byBuff\":42010303,\"addBuff\":42011303,\"type\":\"huDun\",\"cd\":2000,\"class\":\"S10050001\"}"
+    },
+    {
+      "id": "10050004",
+      "name": "4级灵甲",
+      "text": "灵甲：损失血量的一定比例将转化为护盾",
+      "effect": "Buff",
+      "number": "42010404",
+      "randomnumber": {},
+      "param": "{\"byBuff\":42010404,\"addBuff\":42011404,\"type\":\"huDun\",\"cd\":2000,\"class\":\"S10050001\"}"
+    },
+    {
+      "id": "10050005",
+      "name": "5级灵甲",
+      "text": "灵甲：损失血量的一定比例将转化为护盾",
+      "effect": "Buff",
+      "number": "42010405",
+      "randomnumber": {},
+      "param": "{\"byBuff\":42010405,\"addBuff\":42011405,\"type\":\"huDun\",\"cd\":2000,\"class\":\"S10050001\"}"
+    },
+    {
+      "id": "10060001",
+      "name": "1级灵魅",
+      "text": "灵魅：受到负面状态时，获得净化效果（内置CD），并回血",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[43010201,43011201]}],\"type\":\"do1sec\",\"cd\":60000,\"class\":\"S10060001\"}"
+    },
+    {
+      "id": "10060002",
+      "name": "2级灵魅",
+      "text": "灵魅：受到负面状态时，获得净化效果（内置CD），并回血",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[43010302,43011302]}],\"type\":\"do1sec\",\"cd\":54000,\"class\":\"S10060001\"}"
+    },
+    {
+      "id": "10060003",
+      "name": "3级灵魅",
+      "text": "灵魅：受到负面状态时，获得净化效果（内置CD），并回血",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[43010303,43011303]}],\"type\":\"do1sec\",\"cd\":48000,\"class\":\"S10060001\"}"
+    },
+    {
+      "id": "10060004",
+      "name": "4级灵魅",
+      "text": "灵魅：受到负面状态时，获得净化效果（内置CD），并回血",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[43010404,43011404]}],\"type\":\"do1sec\",\"cd\":42000,\"class\":\"S10060001\"}"
+    },
+    {
+      "id": "10060005",
+      "name": "5级灵魅",
+      "text": "灵魅：受到负面状态时，获得净化效果（内置CD），并回血",
+      "effect": "prop",
+      "number": {},
+      "randomnumber": {},
+      "param": "{\"triggers\":[{\"addBuff\":[43010405,43011405]}],\"type\":\"do1sec\",\"cd\":36000,\"class\":\"S10060001\"}"
+    }
+  ]
+}

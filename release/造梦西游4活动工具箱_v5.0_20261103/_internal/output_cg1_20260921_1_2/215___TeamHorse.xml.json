@@ -1,0 +1,17 @@
+{
+  "RECORD": {
+    "id": "200401",
+    "subDungeonId": "200101,200102,200103;200201,200202,200203;200301,200302,200303",
+    "subDungeonIcon": "200101.png,200102.png,200103.png;200201.png,200202.png,200203.png;200301.png,200302.png,200303.png",
+    "dungeonColour": "3;2;1",
+    "showItemId": "187010001;187010002;187010003;187010004",
+    "powerMin": "450000",
+    "rewardId": "50991",
+    "successCnt": "6",
+    "userPeerMax": "3",
+    "bossReadyTime": "30000",
+    "bossTimeLimit": "270000",
+    "showPropId": "197000042",
+    "showPropNum": "3"
+  }
+}

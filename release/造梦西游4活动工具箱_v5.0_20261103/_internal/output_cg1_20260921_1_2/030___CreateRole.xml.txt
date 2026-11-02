@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <roleID>2001</roleID>
+    <roleName>孙悟空</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <roleID>2002</roleID>
+    <roleName>唐三藏</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <roleID>2003</roleID>
+    <roleName>猪八戒</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <roleID>2004</roleID>
+    <roleName>沙悟净</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <roleID>2005</roleID>
+    <roleName>小白龙</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <roleID>20001</roleID>
+    <roleName>玉兔儿</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <roleID>20002</roleID>
+    <roleName>哪吒</roleName>
+    <isOpen>1</isOpen>
+  </RECORD>
+</RECORDS>

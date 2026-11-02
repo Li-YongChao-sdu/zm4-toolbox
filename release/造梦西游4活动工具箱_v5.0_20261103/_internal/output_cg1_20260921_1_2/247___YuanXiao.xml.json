@@ -1,0 +1,10 @@
+{
+  "RECORD": {
+    "id": "1",
+    "guessNum": "8",
+    "sucIntegral": "100",
+    "failIntegral": "20",
+    "buyNumPointTicket": "100",
+    "yuanxiaoID": "220"
+  }
+}

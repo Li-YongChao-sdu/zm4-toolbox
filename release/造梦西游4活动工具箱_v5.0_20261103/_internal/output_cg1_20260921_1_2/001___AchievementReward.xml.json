@@ -1,0 +1,668 @@
+{
+  "RECORD": [
+    {
+      "id": "1110001",
+      "labeltype": "1;1",
+      "name": "角色成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81101",
+      "isOpen": "1"
+    },
+    {
+      "id": "1110002",
+      "labeltype": "1;1",
+      "name": "角色成就达到90点",
+      "achievementPoints": "90",
+      "rewardID": "81102",
+      "isOpen": "1"
+    },
+    {
+      "id": "1110003",
+      "labeltype": "1;1",
+      "name": "角色成就达到130点",
+      "achievementPoints": "130",
+      "rewardID": "81103",
+      "isOpen": "1"
+    },
+    {
+      "id": "1120001",
+      "labeltype": "1;2",
+      "name": "被动技能成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81104",
+      "isOpen": "1"
+    },
+    {
+      "id": "1120002",
+      "labeltype": "1;2",
+      "name": "被动技能成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81105",
+      "isOpen": "1"
+    },
+    {
+      "id": "1120003",
+      "labeltype": "1;2",
+      "name": "被动技能成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81106",
+      "isOpen": "1"
+    },
+    {
+      "id": "1130001",
+      "labeltype": "1;3",
+      "name": "强化成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81107",
+      "isOpen": "1"
+    },
+    {
+      "id": "1130002",
+      "labeltype": "1;3",
+      "name": "强化成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81108",
+      "isOpen": "1"
+    },
+    {
+      "id": "1130003",
+      "labeltype": "1;3",
+      "name": "强化成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81109",
+      "isOpen": "1"
+    },
+    {
+      "id": "1210001",
+      "labeltype": "2;1",
+      "name": "战斗成就达到160点",
+      "achievementPoints": "160",
+      "rewardID": "81110",
+      "isOpen": "1"
+    },
+    {
+      "id": "1210002",
+      "labeltype": "2;1",
+      "name": "战斗成就达到290点",
+      "achievementPoints": "290",
+      "rewardID": "81111",
+      "isOpen": "1"
+    },
+    {
+      "id": "1210003",
+      "labeltype": "2;1",
+      "name": "战斗成就达到390点",
+      "achievementPoints": "390",
+      "rewardID": "81112",
+      "isOpen": "1"
+    },
+    {
+      "id": "1210004",
+      "labeltype": "2;1",
+      "name": "战斗成就达到460点",
+      "achievementPoints": "460",
+      "rewardID": "81113",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310001",
+      "labeltype": "3;1",
+      "name": "法宝成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81114",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310002",
+      "labeltype": "3;1",
+      "name": "法宝成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81115",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310003",
+      "labeltype": "3;1",
+      "name": "法宝成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81116",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310004",
+      "labeltype": "3;1",
+      "name": "法宝成就达到200点",
+      "achievementPoints": "200",
+      "rewardID": "81117",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310005",
+      "labeltype": "3;1",
+      "name": "法宝成就达到280点",
+      "achievementPoints": "280",
+      "rewardID": "81118",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310006",
+      "labeltype": "3;1",
+      "name": "法宝成就达到400点",
+      "achievementPoints": "400",
+      "rewardID": "81137",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310007",
+      "labeltype": "3;1",
+      "name": "法宝成就达到550点",
+      "achievementPoints": "550",
+      "rewardID": "81138",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310008",
+      "labeltype": "3;1",
+      "name": "法宝成就达到750点",
+      "achievementPoints": "750",
+      "rewardID": "81139",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310009",
+      "labeltype": "3;1",
+      "name": "法宝成就达到900点",
+      "achievementPoints": "900",
+      "rewardID": "81164",
+      "isOpen": "1"
+    },
+    {
+      "id": "1310010",
+      "labeltype": "3;1",
+      "name": "法宝成就达到1080点",
+      "achievementPoints": "1080",
+      "rewardID": "81164",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320001",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到20点",
+      "achievementPoints": "20",
+      "rewardID": "81119",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320002",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81120",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320003",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到80点",
+      "achievementPoints": "80",
+      "rewardID": "81121",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320004",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81122",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320005",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到130点",
+      "achievementPoints": "130",
+      "rewardID": "81123",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320006",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到180点",
+      "achievementPoints": "180",
+      "rewardID": "81143",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320007",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到280点",
+      "achievementPoints": "280",
+      "rewardID": "81166",
+      "isOpen": "1"
+    },
+    {
+      "id": "1320008",
+      "labeltype": "3;2",
+      "name": "坐骑成就达到380点",
+      "achievementPoints": "380",
+      "rewardID": "81166",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330001",
+      "labeltype": "3;3",
+      "name": "宠物成就达到30点",
+      "achievementPoints": "30",
+      "rewardID": "81124",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330002",
+      "labeltype": "3;3",
+      "name": "宠物成就达到50点",
+      "achievementPoints": "50",
+      "rewardID": "81125",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330003",
+      "labeltype": "3;3",
+      "name": "宠物成就达到80点",
+      "achievementPoints": "80",
+      "rewardID": "81126",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330004",
+      "labeltype": "3;3",
+      "name": "宠物成就达到120点",
+      "achievementPoints": "120",
+      "rewardID": "81127",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330005",
+      "labeltype": "3;3",
+      "name": "宠物成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81128",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330006",
+      "labeltype": "3;3",
+      "name": "宠物成就达到220点",
+      "achievementPoints": "220",
+      "rewardID": "81140",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330007",
+      "labeltype": "3;3",
+      "name": "宠物成就达到300点",
+      "achievementPoints": "300",
+      "rewardID": "81141",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330008",
+      "labeltype": "3;3",
+      "name": "宠物成就达到370点",
+      "achievementPoints": "370",
+      "rewardID": "81142",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330009",
+      "labeltype": "3;3",
+      "name": "宠物成就达到490点",
+      "achievementPoints": "490",
+      "rewardID": "81165",
+      "isOpen": "1"
+    },
+    {
+      "id": "1330010",
+      "labeltype": "3;3",
+      "name": "宠物成就达到610点",
+      "achievementPoints": "610",
+      "rewardID": "81165",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340001",
+      "labeltype": "3;4",
+      "name": "称号成就达到80点",
+      "achievementPoints": "80",
+      "rewardID": "81144",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340002",
+      "labeltype": "3;4",
+      "name": "称号成就达到180点",
+      "achievementPoints": "180",
+      "rewardID": "81145",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340003",
+      "labeltype": "3;4",
+      "name": "称号成就达到280点",
+      "achievementPoints": "280",
+      "rewardID": "81146",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340004",
+      "labeltype": "3;4",
+      "name": "称号成就达到380点",
+      "achievementPoints": "380",
+      "rewardID": "81147",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340005",
+      "labeltype": "3;4",
+      "name": "称号成就达到480点",
+      "achievementPoints": "480",
+      "rewardID": "81148",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340006",
+      "labeltype": "3;4",
+      "name": "称号成就达到600点",
+      "achievementPoints": "600",
+      "rewardID": "81149",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340007",
+      "labeltype": "3;4",
+      "name": "称号成就达到760点",
+      "achievementPoints": "760",
+      "rewardID": "81150",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340008",
+      "labeltype": "3;4",
+      "name": "称号成就达到840点",
+      "achievementPoints": "840",
+      "rewardID": "81167",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340009",
+      "labeltype": "3;4",
+      "name": "称号成就达到950点",
+      "achievementPoints": "950",
+      "rewardID": "81167",
+      "isOpen": "1"
+    },
+    {
+      "id": "1340010",
+      "labeltype": "3;4",
+      "name": "称号成就达到1060点",
+      "achievementPoints": "1060",
+      "rewardID": "81167",
+      "isOpen": "1"
+    },
+    {
+      "id": "1350001",
+      "labeltype": "3;5",
+      "name": "宝石成就达到90点",
+      "achievementPoints": "90",
+      "rewardID": "81160",
+      "isOpen": "1"
+    },
+    {
+      "id": "1350002",
+      "labeltype": "3;5",
+      "name": "宝石成就达到180点",
+      "achievementPoints": "180",
+      "rewardID": "81161",
+      "isOpen": "1"
+    },
+    {
+      "id": "1350003",
+      "labeltype": "3;5",
+      "name": "宝石成就达到360点",
+      "achievementPoints": "360",
+      "rewardID": "81162",
+      "isOpen": "1"
+    },
+    {
+      "id": "1350004",
+      "labeltype": "3;5",
+      "name": "宝石成就达到560点",
+      "achievementPoints": "560",
+      "rewardID": "81163",
+      "isOpen": "1"
+    },
+    {
+      "id": "1350005",
+      "labeltype": "3;5",
+      "name": "宝石成就达到640点",
+      "achievementPoints": "640",
+      "rewardID": "81163",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360001",
+      "labeltype": "3;6",
+      "name": "时装成就达到70点",
+      "achievementPoints": "70",
+      "rewardID": "81154",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360002",
+      "labeltype": "3;6",
+      "name": "时装成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81155",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360003",
+      "labeltype": "3;6",
+      "name": "时装成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81156",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360004",
+      "labeltype": "3;6",
+      "name": "时装成就达到250点",
+      "achievementPoints": "250",
+      "rewardID": "81157",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360005",
+      "labeltype": "3;6",
+      "name": "时装成就达到300点",
+      "achievementPoints": "300",
+      "rewardID": "81158",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360006",
+      "labeltype": "3;6",
+      "name": "时装成就达到400点",
+      "achievementPoints": "400",
+      "rewardID": "81159",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360007",
+      "labeltype": "3;6",
+      "name": "时装成就达到520点",
+      "achievementPoints": "520",
+      "rewardID": "81168",
+      "isOpen": "1"
+    },
+    {
+      "id": "1360008",
+      "labeltype": "3;6",
+      "name": "时装成就达到640点",
+      "achievementPoints": "640",
+      "rewardID": "81168",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370001",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到40点",
+      "achievementPoints": "40",
+      "rewardID": "81132",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370002",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到60点",
+      "achievementPoints": "60",
+      "rewardID": "81133",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370003",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到90点",
+      "achievementPoints": "90",
+      "rewardID": "81134",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370004",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到120点",
+      "achievementPoints": "120",
+      "rewardID": "81135",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370005",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81136",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370006",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到200点",
+      "achievementPoints": "200",
+      "rewardID": "81151",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370007",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到280点",
+      "achievementPoints": "280",
+      "rewardID": "81152",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370008",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到380点",
+      "achievementPoints": "380",
+      "rewardID": "81153",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370009",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到580点",
+      "achievementPoints": "580",
+      "rewardID": "81169",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370010",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到750点",
+      "achievementPoints": "750",
+      "rewardID": "81169",
+      "isOpen": "1"
+    },
+    {
+      "id": "1370011",
+      "labeltype": "3;7",
+      "name": "翅膀成就达到880点",
+      "achievementPoints": "880",
+      "rewardID": "81169",
+      "isOpen": "1"
+    },
+    {
+      "id": "1380001",
+      "labeltype": "3;8",
+      "name": "莲珠成就达到80点",
+      "achievementPoints": "80",
+      "rewardID": "81170",
+      "isOpen": "1"
+    },
+    {
+      "id": "1380002",
+      "labeltype": "3;8",
+      "name": "莲珠成就达到200点",
+      "achievementPoints": "200",
+      "rewardID": "81171",
+      "isOpen": "1"
+    },
+    {
+      "id": "1380003",
+      "labeltype": "3;8",
+      "name": "莲珠成就达到320点",
+      "achievementPoints": "320",
+      "rewardID": "81172",
+      "isOpen": "1"
+    },
+    {
+      "id": "1410001",
+      "labeltype": "4;1",
+      "name": "竞技成就达到60点",
+      "achievementPoints": "60",
+      "rewardID": "81129",
+      "isOpen": "1"
+    },
+    {
+      "id": "1410002",
+      "labeltype": "4;1",
+      "name": "竞技成就达到100点",
+      "achievementPoints": "100",
+      "rewardID": "81130",
+      "isOpen": "1"
+    },
+    {
+      "id": "1410003",
+      "labeltype": "4;1",
+      "name": "竞技成就达到150点",
+      "achievementPoints": "150",
+      "rewardID": "81131",
+      "isOpen": "1"
+    },
+    {
+      "id": "1410004",
+      "labeltype": "4;1",
+      "name": "竞技",
+      "achievementPoints": "0",
+      "rewardID": "-1",
+      "isOpen": "0"
+    },
+    {
+      "id": "1410005",
+      "labeltype": "4;1",
+      "name": "竞技",
+      "achievementPoints": "0",
+      "rewardID": "-1",
+      "isOpen": "0"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "name": "炼体",
+      "scoreD": "12",
+      "scoreC": "24",
+      "scoreB": "36",
+      "scoreA": "48",
+      "scoreS": "60"
+    },
+    {
+      "id": "2",
+      "name": "红色羽毛",
+      "scoreD": "1",
+      "scoreC": "3",
+      "scoreB": "4",
+      "scoreA": "5",
+      "scoreS": "6"
+    },
+    {
+      "id": "3",
+      "name": "高级宝石",
+      "scoreD": "20",
+      "scoreC": "40",
+      "scoreB": "70",
+      "scoreA": "100",
+      "scoreS": "120"
+    },
+    {
+      "id": "4",
+      "name": "总宝石",
+      "scoreD": "30",
+      "scoreC": "60",
+      "scoreB": "80",
+      "scoreA": "100",
+      "scoreS": "120"
+    },
+    {
+      "id": "5",
+      "name": "诛仙剑阵",
+      "scoreD": "8",
+      "scoreC": "16",
+      "scoreB": "24",
+      "scoreA": "32",
+      "scoreS": "40"
+    },
+    {
+      "id": "6",
+      "name": "莲珠",
+      "scoreD": "7",
+      "scoreC": "14",
+      "scoreB": "21",
+      "scoreA": "28",
+      "scoreS": "32"
+    },
+    {
+      "id": "7",
+      "name": "称号",
+      "scoreD": "1",
+      "scoreC": "2",
+      "scoreB": "3",
+      "scoreA": "4",
+      "scoreS": "5"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <sendPropId>165200005;143200003;143200004;143200005;143300006;143200008</sendPropId>
+    <getPropId>144000002;144000002;144000002;144000002;144000002;144000002</getPropId>
+    <getNum>3;5;1;1;1;1</getNum>
+    <targetType>1</targetType>
+    <targetId>500014001</targetId>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <sendPropId>165200005;143200003;143200004;143200005;143300006;143200008</sendPropId>
+    <getPropId>144100006;144100006;144100006;144100006;144100006;144100006</getPropId>
+    <getNum>3;1;5;1;1;1</getNum>
+    <targetType>1</targetType>
+    <targetId>510014001</targetId>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <sendPropId>165200005;143200003;143200004;143200005;143300006;143200008</sendPropId>
+    <getPropId>144200008;144200008;144200008;144200008;144200008;144200008</getPropId>
+    <getNum>3;1;1;5;1;1</getNum>
+    <targetType>1</targetType>
+    <targetId>520014001</targetId>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <sendPropId>165200005;143200003;143200004;143200005;143300006;143200008</sendPropId>
+    <getPropId>144300012;144300012;144300012;144300012;144300012;144300012</getPropId>
+    <getNum>3;1;1;1;5;1</getNum>
+    <targetType>1</targetType>
+    <targetId>530014001</targetId>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <sendPropId>165200005;143200003;143200004;143200005;143300006;143200008</sendPropId>
+    <getPropId>144400008;144400008;144400008;144400008;144400008;144400008</getPropId>
+    <getNum>3;1;1;1;1;5</getNum>
+    <targetType>1</targetType>
+    <targetId>540014001</targetId>
+  </RECORD>
+</RECORDS>

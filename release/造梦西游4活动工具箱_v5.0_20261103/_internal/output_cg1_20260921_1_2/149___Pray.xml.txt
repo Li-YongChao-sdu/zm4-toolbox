@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2</id>
+    <propId>111300002</propId>
+    <iconId>cloudy2.png</iconId>
+    <level>28</level>
+  </RECORD>
+  <RECORD>
+    <id>1</id>
+    <propId>111300001</propId>
+    <iconId>rain2.png</iconId>
+    <level>38</level>
+  </RECORD>
+</RECORDS>

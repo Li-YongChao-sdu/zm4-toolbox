@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <monsterId>80130;80135;80140;80145;80150;80155;80160;80165;80170;80175;80180;80185;80190;80195;81100;81105;81110</monsterId>
+    <level>1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17</level>
+    <downTime>900000</downTime>
+    <upTime>300000</upTime>
+    <unionLevel>4</unionLevel>
+    <name>狂暴涛杌</name>
+    <week>6</week>
+    <buffIds>23002201</buffIds>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <monsterId>80230;80235;80240;80245;80250;80255;80260;80265;80270;80275;80280;80285;80290;80295;81200;81205;81210</monsterId>
+    <level>1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17</level>
+    <downTime>900000</downTime>
+    <upTime>300000</upTime>
+    <unionLevel>8</unionLevel>
+    <name>噩梦涛杌</name>
+    <week>6</week>
+    <buffIds>23002201</buffIds>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <monsterId>80330;80335;80340;80345;80350;80355;80360;80365;80370;80375;80380;80385;80390;80395;81300;81305;81310</monsterId>
+    <level>1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17</level>
+    <downTime>900000</downTime>
+    <upTime>300000</upTime>
+    <unionLevel>12</unionLevel>
+    <name>地狱涛杌</name>
+    <week>6</week>
+    <buffIds>23002201</buffIds>
+  </RECORD>
+</RECORDS>

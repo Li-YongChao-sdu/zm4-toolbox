@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>696000001</id>
+    <targetId>697000001</targetId>
+    <itemId>105700003;105700004</itemId>
+    <itemNum>1;1</itemNum>
+  </RECORD>
+</RECORDS>

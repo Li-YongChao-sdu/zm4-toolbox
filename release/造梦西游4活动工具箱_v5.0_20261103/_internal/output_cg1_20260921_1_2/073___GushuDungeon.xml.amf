@@ -1,0 +1,870 @@
+
+51072�w<RECORD>
+  <id>51072</id>
+  <name>古树遗迹1-7-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51073�w<RECORD>
+  <id>51073</id>
+  <name>古树遗迹1-7-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51011�w<RECORD>
+  <id>51011</id>
+  <name>古树遗迹1-1-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51012�w<RECORD>
+  <id>51012</id>
+  <name>古树遗迹1-1-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51013�w<RECORD>
+  <id>51013</id>
+  <name>古树遗迹1-1-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51081�w<RECORD>
+  <id>51081</id>
+  <name>古树遗迹1-8-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51082�w<RECORD>
+  <id>51082</id>
+  <name>古树遗迹1-8-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51083�w<RECORD>
+  <id>51083</id>
+  <name>古树遗迹1-8-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51021�w<RECORD>
+  <id>51021</id>
+  <name>古树遗迹1-2-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51022�w<RECORD>
+  <id>51022</id>
+  <name>古树遗迹1-2-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51023�w<RECORD>
+  <id>51023</id>
+  <name>古树遗迹1-2-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51091�y<RECORD>
+  <id>51091</id>
+  <name>古树遗迹1-9-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51092�y<RECORD>
+  <id>51092</id>
+  <name>古树遗迹1-9-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51093�y<RECORD>
+  <id>51093</id>
+  <name>古树遗迹1-9-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51031�w<RECORD>
+  <id>51031</id>
+  <name>古树遗迹1-3-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51032�w<RECORD>
+  <id>51032</id>
+  <name>古树遗迹1-3-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51033�w<RECORD>
+  <id>51033</id>
+  <name>古树遗迹1-3-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51101�<RECORD>
+  <id>51101</id>
+  <name>古树遗迹1-10-A-BOSS</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51102�<RECORD>
+  <id>51102</id>
+  <name>古树遗迹1-10-B-BOSS</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51103�<RECORD>
+  <id>51103</id>
+  <name>古树遗迹1-10-C-BOSS</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51041�w<RECORD>
+  <id>51041</id>
+  <name>古树遗迹1-4-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51042�w<RECORD>
+  <id>51042</id>
+  <name>古树遗迹1-4-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51043�w<RECORD>
+  <id>51043</id>
+  <name>古树遗迹1-4-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51051�w<RECORD>
+  <id>51051</id>
+  <name>古树遗迹1-5-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51052�w<RECORD>
+  <id>51052</id>
+  <name>古树遗迹1-5-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51053�y<RECORD>
+  <id>51053</id>
+  <name>古树遗迹1-5-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51061�y<RECORD>
+  <id>51061</id>
+  <name>古树遗迹1-6-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51062�y<RECORD>
+  <id>51062</id>
+  <name>古树遗迹1-6-B</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51063�y<RECORD>
+  <id>51063</id>
+  <name>古树遗迹1-6-C</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>80,120</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51000�<RECORD>
+  <id>51000</id>
+  <name>古树遗迹测试关</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>51071�w<RECORD>
+  <id>51071</id>
+  <name>古树遗迹1-7-A</name>
+  <classType>Mutil</classType>
+  <monsterID>4230</monsterID>
+  <monsterNum>1</monsterNum>
+  <dropId>-1</dropId>
+  <mapURL>test</mapURL>
+  <screenWidth>1200</screenWidth>
+  <width>1200</width>
+  <height>600</height>
+  <sceneStart>0</sceneStart>
+  <birthPoint>90,500</birthPoint>
+  <boss>1</boss>
+  <avgClearTime>180</avgClearTime>
+  <dungeonProp>-1</dungeonProp>
+  <bgMusic>4</bgMusic>
+  <totalNum>1</totalNum>
+  <specialDoor>0</specialDoor>
+  <clearType>1</clearType>
+  <resurrection>1</resurrection>
+  <resurrectionTime>-1</resurrectionTime>
+  <closeSys>1</closeSys>
+  <param>{"v2":1,"mapLogic":"MapGushu","pmode":1,"addRolePropertyRate":0.2,"jumpSpeed1":200,"jumpSpeed2":0,"isCanSceneBuff":false,"disableKeys":["E","NUMPAD_SUBTRACT"],"doubleMonsterHp":0,"doubleMonsterHp2p":0,"doubleMonsterAtk":0,"doubleMonsterAtk2p":0}</param>
+  <getNum>1</getNum>
+  <rewardId>100</rewardId>
+  <rewardRnd>40,60</rewardRnd>
+  <rewardInteract>50162</rewardInteract>
+</RECORD>

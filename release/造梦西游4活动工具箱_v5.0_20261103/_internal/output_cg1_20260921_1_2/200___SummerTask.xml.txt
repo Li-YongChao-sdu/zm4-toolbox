@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>每日登录</name>
+    <activityId>2026765</activityId>
+    <taskType>8</taskType>
+    <resetType>1</resetType>
+    <taskClass>102</taskClass>
+    <targetId>0</targetId>
+    <targetNum>1</targetNum>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>挑战一次
+竞技场</name>
+    <activityId>2026765</activityId>
+    <taskType>4</taskType>
+    <resetType>1</resetType>
+    <taskClass>100</taskClass>
+    <targetId>0</targetId>
+    <targetNum>1</targetNum>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>完成一次日常任务</name>
+    <activityId>2026765</activityId>
+    <taskType>2</taskType>
+    <resetType>1</resetType>
+    <taskClass>101</taskClass>
+    <targetId>2</targetId>
+    <targetNum>1</targetNum>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <name>完成一次日常悬赏任务</name>
+    <activityId>2026765</activityId>
+    <taskType>2</taskType>
+    <resetType>1</resetType>
+    <taskClass>101</taskClass>
+    <targetId>3</targetId>
+    <targetNum>1</targetNum>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <name>完成一次
+主题挑战</name>
+    <activityId>2026765</activityId>
+    <taskType>1</taskType>
+    <resetType>1</resetType>
+    <taskClass>100</taskClass>
+    <targetId>2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119</targetId>
+    <targetNum>1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1</targetNum>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,10 @@
+{
+  "RECORD": {
+    "id": "1",
+    "selectTeacherDayNum": "10",
+    "studentNum": "3",
+    "studentAllNum": "9",
+    "teacherTime": "3",
+    "rewardLevel": "39"
+  }
+}

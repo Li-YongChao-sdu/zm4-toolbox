@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <challengeAgainPointTicket>100</challengeAgainPointTicket>
+    <seedLevel>0;1;2;3;4;5;6;7;8;9</seedLevel>
+    <plantPoints>0;0;0;0;0;0;60;70;80;100</plantPoints>
+    <activityId>964</activityId>
+    <dayMaxNum>2</dayMaxNum>
+  </RECORD>
+</RECORDS>

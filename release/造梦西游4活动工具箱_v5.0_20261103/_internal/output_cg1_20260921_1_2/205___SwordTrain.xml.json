@@ -1,0 +1,44 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "trainValue": "320"
+    },
+    {
+      "id": "2",
+      "trainValue": "480"
+    },
+    {
+      "id": "3",
+      "trainValue": "640"
+    },
+    {
+      "id": "4",
+      "trainValue": "800"
+    },
+    {
+      "id": "5",
+      "trainValue": "1040"
+    },
+    {
+      "id": "6",
+      "trainValue": "1260"
+    },
+    {
+      "id": "7",
+      "trainValue": "1500"
+    },
+    {
+      "id": "8",
+      "trainValue": "1820"
+    },
+    {
+      "id": "9",
+      "trainValue": "2140"
+    },
+    {
+      "id": "10",
+      "trainValue": "3000"
+    }
+  ]
+}

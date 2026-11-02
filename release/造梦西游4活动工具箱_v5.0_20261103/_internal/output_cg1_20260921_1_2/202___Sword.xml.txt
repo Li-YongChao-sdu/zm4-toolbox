@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>730000001</id>
+    <name>绝仙阵</name>
+    <part>sword</part>
+    <classType>Jue</classType>
+    <quality>3</quality>
+    <reHP>0</reHP>
+    <reMP>0</reMP>
+    <effect1>9000200</effect1>
+    <describe>遁迹潜形：使角色隐身10秒，令敌人无法看清他的所在和动作</describe>
+    <resourceId>2729</resourceId>
+  </RECORD>
+  <RECORD>
+    <id>730000002</id>
+    <name>戮仙阵</name>
+    <part>sword</part>
+    <classType>Lu</classType>
+    <quality>3</quality>
+    <reHP>0</reHP>
+    <reMP>0</reMP>
+    <effect1>9000100</effect1>
+    <describe>屠戮四方：对敌人造成伤害并附加消亡诅咒
+
+</describe>
+    <resourceId>2730</resourceId>
+  </RECORD>
+  <RECORD>
+    <id>730000003</id>
+    <name>陷仙阵</name>
+    <part>sword</part>
+    <classType>Xian</classType>
+    <quality>3</quality>
+    <reHP>0</reHP>
+    <reMP>0</reMP>
+    <effect1>9000300</effect1>
+    <describe>凌空一击：竖剑下砸，对碰到的目标造成伤害并禁止回血</describe>
+    <resourceId>2731</resourceId>
+  </RECORD>
+  <RECORD>
+    <id>730000004</id>
+    <name>诛仙阵</name>
+    <part>sword</part>
+    <classType>Zhu</classType>
+    <quality>3</quality>
+    <reHP>0</reHP>
+    <reMP>0</reMP>
+    <effect1>9000400</effect1>
+    <describe>横扫四方：积蓄能量后大范围横扫四周</describe>
+    <resourceId>2732</resourceId>
+  </RECORD>
+  <RECORD>
+    <id>730000005</id>
+    <name>四剑归一</name>
+    <part>sword</part>
+    <classType>SiJian</classType>
+    <quality>4</quality>
+    <reHP>1;2</reHP>
+    <reMP>0</reMP>
+    <effect1>9000500</effect1>
+    <describe>诛仙剑阵:剑影虚化为剑阵，对阵内敌人造成伤害使其沉默和减速
+</describe>
+    <resourceId>2747</resourceId>
+  </RECORD>
+</RECORDS>

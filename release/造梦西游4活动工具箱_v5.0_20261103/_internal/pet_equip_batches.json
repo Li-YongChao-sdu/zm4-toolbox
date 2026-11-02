@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "groups": {
+    "799360360360::0": {
+      "1": {
+        "fish": [
+          2036
+        ],
+        "kong": [
+          2112,
+          2114
+        ],
+        "yue": [
+          2122,
+          2124
+        ],
+        "yun": [
+          2142,
+          2144
+        ],
+        "wan": [
+          7002,
+          7003,
+          7004
+        ],
+        "fish_times": 1,
+        "wan_times": 1,
+        "normal_times": 1
+      },
+      "2": {
+        "fish": [],
+        "kong": [],
+        "yue": [],
+        "yun": [],
+        "wan": [],
+        "fish_times": 1,
+        "wan_times": 1,
+        "normal_times": 1
+      },
+      "3": {
+        "fish": [],
+        "kong": [],
+        "yue": [],
+        "yun": [],
+        "wan": [],
+        "fish_times": 1,
+        "wan_times": 1,
+        "normal_times": 1
+      }
+    },
+    "2546381991::5": {
+      "1": {
+        "fish": [
+          2036
+        ],
+        "kong": [
+          2112,
+          2114
+        ],
+        "yue": [
+          2122,
+          2124
+        ],
+        "yun": [
+          2142,
+          2144
+        ],
+        "wan": [
+          7002,
+          7004
+        ],
+        "fish_times": 1,
+        "wan_times": 1,
+        "normal_times": 1
+      }
+    }
+  }
+}

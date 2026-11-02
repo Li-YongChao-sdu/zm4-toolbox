@@ -1,0 +1,49 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "dungeonId": "2138,2139",
+      "rewardNumTicket": "200",
+      "itemId": "143300021,143400004",
+      "itemMax": "20,0",
+      "activityId": "1179",
+      "dailyCountMax": "1",
+      "dungeonTimeLimit": "70",
+      "rewardId": "-1;-1",
+      "xianqiGet": "-1",
+      "openTicket": "-1",
+      "openReward": "-1",
+      "openRewardNum": "-1"
+    },
+    {
+      "id": "2",
+      "dungeonId": "-1",
+      "rewardNumTicket": "-1",
+      "itemId": "-1",
+      "itemMax": "-1",
+      "activityId": "-1",
+      "dailyCountMax": "-1",
+      "dungeonTimeLimit": "-1",
+      "rewardId": "-1",
+      "xianqiGet": "-1",
+      "openTicket": "-1",
+      "openReward": "-1",
+      "openRewardNum": "-1"
+    },
+    {
+      "id": "3",
+      "dungeonId": "2140;2141,2174;2175",
+      "rewardNumTicket": "200",
+      "itemId": "143300021,197300019,900000023",
+      "itemMax": "20,1,20",
+      "activityId": "1427",
+      "dailyCountMax": "1",
+      "dungeonTimeLimit": "-1",
+      "rewardId": "4211;4211,4211;4211",
+      "xianqiGet": "20",
+      "openTicket": "3600",
+      "openReward": "199800039;xianqi",
+      "openRewardNum": "1;100"
+    }
+  ]
+}

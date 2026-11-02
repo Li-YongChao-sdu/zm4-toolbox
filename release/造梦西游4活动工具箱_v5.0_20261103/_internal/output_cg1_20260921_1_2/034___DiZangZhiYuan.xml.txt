@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dungeonId>2135</dungeonId>
+    <score>170;200;230;270;300;999</score>
+    <xinYuanBi>19;20;21;22;23;24</xinYuanBi>
+    <activityId>1140</activityId>
+    <buffScore>270</buffScore>
+    <buffSceneId>42051</buffSceneId>
+  </RECORD>
+</RECORDS>

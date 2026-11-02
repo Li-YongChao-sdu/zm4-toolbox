@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>幽冥剑势</name>
+    <part>swordShi</part>
+    <effect1>9000700</effect1>
+    <describe>唤出火莲虚影，朝周围大范围进行攻击</describe>
+    <resourceId>6496</resourceId>
+    <icon>1.png</icon>
+    <levelMax>10</levelMax>
+    <itemId>185300002;185300002;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003</itemId>
+    <itemNum>20;10;10,10;15,20;20,20;25,30;30,30;35,35;40,40;50,50</itemNum>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>血海剑势</name>
+    <part>swordShi</part>
+    <effect1>9000600</effect1>
+    <describe>召唤血剑刺向敌人</describe>
+    <resourceId>6495</resourceId>
+    <icon>2.png</icon>
+    <levelMax>10</levelMax>
+    <itemId>185300002;185300002;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003</itemId>
+    <itemNum>20;10;10,10;15,20;20,20;25,30;30,30;35,35;40,40;50,50</itemNum>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>噬影剑势</name>
+    <part>swordShi</part>
+    <effect1>9000800</effect1>
+    <describe>召唤九道剑中魔灵朝敌人飞袭，命中后降低敌人闪避和防御（可叠加九层）</describe>
+    <resourceId>6497</resourceId>
+    <icon>3.png</icon>
+    <levelMax>10</levelMax>
+    <itemId>185300002;185300002;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003;185300002,185300003</itemId>
+    <itemNum>20;10;10,10;15,20;20,20;25,30;30,30;35,35;40,40;50,50</itemNum>
+  </RECORD>
+</RECORDS>

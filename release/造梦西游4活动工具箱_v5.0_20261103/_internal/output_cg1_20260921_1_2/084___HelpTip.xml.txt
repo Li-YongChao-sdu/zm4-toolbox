@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>汪汪铃铛</name>
+    <item>汪汪拼图x1
+汪汪拼图礼包x1
+星蒙草x1</item>
+    <probability>88.00%
+10.00%
+2.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>玄女祝福袋</name>
+    <item>周年庆贺卡x1
+周年庆贺卡x3
+周年庆贺卡x5</item>
+    <probability>50.00%
+40.00%
+10.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>密林珍宝箱</name>
+    <item>猴儿酒x1
+猴儿酒x2
+猴儿酒x3</item>
+    <probability>50.00%
+30.00%
+20.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <name>粽袋</name>
+    <item>1个端午粽子
+2个端午粽子
+3个端午粽子</item>
+    <probability>33.33%
+33.33%
+33.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <name>航海宝箱</name>
+    <item>2级强化石x1
+2级宝石袋x1</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <name>迷宫宝箱</name>
+    <item>1级强化石x1
+2级强化石x1
+1级宝石袋x1
+2级宝石袋x1</item>
+    <probability>37.50%
+12.50%
+37.50%
+12.50%</probability>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <name>南瓜壳</name>
+    <item>太妃糖x1
+苹果x1
+南瓜泥x1
+红酒x1
+魔力蛋糕x1</item>
+    <probability>55.17%
+20.69%
+13.79%
+6.9%
+3.45%</probability>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <name>刑天珍宝箱</name>
+    <item>3级强化石x1
+熔炼石碎片x1
+玉衡石碎片x1
+天枢石碎片x1</item>
+    <probability>50.00%
+25.00%
+12.50%
+12.50%</probability>
+  </RECORD>
+  <RECORD>
+    <id>9</id>
+    <name>诛仙剑阵宝箱</name>
+    <item>绝仙剑魄x1
+诛仙剑魄x1
+戮仙剑魄x1
+陷仙剑魄x1
+诛仙剑魂x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+20.00%
+20.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>10</id>
+    <name>凶兽宝箱</name>
+    <item>2级强化石x1
+还魂丹x1
+铁钥匙x3
+圣兽之力x1
+1级宝石袋x1
+三仙果x1
+大灵魂药水x1
+2级宝石袋x1
+中级幸运符x1
+喔喔蛋x1
+风之石x1</item>
+    <probability>11.27%
+12.88%
+12.88%
+12.88%
+12.88%
+11.27%
+11.27%
+8.05%
+6.44%
+0.08%
+0.08%</probability>
+  </RECORD>
+  <RECORD>
+    <id>11</id>
+    <name>幻异果</name>
+    <item>1级宝石袋x1
+2级宝石袋x1
+紫金葫芦x1
+还魂丹x1
+2级强化石x1
+3级强化石x1
+大灵魂药水x1
+法宝洗炼石x1
+五行洗炼石x1
+成长率洗炼石x1</item>
+    <probability>25.00%
+16.67%
+4.17%
+12.50%
+8.33%
+4.17%
+8.33%
+12.50%
+4.17%
+4.17%</probability>
+  </RECORD>
+  <RECORD>
+    <id>12</id>
+    <name>万仙果</name>
+    <item>1包宝石结晶x1
+1袋宝石结晶x1
+中级幸运符x1
+高级幸运符x1
+4级强化石x1
+玉衡石碎片x1
+天枢石碎片x1
+熔炼石碎片x1</item>
+    <probability>24.00%
+16.00%
+16.00%
+8.00%
+4.00%
+8.00%
+8.00%
+16.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>13</id>
+    <name>VIP铜宝箱</name>
+    <item>1级强化石x1
+三色花x1
+三仙果x1
+灵魂药剂x3
+法宝洗炼石x1
+铁钥匙x1</item>
+    <probability>25.00%
+20.00%
+10.00%
+25.00%
+10.00%
+10.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>14</id>
+    <name>VIP银宝箱</name>
+    <item>法宝洗炼石x1
+1级强化石x2
+三仙果x1
+资质果x1
+大灵魂药剂x1
+五行洗炼石x1
+铁钥匙x2</item>
+    <probability>25.00%
+12.50%
+12.50%
+21.88%
+15.62%
+6.25%
+6.25%</probability>
+  </RECORD>
+  <RECORD>
+    <id>15</id>
+    <name>VIP金宝箱</name>
+    <item>法宝洗炼石x1
+1级强化石x3
+资质果x2
+成长率洗炼石x1
+万仙果x1
+三仙果x2
+铁钥匙x3</item>
+    <probability>15.38%
+15.38%
+23.07%
+11.54%
+7.7%
+19.23%
+7.7%</probability>
+  </RECORD>
+  <RECORD>
+    <id>16</id>
+    <name>VIP灵玉宝箱</name>
+    <item>属性洗炼石x1
+2级强化石x2
+资质果x2
+万仙果x1
+三色花x3
+三仙果x2
+法宝洗炼石x2
+成长率洗炼石x1
+铁钥匙x5</item>
+    <probability>9.37%
+9.37%
+25%
+6.25%
+15.63%
+15.63%
+6.25%
+9.37%
+3.13%</probability>
+  </RECORD>
+  <RECORD>
+    <id>17</id>
+    <name>1级莲珠袋</name>
+    <item>1级生命莲珠
+1级魔法莲珠
+1级攻击莲珠
+1级防御莲珠
+1级魔抗莲珠
+1级破魔莲珠
+1级命中莲珠
+1级闪避莲珠
+1级暴击莲珠
+1级韧性莲珠
+1级幸运莲珠
+1级守护莲珠</item>
+    <probability>8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>18</id>
+    <name>4级莲珠袋</name>
+    <item>4级生命莲珠
+4级魔法莲珠
+4级攻击莲珠
+4级防御莲珠
+4级魔抗莲珠
+4级破魔莲珠
+4级命中莲珠
+4级闪避莲珠
+4级暴击莲珠
+4级韧性莲珠
+4级幸运莲珠
+4级守护莲珠</item>
+    <probability>8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%
+8.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>19</id>
+    <name>莲珠珍宝箱</name>
+    <item>一级莲珠袋x2
+一级莲珠袋x3</item>
+    <probability>60.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>20</id>
+    <name>一级神府魂石袋</name>
+    <item>1级神速魂石
+1级神巧魂石
+1级神微魂石
+1级神玄魂石</item>
+    <probability>25.00%
+25.00%
+25.00%
+25.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>21</id>
+    <name>一级鬼蜮魂石袋</name>
+    <item>1级鬼势魂石
+1级鬼殇魂石
+1级鬼气魂石</item>
+    <probability>33.33%
+33.33%
+33.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>22</id>
+    <name>一级灵界魂石袋</name>
+    <item>1级灵心魂石
+1级灵甲魂石
+1级灵魅魂石</item>
+    <probability>33.33%
+33.33%
+33.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>23</id>
+    <name>2级魂石宝箱</name>
+    <item>2级鬼势魂石
+2级鬼殇魂石
+2级鬼气魂石
+2级灵心魂石
+2级灵甲魂石
+2级灵魅魂石
+2级神速魂石
+2级神巧魂石
+2级神微魂石
+2级神玄魂石</item>
+    <probability>10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>24</id>
+    <name>3级魂石宝箱</name>
+    <item>3级鬼势魂石
+3级鬼殇魂石
+3级鬼气魂石
+3级灵心魂石
+3级灵甲魂石
+3级灵魅魂石
+3级神速魂石
+3级神巧魂石
+3级神微魂石
+3级神玄魂石</item>
+    <probability>10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%
+10.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>25</id>
+    <name>魂石宝箱</name>
+    <item>一级神府魂石袋x1
+一级鬼蜮魂石袋x1
+一级灵界魂石袋x1</item>
+    <probability>33.33%
+33.33%
+33.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>26</id>
+    <name>兽魂宝箱</name>
+    <item>神武兽魂x1
+神目兽魂x1
+神怒兽魂x1
+神锐兽魂x1
+神武兽魂x2
+神目兽魂x2
+神怒兽魂x2
+神锐兽魂x2</item>
+    <probability>21.37%
+21.37%
+21.37%
+21.37%
+3.63%
+3.63%
+3.63%
+3.63%</probability>
+  </RECORD>
+  <RECORD>
+    <id>27</id>
+    <name>1级宝石袋</name>
+    <item>1级生命石
+1级魔法石
+1级攻击石
+1级防御石
+1级回血石
+1级回蓝石
+1级魔抗石
+1级破魔石
+1级命中石
+1级闪避石
+1级暴击石
+1级韧性石
+1级幸运石
+1级守护石
+1级吸血石
+1级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>28</id>
+    <name>2级宝石袋</name>
+    <item>2级生命石
+2级魔法石
+2级攻击石
+2级防御石
+2级回血石
+2级回蓝石
+2级魔抗石
+2级破魔石
+2级命中石
+2级闪避石
+2级暴击石
+2级韧性石
+2级幸运石
+2级守护石
+2级吸血石
+2级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>29</id>
+    <name>3级宝石袋</name>
+    <item>3级生命石
+3级魔法石
+3级攻击石
+3级防御石
+3级回血石
+3级回蓝石
+3级魔抗石
+3级破魔石
+3级命中石
+3级闪避石
+3级暴击石
+3级韧性石
+3级幸运石
+3级守护石
+3级吸血石
+3级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>30</id>
+    <name>4级宝石袋</name>
+    <item>4级生命石
+4级魔法石
+4级攻击石
+4级防御石
+4级回血石
+4级回蓝石
+4级魔抗石
+4级破魔石
+4级命中石
+4级闪避石
+4级暴击石
+4级韧性石
+4级幸运石
+4级守护石
+4级吸血石
+4级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>31</id>
+    <name>5级宝石袋</name>
+    <item>5级生命石
+5级魔法石
+5级攻击石
+5级防御石
+5级回血石
+5级回蓝石
+5级魔抗石
+5级破魔石
+5级命中石
+5级闪避石
+5级暴击石
+5级韧性石
+5级幸运石
+5级守护石
+5级吸血石
+5级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>32</id>
+    <name>6级宝石袋</name>
+    <item>6级生命石
+6级魔法石
+6级攻击石
+6级防御石
+6级回血石
+6级回蓝石
+6级魔抗石
+6级破魔石
+6级命中石
+6级闪避石
+6级暴击石
+6级韧性石
+6级幸运石
+6级守护石
+6级吸血石
+6级反伤石</item>
+    <probability>6.38%
+6.38%
+6.38%
+6.38%
+9.57%
+2.13%
+6.38%
+6.38%
+3.19%
+2.13%
+6.38%
+9.57%
+6.38%
+9.57%
+6.38%
+6.38%</probability>
+  </RECORD>
+  <RECORD>
+    <id>33</id>
+    <name>鱼儿宝箱·宠物</name>
+    <item>忘忧草x1
+天赋果x1
+三仙果x1
+幻梦果x1
+启灵果x1
+资质果x1</item>
+    <probability>37.04%
+5.56%
+18.52%
+27.78%
+5.56%
+5.56%</probability>
+  </RECORD>
+  <RECORD>
+    <id>34</id>
+    <name>鱼儿宝箱·坐骑</name>
+    <item>妖灵花x3
+三色花x1
+幽蒙草x1
+经验米糍x1</item>
+    <probability>38.46%
+26.92%
+7.69%
+26.92%</probability>
+  </RECORD>
+  <RECORD>
+    <id>35</id>
+    <name>鱼儿宝箱·角色</name>
+    <item>还魂丹x1
+幻化石x1
+圣兽之力x1
+馒头x1
+铁钥匙x3
+1级强化石x3</item>
+    <probability>16.67%
+16.67%
+16.67%
+16.67%
+16.67%
+16.67%</probability>
+  </RECORD>
+  <RECORD>
+    <id>36</id>
+    <name>鱼儿奇趣宝箱·宠物</name>
+    <item>三仙果x1
+幻梦果x3
+大经验瑶草x1
+生命果x1
+攻击果x1
+防御果x1</item>
+    <probability>35.71%
+35.71%
+17.86%
+3.57%
+3.57%
+3.57%</probability>
+  </RECORD>
+  <RECORD>
+    <id>37</id>
+    <name>鱼儿奇趣宝箱·坐骑</name>
+    <item>朱丹花x1
+流金花x1
+苍翠花x1
+幽蒙草x1
+妖灵花x3
+大经验米糍x1</item>
+    <probability>3.45%
+3.45%
+3.45%
+34.48%
+34.48%
+20.69%</probability>
+  </RECORD>
+  <RECORD>
+    <id>38</id>
+    <name>鱼儿珍稀宝箱</name>
+    <item>铁钥匙x9
+法宝洗炼石x1
+属性洗炼石x1
+3级强化石x1
+3级宝石袋x1
+大灵魂药剂x1</item>
+    <probability>30.3%
+9.1%
+15.15%
+9.1%
+6.06%
+30.3%</probability>
+  </RECORD>
+  <RECORD>
+    <id>39</id>
+    <name>鱼儿珍藏宝箱</name>
+    <item>铁钥匙x9
+法宝洗炼石x1
+属性洗炼石x1
+3级强化石x1
+3级宝石袋x1
+馒头x3
+万仙果x1</item>
+    <probability>24.00%
+20.00%
+8.00%
+12.00%
+8.00%
+24.00%
+4.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>40</id>
+    <name>城西羽毛宝箱</name>
+    <item>紫燕之羽碎片x3
+金鹏羽丝x1
+金鹏之羽碎片x1</item>
+    <probability>57.14%
+28.57%
+14.28%</probability>
+  </RECORD>
+  <RECORD>
+    <id>41</id>
+    <name>镇魔宝箱</name>
+    <item>玄武令x1
+瑶草x1
+青团x1</item>
+    <probability>50.00%
+25.00%
+25.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>42</id>
+    <name>梦之礼</name>
+    <item>1级强化石x1
+宝石结晶x1
+羽枝x1
+三色花x1
+灵魂药水x1
+还魂丹x1
+幻化石x1
+铁钥匙x3
+护刃钳x1
+经验青团x1
+经验瑶草x1
+幻梦果x1
+妖灵花x1
+10周年烟花</item>
+    <probability>20.88%
+14.61%
+14.61%
+8.35%
+8.35%
+8.35%
+4.18%
+3.13%
+3.13%
+3.13%
+3.13%
+3.13%
+2.92%
+2.09%</probability>
+  </RECORD>
+  <RECORD>
+    <id>43</id>
+    <name>青春之礼</name>
+    <item>坐骑改名卡x1
+宠物改名卡
+10周年庆烟花x1
+朱丹花x1
+苍翠花x1
+流金花x1
+潜力果x1
+根骨果x1
+灵力果x1</item>
+    <probability>18.35%
+18.35%
+12.23%
+10.25%
+10.25%
+10.25%
+6.78%
+6.78%
+6.78%</probability>
+  </RECORD>
+  <RECORD>
+    <id>44</id>
+    <name>十年之礼</name>
+    <item>
+紫金葫芦x1
+3级强化石x1
+孟婆药剂
+生命果x1
+攻击果x1
+防御果x1
+高级幸运符x1
+进化石百变袋x1
+咩咩蛋x1</item>
+    <probability>16.20%
+14.04%
+12.96%
+12.96%
+12.96%
+12.96%
+11.88%
+3.02%
+3.02%</probability>
+  </RECORD>
+  <RECORD>
+    <id>45</id>
+    <name>11年之礼</name>
+    <item>
+天枢石碎片x1
+玉衡石碎片x1
+孟婆药剂x1
+生命果x1
+攻击果x1
+防御果x1
+高级幸运符x1
+进化石百变袋x1
+咩咩蛋x1</item>
+    <probability>13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+3.33%
+3.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>46</id>
+    <name>12年之礼</name>
+    <item>
+天枢石碎片x1
+玉衡石碎片x1
+孟婆药剂x1
+生命果x1
+攻击果x1
+防御果x1
+高级幸运符x1
+进化石百变袋x1
+咩咩蛋x1</item>
+    <probability>13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+3.33%
+3.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>47</id>
+    <name>13年之礼</name>
+    <item>
+天枢石碎片x1
+玉衡石碎片x1
+孟婆药剂x1
+生命果x1
+攻击果x1
+防御果x1
+高级幸运符x1
+进化石百变袋x1
+咩咩蛋x1</item>
+    <probability>13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+3.33%
+3.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>48</id>
+    <name>14年之礼</name>
+    <item>
+天枢石碎片x1
+玉衡石碎片x1
+孟婆药剂x1
+生命果x1
+攻击果x1
+防御果x1
+高级幸运符x1
+进化石百变袋x1
+咩咩蛋x1</item>
+    <probability>13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+13.33%
+3.33%
+3.33%</probability>
+  </RECORD>
+  <RECORD>
+    <id>49</id>
+    <name>银丝锦囊</name>
+    <item>蟠桃篮x1
+灵魂药剂x1</item>
+    <probability>40%
+60%</probability>
+  </RECORD>
+  <RECORD>
+    <id>50</id>
+    <name>蓝纹锦囊</name>
+    <item>九千年蟠桃x1
+灵魂药剂x1</item>
+    <probability>40%
+60%</probability>
+  </RECORD>
+  <RECORD>
+    <id>51</id>
+    <name>谷仓宝袋</name>
+    <item>劳动模范铜章x1
+速通水晶x1</item>
+    <probability>50%
+50%</probability>
+  </RECORD>
+  <RECORD>
+    <id>52</id>
+    <name>月饼礼包</name>
+    <item>月饼x10
+月饼x5
+月饼x1</item>
+    <probability>20%
+40%
+40%</probability>
+  </RECORD>
+  <RECORD>
+    <id>53</id>
+    <name>曼陀罗华香囊</name>
+    <item>曼陀罗华x1
+曼陀罗华x2</item>
+    <probability>60%
+40%</probability>
+  </RECORD>
+  <RECORD>
+    <id>54</id>
+    <name>风之宝箱</name>
+    <item>棕椰木x6
+黄磷沙x6
+金蚕丝x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>55</id>
+    <name>雨之宝箱</name>
+    <item>落青藤x6
+雾水岩x6
+素纤麻x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>56</id>
+    <name>雷之宝箱</name>
+    <item>绿针藓x6
+朱砂石x6
+墨谷棉x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>57</id>
+    <name>电之宝箱</name>
+    <item>玉荧草x6
+七彩晶x6
+星河纱x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>58</id>
+    <name>天气宝箱</name>
+    <item>雪莲花x6
+绿磷矿x6
+冰凝缎x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>59</id>
+    <name>空间宝箱</name>
+    <item>缠星藻x6
+青铜石x6
+镜魂丝x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>60</id>
+    <name>时间宝箱</name>
+    <item>葫芦藓x6
+碎陨星x6
+流光绸x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>61</id>
+    <name>释罗宝箱</name>
+    <item>菩提子x6
+鲛人泪x6
+天竺棉x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>62</id>
+    <name>摩多宝箱</name>
+    <item>青藤刺x6
+海蓝晶x6 
+火浣纱x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>63</id>
+    <name>无冥宝箱</name>
+    <item>紫云芝x6
+刺冥骨x6
+乌烟绒x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>64</id>
+    <name>间忏宝箱</name>
+    <item>落情草x6
+碧血晶x6
+厄蛛丝x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>65</id>
+    <name>那刹宝箱</name>
+    <item>鬼影叶x6
+琥珀露x6
+青冥绡x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>66</id>
+    <name>洛湮宝箱</name>
+    <item>焦枯木x6
+玄虚砂x6
+暮云绢x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>67</id>
+    <name>伽岚宝箱</name>
+    <item>桃木枝x6
+丹霞土x6
+赤焰葛x6
+1级强化石x1</item>
+    <probability>20.00%
+20.00%
+20.00%
+40.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>68</id>
+    <name>朱电武器制作书</name>
+    <item>朱电寒髓杵制作书
+朱电新月刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>69</id>
+    <name>奢天武器制作书</name>
+    <item>奢天栖山杵制作书
+奢天逐夜刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>70</id>
+    <name>帝空武器制作书</name>
+    <item>帝空昆吾杵制作书
+帝空断魂刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>71</id>
+    <name>烛时武器制作书</name>
+    <item>烛时虚空杵制作书
+烛时明月刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>72</id>
+    <name>释罗武器制作书</name>
+    <item>释罗烬焰杵制作书
+释罗惊风刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>73</id>
+    <name>摩多武器制作书</name>
+    <item>摩多玄骨杵制作书
+摩多无影刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>74</id>
+    <name>无冥武器制作书</name>
+    <item>无冥亡灵棍制作书
+无冥拳套制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>75</id>
+    <name>无冥武器制作书</name>
+    <item>无冥回魂杖制作书
+无冥解梦书制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>76</id>
+    <name>无冥武器制作书</name>
+    <item>无冥禁元耙制作书
+无冥破镜锤制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>77</id>
+    <name>无冥武器制作书</name>
+    <item>无冥绝杀铲制作书
+无冥梦魇弓制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>78</id>
+    <name>无冥武器制作书</name>
+    <item>无冥勾魂枪制作书
+无冥黄泉剑制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>79</id>
+    <name>无冥武器制作书</name>
+    <item>无冥魅影杵制作书
+无冥断肠刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>80</id>
+    <name>间忏武器制作书</name>
+    <item>间忏逍遥棍制作书
+间忏拳套制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>81</id>
+    <name>间忏武器制作书</name>
+    <item>间忏绝情杖制作书
+间忏殉道书制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>82</id>
+    <name>间忏武器制作书</name>
+    <item>间忏鬼牙耙制作书
+间忏千斤锤制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>83</id>
+    <name>间忏武器制作书</name>
+    <item>间忏无形铲制作书
+间忏夜魔弓制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>84</id>
+    <name>间忏武器制作书</name>
+    <item>间忏七星枪制作书
+间忏承影剑制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>85</id>
+    <name>间忏武器制作书</name>
+    <item>间忏附灵杵制作书
+间忏脩夜刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>86</id>
+    <name>那刹武器制作书</name>
+    <item>那刹流云棍制作书
+那刹拳套制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>87</id>
+    <name>那刹武器制作书</name>
+    <item>那刹寂灭杖制作书
+那刹鬼界书制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>88</id>
+    <name>那刹武器制作书</name>
+    <item>那刹破晓耙制作书
+那刹雷霆锤制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>89</id>
+    <name>那刹武器制作书</name>
+    <item>那刹隐月铲制作书
+那刹星辰弓制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>90</id>
+    <name>那刹武器制作书</name>
+    <item>那刹碎云枪制作书
+那刹炽夜剑制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>91</id>
+    <name>那刹武器制作书</name>
+    <item>那刹灵光杵制作书
+那刹霜月刀制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>92</id>
+    <name>朱电武器制作书</name>
+    <item>朱电火尖枪制作书
+朱电乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>93</id>
+    <name>奢天武器制作书</name>
+    <item>奢天火尖枪制作书
+奢天乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>94</id>
+    <name>帝空武器制作书</name>
+    <item>帝空火尖枪制作书
+帝空乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>95</id>
+    <name>烛时武器制作书</name>
+    <item>烛时火尖枪制作书
+烛时乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>96</id>
+    <name>释罗武器制作书</name>
+    <item>释罗火尖枪制作书
+释罗乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>97</id>
+    <name>摩多武器制作书</name>
+    <item>摩多火尖枪制作书
+摩多乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>98</id>
+    <name>无冥武器制作书</name>
+    <item>无冥火尖枪制作书
+无冥乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>99</id>
+    <name>间忏武器制作书</name>
+    <item>间忏火尖枪制作书
+间忏乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+  <RECORD>
+    <id>100</id>
+    <name>那刹武器制作书</name>
+    <item>那刹火尖枪制作书
+那刹乾坤圈制作书</item>
+    <probability>50.00%
+50.00%</probability>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,184 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "argot": "菠菜锦鲤！",
+      "type": "item",
+      "itemId": "138100002;199200031",
+      "num": "1;1",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/1/2-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "2",
+      "argot": "菠菜撞大运！",
+      "type": "item",
+      "itemId": "138100002;199200031",
+      "num": "1;1",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/1/2-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "101",
+      "argot": "欢度双旦！",
+      "type": "item",
+      "itemId": "199200031",
+      "num": "1",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/1/2-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "102",
+      "argot": "zm2023tnkl",
+      "type": "item",
+      "itemId": "105300019;136100001;176300008",
+      "num": "1;1;1",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/1/31-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "103",
+      "argot": "zm12zn",
+      "type": "item",
+      "itemId": "105300019;198100002",
+      "num": "1;1",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/5/7-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "104",
+      "argot": "zmgqkl999",
+      "type": "item",
+      "itemId": "165100001",
+      "num": "3",
+      "openTime": "2022/12/19-23:59:59",
+      "underTime": "2023/10/16-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "105",
+      "argot": "zmydkl",
+      "type": "item",
+      "itemId": "198100002;145300001;165100001",
+      "num": "2;2;2",
+      "openTime": "2023/12/19-23:59:59",
+      "underTime": "2024/1/1-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "106",
+      "argot": "ZMLNDJ",
+      "type": "item",
+      "itemId": "198100002;165100001;176300028",
+      "num": "1;1;1",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2024/2/29-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "107",
+      "argot": "SSZNQD",
+      "type": "item",
+      "itemId": "165100001;198100002;105300019",
+      "num": "1;1;1",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2024/5/5-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "108",
+      "argot": "ZMJQHL",
+      "type": "item",
+      "itemId": "145300001;198100002;165100001",
+      "num": "1;1;1",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2024/10/7-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "109",
+      "argot": "金蛇狂舞",
+      "type": "item",
+      "itemId": "105300019;175000001;145300001;176300008",
+      "num": "1;2;1;1",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2025/2/23-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "110",
+      "argot": "ZMZNQWY",
+      "type": "item",
+      "itemId": "131100001;145300001;176200001",
+      "num": "10;3;2",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2025/5/7-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "111",
+      "argot": "zmxydwak",
+      "type": "item",
+      "itemId": "131100001;145300001",
+      "num": "3;3",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2025/6/2-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "112",
+      "argot": "SQHGYL",
+      "type": "item",
+      "itemId": "106100002;198100002;145300001;131100001",
+      "num": "2;2;2;4",
+      "openTime": "2024/2/1-23:59:59",
+      "underTime": "2025/7/10-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "113",
+      "argot": "ZMJQKL",
+      "type": "item",
+      "itemId": "143200001;131100001;165100001",
+      "num": "5;2;2",
+      "openTime": "2025/9/24-23:59:59",
+      "underTime": "2025/10/8-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "114",
+      "argot": "zmmndj",
+      "type": "item",
+      "itemId": "131100001;145300001;176200007",
+      "num": "2;3;1",
+      "openTime": "2026/2/1-23:59:59",
+      "underTime": "2026/3/4-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "115",
+      "argot": "SWZNQWY",
+      "type": "item",
+      "itemId": "176300036;176200004;172300001;198100002",
+      "num": "1;1;10;2",
+      "openTime": "2026/2/1-23:59:59",
+      "underTime": "2026/5/5-23:59:59",
+      "receiveNumMax": "-1"
+    },
+    {
+      "id": "116",
+      "argot": "JQSJYQZM",
+      "type": "item",
+      "itemId": "131100001",
+      "num": "8",
+      "openTime": "2026/2/1-23:59:59",
+      "underTime": "2026/10/8-23:59:59",
+      "receiveNumMax": "-1"
+    }
+  ]
+}

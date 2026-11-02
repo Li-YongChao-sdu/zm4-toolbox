@@ -1,0 +1,324 @@
+{
+  "RECORD": [
+    {
+      "id": "1001",
+      "score": "400",
+      "levelType": "1",
+      "item": "176100003",
+      "count": "1",
+      "describe": "蓝色烟花*1"
+    },
+    {
+      "id": "1002",
+      "score": "800",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1003",
+      "score": "1200",
+      "levelType": "1",
+      "item": "106100002",
+      "count": "1",
+      "describe": "2级强化石*1"
+    },
+    {
+      "id": "1004",
+      "score": "1600",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1005",
+      "score": "2000",
+      "levelType": "1",
+      "item": "172300001",
+      "count": "20",
+      "describe": "羽枝*20"
+    },
+    {
+      "id": "1006",
+      "score": "2400",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "1007",
+      "score": "2800",
+      "levelType": "1",
+      "item": "150100001",
+      "count": "1",
+      "describe": "法宝洗炼石*1"
+    },
+    {
+      "id": "1008",
+      "score": "3200",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1009",
+      "score": "3600",
+      "levelType": "1",
+      "item": "106100002",
+      "count": "1",
+      "describe": "2级强化石*1"
+    },
+    {
+      "id": "1010",
+      "score": "4000",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1011",
+      "score": "4400",
+      "levelType": "1",
+      "item": "166200001",
+      "count": "1",
+      "describe": "三仙果*1"
+    },
+    {
+      "id": "1012",
+      "score": "4800",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1013",
+      "score": "5200",
+      "levelType": "1",
+      "item": "131100001",
+      "count": "15",
+      "describe": "速通水晶*15"
+    },
+    {
+      "id": "1014",
+      "score": "5600",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "1015",
+      "score": "6000",
+      "levelType": "1",
+      "item": "106100002",
+      "count": "1",
+      "describe": "2级强化石*1"
+    },
+    {
+      "id": "1016",
+      "score": "6400",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1017",
+      "score": "6800",
+      "levelType": "1",
+      "item": "150200003",
+      "count": "1",
+      "describe": "属性洗炼石*1"
+    },
+    {
+      "id": "1018",
+      "score": "7200",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "20",
+      "describe": "三千年蟠桃*20"
+    },
+    {
+      "id": "1019",
+      "score": "7600",
+      "levelType": "1",
+      "item": "106200003",
+      "count": "1",
+      "describe": "3级强化石*1"
+    },
+    {
+      "id": "1020",
+      "score": "8000",
+      "levelType": "1",
+      "item": "143300021",
+      "count": "100",
+      "describe": "三千年蟠桃*100"
+    },
+    {
+      "id": "2001",
+      "score": "400",
+      "levelType": "2",
+      "item": "199200031",
+      "count": "1",
+      "describe": "多彩烟花礼包*1"
+    },
+    {
+      "id": "2002",
+      "score": "800",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2003",
+      "score": "1200",
+      "levelType": "2",
+      "item": "106200003",
+      "count": "1",
+      "describe": "3级强化石*1"
+    },
+    {
+      "id": "2004",
+      "score": "1600",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2005",
+      "score": "2000",
+      "levelType": "2",
+      "item": "172300001",
+      "count": "50",
+      "describe": "羽枝*50"
+    },
+    {
+      "id": "2006",
+      "score": "2400",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "100",
+      "describe": "三千年蟠桃*100"
+    },
+    {
+      "id": "2007",
+      "score": "2800",
+      "levelType": "2",
+      "item": "150200003",
+      "count": "1",
+      "describe": "属性洗炼石*1"
+    },
+    {
+      "id": "2008",
+      "score": "3200",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2009",
+      "score": "3600",
+      "levelType": "2",
+      "item": "106200003",
+      "count": "1",
+      "describe": "3级强化石*1"
+    },
+    {
+      "id": "2010",
+      "score": "4000",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2011",
+      "score": "4400",
+      "levelType": "2",
+      "item": "150200003",
+      "count": "1",
+      "describe": "属性洗炼石*1"
+    },
+    {
+      "id": "2012",
+      "score": "4800",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2013",
+      "score": "5200",
+      "levelType": "2",
+      "item": "131100001",
+      "count": "30",
+      "describe": "速通水晶*30"
+    },
+    {
+      "id": "2014",
+      "score": "5600",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2015",
+      "score": "6000",
+      "levelType": "2",
+      "item": "106200003",
+      "count": "1",
+      "describe": "3级强化石*1"
+    },
+    {
+      "id": "2016",
+      "score": "6400",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2017",
+      "score": "6800",
+      "levelType": "2",
+      "item": "150200003",
+      "count": "1",
+      "describe": "属性洗炼石*1"
+    },
+    {
+      "id": "2018",
+      "score": "7200",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "50",
+      "describe": "三千年蟠桃*50"
+    },
+    {
+      "id": "2019",
+      "score": "7600",
+      "levelType": "2",
+      "item": "196200001",
+      "count": "1",
+      "describe": "3级百变宝石袋*1"
+    },
+    {
+      "id": "2020",
+      "score": "8000",
+      "levelType": "2",
+      "item": "143300021",
+      "count": "200",
+      "describe": "三千年蟠桃*200"
+    }
+  ]
+}

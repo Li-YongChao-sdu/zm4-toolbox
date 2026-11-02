@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>3</id>
+    <rewardId>1</rewardId>
+    <describe>-1</describe>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <rewardId>1</rewardId>
+    <describe>-1</describe>
+  </RECORD>
+</RECORDS>

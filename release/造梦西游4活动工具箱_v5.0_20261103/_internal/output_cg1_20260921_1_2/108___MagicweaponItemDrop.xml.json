@@ -1,0 +1,70 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "dungeonId": "6021",
+      "npcId": "dizang1_baozhu.swf",
+      "name": "宝珠地藏",
+      "iconId": "2110.png",
+      "describe": "宝珠地藏：\n除饿鬼饥渴贪求无厌苦恼\n\n副本内部分技能将被禁用",
+      "itemId": "174600017",
+      "equips": "499110101;499110201",
+      "type": "1"
+    },
+    {
+      "id": "2",
+      "dungeonId": "6022",
+      "npcId": "dizang1_baoyin.swf",
+      "name": "宝印地藏",
+      "iconId": "2111.png",
+      "describe": "宝印地藏：\n除饿鬼饥渴贪求无厌苦恼\n\n副本内部分技能将被禁用",
+      "itemId": "174600018",
+      "equips": "499210101;499210201",
+      "type": "1"
+    },
+    {
+      "id": "3",
+      "dungeonId": "6023",
+      "npcId": "dizang1_riguang.swf",
+      "name": "日光地藏",
+      "iconId": "2112.png",
+      "describe": "日光地藏：\n除天人之五衰相苦恼\n\n副本内部分技能将被禁用",
+      "itemId": "174600019",
+      "equips": "499120101;499120201",
+      "type": "1"
+    },
+    {
+      "id": "4",
+      "dungeonId": "6024",
+      "npcId": "dizang1_tantuo.swf",
+      "name": "檀陀地藏",
+      "iconId": "2113.png",
+      "describe": "檀陀地藏：\n除地狱炽热无尽折磨痛苦\n\n副本内部分技能将被禁用",
+      "itemId": "174600020",
+      "equips": "499130101;499130201",
+      "type": "1"
+    },
+    {
+      "id": "5",
+      "dungeonId": "6025",
+      "npcId": "dizang1_chidi.swf",
+      "name": "持地地藏",
+      "iconId": "2114.png",
+      "describe": "持地地藏：\n除阿修罗嗔恨烦恼痛苦\n\n副本内部分技能将被禁用",
+      "itemId": "174600021",
+      "equips": "499140101;499140201",
+      "type": "1"
+    },
+    {
+      "id": "1001",
+      "dungeonId": "6026",
+      "npcId": "xukong1_jingang.swf",
+      "name": "金刚虚空藏",
+      "iconId": "2210.png",
+      "describe": "金刚虚空藏：\n除愚顽众生我慢坚执之苦\n副本内部分技能将被禁用",
+      "itemId": "174600022",
+      "equips": "499150101;499150201",
+      "type": "2"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>福联</name>
+    <attribute>miss</attribute>
+    <allNum>-1</allNum>
+    <oneScreenNum>10</oneScreenNum>
+    <effTime>1</effTime>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>云朵</name>
+    <attribute>phyDef</attribute>
+    <allNum>15</allNum>
+    <oneScreenNum>5</oneScreenNum>
+    <effTime>1</effTime>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>马鞭</name>
+    <attribute>atk</attribute>
+    <allNum>-1</allNum>
+    <oneScreenNum>15</oneScreenNum>
+    <effTime>2</effTime>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <name>草堆</name>
+    <attribute>horseAtk</attribute>
+    <allNum>-1</allNum>
+    <oneScreenNum>12</oneScreenNum>
+    <effTime>1</effTime>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <name>铃铛</name>
+    <attribute>reward</attribute>
+    <allNum>7</allNum>
+    <oneScreenNum>7</oneScreenNum>
+    <effTime>1</effTime>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <itemId>-1</itemId>
+    <value>1000</value>
+    <unionExpAdd>10</unionExpAdd>
+    <roleDevoteAdd>10</roleDevoteAdd>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <itemId>142200001;142100001</itemId>
+    <value>1;1</value>
+    <unionExpAdd>15;0</unionExpAdd>
+    <roleDevoteAdd>15;10</roleDevoteAdd>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <itemId>-1</itemId>
+    <value>500</value>
+    <unionExpAdd>25</unionExpAdd>
+    <roleDevoteAdd>25</roleDevoteAdd>
+  </RECORD>
+</RECORDS>

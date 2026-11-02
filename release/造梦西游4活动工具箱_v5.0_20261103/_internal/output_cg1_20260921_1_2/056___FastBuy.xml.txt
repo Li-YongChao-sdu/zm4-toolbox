@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>180000001</id>
+    <name>装备洗炼石</name>
+    <mallId>574</mallId>
+    <describe>洗炼属性需消耗num个装备洗炼石，
+当前背包还有num个，
+你确定花费num点券额外购买num个并洗炼吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>186020002</id>
+    <name>魂器洗炼石</name>
+    <mallId>573</mallId>
+    <describe>洗炼魂器属性需消耗num个魂器洗炼石，
+当前背包还有num个，
+你确定花费num点券额外购买num个并洗炼吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>145300001</id>
+    <name>还魂丹</name>
+    <mallId>36</mallId>
+    <describe>你确定花费num点券购买num个还魂丹，
+并复活继续挑战？</describe>
+    <describe2>-1</describe2>
+    <numCount>2</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300015</id>
+    <name>朱雀灵珠</name>
+    <mallId>509</mallId>
+    <describe>朱雀进阶需消耗2个朱雀灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300014</id>
+    <name>宿燕灵珠</name>
+    <mallId>508</mallId>
+    <describe>危月燕进阶需消耗2个宿燕灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300016</id>
+    <name>谛听灵珠</name>
+    <mallId>547</mallId>
+    <describe>谛听进阶需消耗2个谛听灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300013</id>
+    <name>月兔灵珠</name>
+    <mallId>495</mallId>
+    <describe>月兔进阶需消耗2个月兔灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300011</id>
+    <name>麒麟灵珠</name>
+    <mallId>445</mallId>
+    <describe>火麒麟进阶需消耗2个麒麟灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300009</id>
+    <name>苍龙灵珠</name>
+    <mallId>441</mallId>
+    <describe>青龙进阶需消耗2个苍龙灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300008</id>
+    <name>龙鱼灵珠</name>
+    <mallId>429</mallId>
+    <describe>幻焰龙鱼进阶需消耗2个龙鱼灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300007</id>
+    <name>青鸾灵珠</name>
+    <mallId>427</mallId>
+    <describe>青鸾进阶需消耗2个青鸾灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300005</id>
+    <name>圣虎灵珠</name>
+    <mallId>425</mallId>
+    <describe>白虎进阶需消耗2个圣虎灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300003</id>
+    <name>飞鱼灵珠</name>
+    <mallId>384</mallId>
+    <describe>星河飞鱼进阶需消耗2个飞鱼灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300001</id>
+    <name>玄武灵珠</name>
+    <mallId>382</mallId>
+    <describe>玄武进阶需消耗2个玄武灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300002</id>
+    <name>神鹿灵珠</name>
+    <mallId>383</mallId>
+    <describe>仙域神鹿进阶需消耗2个神鹿灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300017</id>
+    <name>嘲风灵珠</name>
+    <mallId>622</mallId>
+    <describe>嘲风进阶需消耗2个嘲风灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300018</id>
+    <name>乘黄灵珠</name>
+    <mallId>734</mallId>
+    <describe>乘黄进阶需消耗2个乘黄灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137300019</id>
+    <name>建马灵珠</name>
+    <mallId>756</mallId>
+    <describe>建马进阶需消耗2个建马灵珠，
+当前背包还有num个，
+你确定花费num点券额外购买num个并进阶吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>3</numCount>
+  </RECORD>
+  <RECORD>
+    <id>166200001</id>
+    <name>三仙果</name>
+    <mallId>259</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个三仙果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>167300001</id>
+    <name>升潜果</name>
+    <mallId>535</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个升潜果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>167300002</id>
+    <name>延根果</name>
+    <mallId>536</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个延根果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>167300003</id>
+    <name>益灵果</name>
+    <mallId>537</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个益灵果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>169100001</id>
+    <name>幻梦果</name>
+    <mallId>304</mallId>
+    <describe>宠物技能升级需消耗num个幻梦果，
+当前背包还有num个，
+你确定花费num点券额外购买num个并升级吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137100002</id>
+    <name>妖灵花</name>
+    <mallId>292</mallId>
+    <describe>坐骑技能升级需消耗num个妖灵花，
+当前背包还有num个，
+你确定花费num点券额外购买num个并升级吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>158100001</id>
+    <name>启灵果</name>
+    <mallId>40</mallId>
+    <describe>你确定花费num点券购买一个启灵果，
+并学习一个新技能吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>157100001</id>
+    <name>忘忧草</name>
+    <mallId>39</mallId>
+    <describe>你确定花费num点券购买一个忘忧草？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>143300020</id>
+    <name>阴阳缠丝</name>
+    <mallId>596</mallId>
+    <describe>重织此时装需消耗num个阴阳缠丝，
+当前背包还有num个，
+你确定花费num点券额外购买num个并重织吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>143300015</id>
+    <name>仙域金丝</name>
+    <mallId>353</mallId>
+    <describe>重织此时装需消耗num个仙域金丝，
+当前背包还有num个，
+你确定花费num点券额外购买num个并重织吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>141300001</id>
+    <name>联盟令牌</name>
+    <mallId>37</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个联盟令牌？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>143300002</id>
+    <name>紫灵阁挑战券</name>
+    <mallId>149</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1张紫灵阁挑战券？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>108100002</id>
+    <name>孟婆丹</name>
+    <mallId>120</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个孟婆丹？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>108100001</id>
+    <name>孟婆药剂</name>
+    <mallId>29</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个孟婆药剂？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137200001</id>
+    <name>星蒙草</name>
+    <mallId>82</mallId>
+    <describe>学习坐骑技能需消耗num个星蒙草，
+当前背包还有num个，
+你确定花费num点券额外购买num个吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>137100001</id>
+    <name>幽蒙草</name>
+    <mallId>31</mallId>
+    <describe>学习坐骑技能需消耗num个幽蒙草，
+当前背包还有num个，
+你确定花费num点券额外购买num个吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300002</id>
+    <name>光之石</name>
+    <mallId>503</mallId>
+    <describe>道具不足，你确定花费num点券购买一个光之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300003</id>
+    <name>月之石</name>
+    <mallId>510</mallId>
+    <describe>道具不足，你确定花费num点券购买一个月之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300006</id>
+    <name>风之石</name>
+    <mallId>504</mallId>
+    <describe>道具不足，你确定花费num点券购买一个风之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300008</id>
+    <name>冰之石</name>
+    <mallId>501</mallId>
+    <describe>道具不足，你确定花费num点券购买一个冰之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300009</id>
+    <name>幻之石</name>
+    <mallId>502</mallId>
+    <describe>道具不足，你确定花费num点券购买一个幻之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300010</id>
+    <name>暗之石</name>
+    <mallId>500</mallId>
+    <describe>道具不足，你确定花费num点券购买一个暗之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300019</id>
+    <name>恋之石</name>
+    <mallId>685</mallId>
+    <describe>道具不足，你确定花费num点券购买一个恋之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300018</id>
+    <name>影之石</name>
+    <mallId>599</mallId>
+    <describe>道具不足，你确定花费num点券购买一个影之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300017</id>
+    <name>霜之石</name>
+    <mallId>571</mallId>
+    <describe>道具不足，你确定花费num点券购买一个霜之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300015</id>
+    <name>岩之石</name>
+    <mallId>494</mallId>
+    <describe>道具不足，你确定花费num点券购买一个岩之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300016</id>
+    <name>森之石</name>
+    <mallId>539</mallId>
+    <describe>道具不足，你确定花费num点券购买一个森之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300014</id>
+    <name>炎之石</name>
+    <mallId>496</mallId>
+    <describe>道具不足，你确定花费num点券购买一个炎之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300013</id>
+    <name>电之石</name>
+    <mallId>497</mallId>
+    <describe>道具不足，你确定花费num点券购买一个电之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300012</id>
+    <name>毒之石</name>
+    <mallId>498</mallId>
+    <describe>道具不足，你确定花费num点券购买一个毒之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300011</id>
+    <name>魔之石</name>
+    <mallId>499</mallId>
+    <describe>道具不足，你确定花费num点券购买一个魔之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>163300020</id>
+    <name>飒之石</name>
+    <mallId>757</mallId>
+    <describe>道具不足，你确定花费num点券购买一个飒之石
+用于进化宠物（或领悟奥义）？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>187010001</id>
+    <name>神武兽魂</name>
+    <mallId>739</mallId>
+    <describe>道具不足，你确定花费num点券购买一个神武兽魂用于供奉？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>187010002</id>
+    <name>神目兽魂</name>
+    <mallId>740</mallId>
+    <describe>道具不足，你确定花费num点券购买一个神目兽魂用于供奉？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>187010003</id>
+    <name>神怒兽魂</name>
+    <mallId>741</mallId>
+    <describe>道具不足，你确定花费num点券购买一个神怒兽魂用于供奉？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>187010004</id>
+    <name>神锐兽魂</name>
+    <mallId>742</mallId>
+    <describe>道具不足，你确定花费num点券购买一个神锐兽魂用于供奉？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>185300004</id>
+    <name>剑意洗炼石</name>
+    <mallId>774</mallId>
+    <describe>剑意专精洗炼需消耗num个剑意洗炼石，
+当前背包还有num个，
+你确定花费num点券额外购买num个并洗炼吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>180000002</id>
+    <name>灵装洗炼石</name>
+    <mallId>789</mallId>
+    <describe>灵装洗炼需消耗num个灵装洗炼石，
+当前背包还有num个，
+你确定花费num点券额外购买num个并洗炼吗？</describe>
+    <describe2>-1</describe2>
+    <numCount>4</numCount>
+  </RECORD>
+  <RECORD>
+    <id>136100001</id>
+    <name>三色花</name>
+    <mallId>11</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个三色花？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>136200001</id>
+    <name>朱丹花</name>
+    <mallId>15</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个朱丹花？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>136200002</id>
+    <name>苍翠花</name>
+    <mallId>16</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个苍翠花？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>136200003</id>
+    <name>流金花</name>
+    <mallId>17</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个流金花？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>160100001</id>
+    <name>资质果</name>
+    <mallId>43</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个资质果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>160200001</id>
+    <name>生命果</name>
+    <mallId>44</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个生命果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>160200002</id>
+    <name>攻击果</name>
+    <mallId>45</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个攻击果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+  <RECORD>
+    <id>160200003</id>
+    <name>防御果</name>
+    <mallId>46</mallId>
+    <describe>道具不足，
+你确定花费num点券购买1个防御果？</describe>
+    <describe2>-1</describe2>
+    <numCount>1</numCount>
+  </RECORD>
+</RECORDS>

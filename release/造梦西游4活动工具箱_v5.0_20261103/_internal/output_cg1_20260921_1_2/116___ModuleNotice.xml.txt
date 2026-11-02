@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>联盟</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>1</order>
+    <rewardId>4213</rewardId>
+    <iconId>10001.png</iconId>
+    <describe1>恭喜你开启联盟
+结交同盟好友，一起战斗变强</describe1>
+    <describe2>结交同盟好友
+一起战斗变强</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山，第一行图标处点击体验</tip1>
+    <tip2>前往须弥山，第一行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>福禄寿</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>2</order>
+    <rewardId>4214</rewardId>
+    <iconId>10002.png</iconId>
+    <describe1>恭喜你开启福禄寿
+挑战福禄寿得多样祝福</describe1>
+    <describe2>挑战福禄寿
+得多样祝福</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>主题挑战</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>3</order>
+    <rewardId>4215</rewardId>
+    <iconId>10003.png</iconId>
+    <describe1>恭喜你开启主题挑战
+得残卷升级炼体，主题币商店兑换</describe1>
+    <describe2>得残卷升级炼体
+主题币商店兑换</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <name>生存大冒险</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>4</order>
+    <rewardId>4216</rewardId>
+    <iconId>10004.png</iconId>
+    <describe1>恭喜你开启生存大冒险
+体验多样题目，积分兑换道具</describe1>
+    <describe2>体验多样题目
+积分兑换道具</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <name>4399冒险</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>5</order>
+    <rewardId>4217</rewardId>
+    <iconId>10005.png</iconId>
+    <describe1>恭喜你开启4399冒险
+掷骰子走格子，领取珍稀材料</describe1>
+    <describe2>掷骰子走格子
+领取珍稀材料</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <name>时光之舟</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>6</order>
+    <rewardId>4218</rewardId>
+    <iconId>10006.png</iconId>
+    <describe1>恭喜你开启时光之舟
+领取离线奖励，抢购绝版道具</describe1>
+    <describe2>领取离线奖励
+抢购绝版道具</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山，第三行图标处点击体验</tip1>
+    <tip2>前往须弥山，第三行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <name>采集</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>17</targetNum>
+    <order>13</order>
+    <rewardId>4219</rewardId>
+    <iconId>10007.png</iconId>
+    <describe1>恭喜你开启采集
+离线也可获得超多材料</describe1>
+    <describe2>每日采集
+超多材料</describe2>
+    <title1>通关金沙村</title1>
+    <title2>通关金沙村</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <name>悬赏任务</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>26</targetNum>
+    <order>11</order>
+    <rewardId>4220</rewardId>
+    <iconId>10008.png</iconId>
+    <describe1>恭喜你开启悬赏任务
+赢得材料宝箱，超多经验灵魂</describe1>
+    <describe2>赢得材料宝箱
+超多经验灵魂</describe2>
+    <title1>26级开放</title1>
+    <title2>26级开放</title2>
+    <tip1>前往须弥山公告栏处体验</tip1>
+    <tip2>前往须弥山公告栏处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>9</id>
+    <name>悲鸣冰川</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>2002</targetNum>
+    <order>9</order>
+    <rewardId>4221</rewardId>
+    <iconId>10009.png</iconId>
+    <describe1>恭喜你开启悲鸣冰川
+强化坐骑装备，提升坐骑战力</describe1>
+    <describe2>强化坐骑装备
+提升坐骑战力</describe2>
+    <title1>即将开启</title1>
+    <title2>完成解救观音</title2>
+    <tip1>与须弥山佛祖对话，前往冰川地牢副本</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>10</id>
+    <name>神兽森林</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>2022</targetNum>
+    <order>10</order>
+    <rewardId>4222</rewardId>
+    <iconId>10010.png</iconId>
+    <describe1>恭喜你开启神兽森林 
+抓捕强力萌宠，一起闯关战斗</describe1>
+    <describe2>抓捕强力萌宠
+一起闯关战斗</describe2>
+    <title1>即将开启</title1>
+    <title2>完成解救普贤</title2>
+    <tip1>等级25级后，与须弥山佛祖对话，前往熔岩火牢副本</tip1>
+    <tip2>前往须弥山，第二行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>22</id>
+    <name>仓库</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>2022</targetNum>
+    <order>10</order>
+    <rewardId>4234</rewardId>
+    <iconId>10022.png</iconId>
+    <describe1>恭喜你开启仓库 
+随身背包，超多容量</describe1>
+    <describe2>随身背包
+超多容量</describe2>
+    <title1>即将开启</title1>
+    <title2>完成解救普贤</title2>
+    <tip1>等级25级后，与须弥山佛祖对话，前往熔岩火牢副本</tip1>
+    <tip2>前往须弥山，第二行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>11</id>
+    <name>神秘商店</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>30</targetNum>
+    <order>12</order>
+    <rewardId>4223</rewardId>
+    <iconId>10011.png</iconId>
+    <describe1>恭喜你开启神秘商店
+幸运开启黑市，购买折扣商品</describe1>
+    <describe2>幸运开启黑市
+购买折扣商品</describe2>
+    <title1>30级开放</title1>
+    <title2>30级开放</title2>
+    <tip1>前往须弥山，第一行图标处点击体验</tip1>
+    <tip2>前往须弥山，第一行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>12</id>
+    <name>罗汉堂</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>20</targetNum>
+    <order>7</order>
+    <rewardId>4224</rewardId>
+    <iconId>10012.png</iconId>
+    <describe1>恭喜你开启罗汉堂
+挑战十八罗汉，提升法宝品质</describe1>
+    <describe2>挑战十八罗汉
+提升法宝品质</describe2>
+    <title1>20级开放</title1>
+    <title2>20级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>13</id>
+    <name>守卫须弥山</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>15</targetNum>
+    <order>8</order>
+    <rewardId>4225</rewardId>
+    <iconId>10013.png</iconId>
+    <describe1>恭喜你开启守卫须弥山
+挑战强大祖巫，得羽毛镶翅膀</describe1>
+    <describe2>挑战强大祖巫
+得羽毛镶翅膀</describe2>
+    <title1>即将开启</title1>
+    <title2>通关万佛朝阁</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>14</id>
+    <name>螺旋地狱</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>2014</targetNum>
+    <order>14</order>
+    <rewardId>4226</rewardId>
+    <iconId>10014.png</iconId>
+    <describe1>恭喜你开启螺旋地狱
+挑战螺旋地狱，炼丹提升心法</describe1>
+    <describe2>挑战螺旋地狱
+炼丹提升心法</describe2>
+    <title1>即将开启</title1>
+    <title2>完成解救地藏</title2>
+    <tip1>等级30级后，与须弥山佛祖对话，前往绿蔓木牢副本</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>15</id>
+    <name>竞技场</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>2014</targetNum>
+    <order>15</order>
+    <rewardId>4227</rewardId>
+    <iconId>10015.png</iconId>
+    <describe1>恭喜你开启竞技场
+战神巅峰竞技，争夺强者功勋</describe1>
+    <describe2>战神巅峰竞技
+争夺强者功勋</describe2>
+    <title1>即将开启</title1>
+    <title2>完成解救地藏</title2>
+    <tip1>等级30级后，与须弥山佛祖对话，前往绿蔓木牢副本</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>16</id>
+    <name>斗宠大会</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>40</targetNum>
+    <order>16</order>
+    <rewardId>4228</rewardId>
+    <iconId>10016.png</iconId>
+    <describe1>恭喜你开启斗宠大会
+布阵终极团战，争夺战宠排名</describe1>
+    <describe2>布阵终极团战
+争夺战宠排名</describe2>
+    <title1>40级开放</title1>
+    <title2>40级开放</title2>
+    <tip1>前往须弥山日常活动处体验</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>17</id>
+    <name>万灵馆</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>50</targetNum>
+    <order>17</order>
+    <rewardId>4229</rewardId>
+    <iconId>10017.png</iconId>
+    <describe1>恭喜你开启万灵馆
+布阵宠物团战，赢得装备材料</describe1>
+    <describe2>布阵宠物团战
+赢得装备材料</describe2>
+    <title1>50级开放</title1>
+    <title2>50级开放</title2>
+    <tip1>前往须弥山右侧，找到NPC公冶长点击体验</tip1>
+    <tip2>前往须弥山右侧，找到NPC公冶长点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>24</id>
+    <name>太古秘境</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>7005</targetNum>
+    <order>18</order>
+    <rewardId>4238</rewardId>
+    <iconId>10024.png</iconId>
+    <describe1>恭喜你开启太古秘境
+获取本源精血，激活宠物血脉</describe1>
+    <describe2>获取本源精血
+激活宠物血脉</describe2>
+    <title1>即将开启</title1>
+    <title2>通关万灵馆-静幻</title2>
+    <tip1>通关万灵馆即可开启</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>18</id>
+    <name>幽夜泽</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>11</taskType>
+    <targetId>0</targetId>
+    <targetNum>90</targetNum>
+    <order>19</order>
+    <rewardId>4230</rewardId>
+    <iconId>10018.png</iconId>
+    <describe1>恭喜你开启幽夜泽
+组队挑战副本，得兽魂养坐骑</describe1>
+    <describe2>组队挑战副本
+得兽魂养坐骑</describe2>
+    <title1>90级开放</title1>
+    <title2>90级开放</title2>
+    <tip1>前往须弥山，第二行图标处点击体验</tip1>
+    <tip2>前往须弥山，第二行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>19</id>
+    <name>诛仙剑阵</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>46</targetNum>
+    <order>20</order>
+    <rewardId>4231</rewardId>
+    <iconId>10019.png</iconId>
+    <describe1>恭喜你开启诛仙剑阵
+提升角色属性，携带剑阵作战</describe1>
+    <describe2>提升角色属性
+携带剑阵作战</describe2>
+    <title1>通关不周山</title1>
+    <title2>通关不周山</title2>
+    <tip1>0</tip1>
+    <tip2>0</tip2>
+  </RECORD>
+  <RECORD>
+    <id>20</id>
+    <name>弥天神域</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>12</taskType>
+    <targetId>100020</targetId>
+    <targetNum>0</targetNum>
+    <order>21</order>
+    <rewardId>4232</rewardId>
+    <iconId>10020.png</iconId>
+    <describe1>恭喜你开启弥天神域
+解锁魂器系统，提升角色属性</describe1>
+    <describe2>解锁魂器系统
+提升战力属性</describe2>
+    <title1>即将开启</title1>
+    <title2>完成任务四剑归一</title2>
+    <tip1>通关不周山后，出现支线任务-四剑归一</tip1>
+    <tip2>前往须弥山，第二行图标处点击体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>21</id>
+    <name>地藏冥殿</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>49</targetNum>
+    <order>22</order>
+    <rewardId>4233</rewardId>
+    <iconId>10021.png</iconId>
+    <describe1>恭喜你开启地藏冥殿
+战地藏得材料，提升法宝品质</describe1>
+    <describe2>战地藏得材料
+提升法宝品质</describe2>
+    <title1>即将开启</title1>
+    <title2>lv100级 通关播冢山巅</title2>
+    <tip1>等级达到100级，通关播冢山巅即可开启</tip1>
+    <tip2>前往须弥山日常活动处体验</tip2>
+  </RECORD>
+  <RECORD>
+    <id>23</id>
+    <name>实战法宝</name>
+    <label>94</label>
+    <resetType>0</resetType>
+    <taskClass>94</taskClass>
+    <taskType>0</taskType>
+    <targetId>0</targetId>
+    <targetNum>1028</targetNum>
+    <order>23</order>
+    <rewardId>4235</rewardId>
+    <iconId>10023.png</iconId>
+    <describe1>恭喜你开启实战法宝
+属性法宝提升战，实战法宝协同作战</describe1>
+    <describe2>属性法宝提升战力
+实战法宝协同作战</describe2>
+    <title1>即将开启</title1>
+    <title2>通关播冢山巅</title2>
+    <tip1>通关播冢山巅即可开启</tip1>
+    <tip2>前往法宝处自行选择实战法宝</tip2>
+  </RECORD>
+</RECORDS>

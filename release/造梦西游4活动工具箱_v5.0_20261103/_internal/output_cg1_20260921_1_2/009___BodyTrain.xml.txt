@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>0</id>
+    <bodyValue>10;15;25</bodyValue>
+  </RECORD>
+  <RECORD>
+    <id>1</id>
+    <bodyValue>25;35;55</bodyValue>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <bodyValue>35;55;90</bodyValue>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <bodyValue>55;80;130</bodyValue>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <bodyValue>65;100;165</bodyValue>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <bodyValue>66;101;166</bodyValue>
+  </RECORD>
+</RECORDS>
