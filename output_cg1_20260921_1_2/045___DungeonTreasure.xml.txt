@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2127</id>
+    <dungeonId>2126</dungeonId>
+    <activityId>1081</activityId>
+    <resetType>2</resetType>
+    <resetNum>1</resetNum>
+    <rewardId>51163</rewardId>
+    <tip>本周剩余奖励次数：num次</tip>
+    <roleLevel>80</roleLevel>
+    <openDungeonId>46</openDungeonId>
+    <challengeAgainPointTicket>400</challengeAgainPointTicket>
+    <emptyBagNum>3</emptyBagNum>
+  </RECORD>
+  <RECORD>
+    <id>2173</id>
+    <dungeonId>2173</dungeonId>
+    <activityId>1390</activityId>
+    <resetType>2</resetType>
+    <resetNum>5</resetNum>
+    <rewardId>52255</rewardId>
+    <tip>本周剩余奖励次数：num次</tip>
+    <roleLevel>30</roleLevel>
+    <openDungeonId>46</openDungeonId>
+    <challengeAgainPointTicket>200</challengeAgainPointTicket>
+    <emptyBagNum>2</emptyBagNum>
+  </RECORD>
+</RECORDS>

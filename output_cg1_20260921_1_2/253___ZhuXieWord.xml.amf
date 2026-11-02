@@ -1,0 +1,106 @@
+
+	1001�#<RECORD>
+  <id>1001</id>
+  <type>1</type>
+  <describe>禁止切心法</describe>
+  <magnification>0.15</magnification>
+  <param>{"isCanChangeProfession":0}</param>
+  <order>1</order>
+  <open>1</open>
+</RECORD>	1002�<RECORD>
+  <id>1002</id>
+  <type>1</type>
+  <describe>禁止跳跃</describe>
+  <magnification>0.15</magnification>
+  <param>{"myBuffIds":[85000601]}</param>
+  <order>2</order>
+  <open>1</open>
+</RECORD>	1003�#<RECORD>
+  <id>1003</id>
+  <type>1</type>
+  <describe>禁止使用法宝</describe>
+  <magnification>0.3</magnification>
+  <param>{"isCanUseMagicWeapon":0}</param>
+  <order>3</order>
+  <open>1</open>
+</RECORD>	1004�!<RECORD>
+  <id>1004</id>
+  <type>1</type>
+  <describe>移动速度降低</describe>
+  <magnification>0.1</magnification>
+  <param>{"myBuffIds":[21011301]}</param>
+  <order>4</order>
+  <open>1</open>
+</RECORD>	1005�U<RECORD>
+  <id>1005</id>
+  <type>1</type>
+  <describe>前30秒受到混乱效果</describe>
+  <magnification>0.15</magnification>
+  <param>{"myBuffIds":[75001201],"myBuff1Times":1}</param>
+  <order>5</order>
+  <open>1</open>
+</RECORD>	1006�<RECORD>
+  <id>1006</id>
+  <type>1</type>
+  <describe>移动时扣血</describe>
+  <magnification>0.15</magnification>
+  <param>{"myBuffIds":[99000401]}</param>
+  <order>6</order>
+  <open>1</open>
+</RECORD>	1007�#<RECORD>
+  <id>1007</id>
+  <type>1</type>
+  <describe>全局蓝耗增加</describe>
+  <magnification>0.15</magnification>
+  <param>{"myBuffIds":[10600301]}</param>
+  <order>7</order>
+  <open>1</open>
+</RECORD>	2001�<RECORD>
+  <id>2001</id>
+  <type>2</type>
+  <describe>BOSS血量提高</describe>
+  <magnification>0.3</magnification>
+  <param>{"myBuffIds":[8062501]}</param>
+  <order>1</order>
+  <open>1</open>
+</RECORD>	2002�<RECORD>
+  <id>2002</id>
+  <type>2</type>
+  <describe>BOSS伤害提高</describe>
+  <magnification>0.2</magnification>
+  <param>{"myBuffIds":[23004001]}</param>
+  <order>2</order>
+  <open>1</open>
+</RECORD>	2003�<RECORD>
+  <id>2003</id>
+  <type>2</type>
+  <describe>BOSS全程霸体</describe>
+  <magnification>0.3</magnification>
+  <param>{"myBuffIds":[6072001]}</param>
+  <order>3</order>
+  <open>1</open>
+</RECORD>	2004�)<RECORD>
+  <id>2004</id>
+  <type>2</type>
+  <describe>BOSS秒回0.2%的血量</describe>
+  <magnification>0.1</magnification>
+  <param>{"myBuffIds":[5058301]}</param>
+  <order>4</order>
+  <open>1</open>
+</RECORD>	2005�-<RECORD>
+  <id>2005</id>
+  <type>2</type>
+  <describe>BOSS攻击回3%的血量</describe>
+  <magnification>0.1</magnification>
+  <param>{"myBuffIds":[18001801]}</param>
+  <order>5</order>
+  <open>1</open>
+</RECORD>	2006�)<RECORD>
+  <id>2006</id>
+  <type>2</type>
+  <describe>BOSS攻击概率眩晕</describe>
+  <magnification>0.1</magnification>
+  <param>{"myBuffIds":[18001901]}</param>
+  <order>6</order>
+  <open>1</open>
+</RECORD>

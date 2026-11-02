@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <rewardId1>4011</rewardId1>
+    <rewardId2>4236</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <rewardId1>4012</rewardId1>
+    <rewardId2>4237</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <rewardId1>4013</rewardId1>
+    <rewardId2>4013</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <rewardId1>4014</rewardId1>
+    <rewardId2>4014</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <rewardId1>4015</rewardId1>
+    <rewardId2>4015</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <rewardId1>4016</rewardId1>
+    <rewardId2>4016</rewardId2>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <rewardId1>4017</rewardId1>
+    <rewardId2>4017</rewardId2>
+  </RECORD>
+</RECORDS>

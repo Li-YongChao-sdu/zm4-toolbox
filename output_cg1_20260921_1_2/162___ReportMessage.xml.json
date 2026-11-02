@@ -1,0 +1,44 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "report": "广告营销",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "2",
+      "report": "人身攻击",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "3",
+      "report": "色情粗俗",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "4",
+      "report": "政治有害",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "5",
+      "report": "暴力恐怖",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "6",
+      "report": "赌博",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "7",
+      "report": "诈骗",
+      "textMaxNum": "-1"
+    },
+    {
+      "id": "8",
+      "report": "其他原因",
+      "textMaxNum": "30"
+    }
+  ]
+}

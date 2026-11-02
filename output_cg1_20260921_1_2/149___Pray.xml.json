@@ -1,0 +1,16 @@
+{
+  "RECORD": [
+    {
+      "id": "2",
+      "propId": "111300002",
+      "iconId": "cloudy2.png",
+      "level": "28"
+    },
+    {
+      "id": "1",
+      "propId": "111300001",
+      "iconId": "rain2.png",
+      "level": "38"
+    }
+  ]
+}

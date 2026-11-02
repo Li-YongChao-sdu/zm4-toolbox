@@ -1,0 +1,724 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "question": "儿时常看《西游记》（打一成语）",
+      "answer_0": "少见多怪",
+      "answer_1": "造梦西游",
+      "answer_2": "见怪不怪",
+      "answer_3": "大惊小怪",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "2",
+      "question": "阎王点将（打一人物）",
+      "answer_0": "精细鬼",
+      "answer_1": "黑无常",
+      "answer_2": "白无常",
+      "answer_3": "伶俐虫",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "3",
+      "question": "猪八戒照镜子 （打一常言俗语）",
+      "answer_0": "里外不是人",
+      "answer_1": "有口无心",
+      "answer_2": "自我欣赏",
+      "answer_3": "自己吓自己",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "4",
+      "question": "唐僧三护白骨精 （打一成语）",
+      "answer_0": "见怪不怪",
+      "answer_1": "少见多怪",
+      "answer_2": "造梦西游",
+      "answer_3": "大惊小怪",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "5",
+      "question": "八戒步入火焰山（打一菜肴烹调用语）",
+      "answer_0": "红烧猪蹄",
+      "answer_1": "烤乳猪",
+      "answer_2": "秘制咸猪手",
+      "answer_3": "梅菜扣肉",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "6",
+      "question": "八戒拱地如儿戏（打一常言俗语）",
+      "answer_0": "耍嘴皮子",
+      "answer_1": "光说不做",
+      "answer_2": "动口不动手",
+      "answer_3": "卖弄口才",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "7",
+      "question": "孙悟空大闹天宫（打一常言俗语）",
+      "answer_0": "慌了神",
+      "answer_1": "各显神通",
+      "answer_2": "各显其能",
+      "answer_3": "各显所长",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "8",
+      "question": "猪八戒的反手招（打一常言俗语）",
+      "answer_0": "倒打一耙",
+      "answer_1": "站意怒吼",
+      "answer_2": "土魔刺",
+      "answer_3": "巨岩破",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "9",
+      "question": "闹水帘悟空称王（打一成语）",
+      "answer_0": "沐猴而冠",
+      "answer_1": "衣冠禽兽",
+      "answer_2": "虚有其表",
+      "answer_3": "道貌岸然",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "10",
+      "question": "唐僧坐骑姿雄健（打一成语）",
+      "answer_0": "龙马精神",
+      "answer_1": "马到成功",
+      "answer_2": "龙腾虎跃",
+      "answer_3": "生龙活虎",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "11",
+      "question": "悟空出世，慌了玉帝（打一成语）",
+      "answer_0": "石破天惊",
+      "answer_1": "一鸣惊人",
+      "answer_2": "天翻地覆",
+      "answer_3": "一步登天",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "12",
+      "question": "八戒用计，行者上当（打一常言俗语）",
+      "answer_0": "耍猴儿",
+      "answer_1": "逗你玩",
+      "answer_2": "阴谋诡计",
+      "answer_3": "将计就计",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "13",
+      "question": "沙僧劝猴哥消消火（打一环保词语）",
+      "answer_0": "净化空气",
+      "answer_1": "乌烟瘴气",
+      "answer_2": "秋高气爽",
+      "answer_3": "臭气冲天",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "14",
+      "question": "悟空忙道：师傅莫念（打一谦词礼貌用语）",
+      "answer_0": "不要紧",
+      "answer_1": "不要念",
+      "answer_2": "碎碎念",
+      "answer_3": "和尚念经",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "15",
+      "question": "史诗品质的翅膀最多可以镶嵌多少根羽毛？",
+      "answer_0": "5",
+      "answer_1": "4",
+      "answer_2": "3",
+      "answer_3": "2",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "16",
+      "question": "四大神兽玄武坐骑怎么获得？",
+      "answer_0": "联盟商店兑换",
+      "answer_1": "斗宠大会兑换",
+      "answer_2": "充值获得",
+      "answer_3": "竞技场兑换",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "17",
+      "question": "神器品质的武器可以强化到几级？",
+      "answer_0": "18",
+      "answer_1": "15",
+      "answer_2": "12",
+      "answer_3": "21",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "18",
+      "question": "通关哪个副本后开放第二心法？",
+      "answer_0": "冥海",
+      "answer_1": "云川",
+      "answer_2": "玄武门",
+      "answer_3": "星域",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "19",
+      "question": "当前VIP等级最高几级？",
+      "answer_0": "8",
+      "answer_1": "5",
+      "answer_2": "7",
+      "answer_3": "6",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "20",
+      "question": "烛时饰品制作书在以下那一关卡掉落？",
+      "answer_0": "钟晷极地",
+      "answer_1": "太虚星河",
+      "answer_2": "夙夜径",
+      "answer_3": "星域",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "21",
+      "question": "螺旋地狱每日免费挑战次数为几次？",
+      "answer_0": "5",
+      "answer_1": "6",
+      "answer_2": "4",
+      "answer_3": "3",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "22",
+      "question": "紫灵阁中NPC静行的推荐挑战战力为多少？",
+      "answer_0": "150000+",
+      "answer_1": "100000+",
+      "answer_2": "120000+",
+      "answer_3": "180000+",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "23",
+      "question": "嗔恨鬼戒的被动触发效果是什么？",
+      "answer_0": "提升暴击",
+      "answer_1": "减伤效果",
+      "answer_2": "提升闪避",
+      "answer_3": "提升回魔",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "24",
+      "question": "帝空御魔圈的法宝效果是什么？",
+      "answer_0": "免疫伤害",
+      "answer_1": "减免伤害",
+      "answer_2": "困住敌方",
+      "answer_3": "持续霸体",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "25",
+      "question": "宠物额外总天赋点达到几点之后可以进行超进化？",
+      "answer_0": "3",
+      "answer_1": "5",
+      "answer_2": "6",
+      "answer_3": "4",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "26",
+      "question": "宠物培养总天赋点达到几点之后可以领悟奥义？",
+      "answer_0": "6",
+      "answer_1": "7",
+      "answer_2": "5",
+      "answer_3": "8",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "27",
+      "question": "危月燕的攻击资质上限为多少？",
+      "answer_0": "830",
+      "answer_1": "430",
+      "answer_2": "670",
+      "answer_3": "500",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "28",
+      "question": "五行祖巫是由哪几大祖巫合体而成？",
+      "answer_0": "金木水火土",
+      "answer_1": "风雨雷电火",
+      "answer_2": "金木风火雷",
+      "answer_3": "水火雷电土",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "29",
+      "question": "悲鸣冰川冰封层掉落哪种道具？",
+      "answer_0": "冰晶",
+      "answer_1": "炎晶",
+      "answer_2": "宝石结晶",
+      "answer_3": "雾晶",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "30",
+      "question": "下列哪一个法宝是传说品质？",
+      "answer_0": "奢天化雪令",
+      "answer_1": "摩愿佛珠",
+      "answer_2": "罗悲净瓶",
+      "answer_3": "多智青莲",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "31",
+      "question": "以下哪种不是炼丹炉的功能？",
+      "answer_0": "宝石拆解",
+      "answer_1": "合成",
+      "answer_2": "强化",
+      "answer_3": "镶嵌",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "32",
+      "question": "装备强化几级可以镶嵌第5个宝石孔？",
+      "answer_0": "12",
+      "answer_1": "9",
+      "answer_2": "6",
+      "answer_3": "3",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "33",
+      "question": "孙悟空龙宫借宝（打一成语）",
+      "answer_0": "海底捞针",
+      "answer_1": "无功而返",
+      "answer_2": "虾兵蟹将",
+      "answer_3": "胡搅蛮缠",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "34",
+      "question": "十二祖巫中最后一个出现的祖巫是哪一个？",
+      "answer_0": "时间祖巫",
+      "answer_1": "空间祖巫",
+      "answer_2": "天气祖巫",
+      "answer_3": "电之祖巫",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "35",
+      "question": "法宝最高可升级至几级？",
+      "answer_0": "10",
+      "answer_1": "9",
+      "answer_2": "8",
+      "answer_3": "6",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "36",
+      "question": "师徒系统中最多可以收取几个徒弟？",
+      "answer_0": "9",
+      "answer_1": "12",
+      "answer_2": "3",
+      "answer_3": "6",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "37",
+      "question": "宠物的潜力有什么影响？",
+      "answer_0": "最大技能个数",
+      "answer_1": "加成技能时间",
+      "answer_2": "加成技能威力",
+      "answer_3": "被动技能威力",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "38",
+      "question": "幽夜泽组队副本需要几人才能挑战？",
+      "answer_0": "3",
+      "answer_1": "1",
+      "answer_2": "2",
+      "answer_3": "4",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "39",
+      "question": "下列哪一个是坐骑道具？",
+      "answer_0": "经验青团",
+      "answer_1": "经验瑶草",
+      "answer_2": "资质果",
+      "answer_3": "灵力果",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "40",
+      "question": "下列哪个悬赏任务是雨天才可以接受的？",
+      "answer_0": "挑战化蛇",
+      "answer_1": "守卫太宗",
+      "answer_2": "追捕鱼精",
+      "answer_3": "守卫宝烛",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "41",
+      "question": "螺旋地狱中共有几大地狱？",
+      "answer_0": "6",
+      "answer_1": "4",
+      "answer_2": "5",
+      "answer_3": "3",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "42",
+      "question": "下列哪种物品不能在普通商店购买？",
+      "answer_0": "破损贪之戒",
+      "answer_1": "木灵葫芦",
+      "answer_2": "一阶热血丹方",
+      "answer_3": "发光粉",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "43",
+      "question": "洪荒共有几大洲？",
+      "answer_0": "4",
+      "answer_1": "5",
+      "answer_2": "3",
+      "answer_3": "6",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "44",
+      "question": "风雨雷电四大祖巫是在哪一大洲？",
+      "answer_0": "东胜神州",
+      "answer_1": "南瞻部洲",
+      "answer_2": "北俱芦洲",
+      "answer_3": "西牛贺洲",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "45",
+      "question": "每次采集消耗多少点体力？",
+      "answer_0": "10",
+      "answer_1": "20",
+      "answer_2": "5",
+      "answer_3": "15",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "46",
+      "question": "挑战福星中，击败哪个骰子可以获得最多分数？",
+      "answer_0": "发骰子",
+      "answer_1": "东骰子",
+      "answer_2": "福骰子",
+      "answer_3": "北骰子",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "47",
+      "question": "下列哪个罗汉需要携带摩愿佛珠才可以进入挑战？",
+      "answer_0": "欢喜罗汉",
+      "answer_1": "托塔罗汉",
+      "answer_2": "举钵罗汉",
+      "answer_3": "静坐罗汉",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "48",
+      "question": "要加入联盟需要找哪个NPC？",
+      "answer_0": "观音菩萨",
+      "answer_1": "地藏菩萨",
+      "answer_2": "织女",
+      "answer_3": "公冶长",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "49",
+      "question": "下列哪种宝石需要最多的宝石结晶才能兑换？",
+      "answer_0": "1级闪避石",
+      "answer_1": "1级回血石",
+      "answer_2": "1级守护石",
+      "answer_3": "1级生命石",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "50",
+      "question": "哪个人物可以帮你重织时装？",
+      "answer_0": "织女",
+      "answer_1": "宝石商人",
+      "answer_2": "地藏菩萨",
+      "answer_3": "观音菩萨",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "51",
+      "question": "生存大冒险每日可以免费冒险几次？",
+      "answer_0": "1",
+      "answer_1": "0",
+      "answer_2": "2",
+      "answer_3": "3",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "52",
+      "question": "以下哪种坐骑是飞行坐骑？",
+      "answer_0": "危月燕",
+      "answer_1": "奎木狼",
+      "answer_2": "熊猫君",
+      "answer_3": "年兽",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "53",
+      "question": "金箍棒变毫毛（打一成语）",
+      "answer_0": "千钧一发",
+      "answer_1": "九牛一毛",
+      "answer_2": "一毛不拔",
+      "answer_3": "当头一棒",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "54",
+      "question": "美猴王并非鼠辈（打一成语）",
+      "answer_0": "不肖子孙",
+      "answer_1": "投鼠忌器",
+      "answer_2": "人人喊打",
+      "answer_3": "衣冠沐猴",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "55",
+      "question": "坐地日行八万里（打一成语）",
+      "answer_0": "不胫而走",
+      "answer_1": "奔走呼号",
+      "answer_2": "行疾如飞",
+      "answer_3": "行者让路",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "56",
+      "question": "悟空难逃如来掌（打一成语）",
+      "answer_0": "手下败将",
+      "answer_1": "在劫难逃",
+      "answer_2": "大败而逃",
+      "answer_3": "一掌遮天",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "57",
+      "question": "美猴王抗旨回洞（打一成语）",
+      "answer_0": "顶天立地",
+      "answer_1": "负隅顽抗",
+      "answer_2": "争天抗俗",
+      "answer_3": "洞天福地",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "58",
+      "question": "唐僧何故变成虎（打一成语）",
+      "answer_0": "黄袍加身",
+      "answer_1": "虎落平阳",
+      "answer_2": "骑虎难下",
+      "answer_3": "狐假虎威",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "59",
+      "question": "如来佛法降大圣（打一成语）",
+      "answer_0": "得心应手",
+      "answer_1": "佛法无边",
+      "answer_2": "回头是岸",
+      "answer_3": "手到擒来",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "60",
+      "question": "鉴真（打一人名）",
+      "answer_0": "唐僧",
+      "answer_1": "朱子真",
+      "answer_2": "唐太宗",
+      "answer_3": "上清真人",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "61",
+      "question": "朱子（打一人名）",
+      "answer_0": "红孩儿",
+      "answer_1": "朱子真",
+      "answer_2": "哪吒",
+      "answer_3": "二郎神",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "62",
+      "question": "祖饯（打一人名）",
+      "answer_0": "孙行者",
+      "answer_1": "菩提老祖",
+      "answer_2": "如来",
+      "answer_3": "猪八戒",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "63",
+      "question": "骂人话（打一人名）",
+      "answer_0": "猪八戒",
+      "answer_1": "霸波尔奔",
+      "answer_2": "奔波儿灞",
+      "answer_3": "精细鬼",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "64",
+      "question": "儿子想登月（打一人名）",
+      "answer_0": "孙悟空",
+      "answer_1": "嫦娥",
+      "answer_2": "后羿",
+      "answer_3": "猪八戒",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "65",
+      "question": "龙女善招风（打一人名）",
+      "answer_0": "铁扇公主",
+      "answer_1": "小白龙",
+      "answer_2": "善财童子",
+      "answer_3": "黄风大王",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "66",
+      "question": "尸体腐烂化妖怪（打一人名）",
+      "answer_0": "白骨精",
+      "answer_1": "琵琶精",
+      "answer_2": "百眼魔君",
+      "answer_3": "九头虫",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "67",
+      "question": "合成3级强化石需要多少个1级强化石？",
+      "answer_0": "9个",
+      "answer_1": "6个",
+      "answer_2": "12个",
+      "answer_3": "3个",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "68",
+      "question": "以下哪个戒指能增加攻击力？",
+      "answer_0": "持戒法戒",
+      "answer_1": "智慧圣戒",
+      "answer_2": "痴迷之戒",
+      "answer_3": "贪婪邪戒",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "69",
+      "question": "以下哪个法宝可以净化身上负面状态？",
+      "answer_0": "罗悲净瓶",
+      "answer_1": "萍雨水盂",
+      "answer_2": "烛时金轮",
+      "answer_3": "帝空御魔圈",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "70",
+      "question": "以下哪只宠物可以在神兽森林获得？",
+      "answer_0": "鼠仔",
+      "answer_1": "羊羔",
+      "answer_2": "兔仔",
+      "answer_3": "猪宝",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "71",
+      "question": "以下哪个不是坐骑玄武的技能？",
+      "answer_0": "青霜吐息",
+      "answer_1": "水淹八荒",
+      "answer_2": "极寒射线",
+      "answer_3": "玄冰爆裂",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "72",
+      "question": "巨水灵最多可以分裂成几个小水灵？",
+      "answer_0": "4",
+      "answer_1": "2",
+      "answer_2": "6",
+      "answer_3": "8",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "73",
+      "question": "觉醒一个主动技能需要消耗多少觉醒点？",
+      "answer_0": "20",
+      "answer_1": "10",
+      "answer_2": "30",
+      "answer_3": "40",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "74",
+      "question": "收徒除了等级达到70还需要战力达到多少？",
+      "answer_0": "120000",
+      "answer_1": "110000",
+      "answer_2": "130000",
+      "answer_3": "140000",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "75",
+      "question": "以下哪个是拜师的福利？",
+      "answer_0": "每日学艺",
+      "answer_1": "生存冒险",
+      "answer_2": "组队挑战",
+      "answer_3": "时光之礼",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "76",
+      "question": "多智青莲进阶需要消耗什么道具？",
+      "answer_0": "静坐圣印",
+      "answer_1": "托塔圣印",
+      "answer_2": "举钵圣印",
+      "answer_3": "欢喜佛印",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "77",
+      "question": "活跃奖励每周最多可获得多少宝石结晶？",
+      "answer_0": "330",
+      "answer_1": "210",
+      "answer_2": "150",
+      "answer_3": "120",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "78",
+      "question": "每周六可以使用几次时光重现重置挑战次数？",
+      "answer_0": "4",
+      "answer_1": "2",
+      "answer_2": "1",
+      "answer_3": "5",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "79",
+      "question": "联盟等级达到几级可以挑战联盟BOSS？",
+      "answer_0": "4",
+      "answer_1": "3",
+      "answer_2": "5",
+      "answer_3": "6",
+      "rightAnswer": "0"
+    },
+    {
+      "id": "80",
+      "question": "以下哪个悬赏任务会出现在阴天？",
+      "answer_0": "捉拿大盗",
+      "answer_1": "挑战化蛇",
+      "answer_2": "追捕飞贼",
+      "answer_3": "护送公主",
+      "rightAnswer": "0"
+    }
+  ]
+}

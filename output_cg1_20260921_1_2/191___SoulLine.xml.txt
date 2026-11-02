@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>730000001</id>
+    <name>永生魂珏</name>
+    <originate>1300</originate>
+    <frequency>100</frequency>
+    <probability>0.005</probability>
+    <final>2000</final>
+    <attribute>hpMax</attribute>
+  </RECORD>
+</RECORDS>

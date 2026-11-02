@@ -1,0 +1,5319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <contentText>异地登录，请确认账号安全</contentText>
+    <time>-1</time>
+    <name>系统提示</name>
+    <假的>你的号被他人抢登陆,你可以马上再登陆抢回来，哈哈。。。</假的>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <contentText>你暂时还没有坐骑</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>你暂时还没有坐骑</假的>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <contentText>背包道具栏位不足，请清理道具</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>道具背包已经满了,请先清理背包</假的>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <contentText>背包装备栏位不足，请清理装备</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>装备背包已经满了,请先清理背包</假的>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <contentText>兑换码不能为空</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>兑换码不能为空</假的>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <contentText>兑换码有误</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>兑换码位数不对</假的>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <contentText>法宝冷却中，无法变更</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>当前法宝冷却中，无法进行变更。</假的>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <contentText>请选择角色</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>请先选择完角色在进入游戏</假的>
+  </RECORD>
+  <RECORD>
+    <id>9</id>
+    <contentText>出战坐骑无法放生</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>出战的坐骑不能放生</假的>
+  </RECORD>
+  <RECORD>
+    <id>10</id>
+    <contentText>你是否确定放生此坐骑？</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>你是否要放生此坐骑？</假的>
+  </RECORD>
+  <RECORD>
+    <id>11</id>
+    <contentText>强化石不足，无法强化</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>请放入强化石后进行强化</假的>
+  </RECORD>
+  <RECORD>
+    <id>12</id>
+    <contentText>装备不足，无法强化</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>请放入装备后进行强化</假的>
+  </RECORD>
+  <RECORD>
+    <id>13</id>
+    <contentText>礼包领取成功，请查看背包中获得的礼包!</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>礼包领取成功，请查看背包中获得的宝箱!</假的>
+  </RECORD>
+  <RECORD>
+    <id>14</id>
+    <contentText>你还没有装备法宝</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>你还没装备法宝</假的>
+  </RECORD>
+  <RECORD>
+    <id>15</id>
+    <contentText>功能暂未开放 </contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>功能暂未开放 </假的>
+  </RECORD>
+  <RECORD>
+    <id>16</id>
+    <contentText>坐骑仓库已满</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>坐骑仓库已满</假的>
+  </RECORD>
+  <RECORD>
+    <id>17</id>
+    <contentText>你没有该坐骑的喜好品</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>你没有当前坐骑的喜好品</假的>
+  </RECORD>
+  <RECORD>
+    <id>18</id>
+    <contentText>没有捕捉到该坐骑</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>没有捕捉到当前坐骑</假的>
+  </RECORD>
+  <RECORD>
+    <id>19</id>
+    <contentText>坐骑逃走了</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>坐骑逃走了</假的>
+  </RECORD>
+  <RECORD>
+    <id>20</id>
+    <contentText>时装背包不足，请清理时装</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>时装背包已经满了,请先清理背包</假的>
+  </RECORD>
+  <RECORD>
+    <id>21</id>
+    <contentText>坐骑战斗中，无法进行该操作</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>当前有坐骑处于战斗中，暂停此功能</假的>
+  </RECORD>
+  <RECORD>
+    <id>22</id>
+    <contentText>激活码有误</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>激活码位数不对</假的>
+  </RECORD>
+  <RECORD>
+    <id>23</id>
+    <contentText>等级不足</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>所需等级不足!</假的>
+  </RECORD>
+  <RECORD>
+    <id>24</id>
+    <contentText>每日次数用尽</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>每日次数用尽！</假的>
+  </RECORD>
+  <RECORD>
+    <id>25</id>
+    <contentText>恭喜你！坐骑捕捉成功</contentText>
+    <time>5</time>
+    <name>系统提示</name>
+    <假的>恭喜你！坐骑捕捉成功</假的>
+  </RECORD>
+  <RECORD>
+    <id>26</id>
+    <contentText>暂未开启</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>暂未开启</假的>
+  </RECORD>
+  <RECORD>
+    <id>27</id>
+    <contentText>20级开启世界</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>等级达到20级才可以开启该地图</假的>
+  </RECORD>
+  <RECORD>
+    <id>28</id>
+    <contentText>登录中</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>正在登录</假的>
+  </RECORD>
+  <RECORD>
+    <id>29</id>
+    <contentText>读取存档中</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>正在读取存档</假的>
+  </RECORD>
+  <RECORD>
+    <id>30</id>
+    <contentText>你已经领取过该礼包</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>奖励已经领取过了</假的>
+  </RECORD>
+  <RECORD>
+    <id>31</id>
+    <contentText>捕捉和升级坐骑时，有概率领悟该技能</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>坐骑等级不足暂不能学习此技能</假的>
+  </RECORD>
+  <RECORD>
+    <id>32</id>
+    <contentText>商城功能暂未开启</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>商城功能暂未开启</假的>
+  </RECORD>
+  <RECORD>
+    <id>33</id>
+    <contentText>暂未开放，敬请期待</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>暂未开放</假的>
+  </RECORD>
+  <RECORD>
+    <id>34</id>
+    <contentText>连接服务器失败，请稍后重新登录</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>连接服务器失败，请刷新游戏再进</假的>
+  </RECORD>
+  <RECORD>
+    <id>35</id>
+    <contentText>尝试连接服务器失败，请稍后重新登录</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>很抱歉尝试连接服务器失败，请刷新游戏再进</假的>
+  </RECORD>
+  <RECORD>
+    <id>36</id>
+    <contentText>与服务器断开，正在尝试重新连接，请稍等…</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>与服务器断开，正在尝试重新连接请稍等</假的>
+  </RECORD>
+  <RECORD>
+    <id>37</id>
+    <contentText>灵魂不足</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>灵魂不足</假的>
+  </RECORD>
+  <RECORD>
+    <id>38</id>
+    <contentText>已经达到满级</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>已经达到满级</假的>
+  </RECORD>
+  <RECORD>
+    <id>39</id>
+    <contentText>登录过期，请重新登录</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>错误的登入请求，未验证请求</假的>
+  </RECORD>
+  <RECORD>
+    <id>40</id>
+    <contentText>合成失败</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>合成失败</假的>
+  </RECORD>
+  <RECORD>
+    <id>41</id>
+    <contentText>连接服务器中</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>连接服务器中</假的>
+  </RECORD>
+  <RECORD>
+    <id>42</id>
+    <contentText>触发幸运强化后，强化等级+1</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>触发幸运强化后，强化等级+1</假的>
+  </RECORD>
+  <RECORD>
+    <id>43</id>
+    <contentText>坐骑疲劳中，无法进行该操作</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>坐骑疲劳中，无法进行该操作</假的>
+  </RECORD>
+  <RECORD>
+    <id>44</id>
+    <contentText>连接多次失败，如果不想继续等待重连服务器请刷新游戏</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>多次尝试连接失败，如果不想继续等待重连接请刷新游戏。</假的>
+  </RECORD>
+  <RECORD>
+    <id>45</id>
+    <contentText>观音菩萨：
+单人不成阵，独木不成林。快来加入联盟，聚集大家的力量吧！</contentText>
+    <time>3</time>
+    <name>NPC</name>
+    <假的>-1</假的>
+  </RECORD>
+  <RECORD>
+    <id>46</id>
+    <contentText>联盟每日消耗40点资金，出现资金连续2天为0的时候，联盟将被冻结</contentText>
+    <time>3</time>
+    <name>联盟系统</name>
+    <假的>-1</假的>
+  </RECORD>
+  <RECORD>
+    <id>47</id>
+    <contentText>不同等级的联盟每日消耗的联盟资金值不同</contentText>
+    <time>3</time>
+    <name>联盟系统</name>
+    <假的>-1</假的>
+  </RECORD>
+  <RECORD>
+    <id>48</id>
+    <contentText>联盟每日灵魂贡献资金上限</contentText>
+    <time>3</time>
+    <name>联盟系统</name>
+    <假的>-1</假的>
+  </RECORD>
+  <RECORD>
+    <id>49</id>
+    <contentText>点券不足</contentText>
+    <time>3</time>
+    <name>商城系统</name>
+    <假的>点券不足</假的>
+  </RECORD>
+  <RECORD>
+    <id>50</id>
+    <contentText>为了保障游戏正常进行，请同意请求，拒绝之后可能会发生异常</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>请勿关闭本地存储进行游戏</假的>
+  </RECORD>
+  <RECORD>
+    <id>51</id>
+    <contentText>可接受次数已达到上限，无需购买</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>52</id>
+    <contentText>确定使用孟婆药剂清除所学主动技能，&lt;br&gt;并返还学习消耗的灵魂吗？</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>53</id>
+    <contentText>孟婆药剂不足，请前往商城进行购买</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>54</id>
+    <contentText>神秘商人：
+在神秘商店购买材料后，有概率开启更高的摊位，越高级的摊位，出售的道具会更好；
+温馨提示：每天登录将获得5次购买次数，过了晚上12点购买次数将会被重置。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>55</id>
+    <contentText>购买新道具后，珍宝商店将会关闭，你确定购买吗？</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>56</id>
+    <contentText>地藏菩萨：
+山外有山，人外有人。快来加入竞技场，在切磋中成长吧！</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>57</id>
+    <contentText>VIP等级不足无法开启</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>58</id>
+    <contentText>开启背包第三页需要满5级并且花费300灵魂</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>59</id>
+    <contentText>开启背包第四页需要开通VIP3</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>60</id>
+    <contentText>你暂时还没有宠物</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>61</id>
+    <contentText>出战宠物无法放生</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>62</id>
+    <contentText>你是否确定放生此宠物？</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>63</id>
+    <contentText>没有捕捉到该宠物</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>64</id>
+    <contentText>恭喜你！宠物捕捉成功</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>65</id>
+    <contentText>你没有捕捉宠物的葫芦，可前往商城或商店购买</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>66</id>
+    <contentText>该联盟名称已被使用</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>67</id>
+    <contentText>不可选择同个阵营</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>68</id>
+    <contentText>消耗一个启灵果可领悟到一个新技能</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>69</id>
+    <contentText>不可以镶嵌同类型宝石</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>70</id>
+    <contentText>装备没有孔位可以镶嵌宝石</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>71</id>
+    <contentText>联盟等级2级开放</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>72</id>
+    <contentText>一键补签当前月份</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>73</id>
+    <contentText>转轮王：
+吾身具三十二相，由天感得轮宝，转之轮宝，降伏四方。&lt;br&gt;可与吾兑换稀有材料，亦可战吾得轮宝。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>74</id>
+    <contentText>该存档涉及到数据异常，请前往群组联系GM。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>75</id>
+    <contentText>该存档被检测使用第三方软件，已被禁止登录，请前往群组联系GM。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>76</id>
+    <contentText>每天只能挑战一次。明天记得再来挑战。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>77</id>
+    <contentText>二级密码权限：
+1.删除存档需要输入二级密码
+2.登录后，首次进行如下操作，需要验证二级密码：出售高品质装备、高品质道具、白色品质以上的时装,放生坐骑、宠物等
+3.忘记二级密码可自行重置</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>78</id>
+    <contentText>普贤菩萨：
+修无上供养，作广大善事，度无边有情。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>79</id>
+    <contentText>今天已送过花</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>80</id>
+    <contentText>不能锁掉全部属性进行洗炼</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>81</id>
+    <contentText>当前翅膀镶嵌的羽毛已达上限</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>82</id>
+    <contentText>请先激活翅膀</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>83</id>
+    <contentText>羽毛背包不足，请清理羽毛</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>84</id>
+    <contentText>水生坐骑不能登陆</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>85</id>
+    <contentText>陆地坐骑不能飞行</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>86</id>
+    <contentText>飞行坐骑不能入水</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>87</id>
+    <contentText>网络掉线，请刷新游戏</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>88</id>
+    <contentText>今日踢出成员已达到上限</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>89</id>
+    <contentText>该装备镶嵌有宝石，请先卸下宝石再出售</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>90</id>
+    <contentText>凶兽涛杌奉通天教主之命，突袭各大联盟&lt;br&gt;温馨提示：请在星期一至星期五期间设定挑战涛杌时间</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>91</id>
+    <contentText>坐鹿罗汉</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>92</id>
+    <contentText>进入该试炼，必须携带！</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>93</id>
+    <contentText>法宝不够给力？挑战十八罗汉得法印，进阶法宝;加入联盟，可以在药园种药草，还有回血回魔祝福可以拿;
+每周超值特卖礼包，今天你买了吗？;闲置灵魂能换宝，快来神秘商店试试吧;找单挑，上竞技场，百万玩家等你来战！;自从有了孟婆药剂，妈妈再也不用担心觉醒点点错了！;宠物容易挂？快给他们穿上宠物装备吧！;
+遗忘二级密码，可以在群组上方“点此反馈存档问题”反馈哦！;如果遇到加载卡住，可以按F5进行刷新;点击右下角的“进入游戏论坛”，结交更多志同道合的造梦好友;健康游戏，享受快乐，使用辅助外挂软件将会被封号处理！;请勿将账号密码告知他人，以免出现账号损失;请在进入副本前，确保您的网络畅通</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>94</id>
+    <contentText>君子爱财取之有道。</contentText>
+    <time />
+    <name />
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>95</id>
+    <contentText>请前往游戏登录界面设置二级密码，再发红包</contentText>
+    <time>3</time>
+    <name>红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>96</id>
+    <contentText>红包详细规则：【活动截止时间：2017年2月27日】
+发红包成功后，联盟的成员都可以到联盟集会所来抢红包。
+1.联盟人数：联盟成员大于5个时，才可以发放红包。
+2.红包个数：单次红包个数不能超过联盟人数上限，最少设置5个。
+3.拼手气红包：单次红包总金额最多10000点券，最少100点券。
+4.普通红包：单次红包金额最多1000点券，最少10点券。
+5.红包返还：凌晨3点之后未被领取的红包点券将退回（需重新读档才可查看）。</contentText>
+    <time>3</time>
+    <name>红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>97</id>
+    <contentText>还没有红包记录，可以前往联盟集会所进行发红包和抢红包</contentText>
+    <time>3</time>
+    <name>红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>98</id>
+    <contentText>你手速太慢了，红包都被抢光了</contentText>
+    <time>3</time>
+    <name>红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>99</id>
+    <contentText>你已经抢过该红包了，换个红包试试运气吧</contentText>
+    <time>3</time>
+    <name>红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>100</id>
+    <contentText>请切换到对应职业系，再进行装备</contentText>
+    <time>3</time>
+    <name>职业</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>101</id>
+    <contentText>通关冥海后开启</contentText>
+    <time>3</time>
+    <name>第二心法</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>102</id>
+    <contentText>当你离线超过1天(上限5天)，可以来这里领取少许东西，助你更快成长。</contentText>
+    <time>3</time>
+    <name>时光之舟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>103</id>
+    <contentText>你确定卖出有稀有价值的装备吗？</contentText>
+    <time>3</time>
+    <name>时光之舟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>104</id>
+    <contentText>1.进度培养有几率出现【突飞猛进】，增加的进度点加倍。
+2.当培养进度达到上限时，相应的额外天赋增加1点。
+3.用道具洗天赋只影响基础天赋，不影响额外天赋。
+4.部分宠物达到60级，且额外总天赋点达到3点时可以超进化，超进化后天赋继承原有值，资质重置。
+5.当前版本宠物招财猫、石牙猪、水漓鼠、火曜猴、月影兔、光灵羊、
+  光速猴、彩凤鸡、冰霜怪、美人鱼、剑客犬、狂战牛、女王蛇、
+  疾电虎、战神马、神盾龟、密林鹿、玄冰龙、幽影蝠、幻魅狐、悠风狸可进行超进化。
+6.宠物培养道具可从联盟药园种植，以及斗宠商店使用斗宠积分兑换。</contentText>
+    <time>3</time>
+    <name>宠物培养</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>105</id>
+    <contentText>掉落说明：
+1.携带木灵、火灵、紫金葫芦可在神兽森林捕捉宠物
+2.携带避火珠挑战森林火洞，可掉落宠物进化道具火之石碎片 
+3.携带避水珠挑战森林水底。
+水底左侧副本掉落宠物装备和装备升级道具，右侧副本掉落水之石碎片
+4.限时捕捉宠物--马王。</contentText>
+    <time>3</time>
+    <name>掉落说明</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>106</id>
+    <contentText>该装备镶有宝石，不能进行熔合</contentText>
+    <time>3</time>
+    <name>融合</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>107</id>
+    <contentText>该装备不能进行熔合</contentText>
+    <time>3</time>
+    <name>融合</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>108</id>
+    <contentText>材料不足，请先去收集材料</contentText>
+    <time>3</time>
+    <name>融合</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>109</id>
+    <contentText>你确定取两件装备的最高属性值，合并成新装备，并销毁旧装备吗</contentText>
+    <time>3</time>
+    <name>融合二次确认</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>110</id>
+    <contentText>请放置两件一样的装备</contentText>
+    <time>3</time>
+    <name>融合</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>111</id>
+    <contentText>领悟奥义：
+1.宠物培养总天赋点达到6点
+2.消耗一个num</contentText>
+    <time>3</time>
+    <name>融合</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>112</id>
+    <contentText>掉落物品丰富，请预留4个及以上背包空格</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>113</id>
+    <contentText>该时装暂未开放重织</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>114</id>
+    <contentText>重铸说明：
+1.新装备基础属性在原装备的基础属性上提升一个波动值
+2.新装备继承原装备强化等级和强化值，以及宝石
+3.重铸成功后原装备将消失
+4.释罗及其以上装备才能使用旧装备参与重铸
+5.旧装备为低一等级的旧神器装备
+6.使用低一等级的旧神器装备参与可减少重铸道具数量
+7.有镶嵌宝石的旧装备，不能参与重铸
+8.有强化等级的旧装备，重铸后旧装备强化等级将消失，谨慎使用
+如：释罗装备可使用神·烛时装备参与重铸，以减少重铸道具数量</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>115</id>
+    <contentText>该装备未开启重铸</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>116</id>
+    <contentText>联机测试版本限制：暂不能使用还魂丹；不能切换心法；不能召唤坐骑；不能召唤宠物</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>117</id>
+    <contentText>显示本联盟成员和师兄弟成员</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>118</id>
+    <contentText>隐藏本联盟成员和师兄弟成员</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>119</id>
+    <contentText>新盟福利：新创建的联盟30天内，且联盟等级为1-3级，&lt;br&gt; 可享受灵魂、道具、点券贡献个人贡献提高20%，联盟资金提高100%的福利</contentText>
+    <time>3</time>
+    <name>进入副本提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>120</id>
+    <contentText>1.部分宠物达到60级，且额外总天赋点达到3点时可以超进化。
+2.超进化后天赋继承原有值，资质重置。
+3.当前版本宠物招财猫、石牙猪、水漓鼠、火曜猴、月影兔、光灵羊、
+  光速猴、彩凤鸡、冰霜怪、美人鱼、剑客犬、狂战牛、女王蛇、
+  疾电虎、战神马、神盾龟、密林鹿、玄冰龙、幽影蝠、幻魅狐、悠风狸可进行超进化。</contentText>
+    <time />
+    <name />
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>121</id>
+    <contentText>元宵积分+N</contentText>
+    <time>3</time>
+    <name>元宵答题成功</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>122</id>
+    <contentText>元宵积分+N</contentText>
+    <time>3</time>
+    <name>元宵答题失败</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>123</id>
+    <contentText>听闻此幻镜阁以八卦为阵，虚实镜像迷惑心智，特带明清灵水助您破阵。价格实惠，来买一个吧。</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>124</id>
+    <contentText>通关钟晷极地可开启飞行技能</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>125</id>
+    <contentText>开启背包第五页需要开通VIP4</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>126</id>
+    <contentText>直播暂未开始</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>127</id>
+    <contentText>暂无直播,敬请期待</contentText>
+    <time>3</time>
+    <name>直播提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>128</id>
+    <contentText>活动截至时间:2025年11月16日</contentText>
+    <time>3</time>
+    <name>挑战屏翳</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>129</id>
+    <contentText>活动截至时间:2025年6月2日</contentText>
+    <time>3</time>
+    <name>挑战刑天</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>130</id>
+    <contentText>活动截至时间:2026年3月1日</contentText>
+    <time>3</time>
+    <name>挑战年兽</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>131</id>
+    <contentText>活动截至时间:2017年2月20日</contentText>
+    <time>3</time>
+    <name>中秋博饼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>132</id>
+    <contentText>商店下架时间:2025年11月9日</contentText>
+    <time>3</time>
+    <name>万圣节商店</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>133</id>
+    <contentText>活动时间：26年9月24日-26年10月28日</contentText>
+    <time>3</time>
+    <name>充值大回馈</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>134</id>
+    <contentText>活动截至时间:3月1日</contentText>
+    <time>3</time>
+    <name>新春拜年</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>135</id>
+    <contentText>活动截至时间:2026年3月18日</contentText>
+    <time>3</time>
+    <name>元宵活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>136</id>
+    <contentText>1.挑战者的属性将被锁定。
+2.难度越高，掉落率和掉落数量越高。
+3.掉落不受掉宝率影响。
+4.1星--3星，难度越高主题币掉落数量越多
+5.3星和4星，主题币掉落数量为6个</contentText>
+    <time>3</time>
+    <name>主题挑战说明</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>137</id>
+    <contentText>活动截至时间:5月7日</contentText>
+    <time>3</time>
+    <name>五一签到</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>138</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#0099ff'size='17'&gt;子魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;生命+num&lt;/font&gt;
+胆行，益血气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>139</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#0099ff'size='17'&gt;丑魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;魔法+num&lt;/font&gt;
+肝行，增精气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可打开升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>140</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#0099ff'size='17'&gt;寅魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;防御+num&lt;/font&gt;
+肺行，筑防御&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>141</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#0099ff'size='17'&gt;卯魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;攻击+num&lt;/font&gt;
+肠行，建力量&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>142</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#9933cc'size='17'&gt;辰魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;生命+num&lt;/font&gt;
+胃行，益血气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>143</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#9933cc'size='17'&gt;巳魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;魔法+num&lt;/font&gt;
+脾行，增精气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>144</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#9933cc'size='17'&gt;午魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;防御+num&lt;/font&gt;
+心行，筑防御&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>145</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#9933cc'size='17'&gt;未魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;攻击+num&lt;/font&gt;
+小肠行，建力量&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>146</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#fdc213'size='17'&gt;申魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;生命+num&lt;/font&gt;
+膀胱行，益血气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>147</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#fdc213'size='17'&gt;酉魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;魔法+num&lt;/font&gt;
+肾行，增精气&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>148</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#fdc213'size='17'&gt;戌魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;防御+num&lt;/font&gt;
+心包行，筑防御&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>149</id>
+    <contentText>&lt;textformat leading='7'&gt;&lt;font color='#fdc213'size='17'&gt;亥魄Lv.num&lt;/font&gt;
+&lt;font color='#ffff00'&gt;攻击+num&lt;/font&gt;
+三焦行，建力量&lt;/textformat&gt;
+
+&lt;font color='#e98f2e'&gt;点击可开启升级界面&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>150</id>
+    <contentText>子魄，胆行，益血气
+Lv.num，生命+num
+
+点击可开启升级界面</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>151</id>
+    <contentText>活动时间：6月11日-6月21日</contentText>
+    <time>3</time>
+    <name>24端午龙舟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>152</id>
+    <contentText>消耗一个道具可加2点经验，50%概率触发突飞猛进加10点修炼值</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>153</id>
+    <contentText>消耗100点券，百分百触发突飞猛进加10点修炼值</contentText>
+    <time>3</time>
+    <name>炼体</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>154</id>
+    <contentText>开启背包第六页需要开通VIP5</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>155</id>
+    <contentText>每个账号每日可领取一次积分，任务完成后自动领取积分。
+活动结束后，积分将被清空。活动时间:7月1日-9月2日</contentText>
+    <time>3</time>
+    <name>疯玩暑假</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>156</id>
+    <contentText>9月2日兑奖商城将下架
+请各位小勇士在活动时间内进行兑换</contentText>
+    <time>3</time>
+    <name>疯玩暑假</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>157</id>
+    <contentText>活动结束时间：2021年8月15日</contentText>
+    <time>3</time>
+    <name>烈焰羊驼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>158</id>
+    <contentText>1.激活剑后可以携带该剑，1P按P键，2P按*键释放技能。
+2.四剑归一自动升级，在等级为1、3、5、7、9时，属性会提升。
+3.升级道具于噩梦不周山掉落。</contentText>
+    <time>3</time>
+    <name>剑阵说明</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>159</id>
+    <contentText>诛仙剑魄：不周山掉落</contentText>
+    <time>3</time>
+    <name>剑阵道具</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>160</id>
+    <contentText>陷仙剑魄：不周山掉落</contentText>
+    <time>3</time>
+    <name>剑阵道具</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>161</id>
+    <contentText>戮仙剑魄：不周山掉落</contentText>
+    <time>3</time>
+    <name>剑阵道具</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>162</id>
+    <contentText>绝仙剑魄：不周山掉落</contentText>
+    <time>3</time>
+    <name>剑阵道具</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>163</id>
+    <contentText>诛仙剑魂：噩梦不周山掉落</contentText>
+    <time>3</time>
+    <name>剑阵道具</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>164</id>
+    <contentText>每次升级可加60点经验，50%概率触发突飞猛进加120点经验</contentText>
+    <time>3</time>
+    <name>剑阵升级</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>165</id>
+    <contentText>活动结束时间：2026年10月11日</contentText>
+    <time>3</time>
+    <name>中秋博饼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>166</id>
+    <contentText>周末竞技币1.5倍</contentText>
+    <time>3</time>
+    <name>竞技场</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>167</id>
+    <contentText>确定花费num点券补签得到奖励吗？</contentText>
+    <time>3</time>
+    <name>开学活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>168</id>
+    <contentText>活动时间内完成分享即可领取礼包，一个账号只能领取一次                         活动截止时间：9月20日</contentText>
+    <time>3</time>
+    <name>开学活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>169</id>
+    <contentText>请完成一次分享即可领取 </contentText>
+    <time>3</time>
+    <name>开学活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>170</id>
+    <contentText>通关可领取航海宝箱，每周最多可领取3次</contentText>
+    <time>3</time>
+    <name>航海寻宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>171</id>
+    <contentText>请先领取航海宝箱奖励</contentText>
+    <time>3</time>
+    <name>航海寻宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>172</id>
+    <contentText>活动截止时间：12月1日</contentText>
+    <time>3</time>
+    <name>年终回馈</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>173</id>
+    <contentText>修正系数用于平衡各角色战力差异</contentText>
+    <time>3</time>
+    <name>战力平衡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>174</id>
+    <contentText>你现在正在申请强制重置二级密码，
+
+如果不是本人申请，请撤回重置申请。</contentText>
+    <time>3</time>
+    <name>二级密码</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>175</id>
+    <contentText>如果你忘记二级密码，可以选择强制重置。
+提交申请后，需等待 7 天，二级密码即可自动重置。</contentText>
+    <time>3</time>
+    <name>二级密码</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>176</id>
+    <contentText>成功申请二级密码重置</contentText>
+    <time>3</time>
+    <name>二级密码</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>177</id>
+    <contentText>取消二级密码重置</contentText>
+    <time>3</time>
+    <name>二级密码</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>178</id>
+    <contentText>星期一 19点-20点（雨）；
+星期二 15点-16点（阴），17点-18点（雨），19点-20点（阴）,20点-21点（雨）；
+星期三 12点-13点（雨），17点-18点（雨），18点-19点（阴）；
+星期四 18点-19点（雨），20点-21点（雨），21点-22点（阴）；
+星期五 11点-12点（阴），14点-15点（雨），21点-22点（雨）；
+星期六 11点-12点（雨），17点-18点（阴），20点-21点（雨）；
+星期天 10点-11点（雨），13点-14点（阴），14点-15点（雨），19点-20点（雨）；</contentText>
+    <time>3</time>
+    <name>悬赏天气</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>179</id>
+    <contentText>点击图标可以卸下</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>180</id>
+    <contentText>角色外观优先显示规则：衣柜&gt;时装&gt;装备</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>181</id>
+    <contentText>幻化衣柜玩法说明：
+1.通关后会显示对应装备，拥有该装备，消耗幻化石后可激活衣柜中对应装备
+2.背包中拥有永久时装可激活衣柜中对应的时装
+3.衣柜更改的仅为外观，不改变装备属性
+4.拥有该翅膀外观，消耗幻化石后可激活衣柜中对应翅膀外观</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>182</id>
+    <contentText>重置成已穿戴的装备</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>183</id>
+    <contentText>1.角色等级高于20级，且战力为前10000名时，将会显示自己的排名。
+2.离线超过1个小时，再次登录时，自动更新最新战力。
+3.若想要更新更高战力，重新登录，排行榜半个小时后将显示。
+4.榜上玩家由于频繁操作装备，可能会出现资料与战力不符的情况。</contentText>
+    <time>3</time>
+    <name>战力排行</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>184</id>
+    <contentText>当前心法未穿戴</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>185</id>
+    <contentText>当前心法与装备不匹配</contentText>
+    <time>3</time>
+    <name>衣柜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>186</id>
+    <contentText>今日剩余赠送爱心次数：num
+点击爱心进行赠送，系统将回赠一份小礼物</contentText>
+    <time>3</time>
+    <name>演武</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>187</id>
+    <contentText>演武堂说明
+1.演武堂内展示各角色战力排行第一名的玩家形象
+2.每个账号每天可给角色赠送一次爱心
+3.点击爱心进行赠送，系统将回赠一份小礼物</contentText>
+    <time>3</time>
+    <name>演武</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>188</id>
+    <contentText>当前正在采集中</contentText>
+    <time>3</time>
+    <name>采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>189</id>
+    <contentText>停止采集将只获得部分材料，你确定停止采集么？
+（加上返还的体力，总体力不超过600）</contentText>
+    <time>3</time>
+    <name>采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>190</id>
+    <contentText>1.每日零点，体力不足600的重置为600
+2.原体力不足600，点击取消采集，加上返还的体力，总体力不超过上限600.
+3.原体力超过600，点击取消采集，不返还体力。
+4.体力上限3000
+5.国庆采集双倍福利，截止时间10月7日</contentText>
+    <time>3</time>
+    <name>采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>191</id>
+    <contentText>当前法宝成长：num</contentText>
+    <time>3</time>
+    <name>法宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>192</id>
+    <contentText>当前法宝最多可刷成num个五行</contentText>
+    <time>3</time>
+    <name>法宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>193</id>
+    <contentText>确定将昵称同步为【num】？
+如果和群组昵称不一致，请刷新游戏后重试</contentText>
+    <time>3</time>
+    <name>同名卡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>194</id>
+    <contentText>是否花费num点券洗炼装备？</contentText>
+    <time>3</time>
+    <name>坐骑、宠物装备洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>195</id>
+    <contentText>开启背包第七页需要开通VIP7</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>196</id>
+    <contentText>挑战者的属性将被锁定</contentText>
+    <time>3</time>
+    <name>花园萌哥</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>197</id>
+    <contentText>挑战者的属性不锁定</contentText>
+    <time>3</time>
+    <name>花园萌哥</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>198</id>
+    <contentText>活动截止时间：5月17日</contentText>
+    <time>3</time>
+    <name>玄女</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>199</id>
+    <contentText>活动截止时间：3月21日</contentText>
+    <time>3</time>
+    <name>秋分礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>200</id>
+    <contentText>火力过猛，烧花了脸，获得月饼x1</contentText>
+    <time>3</time>
+    <name>月饼x1</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>201</id>
+    <contentText>神火忽大忽小，技艺不佳，获得月饼x5</contentText>
+    <time>3</time>
+    <name>月饼x5</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>202</id>
+    <contentText>技艺见长，获得月饼x10</contentText>
+    <time>3</time>
+    <name>月饼x10</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>203</id>
+    <contentText>技艺娴熟，获得月饼x20</contentText>
+    <time>3</time>
+    <name>月饼x20</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>204</id>
+    <contentText>技艺精湛，获得月饼x40、三红月饼x1</contentText>
+    <time>3</time>
+    <name>三红月饼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>205</id>
+    <contentText>手艺奇佳，获得月饼x80、对堂月饼x1</contentText>
+    <time>3</time>
+    <name>对堂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>206</id>
+    <contentText>叹为观止，嫦娥贺喜！获得月饼x160、状元月饼x1</contentText>
+    <time>3</time>
+    <name>状元</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>207</id>
+    <contentText>技艺天成，轰动月宫！获得月饼x320、状元月饼x1</contentText>
+    <time>3</time>
+    <name>状元插金花</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>208</id>
+    <contentText>面粉来源：商城出售、广寒宫副本获得
+制作月饼可获得以下其中一种奖励
+月饼x1 获得概率：30.4%
+月饼x5 获得概率：37.3%
+月饼x10 获得概率：20%
+月饼x20 获得概率：4.1%
+月饼x40、三红月饼x1 获得概率：5.4%
+月饼x80、对堂月饼x1 获得概率：1.5%
+月饼x160、状元月饼x1 获得概率：1.2%
+月饼x320、状元月饼x1 获得概率：0.1%</contentText>
+    <time>3</time>
+    <name>月宫厨房说明</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>209</id>
+    <contentText>活动截止时间：11月16日</contentText>
+    <time>3</time>
+    <name>单身狗</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>210</id>
+    <contentText>汪汪爱吃！获得num好感度</contentText>
+    <time>3</time>
+    <name>喂狗粮</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>211</id>
+    <contentText>汪汪的春天爱吃！获得num好感度</contentText>
+    <time>3</time>
+    <name>喂狗粮</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>212</id>
+    <contentText>活跃度达到30，可获得宝石结晶x5</contentText>
+    <time>3</time>
+    <name>活跃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>213</id>
+    <contentText>活跃度达到60，可获得宝石结晶x5</contentText>
+    <time>3</time>
+    <name>活跃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>214</id>
+    <contentText>活跃度达到90，可获得宝石结晶x5</contentText>
+    <time>3</time>
+    <name>活跃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>215</id>
+    <contentText>活跃度达到120，可获得宝石结晶x5</contentText>
+    <time>3</time>
+    <name>活跃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>216</id>
+    <contentText>活跃度达到150，可获得宝石结晶x10（10月7日前可额外获得：月华x1、扫荡水晶x1）</contentText>
+    <time>3</time>
+    <name>活跃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>217</id>
+    <contentText>造梦西游感恩有你陪伴</contentText>
+    <time>3</time>
+    <name>感恩节登陆</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>218</id>
+    <contentText>原价num点券，现价num点券;原价num点券，现价num点券;原价num点券，现价num点券</contentText>
+    <time>3</time>
+    <name>感恩节</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>219</id>
+    <contentText>活动截止时间：11月30日</contentText>
+    <time>3</time>
+    <name>感恩节活动截止时间</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>220</id>
+    <contentText>你确定要一键分解指定品质的羽毛么？
+分解后可获得num个羽枝。</contentText>
+    <time>3</time>
+    <name>羽毛</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>221</id>
+    <contentText>1.坐骑等级高于20级，且是出战坐骑时，将会显示坐骑的排名。
+2.更换出战坐骑后，新坐骑战力需要高于旧坐骑，排行榜才会更新</contentText>
+    <time>3</time>
+    <name>坐骑战力排行</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>222</id>
+    <contentText>宠物等级超过20级，且为出战宠物时，战力达标可登陆宠物排行榜</contentText>
+    <time>3</time>
+    <name>宠物战力排行</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>223</id>
+    <contentText>消耗num个num可单独洗炼此条属性
+概率说明：范围内每个整数值出现概率相同</contentText>
+    <time>3</time>
+    <name>单条洗练</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>224</id>
+    <contentText>消耗num个num洗炼该装备属性
+概率说明：范围内每个整数值出现概率相同</contentText>
+    <time>3</time>
+    <name>所有洗练</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>225</id>
+    <contentText>周年庆消费返利活动截止时间3月29日，请及时兑换</contentText>
+    <time>3</time>
+    <name>消费返利</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>226</id>
+    <contentText>活动截止时间：2023年1月27日</contentText>
+    <time>3</time>
+    <name>拜师观音</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>227</id>
+    <contentText>春光明媚，郊游好时节，踏青一步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>228</id>
+    <contentText>草木吐绿，郊游好时节，踏青二步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>229</id>
+    <contentText>春暖花开，郊游好时节，踏青三步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>230</id>
+    <contentText>春回大地，郊游好时节，踏青四步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>231</id>
+    <contentText>春意盎然，郊游好时节，踏青五步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>232</id>
+    <contentText>春色满园，郊游好时节，踏青六步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>233</id>
+    <contentText>清明时节，春回大地。
+每日可免费踏青三次，
+随机走出1-6步，
+获得所在草地上的道具。
+踏青至第100步可获得</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>234</id>
+    <contentText>活动截止时间：4月6日</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>235</id>
+    <contentText>踏青终点礼包：万仙果x1、幻梦果x2、妖灵花x2、紫金葫芦x1</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>236</id>
+    <contentText>踏青至第100步，获得终点礼包！</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>237</id>
+    <contentText>确定将宠物改名为：num</contentText>
+    <time>3</time>
+    <name>宠物改名</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>238</id>
+    <contentText>确定将坐骑改名为：num</contentText>
+    <time>3</time>
+    <name>坐骑改名</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>239</id>
+    <contentText>活动期间内击败主题挑战怪物，集[造][梦][15][周][年]，即可兑换相应礼包</contentText>
+    <time>3</time>
+    <name>集字</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>240</id>
+    <contentText>活动截至时间:2026年5月6日，请在活动期间内兑换</contentText>
+    <time>3</time>
+    <name>集字</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>241</id>
+    <contentText>魂器背包已满，请清理背包</contentText>
+    <time>3</time>
+    <name>魂器</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>242</id>
+    <contentText>是否花费num灵魂结束冷却？</contentText>
+    <time>3</time>
+    <name>迷宫寻宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>243</id>
+    <contentText>每个道具只能领取一次，可自行选择存档领取</contentText>
+    <time>3</time>
+    <name>充值自选</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>244</id>
+    <contentText>消耗num个num转换为num个num</contentText>
+    <time>3</time>
+    <name>魂器</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>245</id>
+    <contentText>1.神域悬赏每日零点刷新
+2.点卷刷新必出魂石悬赏(魂石任务当前最多存在两个)
+3.每日最多可使用点券刷新50次</contentText>
+    <time>3</time>
+    <name>神域悬赏</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>246</id>
+    <contentText>等级达到80级，消耗对应道具即可进阶为终极形态
+（当前版本玄武可进阶，消耗玄武灵珠x2
+仙域神鹿可进阶，消耗神鹿灵珠x2
+星河飞鱼可进阶，消耗飞鱼灵珠x2
+熊山君可进阶，消耗巨熊灵珠x2
+白虎可进阶，消耗圣虎灵珠x2
+青鸾可进阶，消耗青鸾灵珠x2
+白猿可进阶，消耗战猿灵珠x2
+幻焰龙鱼可进阶，消耗龙鱼灵珠x2
+青龙可进阶，消耗苍龙灵珠x2
+超人汪汪可进阶，消耗汪汪灵珠x2
+火麒麟可进阶，消耗麒麟灵珠x2
+年兽可进阶，消耗年兽灵珠x2
+月兔可进阶，消耗月兔灵珠x2
+危月燕可进阶，消耗宿燕灵珠x2
+朱雀可进阶，消耗朱雀灵珠x2
+谛听可进阶，消耗谛听灵珠x2
+嘲风可进阶，消耗嘲风灵珠x2
+乘黄可进阶，消耗乘黄灵珠x2
+建马可进阶，消耗建马灵珠x2）</contentText>
+    <time>3</time>
+    <name>坐骑</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>247</id>
+    <contentText>消耗num点卷按资质固定增幅进阶</contentText>
+    <time>3</time>
+    <name>坐骑</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>248</id>
+    <contentText>资质固定增幅值=进阶后坐骑资质上限-原坐骑资质上限</contentText>
+    <time>3</time>
+    <name>坐骑</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>249</id>
+    <contentText>供奉进度+800</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>250</id>
+    <contentText>突飞猛进，供奉进度+800</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>251</id>
+    <contentText>队长可拖动角色更换位置，调整任务；如有空位，点+可自行调整位置</contentText>
+    <time>3</time>
+    <name>组队-幽夜泽</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>252</id>
+    <contentText>法宝五行洗炼概率：
+优秀品质90%洗出1个五行，10%洗出2个五行
+精良品质90%洗出1个五行，10%洗出2个五行
+史诗品质90%洗出1个五行，10%洗出2个五行
+传说品质90%洗出1个五行，10%洗出2个五行
+神器品质90%洗出1个五行，8%洗出2个五行，2%洗出3个五行
+上古品质80%洗出1个五行，15%洗出2个五行，4%洗出3个五行，1%洗出4个五行
+魂器品质90%洗出1个五行，8%洗出2个五行，2%洗出3个五行
+灵器品质80%洗出1个五行，15%洗出2个五行，4%洗出3个五行，1%洗出4个五行
+冥夜品质90%洗出1个五行，8%洗出2个五行，2%洗出3个五行
+血咒品质80%洗出1个五行，15%洗出2个五行，4%洗出3个五行，1%洗出4个五行
+欲劫品质90%洗出1个五行，8%洗出2个五行，2%洗出3个五行
+妄魇品质80%洗出1个五行，15%洗出2个五行，4%洗出3个五行，1%洗出4个五行
+法宝成长率洗炼概率：范围内每个整数值出现概率相同
+法宝属性洗炼概率：范围内每个整数值出现概率相同</contentText>
+    <time>3</time>
+    <name>法宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>253</id>
+    <contentText>活动截止时间：9月2日</contentText>
+    <time>3</time>
+    <name>挑战GM</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>254</id>
+    <contentText>7月1日-9月2日</contentText>
+    <time>3</time>
+    <name>疯玩暑假充值积分</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>255</id>
+    <contentText>num奉通天教主之命，突袭各大联盟&lt;br&gt;温馨提示：请在星期一至星期五期间设定挑战num时间</contentText>
+    <time>3</time>
+    <name>联盟BOSS改版</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>256</id>
+    <contentText>&lt;font color='#ffde00'&gt;num入侵时间：星期六num点&lt;br&gt;应战人数达到num人后num才会如期开启&lt;/font&gt; </contentText>
+    <time>3</time>
+    <name>联盟BOSS改版</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>257</id>
+    <contentText>&lt;font color='#ffde00'&gt;num应战人数：num人&lt;/font&gt;&lt;font color='#e06d1e'&gt;截止星期五晚24点&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>联盟BOSS改版</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>258</id>
+    <contentText>&lt;font color='#0eee7ad'&gt;角色等级以及战力达到指定条件后，即可领取对应奖励&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>等级礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>259</id>
+    <contentText>1.如成就点有增加，需重新读档，5分钟后成就排行榜将更新
+2.成就点高于500，且排名位于前10000名，将显示自己的排名</contentText>
+    <time>3</time>
+    <name>成就</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>260</id>
+    <contentText>战力</contentText>
+    <time>3</time>
+    <name>组队-幽夜泽</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>261</id>
+    <contentText>智慧</contentText>
+    <time>3</time>
+    <name>组队-幽夜泽</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>262</id>
+    <contentText>爆发出兽魂之力，增加受到的伤害和疲劳消耗，以换取伤害和移速的大幅提升</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>263</id>
+    <contentText>该模式对于战力要求较高</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>264</id>
+    <contentText>该模式对于战力和智慧均有要求</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>265</id>
+    <contentText>该模式对于智慧要求较高</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>266</id>
+    <contentText>每日19点至21点可前往探索</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>267</id>
+    <contentText>活动时间内每天登录可领取1次奖励
+最多可领取27次奖励</contentText>
+    <time>3</time>
+    <name>圣器</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>268</id>
+    <contentText>活动截止时间：9月6日</contentText>
+    <time>3</time>
+    <name>圣器</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>269</id>
+    <contentText>当前未获得觉醒·初
+需供奉4种力量至2级（已完成num种）</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>270</id>
+    <contentText>网络波动，请重新登录</contentText>
+    <time>3</time>
+    <name>重启强制踹号</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>271</id>
+    <contentText>已经觉醒上古神兽之力
+【战斗中按空格键使用】</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>272</id>
+    <contentText>背包道具栏位不足，请预留一个背包格</contentText>
+    <time>3</time>
+    <name>组队-幽夜泽</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>273</id>
+    <contentText>当前只可查询363届后榜单</contentText>
+    <time>3</time>
+    <name>人物竞技场</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>274</id>
+    <contentText>活动截止时间：9月6日</contentText>
+    <time>3</time>
+    <name>战猿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>275</id>
+    <contentText>觉醒·初 升级 觉醒·终
+需供奉4种力量至满级（已完成num种）
+【战斗中按空格键使用觉醒】</contentText>
+    <time>3</time>
+    <name>兽魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>276</id>
+    <contentText>今日点券刷新次数已用尽</contentText>
+    <time>3</time>
+    <name>日限</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>277</id>
+    <contentText>&lt;font size='13'&gt;珍宝商店道具刷出概率：
+破损的贪戒指 5.68%
+破损的嗔戒指 5.68%
+破损的痴戒指 5.68%
+3级生命石 2.62%
+3级魔法石 2.62%
+3级攻击石 2.62%
+3级防御石 2.62%
+3级回血石 2.62%
+3级回魔石 0.87%
+3级魔抗石 2.62%
+3级破魔石 2.62%
+3级命中石 1.31%
+3级闪避石 1.31%
+3级暴击石 2.62%
+3级韧性石 2.62%
+3级幸运石 2.62%
+3级守护石 2.62%
+3级吸血石 2.62%
+3级反伤石 2.62%
+仙域时装 10.48%
+仙域幻兵 10.48%
+天枢石 8.73%
+一袋宝石结晶 5.24%
+莲珠礼包 2.62%
+魂石礼包 2.62%
+灵珠百变袋 2.62%
+3级强化石 2.62%&lt;/font&gt;
+</contentText>
+    <time>3</time>
+    <name>黑市</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>278</id>
+    <contentText>是否花费num点券上推荐num天？</contentText>
+    <time>3</time>
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>279</id>
+    <contentText>活跃度=昨日灵魂贡献资金*100/昨日联盟人数上限
+（补贡资金不计入在内）</contentText>
+    <time>3</time>
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>280</id>
+    <contentText>概率说明：
+千万位6-9摇出概率分别是：20%，30%，30%，20%
+其他位0-9摇出概率均为10%</contentText>
+    <time>3</time>
+    <name>千万灵魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>281</id>
+    <contentText>活动截止时间：11月2日</contentText>
+    <time>3</time>
+    <name>重阳节</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>282</id>
+    <contentText>1.各个怪物对应自己的应战人数，需要人数满才能开启
+2.有应战的玩家，获得应战加成（对联盟怪物增加5%的伤害加成）
+3.没应战的玩家，可自由选择一个怪物进行挑战（无应战加成）
+4.每人只能进入一个副本挑战，其他副本无法进入
+5.联盟镇妖奖励通过邮件发放（如不在联盟，则无奖励）</contentText>
+    <time>3</time>
+    <name>联盟BOSS</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>283</id>
+    <contentText>你确定挑战num？
+&lt;font color='#ED19800' size='17'&gt; （进入后无法更换副本）&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>联盟BOSS</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>284</id>
+    <contentText>消耗属性洗炼石xnum重置法宝属性</contentText>
+    <time>3</time>
+    <name>法宝洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>285</id>
+    <contentText>你确定消耗属性洗炼石xnum重置法宝属性？</contentText>
+    <time>3</time>
+    <name>法宝洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>286</id>
+    <contentText>消耗num点券，将num与选中的坐骑的神兽之力相互转换</contentText>
+    <time>3</time>
+    <name>兽魂转移</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>287</id>
+    <contentText>消耗num点券，将num与num的神兽之力相互转换</contentText>
+    <time>3</time>
+    <name>兽魂转移</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>288</id>
+    <contentText>确定消耗num点券，将num与num的神兽之力相互转换？</contentText>
+    <time>3</time>
+    <name>兽魂转移</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>289</id>
+    <contentText>请选择要转换的坐骑</contentText>
+    <time>3</time>
+    <name>兽魂转移</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>290</id>
+    <contentText>签到可获得福字烟花;签到可获得熔炼石碎片;签到可获得2级魔法石;签到可获得年兽断角; 签到可获得2级攻击石;签到可获得3级强化石;签到可获得天枢石碎片;签到可获得3级幸运石</contentText>
+    <time>3</time>
+    <name>拜年</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>291</id>
+    <contentText>活动截止时间：3月15日</contentText>
+    <time>3</time>
+    <name>育种</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>292</id>
+    <contentText>是否消耗num点券再次育种</contentText>
+    <time>3</time>
+    <name>育种</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>293</id>
+    <contentText>可选定1-9种植物锁定，
+锁定后，
+该土地只可种植选定植物</contentText>
+    <time>3</time>
+    <name>育种</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>294</id>
+    <contentText>退出联盟后个人贡献将清零</contentText>
+    <time>3</time>
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>295</id>
+    <contentText>（进阶道具和装备受掉宝率影响，强化道具不受影响）</contentText>
+    <time>3</time>
+    <name>冰川</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>296</id>
+    <contentText>宠物等级达到30级才可上阵</contentText>
+    <time>3</time>
+    <name>空桑谷</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>297</id>
+    <contentText>你确定要将num分解成num吗？</contentText>
+    <time>3</time>
+    <name>分解</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>298</id>
+    <contentText>num，钓了num，获得num</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>299</id>
+    <contentText>钓海龟</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>300</id>
+    <contentText>钓鬼影乌贼、蓝点马鲛</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>301</id>
+    <contentText>钓珊瑚鱼、水母或刺豚</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>302</id>
+    <contentText>老者赠与的普通鱼币，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>303</id>
+    <contentText>老者赠与的普通鱼币，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>304</id>
+    <contentText>老者赠与的普通鱼币，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>305</id>
+    <contentText>老者赠与的鱼币，看起来更高级，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>306</id>
+    <contentText>老者赠与的鱼币，看起来更高级，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>307</id>
+    <contentText>代表着钓鱼者至高的荣誉，可在垂钓商店兑换物品</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>308</id>
+    <contentText>任务每日重置，完成任务可获得鱼钩。
+使用正确鱼钩钓鱼可获得丰厚奖励哦！</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>309</id>
+    <contentText>使用错误鱼钩或鱼钩数量不足，
+渔具受损，休息片刻再继续垂钓。</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>310</id>
+    <contentText>童心未泯，梦想才会继续长大。
+路行千里，归来仍是那个少年。</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>311</id>
+    <contentText>成功垂钓num，老者赠与道具</contentText>
+    <time>3</time>
+    <name>钓鱼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>312</id>
+    <contentText>每日最多可采集num次，今日剩余：num次</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>313</id>
+    <contentText>宠物大于等于38级可进行采集，等级越高，可采集的道具种类越多</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>314</id>
+    <contentText>是否花费num点券立即完成采集，获得numxnum</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>315</id>
+    <contentText>是否花费num点券立即完成采集
+获得3倍奖励：numxnum</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>316</id>
+    <contentText>1.宠物等级38级及以上可进行采集。
+2.采集奖励如当日未领取，活动期间内均可领取
+3.每日3次采集次数，点击采集后无法取消。</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>397</id>
+    <contentText>坐骑大于等于38级可进行采集，等级越高，可采集的道具种类越多</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>398</id>
+    <contentText>1.坐骑等级38级及以上可进行采集。
+2.采集奖励如当日未领取，活动期间内均可领取
+3.每日3次采集次数，点击采集后无法取消。</contentText>
+    <time>3</time>
+    <name>宠物采集</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>317</id>
+    <contentText>充值大回馈奖励全部激活后开启本活动。
+充值超过40000点券后，
+额外每充值满10000点券会获得1个惊喜宝箱。
+最多可获得 26 个，当前已获得 num 个。</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>318</id>
+    <contentText>活动时间：9月24日-10月28日，活动结束后，未领取奖励将失效，宝券将被清空。</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>319</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数1
+充值满60000点券，限购次数2
+充值满70000点券，限购次数3
+充值满80000点券，限购次数4
+充值满90000点券，限购次数5
+充值满100000点券，限购次数6
+充值满110000点券，限购次数7
+充值满120000点券，限购次数8
+充值满130000点券，限购次数9
+充值满140000点券，限购次数10
+充值满150000点券，限购次数11
+充值满160000点券，限购次数12
+充值满170000点券，限购次数13
+充值满180000点券，限购次数14
+充值满190000点券，限购次数15
+充值满200000点券，限购次数16
+充值满210000点券，限购次数17
+充值满220000点券，限购次数18
+充值满230000点券，限购次数19
+充值满240000点券，限购次数20
+充值满250000点券，限购次数21
+充值满260000点券，限购次数22
+充值满270000点券，限购次数23
+充值满280000点券，限购次数24
+充值满290000点券，限购次数25
+充值满300000点券，限购次数26</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>320</id>
+    <contentText>强化等级达到18级开启
+该宝石孔只可镶嵌吸血宝石或反伤宝石</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>321</id>
+    <contentText>你确定花费num宝券购买num个num？</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>322</id>
+    <contentText>可开的惊喜宝箱：num个</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>323</id>
+    <contentText>消耗num点券百分比重铸装备</contentText>
+    <time>3</time>
+    <name>重铸</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>324</id>
+    <contentText>百分比重铸只继承旧装备已有属性，未有属性取原装备基础值+重铸波动范围值。
+百分比重铸属性=新装备属性最小值+旧装备波动百分比*新装备属性波动范围
+旧装备波动百分比=（旧装备属性当前值-旧装备属性最小值）/（旧装备属性最大值-旧装备属性最小值）
+（强化等级、宝石、易盘继承原装备，不能继承神摩多的强化等级）</contentText>
+    <time>3</time>
+    <name>重铸</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>325</id>
+    <contentText>是否消耗num点券百分比重铸装备</contentText>
+    <time>3</time>
+    <name>重铸</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>326</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数2
+充值满60000点券，限购次数4
+充值满70000点券，限购次数6
+充值满80000点券，限购次数8
+充值满90000点券，限购次数10
+充值满100000点券，限购次数12
+充值满110000点券，限购次数14
+充值满120000点券，限购次数16
+充值满130000点券，限购次数18
+充值满140000点券，限购次数20
+充值满150000点券，限购次数22
+充值满160000点券，限购次数24
+充值满170000点券，限购次数26
+充值满180000点券，限购次数28
+充值满190000点券，限购次数30
+充值满200000点券，限购次数32
+充值满210000点券，限购次数34
+充值满220000点券，限购次数36
+充值满230000点券，限购次数38
+充值满240000点券，限购次数40
+充值满250000点券，限购次数42
+充值满260000点券，限购次数44
+充值满270000点券，限购次数46
+充值满280000点券，限购次数48
+充值满290000点券，限购次数50
+充值满300000点券，限购次数52</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>327</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数6
+充值满60000点券，限购次数12
+充值满70000点券，限购次数18
+充值满80000点券，限购次数24
+充值满90000点券，限购次数30
+充值满100000点券，限购次数36
+充值满110000点券，限购次数42
+充值满120000点券，限购次数48
+充值满130000点券，限购次数54
+充值满140000点券，限购次数60
+充值满150000点券，限购次数66
+充值满160000点券，限购次数72
+充值满170000点券，限购次数78
+充值满180000点券，限购次数84
+充值满190000点券，限购次数90
+充值满200000点券，限购次数96
+充值满210000点券，限购次数102
+充值满220000点券，限购次数108
+充值满230000点券，限购次数114
+充值满240000点券，限购次数120
+充值满250000点券，限购次数126
+充值满260000点券，限购次数132
+充值满270000点券，限购次数138
+充值满280000点券，限购次数144
+充值满290000点券，限购次数150
+充值满300000点券，限购次数156</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>328</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数4
+充值满60000点券，限购次数8
+充值满70000点券，限购次数12
+充值满80000点券，限购次数16
+充值满90000点券，限购次数20
+充值满100000点券，限购次数24
+充值满110000点券，限购次数28
+充值满120000点券，限购次数32
+充值满130000点券，限购次数36
+充值满140000点券，限购次数40
+充值满150000点券，限购次数44
+充值满160000点券，限购次数48
+充值满170000点券，限购次数52
+充值满180000点券，限购次数56
+充值满190000点券，限购次数60
+充值满200000点券，限购次数64
+充值满210000点券，限购次数68
+充值满220000点券，限购次数72
+充值满230000点券，限购次数76
+充值满240000点券，限购次数80
+充值满250000点券，限购次数84
+充值满260000点券，限购次数88
+充值满270000点券，限购次数92
+充值满280000点券，限购次数96
+充值满290000点券，限购次数100
+充值满300000点券，限购次数104</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>329</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数3
+充值满60000点券，限购次数6
+充值满70000点券，限购次数9
+充值满80000点券，限购次数12
+充值满90000点券，限购次数15
+充值满100000点券，限购次数18
+充值满110000点券，限购次数21
+充值满120000点券，限购次数24
+充值满130000点券，限购次数27
+充值满140000点券，限购次数30
+充值满150000点券，限购次数33
+充值满160000点券，限购次数36
+充值满170000点券，限购次数39
+充值满180000点券，限购次数42
+充值满190000点券，限购次数45
+充值满200000点券，限购次数48
+充值满210000点券，限购次数51
+充值满220000点券，限购次数54
+充值满230000点券，限购次数57
+充值满240000点券，限购次数60
+充值满250000点券，限购次数63
+充值满260000点券，限购次数66
+充值满270000点券，限购次数69
+充值满280000点券，限购次数72
+充值满290000点券，限购次数75
+充值满300000点券，限购次数78</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>330</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数3
+充值满60000点券，限购次数6
+充值满70000点券，限购次数9
+充值满80000点券，限购次数12
+充值满90000点券，限购次数15
+充值满100000点券，限购次数18
+充值满110000点券，限购次数21
+充值满120000点券，限购次数24
+充值满130000点券，限购次数27
+充值满140000点券，限购次数30
+充值满150000点券，限购次数33
+充值满160000点券，限购次数36
+充值满170000点券，限购次数39
+充值满180000点券，限购次数42
+充值满190000点券，限购次数45
+充值满200000点券，限购次数48
+充值满210000点券，限购次数51
+充值满220000点券，限购次数54
+充值满230000点券，限购次数57
+充值满240000点券，限购次数60
+充值满250000点券，限购次数63
+充值满260000点券，限购次数66
+充值满270000点券，限购次数69
+充值满280000点券，限购次数72
+充值满290000点券，限购次数75
+充值满300000点券，限购次数78</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>331</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数4
+充值满60000点券，限购次数8
+充值满70000点券，限购次数12
+充值满80000点券，限购次数16
+充值满90000点券，限购次数20
+充值满100000点券，限购次数24
+充值满110000点券，限购次数28
+充值满120000点券，限购次数32
+充值满130000点券，限购次数36
+充值满140000点券，限购次数40
+充值满150000点券，限购次数44
+充值满160000点券，限购次数48
+充值满170000点券，限购次数52
+充值满180000点券，限购次数56
+充值满190000点券，限购次数60
+充值满200000点券，限购次数64
+充值满210000点券，限购次数68
+充值满220000点券，限购次数72
+充值满230000点券，限购次数76
+充值满240000点券，限购次数80
+充值满250000点券，限购次数84
+充值满260000点券，限购次数88
+充值满270000点券，限购次数92
+充值满280000点券，限购次数96
+充值满290000点券，限购次数100
+充值满300000点券，限购次数104</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>332</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数5
+充值满60000点券，限购次数10
+充值满70000点券，限购次数15
+充值满80000点券，限购次数20
+充值满90000点券，限购次数25
+充值满100000点券，限购次数30
+充值满110000点券，限购次数35
+充值满120000点券，限购次数40
+充值满130000点券，限购次数45
+充值满140000点券，限购次数50
+充值满150000点券，限购次数55
+充值满160000点券，限购次数60
+充值满170000点券，限购次数65
+充值满180000点券，限购次数70
+充值满190000点券，限购次数75
+充值满200000点券，限购次数80
+充值满210000点券，限购次数85
+充值满220000点券，限购次数90
+充值满230000点券，限购次数95
+充值满240000点券，限购次数100
+充值满250000点券，限购次数105
+充值满260000点券，限购次数110
+充值满270000点券，限购次数115
+充值满280000点券，限购次数120
+充值满290000点券，限购次数125
+充值满300000点券，限购次数130</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>333</id>
+    <contentText>宝券商店限购规则
+充值满50000点券，限购次数7200</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>334</id>
+    <contentText>此盘不可镶嵌在此装备上</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>335</id>
+    <contentText>注入宝石、陨盘、易盘可获得进度值</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>336</id>
+    <contentText>请先放入身上易盘</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>337</id>
+    <contentText>不可注入此类型宝石</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>338</id>
+    <contentText>只可注入同类型盘</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>339</id>
+    <contentText>穿戴的装备镶嵌18颗5级及以上宝石后可开启注入功能</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>340</id>
+    <contentText>你确定将这些宝石或盘注入用来增加进度值？</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>341</id>
+    <contentText>1.注入宝石可提升盘的进度值
+2.少阳盘可注入的盘种类：
+  陨·少阳盘或易·少阳盘
+3.太阴盘可注入的盘种类：
+  陨·太阴盘或易·太阴盘
+4.两仪盘可注入的盘种类：
+  陨·两仪盘或易·两仪盘
+5.溢出的进度值会保留</contentText>
+    <time>3</time>
+    <name>注入</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>342</id>
+    <contentText>&lt;font color='#FF0000'&gt;易·太阴盘+12&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;攻击+67.5（1级开启）
+反伤+4     （2级开启）
+破魔+1%   （3级开启）
+攻击+67.5（4级开启）
+反伤+4     （5级开启）
+命中+1%   （6级开启）
+攻击+67.5（7级开启）
+反伤+4     （8级开启）
+暴击+1%   （9级开启）
+攻击+67.5（10级开启）
+反伤+4     （11级开启）
+幸运+2     （12级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·太阴盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>343</id>
+    <contentText>&lt;font color='#FF0000'&gt;易·少阳盘+12&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;防御+13.5 （1级开启）
+吸血+4     （2级开启）
+魔抗+1%   （3级开启）
+防御+13.5 （4级开启）
+吸血+4     （5级开启）
+守护+2     （6级开启）
+防御+13.5 （7级开启）
+吸血+4     （8级开启）
+韧性+1%   （9级开启）
+防御+13.5 （10级开启）
+吸血+4     （11级开启）
+闪避+1%   （12级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·少阳盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>344</id>
+    <contentText>&lt;font color='#FF0000'&gt;易·两仪盘+12&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;魔法+150  （1级开启）
+回血+13.5 （2级开启）
+回魔+2.5  （3级开启）
+生命+1350（4级开启）
+吸血+8     （5级开启）
+反伤+8     （6级开启）
+魔法+150  （7级开启）
+回血+13.5 （8级开启）
+回魔+2.5  （9级开启）
+生命+1350（10级开启）
+吸血+8     （11级开启）
+反伤+8     （12级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>345</id>
+    <contentText>&lt;font color='#Fdc213'&gt;陨·太阴盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;攻击+67.5（1级开启）
+反伤+4     （2级开启）
+破魔+1%   （3级开启）
+攻击+67.5（4级开启）
+反伤+4     （5级开启）
+命中+1%   （6级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>陨·太阴盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>346</id>
+    <contentText>&lt;font color='#Fdc213'&gt;陨·少阳盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;防御+13.5 （1级开启）
+吸血+4     （2级开启）
+魔抗+1%   （3级开启）
+防御+13.5 （4级开启）
+吸血+4     （5级开启）
+守护+2     （6级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>陨·少阳盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>347</id>
+    <contentText>&lt;font color='#Fdc213'&gt;陨·两仪盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;魔法+150 （1级开启）
+回血+13.5 （2级开启）
+回魔+2.5  （3级开启）
+生命+1350（4级开启）
+吸血+8     （5级开启）
+反伤+8     （6级开启）&lt;/font&gt;
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>陨·两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>348</id>
+    <contentText>注入宝石或太阴盘可获得进度值</contentText>
+    <time>3</time>
+    <name>太阴盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>349</id>
+    <contentText>注入宝石或少阳盘可获得进度值</contentText>
+    <time>3</time>
+    <name>少阳盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>350</id>
+    <contentText>注入宝石或两仪盘可获得进度值</contentText>
+    <time>3</time>
+    <name>两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>351</id>
+    <contentText>恭喜你开启易盘注入功能</contentText>
+    <time>3</time>
+    <name>两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>352</id>
+    <contentText>少阳盘</contentText>
+    <time>3</time>
+    <name>两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>353</id>
+    <contentText>太阴盘</contentText>
+    <time>3</time>
+    <name>两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>354</id>
+    <contentText>两仪盘</contentText>
+    <time>3</time>
+    <name>两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>355</id>
+    <contentText>确认消耗护刃钳，保留原装备进行拆解吗？</contentText>
+    <time>3</time>
+    <name>拆解</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>356</id>
+    <contentText>第num次合成失败</contentText>
+    <time>3</time>
+    <name>合成</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>357</id>
+    <contentText>陨盘升级易盘</contentText>
+    <time>3</time>
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>358</id>
+    <contentText>转换后获得随机基础属性易盘，继承原盘的强化等级</contentText>
+    <time>3</time>
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>359</id>
+    <contentText>基础属性变更</contentText>
+    <time>3</time>
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>360</id>
+    <contentText>转换后获得自选基础属性易盘，继承原盘的强化等级</contentText>
+    <time>3</time>
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>361</id>
+    <contentText>旧装备有强化等级（无法继承，建议先拆解）
+确定要重铸吗？</contentText>
+    <time>3</time>
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>362</id>
+    <contentText>确认将&lt;font color='#Fdc213'&gt;num&lt;/font&gt;升级为&lt;font color='#FF0000'&gt;num&lt;/font&gt;</contentText>
+    <time />
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>363</id>
+    <contentText>为转换后的&lt;font color='#FF0000'&gt;num&lt;/font&gt;选一条心仪的基础属性</contentText>
+    <time />
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>364</id>
+    <contentText>新属性不可与旧属性一样</contentText>
+    <time />
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>365</id>
+    <contentText>请先领取改版福利</contentText>
+    <time />
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>366</id>
+    <contentText>恭喜你额外获得num个仓库格子</contentText>
+    <time />
+    <name>易盘转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>367</id>
+    <contentText>地藏菩萨立下大愿，要度尽六道中生死流转的众生。有缘人皆可进殿一试，得其佛缘可令法宝精进</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>368</id>
+    <contentText>今日可挑战次数:num</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>369</id>
+    <contentText>点击地藏形象发起挑战，需携带对应法宝才能进入试炼，试炼过程不能更换法宝</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>370</id>
+    <contentText>你确定花费num点券再次挑战num吗？</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>371</id>
+    <contentText>实战法宝不提供属性加成，启用后将在战斗中替换掉属性法宝功能</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>372</id>
+    <contentText>花费100点券再次挑战</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>373</id>
+    <contentText>当前装备镶有宝石，不能合成</contentText>
+    <time />
+    <name>合成</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>374</id>
+    <contentText>当前装备镶有易盘，不能合成</contentText>
+    <time />
+    <name>合成</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>375</id>
+    <contentText>num，欢迎回来
+还记得上次是在num见到你，许久不见，甚是想念，有你回来真好！</contentText>
+    <time />
+    <name>回归</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>376</id>
+    <contentText>任务每日重置，完成任务可获得奖励和回归积分</contentText>
+    <time />
+    <name>回归</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>377</id>
+    <contentText>回归积分达到30分可领取1级强化石x2、还魂丹x1</contentText>
+    <time />
+    <name>回归</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>378</id>
+    <contentText>回归积分达到80分可领取2级强化石x1、1级宝石袋x2、馒头x1</contentText>
+    <time />
+    <name>回归</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>379</id>
+    <contentText>回归积分达到200分可领取法宝洗炼石x2、2级宝石袋x1、紫色烟花x1</contentText>
+    <time />
+    <name>回归</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>380</id>
+    <contentText>体力已达3000上限，无法获得100体力，确定领取该奖励？</contentText>
+    <time />
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>381</id>
+    <contentText>每个账号每日只能领取一次，确定使用该存档领取奖励？</contentText>
+    <time />
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>382</id>
+    <contentText>是否消耗num点券购买一次奖励次数？</contentText>
+    <time />
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>383</id>
+    <contentText>背包空格需要大于等于num格才可进入副本</contentText>
+    <time />
+    <name>城西</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>384</id>
+    <contentText>该法宝进阶后将重置属性，请谨慎使用强运洗炼</contentText>
+    <time />
+    <name>法宝强运</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>385</id>
+    <contentText>消耗法宝强运值：num点</contentText>
+    <time />
+    <name>法宝强运</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>386</id>
+    <contentText>是否消耗num点，强运洗炼numnum值？</contentText>
+    <time />
+    <name>法宝强运</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>387</id>
+    <contentText>上次登录时间</contentText>
+    <time />
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>388</id>
+    <contentText>按彤鹤之羽属性比例进阶</contentText>
+    <time />
+    <name> 羽毛进阶</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>389</id>
+    <contentText>进阶后属性=A/B*C+D
+A=（彤鹤之羽当前值-彤鹤之羽最小值）
+B=（彤鹤之羽最大值-彤鹤之羽最小值）
+C=（赤乌之羽最大值-赤乌之羽最小值）
+D=赤乌之羽最小值
+第四条属性在吸血和反伤中随机生成</contentText>
+    <time />
+    <name> 羽毛进阶</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>390</id>
+    <contentText>你确定使用免费重置洗炼该法宝属性？</contentText>
+    <time />
+    <name>法宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>391</id>
+    <contentText>属性已满，无需强运洗炼</contentText>
+    <time />
+    <name>羽毛</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>392</id>
+    <contentText>是否消耗num点羽毛强运值洗炼num？</contentText>
+    <time />
+    <name>羽毛</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>393</id>
+    <contentText>宝券商店限购规则
+充值满70000点券，限购次数1
+充值满100000点券，限购次数2
+充值满130000点券，限购次数3
+充值满160000点券，限购次数4
+充值满190000点券，限购次数5
+充值满210000点券，限购次数6</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>394</id>
+    <contentText>宝券商店限购规则
+充值满90000点券，限购次数1
+充值满140000点券，限购次数2
+充值满210000点券，限购次数3
+充值满260000点券，限购次数4</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>432</id>
+    <contentText>宝券商店限购规则
+充值满90000点券，限购次数1</contentText>
+    <time>3</time>
+    <name>超额惊喜</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>395</id>
+    <contentText>进阶翅膀后，需重新穿戴一根羽毛，即可正常激活隐藏属性</contentText>
+    <time>3</time>
+    <name>翅膀</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>396</id>
+    <contentText>只可选择其中一个道具领取</contentText>
+    <time>3</time>
+    <name>充值回馈</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>399</id>
+    <contentText>已选择num</contentText>
+    <time>3</time>
+    <name>充值回馈</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>400</id>
+    <contentText>积分对应奖励：
+0-169积分，可获得19个心愿币
+170-199积分，可获得20个心愿币
+200-229积分，可获得21个心愿币
+230-269积分，可获得22个心愿币
+270-299积分，可获得23个心愿币+灵魂加成
+300积分以上，可获得24个心愿币+灵魂加成</contentText>
+    <time>3</time>
+    <name>地藏之愿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>401</id>
+    <contentText>今日免费挑战次数：0
+消耗100点券再次挑战</contentText>
+    <time>3</time>
+    <name>地藏之愿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>402</id>
+    <contentText>该装备强化等级较高，请先拆解</contentText>
+    <time>3</time>
+    <name>出售</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>403</id>
+    <contentText>是否消耗num点券购买一次奖励次数？</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>404</id>
+    <contentText>1.副本结算界面点击领取奖励，扣除一次“剩余奖励次数”。
+2.每日副本“剩余奖励次数”隔天会重置为1次。如有购买奖励次数，请当日及时使用。
+3.副本内每获得一个蟠桃，即可对应获得一滴仙灵甘露，集齐后浇灌蟠桃源木可有额外收获。
+4.可使用普攻砍断藤蔓，增加探索范围。</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>405</id>
+    <contentText>财神赐福，每日财缘宝袋免费领，消费解锁如意宝盒、鸿运宝盆！</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>406</id>
+    <contentText>蟠桃篮x1 20%
+法宝洗炼石x1 8%
+天赋果x1 4%
+三色花x1 4%
+三仙果x1 4%
+还魂丹x1 5%
+馒头x1 5%
+铁钥匙x1 5%
+护刃钳x1 5%
+经验青团x1 5%
+经验瑶草x1 5%
+幻梦果x1 7%
+妖灵花x1 7%
+1级强化石x1 7%
+破雾符x5 5%
+宝石结晶x1 2%
+羽枝x1 2%</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>407</id>
+    <contentText>九千年蟠桃x1 10%
+天枢石碎片x1 1%
+熔炼石碎片x1 2%
+孟婆药剂x1 2%
+五行洗炼石x1 3%
+属性洗炼石x1 3%
+成长洗炼石x1 3%
+3级强化石x1 3%
+生命果x1 2%
+攻击果x1 2%
+防御果x1 2%
+潜力果x1 2%
+根骨果x1 2%
+灵力果x1 2%
+朱丹花x1 3%
+苍翠花x1 3%
+流金花x1 3%
+孟婆丹x1 4%
+幽蒙草x1 4%
+法宝洗炼石x1 4%
+天赋果x1 4%
+三色花x1 4%
+三仙果x1 4%
+启灵果x1 4%
+忘忧草x1 3%
+幻化石x1 3%
+还魂丹x1 3%
+护刃钳x1 3%
+幻梦果x1 6%
+妖灵花x1 6%</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>408</id>
+    <contentText>4级宝石袋x1 4%
+天枢石x1 5%
+玉衡石x1 5%
+4级强化石x1 9%
+时装百变宝盒x1 9%
+幻兵百变宝盒x1 9%
+熔炼石x1 9%
+高级幸运符x1 12%
+万仙果x1 12%
+魔力蛋糕x1 9%
+羽枝大礼包x1 5%
+3级宝石袋x1 12%</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>409</id>
+    <contentText>剩余开启次数：num次</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>410</id>
+    <contentText>每日可免费开启1次</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>411</id>
+    <contentText>累计消费满1000点券，可开启1次（不限）
+今日充值任意金额可开启一次（限1次）</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>412</id>
+    <contentText>累计消费满8800点券，可开启1次（不限）</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>413</id>
+    <contentText>&lt;font color='#FFF000'&gt;如意宝盒&lt;/font&gt;剩余次数：&lt;font color='#FF9C00'&gt;num&lt;/font&gt; 次【已开启 num 次】</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>414</id>
+    <contentText>&lt;font color='#FFF000'&gt;鸿运宝盆&lt;/font&gt;剩余次数：&lt;font color='#FF9C00'&gt;num&lt;/font&gt; 次【已开启 num 次】</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>415</id>
+    <contentText>活动截止时间：10月7日</contentText>
+    <time>3</time>
+    <name>财神赐福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>416</id>
+    <contentText>1.副本结算界面点击领取奖励，扣除一次“剩余奖励次数”。
+2.每日副本“剩余奖励次数”隔天会重置为1次。如有购买奖励次数，请当日及时使用。</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>417</id>
+    <contentText>来源：财神赐福活动获得；蟠桃商店出售</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>418</id>
+    <contentText>来源：财神赐福活动获得；桃园除恶活动获得；蟠桃商店出售</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>419</id>
+    <contentText>传说时装由2件史诗时装+材料合成</contentText>
+    <time>3</time>
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>420</id>
+    <contentText>剩余次数不足，再次速通需消耗num点券</contentText>
+    <time>3</time>
+    <name>扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>421</id>
+    <contentText>确认消耗num点券再次速通么？</contentText>
+    <time>3</time>
+    <name>扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>422</id>
+    <contentText>积分获得规则：
+封死鼠洞+10积分
+抓捕黄金鼠贼+5积分
+
+积分对应奖励：
+0-54积分，获得30粮食+谷仓宝袋;
+55-59积分，获得40粮食+谷仓宝袋;
+60-69积分，获得50粮食+谷仓宝袋;
+70-79积分，获得60粮食+谷仓宝袋;
+80-89积分，获得70粮食+谷仓宝袋;
+90-99积分，获得80粮食+谷仓宝袋;
+100-109积分，获得85粮食+谷仓宝袋;
+110积分以上，获得90粮食+谷仓宝袋</contentText>
+    <time>3</time>
+    <name>谷仓</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>423</id>
+    <contentText>今日剩余奖励次数：num;今日剩余奖励次数：0;是否消耗num点券购买一次奖励次数？</contentText>
+    <time>3</time>
+    <name>扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>424</id>
+    <contentText>请先进行勾选</contentText>
+    <time>3</time>
+    <name>一键出售</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>425</id>
+    <contentText>是否消耗num个幻化石，激活num的外观</contentText>
+    <time>3</time>
+    <name>一键出售</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>426</id>
+    <contentText>是否消耗num点券续费&lt;font color='#FF0000'&gt;num&lt;/font&gt;?</contentText>
+    <time>3</time>
+    <name>时装续费</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>427</id>
+    <contentText>积分获得规则：
+接到普通果子+10积分，没接到-5积分
+接到黄金果子+20分，没接到-10积分
+
+点击领取奖励后才会扣除奖励次数
+
+可使用技能3来呼唤悟空停止摇树，以此避免被守护兽发现
+等到守护兽离开后再次使用技能3可呼唤悟空继续摇树
+
+积分对应奖励：
+0-199积分，获得18个菩提果;
+200-319积分，获得20个菩提果;
+320-449积分，获得22个菩提果;
+450-599积分，获得26个菩提果;
+600积分以上，获得30个菩提果+1个菩提之心;
+</contentText>
+    <time>3</time>
+    <name>福果来</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>428</id>
+    <contentText>竞技场速通说明： 
+可速通低于自身战力5%的玩家
+每次速通消耗3点速通能量+一次挑战次数</contentText>
+    <time>3</time>
+    <name>竞技场扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>429</id>
+    <contentText>修炼两个剑势至10级后额外开启</contentText>
+    <time>3</time>
+    <name>竞技场扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>430</id>
+    <contentText>修炼所有剑势至10级后额外开启</contentText>
+    <time>3</time>
+    <name>竞技场扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>431</id>
+    <contentText>剑意属性预览：
+1级  生命132  攻击13   命中0.01 闪避0.01 暴击0.01  幸运1   魔抗0.01  韧性0.01
+2级  生命236  攻击23   命中0.01 闪避0.01 暴击0.01  幸运1   魔抗0.01  韧性0.01
+3级  生命436  攻击43   命中0.02 闪避0.02 暴击0.02  幸运2   魔抗0.02  韧性0.02
+4级  生命696  攻击69   命中0.02 闪避0.02 暴击0.02  幸运2   魔抗0.02  韧性0.02
+5级  生命1016 攻击101  命中0.03 闪避0.03 暴击0.03  幸运3   魔抗0.03  韧性0.03
+6级  生命1396 攻击139  命中0.03 闪避0.03 暴击0.03  幸运3   魔抗0.03  韧性0.03
+7级  生命1836 攻击183  命中0.04 闪避0.04 暴击0.04  幸运4   魔抗0.04  韧性0.04
+8级  生命2336 攻击233 命中0.04 闪避0.04 暴击0.04  幸运4   魔抗0.04  韧性0.04
+9级  生命2896 攻击289 命中0.05 闪避0.05 暴击0.05  幸运5   魔抗0.05  韧性0.05
+10级 生命3796 攻击379 命中0.05 闪避0.05 暴击0.05  幸运5   魔抗0.05  韧性0.05
+
+剑意专精属性预览：
+一个剑势等级提升至10级，开放属性
+生命：4555-5694  
+防御：133-190
+两个剑势等级提升至10级，开放属性 
+魔法：804-1073
+三个剑势等级提升至10级，开放属性  
+攻击：398-569
+
+剑意洗炼：范围内每个整数值出现概率相同
+消耗剑意洗炼石洗炼生命值次数超过1300次后，下一次洗炼生命值直接满值
+（如有满值洗炼需求，建议先不锁定，将生命值洗出后，锁定生命值再洗炼其他）</contentText>
+    <time>3</time>
+    <name>竞技场扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>441</id>
+    <contentText>恭喜你获得随机前进机会，向前num步</contentText>
+    <time>3</time>
+    <name>踏青</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>442</id>
+    <contentText>本周剩余挑战次数：num次</contentText>
+    <time>3</time>
+    <name>镜弥天</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>443</id>
+    <contentText>挑战次数已用尽，花费200点券进入num</contentText>
+    <time>3</time>
+    <name>镜弥天</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>444</id>
+    <contentText>弥天镜域副本共享挑战次数</contentText>
+    <time>3</time>
+    <name>镜弥天</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>445</id>
+    <contentText>确认花费200点券进入num</contentText>
+    <time>3</time>
+    <name>镜弥天</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>446</id>
+    <contentText>莲珠只能镶嵌在有该属性的魂器上，同类魂石只能镶嵌一个。</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>447</id>
+    <contentText>个人展览中数据如有变更，10分钟后可显示</contentText>
+    <time>3</time>
+    <name>个人展览</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>448</id>
+    <contentText>规则说明1：活动开始后每日将开启一个数字位（按十位、百位、千位的顺序）
+        2：10月8日后可领取一次灵魂奖励，获得所摇得数值的灵魂
+ </contentText>
+    <time>3</time>
+    <name>国庆千万灵魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>449</id>
+    <contentText>签到时间：10月1日-10月7日  活动截止时间：10月11日</contentText>
+    <time>3</time>
+    <name>国庆千万灵魂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>450</id>
+    <contentText>角色生命值，生命值为0时挑战失败</contentText>
+    <time>3</time>
+    <name>生命</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>451</id>
+    <contentText>增加攻击伤害</contentText>
+    <time>3</time>
+    <name>攻击</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>452</id>
+    <contentText>增加伤害浮动和触发暴击时的伤害</contentText>
+    <time>3</time>
+    <name>幸运</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>453</id>
+    <contentText>增加攻击时触发暴击的几率</contentText>
+    <time>3</time>
+    <name>暴击</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>454</id>
+    <contentText>每秒回复生命</contentText>
+    <time>3</time>
+    <name>回血</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>455</id>
+    <contentText>角色魔法值，使用技能消耗一定魔法值</contentText>
+    <time>3</time>
+    <name>魔法</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>456</id>
+    <contentText>受到攻击时减少伤害</contentText>
+    <time>3</time>
+    <name>防御</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>457</id>
+    <contentText>受到魔法攻击时降低伤害</contentText>
+    <time>3</time>
+    <name>魔抗</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>458</id>
+    <contentText>增加被攻击时的闪避几率</contentText>
+    <time>3</time>
+    <name>闪避</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>459</id>
+    <contentText>每秒回复魔法</contentText>
+    <time>3</time>
+    <name>回魔</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>460</id>
+    <contentText>&lt;font color='#0099FF'&gt;其他属性：&lt;/font&gt;
+守护：num（减少被暴击时的伤害）
+破魔：num（降低对方魔法抗性的效果）
+韧性：num（减少被暴击的几率）
+命中：num（增加攻击时的命中几率）
+吸血：num（对敌人造成伤害时回复生命）
+反伤：num（被攻击命中时使敌人受伤）
+疾行：num（使移动速度更快）
+腾空：num（跳的更高）
+魂击率：num（增加魂击的概率）
+魂御率：num（减少被魂击的概率）
+魂伤 ：num （增加魂击时的伤害）
+魂抗：num（减少被魂击时的伤害）
+
+修正系数：num
+修正系数用于平衡各角色战力差异
+标准战力：num 
+平衡战力：num
+</contentText>
+    <time>3</time>
+    <name>回魔</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>461</id>
+    <contentText>新装备属性=原装备属性+进阶增加值的最大值
+（如进阶后随机增加10-100点属性，则消耗点券后增加100点属性）
+其中吸血、反伤属性为范围值内随机生成</contentText>
+    <time>3</time>
+    <name>回魔</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>462</id>
+    <contentText>每个账号只能领取一次，确定使用该存档领取么？</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>463</id>
+    <contentText>是否确认进化翅膀？
+（进化后隐藏属性较难激活，
+战力可能出现下降情况）</contentText>
+    <time>3</time>
+    <name>翅膀</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>464</id>
+    <contentText>每日可选择其中一个祝福</contentText>
+    <time>3</time>
+    <name>联盟祝福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>465</id>
+    <contentText>今日免费祝福已领取，可消耗贡献兑换</contentText>
+    <time>3</time>
+    <name>联盟祝福</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>466</id>
+    <contentText>今日免费挑战次数：num</contentText>
+    <time>3</time>
+    <name>浪里个浪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>467</id>
+    <contentText>今日免费挑战次数：0
+消耗100点券再次挑战</contentText>
+    <time>3</time>
+    <name>浪里个浪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>468</id>
+    <contentText>请先清理背包，预留num个空位</contentText>
+    <time>3</time>
+    <name>浪里个浪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>469</id>
+    <contentText>1.当冲浪距离达到8500米，可遇到鲨鱼，追回玄女姐姐的锦囊，可获得海螺珠x1
+2.0-2999米，获得贝壳币35；
+  3000-4999米，获得贝壳币40；
+  5000-6999米，获得贝壳币45；
+  7000-8499米，获得贝壳币48；
+  8500-9999米，获得贝壳币50；
+  10000米以上，获得贝壳币52；
+3.2P操作：（上箭头）上移；（下箭头）下移；（2）跳跃
+4.练习模式无奖励</contentText>
+    <time>3</time>
+    <name>浪里个浪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>470</id>
+    <contentText>锁定后无法放生</contentText>
+    <time>3</time>
+    <name>宠物</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>471</id>
+    <contentText>点燃夏日激情，加载满格能量
+领暑期加油包，助站一路顺畅</contentText>
+    <time>3</time>
+    <name>宠物</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>472</id>
+    <contentText>请等待神域悬赏任务刷新</contentText>
+    <time>3</time>
+    <name>神域悬赏</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>473</id>
+    <contentText>已有属性满值，是否确认洗炼？</contentText>
+    <time>3</time>
+    <name>羽毛洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>474</id>
+    <contentText>该装备未开启使用旧装备重铸
+</contentText>
+    <time>3</time>
+    <name>羽毛洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>475</id>
+    <contentText>充值1000点券，达到VIP1
+充值5000点券，达到VIP2
+充值10000点券，达到VIP3
+充值20000点券，达到VIP4
+充值50000点券，达到VIP5
+充值100000点券，达到VIP6
+充值200000点券，达到VIP7
+充值500000点券，达到VIP8
+</contentText>
+    <time>3</time>
+    <name>VIP等级提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>476</id>
+    <contentText>拥有对应永久时装，穿戴后即可显示形象</contentText>
+    <time>3</time>
+    <name>幻化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>477</id>
+    <contentText>拥有对应装备，消耗幻化石激活，穿戴后即可显示形象</contentText>
+    <time>3</time>
+    <name>幻化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>478</id>
+    <contentText>拥有对应翅膀，消耗幻化石激活，穿戴后即可显示形象</contentText>
+    <time>3</time>
+    <name>幻化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>479</id>
+    <contentText>拥有对应称号，消耗幻化石激活，穿戴后即可显示形象</contentText>
+    <time>3</time>
+    <name>幻化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>480</id>
+    <contentText>穿戴后即可显示形象</contentText>
+    <time>3</time>
+    <name>幻化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>481</id>
+    <contentText>每个账号只能领取一次vip礼包</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>482</id>
+    <contentText>每个账号每日只能领取一次与当前vip等级对应的每日礼包</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>483</id>
+    <contentText>1级宝石分解可获得宝石结晶数量：8~12
+2级宝石分解可获得宝石结晶数量：24~36
+3级宝石分解可获得宝石结晶数量：72~108
+4级宝石分解可获得宝石结晶数量：216~324
+5级宝石分解可获得宝石结晶数量：648~972
+6级宝石分解可获得宝石结晶数量：1944~2916
+（分解宝石获得的数量为范围值内随机一个数，每个数随机到的概率一致）
+</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>484</id>
+    <contentText>完成任务四剑归一后可开启神域
+（领取不周山奖励）</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>485</id>
+    <contentText>消耗对应强运值可将法宝成长率、五行、属性洗满</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>486</id>
+    <contentText>消耗对应强运值可将羽毛当前此条的属性洗满</contentText>
+    <time>3</time>
+    <name>VIP</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>487</id>
+    <contentText>从下列宠物中选择一只和num进行血脉转换</contentText>
+    <time>3</time>
+    <name>血脉转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>488</id>
+    <contentText>消耗num点券，将num和num的血脉相互转换</contentText>
+    <time>3</time>
+    <name>血脉转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>489</id>
+    <contentText>确认消耗num点券，将num和num的血脉相互转换？</contentText>
+    <time>3</time>
+    <name>血脉转换</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>490</id>
+    <contentText>坐鹿罗汉开启等级：20/40
+欢喜罗汉开启等级：24/44
+举钵罗汉开启等级：38/56
+托塔罗汉开启等级：44/62
+静坐罗汉开启等级：48/68
+过江罗汉开启等级：58/78
+布袋罗汉开启等级：64/84
+骑象罗汉开启等级：86
+芭蕉罗汉开启等级：88
+看门罗汉开启等级：70/90
+降龙罗汉开启等级：90
+伏虎罗汉开启等级：52/72/90
+探手罗汉开启等级：90
+长眉罗汉开启等级：90
+沉思罗汉开启等级：94
+笑狮罗汉开启等级：96
+挖耳罗汉开启等级：98</contentText>
+    <time>3</time>
+    <name>罗汉堂</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>491</id>
+    <contentText>速通提示：
+1.速通后会立刻通关并获得本关奖励
+2.速通需消耗速通能量和体力
+（守卫须弥消耗速通能量和速通次数）
+3.出战宠物和坐骑可获得经验
+4.请预留足够的背包格
+5.战力取当前1P心法的&lt;font color='#FF0000'&gt;标准战力&lt;/font&gt;</contentText>
+    <time>P</time>
+    <name>扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>492</id>
+    <contentText>每日0点速通能量恢复至num点</contentText>
+    <time>3</time>
+    <name>扫荡</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>493</id>
+    <contentText>今日剩余免费挑战次数：num</contentText>
+    <time>3</time>
+    <name>地藏之愿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>494</id>
+    <contentText>num不足，
+确认消耗num点券购买num用于升级？</contentText>
+    <time>3</time>
+    <name>被动心法</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>495</id>
+    <contentText>请先脱掉身上的装备后再放生</contentText>
+    <time>3</time>
+    <name>被动心法</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>496</id>
+    <contentText>你是否确定要退出联盟？退出联盟后联盟个人贡献将清零。</contentText>
+    <time>3</time>
+    <name>退出联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>497</id>
+    <contentText>&lt;font color='#fff4df'&gt;你应战的&lt;/font&gt;&lt;font color='#fea803'&gt;num&lt;/font&gt;&lt;font color='#fff4df'&gt;将于
+周六&lt;/font&gt;&lt;font color='#fea803'&gt;num&lt;/font&gt;&lt;font color='#fff4df'&gt;点开启，记得参加哦！&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>退出联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>498</id>
+    <contentText>战斗中隐藏该角色，隐藏后怪物血量为1.25倍，其余属性与单人怪物属性一致</contentText>
+    <time>3</time>
+    <name>退出联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>499</id>
+    <contentText>0-1199积分，无奖励
+1200-2399积分，奖励：月饼x1
+2400-3199积分，奖励：月饼x1、一袋仙宫面粉x1
+3200-4099积分，奖励：月饼x1、一袋仙宫面粉x1、月饼礼包x1
+4100积分以上，奖励：月饼x1、一袋仙宫面粉x2、月饼礼包x1</contentText>
+    <time>3</time>
+    <name>玉兔逐月</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>500</id>
+    <contentText>是否消耗num点券速通num次玉兔逐月？</contentText>
+    <time>3</time>
+    <name>玉兔逐月</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>501</id>
+    <contentText>活动期间，每贡献一个铃铛可获得速通水晶 x2，
+大家一起收集到一定数量，还可以获得额外奖励哦 ~</contentText>
+    <time>3</time>
+    <name>神马</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>502</id>
+    <contentText>等级达到num可进入副本挑战</contentText>
+    <time>3</time>
+    <name>神马</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>506</id>
+    <contentText>每日完成指定任务，可获得进度值
+达到指定进度时，最终可以获得一套完整的二郎神时装，时效365天</contentText>
+    <time>3</time>
+    <name>送时装活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>507</id>
+    <contentText>在线时间未达到</contentText>
+    <time>3</time>
+    <name>送时装活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>508</id>
+    <contentText>请先通关一次主线</contentText>
+    <time>3</time>
+    <name>送时装活动</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>509</id>
+    <contentText>活动截至时间:2021年8月31日</contentText>
+    <time>3</time>
+    <name>挑战GM</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>510</id>
+    <contentText>活动截至时间:2026年7月8日</contentText>
+    <time>3</time>
+    <name>凶兽入侵</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>511</id>
+    <contentText>按国家相关规定，未填写身份信息未来可能无法进入游戏哦(所有游戏公司都一样），已填写身份信息但未满18周岁，将限制游戏时间和充值</contentText>
+    <time>3</time>
+    <name>实名认证礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>512</id>
+    <contentText>网络游戏防沉迷系统及用户隐私说明</contentText>
+    <time>3</time>
+    <name>实名认证礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>513</id>
+    <contentText>&lt;font color='#5F1E05' size='16'&gt;    为预防青少年过度游戏，未满18岁的用户和身份信息不完整的用户将受到防沉迷系统的限制，年龄已满18周岁的玩家,在填写身份资料后，可以不受防沉迷系统影响，自由进行游戏。&lt;br&gt;    用户隐私：用户填写的身份信息属于用户的隐私，《造梦西游online》游戏绝对尊重用户个人的隐私权，所以《造梦西游online》游戏绝对不会公开、编辑或透露用户的信息内容,除非有法律许可及公安管理规定。&lt;br&gt;&lt;/font&gt;&lt;font color='#ED5400' size='16'&gt;    温馨提示：为帮助未成年人防沉迷保护，请尽快完善身份信息，未完善身份信息的用户未来将可能无法游戏(所有游戏公司都一样），信息完善后即可领取超值礼包！&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>实名认证礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>514</id>
+    <contentText>&lt;font color='#5F1E05' size='18'&gt;您提交的用户信息未满十八岁，请您再次确认认证信息！ &lt;/font&gt;&lt;br&gt;&lt;font color='#ED5400' size='18'&gt;未满十八岁的用户将会纳入防沉迷系统&lt;br&gt;1、游戏时长受限&lt;br&gt;2、游戏充值受限&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>实名认证礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>515</id>
+    <contentText>&lt;font color='#5F1E05' size='18'&gt;您的身份信息未完善，将影响正常游戏！ &lt;br&gt; 请尽快完善身份信息，&lt;/font&gt; &lt;font color='#ED5400' size='18'&gt;还可领取超值礼包！&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>实名认证礼包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>516</id>
+    <contentText>活动截至时间:2021年6月30日</contentText>
+    <time>3</time>
+    <name>七夕</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>517</id>
+    <contentText>请先完成支线任务四剑归一</contentText>
+    <time>3</time>
+    <name>弥天神域</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>518</id>
+    <contentText>4级宝石袋x1 4%
+天枢石x1 5%
+玉衡石x1 5%
+4级强化石x1 9%
+时装百变宝盒x1 9%
+幻兵百变宝盒x1 9%
+熔炼石x1 9%
+高级幸运符x1 12%
+万仙果x1 12%
+魔力蛋糕x1 9%
+羽枝大礼包x1 5%
+3级宝石袋x1 12%</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>519</id>
+    <contentText>累计消费满8800点券，可开启万马奔腾红包1次（不限）</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>520</id>
+    <contentText>万马奔腾红包剩余次数：num次【已开启 num 次】</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>521</id>
+    <contentText>高级洗炼可增加强运值，坐骑装备强运值num</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>522</id>
+    <contentText>是否消耗num强运值洗炼num</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>523</id>
+    <contentText>消耗坐骑装备强运值，可使坐骑装备洗出最高属性</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>524</id>
+    <contentText>强化等级达到上限，才能进阶</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>525</id>
+    <contentText>进阶需消耗num：num（当前num）</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>526</id>
+    <contentText>消耗num点券按最大值进阶</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>527</id>
+    <contentText>新装备属性=原装备属性+进阶增加值的最大值
+（如进阶后随机增加10-100点属性，则消耗点券后增加100点属性）</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>528</id>
+    <contentText>进阶后强化等级不保留</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>529</id>
+    <contentText>是否消耗num点券进阶新装备</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>530</id>
+    <contentText>道具洗炼或点券洗炼可提升坐骑装备属性</contentText>
+    <time>3</time>
+    <name>进阶坐骑装备</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>531</id>
+    <contentText>消耗宠物装备强运值，可使宠物装备洗出最高属性</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>532</id>
+    <contentText>道具洗炼或点券洗炼可提升宠物装备属性</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>533</id>
+    <contentText>高级洗炼可增加强运值，宠物装备强运值num</contentText>
+    <time>3</time>
+    <name>强运洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>534</id>
+    <contentText>锦绣茱萸香囊制作完成，快去佩戴吧</contentText>
+    <time>3</time>
+    <name>重阳</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>535</id>
+    <contentText>羽毛洗炼概率说明：
+1.范围内每个整数值的出现概率相同
+2.每条属性刷出的概率一致</contentText>
+    <time>3</time>
+    <name>羽毛洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>536</id>
+    <contentText>消耗num个num可单独洗炼此条属性
+概率说明：范围内每个整数值出现概率相同</contentText>
+    <time>3</time>
+    <name>魂器洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>537</id>
+    <contentText>消耗num个num可洗炼该魂器属性
+概率说明：范围内每个整数值出现概率相同</contentText>
+    <time>3</time>
+    <name>魂器洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>538</id>
+    <contentText>宝箱开出的道具概率，保留小数点后2位</contentText>
+    <time>3</time>
+    <name>魂器洗炼</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>539</id>
+    <contentText>你确定使用法宝洗炼石来重置法宝属性？
+（新属性直接替换旧属性，无法保留）</contentText>
+    <time>3</time>
+    <name>法宝</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>540</id>
+    <contentText>你确定使用免费洗炼来重置羽毛属性？
+（新属性将直接替换旧属性）</contentText>
+    <time>3</time>
+    <name>羽毛</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>541</id>
+    <contentText>1.嗔恨煞戒为当前版本最高战力饰品（有扣血效果）
+2.暴击、攻击、幸运、命中、魔法、回魔、吸血、反伤宝石为当前版本最高战力宝石
+（吸血、反伤宝石镶嵌要求很高，新手玩家慎选）
+3.阴阳诡影时装为当前版本最高战力时装</contentText>
+    <time>3</time>
+    <name>合成图鉴</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>542</id>
+    <contentText>可用num喂养进化为成熟形态，进化后天赋继承原有值，资质重置</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>543</id>
+    <contentText>可用num或num喂养进化为成熟形态，进化后天赋继承原有值，资质重置</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>544</id>
+    <contentText>完成任务四剑归一;通关逆星台;通关孤魂岭</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>545</id>
+    <contentText>46;9001;47</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>546</id>
+    <contentText>掉落受掉宝率影响</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>547</id>
+    <contentText>五毒印受掉宝率影响，材料不受影响</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>548</id>
+    <contentText>掉落不受掉宝率影响</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>549</id>
+    <contentText>今日剩余免费挑战次数：num</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>550</id>
+    <contentText>携带战力大于num的宠物</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>551</id>
+    <contentText>宠物战力不足，请重新布阵</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>552</id>
+    <contentText>血脉总等级达到num级，开放镶嵌功能</contentText>
+    <time>3</time>
+    <name>宠物进化</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>553</id>
+    <contentText>战斗中随机获得以下一条加成
+麒麟血脉提升LV1
+凤凰血脉提升LV1
+蛟龙血脉提升LV1
+白泽血脉提升LV1
+灵龟血脉提升LV1
+</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>554</id>
+    <contentText>每隔一段时间召唤凤凰虚影，造成伤害</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>555</id>
+    <contentText>受到宠物的伤害降低</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>556</id>
+    <contentText>对宠物造成的伤害提升</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>557</id>
+    <contentText>呼呼大睡期间获得减伤和免疫负面效果，技能命中附带[山痕]，命中[山痕]目标时伤害提高</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>558</id>
+    <contentText>地枢祭坛;天穹祭坛;归墟祭坛</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>559</id>
+    <contentText>点击右侧的晶核镶嵌到num上</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>560</id>
+    <contentText>1.晶核不增加宠物战力，只在战斗中生效
+2.晶核可分解为太古币（1-6级对应分解数量：1、2、4、8、16、32）
+3.当前晶核最高等级为6级
+4.属性晶核洗炼，血脉类型和LV等级都会变动；其余晶核洗炼，LV等级变动
+5.镶嵌有晶核时，不可转换血脉
+6.当前只开放宠物猪、兔专属晶核，专属晶核不建议用作升级材料，损耗较大</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>561</id>
+    <contentText>经验溢出，是否确定升级？</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>562</id>
+    <contentText>该宠物镶有晶核，无法转换，请先卸下晶核</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>563</id>
+    <contentText>请预留一个晶核背包格子</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>564</id>
+    <contentText>随机范围：升级后在原等级基础上下浮动1级</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>565</id>
+    <contentText>狡兔之耳额外提高友方攻击；释放奥义·星月交辉会获得一段时间的伤害提升</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>566</id>
+    <contentText>每隔一段时间降下雷龙闪电，晕眩并伤害敌人</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>567</id>
+    <contentText>新秀榜奖励：造梦代言人勋章x1
+新秀榜排名前20名的玩家，可在9月1日后领取奖励
+（双人存档只能上榜战力更高的1个角色）</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>568</id>
+    <contentText>造梦代言人x1
+</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>569</id>
+    <contentText>副本内跟随展示;副本内释放技能
+</contentText>
+    <time>3</time>
+    <name>晶核</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>570</id>
+    <contentText>1.挑战成功后从蓝色传送口即可进入下一层
+2.前八层挑战成功，每层固定获得1000净化魔气值
+3.首次通关第九层后，可开启选择"封身"或"壮魔"词条
+封身为限制己身，壮魔为强化敌人，视情况合理搭配词条
+每个词条有对应的倍率
+4.第九层净化魔气值计算公式为：
+（1000+剩余时间*5）*挑战倍率
+5.双人存档若未隐藏角色，进入默认1P，通关第1层后锁定角色
+6.第九层限制战力，达到150万以上战力方可挑战</contentText>
+    <time>3</time>
+    <name>诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>571</id>
+    <contentText>1.排行榜仅通关第九层的玩家可上榜
+2.每个角色独立排行
+3.最高净化魔气值有变动时，天榜会立刻更新
+4.若有作弊行为，天榜将会取消其排名，并禁赛魔渊诛邪一段时间
+5.诛邪名次将会展示在个人展览中
+6.魔渊诛邪正式版开始，活动结束后将为各角色前120个上榜玩家发放诛邪令（邮件），可用于激活诛魔天尊称号</contentText>
+    <time>3</time>
+    <name>诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>572</id>
+    <contentText>消耗启灵果习得技能权重如下：
+回魔加成权重：25
+攻击加成权重：25
+回血加成权重：50
+防御加成权重：50
+其余主动/被动技能权重均为100</contentText>
+    <time>3</time>
+    <name>诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>573</id>
+    <contentText>
+操作物品三次，神马进行攻击，为一回合
+道具消耗规则：
+1.每回合，马鞭合成多个最多生效两次，攻击时一次性全部生效
+2.每回合，草料合成多个只能生效一次
+3.每回合，云朵合成多个只能生效一次
+4.每回合，福联合成多个只能生效一次
+5.铃铛只需合成一个，胜利结算时生效
+</contentText>
+    <time>3</time>
+    <name>神马</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>574</id>
+    <contentText>num，通关第num届魔渊诛邪第九层，&lt;br&gt;积分&lt;font color='#FF0000'&gt;num&lt;/font&gt;，排名&lt;font color='#FF0000'&gt;num&lt;/font&gt;</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>575</id>
+    <contentText>&lt;font color='#FF0000'&gt;二阶易·太阴盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;攻击+67.5（1级开启）
+反伤+4     （2级开启）
+破魔+1%   （3级开启）
+攻击+67.5（4级开启）
+反伤+4     （5级开启）
+命中+1%   （6级开启）&lt;/font&gt;
+上述值在一阶易盘12级上叠加
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·太阴盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>576</id>
+    <contentText>&lt;font color='#FF0000'&gt;二阶易·少阳盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;防御+13.5 （1级开启）
+吸血+4     （2级开启）
+魔抗+1%   （3级开启）
+防御+13.5 （4级开启）
+吸血+4     （5级开启）
+守护+2     （6级开启）&lt;/font&gt;
+上述值在一阶易盘12级上叠加
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·少阳盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>577</id>
+    <contentText>&lt;font color='#FF0000'&gt;二阶易·两仪盘+6&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;基础属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;num&lt;/font&gt;
+&lt;font color='#ffd21c'&gt;强化属性&lt;/font&gt;
+&lt;font color='#FF980C'&gt;魔法+150  （1级开启）
+回血+13.5 （2级开启）
+回魔+2.5  （3级开启）
+生命+1350（4级开启）
+吸血+8     （5级开启）
+反伤+8     （6级开启）&lt;/font&gt;
+上述值在一阶易盘12级上叠加
+最终值将四舍五入</contentText>
+    <time>3</time>
+    <name>易·两仪盘</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>578</id>
+    <contentText>请切换到魄装再穿戴;请切换到灵装再穿戴</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>579</id>
+    <contentText>通关六欲魔天第一关后开放灵装功能</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>580</id>
+    <contentText>重铸后继承原装备的强化等级</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>581</id>
+    <contentText>洗炼时，属性不变，数值变动</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>582</id>
+    <contentText>满属性灵装推荐获得步骤
+
+1.打造出想要的词条装备
+2.重铸获得妄魇装备
+3.洗炼妄魇装备
+4.消耗灵装洗炼石洗炼欲·贪妄衣服，生命值超过1400次后，下一次洗炼生命值直接满值
+  （如有满值洗炼需求，建议先不锁定，将生命值洗出后，锁定生命值再洗炼其他）</contentText>
+    <time>3</time>
+    <name>魔渊诛邪</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>583</id>
+    <contentText>此为镶嵌中的灵钰，请先卸下此灵钰</contentText>
+    <time>3</time>
+    <name>灵钰</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>584</id>
+    <contentText>点击虚空藏形象发起挑战，需携带对应法宝才能进入试炼，试炼过程不能更换法宝</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>585</id>
+    <contentText>魂器系列：九佑、湮灭、永生</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>586</id>
+    <contentText>是否将背包中相同的道具合并至仓库中?</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>587</id>
+    <contentText>是否将仓库中相同的道具合并至背包中?</contentText>
+    <time />
+    <name>地藏冥殿</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>588</id>
+    <contentText>是否消耗500点券解冻联盟？</contentText>
+    <time />
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>589</id>
+    <contentText>1.每日第一次转盘必刷出转轮王，且是唯一一次
+（如不想挑战该副本，退出即可，后续不会再刷出）
+2.打死任意一个BOSS即可结算，结算界面领取奖励后扣除次数</contentText>
+    <time />
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>590</id>
+    <contentText>今日免费奖励领取次数：num</contentText>
+    <time />
+    <name>联盟</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>591</id>
+    <contentText>蟠桃盛会，乃天庭千年一度之盛典，素为三界所瞩目。此番王母不止宴请群仙，更广邀仙凡同欢、妖圣共赴；愿令蟠桃不再独为天上仙果，而成天下同享之珍。盛会空前，园务当先。王母特将蟠桃增产之重任托付于你，望悉心育树、守护蟠园，以满园仙桃筹备这场前所未有的盛宴。
+待蟠桃盈枝，定见万仙来朝、三界共庆。</contentText>
+    <time />
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>592</id>
+    <contentText>活动时间截止2026/10/14
+升级桃树与仙子可增加产速
+盛会共四个阶段，时间与总产速都达标时才能进入下一阶段
+所处的不同阶段也会提升产量
+备宴：活动开启后且总产速达到10个每分钟
+开席：时间达到9月26日且总产速达到200个每分钟
+万仙来朝：时间达到9月30日且总产速达到8000个每分钟
+天下同庆：时间达到10月5日且总产速达到99999个每分钟
+蟠桃祝福的强度随着盛会进度逐步增强
+蟠桃祝福Lv1：回魔提升50%，攻击提升10%且额外增加100点，持续60分钟
+蟠桃祝福Lv2：回魔提升60%，攻击提升15%且额外增加150点，持续60分钟
+蟠桃祝福Lv3：回魔提升70%，攻击提升20%且额外增加275点，持续60分钟
+蟠桃祝福Lv4：回魔提升85%，攻击提升25%且额外增加400点，持续60分钟
+&lt;font color='#FF0000'&gt;活动期间可前往须弥山佛像处领取蟠桃祝福&lt;/font&gt;</contentText>
+    <time />
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>593</id>
+    <contentText>确定花费num点券购买突发事件处理次数？</contentText>
+    <time />
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>594</id>
+    <contentText>确定花费num点券购买至尊仙令特权？</contentText>
+    <time />
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>595</id>
+    <contentText>是否花费num点券解锁仙令？</contentText>
+    <time />
+    <name>蟠桃</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>916</id>
+    <contentText>活动截止时间：3月18日</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>917</id>
+    <contentText>今日充值任意金额可开启马到成功红包1次（限1次）</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>918</id>
+    <contentText>累计消费满1000点券，可开启马到成功红包1次（不限）</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>919</id>
+    <contentText>累计消耗点券：num 点券</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>920</id>
+    <contentText>马到成功红包剩余次数：num次【已开启 num 次】</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>921</id>
+    <contentText>今日剩余开启次数：num次
+每日0点恢复1次</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>922</id>
+    <contentText>剩余开启次数：num次</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>923</id>
+    <contentText>福字烟花x1 3%
+法宝洗炼石x1 4%
+天赋果x1 4%
+三色花x1 4%
+三仙果x1 4%
+还魂丹x1 5%
+馒头x1 5%
+铁钥匙x3 5%
+护刃钳x1 5%
+经验青团x1 5%
+经验瑶草x1 5%
+幻梦果x1 7%
+妖灵花x1 7%
+1级强化石x1 7%
+速通水晶x1 10%
+宝石结晶x1 10%
+羽枝x1 10%</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>924</id>
+    <contentText>福字烟花x1 1%
+天枢石碎片x1 1%
+熔炼石碎片x1 2%
+孟婆药剂x1 2%
+五行洗炼石x1 2%
+属性洗炼石x1 2%
+成长洗炼石x1 2%
+3级强化石x1 2%
+生命果x1 2%
+攻击果x1 2%
+防御果x1 2%
+潜力果x1 2%
+根骨果x1 2%
+灵力果x1 2%
+2级宝石袋x1 2%
+朱丹花x1 3%
+苍翠花x1 3%
+流金花x1 3%
+孟婆丹x1 3%
+幽蒙草x1 3%
+法宝洗炼石x1 3%
+天赋果x1 3%
+三色花x1 3%
+三仙果x1 3%
+启灵果x1 3%
+忘忧草x1 3%
+幻化石x1 3%
+还魂丹x1 3%
+馒头x1 3%
+铁钥匙x3 3%
+护刃钳x1 3%
+经验青团x1 3%
+经验瑶草x1 3%
+幻梦果x1 6%
+妖灵花x1 6%
+1级强化石x1 6%</contentText>
+    <time>3</time>
+    <name>福牛红包</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>925</id>
+    <contentText>分解后，原魂器销毁，概率获得num个、num个或num个num</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>926</id>
+    <contentText>消耗魂器拆解石x1，保留原魂器</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>927</id>
+    <contentText>该魂器有强化等级，请先拆解</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>928</id>
+    <contentText>该魂器没有强化等级，不能拆解</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>929</id>
+    <contentText>拆解之后该魂器销毁，可花费一个拆解石保留原魂器</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>930</id>
+    <contentText>是否消耗num点券洗炼全部属性</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>931</id>
+    <contentText>是否消耗num点券洗炼单个属性</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>932</id>
+    <contentText>礼包领取成功后将自动删除邮件；一个账号可领取一次礼包</contentText>
+    <time>3</time>
+    <name>邮件</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>933</id>
+    <contentText>开启背包第八页需要开通VIP8</contentText>
+    <time>3</time>
+    <name>V8</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>934</id>
+    <contentText>神府、鬼蜮、灵界三类魂石无法相互转换</contentText>
+    <time>3</time>
+    <name>炼魂台</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>935</id>
+    <contentText>已穿戴的魂器中有相同类型魂石，请先更换魂石;本角色或其他角色所穿戴的魂器中有相同类型魂石，请先更换魂石</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>936</id>
+    <contentText>已镶嵌同类魂石，请选择其他魂石;本角色或其他角色已镶嵌同类魂石，请选择其他魂石</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>937</id>
+    <contentText>网络波动断开连接，已离开当前队伍</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>938</id>
+    <contentText>消耗一颗还魂丹可复活全部宠物并使所有宠物满血</contentText>
+    <time>3</time>
+    <name>宠物复活</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>939</id>
+    <contentText>商店关闭时间：26年3月8日</contentText>
+    <time>3</time>
+    <name>年兽商店</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>940</id>
+    <contentText>该副本内无法变更法宝</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>941</id>
+    <contentText>个人贡献铃铛数：num个
+总铃铛数达到：num万
+可获得：多彩烟花礼包x1、2级宝石袋x1、法宝洗炼石x1</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>942</id>
+    <contentText>个人贡献铃铛数：num个
+总铃铛数达到：num万
+可获得：多彩烟花礼包x1、造梦西游烟花x1、3级百变宝石袋x1</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>943</id>
+    <contentText>个人贡献铃铛数：num个
+总铃铛数达到：num万
+可获得：4级幸运石x1、造梦西游烟花x1、熔炼石x1、速通水晶x5</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>944</id>
+    <contentText>神马随心礼包x1、1级强化石x1、羽枝x5</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>945</id>
+    <contentText>神秘商店栏位开启概率：
+第二栏：75%
+第三栏：50%
+第四栏：40%
+第五栏：30%
+第五栏位道具刷出概率：
+2级强化石：9.40%
+孟婆药剂：4.70%
+朱丹花：9.40%
+苍翠花：9.40%
+流金花：9.40%
+坐骑技能石：9.40%
+熔炼石碎片：2.82%
+破损的贪戒指：1.60%
+破损的嗔戒指：1.22%
+破损的痴戒指：2.26%
+宠物增益果：9.40%
+宠物资质果：9.40%
+宠物天赋果：9.40%
+天枢石碎片：1.41%
+玉衡石碎片：1.41%
+六一幻兵：4.70%
+六一时装：4.70%</contentText>
+    <time>3</time>
+    <name>系统提示</name>
+    <假的>该副本内无法变更法宝。</假的>
+  </RECORD>
+  <RECORD>
+    <id>22227</id>
+    <contentText>海风徐徐，走出一步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22228</id>
+    <contentText>细腻夏沙，走出二步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22229</id>
+    <contentText>脚踩浪花，走出三步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22230</id>
+    <contentText>阳光正好，走出四步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22231</id>
+    <contentText>柔软沙滩，走出五步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22232</id>
+    <contentText>浪漫夏日，走出六步</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22233</id>
+    <contentText>夏日沙滩贝壳多多。
+每日可免费散步3次，
+随机走出1至6步，
+可拾取贝壳中的宝物。
+行至第100步可获得</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22234</id>
+    <contentText>活动截止时间：2026年8月23日</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22235</id>
+    <contentText>夏日沙滩套装x1、3级宝石袋x1、大灵魂药剂x1</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+  <RECORD>
+    <id>22236</id>
+    <contentText>散步至第100步，获得终点礼包！</contentText>
+    <time>3</time>
+    <name>沙滩</name>
+    <假的 />
+  </RECORD>
+</RECORDS>

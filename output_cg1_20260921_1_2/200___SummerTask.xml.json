@@ -1,0 +1,54 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "name": "每日登录",
+      "activityId": "2026765",
+      "taskType": "8",
+      "resetType": "1",
+      "taskClass": "102",
+      "targetId": "0",
+      "targetNum": "1"
+    },
+    {
+      "id": "2",
+      "name": "挑战一次\n竞技场",
+      "activityId": "2026765",
+      "taskType": "4",
+      "resetType": "1",
+      "taskClass": "100",
+      "targetId": "0",
+      "targetNum": "1"
+    },
+    {
+      "id": "3",
+      "name": "完成一次日常任务",
+      "activityId": "2026765",
+      "taskType": "2",
+      "resetType": "1",
+      "taskClass": "101",
+      "targetId": "2",
+      "targetNum": "1"
+    },
+    {
+      "id": "4",
+      "name": "完成一次日常悬赏任务",
+      "activityId": "2026765",
+      "taskType": "2",
+      "resetType": "1",
+      "taskClass": "101",
+      "targetId": "3",
+      "targetNum": "1"
+    },
+    {
+      "id": "5",
+      "name": "完成一次\n主题挑战",
+      "activityId": "2026765",
+      "taskType": "1",
+      "resetType": "1",
+      "taskClass": "100",
+      "targetId": "2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119",
+      "targetNum": "1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1"
+    }
+  ]
+}

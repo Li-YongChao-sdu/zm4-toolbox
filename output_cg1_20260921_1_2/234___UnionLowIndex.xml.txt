@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <newUnionDay>30</newUnionDay>
+    <newUnionMaxLev>3</newUnionMaxLev>
+    <newUnionIndex>2;1.2;2</newUnionIndex>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>200401</id>
+    <subDungeonId>200101,200102,200103;200201,200202,200203;200301,200302,200303</subDungeonId>
+    <subDungeonIcon>200101.png,200102.png,200103.png;200201.png,200202.png,200203.png;200301.png,200302.png,200303.png</subDungeonIcon>
+    <dungeonColour>3;2;1</dungeonColour>
+    <showItemId>187010001;187010002;187010003;187010004</showItemId>
+    <powerMin>450000</powerMin>
+    <rewardId>50991</rewardId>
+    <successCnt>6</successCnt>
+    <userPeerMax>3</userPeerMax>
+    <bossReadyTime>30000</bossReadyTime>
+    <bossTimeLimit>270000</bossTimeLimit>
+    <showPropId>197000042</showPropId>
+    <showPropNum>3</showPropNum>
+  </RECORD>
+</RECORDS>

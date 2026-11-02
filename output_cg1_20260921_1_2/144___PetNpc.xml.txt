@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2102</id>
+    <name>静行</name>
+    <dungeonId>7002</dungeonId>
+    <rewardId>4058</rewardId>
+    <gridNum>1</gridNum>
+    <describe>静行:
+天下武功，唯快不破；
+战胜我之后，可获得进阶玲珑战靴的道具</describe>
+    <dungeonProp>143300002</dungeonProp>
+    <iconId>2102.png</iconId>
+    <petLevel>56</petLevel>
+    <monsterId>71006,71010,71008;71006,71008,71009;71006,71007,71007</monsterId>
+    <petPower>150000;150000;150000</petPower>
+  </RECORD>
+  <RECORD>
+    <id>2103</id>
+    <name>静武</name>
+    <dungeonId>7003</dungeonId>
+    <rewardId>4057</rewardId>
+    <gridNum>1</gridNum>
+    <describe>静武:
+力拔山兮气盖世；
+战胜我之后，可获得进阶玲珑手套的道具</describe>
+    <dungeonProp>143300002</dungeonProp>
+    <iconId>2103.png</iconId>
+    <petLevel>68</petLevel>
+    <monsterId>71016,71017,71017;71016,71018,71019;71011,71020,71021</monsterId>
+    <petPower>250000;250000;250000</petPower>
+  </RECORD>
+  <RECORD>
+    <id>2104</id>
+    <name>静磐</name>
+    <dungeonId>7004</dungeonId>
+    <rewardId>4056</rewardId>
+    <gridNum>1</gridNum>
+    <describe>静磐:
+铜墙铁壁，坚如磐石；
+战胜我之后，可获得进阶玲珑铠甲的道具</describe>
+    <dungeonProp>143300002</dungeonProp>
+    <iconId>2104.png</iconId>
+    <petLevel>62</petLevel>
+    <monsterId>71011,71013,71014;71011,71013,71015;71011,71012,71012</monsterId>
+    <petPower>200000;200000;200000</petPower>
+  </RECORD>
+  <RECORD>
+    <id>2105</id>
+    <name>静幻</name>
+    <dungeonId>7005</dungeonId>
+    <rewardId>4055</rewardId>
+    <gridNum>1</gridNum>
+    <describe>静幻:
+智者可卷愚者豪，世人见我轻鸿毛；
+战胜我之后，可获得进阶玲珑头盔的道具</describe>
+    <dungeonProp>143300002</dungeonProp>
+    <iconId>2105.png</iconId>
+    <petLevel>50</petLevel>
+    <monsterId>71001,71004,71004;71001,71003,71004;71001,71005,71002</monsterId>
+    <petPower>100000;100000;100000</petPower>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2020</id>
+    <type>1</type>
+    <changeId>143100002</changeId>
+    <name>观音</name>
+    <changeNum>1</changeNum>
+    <changeTarget>10006</changeTarget>
+    <changeTimeMax>1</changeTimeMax>
+  </RECORD>
+  <RECORD>
+    <id>2022</id>
+    <type>1</type>
+    <changeId>143100002</changeId>
+    <name>地藏</name>
+    <changeNum>1</changeNum>
+    <changeTarget>50001</changeTarget>
+    <changeTimeMax>1</changeTimeMax>
+  </RECORD>
+  <RECORD>
+    <id>2024</id>
+    <type>1</type>
+    <changeId>143100002</changeId>
+    <name>普贤</name>
+    <changeNum>1</changeNum>
+    <changeTarget>60001</changeTarget>
+    <changeTimeMax>1</changeTimeMax>
+  </RECORD>
+</RECORDS>

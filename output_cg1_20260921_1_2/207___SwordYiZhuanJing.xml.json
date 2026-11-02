@@ -1,0 +1,14 @@
+{
+  "RECORD": {
+    "id": "1",
+    "hpMax": "4555;5694",
+    "phyDef": "133;190",
+    "mpMax": "804;1073",
+    "atk": "398;569",
+    "open": "hpMax,phyDef;mpMax;atk",
+    "luckyT": "hpMax",
+    "luckyNum": "1300",
+    "swordYiZhuanJingReset": "185300003;5",
+    "swordYiZhuanJingSuperReset": "185300004;1,2,3,4"
+  }
+}

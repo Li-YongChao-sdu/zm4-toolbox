@@ -1,0 +1,1481 @@
+{
+  "RECORD": [
+    {
+      "id": "8200110",
+      "name": "天生蛮力",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200210",
+      "name": "自然守护",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200310",
+      "name": "生命祝福",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200410",
+      "name": "回血",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200510",
+      "name": "狂暴",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200610",
+      "name": "锐眼",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200710",
+      "name": "矫捷",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200810",
+      "name": "幸运",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8200910",
+      "name": "魔抗",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8300210",
+      "name": "回血加成",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "50"
+    },
+    {
+      "id": "8300310",
+      "name": "回蓝加成",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "25"
+    },
+    {
+      "id": "8300410",
+      "name": "攻击加成",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "25"
+    },
+    {
+      "id": "8300510",
+      "name": "防御加成",
+      "type": "1",
+      "startLevel": "1",
+      "weight": "50"
+    },
+    {
+      "id": "8100110",
+      "name": "尖牙扑咬",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100120",
+      "name": "尖牙扑咬",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100130",
+      "name": "尖牙扑咬",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100220",
+      "name": "疾行旋击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100230",
+      "name": "疾行旋击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100330",
+      "name": "掘地喷流",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100310",
+      "name": "咩咩音波",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100320",
+      "name": "咩咩音波",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100430",
+      "name": "咩咩音波",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100420",
+      "name": "代罪羔羊",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100530",
+      "name": "代罪羔羊",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100630",
+      "name": "光之守护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100510",
+      "name": "狡兔之耳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100520",
+      "name": "狡兔之耳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100620",
+      "name": "月光陨落",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100730",
+      "name": "狡兔之耳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100830",
+      "name": "月光陨落",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100930",
+      "name": "回旋月刃",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101030",
+      "name": "击鼓鸣金",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101130",
+      "name": "财迷心窍",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101230",
+      "name": "黄金万两",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101310",
+      "name": "砸地",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101320",
+      "name": "砸地",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101330",
+      "name": "烈焰震击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101420",
+      "name": "连击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101430",
+      "name": "火焰连击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101530",
+      "name": "献祭之火",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101630",
+      "name": "瞬光击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101730",
+      "name": "光速拳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101830",
+      "name": "极速之光",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100140",
+      "name": "尖牙扑咬",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100240",
+      "name": "疾行旋击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100340",
+      "name": "掘地喷流",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100440",
+      "name": "尖牙扑咬",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100540",
+      "name": "疾行旋击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100640",
+      "name": "掘地喷流",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100740",
+      "name": "狡兔之耳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100840",
+      "name": "月光陨落",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100940",
+      "name": "回旋月刃",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100710",
+      "name": "野猪冲锋",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100720",
+      "name": "野猪冲锋",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100820",
+      "name": "翻天覆地",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101930",
+      "name": "野猪冲锋",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102030",
+      "name": "翻天覆地",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102130",
+      "name": "呼呼大睡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100910",
+      "name": "鸡鸣起舞",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8100920",
+      "name": "鸡鸣起舞",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101020",
+      "name": "舞动之羽",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102230",
+      "name": "鸡鸣起舞",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102330",
+      "name": "舞动之羽",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102430",
+      "name": "风之加护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101110",
+      "name": "冰风吐息",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101120",
+      "name": "冰风吐息",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101220",
+      "name": "爆破寒山",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102530",
+      "name": "冰风吐息",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102630",
+      "name": "爆破寒山",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102730",
+      "name": "冰魂雪球",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102540",
+      "name": "冰霜路径",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102640",
+      "name": "爆破寒山",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102740",
+      "name": "冰魄雪球",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101210",
+      "name": "小鱼泡泡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101520",
+      "name": "泡泡连击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101620",
+      "name": "魔法水疗",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101410",
+      "name": "单身嚎叫",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101720",
+      "name": "单身嚎叫",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101820",
+      "name": "单身舞爪",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101510",
+      "name": "萌牛1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101920",
+      "name": "哞哞牛1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102020",
+      "name": "哞哞牛2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102830",
+      "name": "漩涡水柱",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102930",
+      "name": "魔法水疗",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103030",
+      "name": "泡泡守护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103130",
+      "name": "浮光瞬影",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103230",
+      "name": "孤寂狂风",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103330",
+      "name": "独孤剑道",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103430",
+      "name": "狂牛1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103530",
+      "name": "狂牛2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103630",
+      "name": "狂牛3",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102840",
+      "name": "漩涡幻柱",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102940",
+      "name": "幻法治疗",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103040",
+      "name": "泡泡守护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103140",
+      "name": "浮光瞬影",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103240",
+      "name": "孤寂狂风",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103340",
+      "name": "独孤剑道",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103440",
+      "name": "牛魔1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103540",
+      "name": "牛魔2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103640",
+      "name": "牛魔3",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500130",
+      "name": "奥义·暗流分身",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500230",
+      "name": "奥义·翔天怒焱",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500330",
+      "name": "奥义·星月交辉",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500430",
+      "name": "奥义·光辉战甲",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500530",
+      "name": "奥义·流光一击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500630",
+      "name": "奥义·风暴",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500730",
+      "name": "奥义·山崩地裂",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500830",
+      "name": "奥义·金光闪闪",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8500930",
+      "name": "奥义·飞天雪爆",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501030",
+      "name": "奥义·滔天巨浪",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501130",
+      "name": "奥义·屠戮剑影",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501230",
+      "name": "奥义·炽魂魔焰",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501330",
+      "name": "奥义·魔蛇脱壳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101040",
+      "name": "咩咩音波",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101140",
+      "name": "代罪羔羊",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101240",
+      "name": "光之守护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101340",
+      "name": "瞬光击",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101440",
+      "name": "光速拳",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101540",
+      "name": "极速之光",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101640",
+      "name": "鸡鸣起舞",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101740",
+      "name": "舞动之风",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101840",
+      "name": "风之加护",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101940",
+      "name": "野猪冲锋",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102040",
+      "name": "翻天覆地",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102140",
+      "name": "呼呼大睡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102240",
+      "name": "击鼓鸣金",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102340",
+      "name": "财迷心窍",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102440",
+      "name": "黄金万两",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101610",
+      "name": "利刺毒牙",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102120",
+      "name": "利刺毒牙",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102220",
+      "name": "灭亡毒雾",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103730",
+      "name": "利刺毒牙",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103830",
+      "name": "灭亡毒雾",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103930",
+      "name": "灵动双蛇",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103740",
+      "name": "利刺毒牙",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103840",
+      "name": "灭亡毒雾",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103940",
+      "name": "灵动三蛇",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501430",
+      "name": "奥义·天雷九道",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104040",
+      "name": "超级虎1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104140",
+      "name": "超级虎2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104240",
+      "name": "超级虎3",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104030",
+      "name": "成熟虎1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104130",
+      "name": "成熟虎2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104230",
+      "name": "成熟虎3",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102320",
+      "name": "成长虎1",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102420",
+      "name": "成长虎2",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101710",
+      "name": "激昂高鸣",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102520",
+      "name": "激昂高鸣",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102620",
+      "name": "青驹冲撞",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104330",
+      "name": "激昂高鸣",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104430",
+      "name": "霹雳枪法",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104530",
+      "name": "龙舞枪诀",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104340",
+      "name": "激昂高鸣",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104440",
+      "name": "霹雳枪法",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104540",
+      "name": "龙舞枪诀",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501530",
+      "name": "奥义·炙灼突进",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102720",
+      "name": "冲锋辟路",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102820",
+      "name": "石岩壁垒",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104630",
+      "name": "冲锋辟路",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104730",
+      "name": "石岩壁垒",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104830",
+      "name": "龟神护佑",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104640",
+      "name": "冲锋辟路",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104740",
+      "name": "石岩壁垒",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104840",
+      "name": "龟神护佑",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501630",
+      "name": "奥义·重盾轰爆",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8102920",
+      "name": "1技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103020",
+      "name": "2技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104930",
+      "name": "1技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105030",
+      "name": "2技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105130",
+      "name": "枯木逢春",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8104940",
+      "name": "1技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105040",
+      "name": "2技能",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105140",
+      "name": "枯木逢春",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501730",
+      "name": "奥义·万物复苏",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103120",
+      "name": "天锁霜华",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103220",
+      "name": "潜冰遁行",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105230",
+      "name": "天锁霜华",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105330",
+      "name": "潜冰遁行",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105430",
+      "name": "冻息龙吟",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105240",
+      "name": "天锁霜华",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105340",
+      "name": "潜冰遁行",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105440",
+      "name": "冻息龙吟",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501830",
+      "name": "奥义·永恒寒凝",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8101810",
+      "name": "伤口烙印",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103320",
+      "name": "伤口烙印",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103420",
+      "name": "冥瞳威压",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105530",
+      "name": "伤口烙印",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105630",
+      "name": "冥瞳威压",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105730",
+      "name": "流影绯爪",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105540",
+      "name": "伤口烙印",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105640",
+      "name": "冥瞳威压",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105740",
+      "name": "流影绯爪",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8501930",
+      "name": "奥义·蝠魇血祭",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103520",
+      "name": "天仙散花",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103620",
+      "name": "歌舞升平",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105830",
+      "name": "天仙散花",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105930",
+      "name": "歌舞升平",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106030",
+      "name": "倾国倾城",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105840",
+      "name": "天仙散花",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8105940",
+      "name": "歌舞升平",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106040",
+      "name": "倾国倾城",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8502030",
+      "name": "奥义·魅影攻心",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103720",
+      "name": "飓灭风涡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8103820",
+      "name": "风息归元",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106130",
+      "name": "飓灭风涡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106230",
+      "name": "风息归元",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106330",
+      "name": "风佑同尘",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106140",
+      "name": "飓灭风涡",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106240",
+      "name": "风息归元",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8106340",
+      "name": "风佑同尘",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    },
+    {
+      "id": "8502130",
+      "name": "奥义·风囚卷缚",
+      "type": "0",
+      "startLevel": "1",
+      "weight": "100"
+    }
+  ]
+}

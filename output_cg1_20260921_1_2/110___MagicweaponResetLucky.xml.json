@@ -1,0 +1,2056 @@
+{
+  "RECORD": [
+    {
+      "id": "419000001-150200001",
+      "magicweaponId": "419000001",
+      "wuxingNum": "1;3",
+      "name": "究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "419000001-150200002",
+      "magicweaponId": "419000001",
+      "wuxingNum": "0",
+      "name": "究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "720"
+    },
+    {
+      "id": "419000001-150200003",
+      "magicweaponId": "419000001",
+      "wuxingNum": "0",
+      "name": "究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1600"
+    },
+    {
+      "id": "419000001-150100001",
+      "magicweaponId": "419000001",
+      "wuxingNum": "0",
+      "name": "究天古剑",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "419000002-150200001",
+      "magicweaponId": "419000002",
+      "wuxingNum": "1;3",
+      "name": "摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "419000002-150200002",
+      "magicweaponId": "419000002",
+      "wuxingNum": "0",
+      "name": "摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "810"
+    },
+    {
+      "id": "419000002-150200003",
+      "magicweaponId": "419000002",
+      "wuxingNum": "0",
+      "name": "摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2500"
+    },
+    {
+      "id": "419000002-150100001",
+      "magicweaponId": "419000002",
+      "wuxingNum": "0",
+      "name": "摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "429000001-150200001",
+      "magicweaponId": "429000001",
+      "wuxingNum": "1;3",
+      "name": "罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "429000001-150200002",
+      "magicweaponId": "429000001",
+      "wuxingNum": "0",
+      "name": "罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "900"
+    },
+    {
+      "id": "429000001-150200003",
+      "magicweaponId": "429000001",
+      "wuxingNum": "0",
+      "name": "罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2900"
+    },
+    {
+      "id": "429000001-150100001",
+      "magicweaponId": "429000001",
+      "wuxingNum": "0",
+      "name": "罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "429000002-150200001",
+      "magicweaponId": "429000002",
+      "wuxingNum": "1;3",
+      "name": "浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "429000002-150200002",
+      "magicweaponId": "429000002",
+      "wuxingNum": "0",
+      "name": "浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "990"
+    },
+    {
+      "id": "429000002-150200003",
+      "magicweaponId": "429000002",
+      "wuxingNum": "0",
+      "name": "浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3600"
+    },
+    {
+      "id": "429000002-150100001",
+      "magicweaponId": "429000002",
+      "wuxingNum": "0",
+      "name": "浮行如意",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "429000003-150200001",
+      "magicweaponId": "429000003",
+      "wuxingNum": "1;3",
+      "name": "二阶究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "429000003-150200002",
+      "magicweaponId": "429000003",
+      "wuxingNum": "0",
+      "name": "二阶究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1080"
+    },
+    {
+      "id": "429000003-150200003",
+      "magicweaponId": "429000003",
+      "wuxingNum": "0",
+      "name": "二阶究天古剑",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "5700"
+    },
+    {
+      "id": "429000003-150100001",
+      "magicweaponId": "429000003",
+      "wuxingNum": "0",
+      "name": "二阶究天古剑",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "429000004-150200001",
+      "magicweaponId": "429000004",
+      "wuxingNum": "1;3",
+      "name": "二阶摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "429000004-150200002",
+      "magicweaponId": "429000004",
+      "wuxingNum": "0",
+      "name": "二阶摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1170"
+    },
+    {
+      "id": "429000004-150200003",
+      "magicweaponId": "429000004",
+      "wuxingNum": "0",
+      "name": "二阶摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "8400"
+    },
+    {
+      "id": "429000004-150100001",
+      "magicweaponId": "429000004",
+      "wuxingNum": "0",
+      "name": "二阶摩愿佛珠",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000001-150200001",
+      "magicweaponId": "439000001",
+      "wuxingNum": "1;3",
+      "name": "多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000001-150200002",
+      "magicweaponId": "439000001",
+      "wuxingNum": "0",
+      "name": "多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1170"
+    },
+    {
+      "id": "439000001-150200003",
+      "magicweaponId": "439000001",
+      "wuxingNum": "0",
+      "name": "多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "5400"
+    },
+    {
+      "id": "439000001-150100001",
+      "magicweaponId": "439000001",
+      "wuxingNum": "0",
+      "name": "多智青莲",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000002-150200001",
+      "magicweaponId": "439000002",
+      "wuxingNum": "1;3",
+      "name": "风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000002-150200002",
+      "magicweaponId": "439000002",
+      "wuxingNum": "0",
+      "name": "风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1260"
+    },
+    {
+      "id": "439000002-150200003",
+      "magicweaponId": "439000002",
+      "wuxingNum": "0",
+      "name": "风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "6400"
+    },
+    {
+      "id": "439000002-150100001",
+      "magicweaponId": "439000002",
+      "wuxingNum": "0",
+      "name": "风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000003-150200001",
+      "magicweaponId": "439000003",
+      "wuxingNum": "1;3",
+      "name": "萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000003-150200002",
+      "magicweaponId": "439000003",
+      "wuxingNum": "0",
+      "name": "萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1440"
+    },
+    {
+      "id": "439000003-150200003",
+      "magicweaponId": "439000003",
+      "wuxingNum": "0",
+      "name": "萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "8500"
+    },
+    {
+      "id": "439000003-150100001",
+      "magicweaponId": "439000003",
+      "wuxingNum": "0",
+      "name": "萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000004-150200001",
+      "magicweaponId": "439000004",
+      "wuxingNum": "1;3",
+      "name": "震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000004-150200002",
+      "magicweaponId": "439000004",
+      "wuxingNum": "0",
+      "name": "震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1710"
+    },
+    {
+      "id": "439000004-150200003",
+      "magicweaponId": "439000004",
+      "wuxingNum": "0",
+      "name": "震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "11100"
+    },
+    {
+      "id": "439000004-150100001",
+      "magicweaponId": "439000004",
+      "wuxingNum": "0",
+      "name": "震雷天锤",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000005-150200001",
+      "magicweaponId": "439000005",
+      "wuxingNum": "1;3",
+      "name": "三阶究天古剑",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000005-150200002",
+      "magicweaponId": "439000005",
+      "wuxingNum": "0",
+      "name": "三阶究天古剑",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "1620"
+    },
+    {
+      "id": "439000005-150200003",
+      "magicweaponId": "439000005",
+      "wuxingNum": "0",
+      "name": "三阶究天古剑",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "13700"
+    },
+    {
+      "id": "439000005-150100001",
+      "magicweaponId": "439000005",
+      "wuxingNum": "0",
+      "name": "三阶究天古剑",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000006-150200001",
+      "magicweaponId": "439000006",
+      "wuxingNum": "1;3",
+      "name": "三阶摩愿佛珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000006-150200002",
+      "magicweaponId": "439000006",
+      "wuxingNum": "0",
+      "name": "三阶摩愿佛珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "1800"
+    },
+    {
+      "id": "439000006-150200003",
+      "magicweaponId": "439000006",
+      "wuxingNum": "0",
+      "name": "三阶摩愿佛珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "17800"
+    },
+    {
+      "id": "439000006-150100001",
+      "magicweaponId": "439000006",
+      "wuxingNum": "0",
+      "name": "三阶摩愿佛珠",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000007-150200001",
+      "magicweaponId": "439000007",
+      "wuxingNum": "1;3",
+      "name": "二阶罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000007-150200002",
+      "magicweaponId": "439000007",
+      "wuxingNum": "0",
+      "name": "二阶罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1350"
+    },
+    {
+      "id": "439000007-150200003",
+      "magicweaponId": "439000007",
+      "wuxingNum": "0",
+      "name": "二阶罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "6700"
+    },
+    {
+      "id": "439000007-150100001",
+      "magicweaponId": "439000007",
+      "wuxingNum": "0",
+      "name": "二阶罗悲净瓶",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "439000008-150200001",
+      "magicweaponId": "439000008",
+      "wuxingNum": "1;3",
+      "name": "二阶浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "439000008-150200002",
+      "magicweaponId": "439000008",
+      "wuxingNum": "0",
+      "name": "二阶浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1530"
+    },
+    {
+      "id": "439000008-150200003",
+      "magicweaponId": "439000008",
+      "wuxingNum": "0",
+      "name": "二阶浮行如意",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "9000"
+    },
+    {
+      "id": "439000008-150100001",
+      "magicweaponId": "439000008",
+      "wuxingNum": "0",
+      "name": "二阶浮行如意",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000008-150200001",
+      "magicweaponId": "449000008",
+      "wuxingNum": "1;3",
+      "name": "朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000008-150200002",
+      "magicweaponId": "449000008",
+      "wuxingNum": "0",
+      "name": "朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1890"
+    },
+    {
+      "id": "449000008-150200003",
+      "magicweaponId": "449000008",
+      "wuxingNum": "0",
+      "name": "朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "14600"
+    },
+    {
+      "id": "449000008-150100001",
+      "magicweaponId": "449000008",
+      "wuxingNum": "0",
+      "name": "朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000009-150200001",
+      "magicweaponId": "449000009",
+      "wuxingNum": "1;3",
+      "name": "三阶罗悲净瓶",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000009-150200002",
+      "magicweaponId": "449000009",
+      "wuxingNum": "0",
+      "name": "三阶罗悲净瓶",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "2070"
+    },
+    {
+      "id": "449000009-150200003",
+      "magicweaponId": "449000009",
+      "wuxingNum": "0",
+      "name": "三阶罗悲净瓶",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "15100"
+    },
+    {
+      "id": "449000009-150100001",
+      "magicweaponId": "449000009",
+      "wuxingNum": "0",
+      "name": "三阶罗悲净瓶",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000010-150200001",
+      "magicweaponId": "449000010",
+      "wuxingNum": "1;3",
+      "name": "奢天化雪令",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000010-150200002",
+      "magicweaponId": "449000010",
+      "wuxingNum": "0",
+      "name": "奢天化雪令",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2160"
+    },
+    {
+      "id": "449000010-150200003",
+      "magicweaponId": "449000010",
+      "wuxingNum": "0",
+      "name": "奢天化雪令",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "17900"
+    },
+    {
+      "id": "449000010-150100001",
+      "magicweaponId": "449000010",
+      "wuxingNum": "0",
+      "name": "奢天化雪令",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000011-150200001",
+      "magicweaponId": "449000011",
+      "wuxingNum": "1;3",
+      "name": "三阶浮行如意",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000011-150200002",
+      "magicweaponId": "449000011",
+      "wuxingNum": "0",
+      "name": "三阶浮行如意",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "2250"
+    },
+    {
+      "id": "449000011-150200003",
+      "magicweaponId": "449000011",
+      "wuxingNum": "0",
+      "name": "三阶浮行如意",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "18400"
+    },
+    {
+      "id": "449000011-150100001",
+      "magicweaponId": "449000011",
+      "wuxingNum": "0",
+      "name": "三阶浮行如意",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000012-150200001",
+      "magicweaponId": "449000012",
+      "wuxingNum": "1;3",
+      "name": "帝空御魔圈",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000012-150200002",
+      "magicweaponId": "449000012",
+      "wuxingNum": "0",
+      "name": "帝空御魔圈",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2340"
+    },
+    {
+      "id": "449000012-150200003",
+      "magicweaponId": "449000012",
+      "wuxingNum": "0",
+      "name": "帝空御魔圈",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "21500"
+    },
+    {
+      "id": "449000012-150100001",
+      "magicweaponId": "449000012",
+      "wuxingNum": "0",
+      "name": "帝空御魔圈",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000013-150200001",
+      "magicweaponId": "449000013",
+      "wuxingNum": "1;3",
+      "name": "二阶多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000013-150200002",
+      "magicweaponId": "449000013",
+      "wuxingNum": "0",
+      "name": "二阶多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1800"
+    },
+    {
+      "id": "449000013-150200003",
+      "magicweaponId": "449000013",
+      "wuxingNum": "0",
+      "name": "二阶多智青莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "11600"
+    },
+    {
+      "id": "449000013-150100001",
+      "magicweaponId": "449000013",
+      "wuxingNum": "0",
+      "name": "二阶多智青莲",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000015-150200001",
+      "magicweaponId": "449000015",
+      "wuxingNum": "1;3",
+      "name": "二阶萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000015-150200002",
+      "magicweaponId": "449000015",
+      "wuxingNum": "0",
+      "name": "二阶萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2250"
+    },
+    {
+      "id": "449000015-150200003",
+      "magicweaponId": "449000015",
+      "wuxingNum": "0",
+      "name": "二阶萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "18500"
+    },
+    {
+      "id": "449000015-150100001",
+      "magicweaponId": "449000015",
+      "wuxingNum": "0",
+      "name": "二阶萍雨水盂",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000016-150200001",
+      "magicweaponId": "449000016",
+      "wuxingNum": "1;3",
+      "name": "二阶震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000016-150200002",
+      "magicweaponId": "449000016",
+      "wuxingNum": "0",
+      "name": "二阶震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2430"
+    },
+    {
+      "id": "449000016-150200003",
+      "magicweaponId": "449000016",
+      "wuxingNum": "0",
+      "name": "二阶震雷天锤",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22200"
+    },
+    {
+      "id": "449000016-150100001",
+      "magicweaponId": "449000016",
+      "wuxingNum": "0",
+      "name": "二阶震雷天锤",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000017-150200001",
+      "magicweaponId": "449000017",
+      "wuxingNum": "1;3",
+      "name": "怡玩手柄",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000017-150200002",
+      "magicweaponId": "449000017",
+      "wuxingNum": "0",
+      "name": "怡玩手柄",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "2430"
+    },
+    {
+      "id": "449000017-150200003",
+      "magicweaponId": "449000017",
+      "wuxingNum": "0",
+      "name": "怡玩手柄",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "0"
+    },
+    {
+      "id": "449000017-150100001",
+      "magicweaponId": "449000017",
+      "wuxingNum": "0",
+      "name": "怡玩手柄",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000001-150200001",
+      "magicweaponId": "469000001",
+      "wuxingNum": "1;3;4",
+      "name": "三阶多智青莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000001-150200002",
+      "magicweaponId": "469000001",
+      "wuxingNum": "0",
+      "name": "三阶多智青莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "2520"
+    },
+    {
+      "id": "469000001-150200003",
+      "magicweaponId": "469000001",
+      "wuxingNum": "0",
+      "name": "三阶多智青莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22800"
+    },
+    {
+      "id": "469000001-150100001",
+      "magicweaponId": "469000001",
+      "wuxingNum": "0",
+      "name": "三阶多智青莲",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000014-150200001",
+      "magicweaponId": "449000014",
+      "wuxingNum": "1;3;4",
+      "name": "烛时金轮",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000014-150200002",
+      "magicweaponId": "449000014",
+      "wuxingNum": "0",
+      "name": "烛时金轮",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2610"
+    },
+    {
+      "id": "449000014-150200003",
+      "magicweaponId": "449000014",
+      "wuxingNum": "0",
+      "name": "烛时金轮",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "25700"
+    },
+    {
+      "id": "449000014-150100001",
+      "magicweaponId": "449000014",
+      "wuxingNum": "0",
+      "name": "烛时金轮",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000015-150200001",
+      "magicweaponId": "469000015",
+      "wuxingNum": "1;3;4",
+      "name": "释罗法螺",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000015-150200002",
+      "magicweaponId": "469000015",
+      "wuxingNum": "0",
+      "name": "释罗法螺",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2790"
+    },
+    {
+      "id": "469000015-150200003",
+      "magicweaponId": "469000015",
+      "wuxingNum": "0",
+      "name": "释罗法螺",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "29900"
+    },
+    {
+      "id": "469000015-150100001",
+      "magicweaponId": "469000015",
+      "wuxingNum": "0",
+      "name": "释罗法螺",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000002-150200001",
+      "magicweaponId": "469000002",
+      "wuxingNum": "1;3;4",
+      "name": "三阶萍雨水盂",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000002-150200002",
+      "magicweaponId": "469000002",
+      "wuxingNum": "0",
+      "name": "三阶萍雨水盂",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "2970"
+    },
+    {
+      "id": "469000002-150200003",
+      "magicweaponId": "469000002",
+      "wuxingNum": "0",
+      "name": "三阶萍雨水盂",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "31500"
+    },
+    {
+      "id": "469000002-150100001",
+      "magicweaponId": "469000002",
+      "wuxingNum": "0",
+      "name": "三阶萍雨水盂",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000003-150200001",
+      "magicweaponId": "469000003",
+      "wuxingNum": "1;3;4",
+      "name": "摩多魂幡",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000003-150200002",
+      "magicweaponId": "469000003",
+      "wuxingNum": "0",
+      "name": "摩多魂幡",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3060"
+    },
+    {
+      "id": "469000003-150200003",
+      "magicweaponId": "469000003",
+      "wuxingNum": "0",
+      "name": "摩多魂幡",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "34900"
+    },
+    {
+      "id": "469000003-150100001",
+      "magicweaponId": "469000003",
+      "wuxingNum": "0",
+      "name": "摩多魂幡",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000004-150200001",
+      "magicweaponId": "469000004",
+      "wuxingNum": "1;3;4",
+      "name": "三阶震雷天锤",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000004-150200002",
+      "magicweaponId": "469000004",
+      "wuxingNum": "0",
+      "name": "三阶震雷天锤",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3150"
+    },
+    {
+      "id": "469000004-150200003",
+      "magicweaponId": "469000004",
+      "wuxingNum": "0",
+      "name": "三阶震雷天锤",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "36400"
+    },
+    {
+      "id": "469000004-150100001",
+      "magicweaponId": "469000004",
+      "wuxingNum": "0",
+      "name": "三阶震雷天锤",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000010-150200001",
+      "magicweaponId": "469000010",
+      "wuxingNum": "1;3;4",
+      "name": "二阶奢天化雪令",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000010-150200002",
+      "magicweaponId": "469000010",
+      "wuxingNum": "0",
+      "name": "二阶奢天化雪令",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3240"
+    },
+    {
+      "id": "469000010-150200003",
+      "magicweaponId": "469000010",
+      "wuxingNum": "0",
+      "name": "二阶奢天化雪令",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "40000"
+    },
+    {
+      "id": "469000010-150100001",
+      "magicweaponId": "469000010",
+      "wuxingNum": "0",
+      "name": "二阶奢天化雪令",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000011-150200001",
+      "magicweaponId": "469000011",
+      "wuxingNum": "1;3;4",
+      "name": "二阶帝空御魔圈",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000011-150200002",
+      "magicweaponId": "469000011",
+      "wuxingNum": "0",
+      "name": "二阶帝空御魔圈",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3330"
+    },
+    {
+      "id": "469000011-150200003",
+      "magicweaponId": "469000011",
+      "wuxingNum": "0",
+      "name": "二阶帝空御魔圈",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "40900"
+    },
+    {
+      "id": "469000011-150100001",
+      "magicweaponId": "469000011",
+      "wuxingNum": "0",
+      "name": "二阶帝空御魔圈",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000017-150200001",
+      "magicweaponId": "469000017",
+      "wuxingNum": "1;3;4",
+      "name": "二阶朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000017-150200002",
+      "magicweaponId": "469000017",
+      "wuxingNum": "0",
+      "name": "二阶朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2610"
+    },
+    {
+      "id": "469000017-150200003",
+      "magicweaponId": "469000017",
+      "wuxingNum": "0",
+      "name": "二阶朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "26300"
+    },
+    {
+      "id": "469000017-150100001",
+      "magicweaponId": "469000017",
+      "wuxingNum": "0",
+      "name": "二阶朱电玄镜",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000018-150200001",
+      "magicweaponId": "469000018",
+      "wuxingNum": "1;3;4",
+      "name": "三阶朱电玄镜",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000018-150200002",
+      "magicweaponId": "469000018",
+      "wuxingNum": "0",
+      "name": "三阶朱电玄镜",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3420"
+    },
+    {
+      "id": "469000018-150200003",
+      "magicweaponId": "469000018",
+      "wuxingNum": "0",
+      "name": "三阶朱电玄镜",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "41600"
+    },
+    {
+      "id": "469000018-150100001",
+      "magicweaponId": "469000018",
+      "wuxingNum": "0",
+      "name": "三阶朱电玄镜",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000019-150200001",
+      "magicweaponId": "469000019",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶烛时金轮",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000019-150200002",
+      "magicweaponId": "469000019",
+      "wuxingNum": "0",
+      "name": "二阶烛时金轮",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3510"
+    },
+    {
+      "id": "469000019-150200003",
+      "magicweaponId": "469000019",
+      "wuxingNum": "0",
+      "name": "二阶烛时金轮",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "45300"
+    },
+    {
+      "id": "469000019-150100001",
+      "magicweaponId": "469000019",
+      "wuxingNum": "0",
+      "name": "二阶烛时金轮",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000022-150200001",
+      "magicweaponId": "469000022",
+      "wuxingNum": "1;3",
+      "name": "二阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000022-150200002",
+      "magicweaponId": "469000022",
+      "wuxingNum": "0",
+      "name": "二阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "1980"
+    },
+    {
+      "id": "469000022-150200003",
+      "magicweaponId": "469000022",
+      "wuxingNum": "0",
+      "name": "二阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "14800"
+    },
+    {
+      "id": "469000022-150100001",
+      "magicweaponId": "469000022",
+      "wuxingNum": "0",
+      "name": "二阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000020-150200001",
+      "magicweaponId": "469000020",
+      "wuxingNum": "1;3;4",
+      "name": "三阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000020-150200002",
+      "magicweaponId": "469000020",
+      "wuxingNum": "0",
+      "name": "三阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "2700"
+    },
+    {
+      "id": "469000020-150200003",
+      "magicweaponId": "469000020",
+      "wuxingNum": "0",
+      "name": "三阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "26800"
+    },
+    {
+      "id": "469000020-150100001",
+      "magicweaponId": "469000020",
+      "wuxingNum": "0",
+      "name": "三阶风廉羽扇",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000021-150200001",
+      "magicweaponId": "469000021",
+      "wuxingNum": "1;3;4;5",
+      "name": "四阶风廉羽扇",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000021-150200002",
+      "magicweaponId": "469000021",
+      "wuxingNum": "0",
+      "name": "四阶风廉羽扇",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3600"
+    },
+    {
+      "id": "469000021-150200003",
+      "magicweaponId": "469000021",
+      "wuxingNum": "0",
+      "name": "四阶风廉羽扇",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "46100"
+    },
+    {
+      "id": "469000021-150100001",
+      "magicweaponId": "469000021",
+      "wuxingNum": "0",
+      "name": "四阶风廉羽扇",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000023-150200001",
+      "magicweaponId": "469000023",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶摩多魂幡",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000023-150200002",
+      "magicweaponId": "469000023",
+      "wuxingNum": "0",
+      "name": "二阶摩多魂幡",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3690"
+    },
+    {
+      "id": "469000023-150200003",
+      "magicweaponId": "469000023",
+      "wuxingNum": "0",
+      "name": "二阶摩多魂幡",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "51300"
+    },
+    {
+      "id": "469000023-150100001",
+      "magicweaponId": "469000023",
+      "wuxingNum": "0",
+      "name": "二阶摩多魂幡",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "469000024-150200001",
+      "magicweaponId": "469000024",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶释罗法螺",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "469000024-150200002",
+      "magicweaponId": "469000024",
+      "wuxingNum": "0",
+      "name": "二阶释罗法螺",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "3960"
+    },
+    {
+      "id": "469000024-150200003",
+      "magicweaponId": "469000024",
+      "wuxingNum": "0",
+      "name": "二阶释罗法螺",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "57400"
+    },
+    {
+      "id": "469000024-150100001",
+      "magicweaponId": "469000024",
+      "wuxingNum": "0",
+      "name": "二阶释罗法螺",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000018-150200001",
+      "magicweaponId": "449000018",
+      "wuxingNum": "1;3;4",
+      "name": "九佑魂莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000018-150200002",
+      "magicweaponId": "449000018",
+      "wuxingNum": "0",
+      "name": "九佑魂莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3240"
+    },
+    {
+      "id": "449000018-150200003",
+      "magicweaponId": "449000018",
+      "wuxingNum": "0",
+      "name": "九佑魂莲",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "40000"
+    },
+    {
+      "id": "449000018-150100001",
+      "magicweaponId": "449000018",
+      "wuxingNum": "0",
+      "name": "九佑魂莲",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "489000001-150200001",
+      "magicweaponId": "489000001",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶九佑魂莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "489000001-150200002",
+      "magicweaponId": "489000001",
+      "wuxingNum": "0",
+      "name": "二阶九佑魂莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "4140"
+    },
+    {
+      "id": "489000001-150200003",
+      "magicweaponId": "489000001",
+      "wuxingNum": "0",
+      "name": "二阶九佑魂莲",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "64000"
+    },
+    {
+      "id": "489000001-150100001",
+      "magicweaponId": "489000001",
+      "wuxingNum": "0",
+      "name": "二阶九佑魂莲",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000019-150200001",
+      "magicweaponId": "449000019",
+      "wuxingNum": "1;3;4",
+      "name": "湮灭魂斧",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000019-150200002",
+      "magicweaponId": "449000019",
+      "wuxingNum": "0",
+      "name": "湮灭魂斧",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3510"
+    },
+    {
+      "id": "449000019-150200003",
+      "magicweaponId": "449000019",
+      "wuxingNum": "0",
+      "name": "湮灭魂斧",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "45300"
+    },
+    {
+      "id": "449000019-150100001",
+      "magicweaponId": "449000019",
+      "wuxingNum": "0",
+      "name": "湮灭魂斧",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "489000002-150200001",
+      "magicweaponId": "489000002",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶湮灭魂斧",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "489000002-150200002",
+      "magicweaponId": "489000002",
+      "wuxingNum": "0",
+      "name": "二阶湮灭魂斧",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "4410"
+    },
+    {
+      "id": "489000002-150200003",
+      "magicweaponId": "489000002",
+      "wuxingNum": "0",
+      "name": "二阶湮灭魂斧",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "71000"
+    },
+    {
+      "id": "489000002-150100001",
+      "magicweaponId": "489000002",
+      "wuxingNum": "0",
+      "name": "二阶湮灭魂斧",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "449000020-150200001",
+      "magicweaponId": "449000020",
+      "wuxingNum": "1;3;4",
+      "name": "永生魂幢",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "449000020-150200002",
+      "magicweaponId": "449000020",
+      "wuxingNum": "0",
+      "name": "永生魂幢",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3690"
+    },
+    {
+      "id": "449000020-150200003",
+      "magicweaponId": "449000020",
+      "wuxingNum": "0",
+      "name": "永生魂幢",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "51300"
+    },
+    {
+      "id": "449000020-150100001",
+      "magicweaponId": "449000020",
+      "wuxingNum": "0",
+      "name": "永生魂幢",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "489000005-150200001",
+      "magicweaponId": "489000005",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶永生魂幢",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "489000005-150200002",
+      "magicweaponId": "489000005",
+      "wuxingNum": "0",
+      "name": "二阶永生魂幢",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "4590"
+    },
+    {
+      "id": "489000005-150200003",
+      "magicweaponId": "489000005",
+      "wuxingNum": "0",
+      "name": "二阶永生魂幢",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "78200"
+    },
+    {
+      "id": "489000005-150100001",
+      "magicweaponId": "489000005",
+      "wuxingNum": "0",
+      "name": "二阶永生魂幢",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499110101-150200001",
+      "magicweaponId": "499110101",
+      "wuxingNum": "1;3;4",
+      "name": "无冥血珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499110101-150200002",
+      "magicweaponId": "499110101",
+      "wuxingNum": "0",
+      "name": "无冥血珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3690"
+    },
+    {
+      "id": "499110101-150200003",
+      "magicweaponId": "499110101",
+      "wuxingNum": "0",
+      "name": "无冥血珠",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "48500"
+    },
+    {
+      "id": "499110101-150100001",
+      "magicweaponId": "499110101",
+      "wuxingNum": "0",
+      "name": "无冥血珠",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499110201-150200001",
+      "magicweaponId": "499110201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶无冥血珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499110201-150200002",
+      "magicweaponId": "499110201",
+      "wuxingNum": "0",
+      "name": "二阶无冥血珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "4590"
+    },
+    {
+      "id": "499110201-150200003",
+      "magicweaponId": "499110201",
+      "wuxingNum": "0",
+      "name": "二阶无冥血珠",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "84500"
+    },
+    {
+      "id": "499110201-150100001",
+      "magicweaponId": "499110201",
+      "wuxingNum": "0",
+      "name": "二阶无冥血珠",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499210101-150200001",
+      "magicweaponId": "499210101",
+      "wuxingNum": "1;3;4",
+      "name": "间忏蛊铃",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499210101-150200002",
+      "magicweaponId": "499210101",
+      "wuxingNum": "0",
+      "name": "间忏蛊铃",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "3960"
+    },
+    {
+      "id": "499210101-150200003",
+      "magicweaponId": "499210101",
+      "wuxingNum": "0",
+      "name": "间忏蛊铃",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "54600"
+    },
+    {
+      "id": "499210101-150100001",
+      "magicweaponId": "499210101",
+      "wuxingNum": "0",
+      "name": "间忏蛊铃",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499210201-150200001",
+      "magicweaponId": "499210201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶间忏蛊铃",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499210201-150200002",
+      "magicweaponId": "499210201",
+      "wuxingNum": "0",
+      "name": "二阶间忏蛊铃",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "4860"
+    },
+    {
+      "id": "499210201-150200003",
+      "magicweaponId": "499210201",
+      "wuxingNum": "0",
+      "name": "二阶间忏蛊铃",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "92500"
+    },
+    {
+      "id": "499210201-150100001",
+      "magicweaponId": "499210201",
+      "wuxingNum": "0",
+      "name": "二阶间忏蛊铃",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499120101-150200001",
+      "magicweaponId": "499120101",
+      "wuxingNum": "1;3;4",
+      "name": "那刹摄魂琴",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499120101-150200002",
+      "magicweaponId": "499120101",
+      "wuxingNum": "0",
+      "name": "那刹摄魂琴",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "4140"
+    },
+    {
+      "id": "499120101-150200003",
+      "magicweaponId": "499120101",
+      "wuxingNum": "0",
+      "name": "那刹摄魂琴",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "60000"
+    },
+    {
+      "id": "499120101-150100001",
+      "magicweaponId": "499120101",
+      "wuxingNum": "0",
+      "name": "那刹摄魂琴",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499120201-150200001",
+      "magicweaponId": "499120201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶那刹摄魂琴",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499120201-150200002",
+      "magicweaponId": "499120201",
+      "wuxingNum": "0",
+      "name": "二阶那刹摄魂琴",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "5000"
+    },
+    {
+      "id": "499120201-150200003",
+      "magicweaponId": "499120201",
+      "wuxingNum": "0",
+      "name": "二阶那刹摄魂琴",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "99000"
+    },
+    {
+      "id": "499120201-150100001",
+      "magicweaponId": "499120201",
+      "wuxingNum": "0",
+      "name": "二阶那刹摄魂琴",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499130101-150200001",
+      "magicweaponId": "499130101",
+      "wuxingNum": "1;3;4",
+      "name": "洛湮浑天仪",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499130101-150200002",
+      "magicweaponId": "499130101",
+      "wuxingNum": "0",
+      "name": "洛湮浑天仪",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "4410"
+    },
+    {
+      "id": "499130101-150200003",
+      "magicweaponId": "499130101",
+      "wuxingNum": "0",
+      "name": "洛湮浑天仪",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "62200"
+    },
+    {
+      "id": "499130101-150100001",
+      "magicweaponId": "499130101",
+      "wuxingNum": "0",
+      "name": "洛湮浑天仪",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499130201-150200001",
+      "magicweaponId": "499130201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶洛湮浑天仪",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499130201-150200002",
+      "magicweaponId": "499130201",
+      "wuxingNum": "0",
+      "name": "二阶洛湮浑天仪",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "5310"
+    },
+    {
+      "id": "499130201-150200003",
+      "magicweaponId": "499130201",
+      "wuxingNum": "0",
+      "name": "二阶洛湮浑天仪",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "106000"
+    },
+    {
+      "id": "499130201-150100001",
+      "magicweaponId": "499130201",
+      "wuxingNum": "0",
+      "name": "二阶洛湮浑天仪",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499140101-150200001",
+      "magicweaponId": "499140101",
+      "wuxingNum": "1;3;4",
+      "name": "伽岚桃虎符",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499140101-150200002",
+      "magicweaponId": "499140101",
+      "wuxingNum": "0",
+      "name": "伽岚桃虎符",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "4590"
+    },
+    {
+      "id": "499140101-150200003",
+      "magicweaponId": "499140101",
+      "wuxingNum": "0",
+      "name": "伽岚桃虎符",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "68100"
+    },
+    {
+      "id": "499140101-150100001",
+      "magicweaponId": "499140101",
+      "wuxingNum": "0",
+      "name": "伽岚桃虎符",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499140201-150200001",
+      "magicweaponId": "499140201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶伽岚桃虎符",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499140201-150200002",
+      "magicweaponId": "499140201",
+      "wuxingNum": "0",
+      "name": "二阶伽岚桃虎符",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "5490"
+    },
+    {
+      "id": "499140201-150200003",
+      "magicweaponId": "499140201",
+      "wuxingNum": "0",
+      "name": "二阶伽岚桃虎符",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "109400"
+    },
+    {
+      "id": "499140201-150100001",
+      "magicweaponId": "499140201",
+      "wuxingNum": "0",
+      "name": "二阶伽岚桃虎符",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499150101-150200001",
+      "magicweaponId": "499150101",
+      "wuxingNum": "1;3;4",
+      "name": "聚宝盆",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499150101-150200002",
+      "magicweaponId": "499150101",
+      "wuxingNum": "0",
+      "name": "聚宝盆",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "4860"
+    },
+    {
+      "id": "499150101-150200003",
+      "magicweaponId": "499150101",
+      "wuxingNum": "0",
+      "name": "聚宝盆",
+      "tipId": "384",
+      "giveLucky": "45",
+      "luckyReset": "70000"
+    },
+    {
+      "id": "499150101-150100001",
+      "magicweaponId": "499150101",
+      "wuxingNum": "0",
+      "name": "聚宝盆",
+      "tipId": "384",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    },
+    {
+      "id": "499150201-150200001",
+      "magicweaponId": "499150201",
+      "wuxingNum": "1;3;4;5",
+      "name": "二阶贪妄聚宝盆",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "22500"
+    },
+    {
+      "id": "499150201-150200002",
+      "magicweaponId": "499150201",
+      "wuxingNum": "0",
+      "name": "二阶贪妄聚宝盆",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "5760"
+    },
+    {
+      "id": "499150201-150200003",
+      "magicweaponId": "499150201",
+      "wuxingNum": "0",
+      "name": "二阶贪妄聚宝盆",
+      "tipId": "0",
+      "giveLucky": "45",
+      "luckyReset": "112000"
+    },
+    {
+      "id": "499150201-150100001",
+      "magicweaponId": "499150201",
+      "wuxingNum": "0",
+      "name": "二阶贪妄聚宝盆",
+      "tipId": "0",
+      "giveLucky": "15",
+      "luckyReset": "99999999"
+    }
+  ]
+}

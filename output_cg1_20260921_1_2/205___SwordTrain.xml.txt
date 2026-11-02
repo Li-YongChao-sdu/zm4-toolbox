@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <trainValue>320</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <trainValue>480</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <trainValue>640</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <trainValue>800</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <trainValue>1040</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <trainValue>1260</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <trainValue>1500</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <trainValue>1820</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>9</id>
+    <trainValue>2140</trainValue>
+  </RECORD>
+  <RECORD>
+    <id>10</id>
+    <trainValue>3000</trainValue>
+  </RECORD>
+</RECORDS>

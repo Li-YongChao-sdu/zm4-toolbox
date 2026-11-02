@@ -1,0 +1,28 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "activityId": "210",
+      "dungeonId": "2058",
+      "rewardId": "50387"
+    },
+    {
+      "id": "2",
+      "activityId": "211",
+      "dungeonId": "2059",
+      "rewardId": "50388"
+    },
+    {
+      "id": "3",
+      "activityId": "212",
+      "dungeonId": "2060",
+      "rewardId": "50389"
+    },
+    {
+      "id": "4",
+      "activityId": "1058",
+      "dungeonId": "2121",
+      "rewardId": "50389"
+    }
+  ]
+}

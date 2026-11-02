@@ -1,0 +1,175 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "type": "1",
+      "dungeonId": "2034;2054;2067",
+      "level": "30",
+      "iconId": "1001V1.png",
+      "describe": "你确认重置守卫须弥山挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "2",
+      "type": "1",
+      "dungeonId": "2001;2132",
+      "level": "20",
+      "iconId": "1002.png",
+      "describe": "你确认重置悲鸣冰川-冰封层挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "3",
+      "type": "1",
+      "dungeonId": "2026;2133",
+      "level": "35",
+      "iconId": "1003.png",
+      "describe": "你确认重置悲鸣冰川-水岩层挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "4",
+      "type": "1",
+      "dungeonId": "2044;2134",
+      "level": "44",
+      "iconId": "1004.png",
+      "describe": "你确认重置悲鸣冰川-熔岩层挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "11",
+      "type": "1",
+      "dungeonId": "2094;2096;2098;2100",
+      "level": "20",
+      "iconId": "1011.png",
+      "describe": "你确认重置枯焰流沙挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "12",
+      "type": "1",
+      "dungeonId": "2102;2104;2106;2108",
+      "level": "20",
+      "iconId": "1012V1.png",
+      "describe": "你确认重置迷雾沮泽挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "16",
+      "type": "1",
+      "dungeonId": "2128;2129;2130;2131",
+      "level": "20",
+      "iconId": "1016.png",
+      "describe": "你确认重置丰花原野挑战次数？",
+      "isFastRepeat": "-1"
+    },
+    {
+      "id": "13",
+      "type": "1",
+      "dungeonId": "2112;2113;2114;2115",
+      "level": "80",
+      "iconId": "1013.png",
+      "describe": "你确认重置空桑谷挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "15",
+      "type": "1",
+      "dungeonId": "2122;2123;2124;2125",
+      "level": "80",
+      "iconId": "1015.png",
+      "describe": "你确认重置月华境挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "17",
+      "type": "1",
+      "dungeonId": "2142;2143;2144;2145",
+      "level": "80",
+      "iconId": "1017.png",
+      "describe": "你确认重置云隐渊挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "18",
+      "type": "1",
+      "dungeonId": "2146;2160;2147;2155;2158;2150;2162;2163;2167;2168",
+      "level": "80",
+      "iconId": "1018.png",
+      "describe": "你确认重置太古秘境挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "5",
+      "type": "1",
+      "dungeonId": "2003;2020;2046",
+      "level": "20",
+      "iconId": "1005.png",
+      "describe": "你确认重置福禄寿三个副本的挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "6",
+      "type": "1",
+      "dungeonId": "2007",
+      "level": "20",
+      "iconId": "1006.png",
+      "describe": "你确认重置螺旋地狱副本挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "7",
+      "type": "2",
+      "dungeonId": "-1",
+      "level": "20",
+      "iconId": "1007.png",
+      "describe": "你确认重置所有的日常任务可接受次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "8",
+      "type": "3",
+      "dungeonId": "-1",
+      "level": "26",
+      "iconId": "1008.png",
+      "describe": "你确认重置悬赏任务可接受次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "9",
+      "type": "1",
+      "dungeonId": "6001",
+      "level": "20",
+      "iconId": "1009V1.png",
+      "describe": "你确认重置罗汉堂挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "14",
+      "type": "1",
+      "dungeonId": "6021;6022;6023;6024;6025",
+      "level": "60",
+      "iconId": "1014.png",
+      "describe": "你确认重置地藏冥殿挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "10",
+      "type": "1",
+      "dungeonId": "2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119",
+      "level": "20",
+      "iconId": "1010.png",
+      "describe": "你确认重置主题挑战次数？",
+      "isFastRepeat": "1"
+    },
+    {
+      "id": "19",
+      "type": "1",
+      "dungeonId": "6026",
+      "level": "60",
+      "iconId": "1019.png",
+      "describe": "你确认重置虚空藏院挑战次数？",
+      "isFastRepeat": "1"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "RECORD": {
+    "id": "1",
+    "rewardId": "52253",
+    "rewardId2": "52254",
+    "step": "3",
+    "dailyTime": "1",
+    "ticket": "200",
+    "sendRewardId": "4245",
+    "lingDangNum": "120000;300000;600000",
+    "lingDangRoleNum": "1;3;7",
+    "lingDangRewardId": "52243;52244;52245",
+    "activityId": "1359",
+    "roleHp": "6",
+    "horseHp": "8",
+    "roleAtk": "2",
+    "horseAtk": "1",
+    "animation": "threeHitAni"
+  }
+}

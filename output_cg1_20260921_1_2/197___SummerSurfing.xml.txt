@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dungeonId>2136</dungeonId>
+    <praDungeonId>2137</praDungeonId>
+    <meterMax>-1</meterMax>
+    <perMeter>4</perMeter>
+    <perPrize>0,35;3000,40;5000,45;7000,48;8500,50;10000,52</perPrize>
+    <roleSpeed>600</roleSpeed>
+    <upSpeed>110</upSpeed>
+    <waveSpeed>600</waveSpeed>
+    <sharkSpeed>500</sharkSpeed>
+    <speedUp>0,0,0|800,0.05,0|4000,0.08,0.02|10000,0.1,0.05|16000,0.12,0.12|24000,0.15,0.17|32000,0.2,0.23|40000,0.25,0.3|48000,0.3,0.35|60000,0.35,0.4|80000,0.4,0.48</speedUp>
+    <groupRange>0,2000,3000|16000,2000,3000|32000,2000,3000</groupRange>
+    <propPackageNum>1</propPackageNum>
+    <freeNum>2</freeNum>
+    <challengeAgainTicket>100</challengeAgainTicket>
+    <activityId>1151</activityId>
+    <bonus>144100023</bonus>
+    <bonusNum>1</bonusNum>
+    <sceneChange>12000,24000</sceneChange>
+    <poss>260,317,375,433,491</poss>
+    <tip>玄女姐姐在海边玩耍时，不慎丢失了锦囊，被鲨鱼捡走了！
+踩上踏板极限冲浪，追回丢失的锦囊，玄女姐姐定有好礼相送。</tip>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <dungeonId>2137</dungeonId>
+    <praDungeonId>2137</praDungeonId>
+    <meterMax>-1</meterMax>
+    <perMeter>4</perMeter>
+    <perPrize>0,0;3000,0;5000,0;7000,0;8500,0;10000,0</perPrize>
+    <roleSpeed>600</roleSpeed>
+    <upSpeed>110</upSpeed>
+    <waveSpeed>600</waveSpeed>
+    <sharkSpeed>500</sharkSpeed>
+    <speedUp>0,0,0|800,0.05,0|4000,0.08,0.02|10000,0.1,0.05|16000,0.12,0.12|24000,0.15,0.17|32000,0.2,0.23|40000,0.25,0.3|48000,0.3,0.35|60000,0.35,0.4|80000,0.4,0.48</speedUp>
+    <groupRange>0,2000,3000|16000,2000,3000|32000,2000,3000</groupRange>
+    <propPackageNum>1</propPackageNum>
+    <freeNum>-1</freeNum>
+    <challengeAgainTicket>0</challengeAgainTicket>
+    <activityId>1151</activityId>
+    <bonus>0</bonus>
+    <bonusNum>0</bonusNum>
+    <sceneChange>12000,24000</sceneChange>
+    <poss>260,317,375,433,491</poss>
+    <tip>玄女姐姐在海边玩耍时，不慎丢失了锦囊，被鲨鱼捡走了!踩上踏板极限冲浪，追回丢失的锦囊，玄女姐姐定有好礼相送。</tip>
+  </RECORD>
+</RECORDS>

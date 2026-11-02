@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>2020</id>
+    <name>观音菩萨</name>
+    <labelName>-1</labelName>
+    <resourcesId>250</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>2002</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有知己，等你来相邀</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2021</id>
+    <name>公告栏</name>
+    <labelName>-1</labelName>
+    <resourcesId>346</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>26</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>百姓苦难皆诉于此，英雄救世危难之间</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect>0,0,200,250</wRect>
+  </RECORD>
+  <RECORD>
+    <id>2022</id>
+    <name>地藏菩萨</name>
+    <labelName>-1</labelName>
+    <resourcesId>431</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>2014</visibleAfterDungeonId>
+    <visibleAfterLevel>30</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有强者，等你来挑战</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2023</id>
+    <name>白狼</name>
+    <labelName>-1</labelName>
+    <resourcesId>466</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>25</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有市集，等你来选购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2024</id>
+    <name>普贤菩萨</name>
+    <labelName>-1</labelName>
+    <resourcesId>598</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>2022</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有仓库，等你来寄存</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2025</id>
+    <name>转轮王</name>
+    <labelName>-1</labelName>
+    <resourcesId>622</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>2014</visibleAfterDungeonId>
+    <visibleAfterLevel>30</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有材料，等你来换购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2025.png</iconId>
+    <describe>转轮王：
+吾身具三十二相，由天感得轮宝，转之轮宝，降伏四方。&lt;br&gt;可与吾兑换稀有材料，亦可战吾得轮宝。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2026</id>
+    <name>药园土地</name>
+    <labelName>-1</labelName>
+    <resourcesId>789</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk />
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2027</id>
+    <name>药园说明牌</name>
+    <labelName>-1</labelName>
+    <resourcesId>818</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>点击查看详细药园说明</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2028</id>
+    <name>士兵左</name>
+    <labelName>-1</labelName>
+    <resourcesId>822</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2029</id>
+    <name>士兵右</name>
+    <labelName>-1</labelName>
+    <resourcesId>823</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2030</id>
+    <name>坐鹿罗汉</name>
+    <labelName>fabao_1;fabao_2</labelName>
+    <resourcesId>1229</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃坐鹿罗汉</talk>
+    <dungeonId>6002;6102</dungeonId>
+    <iconId>2030.png</iconId>
+    <describe>坐鹿罗汉：
+端坐神鹿，若有所思。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>429000003;439000005</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2031</id>
+    <name>欢喜罗汉</name>
+    <labelName>fabao_1;fabao_2</labelName>
+    <resourcesId>1266</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃欢喜罗汉</talk>
+    <dungeonId>6003;6103</dungeonId>
+    <iconId>2031.png</iconId>
+    <describe>欢喜罗汉：
+扬手欢庆，心花怒放。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>429000004;439000006</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2032</id>
+    <name>举钵罗汉</name>
+    <labelName>fabao_2;fabao_3</labelName>
+    <resourcesId>1444</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃举钵罗汉</talk>
+    <dungeonId>6004;6104</dungeonId>
+    <iconId>2032.png</iconId>
+    <describe>举钵罗汉：
+藉托钵福利世人，予众生种植福德。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>439000007;449000009</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2033</id>
+    <name>托塔罗汉</name>
+    <labelName>fabao_2;fabao_3</labelName>
+    <resourcesId>1788</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃托塔罗汉</talk>
+    <dungeonId>6005;6105</dungeonId>
+    <iconId>2033.png</iconId>
+    <describe>托塔罗汉：
+七层宝塔，术法通灵。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>439000008;449000011</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2034</id>
+    <name>静坐罗汉</name>
+    <labelName>fabao_3;fabao_4</labelName>
+    <resourcesId>2022</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃静坐罗汉</talk>
+    <dungeonId>6006;6106</dungeonId>
+    <iconId>2034.png</iconId>
+    <describe>静坐罗汉：
+清净修心，神态自若。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000013;469000001</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2035</id>
+    <name>过江罗汉</name>
+    <labelName>fabao_3;fabao_4</labelName>
+    <resourcesId>2635</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃过江罗汉</talk>
+    <dungeonId>6007;6107</dungeonId>
+    <iconId>2035.png</iconId>
+    <describe>过江罗汉：
+跋山涉水、普渡众生。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000015;469000002</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2036</id>
+    <name>布袋罗汉</name>
+    <labelName>fabao_3;fabao_4</labelName>
+    <resourcesId>2641</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃布袋罗汉</talk>
+    <dungeonId>6008;6108</dungeonId>
+    <iconId>2036.png</iconId>
+    <describe>布袋罗汉：
+无量寿佛、乾坤宝袋。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000016;469000004</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2037</id>
+    <name>骑象罗汉</name>
+    <labelName>fabao_4</labelName>
+    <resourcesId>2712</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃骑象罗汉</talk>
+    <dungeonId>6009</dungeonId>
+    <iconId>2037.png</iconId>
+    <describe>骑象罗汉：
+骑象轩昂、颂经朗朗。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000010</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2038</id>
+    <name>芭蕉罗汉</name>
+    <labelName>fabao_4</labelName>
+    <resourcesId>2765</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃芭蕉罗汉</talk>
+    <dungeonId>6010</dungeonId>
+    <iconId>2038.png</iconId>
+    <describe>芭蕉罗汉：
+雨打芭蕉、悠闲隐逸。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000011</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2039</id>
+    <name>看门罗汉</name>
+    <labelName>fabao_4;fabao_5</labelName>
+    <resourcesId>2854</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃看门罗汉</talk>
+    <dungeonId>6011;6111</dungeonId>
+    <iconId>2039.png</iconId>
+    <describe>看门罗汉：
+禅杖在握、勇炽邪魔。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000017;469000018</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2040</id>
+    <name>降龙罗汉</name>
+    <labelName>fabao_5</labelName>
+    <resourcesId>2922</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃降龙罗汉</talk>
+    <dungeonId>6012</dungeonId>
+    <iconId>2040.png</iconId>
+    <describe>降龙罗汉：
+葫芦悬腰、宝扇在握。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000019</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2041</id>
+    <name>伏虎罗汉</name>
+    <labelName>fabao_3;fabao_4;fabao_5</labelName>
+    <resourcesId>2954</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃伏虎罗汉</talk>
+    <dungeonId>6013;6113;6213</dungeonId>
+    <iconId>2041.png</iconId>
+    <describe>伏虎罗汉：
+虎魂附体、愈战愈勇。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000022;469000020;469000021</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2051</id>
+    <name>善财童子</name>
+    <labelName>-1</labelName>
+    <resourcesId>1494</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>2002</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>加入联盟，可以参与抢红包</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2051.png</iconId>
+    <describe>善财童子：
+君子爱财取之有道。&lt;br&gt;联盟红包发放活动截止时间：2月27日</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2042</id>
+    <name>探手罗汉</name>
+    <labelName>fabao_5</labelName>
+    <resourcesId>3107</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃探手罗汉</talk>
+    <dungeonId>6014</dungeonId>
+    <iconId>2042.png</iconId>
+    <describe>探手罗汉：
+神志灵通、自得其乐。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000003;469000023</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2043</id>
+    <name>长眉罗汉</name>
+    <labelName>fabao_5</labelName>
+    <resourcesId>3147</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃长眉罗汉</talk>
+    <dungeonId>6015</dungeonId>
+    <iconId>2043.png</iconId>
+    <describe>长眉罗汉：
+通察大千、心领神会。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>469000015;469000024</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2044</id>
+    <name>沉思罗汉</name>
+    <labelName>fabao_6</labelName>
+    <resourcesId>3300</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃沉思罗汉</talk>
+    <dungeonId>6016</dungeonId>
+    <iconId>2044.png</iconId>
+    <describe>沉思罗汉：
+沉思瞑想、趋凡脱俗。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000018;489000001</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2045</id>
+    <name>笑狮罗汉</name>
+    <labelName>fabao_6</labelName>
+    <resourcesId>3688</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃笑狮罗汉</talk>
+    <dungeonId>6017</dungeonId>
+    <iconId>2045.png</iconId>
+    <describe>笑狮罗汉：
+广绩善缘、无病无痛。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000019;489000002</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2046</id>
+    <name>挖耳罗汉</name>
+    <labelName>fabao_6</labelName>
+    <resourcesId>4301</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃挖耳罗汉</talk>
+    <dungeonId>6018</dungeonId>
+    <iconId>2046.png</iconId>
+    <describe>挖耳罗汉：
+横生妙趣、怡神通窍。&lt;br&gt;欲得吾缘法，且试之。&lt;br&gt;(副本内部分技能将被禁用)</describe>
+    <describe2 />
+    <itemId>449000020;489000005</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2052</id>
+    <name>白狼</name>
+    <labelName>-1</labelName>
+    <resourcesId>466</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>25</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有奇材，等你来换购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2023.png</iconId>
+    <describe>神秘商人：
+听闻此幻镜阁以八卦为阵，虚实镜像迷惑心智，特带灵目丹助您破阵。价格实惠，来买一个吧。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2053</id>
+    <name>白狼</name>
+    <labelName>-1</labelName>
+    <resourcesId>1858</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有奇材，等你来选购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2023.png</iconId>
+    <describe>神秘商人：
+神兽森林别有洞天，相应灵材为你敲砖引路。价格实惠，来买一个吧。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2054</id>
+    <name>白狼</name>
+    <labelName>-1</labelName>
+    <resourcesId>1858</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有奇材，等你来选购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2023.png</iconId>
+    <describe>神秘商人：
+年兽副本别有洞天，相应灵材为你敲砖引路。价格实惠，来买一个吧。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2055</id>
+    <name>补给商人</name>
+    <labelName>-1</labelName>
+    <resourcesId>2396</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有奇材，等你来换购</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2055.png</iconId>
+    <describe>补给商人：
+年兽强大亦有弱处，爆竹、炮仗对它造成巨额伤害，春联可以封印它的力量。价格实惠，来买一个吧。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect>0,0,125,140</wRect>
+  </RECORD>
+  <RECORD>
+    <id>2056</id>
+    <name>名人榜</name>
+    <labelName>-1</labelName>
+    <resourcesId>2942</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>英雄汇聚，一决高低</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2083</id>
+    <name>汪汪来剧透</name>
+    <labelName>-1</labelName>
+    <resourcesId>2951</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2083.png</iconId>
+    <describe>B站“汪汪来剧透”到此一游</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>0</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2086</id>
+    <name>敖雪</name>
+    <labelName>-1</labelName>
+    <resourcesId>3395</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2086.png</iconId>
+    <describe>敖雪：
+我将在1月20号进入造梦无双开始新的冒险之旅，上仙可与我一同谱写新的造梦传说。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>0</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2084</id>
+    <name>喂狗粮汪汪</name>
+    <labelName>-1</labelName>
+    <resourcesId>3013</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2085</id>
+    <name>神域渡者</name>
+    <labelName>-1</labelName>
+    <resourcesId>3159</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>46</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>100020</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2085.png</iconId>
+    <describe>神域渡者：
+你可知这漫长之旅通往何处？
+是时空尽头的弥天神域，
+相传有神秘的古老魂莲，沉睡千百年的秘密将要重现天日…</describe>
+    <describe2>神域渡者：
+你可知这漫长之旅通往何处？
+是时空尽头的弥天神域，
+相传有神秘的古老魂莲...只有强大的体魄才能前往，老夫的船渡不了你...</describe2>
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2087</id>
+    <name>文殊菩萨</name>
+    <labelName>-1</labelName>
+    <resourcesId>5915</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>智慧利剑斩断烦恼，洪荒百科指引众生</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe>文殊菩萨</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>0</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2081</id>
+    <name>织女</name>
+    <labelName>-1</labelName>
+    <resourcesId>2028</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>我的针线手艺无人能及</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2081.png</iconId>
+    <describe>织女：
+桂布白似雪，吴绵软于云。
+时装经我手，重织换新颜。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2082</id>
+    <name>宝石商人</name>
+    <labelName>-1</labelName>
+    <resourcesId>2329</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>20</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>此处有宝石，等你来兑换</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>2082.png</iconId>
+    <describe>宝石商人：
+璀璨，晶莹，透亮，宝石的魅力，令人无法抗拒。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2101</id>
+    <name>公冶长</name>
+    <labelName>-1</labelName>
+    <resourcesId>2179</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>50</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾能解百禽之语</talk>
+    <dungeonId>7001</dungeonId>
+    <iconId>2101.png</iconId>
+    <describe>公冶长:
+吾能解百禽之语，愿与万物生灵为友，故远离凡世在此设万灵馆，广邀天下训宠者。</describe>
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel>80</btn2RoleLevel>
+    <btn2dungeonId>7002;7003;7004;7005
+</btn2dungeonId>
+    <btn3RoleLevel>80</btn3RoleLevel>
+    <btn3dungeonId>2112;2113;2114;2115</btn3dungeonId>
+    <bt4RoleLevel>80</bt4RoleLevel>
+    <btn4dungeonId>2122;2123;2124;2125</btn4dungeonId>
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2102</id>
+    <name>静行</name>
+    <labelName>-1</labelName>
+    <resourcesId>2180</resourcesId>
+    <type>2</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>56</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃静行</talk>
+    <dungeonId>7002</dungeonId>
+    <iconId>2102.png</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2103</id>
+    <name>静武</name>
+    <labelName>-1</labelName>
+    <resourcesId>2193</resourcesId>
+    <type>2</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>68</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃静武</talk>
+    <dungeonId>7003</dungeonId>
+    <iconId>2103.png</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2104</id>
+    <name>静磐</name>
+    <labelName>-1</labelName>
+    <resourcesId>2194</resourcesId>
+    <type>2</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>62</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃静磐</talk>
+    <dungeonId>7004</dungeonId>
+    <iconId>2104.png</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2105</id>
+    <name>静幻</name>
+    <labelName>-1</labelName>
+    <resourcesId>2195</resourcesId>
+    <type>2</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>-1</visibleAfterDungeonId>
+    <visibleAfterLevel>50</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>吾乃静幻</talk>
+    <dungeonId>7005</dungeonId>
+    <iconId>2105.png</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>1</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+  <RECORD>
+    <id>2106</id>
+    <name>蟠桃大会</name>
+    <labelName>-1</labelName>
+    <resourcesId>6885</resourcesId>
+    <type>1</type>
+    <visibleAfterTaskId>-1</visibleAfterTaskId>
+    <shopId>-1</shopId>
+    <hideAfterTaskId>-1</hideAfterTaskId>
+    <visibleAfterDungeonId>1</visibleAfterDungeonId>
+    <visibleAfterLevel>-1</visibleAfterLevel>
+    <taskId>-1</taskId>
+    <talk>-1</talk>
+    <dungeonId>-1</dungeonId>
+    <iconId>-1</iconId>
+    <describe />
+    <describe2 />
+    <itemId>-1</itemId>
+    <isShowBtn>0</isShowBtn>
+    <btn2RoleLevel />
+    <btn2dungeonId />
+    <btn3RoleLevel />
+    <btn3dungeonId />
+    <bt4RoleLevel />
+    <btn4dungeonId />
+    <wRect />
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,68 @@
+{
+  "RECORD": [
+    {
+      "id": "700000001",
+      "name": "炮台",
+      "itemType": "4",
+      "quality": "0",
+      "part": "battery",
+      "batteryType": "1",
+      "attackRate": "0.5",
+      "atk": "0",
+      "bulletSpeed": "0",
+      "bulletTime": "0",
+      "bulletThrough": "0",
+      "walkSpeed": "0",
+      "hpMax": "0",
+      "resourcesId": "1045"
+    },
+    {
+      "id": "700000002",
+      "name": "炮弹",
+      "itemType": "4",
+      "quality": "0",
+      "part": "shell",
+      "batteryType": "0",
+      "attackRate": "0",
+      "atk": "1",
+      "bulletSpeed": "0",
+      "bulletTime": "0",
+      "bulletThrough": "0",
+      "walkSpeed": "0",
+      "hpMax": "0",
+      "resourcesId": "1046"
+    },
+    {
+      "id": "700000003",
+      "name": "船帆",
+      "itemType": "4",
+      "quality": "0",
+      "part": "sail",
+      "batteryType": "0",
+      "attackRate": "0",
+      "atk": "0",
+      "bulletSpeed": "0",
+      "bulletTime": "0",
+      "bulletThrough": "0",
+      "walkSpeed": "8",
+      "hpMax": "0",
+      "resourcesId": "1047"
+    },
+    {
+      "id": "700000004",
+      "name": "护甲",
+      "itemType": "4",
+      "quality": "0",
+      "part": "shipArmor",
+      "batteryType": "0",
+      "attackRate": "0",
+      "atk": "0",
+      "bulletSpeed": "0",
+      "bulletTime": "0",
+      "bulletThrough": "0",
+      "walkSpeed": "0",
+      "hpMax": "1",
+      "resourcesId": "1048"
+    }
+  ]
+}

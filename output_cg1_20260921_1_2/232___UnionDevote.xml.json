@@ -1,0 +1,25 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "itemId": "-1",
+      "value": "1000",
+      "unionExpAdd": "10",
+      "roleDevoteAdd": "10"
+    },
+    {
+      "id": "2",
+      "itemId": "142200001;142100001",
+      "value": "1;1",
+      "unionExpAdd": "15;0",
+      "roleDevoteAdd": "15;10"
+    },
+    {
+      "id": "3",
+      "itemId": "-1",
+      "value": "500",
+      "unionExpAdd": "25",
+      "roleDevoteAdd": "25"
+    }
+  ]
+}

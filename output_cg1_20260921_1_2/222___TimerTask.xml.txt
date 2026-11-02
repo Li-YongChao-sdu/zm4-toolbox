@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>fuFestivity_timing1</id>
+    <type>2</type>
+    <circleType>2</circleType>
+    <time>00:00:00</time>
+    <offlineTimes>0</offlineTimes>
+    <continueTime>-1</continueTime>
+    <describe>春节捕抓草泥马</describe>
+  </RECORD>
+</RECORDS>

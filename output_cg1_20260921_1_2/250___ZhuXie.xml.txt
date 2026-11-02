@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>魔渊诛邪</name>
+    <dungeonId>300101;300102;300103;300104;300105;300106;300107;300108;300109</dungeonId>
+    <lastCopyId>300109</lastCopyId>
+    <activityId>1414</activityId>
+    <ZhuXieNum>3</ZhuXieNum>
+    <score>1000</score>
+    <timeMax>150000</timeMax>
+    <a>5</a>
+    <cheatScore>11200</cheatScore>
+    <powerlim>1500000</powerlim>
+    <reportDay>25</reportDay>
+    <showTime>2026/8/5-23:59:59</showTime>
+    <resourcesId>6826</resourcesId>
+    <screenPosition>0,0</screenPosition>
+    <appearScore>9000</appearScore>
+    <mailRewards>144400015</mailRewards>
+  </RECORD>
+</RECORDS>

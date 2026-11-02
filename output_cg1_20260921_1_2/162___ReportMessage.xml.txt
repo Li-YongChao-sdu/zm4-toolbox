@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <report>广告营销</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <report>人身攻击</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <report>色情粗俗</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <report>政治有害</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <report>暴力恐怖</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <report>赌博</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <report>诈骗</report>
+    <textMaxNum>-1</textMaxNum>
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <report>其他原因</report>
+    <textMaxNum>30</textMaxNum>
+  </RECORD>
+</RECORDS>

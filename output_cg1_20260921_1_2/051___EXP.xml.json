@@ -1,0 +1,804 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "upgradeEXP": "110"
+    },
+    {
+      "id": "2",
+      "upgradeEXP": "170"
+    },
+    {
+      "id": "3",
+      "upgradeEXP": "230"
+    },
+    {
+      "id": "4",
+      "upgradeEXP": "330"
+    },
+    {
+      "id": "5",
+      "upgradeEXP": "490"
+    },
+    {
+      "id": "6",
+      "upgradeEXP": "700"
+    },
+    {
+      "id": "7",
+      "upgradeEXP": "980"
+    },
+    {
+      "id": "8",
+      "upgradeEXP": "1300"
+    },
+    {
+      "id": "9",
+      "upgradeEXP": "1800"
+    },
+    {
+      "id": "10",
+      "upgradeEXP": "2300"
+    },
+    {
+      "id": "11",
+      "upgradeEXP": "3000"
+    },
+    {
+      "id": "12",
+      "upgradeEXP": "3900"
+    },
+    {
+      "id": "13",
+      "upgradeEXP": "5000"
+    },
+    {
+      "id": "14",
+      "upgradeEXP": "6300"
+    },
+    {
+      "id": "15",
+      "upgradeEXP": "7700"
+    },
+    {
+      "id": "16",
+      "upgradeEXP": "9400"
+    },
+    {
+      "id": "17",
+      "upgradeEXP": "11300"
+    },
+    {
+      "id": "18",
+      "upgradeEXP": "13500"
+    },
+    {
+      "id": "19",
+      "upgradeEXP": "15900"
+    },
+    {
+      "id": "20",
+      "upgradeEXP": "18600"
+    },
+    {
+      "id": "21",
+      "upgradeEXP": "22600"
+    },
+    {
+      "id": "22",
+      "upgradeEXP": "27100"
+    },
+    {
+      "id": "23",
+      "upgradeEXP": "32100"
+    },
+    {
+      "id": "24",
+      "upgradeEXP": "38000"
+    },
+    {
+      "id": "25",
+      "upgradeEXP": "44000"
+    },
+    {
+      "id": "26",
+      "upgradeEXP": "51000"
+    },
+    {
+      "id": "27",
+      "upgradeEXP": "58000"
+    },
+    {
+      "id": "28",
+      "upgradeEXP": "67000"
+    },
+    {
+      "id": "29",
+      "upgradeEXP": "75000"
+    },
+    {
+      "id": "30",
+      "upgradeEXP": "85000"
+    },
+    {
+      "id": "31",
+      "upgradeEXP": "100000"
+    },
+    {
+      "id": "32",
+      "upgradeEXP": "117000"
+    },
+    {
+      "id": "33",
+      "upgradeEXP": "134000"
+    },
+    {
+      "id": "34",
+      "upgradeEXP": "154000"
+    },
+    {
+      "id": "35",
+      "upgradeEXP": "175000"
+    },
+    {
+      "id": "36",
+      "upgradeEXP": "198000"
+    },
+    {
+      "id": "37",
+      "upgradeEXP": "222000"
+    },
+    {
+      "id": "38",
+      "upgradeEXP": "248000"
+    },
+    {
+      "id": "39",
+      "upgradeEXP": "276000"
+    },
+    {
+      "id": "40",
+      "upgradeEXP": "306000"
+    },
+    {
+      "id": "41",
+      "upgradeEXP": "338000"
+    },
+    {
+      "id": "42",
+      "upgradeEXP": "372000"
+    },
+    {
+      "id": "43",
+      "upgradeEXP": "408000"
+    },
+    {
+      "id": "44",
+      "upgradeEXP": "446000"
+    },
+    {
+      "id": "45",
+      "upgradeEXP": "487000"
+    },
+    {
+      "id": "46",
+      "upgradeEXP": "529000"
+    },
+    {
+      "id": "47",
+      "upgradeEXP": "574000"
+    },
+    {
+      "id": "48",
+      "upgradeEXP": "621000"
+    },
+    {
+      "id": "49",
+      "upgradeEXP": "671000"
+    },
+    {
+      "id": "50",
+      "upgradeEXP": "723000"
+    },
+    {
+      "id": "51",
+      "upgradeEXP": "778000"
+    },
+    {
+      "id": "52",
+      "upgradeEXP": "836000"
+    },
+    {
+      "id": "53",
+      "upgradeEXP": "896000"
+    },
+    {
+      "id": "54",
+      "upgradeEXP": "958000"
+    },
+    {
+      "id": "55",
+      "upgradeEXP": "1024000"
+    },
+    {
+      "id": "56",
+      "upgradeEXP": "1093000"
+    },
+    {
+      "id": "57",
+      "upgradeEXP": "1164000"
+    },
+    {
+      "id": "58",
+      "upgradeEXP": "1238000"
+    },
+    {
+      "id": "59",
+      "upgradeEXP": "1316000"
+    },
+    {
+      "id": "60",
+      "upgradeEXP": "1396000"
+    },
+    {
+      "id": "61",
+      "upgradeEXP": "1480000"
+    },
+    {
+      "id": "62",
+      "upgradeEXP": "1567000"
+    },
+    {
+      "id": "63",
+      "upgradeEXP": "1657000"
+    },
+    {
+      "id": "64",
+      "upgradeEXP": "1751000"
+    },
+    {
+      "id": "65",
+      "upgradeEXP": "1848000"
+    },
+    {
+      "id": "66",
+      "upgradeEXP": "1948000"
+    },
+    {
+      "id": "67",
+      "upgradeEXP": "2052000"
+    },
+    {
+      "id": "68",
+      "upgradeEXP": "2160000"
+    },
+    {
+      "id": "69",
+      "upgradeEXP": "2271000"
+    },
+    {
+      "id": "70",
+      "upgradeEXP": "2386000"
+    },
+    {
+      "id": "71",
+      "upgradeEXP": "2504000"
+    },
+    {
+      "id": "72",
+      "upgradeEXP": "2630000"
+    },
+    {
+      "id": "73",
+      "upgradeEXP": "2750000"
+    },
+    {
+      "id": "74",
+      "upgradeEXP": "2880000"
+    },
+    {
+      "id": "75",
+      "upgradeEXP": "3020000"
+    },
+    {
+      "id": "76",
+      "upgradeEXP": "3160000"
+    },
+    {
+      "id": "77",
+      "upgradeEXP": "3300000"
+    },
+    {
+      "id": "78",
+      "upgradeEXP": "3440000"
+    },
+    {
+      "id": "79",
+      "upgradeEXP": "3600000"
+    },
+    {
+      "id": "80",
+      "upgradeEXP": "3750000"
+    },
+    {
+      "id": "81",
+      "upgradeEXP": "3910000"
+    },
+    {
+      "id": "82",
+      "upgradeEXP": "4070000"
+    },
+    {
+      "id": "83",
+      "upgradeEXP": "4240000"
+    },
+    {
+      "id": "84",
+      "upgradeEXP": "4420000"
+    },
+    {
+      "id": "85",
+      "upgradeEXP": "4590000"
+    },
+    {
+      "id": "86",
+      "upgradeEXP": "4780000"
+    },
+    {
+      "id": "87",
+      "upgradeEXP": "4960000"
+    },
+    {
+      "id": "88",
+      "upgradeEXP": "5150000"
+    },
+    {
+      "id": "89",
+      "upgradeEXP": "5350000"
+    },
+    {
+      "id": "90",
+      "upgradeEXP": "5550000"
+    },
+    {
+      "id": "91",
+      "upgradeEXP": "5760000"
+    },
+    {
+      "id": "92",
+      "upgradeEXP": "5970000"
+    },
+    {
+      "id": "93",
+      "upgradeEXP": "6190000"
+    },
+    {
+      "id": "94",
+      "upgradeEXP": "6410000"
+    },
+    {
+      "id": "95",
+      "upgradeEXP": "6630000"
+    },
+    {
+      "id": "96",
+      "upgradeEXP": "6870000"
+    },
+    {
+      "id": "97",
+      "upgradeEXP": "7100000"
+    },
+    {
+      "id": "98",
+      "upgradeEXP": "7350000"
+    },
+    {
+      "id": "99",
+      "upgradeEXP": "7600000"
+    },
+    {
+      "id": "100",
+      "upgradeEXP": "7850000"
+    },
+    {
+      "id": "101",
+      "upgradeEXP": "8110000"
+    },
+    {
+      "id": "102",
+      "upgradeEXP": "8370000"
+    },
+    {
+      "id": "103",
+      "upgradeEXP": "8640000"
+    },
+    {
+      "id": "104",
+      "upgradeEXP": "8920000"
+    },
+    {
+      "id": "105",
+      "upgradeEXP": "9200000"
+    },
+    {
+      "id": "106",
+      "upgradeEXP": "9490000"
+    },
+    {
+      "id": "107",
+      "upgradeEXP": "9780000"
+    },
+    {
+      "id": "108",
+      "upgradeEXP": "10080000"
+    },
+    {
+      "id": "109",
+      "upgradeEXP": "10210000"
+    },
+    {
+      "id": "110",
+      "upgradeEXP": "10350000"
+    },
+    {
+      "id": "111",
+      "upgradeEXP": "10480000"
+    },
+    {
+      "id": "112",
+      "upgradeEXP": "10600000"
+    },
+    {
+      "id": "113",
+      "upgradeEXP": "10730000"
+    },
+    {
+      "id": "114",
+      "upgradeEXP": "10860000"
+    },
+    {
+      "id": "115",
+      "upgradeEXP": "11060000"
+    },
+    {
+      "id": "116",
+      "upgradeEXP": "11250000"
+    },
+    {
+      "id": "117",
+      "upgradeEXP": "11450000"
+    },
+    {
+      "id": "118",
+      "upgradeEXP": "11640000"
+    },
+    {
+      "id": "119",
+      "upgradeEXP": "11840000"
+    },
+    {
+      "id": "120",
+      "upgradeEXP": "12050000"
+    },
+    {
+      "id": "121",
+      "upgradeEXP": "12250000"
+    },
+    {
+      "id": "122",
+      "upgradeEXP": "12450000"
+    },
+    {
+      "id": "123",
+      "upgradeEXP": "12660000"
+    },
+    {
+      "id": "124",
+      "upgradeEXP": "12870000"
+    },
+    {
+      "id": "125",
+      "upgradeEXP": "13080000"
+    },
+    {
+      "id": "126",
+      "upgradeEXP": "13290000"
+    },
+    {
+      "id": "127",
+      "upgradeEXP": "13500000"
+    },
+    {
+      "id": "128",
+      "upgradeEXP": "13720000"
+    },
+    {
+      "id": "129",
+      "upgradeEXP": "13930000"
+    },
+    {
+      "id": "130",
+      "upgradeEXP": "14150000"
+    },
+    {
+      "id": "131",
+      "upgradeEXP": "14370000"
+    },
+    {
+      "id": "132",
+      "upgradeEXP": "14600000"
+    },
+    {
+      "id": "133",
+      "upgradeEXP": "14820000"
+    },
+    {
+      "id": "134",
+      "upgradeEXP": "15040000"
+    },
+    {
+      "id": "135",
+      "upgradeEXP": "15270000"
+    },
+    {
+      "id": "136",
+      "upgradeEXP": "15500000"
+    },
+    {
+      "id": "137",
+      "upgradeEXP": "15730000"
+    },
+    {
+      "id": "138",
+      "upgradeEXP": "15960000"
+    },
+    {
+      "id": "139",
+      "upgradeEXP": "16200000"
+    },
+    {
+      "id": "140",
+      "upgradeEXP": "16430000"
+    },
+    {
+      "id": "141",
+      "upgradeEXP": "16670000"
+    },
+    {
+      "id": "142",
+      "upgradeEXP": "16910000"
+    },
+    {
+      "id": "143",
+      "upgradeEXP": "17150000"
+    },
+    {
+      "id": "144",
+      "upgradeEXP": "17390000"
+    },
+    {
+      "id": "145",
+      "upgradeEXP": "17630000"
+    },
+    {
+      "id": "146",
+      "upgradeEXP": "17880000"
+    },
+    {
+      "id": "147",
+      "upgradeEXP": "18130000"
+    },
+    {
+      "id": "148",
+      "upgradeEXP": "18380000"
+    },
+    {
+      "id": "149",
+      "upgradeEXP": "18630000"
+    },
+    {
+      "id": "150",
+      "upgradeEXP": "18880000"
+    },
+    {
+      "id": "151",
+      "upgradeEXP": "19130000"
+    },
+    {
+      "id": "152",
+      "upgradeEXP": "19390000"
+    },
+    {
+      "id": "153",
+      "upgradeEXP": "19650000"
+    },
+    {
+      "id": "154",
+      "upgradeEXP": "19910000"
+    },
+    {
+      "id": "155",
+      "upgradeEXP": "20170000"
+    },
+    {
+      "id": "156",
+      "upgradeEXP": "20430000"
+    },
+    {
+      "id": "157",
+      "upgradeEXP": "20690000"
+    },
+    {
+      "id": "158",
+      "upgradeEXP": "20960000"
+    },
+    {
+      "id": "159",
+      "upgradeEXP": "21230000"
+    },
+    {
+      "id": "160",
+      "upgradeEXP": "21500000"
+    },
+    {
+      "id": "161",
+      "upgradeEXP": "21770000"
+    },
+    {
+      "id": "162",
+      "upgradeEXP": "22040000"
+    },
+    {
+      "id": "163",
+      "upgradeEXP": "22320000"
+    },
+    {
+      "id": "164",
+      "upgradeEXP": "22590000"
+    },
+    {
+      "id": "165",
+      "upgradeEXP": "22870000"
+    },
+    {
+      "id": "166",
+      "upgradeEXP": "23150000"
+    },
+    {
+      "id": "167",
+      "upgradeEXP": "23430000"
+    },
+    {
+      "id": "168",
+      "upgradeEXP": "23710000"
+    },
+    {
+      "id": "169",
+      "upgradeEXP": "24000000"
+    },
+    {
+      "id": "170",
+      "upgradeEXP": "24290000"
+    },
+    {
+      "id": "171",
+      "upgradeEXP": "24570000"
+    },
+    {
+      "id": "172",
+      "upgradeEXP": "24860000"
+    },
+    {
+      "id": "173",
+      "upgradeEXP": "25150000"
+    },
+    {
+      "id": "174",
+      "upgradeEXP": "25450000"
+    },
+    {
+      "id": "175",
+      "upgradeEXP": "25740000"
+    },
+    {
+      "id": "176",
+      "upgradeEXP": "26040000"
+    },
+    {
+      "id": "177",
+      "upgradeEXP": "26340000"
+    },
+    {
+      "id": "178",
+      "upgradeEXP": "26640000"
+    },
+    {
+      "id": "179",
+      "upgradeEXP": "26940000"
+    },
+    {
+      "id": "180",
+      "upgradeEXP": "27240000"
+    },
+    {
+      "id": "181",
+      "upgradeEXP": "27550000"
+    },
+    {
+      "id": "182",
+      "upgradeEXP": "27860000"
+    },
+    {
+      "id": "183",
+      "upgradeEXP": "28160000"
+    },
+    {
+      "id": "184",
+      "upgradeEXP": "28470000"
+    },
+    {
+      "id": "185",
+      "upgradeEXP": "28790000"
+    },
+    {
+      "id": "186",
+      "upgradeEXP": "29100000"
+    },
+    {
+      "id": "187",
+      "upgradeEXP": "29420000"
+    },
+    {
+      "id": "188",
+      "upgradeEXP": "29730000"
+    },
+    {
+      "id": "189",
+      "upgradeEXP": "30050000"
+    },
+    {
+      "id": "190",
+      "upgradeEXP": "30370000"
+    },
+    {
+      "id": "191",
+      "upgradeEXP": "30690000"
+    },
+    {
+      "id": "192",
+      "upgradeEXP": "31020000"
+    },
+    {
+      "id": "193",
+      "upgradeEXP": "31340000"
+    },
+    {
+      "id": "194",
+      "upgradeEXP": "31670000"
+    },
+    {
+      "id": "195",
+      "upgradeEXP": "32000000"
+    },
+    {
+      "id": "196",
+      "upgradeEXP": "32330000"
+    },
+    {
+      "id": "197",
+      "upgradeEXP": "32660000"
+    },
+    {
+      "id": "198",
+      "upgradeEXP": "33000000"
+    },
+    {
+      "id": "199",
+      "upgradeEXP": "33330000"
+    },
+    {
+      "id": "200",
+      "upgradeEXP": "33670000"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <hpNum>3</hpNum>
+    <weekNum>3</weekNum>
+    <startPageNum>9</startPageNum>
+    <endPageNum>15</endPageNum>
+    <floorsMax>3</floorsMax>
+    <endDunId>51101</endDunId>
+    <colNum>4</colNum>
+    <tip>小怪;精英;篝火;不明事件;关底BOSS;商店;文本;最终BOSS;追随宠物</tip>
+    <resetTime>300</resetTime>
+    <randomNum>3</randomNum>
+    <initialize>1024,1</initialize>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,760 @@
+{
+  "RECORD": [
+    {
+      "id": "1101140",
+      "name": "怒",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101040",
+      "resourceId": "191",
+      "describe": "提高汲元火眼状态提升的攻击力。"
+    },
+    {
+      "id": "1101240",
+      "name": "恒",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101040",
+      "resourceId": "191",
+      "describe": "延长汲元火眼状态的持续时间。"
+    },
+    {
+      "id": "1103140",
+      "name": "精",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103040",
+      "resourceId": "196",
+      "describe": "提升天降甘露恢复的生命值。"
+    },
+    {
+      "id": "1103240",
+      "name": "盾",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103040",
+      "resourceId": "196",
+      "describe": "天降甘露的过量治疗将生成水魔盾吸收伤害，持续一段时间。"
+    },
+    {
+      "id": "1105140",
+      "name": "坚硬",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105040",
+      "resourceId": "201",
+      "describe": "土盾状态下将额外提高防御力，可叠加数层。"
+    },
+    {
+      "id": "1105240",
+      "name": "坚韧",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105040",
+      "resourceId": "201",
+      "describe": "土盾状态下将额外提高魔抗，可叠加数层。"
+    },
+    {
+      "id": "1107140",
+      "name": "恒",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107040",
+      "resourceId": "206",
+      "describe": "延长傀儡娃娃的持续存在时间。"
+    },
+    {
+      "id": "1107240",
+      "name": "迅",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107040",
+      "resourceId": "206",
+      "describe": "加快傀儡娃娃的释放速度。"
+    },
+    {
+      "id": "1109140",
+      "name": "恒",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109040",
+      "resourceId": "211",
+      "describe": "延长阴阳变状态的持续时间。"
+    },
+    {
+      "id": "1109240",
+      "name": "万钧",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109040",
+      "resourceId": "211",
+      "describe": "提升阳变回血量；阴变增加雷击伤害，减少触发间隔，每次触发时额外耗蓝"
+    },
+    {
+      "id": "1101120",
+      "name": "腾云",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101020",
+      "resourceId": "189",
+      "describe": "按“上”+“技能键”，可以冲向上方。"
+    },
+    {
+      "id": "1101220",
+      "name": "侵掠",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101020",
+      "resourceId": "189",
+      "describe": "按“前”+“技能键”，可以冲的更远。"
+    },
+    {
+      "id": "1103120",
+      "name": "霜寒",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103020",
+      "resourceId": "194",
+      "describe": "水幻影继承玄冰破后也会爆炸，水幻影爆炸后使周围怪物获得[霜寒]"
+    },
+    {
+      "id": "1103220",
+      "name": "疾行",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103020",
+      "resourceId": "194",
+      "describe": "水幻影的移动速度变得更快。"
+    },
+    {
+      "id": "1105120",
+      "name": "怒",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105020",
+      "resourceId": "199",
+      "describe": "怒吼后攻击力大幅增加，持续一段时间。"
+    },
+    {
+      "id": "1105220",
+      "name": "迅",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105020",
+      "resourceId": "199",
+      "describe": "以失去攻击加成为代价，加快释放速度，同时令怪物胆怯，战斗力下降。"
+    },
+    {
+      "id": "1107120",
+      "name": "剧毒",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107020",
+      "resourceId": "204",
+      "describe": "毒阵附带持续中毒效果。"
+    },
+    {
+      "id": "1107220",
+      "name": "回避",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107020",
+      "resourceId": "204",
+      "describe": "快速释放毒阵后往后一撤，紧急回避。（回避效果会被其他技能打断）"
+    },
+    {
+      "id": "1109120",
+      "name": "锋锐",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109020",
+      "resourceId": "209",
+      "describe": "覆海翻的技能伤害提升。"
+    },
+    {
+      "id": "1109220",
+      "name": "震击",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109020",
+      "resourceId": "209",
+      "describe": "覆海翻命中目标后有几率将其打晕，几率和持续时间随等级提升。"
+    },
+    {
+      "id": "1101150",
+      "name": "齐天",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101050",
+      "resourceId": "192",
+      "describe": "空中释放技能时附带额外伤害；对空中怪物造成伤害时附带额外伤害"
+    },
+    {
+      "id": "1101250",
+      "name": "灼烧",
+      "roleConditions": "1",
+      "awakeningCount": "20",
+      "skillId": "1101050",
+      "resourceId": "192",
+      "describe": "落地重击附带灼烧效果，技能等级越高效果越好。"
+    },
+    {
+      "id": "1103150",
+      "name": "冰封",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103050",
+      "resourceId": "197",
+      "describe": "概率附带冰冻效果,等级越高效果越好。"
+    },
+    {
+      "id": "1103250",
+      "name": "通禅",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1103050",
+      "resourceId": "197",
+      "describe": "水精通，技能等级越高伤害提升越大。"
+    },
+    {
+      "id": "1105150",
+      "name": "尖刺",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105050",
+      "resourceId": "202",
+      "describe": "土魔球反弹的伤害提升，并具有抗性效果，使八戒受到的持续伤害减少。"
+    },
+    {
+      "id": "1105250",
+      "name": "穿透",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1105050",
+      "resourceId": "202",
+      "describe": "尖刺快速射出并贯穿敌人，并追加失血效果，尖刺的伤害提高。"
+    },
+    {
+      "id": "1107150",
+      "name": "空舞",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107050",
+      "resourceId": "207",
+      "describe": "可以在空中使用木魔舞。"
+    },
+    {
+      "id": "1107250",
+      "name": "影月",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1107050",
+      "resourceId": "207",
+      "describe": "使用木魔舞时无需回收兵刃。"
+    },
+    {
+      "id": "1109150",
+      "name": "雷影",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109050",
+      "resourceId": "212",
+      "describe": "略微降低伤害，召出雷影替身来释放雷魔决，本体可自由行动。"
+    },
+    {
+      "id": "1109250",
+      "name": "凌刃",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1109050",
+      "resourceId": "212",
+      "describe": "最后一斩时射出3道远程气刃。"
+    },
+    {
+      "id": "1106120",
+      "name": "追影",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106020",
+      "resourceId": "1680",
+      "describe": "以极快的速度冲向落地的飞旋锤并发动旋转攻击。"
+    },
+    {
+      "id": "1106220",
+      "name": "纵横",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106020",
+      "resourceId": "1680",
+      "describe": "滚动速度提升，且发动旋转攻击时也可自由移动。"
+    },
+    {
+      "id": "1106140",
+      "name": "磐石",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106040",
+      "resourceId": "1682",
+      "describe": "使土墙能够承受更多伤害。"
+    },
+    {
+      "id": "1106240",
+      "name": "爆灭",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106040",
+      "resourceId": "1682",
+      "describe": "土墙被摧毁时会爆炸晕眩怪物，同时怪物获得[山痕]状态。土墙可被振山撼地摧毁"
+    },
+    {
+      "id": "1106150",
+      "name": "撼",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106050",
+      "resourceId": "1683",
+      "describe": "锤击地面时停留在地面的怪物也会受到伤害，且伤害随等级提升。"
+    },
+    {
+      "id": "1106250",
+      "name": "振",
+      "roleConditions": "3",
+      "awakeningCount": "20",
+      "skillId": "1106050",
+      "resourceId": "1683",
+      "describe": "锤击地面时有概率使怪物晕眩，技能等级越高效果越好。"
+    },
+    {
+      "id": "1108120",
+      "name": "擅跃",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108020",
+      "resourceId": "1501",
+      "describe": "腾空更快，高度更高。"
+    },
+    {
+      "id": "1108220",
+      "name": "灵动",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108020",
+      "resourceId": "1501",
+      "describe": "腾空时闪避大幅提升。"
+    },
+    {
+      "id": "1108140",
+      "name": "爆",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108040",
+      "resourceId": "1503",
+      "describe": "攻击标记目标有暴击加成。"
+    },
+    {
+      "id": "1108240",
+      "name": "恒",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108040",
+      "resourceId": "1503",
+      "describe": "延长天眼标记的持续时间。"
+    },
+    {
+      "id": "1108150",
+      "name": "凝",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108050",
+      "resourceId": "1504",
+      "describe": "当箭魂超过6支时，可以凝聚成一支巨大的箭矢射出，且箭魂越多伤害越高。"
+    },
+    {
+      "id": "1108250",
+      "name": "汲",
+      "roleConditions": "4",
+      "awakeningCount": "20",
+      "skillId": "1108050",
+      "resourceId": "1504",
+      "describe": "怪物身上的箭魂会持续造成伤害，当使用技能将箭魂取回时，可以回复生命。"
+    },
+    {
+      "id": "1104120",
+      "name": "心",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104020",
+      "resourceId": "1825",
+      "describe": "慈悲为怀对心魔的伤害大幅提升。"
+    },
+    {
+      "id": "1104220",
+      "name": "众",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104020",
+      "resourceId": "1825",
+      "describe": "慈悲为怀能感化的怪物数量提升至6个。"
+    },
+    {
+      "id": "1104140",
+      "name": "广",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104040",
+      "resourceId": "1827",
+      "describe": "可以同时存在2个灵光普照。"
+    },
+    {
+      "id": "1104240",
+      "name": "精",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104040",
+      "resourceId": "1827",
+      "describe": "灵光普照的治疗效果提升。"
+    },
+    {
+      "id": "1104150",
+      "name": "技",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104050",
+      "resourceId": "1828",
+      "describe": "让正法金刚领悟更加强力的技能。"
+    },
+    {
+      "id": "1104250",
+      "name": "恒",
+      "roleConditions": "2",
+      "awakeningCount": "20",
+      "skillId": "1104050",
+      "resourceId": "1828",
+      "describe": "提高正法金刚的存在时间和生命。"
+    },
+    {
+      "id": "1110120",
+      "name": "天灭",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110020",
+      "resourceId": "1917",
+      "describe": "对怪物附带额外伤害，技能等级越高效果越好。"
+    },
+    {
+      "id": "1110220",
+      "name": "断翼",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110020",
+      "resourceId": "1917",
+      "describe": "旋转时有概率使飞行怪物暂时失去飞行能力。"
+    },
+    {
+      "id": "1110140",
+      "name": "恒",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110040",
+      "resourceId": "1919",
+      "describe": "延长龙形剑的持续时间。"
+    },
+    {
+      "id": "1110240",
+      "name": "泉",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110040",
+      "resourceId": "1919",
+      "describe": "龙形剑命中怪物时可以恢复少量生命。"
+    },
+    {
+      "id": "1110150",
+      "name": "游",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110050",
+      "resourceId": "1920",
+      "describe": "背上的剑增加为四个，且可以按W+L使龙剑上冲，或按S+L下冲。"
+    },
+    {
+      "id": "1110250",
+      "name": "聚",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1110050",
+      "resourceId": "1920",
+      "describe": "剑的充能速度大幅提高。"
+    },
+    {
+      "id": "1102120",
+      "name": "极",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102020",
+      "resourceId": "2153",
+      "describe": "蓄力至最终阶段时间减短，蓄力极限时间延长。"
+    },
+    {
+      "id": "1102220",
+      "name": "空",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102020",
+      "resourceId": "2153",
+      "describe": "可以悬空释放技能。且按“上”+“技能键”，可以攻击空中目标。"
+    },
+    {
+      "id": "1102140",
+      "name": "众",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102040",
+      "resourceId": "2155",
+      "describe": "增加残影的数量和残影造成的伤害。"
+    },
+    {
+      "id": "1102240",
+      "name": "捷",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102040",
+      "resourceId": "2155",
+      "describe": "连打速度加快，且使残影有很高概率闪避怪物攻击。"
+    },
+    {
+      "id": "1102150",
+      "name": "动",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102050",
+      "resourceId": "2156",
+      "describe": "略微降低火猿伤害，使悟空可以自由移动、跳跃和攻击。"
+    },
+    {
+      "id": "1102250",
+      "name": "盾",
+      "roleConditions": "5",
+      "awakeningCount": "20",
+      "skillId": "1102050",
+      "resourceId": "2156",
+      "describe": "小幅提升魔耗，使火猿可以汲取生命化为火盾保护悟空，等级越高效果越好。"
+    },
+    {
+      "id": "1111120",
+      "name": "减免",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111020",
+      "resourceId": "4028",
+      "describe": "短时间提高自身减伤"
+    },
+    {
+      "id": "1111220",
+      "name": "压制",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111020",
+      "resourceId": "4028",
+      "describe": "药粉爆炸概率造成减速，小概率造成晕眩"
+    },
+    {
+      "id": "1111140",
+      "name": "恢复",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111040",
+      "resourceId": "4030",
+      "describe": "可给近距离友方回血，回血效果提高"
+    },
+    {
+      "id": "1111240",
+      "name": "魔甲",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111040",
+      "resourceId": "4030",
+      "describe": "药剂瓶满时，额外获得魔抗和防御"
+    },
+    {
+      "id": "1111150",
+      "name": "蚀",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111050",
+      "resourceId": "4031",
+      "describe": "爆炸降低敌人魔抗，且使之受到的蔓、玄毒伤害增加，持续一段时间"
+    },
+    {
+      "id": "1111250",
+      "name": "爆",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1111050",
+      "resourceId": "4031",
+      "describe": "爆炸将引爆敌人身上的毒"
+    },
+    {
+      "id": "1112120",
+      "name": "精",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112020",
+      "resourceId": "4033",
+      "describe": "技能等级越高伤害提升越大"
+    },
+    {
+      "id": "1112220",
+      "name": "影",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112020",
+      "resourceId": "4033",
+      "describe": "短暂提高自身闪避"
+    },
+    {
+      "id": "1112140",
+      "name": "光威",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112040",
+      "resourceId": "4035",
+      "describe": "月光存在时长提高，月光笼罩区域的敌人，额外降低其攻击"
+    },
+    {
+      "id": "1112240",
+      "name": "光袭",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112040",
+      "resourceId": "4035",
+      "describe": "月光笼罩区域的敌人，额外降低其韧性"
+    },
+    {
+      "id": "1112150",
+      "name": "精通",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112050",
+      "resourceId": "4036",
+      "describe": "光精通，技能等级越高伤害提升越大"
+    },
+    {
+      "id": "1112250",
+      "name": "月汲",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1112050",
+      "resourceId": "4036",
+      "describe": "命中敌人可给自身回血"
+    },
+    {
+      "id": "1113120",
+      "name": "疾",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113020",
+      "resourceId": "4028",
+      "describe": "前冲速度加快，前冲前半段自身闪避提高"
+    },
+    {
+      "id": "1113220",
+      "name": "焰",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113020",
+      "resourceId": "4028",
+      "describe": "不再推怪，但是沿途会残留火焰"
+    },
+    {
+      "id": "1113140",
+      "name": "速",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113040",
+      "resourceId": "4030",
+      "describe": "莲花瓣获得速度提高"
+    },
+    {
+      "id": "1113240",
+      "name": "精",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113040",
+      "resourceId": "4030",
+      "describe": "单片莲花瓣回血提高"
+    },
+    {
+      "id": "1113150",
+      "name": "守",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113050",
+      "resourceId": "4031",
+      "describe": "攻击期间受到伤害下降"
+    },
+    {
+      "id": "1113250",
+      "name": "爆",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1113050",
+      "resourceId": "4031",
+      "describe": "伤害提高，技能等级越高伤害提升越大"
+    },
+    {
+      "id": "1114120",
+      "name": "恒",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114020",
+      "resourceId": "4033",
+      "describe": "悬浮时间提高"
+    },
+    {
+      "id": "1114220",
+      "name": "防",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114020",
+      "resourceId": "4033",
+      "describe": "悬浮期间防御力提高"
+    },
+    {
+      "id": "1114140",
+      "name": "阴",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114040",
+      "resourceId": "4035",
+      "describe": "[阴伤]被引爆时的伤害提高"
+    },
+    {
+      "id": "1114240",
+      "name": "阳",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114040",
+      "resourceId": "4035",
+      "describe": "[阳疗]恢复的生命提高"
+    },
+    {
+      "id": "1114150",
+      "name": "伤",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114050",
+      "resourceId": "4036",
+      "describe": "命中敌人时造成易伤"
+    },
+    {
+      "id": "1114250",
+      "name": "威",
+      "roleConditions": "6",
+      "awakeningCount": "20",
+      "skillId": "1114050",
+      "resourceId": "4036",
+      "describe": "技能等级越高伤害提升越大"
+    }
+  ]
+}

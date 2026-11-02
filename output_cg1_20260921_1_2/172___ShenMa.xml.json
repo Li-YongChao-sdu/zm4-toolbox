@@ -1,0 +1,44 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "name": "福联",
+      "attribute": "miss",
+      "allNum": "-1",
+      "oneScreenNum": "10",
+      "effTime": "1"
+    },
+    {
+      "id": "2",
+      "name": "云朵",
+      "attribute": "phyDef",
+      "allNum": "15",
+      "oneScreenNum": "5",
+      "effTime": "1"
+    },
+    {
+      "id": "3",
+      "name": "马鞭",
+      "attribute": "atk",
+      "allNum": "-1",
+      "oneScreenNum": "15",
+      "effTime": "2"
+    },
+    {
+      "id": "4",
+      "name": "草堆",
+      "attribute": "horseAtk",
+      "allNum": "-1",
+      "oneScreenNum": "12",
+      "effTime": "1"
+    },
+    {
+      "id": "5",
+      "name": "铃铛",
+      "attribute": "reward",
+      "allNum": "7",
+      "oneScreenNum": "7",
+      "effTime": "1"
+    }
+  ]
+}

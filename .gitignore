@@ -1,0 +1,24 @@
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# 本地运行配置与日志
+zm4_toolbox_config.json
+my_daily_favorites.json
+toolbox_errors.log
+*.log
+
+# 账号与实测数据（禁止提交）
+accounts/
+account*.json
+account.local.json
+config_review_*/
+
+# 打包与发布产物
+build/
+dist/
+*.rar
+*.zip
+*.exe

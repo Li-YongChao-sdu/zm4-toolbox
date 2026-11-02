@@ -1,0 +1,21 @@
+{
+  "RECORD": {
+    "id": "1",
+    "name": "魔渊诛邪",
+    "dungeonId": "300101;300102;300103;300104;300105;300106;300107;300108;300109",
+    "lastCopyId": "300109",
+    "activityId": "1414",
+    "ZhuXieNum": "3",
+    "score": "1000",
+    "timeMax": "150000",
+    "a": "5",
+    "cheatScore": "11200",
+    "powerlim": "1500000",
+    "reportDay": "25",
+    "showTime": "2026/8/5-23:59:59",
+    "resourcesId": "6826",
+    "screenPosition": "0,0",
+    "appearScore": "9000",
+    "mailRewards": "144400015"
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dayFreeCount>3</dayFreeCount>
+    <challengeAgainTicket>100</challengeAgainTicket>
+    <assignPointTicket>200</assignPointTicket>
+    <maxCount>100</maxCount>
+    <cloudLadder>100</cloudLadder>
+    <rewardId>50996</rewardId>
+    <activityId>261149</activityId>
+    <type>summer</type>
+  </RECORD>
+</RECORDS>

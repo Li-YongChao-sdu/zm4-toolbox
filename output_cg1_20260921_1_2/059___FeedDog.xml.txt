@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>10</id>
+    <itemId>176200010;150200001</itemId>
+    <num>1;1</num>
+    <describe>单身汪烟花;五行洗炼石</describe>
+  </RECORD>
+  <RECORD>
+    <id>20</id>
+    <itemId>150100001;150200002</itemId>
+    <num>1;1</num>
+    <describe>法宝洗炼石;成长率洗炼石</describe>
+  </RECORD>
+  <RECORD>
+    <id>40</id>
+    <itemId>107100002;107200003</itemId>
+    <num>1;1</num>
+    <describe>中级幸运符;高级幸运符</describe>
+  </RECORD>
+  <RECORD>
+    <id>60</id>
+    <itemId>197100006;196200001</itemId>
+    <num>1;1</num>
+    <describe>2级宝石袋;3级百变宝石袋</describe>
+  </RECORD>
+  <RECORD>
+    <id>80</id>
+    <itemId>197400001;196300052</itemId>
+    <num>1;1</num>
+    <describe>万仙果;冰霜翅膀外观</describe>
+  </RECORD>
+</RECORDS>

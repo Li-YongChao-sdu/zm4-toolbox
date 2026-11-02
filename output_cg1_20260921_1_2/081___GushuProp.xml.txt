@@ -1,0 +1,1048 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>100</id>
+    <type>2</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币</name>
+    <text>用于古树遗迹的商店消费货币</text>
+    <quality>0</quality>
+    <resourceId>761</resourceId>
+    <effect />
+    <dataType />
+    <numberType />
+    <number />
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1000</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>失准</name>
+    <text>失准：-30%命中num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>762</resourceId>
+    <effect>Pet</effect>
+    <dataType>hit</dataType>
+    <numberType>1</numberType>
+    <number>-0.3</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1001</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>力竭</name>
+    <text>力竭：-30%攻击num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>763</resourceId>
+    <effect>Pet</effect>
+    <dataType>atk</dataType>
+    <numberType>1</numberType>
+    <number>-0.3</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1002</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>1</time>
+    <name>诅咒</name>
+    <text>诅咒：封技num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>764</resourceId>
+    <effect>Buff</effect>
+    <dataType>buff</dataType>
+    <numberType>2</numberType>
+    <number>4004201</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1003</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>卸甲</name>
+    <text>卸甲：-100%防御num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>765</resourceId>
+    <effect>Pet</effect>
+    <dataType>phyDef</dataType>
+    <numberType>1</numberType>
+    <number>-1</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1004</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>迟缓</name>
+    <text>迟缓：-50%闪避num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>766</resourceId>
+    <effect>Pet</effect>
+    <dataType>dodge</dataType>
+    <numberType>1</numberType>
+    <number>-0.5</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1005</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>中毒</name>
+    <text>中毒：每秒损失2%生命num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>767</resourceId>
+    <effect>Buff</effect>
+    <dataType>buff</dataType>
+    <numberType>2</numberType>
+    <number>5058701</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1006</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>心碎</name>
+    <text>心碎：-100%回血num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>768</resourceId>
+    <effect>Pet</effect>
+    <dataType>reHP</dataType>
+    <numberType>1</numberType>
+    <number>-1</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1007</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>缚身</name>
+    <text>缚身：-100%闪避num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>769</resourceId>
+    <effect>Pet</effect>
+    <dataType>dodge</dataType>
+    <numberType>1</numberType>
+    <number>-1</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1008</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>混乱</name>
+    <text>混乱：方向键颠倒+100%攻击力num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>770</resourceId>
+    <effect>Buff;Pet</effect>
+    <dataType>buff;atk</dataType>
+    <numberType>2;1</numberType>
+    <number>75001101;1</number>
+    <addnumber>0;0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1009</id>
+    <type>4</type>
+    <lvMax>0</lvMax>
+    <time>3</time>
+    <name>心病</name>
+    <text>心病：-50%回血num场战斗后消失</text>
+    <quality>0</quality>
+    <resourceId>771</resourceId>
+    <effect>Pet</effect>
+    <dataType>reHP</dataType>
+    <numberType>1</numberType>
+    <number>-0.5</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>1011</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>生命之玉</name>
+    <text>生命+116000</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>hpMax</dataType>
+    <numberType>2</numberType>
+    <number>116000</number>
+    <addnumber>116000</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1012</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>回血之玉</name>
+    <text>回血+600</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>reHP</dataType>
+    <numberType>2</numberType>
+    <number>600</number>
+    <addnumber>600</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1013</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>攻击之玉</name>
+    <text>攻击+4000</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>atk</dataType>
+    <numberType>2</numberType>
+    <number>4000</number>
+    <addnumber>4000</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1014</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>防御之玉</name>
+    <text>防御+800</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>phyDef</dataType>
+    <numberType>2</numberType>
+    <number>800</number>
+    <addnumber>800</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1015</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>魔抗之玉</name>
+    <text>魔抗+15%</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>magRes</dataType>
+    <numberType>2</numberType>
+    <number>0.15</number>
+    <addnumber>0.15</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1016</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>暴击之玉</name>
+    <text>暴击+15%</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>critical</dataType>
+    <numberType>2</numberType>
+    <number>0.15</number>
+    <addnumber>0.15</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1017</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>闪避之玉</name>
+    <text>闪避+15%</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>dodge</dataType>
+    <numberType>2</numberType>
+    <number>0.15</number>
+    <addnumber>0.15</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1018</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>守护之玉</name>
+    <text>守护+20</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>guardian</dataType>
+    <numberType>2</numberType>
+    <number>20</number>
+    <addnumber>20</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1019</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>幸运之玉</name>
+    <text>幸运+20</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>lucky</dataType>
+    <numberType>2</numberType>
+    <number>20</number>
+    <addnumber>20</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1020</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>韧性之玉</name>
+    <text>韧性+15%</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>toughness</dataType>
+    <numberType>2</numberType>
+    <number>0.15</number>
+    <addnumber>0.15</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1021</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>命中之玉</name>
+    <text>命中+15%</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>hit</dataType>
+    <numberType>2</numberType>
+    <number>0.15</number>
+    <addnumber>0.15</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1022</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>吸血之玉</name>
+    <text>吸血+25</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>suckBlood</dataType>
+    <numberType>2</numberType>
+    <number>25</number>
+    <addnumber>25</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1023</id>
+    <type>3</type>
+    <lvMax>5</lvMax>
+    <time>0</time>
+    <name>反伤之玉</name>
+    <text>反伤+25</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>backLash</dataType>
+    <numberType>2</numberType>
+    <number>25</number>
+    <addnumber>25</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>1024</id>
+    <type>3</type>
+    <lvMax>29</lvMax>
+    <time>0</time>
+    <name>初始之玉</name>
+    <text>属性之石</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>Pet</effect>
+    <dataType>hpMax,reHP,atk,phyDef,magRes,critical,dodge,guardian,lucky,toughness,hit,suckBlood,backLash</dataType>
+    <numberType>2,2,2,2,2,2,2,2,2,2,2,2,2</numberType>
+    <number>218916,1052,7350,1377,0.96,1.07,0.58,118,133,0.96,0.58,228,228</number>
+    <addnumber>32838,158,1103,207,0.07,0.08,0.04,9,10,0.07,0.04,17,17</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>2000</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>毒云靴</name>
+    <text>移动x距离之后将会释放一次毒雾，当敌人处在毒雾中将会持续累计毒素（上限x层）并扣血</text>
+    <quality>4</quality>
+    <resourceId>6688</resourceId>
+    <effect>Group</effect>
+    <dataType>skill</dataType>
+    <numberType>2</numberType>
+    <number>9400010</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","trigger":{"type":"move","distance":100},"do1Second":100,"subType":1}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2001</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>异毒吊坠</name>
+    <text>当敌人身上的毒素累积至x层时，敌人受到的毒素伤害增加x%，但持续时间减少y%</text>
+    <quality>4</quality>
+    <resourceId>6689</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":2,"trigger":{"type":"checkBuffNum","buffId":16001101,"num":5},"effect":{"damgeRatio":0.5,"durationRatio":-0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2002</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>瘴腐毒刃</name>
+    <text>对敌人造成伤害时将能够叠加毒素层数</text>
+    <quality>4</quality>
+    <resourceId>6690</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":3,"trigger":{"type":"onAttacked"},"effect":{"addBuffIds":[16001101]}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2003</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>蚀毒护腕</name>
+    <text>对中毒目标造成伤害时，将回复x%的血量</text>
+    <quality>4</quality>
+    <resourceId>6691</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":4,"effect":{"addHpRatio":0.5},"trigger":{"buffId":16001101}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2004</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>腐雾指环</name>
+    <text>毒素累积层数上限提升至x层</text>
+    <quality>4</quality>
+    <resourceId>6692</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":5,"effect":{"stackMax":5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2005</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>疫雾腰带</name>
+    <text>毒素持续时间减少x%，结算速度加快y%</text>
+    <quality>4</quality>
+    <resourceId>6693</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":6,"effect":{"totalTimeRatio":-0.5,"intervalRatio":-0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2006</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>万毒圣冠</name>
+    <text>毒素触发伤害时，有x%触发两次，毒素持续时间减少y%</text>
+    <quality>4</quality>
+    <resourceId>6694</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"DWL","subType":7}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2007</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>赎命头冠</name>
+    <text>治疗护盾加成x%</text>
+    <quality>4</quality>
+    <resourceId>6695</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":1,"effect":{"reHpRatio":0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2008</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>慈佑吊坠</name>
+    <text>治疗溢出生命值时，额外治疗转化为生命值护盾</text>
+    <quality>4</quality>
+    <resourceId>6696</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":2}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2009</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>噬伤愈甲</name>
+    <text>受到攻击伤害时将按照攻击伤害的百分比治疗自身</text>
+    <quality>4</quality>
+    <resourceId>6697</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":3,"effect":{"addHpRatio":0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2010</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>圣愈护腕</name>
+    <text>获得按照生命值百分比持续回血效果</text>
+    <quality>4</quality>
+    <resourceId>6698</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":4,"do1Second":1000,"trigger":{"type":"reHp","value":1111}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2011</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>反噬指环</name>
+    <text>根据治疗效果对周围的敌人造成伤害</text>
+    <quality>4</quality>
+    <resourceId>6699</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":5,"effect":{"range":[0,-300,500,500],"hurtRatio":0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2012</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>生息腰带</name>
+    <text>生命值上限提升x%</text>
+    <quality>4</quality>
+    <resourceId>6700</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param>{"type":"ZLFSL","subType":6,"effect":{"addHpMaxRatio":0.5}}</param>
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2013</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>碎霜长矛</name>
+    <text>普攻命中敌人之后可以给敌人附加寒气，减速敌人（可叠层），寒气层数≥10层时敌人被冰封（buff类型91）</text>
+    <quality>4</quality>
+    <resourceId>6701</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2014</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>极寒指环</name>
+    <text>为敌人叠加寒气层数时将额外叠加一层</text>
+    <quality>4</quality>
+    <resourceId>6702</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2015</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>碎冰吊坠</name>
+    <text>普攻命中被冰封的敌人后将额外造成一次碎冰伤害（skill）</text>
+    <quality>4</quality>
+    <resourceId>6703</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2016</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>冰刺棱甲</name>
+    <text>普攻时将额外提升自身暴击属性（持续x秒，不可叠加）</text>
+    <quality>4</quality>
+    <resourceId>6704</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2017</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>凝霜灵晶</name>
+    <text>碎冰伤害将能够溅射到周围的敌人</text>
+    <quality>4</quality>
+    <resourceId>6705</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2018</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>连锁冰链</name>
+    <text>碎冰伤害溅射至其余目标时将触发额外溅射效果</text>
+    <quality>4</quality>
+    <resourceId>6706</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>2019</id>
+    <type>3</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>霜冻护手</name>
+    <text>碎冰伤害额外提升</text>
+    <quality>4</quality>
+    <resourceId>6707</resourceId>
+    <effect>Group</effect>
+    <dataType />
+    <numberType>2</numberType>
+    <number>0</number>
+    <addnumber>0</addnumber>
+    <randomnumber />
+    <param />
+    <sellCoin>50</sellCoin>
+    <recycleCoin>25</recycleCoin>
+  </RECORD>
+  <RECORD>
+    <id>5001</id>
+    <type>1</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>增加最大生命值</name>
+    <text>最大生命值+10%</text>
+    <quality>0</quality>
+    <resourceId>166</resourceId>
+    <effect>MazeProp</effect>
+    <dataType />
+    <numberType>1</numberType>
+    <number>0.1</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>5002</id>
+    <type>1</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>增加最大生命值</name>
+    <text>最大生命值+10%</text>
+    <quality>0</quality>
+    <resourceId>167</resourceId>
+    <effect>MazeProp</effect>
+    <dataType />
+    <numberType>1</numberType>
+    <number>0.1</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>5003</id>
+    <type>1</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>增加最大生命值</name>
+    <text>最大生命值+10%</text>
+    <quality>0</quality>
+    <resourceId>301</resourceId>
+    <effect>MazeProp</effect>
+    <dataType />
+    <numberType>1</numberType>
+    <number>0.1</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>6001</id>
+    <type>1</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>损失最大生命值</name>
+    <text>最大生命值-30%</text>
+    <quality>0</quality>
+    <resourceId>302</resourceId>
+    <effect>MazeProp</effect>
+    <dataType />
+    <numberType>1</numberType>
+    <number>-0.3</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>6002</id>
+    <type>1</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>损失最大生命值</name>
+    <text>最大生命值-30%</text>
+    <quality>0</quality>
+    <resourceId>1771</resourceId>
+    <effect>MazeProp</effect>
+    <dataType />
+    <numberType>1</numberType>
+    <number>-0.3</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>7001</id>
+    <type>5</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币损失</name>
+    <text>古树币-10</text>
+    <quality>0</quality>
+    <resourceId>4466</resourceId>
+    <effect>MazeProp</effect>
+    <dataType>100</dataType>
+    <numberType>2</numberType>
+    <number>-10</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>7002</id>
+    <type>5</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币损失</name>
+    <text>古树币-20</text>
+    <quality>0</quality>
+    <resourceId>2379</resourceId>
+    <effect>MazeProp</effect>
+    <dataType>100</dataType>
+    <numberType>2</numberType>
+    <number>-20</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>7003</id>
+    <type>5</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币增加</name>
+    <text>古树币+200</text>
+    <quality>0</quality>
+    <resourceId>2380</resourceId>
+    <effect>MazeProp</effect>
+    <dataType>100</dataType>
+    <numberType>2</numberType>
+    <number>200</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>7004</id>
+    <type>5</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币增加</name>
+    <text>古树币+300</text>
+    <quality>0</quality>
+    <resourceId>2381</resourceId>
+    <effect>MazeProp</effect>
+    <dataType>100</dataType>
+    <numberType>2</numberType>
+    <number>300</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+  <RECORD>
+    <id>7005</id>
+    <type>5</type>
+    <lvMax>0</lvMax>
+    <time>0</time>
+    <name>古树币损失</name>
+    <text>古树币-300</text>
+    <quality>0</quality>
+    <resourceId>6674</resourceId>
+    <effect>MazeProp</effect>
+    <dataType>100</dataType>
+    <numberType>2</numberType>
+    <number>-300</number>
+    <addnumber />
+    <randomnumber />
+    <param />
+    <sellCoin />
+    <recycleCoin />
+  </RECORD>
+</RECORDS>

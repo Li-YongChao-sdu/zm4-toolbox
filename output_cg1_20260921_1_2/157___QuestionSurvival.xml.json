@@ -1,0 +1,74 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "health": "4",
+      "power": "5",
+      "wisdom": "4",
+      "charm": "3",
+      "luck": "4",
+      "smart": "4",
+      "born": "小猴"
+    },
+    {
+      "id": "2",
+      "health": "3",
+      "power": "4",
+      "wisdom": "5",
+      "charm": "5",
+      "luck": "4",
+      "smart": "3",
+      "born": "小唐"
+    },
+    {
+      "id": "3",
+      "health": "6",
+      "power": "4",
+      "wisdom": "3",
+      "charm": "3",
+      "luck": "3",
+      "smart": "3",
+      "born": "小猪"
+    },
+    {
+      "id": "4",
+      "health": "3",
+      "power": "3",
+      "wisdom": "4",
+      "charm": "3",
+      "luck": "3",
+      "smart": "6",
+      "born": "小沙"
+    },
+    {
+      "id": "5",
+      "health": "4",
+      "power": "3",
+      "wisdom": "4",
+      "charm": "4",
+      "luck": "5",
+      "smart": "4",
+      "born": "小白"
+    },
+    {
+      "id": "6",
+      "health": "3",
+      "power": "3",
+      "wisdom": "4",
+      "charm": "5",
+      "luck": "3",
+      "smart": "6",
+      "born": "小玉"
+    },
+    {
+      "id": "7",
+      "health": "5",
+      "power": "4",
+      "wisdom": "4",
+      "charm": "4",
+      "luck": "3",
+      "smart": "4",
+      "born": "小吒"
+    }
+  ]
+}

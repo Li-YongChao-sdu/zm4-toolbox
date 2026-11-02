@@ -1,0 +1,39 @@
+{
+  "RECORD": [
+    {
+      "id": "10001",
+      "name": "热血",
+      "attributeType": "hpMax",
+      "describe": "生命上限增加",
+      "ResourcesId": "10001"
+    },
+    {
+      "id": "10002",
+      "name": "魔泉",
+      "attributeType": "mpMax",
+      "describe": "魔法上限增加",
+      "ResourcesId": "10002"
+    },
+    {
+      "id": "10003",
+      "name": "狂暴",
+      "attributeType": "critical",
+      "describe": "暴击率增加%",
+      "ResourcesId": "10003"
+    },
+    {
+      "id": "10004",
+      "name": "光之永恒",
+      "attributeType": "reHP",
+      "describe": "每秒回血增加",
+      "ResourcesId": "10004"
+    },
+    {
+      "id": "10005",
+      "name": "月之辉煌",
+      "attributeType": "reMP",
+      "describe": "每秒回魔增加",
+      "ResourcesId": "10005"
+    }
+  ]
+}

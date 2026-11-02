@@ -1,0 +1,13 @@
+{
+  "RECORD": {
+    "id": "1",
+    "dayFreeCount": "3",
+    "challengeAgainTicket": "100",
+    "assignPointTicket": "200",
+    "maxCount": "100",
+    "cloudLadder": "100",
+    "rewardId": "50996",
+    "activityId": "261149",
+    "type": "summer"
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>101</id>
+    <type>1</type>
+    <integral>200</integral>
+    <iconId>101.png</iconId>
+    <taskId>1</taskId>
+  </RECORD>
+  <RECORD>
+    <id>102</id>
+    <type>2</type>
+    <integral>200</integral>
+    <iconId>102.png</iconId>
+    <taskId>2</taskId>
+  </RECORD>
+  <RECORD>
+    <id>103</id>
+    <type>3</type>
+    <integral>200</integral>
+    <iconId>103.png</iconId>
+    <taskId>4</taskId>
+  </RECORD>
+  <RECORD>
+    <id>104</id>
+    <type>4</type>
+    <integral>200</integral>
+    <iconId>104.png</iconId>
+    <taskId>3</taskId>
+  </RECORD>
+  <RECORD>
+    <id>105</id>
+    <type>5</type>
+    <integral>200</integral>
+    <iconId>105V1.png</iconId>
+    <taskId>5</taskId>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>215000006</id>
+    <name>锦囊</name>
+    <evolvePropId>143200013;143200014</evolvePropId>
+    <evolvePropNum>9;1</evolvePropNum>
+    <evolveEquipmentId>0</evolveEquipmentId>
+    <newEquipmentId>225000006</newEquipmentId>
+    <order>1</order>
+  </RECORD>
+  <RECORD>
+    <id>225000006</id>
+    <name>茱萸香囊</name>
+    <evolvePropId>143200013;143200014</evolvePropId>
+    <evolvePropNum>9;1</evolvePropNum>
+    <evolveEquipmentId>215000006</evolveEquipmentId>
+    <newEquipmentId>235000009</newEquipmentId>
+    <order>2</order>
+  </RECORD>
+  <RECORD>
+    <id>235000009</id>
+    <name>金丝茱萸香囊</name>
+    <evolvePropId>143200013;143200014</evolvePropId>
+    <evolvePropNum>9;1</evolvePropNum>
+    <evolveEquipmentId>215000006</evolveEquipmentId>
+    <newEquipmentId>245000012</newEquipmentId>
+    <order>3</order>
+  </RECORD>
+  <RECORD>
+    <id>245000012</id>
+    <name>锦绣茱萸香囊</name>
+    <evolvePropId>143200013;143200014</evolvePropId>
+    <evolvePropNum>9;1</evolvePropNum>
+    <evolveEquipmentId>215000006</evolveEquipmentId>
+    <newEquipmentId>265000013</newEquipmentId>
+    <order>4</order>
+  </RECORD>
+</RECORDS>

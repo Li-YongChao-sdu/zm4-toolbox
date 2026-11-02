@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>10</id>
+    <rewardId>50707;50708;50709</rewardId>
+    <iconId>jindu01.png</iconId>
+    <describe>&lt;font color='#FFFFFF'&gt;领取条件：
+进度达到 10（num）
+
+&lt;font color='#FF4500'&gt;点击可查看&lt;/font&gt;</describe>
+  </RECORD>
+  <RECORD>
+    <id>70</id>
+    <rewardId>50710;50711;50712</rewardId>
+    <iconId>jindu02.png</iconId>
+    <describe>&lt;font color='#FFFFFF'&gt;领取条件：
+进度达到 70（num）
+
+&lt;font color='#FF4500'&gt;点击可查看&lt;/font&gt;</describe>
+  </RECORD>
+  <RECORD>
+    <id>150</id>
+    <rewardId>50713;50714;50715</rewardId>
+    <iconId>jindu03.png</iconId>
+    <describe>&lt;font color='#FFFFFF'&gt;领取条件：
+进度达到 150（num）
+
+&lt;font color='#FF4500'&gt;点击可查看&lt;/font&gt;</describe>
+  </RECORD>
+  <RECORD>
+    <id>250</id>
+    <rewardId>50695,50696,50697,50698,50699,51080,51212;50717;50718</rewardId>
+    <iconId>jindu04.png</iconId>
+    <describe>&lt;font color='#FFFFFF'&gt;领取条件：
+进度达到 250（num）
+
+&lt;font color='#FF4500'&gt;点击可查看&lt;/font&gt;</describe>
+  </RECORD>
+  <RECORD>
+    <id>300</id>
+    <rewardId>50700,50701,50702,50703,50704,51081,51213;50720;50721</rewardId>
+    <iconId>jindu05.png</iconId>
+    <describe>&lt;font color='#FFFFFF'&gt;领取条件：
+进度达到 300（num）
+
+&lt;font color='#FF4500'&gt;点击可查看&lt;/font&gt;</describe>
+  </RECORD>
+</RECORDS>

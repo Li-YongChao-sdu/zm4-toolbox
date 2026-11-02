@@ -1,0 +1,14 @@
+{
+  "RECORD": {
+    "id": "1",
+    "teamHorseId": "200401",
+    "showItemId": "187010001;187010002;187010003;187010004",
+    "ticket": "700",
+    "weekRewardNum": "3",
+    "minMember": "3",
+    "maxMember": "3",
+    "openTime": "00:00:00",
+    "closeTime": "23:59:59",
+    "week": "0;1;2;3;4;5;6"
+  }
+}

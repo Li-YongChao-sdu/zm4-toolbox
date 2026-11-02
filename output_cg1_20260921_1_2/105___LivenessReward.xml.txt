@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>30</id>
+    <type>0</type>
+    <rewardId>4266</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>60</id>
+    <type>0</type>
+    <rewardId>4066</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>90</id>
+    <type>0</type>
+    <rewardId>4066</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>120</id>
+    <type>0</type>
+    <rewardId>4266</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>150</id>
+    <type>0</type>
+    <rewardId>4067</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>450</id>
+    <type>1</type>
+    <rewardId>4068</rewardId>
+  </RECORD>
+  <RECORD>
+    <id>1050</id>
+    <type>1</type>
+    <rewardId>4069</rewardId>
+  </RECORD>
+</RECORDS>

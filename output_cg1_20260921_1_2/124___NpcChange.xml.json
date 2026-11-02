@@ -1,0 +1,31 @@
+{
+  "RECORD": [
+    {
+      "id": "2020",
+      "type": "1",
+      "changeId": "143100002",
+      "name": "观音",
+      "changeNum": "1",
+      "changeTarget": "10006",
+      "changeTimeMax": "1"
+    },
+    {
+      "id": "2022",
+      "type": "1",
+      "changeId": "143100002",
+      "name": "地藏",
+      "changeNum": "1",
+      "changeTarget": "50001",
+      "changeTimeMax": "1"
+    },
+    {
+      "id": "2024",
+      "type": "1",
+      "changeId": "143100002",
+      "name": "普贤",
+      "changeNum": "1",
+      "changeTarget": "60001",
+      "changeTimeMax": "1"
+    }
+  ]
+}

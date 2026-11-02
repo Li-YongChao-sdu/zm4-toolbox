@@ -1,0 +1,24 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "trainValue": "50"
+    },
+    {
+      "id": "2",
+      "trainValue": "100"
+    },
+    {
+      "id": "3",
+      "trainValue": "150"
+    },
+    {
+      "id": "4",
+      "trainValue": "230"
+    },
+    {
+      "id": "5",
+      "trainValue": "350"
+    }
+  ]
+}

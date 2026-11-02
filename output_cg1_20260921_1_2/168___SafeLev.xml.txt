@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <name>vip</name>
+    <content>btn_vip</content>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <name>商城</name>
+    <content>btn_sc</content>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <name>首冲</name>
+    <content>btn_shouchong</content>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <name>累计充值</name>
+    <content>btn_czhk</content>
+  </RECORD>
+</RECORDS>

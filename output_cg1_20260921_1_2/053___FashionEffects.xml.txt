@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <originalFashionId>301011201;302011201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <originalFashionId>301021201;302021201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <originalFashionId>301031201;302031201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <originalFashionId>301041201;302041201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <originalFashionId>301051201;302051201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>16</id>
+    <originalFashionId>301061201;302061201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>67</id>
+    <originalFashionId>301071201;302071201</originalFashionId>
+    <url>yinglong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>6</id>
+    <originalFashionId>301011301;302011301</originalFashionId>
+    <url>xianyu_wk</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>7</id>
+    <originalFashionId>301021301;302021301</originalFashionId>
+    <url>xianyu_ts</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>8</id>
+    <originalFashionId>301031301;302031301</originalFashionId>
+    <url>xianyu_bj</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>9</id>
+    <originalFashionId>301041301;302041301</originalFashionId>
+    <url>xianyu_wj</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>10</id>
+    <originalFashionId>301051301;302051301</originalFashionId>
+    <url>xianyu_lm</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>17</id>
+    <originalFashionId>301061301;302061301</originalFashionId>
+    <url>xianyu_yt</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>68</id>
+    <originalFashionId>301071301;302071301</originalFashionId>
+    <url>xianyu_nezha</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>11</id>
+    <originalFashionId>301011501;302011501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>12</id>
+    <originalFashionId>301021501;302021501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>13</id>
+    <originalFashionId>301031501;302031501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>14</id>
+    <originalFashionId>301041501;302041501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>15</id>
+    <originalFashionId>301051501;302051501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>18</id>
+    <originalFashionId>301061501;302061501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>69</id>
+    <originalFashionId>301071501;302071501</originalFashionId>
+    <url>zhongqiu</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>19</id>
+    <originalFashionId>301011601;302011601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>20</id>
+    <originalFashionId>301021601;302021601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>21</id>
+    <originalFashionId>301031601;302031601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>22</id>
+    <originalFashionId>301041601;302041601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>23</id>
+    <originalFashionId>301051601;302051601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>24</id>
+    <originalFashionId>301061601;302061601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>70</id>
+    <originalFashionId>301071601;302071601</originalFashionId>
+    <url>yuegong</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>25</id>
+    <originalFashionId>301010401;302010401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>26</id>
+    <originalFashionId>301020401;302020401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>27</id>
+    <originalFashionId>301030401;302030401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>28</id>
+    <originalFashionId>301040401;302040401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>29</id>
+    <originalFashionId>301050401;302050401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>30</id>
+    <originalFashionId>301060401;302060401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>71</id>
+    <originalFashionId>301070401;302070401</originalFashionId>
+    <url>zhuanlun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>31</id>
+    <originalFashionId>301011101;302011101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>32</id>
+    <originalFashionId>301021101;302021101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>33</id>
+    <originalFashionId>301031101;302031101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>34</id>
+    <originalFashionId>301041101;302041101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>35</id>
+    <originalFashionId>301051101;302051101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>36</id>
+    <originalFashionId>301061101;302061101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>72</id>
+    <originalFashionId>301071101;302071101</originalFashionId>
+    <url>jijiaV1</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>37</id>
+    <originalFashionId>301010001;302010001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>38</id>
+    <originalFashionId>301020001;302020001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>39</id>
+    <originalFashionId>301030001;302030001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>40</id>
+    <originalFashionId>301040001;302040001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>41</id>
+    <originalFashionId>301050001;302050001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>42</id>
+    <originalFashionId>301060001;302060001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>73</id>
+    <originalFashionId>301070001;302070001</originalFashionId>
+    <url>erlang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>43</id>
+    <originalFashionId>301010101;302010101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>44</id>
+    <originalFashionId>301020101;302020101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>45</id>
+    <originalFashionId>301030101;302030101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>46</id>
+    <originalFashionId>301040101;302040101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>47</id>
+    <originalFashionId>301050101;302050101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>48</id>
+    <originalFashionId>301060101;302060101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>74</id>
+    <originalFashionId>301070101;302070101</originalFashionId>
+    <url>shaonian</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>49</id>
+    <originalFashionId>301011701;302011701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>50</id>
+    <originalFashionId>301021701;302021701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>51</id>
+    <originalFashionId>301031701;302031701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>52</id>
+    <originalFashionId>301041701;302041701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>53</id>
+    <originalFashionId>301051701;302051701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>54</id>
+    <originalFashionId>301061701;302061701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>75</id>
+    <originalFashionId>301071701;302071701</originalFashionId>
+    <url>youming</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>55</id>
+    <originalFashionId>301010601;302010601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>56</id>
+    <originalFashionId>301020601;302020601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>57</id>
+    <originalFashionId>301030601;302030601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>58</id>
+    <originalFashionId>301040601;302040601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>59</id>
+    <originalFashionId>301050601;302050601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>60</id>
+    <originalFashionId>301060601;302060601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>76</id>
+    <originalFashionId>301070601;302070601</originalFashionId>
+    <url>shengdan</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>61</id>
+    <originalFashionId>301011801;302011801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>62</id>
+    <originalFashionId>301021801;302021801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>63</id>
+    <originalFashionId>301031801;302031801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>64</id>
+    <originalFashionId>301041801;302041801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>65</id>
+    <originalFashionId>301051801;302051801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>66</id>
+    <originalFashionId>301061801;302061801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>77</id>
+    <originalFashionId>301071801;302071801</originalFashionId>
+    <url>yinYang</url>
+    <quality_4_url>yinYang_Jin</quality_4_url>
+  </RECORD>
+  <RECORD>
+    <id>78</id>
+    <originalFashionId>301012101;302012101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>79</id>
+    <originalFashionId>301022101;302022101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>80</id>
+    <originalFashionId>301032101;302032101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>81</id>
+    <originalFashionId>301042101;302042101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>82</id>
+    <originalFashionId>301052101;302052101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>83</id>
+    <originalFashionId>301062101;302062101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>84</id>
+    <originalFashionId>301072101;302072101</originalFashionId>
+    <url>dunhuang</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>85</id>
+    <originalFashionId>301012201;302012201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>86</id>
+    <originalFashionId>301022201;302022201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>87</id>
+    <originalFashionId>301032201;302032201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>88</id>
+    <originalFashionId>301042201;302042201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>89</id>
+    <originalFashionId>301052201;302052201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>90</id>
+    <originalFashionId>301062201;302062201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+  <RECORD>
+    <id>91</id>
+    <originalFashionId>301072201;302072201</originalFashionId>
+    <url>hongyun</url>
+    <quality_4_url />
+  </RECORD>
+</RECORDS>

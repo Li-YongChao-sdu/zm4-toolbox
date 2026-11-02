@@ -1,0 +1,3024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>40101</id>
+    <must>101,25</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>温泉奖励25点体力</text>
+  </RECORD>
+  <RECORD>
+    <id>50001</id>
+    <must>5001,1</must>
+    <public_reward>2000;2001;2002;2003;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019</public_reward>
+    <appear>100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100;100</appear>
+    <max>4</max>
+    <text>回血+物品三选一（篝火）</text>
+  </RECORD>
+  <RECORD>
+    <id>50031</id>
+    <must>-1</must>
+    <public_reward>1011</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>天梵净莲</text>
+  </RECORD>
+  <RECORD>
+    <id>50032</id>
+    <must>-1</must>
+    <public_reward>1012</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>50033</id>
+    <must>-1</must>
+    <public_reward>1013</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得通灵扳指</text>
+  </RECORD>
+  <RECORD>
+    <id>50041</id>
+    <must>-1</must>
+    <public_reward>1014</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50042</id>
+    <must>-1</must>
+    <public_reward>1015</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得番天印</text>
+  </RECORD>
+  <RECORD>
+    <id>50051</id>
+    <must>-1</must>
+    <public_reward>1016</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得致盲</text>
+  </RECORD>
+  <RECORD>
+    <id>50052</id>
+    <must>-1</must>
+    <public_reward>1017</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得火之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50053</id>
+    <must>-1</must>
+    <public_reward>1018</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得时空之轮</text>
+  </RECORD>
+  <RECORD>
+    <id>50054</id>
+    <must>-1</must>
+    <public_reward>1019</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>50061</id>
+    <must>-1</must>
+    <public_reward>1020</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得暗之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50062</id>
+    <must>-1</must>
+    <public_reward>1021</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得头晕目眩</text>
+  </RECORD>
+  <RECORD>
+    <id>50063</id>
+    <must>-1</must>
+    <public_reward>1022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得卸甲</text>
+  </RECORD>
+  <RECORD>
+    <id>50071</id>
+    <must>-1</must>
+    <public_reward>1023</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50072</id>
+    <must>-1</must>
+    <public_reward>1011</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得遁形袍</text>
+  </RECORD>
+  <RECORD>
+    <id>50081</id>
+    <must>-1</must>
+    <public_reward>1012</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50082</id>
+    <must>-1</must>
+    <public_reward>1013</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50083</id>
+    <must>-1</must>
+    <public_reward>1014</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得点睛玉扣</text>
+  </RECORD>
+  <RECORD>
+    <id>50084</id>
+    <must>-1</must>
+    <public_reward>1015</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得欧鳇手镯</text>
+  </RECORD>
+  <RECORD>
+    <id>50091</id>
+    <must>-1</must>
+    <public_reward>1016</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>50092</id>
+    <must>-1</must>
+    <public_reward>1017</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50101</id>
+    <must>-1</must>
+    <public_reward>1018</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得时空之轮</text>
+  </RECORD>
+  <RECORD>
+    <id>50102</id>
+    <must>-1</must>
+    <public_reward>1019</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50103</id>
+    <must>-1</must>
+    <public_reward>1020</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得会神珠</text>
+  </RECORD>
+  <RECORD>
+    <id>50104</id>
+    <must>-1</must>
+    <public_reward>1021</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>50111</id>
+    <must>-1</must>
+    <public_reward>1022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50112</id>
+    <must>-1</must>
+    <public_reward>1023</public_reward>
+    <appear>100;100</appear>
+    <max>1</max>
+    <text>星币-20，体力-25</text>
+  </RECORD>
+  <RECORD>
+    <id>50113</id>
+    <must>-1</must>
+    <public_reward>1011</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得宣花坠</text>
+  </RECORD>
+  <RECORD>
+    <id>50114</id>
+    <must>-1</must>
+    <public_reward>1012</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得馒头</text>
+  </RECORD>
+  <RECORD>
+    <id>50121</id>
+    <must>-1</must>
+    <public_reward>1013</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力+30</text>
+  </RECORD>
+  <RECORD>
+    <id>50122</id>
+    <must>-1</must>
+    <public_reward>1014</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得头晕目眩</text>
+  </RECORD>
+  <RECORD>
+    <id>50123</id>
+    <must>-1</must>
+    <public_reward>1015</public_reward>
+    <appear />
+    <max>1</max>
+    <text>获得木之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50131</id>
+    <must>-1</must>
+    <public_reward>1016</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得速度魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>50132</id>
+    <must>-1</must>
+    <public_reward>1017</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50133</id>
+    <must>-1</must>
+    <public_reward>1018</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>50134</id>
+    <must>-1</must>
+    <public_reward>1019</public_reward>
+    <appear />
+    <max>1</max>
+    <text>获得会神珠</text>
+  </RECORD>
+  <RECORD>
+    <id>50141</id>
+    <must>-1</must>
+    <public_reward>1020</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50142</id>
+    <must>-1</must>
+    <public_reward>1021</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50143</id>
+    <must>-1</must>
+    <public_reward>1022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得三个馒头</text>
+  </RECORD>
+  <RECORD>
+    <id>50152</id>
+    <must>-1</must>
+    <public_reward>1023</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>50153</id>
+    <must>-1</must>
+    <public_reward>1011</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得欧鳇手镯</text>
+  </RECORD>
+  <RECORD>
+    <id>50161</id>
+    <must>-1</must>
+    <public_reward>1012</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>50162</id>
+    <must>-1</must>
+    <public_reward>1013</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得火之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50163</id>
+    <must>-1</must>
+    <public_reward>1014</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50171</id>
+    <must>-1</must>
+    <public_reward>1015</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50172</id>
+    <must>-1</must>
+    <public_reward>1016</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得暗之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50181</id>
+    <must>-1</must>
+    <public_reward>1017</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得土之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50182</id>
+    <must>-1</must>
+    <public_reward>1018</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得天梵净莲</text>
+  </RECORD>
+  <RECORD>
+    <id>50183</id>
+    <must>-1</must>
+    <public_reward>1019</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得水之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50191</id>
+    <must>-1</must>
+    <public_reward>1020</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>50192</id>
+    <must>-1</must>
+    <public_reward>1021</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50193</id>
+    <must>-1</must>
+    <public_reward>1022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>50201</id>
+    <must>-1</must>
+    <public_reward>1023</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得黄金甲</text>
+  </RECORD>
+  <RECORD>
+    <id>50202</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>获得如意金箍棒，九环锡杖，干将莫邪，幻灭枪，上宝沁金钯，玲珑玉，好运铃铛</text>
+  </RECORD>
+  <RECORD>
+    <id>50203</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>获得锁子黄金甲，锦襕袈裟，软烟罗锦，天甲，顽石金刚，地煞灵戒，相思结</text>
+  </RECORD>
+  <RECORD>
+    <id>50211</id>
+    <must>-1</must>
+    <public_reward>10010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得水之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>50212</id>
+    <must>-1</must>
+    <public_reward>1008</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>50213</id>
+    <must>-1</must>
+    <public_reward>10019;6001</public_reward>
+    <appear>100;100</appear>
+    <max>1</max>
+    <text>获得风雷旗，体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50221</id>
+    <must>-1</must>
+    <public_reward>10041</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得遁形袍</text>
+  </RECORD>
+  <RECORD>
+    <id>50222</id>
+    <must>-1</must>
+    <public_reward>1003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得卸甲</text>
+  </RECORD>
+  <RECORD>
+    <id>50223</id>
+    <must>-1</must>
+    <public_reward>10018</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得会神珠</text>
+  </RECORD>
+  <RECORD>
+    <id>50232</id>
+    <must>-1</must>
+    <public_reward>7003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+100</text>
+  </RECORD>
+  <RECORD>
+    <id>50233</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50241</id>
+    <must>-1</must>
+    <public_reward>6001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50242</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>50243</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50251</id>
+    <must>-1</must>
+    <public_reward>1000</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得致盲</text>
+  </RECORD>
+  <RECORD>
+    <id>50252</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>50253</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50254</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50261</id>
+    <must>-1</must>
+    <public_reward>6001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50263</id>
+    <must>-1</must>
+    <public_reward>10024;10025;10026</public_reward>
+    <appear>100;100;100</appear>
+    <max>1</max>
+    <text>获得随机宝物*1  点睛玉扣欧鳇手镯宣花坠</text>
+  </RECORD>
+  <RECORD>
+    <id>50271</id>
+    <must>-1</must>
+    <public_reward>5001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力+10</text>
+  </RECORD>
+  <RECORD>
+    <id>50272</id>
+    <must>-1</must>
+    <public_reward>5002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力+30</text>
+  </RECORD>
+  <RECORD>
+    <id>50281</id>
+    <must>-1</must>
+    <public_reward>1006</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>50282</id>
+    <must>-1</must>
+    <public_reward>1008</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>50283</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>50291</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50293</id>
+    <must>-1</must>
+    <public_reward>1006</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>50294</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50301</id>
+    <must>-1</must>
+    <public_reward>1008</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>50302</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50303</id>
+    <must>-1</must>
+    <public_reward>10023</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得无尘靴</text>
+  </RECORD>
+  <RECORD>
+    <id>50311</id>
+    <must>-1</must>
+    <public_reward>10022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得通灵扳指</text>
+  </RECORD>
+  <RECORD>
+    <id>50313</id>
+    <must>-1</must>
+    <public_reward>10038</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得守护神石</text>
+  </RECORD>
+  <RECORD>
+    <id>50314</id>
+    <must>-1</must>
+    <public_reward>10022</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得通灵扳指</text>
+  </RECORD>
+  <RECORD>
+    <id>50321</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50322</id>
+    <must>-1</must>
+    <public_reward>6001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50323</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>50324</id>
+    <must>-1</must>
+    <public_reward>6001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50331</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>50332</id>
+    <must>-1</must>
+    <public_reward>7002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-20</text>
+  </RECORD>
+  <RECORD>
+    <id>50333</id>
+    <must>-1</must>
+    <public_reward>6001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力-10</text>
+  </RECORD>
+  <RECORD>
+    <id>50334</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>50341</id>
+    <must>-1</must>
+    <public_reward>10027</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>生命神石</text>
+  </RECORD>
+  <RECORD>
+    <id>50342</id>
+    <must>-1</must>
+    <public_reward>10029</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>攻击神石</text>
+  </RECORD>
+  <RECORD>
+    <id>50343</id>
+    <must>-1</must>
+    <public_reward>10028</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>魔法神石</text>
+  </RECORD>
+  <RECORD>
+    <id>50344</id>
+    <must>-1</must>
+    <public_reward>10032</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>回魔神石</text>
+  </RECORD>
+  <RECORD>
+    <id>50351</id>
+    <must>-1</must>
+    <public_reward>10003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>防御魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>50352</id>
+    <must>-1</must>
+    <public_reward>10001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>攻击魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>50353</id>
+    <must>-1</must>
+    <public_reward>10002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>闪避魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>50354</id>
+    <must>-1</must>
+    <public_reward>10007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>速度魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>50361</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>50362</id>
+    <must>-1</must>
+    <public_reward>7005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-300</text>
+  </RECORD>
+  <RECORD>
+    <id>50363</id>
+    <must>-1</must>
+    <public_reward>10025</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得欧鳇手镯</text>
+  </RECORD>
+  <RECORD>
+    <id>50371</id>
+    <must>-1</must>
+    <public_reward>7005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-300</text>
+  </RECORD>
+  <RECORD>
+    <id>50372</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>50373</id>
+    <must>-1</must>
+    <public_reward>10025</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得欧鳇手镯</text>
+  </RECORD>
+  <RECORD>
+    <id>50374</id>
+    <must>-1</must>
+    <public_reward>2000131;2001521;2001531;2001031;2011331;2011931;2012131;2001931;2002031;2002061</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>宠物</text>
+  </RECORD>
+  <RECORD>
+    <id>52011</id>
+    <must>-1</must>
+    <public_reward>1010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心病</text>
+  </RECORD>
+  <RECORD>
+    <id>52012</id>
+    <must>-1</must>
+    <public_reward>5003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得一堆馒头</text>
+  </RECORD>
+  <RECORD>
+    <id>52013</id>
+    <must>-1</must>
+    <public_reward>10049</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得太虚神甲</text>
+  </RECORD>
+  <RECORD>
+    <id>52021</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>52022</id>
+    <must>-1</must>
+    <public_reward>1009</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>52023</id>
+    <must>-1</must>
+    <public_reward>10064</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得阴尸雷</text>
+  </RECORD>
+  <RECORD>
+    <id>52031</id>
+    <must>-1</must>
+    <public_reward>1005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>头晕目眩</text>
+  </RECORD>
+  <RECORD>
+    <id>52032</id>
+    <must>-1</must>
+    <public_reward>10064</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>混沌珠</text>
+  </RECORD>
+  <RECORD>
+    <id>52033</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>52041</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52042</id>
+    <must>-1</must>
+    <public_reward>10010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>水之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>52051</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>52052</id>
+    <must>-1</must>
+    <public_reward>1006</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>52053</id>
+    <must>-1</must>
+    <public_reward>1005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>头晕目眩</text>
+  </RECORD>
+  <RECORD>
+    <id>52061</id>
+    <must>-1</must>
+    <public_reward>1009</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>52062</id>
+    <must>-1</must>
+    <public_reward>10044</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>青龙圣器</text>
+  </RECORD>
+  <RECORD>
+    <id>52063</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>300星斗币</text>
+  </RECORD>
+  <RECORD>
+    <id>52064</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>52071</id>
+    <must>-1</must>
+    <public_reward>10056</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>蛇杖</text>
+  </RECORD>
+  <RECORD>
+    <id>52072</id>
+    <must>-1</must>
+    <public_reward>10054</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>诛邪刺</text>
+  </RECORD>
+  <RECORD>
+    <id>52073</id>
+    <must>-1</must>
+    <public_reward>10058</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>生肌环</text>
+  </RECORD>
+  <RECORD>
+    <id>52081</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>52082</id>
+    <must>-1</must>
+    <public_reward>10067</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>紫金红葫芦</text>
+  </RECORD>
+  <RECORD>
+    <id>52083</id>
+    <must>-1</must>
+    <public_reward>10059</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>枯叶灵</text>
+  </RECORD>
+  <RECORD>
+    <id>52084</id>
+    <must>-1</must>
+    <public_reward>10047</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>渊邪</text>
+  </RECORD>
+  <RECORD>
+    <id>52091</id>
+    <must>-1</must>
+    <public_reward>10066</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>多宝瓶</text>
+  </RECORD>
+  <RECORD>
+    <id>52092</id>
+    <must>-1</must>
+    <public_reward>10068</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>玄风棕扇</text>
+  </RECORD>
+  <RECORD>
+    <id>52093</id>
+    <must>-1</must>
+    <public_reward>10061</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>截教密令</text>
+  </RECORD>
+  <RECORD>
+    <id>52094</id>
+    <must>-1</must>
+    <public_reward>10062</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>王母元牌</text>
+  </RECORD>
+  <RECORD>
+    <id>52101</id>
+    <must>-1</must>
+    <public_reward>10064</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>阴尸雷</text>
+  </RECORD>
+  <RECORD>
+    <id>52102</id>
+    <must>-1</must>
+    <public_reward>10057</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>化魔咒</text>
+  </RECORD>
+  <RECORD>
+    <id>52103</id>
+    <must>-1</must>
+    <public_reward>10063</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>玄女秘符</text>
+  </RECORD>
+  <RECORD>
+    <id>52104</id>
+    <must>-1</must>
+    <public_reward>10062</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>王母元牌</text>
+  </RECORD>
+  <RECORD>
+    <id>52112</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>烈焰天荒;正法之轮;潜蛟刃;风云仙绫;摩多屠戮耙;月华;龙魂令;月胧听风伞</text>
+  </RECORD>
+  <RECORD>
+    <id>52113</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>焚天血魔;幻影镜;回魂珠;破风罩;乾土鼎;平步青云;镇雷幡;灵犀坠</text>
+  </RECORD>
+  <RECORD>
+    <id>52114</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>太虚神甲；旃檀；太虚神甲；太虚神甲；太虚神甲</text>
+  </RECORD>
+  <RECORD>
+    <id>52121</id>
+    <must>-1</must>
+    <public_reward>10052</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>牛魔鼻环</text>
+  </RECORD>
+  <RECORD>
+    <id>52122</id>
+    <must>-1</must>
+    <public_reward>10053</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>牛魔披风</text>
+  </RECORD>
+  <RECORD>
+    <id>52123</id>
+    <must>-1</must>
+    <public_reward>10050</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>火凰翎</text>
+  </RECORD>
+  <RECORD>
+    <id>52124</id>
+    <must>-1</must>
+    <public_reward>10048</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>万里翼</text>
+  </RECORD>
+  <RECORD>
+    <id>52131</id>
+    <must>-1</must>
+    <public_reward>1010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心病</text>
+  </RECORD>
+  <RECORD>
+    <id>52132</id>
+    <must>-1</must>
+    <public_reward />
+    <appear />
+    <max>1</max>
+    <text>焚天血魔球;正法之轮;龙影扣;破风罩;乾土鼎;平步青云;镇雷幡;灵犀坠</text>
+  </RECORD>
+  <RECORD>
+    <id>52133</id>
+    <must>-1</must>
+    <public_reward>10055</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>毒蟾甲</text>
+  </RECORD>
+  <RECORD>
+    <id>52134</id>
+    <must>-1</must>
+    <public_reward>10060</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>两仪伞骨</text>
+  </RECORD>
+  <RECORD>
+    <id>52141</id>
+    <must>-1</must>
+    <public_reward>10027</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>【生命神石】</text>
+  </RECORD>
+  <RECORD>
+    <id>52142</id>
+    <must>-1</must>
+    <public_reward>10028</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>【攻击神石】</text>
+  </RECORD>
+  <RECORD>
+    <id>52143</id>
+    <must>-1</must>
+    <public_reward>10029</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>【魔法神石】</text>
+  </RECORD>
+  <RECORD>
+    <id>52144</id>
+    <must>-1</must>
+    <public_reward>10033</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>【命中神石】</text>
+  </RECORD>
+  <RECORD>
+    <id>52151</id>
+    <must>-1</must>
+    <public_reward>1010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心病</text>
+  </RECORD>
+  <RECORD>
+    <id>52152</id>
+    <must>-1</must>
+    <public_reward>7003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52153</id>
+    <must>-1</must>
+    <public_reward>1003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得心病</text>
+  </RECORD>
+  <RECORD>
+    <id>52161</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52162</id>
+    <must>-1</must>
+    <public_reward>7005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-300</text>
+  </RECORD>
+  <RECORD>
+    <id>52163</id>
+    <must>-1</must>
+    <public_reward>5003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>一堆馒头</text>
+  </RECORD>
+  <RECORD>
+    <id>52164</id>
+    <must>-1</must>
+    <public_reward>10008</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>蛮力魔石</text>
+  </RECORD>
+  <RECORD>
+    <id>52171</id>
+    <must>-1</must>
+    <public_reward>1000</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>致盲</text>
+  </RECORD>
+  <RECORD>
+    <id>52172</id>
+    <must>-1</must>
+    <public_reward>10065</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>多智青莲</text>
+  </RECORD>
+  <RECORD>
+    <id>52173</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52181</id>
+    <must>-1</must>
+    <public_reward>10015</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>雷之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>52182</id>
+    <must>-1</must>
+    <public_reward>10010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>水之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>52183</id>
+    <must>-1</must>
+    <public_reward>10011</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>火之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>52184</id>
+    <must>-1</must>
+    <public_reward>10014</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>风之玉</text>
+  </RECORD>
+  <RECORD>
+    <id>52191</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>52192</id>
+    <must>-1</must>
+    <public_reward>1006</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>52193</id>
+    <must>-1</must>
+    <public_reward>1009</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>52201</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>52202</id>
+    <must>-1</must>
+    <public_reward>10061</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>截教密令</text>
+  </RECORD>
+  <RECORD>
+    <id>52211</id>
+    <must>-1</must>
+    <public_reward>10059</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>枯叶灵</text>
+  </RECORD>
+  <RECORD>
+    <id>52212</id>
+    <must>-1</must>
+    <public_reward>10065</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>多智青莲</text>
+  </RECORD>
+  <RECORD>
+    <id>52221</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52222</id>
+    <must>-1</must>
+    <public_reward>7003</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+200</text>
+  </RECORD>
+  <RECORD>
+    <id>52231</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币+300</text>
+  </RECORD>
+  <RECORD>
+    <id>52232</id>
+    <must>-1</must>
+    <public_reward>7005</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>星币-300</text>
+  </RECORD>
+  <RECORD>
+    <id>53011</id>
+    <must>-1</must>
+    <public_reward>10071</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得如意</text>
+  </RECORD>
+  <RECORD>
+    <id>53012</id>
+    <must>-1</must>
+    <public_reward>1000</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>致盲</text>
+  </RECORD>
+  <RECORD>
+    <id>53013</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>53021</id>
+    <must>-1</must>
+    <public_reward>1010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>心病</text>
+  </RECORD>
+  <RECORD>
+    <id>53022</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>53024</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>53031</id>
+    <must>-1</must>
+    <public_reward>10075</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>破幻花链</text>
+  </RECORD>
+  <RECORD>
+    <id>53032</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>53033</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得星斗币300</text>
+  </RECORD>
+  <RECORD>
+    <id>53041</id>
+    <must>-1</must>
+    <public_reward>1004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得迟缓</text>
+  </RECORD>
+  <RECORD>
+    <id>53043</id>
+    <must>-1</must>
+    <public_reward>1009</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得混乱</text>
+  </RECORD>
+  <RECORD>
+    <id>53051</id>
+    <must>-1</must>
+    <public_reward>10080</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>破风石</text>
+  </RECORD>
+  <RECORD>
+    <id>53052</id>
+    <must>-1</must>
+    <public_reward>10070</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得噬魂</text>
+  </RECORD>
+  <RECORD>
+    <id>53053</id>
+    <must>-1</must>
+    <public_reward>10069</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>杏黄旗</text>
+  </RECORD>
+  <RECORD>
+    <id>53061</id>
+    <must>-1</must>
+    <public_reward>7004</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>获得星斗币300</text>
+  </RECORD>
+  <RECORD>
+    <id>53062</id>
+    <must>-1</must>
+    <public_reward>1008</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>顿悟</text>
+  </RECORD>
+  <RECORD>
+    <id>53063</id>
+    <must>-1</must>
+    <public_reward>10079</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>寒月</text>
+  </RECORD>
+  <RECORD>
+    <id>53072</id>
+    <must>-1</must>
+    <public_reward>1001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>力竭</text>
+  </RECORD>
+  <RECORD>
+    <id>53073</id>
+    <must>-1</must>
+    <public_reward>1006</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>中毒</text>
+  </RECORD>
+  <RECORD>
+    <id>53081</id>
+    <must>-1</must>
+    <public_reward>1007</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>心碎</text>
+  </RECORD>
+  <RECORD>
+    <id>53082</id>
+    <must>-1</must>
+    <public_reward>10073</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>地魁花篮</text>
+  </RECORD>
+  <RECORD>
+    <id>53083</id>
+    <must>-1</must>
+    <public_reward>1010</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>心病</text>
+  </RECORD>
+  <RECORD>
+    <id>53091</id>
+    <must>-1</must>
+    <public_reward>10076</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>混元珍珠伞</text>
+  </RECORD>
+  <RECORD>
+    <id>53092</id>
+    <must>-1</must>
+    <public_reward>10082</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>风廉羽扇</text>
+  </RECORD>
+  <RECORD>
+    <id>53093</id>
+    <must>-1</must>
+    <public_reward>1002</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>诅咒</text>
+  </RECORD>
+  <RECORD>
+    <id>53132</id>
+    <must>-1</must>
+    <public_reward>10087</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>灵花葫芦</text>
+  </RECORD>
+  <RECORD>
+    <id>53133</id>
+    <must>-1</must>
+    <public_reward>10072</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>水玲珑</text>
+  </RECORD>
+  <RECORD>
+    <id>53141</id>
+    <must>-1</must>
+    <public_reward>10088</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>青龙剑</text>
+  </RECORD>
+  <RECORD>
+    <id>53142</id>
+    <must>-1</must>
+    <public_reward>10074</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>苍穹号角</text>
+  </RECORD>
+  <RECORD>
+    <id>53143</id>
+    <must>-1</must>
+    <public_reward>10085</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>混沌邪器</text>
+  </RECORD>
+  <RECORD>
+    <id>53151</id>
+    <must>-1</must>
+    <public_reward>5001</public_reward>
+    <appear>100</appear>
+    <max>1</max>
+    <text>体力+30</text>
+  </RECORD>
+  <RECORD>
+    <id>60101</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-1层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60102</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-1层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60103</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-1层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60201</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-2层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60202</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-2层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60203</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-2层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60301</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-3层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60302</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-3层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60303</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-3层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60401</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-4层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60402</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-4层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60403</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-4层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60501</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-5层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60502</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-5层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60503</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-5层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60651</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008;
+10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-6层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60652</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008;
+10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-6层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60653</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008;
+10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-6层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60654</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008;
+10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>白骨精专属</text>
+  </RECORD>
+  <RECORD>
+    <id>60701</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-7层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60702</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-7层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60703</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-7层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60801</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60802</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60803</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>60851</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>60852</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>60853</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601001</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016; 10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-10层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601002</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016; 10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-10层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601003</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016; 10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>小怪-10层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601051</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-10层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601052</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-10层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601053</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-10层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601101</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-11层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601102</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-11层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601103</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-11层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601201</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-12层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601202</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-12层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601203</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-12层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601301</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-13层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601302</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-13层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601303</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-13层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601401</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-14层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601402</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-14层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601403</id>
+    <must>-1</must>
+    <public_reward>10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008;
+5001;5002;5003</public_reward>
+    <appear>110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110;
+439;146;88</appear>
+    <max>1</max>
+    <text>小怪-14层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601451</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-14层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601452</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-14层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601453</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>精英-14层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>601601</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95
+</appear>
+    <max>1</max>
+    <text>BOSS-16层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>601602</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95
+</appear>
+    <max>1</max>
+    <text>BOSS-16层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>601603</id>
+    <must>-1</must>
+    <public_reward>10001;10002;10003;10004;10005;10006;10007;10008; 10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068</public_reward>
+    <appear>110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95
+</appear>
+    <max>1</max>
+    <text>BOSS-16层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62101</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-1层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62102</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-1层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62103</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-1层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62201</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-2层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62202</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-2层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62203</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-2层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62301</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-3层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62302</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-3层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62303</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-3层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62401</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-4层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62402</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-4层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62403</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-4层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62501</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-5层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62502</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-5层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62503</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-5层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62601</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-6层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62602</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-6层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62603</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-6层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62701</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-7层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62702</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-7层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62703</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-7层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62801</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008
+</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62802</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008
+</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62803</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008
+</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+137;137;137;137;137;137;137;137; 110;110;110;110;110;110;110;110;110;110;110;110;
+110;110;110;110;110;110;110;110</appear>
+    <max>1</max>
+    <text>第2大层-小怪-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>62811</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>第2大层-精英-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>62812</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>第2大层-精英-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>62813</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27</appear>
+    <max>1</max>
+    <text>第2大层-精英-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>621001</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008;
+10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+45;48;44;88;50;81;75;66;0;55;26;23;35;30;48;53;50;44;50;38</appear>
+    <max>1</max>
+    <text>BOSS-10层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>621002</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008;
+10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+45;48;44;88;50;81;75;66;0;55;26;23;35;30;48;53;50;44;50;38</appear>
+    <max>1</max>
+    <text>BOSS-10层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>621003</id>
+    <must>-1</must>
+    <public_reward>10017;10018;10019;10020;10021;10022;10023;10024;10025;10026;10039;10040;10041;10042;10043;10044;10045;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008;
+10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088</public_reward>
+    <appear>137;110;122;91;110;110;61;183;91;91;55;73;110;18;44;44;27;
+43;142;95;107;107;85;71;57;66;142;57;43;43;43;21;21;21;57;107;85;95;95;
+110;110;110;110;110;110;110;110;
+45;48;44;88;50;81;75;66;0;55;26;23;35;30;48;53;50;44;50;38</appear>
+    <max>1</max>
+    <text>BOSS-10层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63101</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-1层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63102</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-1层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63103</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-1层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63201</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-2层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63202</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-2层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63203</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-2层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63301</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-3层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63302</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-3层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63303</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-3层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63401</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-4层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63402</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-4层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63403</id>
+    <must>-1</must>
+    <public_reward>10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038</public_reward>
+    <appear>132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105</appear>
+    <max>1</max>
+    <text>第3大层-小怪-4层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63501</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-5层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63502</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-5层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63503</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-5层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63601</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-6层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63602</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-6层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63603</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-6层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63701</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-7层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63702</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-7层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63703</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-7层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63801</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63802</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63803</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10009;10010;10011;10012;10013;10014;10015;10016;
+10027;10028;10029;10030;10031;10032;10033;10034;10035;10036;10037;10038;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+132;132;132;132;132;132;132;132;
+105;105;105;105;105;105;105;105;105;105;105;105;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-小怪-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>63811</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-精英-8层-A类</text>
+  </RECORD>
+  <RECORD>
+    <id>63812</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-精英-8层-B类</text>
+  </RECORD>
+  <RECORD>
+    <id>63813</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>第3大层-精英-8层-C类</text>
+  </RECORD>
+  <RECORD>
+    <id>631001</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>BOSS-10层-A类-第3大层</text>
+  </RECORD>
+  <RECORD>
+    <id>631002</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>BOSS-10层-B类-第3大层</text>
+  </RECORD>
+  <RECORD>
+    <id>631003</id>
+    <must>-1</must>
+    <public_reward>10042;10043;10044;10045;10069;10070;10071;10073;10075;10076;10077;10079;10081;10082;10083;10084;10085;10086;10087;10072;10074;10078;10080;10088;
+10047;10048;10049;10050;10051;10052;10053;10054;10055;10056;10057;10058;10059;10060;10061;10062;10063;10064;10065;10066;10067;10068;
+10001;10002;10003;10004;10005;10006;10007;10008</public_reward>
+    <appear>23;42;42;26;45;48;44;88;50;81;75;66;28;55;26;23;35;30;48;53;50;44;50;38;
+53;176;117;132;132;105;88;70;81;176;70;53;53;53;26;26;26;70;132;105;117;117;
+105;105;105;105;105;105;105;105
+
+</appear>
+    <max>1</max>
+    <text>BOSS-10层-C类-第3大层</text>
+  </RECORD>
+</RECORDS>

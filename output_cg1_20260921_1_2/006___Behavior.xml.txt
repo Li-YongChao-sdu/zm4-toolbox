@@ -1,0 +1,1547 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+
+<!-- 巡逻流程 -->
+<RECORD>
+	<id>1</id>
+	<name>Patrol</name>
+	<type>sel</type>
+</RECORD>
+
+<!-- 追踪流程 -->
+<RECORD>
+	<id>2</id>
+	<name>Seek</name>
+	<type>sel</type>
+</RECORD>
+
+<!-- 顺序攻击流程 -->
+<RECORD>
+	<id>3</id>
+	<name>AttackSeq</name>
+	<type>seq</type>
+</RECORD>
+
+<!-- 逃跑流程 -->
+<RECORD>
+	<id>4</id>
+	<name>Flee</name>
+	<type>sel</type>
+</RECORD>
+
+<!-- 选择首个符号条件的攻击流程 -->
+<RECORD>
+	<id>5</id>
+	<name>AttackSel</name>
+	<type>sel</type>
+</RECORD>
+
+<!-- 随机取个节点 -->
+<RECORD>
+	<id>6</id>
+	<name>RandChild</name>
+	<value></value>
+	<type>sel</type>
+</RECORD>
+
+<!-- 没有受到攻击 -->
+<RECORD>
+	<id>101</id>
+	<name>GetHurting</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 巡逻视野内没有敌人 -->
+<RECORD>
+	<id>102</id>
+	<name>GetManOnView</name>
+	<type>con</type>
+</RECORD>
+
+<!--是否能释放技能-->
+<RECORD>
+	<id>103</id>
+	<name>GetCanSkill</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 在攻击1范围内 -->
+<RECORD>
+	<id>1031</id>
+	<name>GetInAttack1Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 在攻击2范围内 -->
+<RECORD>
+	<id>1032</id>
+	<name>GetInAttack2Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 在攻击3范围内 -->
+<RECORD>
+	<id>1033</id>
+	<name>GetInAttack3Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 在攻击4范围内 -->
+<RECORD>
+	<id>1034</id>
+	<name>GetInAttack4Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若技能1在攻击范围内 -->
+<RECORD>
+	<id>1041</id>
+	<name>GetInSkill1Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若技能2在攻击范围内 -->
+<RECORD>
+	<id>1042</id>
+	<name>GetInSkill2Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若技能3在攻击范围内 -->
+<RECORD>
+	<id>1043</id>
+	<name>GetInSkill3Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若技能4在攻击范围内 -->
+<RECORD>
+	<id>1044</id>
+	<name>GetInSkill4Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若技能5在攻击范围内 -->
+<RECORD>
+	<id>1045</id>
+	<name>GetInSkill5Range</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 若奥义在攻击范围内 -->
+<RECORD>
+	<id>1049</id>
+	<name>GetInAoyiSkillRange</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 敌人出现在追踪范围内 -->
+<RECORD>
+	<id>105</id>
+	<name>GetInSeekRange</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 不在攻击中 -->
+<RECORD>
+	<id>106</id>
+	<name>GetNoAttacking</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 没有威胁（无仇恨目标） -->
+<RECORD>
+	<id>107</id>
+	<name>GetNoThreat</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 有威胁（有仇恨目标） -->
+<RECORD>
+	<id>108</id>
+	<name>GetHasThreat</name>
+	<type>con</type>
+</RECORD>
+
+<!-- 生命范围在0%-1% -->
+<RECORD>
+	<id>109000001</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.01</value>
+</RECORD>
+
+<!-- 生命范围在1%-50% -->
+<RECORD>
+	<id>109001050</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.01,0.5</value>
+</RECORD>
+
+<!-- 生命范围在0%-50% -->
+<RECORD>
+	<id>109000050</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.5</value>
+</RECORD>
+
+<!-- 生命范围在50%-100% -->
+<RECORD>
+	<id>109050100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.5,1</value>
+</RECORD>
+
+<!-- 生命范围在50%-75% -->
+<RECORD>
+	<id>109050075</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.5,0.75</value>
+</RECORD>
+
+<!-- 生命范围在50%-90% -->
+<RECORD>
+	<id>109050090</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.5,0.9</value>
+</RECORD>
+
+<!-- 生命范围在70%-80% -->
+<RECORD>
+	<id>109070080</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.7,0.8</value>
+</RECORD>
+
+<!-- 生命范围在80%-90% -->
+<RECORD>
+	<id>109080090</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.8,0.9</value>
+</RECORD>
+
+<!-- 生命范围在85%-100% -->
+<RECORD>
+	<id>109085100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.85,1</value>
+</RECORD>
+
+<!-- 生命范围在0%-70% -->
+<RECORD>
+	<id>109000070</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.7</value>
+</RECORD>
+
+<!-- 生命范围在0%-75% -->
+<RECORD>
+	<id>109000075</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.75</value>
+</RECORD>
+
+<!-- 生命范围在0%-80% -->
+<RECORD>
+	<id>109000080</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.8</value>
+</RECORD>
+
+<!-- 生命范围在0%-85% -->
+<RECORD>
+	<id>109000085</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.85</value>
+</RECORD>
+
+<!-- 生命范围在50%-85% -->
+<RECORD>
+	<id>109050085</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.5,0.85</value>
+</RECORD>
+
+<!-- 生命范围在0%-99% -->
+<RECORD>
+	<id>109000099</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.99</value>
+</RECORD>
+
+<!-- 生命范围在0%-90% -->
+<RECORD>
+	<id>109000090</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.90</value>
+</RECORD>
+
+<!-- 生命范围在0%-95% -->
+<RECORD>
+	<id>109000095</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.95</value>
+</RECORD>
+
+<!-- 生命范围在0%-66% -->
+<RECORD>
+	<id>109000066</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.66</value>
+</RECORD>
+
+<!-- 生命范围在66%-100% -->
+<RECORD>
+	<id>109066100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.66,1</value>
+</RECORD>
+
+<!-- 生命范围在33%-66% -->
+<RECORD>
+	<id>109033066</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.33,0.66</value>
+</RECORD>
+
+<!-- 生命范围在0%-33% -->
+<RECORD>
+	<id>109000033</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.33</value>
+</RECORD>
+
+<!-- 生命范围在0%-20% -->
+<RECORD>
+	<id>109000020</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.2</value>
+</RECORD>
+
+<!-- 生命范围在20%-100% -->
+<RECORD>
+	<id>109020100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.2,1</value>
+</RECORD>
+
+<!-- 生命范围在90%-100% -->
+<RECORD>
+	<id>109090100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.9,1.1</value>
+</RECORD>
+
+<!-- 生命范围在0%-100% -->
+<RECORD>
+	<id>109000100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,1</value>
+</RECORD>
+
+<!-- 生命范围在70%-100% -->
+<RECORD>
+	<id>109070100</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.7,1</value>
+</RECORD>
+
+<!-- 生命范围在35%-70% -->
+<RECORD>
+	<id>109035070</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0.35,0.7</value>
+</RECORD>
+
+<!-- 生命范围在0%-35% -->
+<RECORD>
+	<id>109000035</id>
+	<name>GetHp</name>
+	<type>con</type>
+	<value>0,0.35</value>
+</RECORD>
+
+<!-- 技能冷却1000毫秒 -->
+<RECORD>
+	<id>111001</id>
+	<name>GetAttCD</name>
+	<value>1000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却2000毫秒 -->
+<RECORD>
+	<id>111002</id>
+	<name>GetAttCD</name>
+	<value>2000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却2500毫秒 -->
+<RECORD>
+	<id>1110025</id>
+	<name>GetAttCD</name>
+	<value>2500</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却3000毫秒 -->
+<RECORD>
+	<id>111003</id>
+	<name>GetAttCD</name>
+	<value>3000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却4000毫秒 -->
+<RECORD>
+	<id>111004</id>
+	<name>GetAttCD</name>
+	<value>4000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却5000毫秒 -->
+<RECORD>
+	<id>111005</id>
+	<name>GetAttCD</name>
+	<value>5000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却6000毫秒 -->
+<RECORD>
+	<id>111006</id>
+	<name>GetAttCD</name>
+	<value>6000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却7000毫秒 -->
+<RECORD>
+	<id>111007</id>
+	<name>GetAttCD</name>
+	<value>7000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却8000毫秒 -->
+<RECORD>
+	<id>111008</id>
+	<name>GetAttCD</name>
+	<value>8000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却9000毫秒 -->
+<RECORD>
+	<id>111009</id>
+	<name>GetAttCD</name>
+	<value>9000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却10000毫秒 -->
+<RECORD>
+	<id>111010</id>
+	<name>GetAttCD</name>
+	<value>10000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却12000毫秒 -->
+<RECORD>
+	<id>111012</id>
+	<name>GetAttCD</name>
+	<value>12000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却13000毫秒 -->
+<RECORD>
+	<id>111013</id>
+	<name>GetAttCD</name>
+	<value>13000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却15000毫秒 -->
+<RECORD>
+	<id>111015</id>
+	<name>GetAttCD</name>
+	<value>15000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却17000毫秒 -->
+<RECORD>
+	<id>111017</id>
+	<name>GetAttCD</name>
+	<value>17000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却18000毫秒 -->
+<RECORD>
+	<id>111018</id>
+	<name>GetAttCD</name>
+	<value>18000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却20000毫秒 -->
+<RECORD>
+	<id>111020</id>
+	<name>GetAttCD</name>
+	<value>20000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却22000毫秒 -->
+<RECORD>
+	<id>111022</id>
+	<name>GetAttCD</name>
+	<value>22000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却24000毫秒 -->
+<RECORD>
+	<id>111024</id>
+	<name>GetAttCD</name>
+	<value>24000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却25000毫秒 -->
+<RECORD>
+	<id>111025</id>
+	<name>GetAttCD</name>
+	<value>25000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却30000毫秒 -->
+<RECORD>
+	<id>111030</id>
+	<name>GetAttCD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却35000毫秒 -->
+<RECORD>
+	<id>111035</id>
+	<name>GetAttCD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却40000毫秒 -->
+<RECORD>
+	<id>111040</id>
+	<name>GetAttCD</name>
+	<value>40000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却45000毫秒 -->
+<RECORD>
+	<id>111045</id>
+	<name>GetAttCD</name>
+	<value>45000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却50000毫秒 -->
+<RECORD>
+	<id>111050</id>
+	<name>GetAttCD</name>
+	<value>50000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却60000毫秒 -->
+<RECORD>
+	<id>111060</id>
+	<name>GetAttCD</name>
+	<value>60000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 技能冷却999000毫秒 -->
+<RECORD>
+	<id>111999</id>
+	<name>GetAttCD</name>
+	<value>999000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却7500毫秒 -->
+<RECORD>
+	<id>11210075</id>
+	<name>GetSkill1CD</name>
+	<value>7500</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却10000毫秒 -->
+<RECORD>
+	<id>1121010</id>
+	<name>GetSkill1CD</name>
+	<value>10000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却12000毫秒 -->
+<RECORD>
+	<id>1121012</id>
+	<name>GetSkill1CD</name>
+	<value>12000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却15000毫秒 -->
+<RECORD>
+	<id>1121015</id>
+	<name>GetSkill1CD</name>
+	<value>15000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却20000毫秒 -->
+<RECORD>
+	<id>1121020</id>
+	<name>GetSkill1CD</name>
+	<value>20000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能1冷却30000毫秒 -->
+<RECORD>
+	<id>1121030</id>
+	<name>GetSkill1CD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能2冷却10000毫秒 -->
+<RECORD>
+	<id>1122010</id>
+	<name>GetSkill2CD</name>
+	<value>10000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能2冷却12000毫秒 -->
+<RECORD>
+	<id>1122012</id>
+	<name>GetSkill2CD</name>
+	<value>12000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能2冷却15000毫秒 -->
+<RECORD>
+	<id>1122015</id>
+	<name>GetSkill2CD</name>
+	<value>15000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能2冷却20000毫秒 -->
+<RECORD>
+	<id>1122020</id>
+	<name>GetSkill2CD</name>
+	<value>20000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能2冷却30000毫秒 -->
+<RECORD>
+	<id>1122030</id>
+	<name>GetSkill2CD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却10000毫秒 -->
+<RECORD>
+	<id>1123010</id>
+	<name>GetSkill3CD</name>
+	<value>10000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却12000毫秒 -->
+<RECORD>
+	<id>1123012</id>
+	<name>GetSkill3CD</name>
+	<value>12000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却15000毫秒 -->
+<RECORD>
+	<id>1123015</id>
+	<name>GetSkill3CD</name>
+	<value>15000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却20000毫秒 -->
+<RECORD>
+	<id>1123020</id>
+	<name>GetSkill3CD</name>
+	<value>20000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却25000毫秒 -->
+<RECORD>
+	<id>1123025</id>
+	<name>GetSkill3CD</name>
+	<value>25000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物技能3冷却30000毫秒 -->
+<RECORD>
+	<id>1123030</id>
+	<name>GetSkill3CD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物奥义冷却30000毫秒 -->
+<RECORD>
+	<id>1131030</id>
+	<name>GetAoyiSkillCD</name>
+	<value>30000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 宠物奥义冷却60秒 -->
+<RECORD>
+	<id>1131060</id>
+	<name>GetAoyiSkillCD</name>
+	<value>60000</value>
+	<type>con</type>
+</RECORD>
+
+<!-- 不在指定区域内 -->
+<RECORD>
+	<id>114001</id>
+	<name>GetNoInWalkRectRange</name>
+	<type>con</type>
+	<value>580,100,280,390</value>
+</RECORD>
+
+<!-- 在指定区域内-右侧 -->
+<RECORD>
+	<id>115001</id>
+	<name>GetInWalkRectRange</name>
+	<type>con</type>
+	<value>580,100,280,390</value>
+</RECORD>
+
+<!-- 在指定区域内-右下侧 -->
+<RECORD>
+	<id>115002</id>
+	<name>GetInWalkRectRange</name>
+	<type>con</type>
+	<value>580,390,280,100</value>
+</RECORD>
+
+<!-- 在指定区域内-较小右侧 -->
+<RECORD>
+	<id>115101</id>
+	<name>GetInWalkRectRange</name>
+	<type>con</type>
+	<value>580,250,280,290</value>
+</RECORD>
+
+<!-- 巡逻 -->
+<RECORD>
+	<id>201</id>
+	<name>GotoPatrol</name>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.1秒 -->
+<RECORD>
+	<id>2020001</id>
+	<name>GotoWait</name>
+	<value>100</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.4秒 -->
+<RECORD>
+	<id>2020004</id>
+	<name>GotoWait</name>
+	<value>400</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.5秒 -->
+<RECORD>
+	<id>2020005</id>
+	<name>GotoWait</name>
+	<value>500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.6秒 -->
+<RECORD>
+	<id>2020006</id>
+	<name>GotoWait</name>
+	<value>600</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1秒 -->
+<RECORD>
+	<id>202001</id>
+	<name>GotoWait</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1.3秒 -->
+<RECORD>
+	<id>2020013</id>
+	<name>GotoWait</name>
+	<value>1300</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1.5秒 -->
+<RECORD>
+	<id>2020015</id>
+	<name>GotoWait</name>
+	<value>1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1.6秒 -->
+<RECORD>
+	<id>2020016</id>
+	<name>GotoWait</name>
+	<value>1600</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待2秒 -->
+<RECORD>
+	<id>202002</id>
+	<name>GotoWait</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待2.2秒 -->
+<RECORD>
+	<id>2020022</id>
+	<name>GotoWait</name>
+	<value>2200</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待2.6秒 -->
+<RECORD>
+	<id>2020026</id>
+	<name>GotoWait</name>
+	<value>2600</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待3秒 -->
+<RECORD>
+	<id>202003</id>
+	<name>GotoWait</name>
+	<value>3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待4秒 -->
+<RECORD>
+	<id>202004</id>
+	<name>GotoWait</name>
+	<value>4000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待5秒 -->
+<RECORD>
+	<id>202005</id>
+	<name>GotoWait</name>
+	<value>5000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.5-1秒 -->
+<RECORD>
+	<id>202000001</id>
+	<name>GotoWait</name>
+	<value>500,1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.5-1.2秒 -->
+<RECORD>
+	<id>20200050012</id>
+	<name>GotoWait</name>
+	<value>500,1200</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.75-1.5秒 -->
+<RECORD>
+	<id>20200070015</id>
+	<name>GotoWait</name>
+	<value>750,1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1-2秒 -->
+<RECORD>
+	<id>202001002</id>
+	<name>GotoWait</name>
+	<value>1000,2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1-1.5秒 -->
+<RECORD>
+	<id>20200100015</id>
+	<name>GotoWait</name>
+	<value>1000,1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待1-3秒 -->
+<RECORD>
+	<id>202001003</id>
+	<name>GotoWait</name>
+	<value>1000,3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待2-3秒 -->
+<RECORD>
+	<id>202002003</id>
+	<name>GotoWait</name>
+	<value>2000,3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待2-4秒 -->
+<RECORD>
+	<id>202002004</id>
+	<name>GotoWait</name>
+	<value>2000,4000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待3-4秒 -->
+<RECORD>
+	<id>202003004</id>
+	<name>GotoWait</name>
+	<value>3000,4000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待3-5秒 -->
+<RECORD>
+	<id>202003005</id>
+	<name>GotoWait</name>
+	<value>3000,5000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待3-6秒 -->
+<RECORD>
+	<id>202003006</id>
+	<name>GotoWait</name>
+	<value>3000,6000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待10-11秒 -->
+<RECORD>
+	<id>202010011</id>
+	<name>GotoWait</name>
+	<value>10000,11000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 等待0.5-2秒 -->
+<RECORD>
+	<id>202000002</id>
+	<name>GotoWait</name>
+	<value>500,2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 攻击1 -->
+<RECORD>
+	<id>2031</id>
+	<name>GotoAttack1</name>
+	<value>attack1</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 攻击2 -->
+<RECORD>
+	<id>2032</id>
+	<name>GotoAttack2</name>
+	<value>attack2</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 攻击3 -->
+<RECORD>
+	<id>2033</id>
+	<name>GotoAttack3</name>
+	<value>attack3</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 攻击4 -->
+<RECORD>
+	<id>2034</id>
+	<name>GotoAttack4</name>
+	<value>attack4</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 技能1 -->
+<RECORD>
+	<id>2041</id>
+	<name>GotoSkill1</name>
+	<value>effect1</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 技能2 -->
+<RECORD>
+	<id>2042</id>
+	<name>GotoSkill2</name>
+	<value>effect2</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 技能3 -->
+<RECORD>
+	<id>2043</id>
+	<name>GotoSkill3</name>
+	<value>effect3</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 技能4 -->
+<RECORD>
+	<id>2044</id>
+	<name>GotoSkill4</name>
+	<value>effect4</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 技能5 -->
+<RECORD>
+	<id>2045</id>
+	<name>GotoSkill5</name>
+	<value>effect5</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 奥义 -->
+<RECORD>
+	<id>2049</id>
+	<name>GotoAoyiSkill</name>
+	<value>aoyiSkill</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 追踪 -->
+<RECORD>
+	<id>205</id>
+	<name>GotoSeek</name>
+	<value>0</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 上个技能成功造成伤害后继续，否则停止 -->
+<RECORD>
+	<id>206</id>
+	<name>GotoNextWithHurt</name>
+	<value>0</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离0.5秒 -->
+<RECORD>
+	<id>2070005</id>
+	<name>GotoAway</name>
+	<value>500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1秒 -->
+<RECORD>
+	<id>207001</id>
+	<name>GotoAway</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1.5秒 -->
+<RECORD>
+	<id>2070015</id>
+	<name>GotoAway</name>
+	<value>1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离2秒 -->
+<RECORD>
+	<id>207002</id>
+	<name>GotoAway</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离3秒 -->
+<RECORD>
+	<id>207003</id>
+	<name>GotoAway</name>
+	<value>3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离0.5-0.75秒 -->
+<RECORD>
+	<id>2070000007</id>
+	<name>GotoAway</name>
+	<value>500,750</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离0.5-1秒 -->
+<RECORD>
+	<id>207000001</id>
+	<name>GotoAway</name>
+	<value>500,1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离0.5-1.2秒 -->
+<RECORD>
+	<id>20700050012</id>
+	<name>GotoAway</name>
+	<value>500,1200</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离0.75-1.5秒 -->
+<RECORD>
+	<id>20700070015</id>
+	<name>GotoAway</name>
+	<value>750,1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1.5-2秒 -->
+<RECORD>
+	<id>20700150020</id>
+	<name>GotoAway</name>
+	<value>1500,2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1-1.5秒 -->
+<RECORD>
+	<id>20700100015</id>
+	<name>GotoAway</name>
+	<value>1000,1500</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1-2秒 -->
+<RECORD>
+	<id>207001002</id>
+	<name>GotoAway</name>
+	<value>1000,2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离1-3秒 -->
+<RECORD>
+	<id>207001003</id>
+	<name>GotoAway</name>
+	<value>1000,3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离2-3秒 -->
+<RECORD>
+	<id>207002003</id>
+	<name>GotoAway</name>
+	<value>2000,3000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 远离2-4秒 -->
+<RECORD>
+	<id>207002004</id>
+	<name>GotoAway</name>
+	<value>2000,4000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 随机攻击 -->
+<RECORD>
+	<id>208</id>
+	<name>GotoRandAttack</name>
+	<value>effect2,effect3</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击1范围内，value时间到就停止 -->
+<RECORD>
+	<id>2091</id>
+	<name>GotoAttack1Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击1范围内，value时间到就停止 -->
+<RECORD>
+	<id>20911</id>
+	<name>GotoAttack1Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击2范围内，value时间到就停止 -->
+<RECORD>
+	<id>2092</id>
+	<name>GotoAttack2Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击2范围内，value时间到就停止 -->
+<RECORD>
+	<id>20921</id>
+	<name>GotoAttack2Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击3范围内，value时间到就停止 -->
+<RECORD>
+	<id>2093</id>
+	<name>GotoAttack3Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至攻击4范围内，value时间到就停止 -->
+<RECORD>
+	<id>2094</id>
+	<name>GotoAttack4Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能1范围内，value时间到就停止 -->
+<RECORD>
+	<id>2101</id>
+	<name>GotoSkill1Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能1范围内，1秒后就停止 -->
+<RECORD>
+	<id>21011</id>
+	<name>GotoSkill1Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能2范围内，value时间到就停止 -->
+<RECORD>
+	<id>2102</id>
+	<name>GotoSkill2Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能2范围内，value时间到就停止 -->
+<RECORD>
+	<id>21021</id>
+	<name>GotoSkill2Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能3范围内，value时间到就停止 -->
+<RECORD>
+	<id>2103</id>
+	<name>GotoSkill3Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能4范围内，value时间到就停止 -->
+<RECORD>
+	<id>2104</id>
+	<name>GotoSkill4Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能4范围内，1秒到就停止 -->
+<RECORD>
+	<id>21041</id>
+	<name>GotoSkill4Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能5范围内，value时间到就停止 -->
+<RECORD>
+	<id>2105</id>
+	<name>GotoSkill5Range</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至技能5范围内，value时间到就停止 -->
+<RECORD>
+	<id>21051</id>
+	<name>GotoSkill5Range</name>
+	<value>1000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 移动至奥义范围内，value时间到就停止 -->
+<RECORD>
+	<id>2109</id>
+	<name>GotoAoyiSkillRange</name>
+	<value>2000</value>
+	<type>ac</type>
+</RECORD>
+
+<!-- 来回移动 -->
+<RECORD>
+	<id>211</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+</RECORD>
+
+<!-- 来回移动 1 秒 -->
+<RECORD>
+	<id>211001</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+	<value>1000</value>
+</RECORD>
+
+<!-- 来回移动 1.5 秒 -->
+<RECORD>
+	<id>2110015</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+	<value>1500</value>
+</RECORD>
+
+<!-- 来回移动 2 秒 -->
+<RECORD>
+	<id>211002</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+	<value>2000</value>
+</RECORD>
+
+<!-- 来回移动 3 秒 -->
+<RECORD>
+	<id>211003</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+	<value>3000</value>
+</RECORD>
+
+<!-- 来回移动 6 秒 -->
+<RECORD>
+	<id>211006</id>
+	<name>GotoWalkBack</name>
+	<type>ac</type>
+	<value>6000</value>
+</RECORD>
+
+<!-- 跳跃 -->
+<RECORD>
+	<id>212</id>
+	<name>GotoJump</name>
+	<type>ac</type>
+	<value>1000</value>
+</RECORD>
+
+<!-- 跟随玩家 -->
+<RECORD>
+	<id>213</id>
+	<name>GotoFollow</name>
+	<type>ac</type>
+</RECORD>
+
+<!-- 跟随指定路线 -->
+<RECORD>
+	<id>214</id>
+	<name>GotoFollowPath</name>
+	<type>ac</type>
+</RECORD>
+
+
+<!-- 跟随指定路线200距离 -->
+<RECORD>
+	<id>2140200</id>
+	<name>GotoFollowPath</name>
+	<type>ac</type>
+	<value2>200</value2>
+</RECORD>
+
+<!-- 跟随指定路线300距离 -->
+<RECORD>
+	<id>2140300</id>
+	<name>GotoFollowPath</name>
+	<type>ac</type>
+	<value2>300</value2>
+</RECORD>
+
+<!-- 在指定区域内移动1-2秒-->
+<RECORD>
+	<id>2150011</id>
+	<name>GotoWalkInRectRange</name>
+	<type>ac</type>
+	<!-- x,y,w,h-->
+	<value>580,100,280,390</value>
+	<!-- 时间范围-->
+	<value2>1000,2000</value2>
+</RECORD>
+
+<!-- 在指定区域内移动2-4秒-->
+<RECORD>
+	<id>2150012</id>
+	<name>GotoWalkInRectRange</name>
+	<type>ac</type>
+	<!-- x,y,w,h-->
+	<value>580,100,280,390</value>
+	<!-- 时间范围-->
+	<value2>2000,4000</value2>
+</RECORD>
+
+<!-- 在指定区域内移动3-6秒-->
+<RECORD>
+	<id>2150013</id>
+	<name>GotoWalkInRectRange</name>
+	<type>ac</type>
+	<!-- x,y,w,h-->
+	<value>580,100,280,390</value>
+	<!-- 时间范围-->
+	<value2>3000,6000</value2>
+</RECORD>
+
+<!-- 在右下区域内移动3-6秒-->
+<RECORD>
+	<id>2150023</id>
+	<name>GotoWalkInRectRange</name>
+	<type>ac</type>
+	<!-- x,y,w,h-->
+	<value>580,390,280,100</value>
+	<!-- 时间范围-->
+	<value2>3000,6000</value2>
+</RECORD>
+
+<!-- 在右侧较小区域内移动1-2秒-->
+<RECORD>
+	<id>2151011</id>
+	<name>GotoWalkInRectRange</name>
+	<type>ac</type>
+	<!-- x,y,w,h-->
+	<value>580,250,280,290</value>
+	<!-- 时间范围-->
+	<value2>1000,2000</value2>
+</RECORD>
+
+<!-- 朝270角度飞出屏幕-->
+<RECORD>
+	<id>216270</id>
+	<name>GotoOutByAngle</name>
+	<type>ac</type>
+     <!-- 朝270度方向（向正上方） -->
+	<value>270</value>
+</RECORD>
+
+<!-- 场景Boss数量范围在>=0,<=1时-->
+<RECORD>
+	<id>500001</id>
+	<name>GetChildNum</name>
+	<type>con</type>
+	<value>0,1</value>
+</RECORD>
+
+<!-- 场景Boss数量范围在>=2,<=3时-->
+<RECORD>
+	<id>500203</id>
+	<name>GetChildNum</name>
+	<type>con</type>
+	<value>2,3</value>
+</RECORD>
+
+<!-- 场景Boss数量范围在>=0,<=2时-->
+<RECORD>
+	<id>500002</id>
+	<name>GetChildNum</name>
+	<type>con</type>
+	<value>0,2</value>
+</RECORD>
+
+<!-- 场景Boss数量范围在>=3,<=4时-->
+<RECORD>
+	<id>500304</id>
+	<name>GetChildNum</name>
+	<type>con</type>
+	<value>3,4</value>
+</RECORD>
+
+</RECORDS>

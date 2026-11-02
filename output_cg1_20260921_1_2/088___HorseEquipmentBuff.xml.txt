@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <equipmentId>241111201;242111201;243111201;244111201</equipmentId>
+    <equip2BuffId />
+    <buffId>18100101</buffId>
+    <describe>玄沙4件套装：被攻击有概率触发伤害减免</describe>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <equipmentId>241111001;242111001;243111001;244111001</equipmentId>
+    <equip2BuffId />
+    <buffId>18002301</buffId>
+    <describe>流年4件套装：攻击有概率触发伤害提升</describe>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <equipmentId>261111001;262111001;263111001;264111001</equipmentId>
+    <equip2BuffId>18100201</equip2BuffId>
+    <buffId>18002601</buffId>
+    <describe>幻叶2件套装：被攻击有概率触发伤害减免
+幻叶4件套装：攻击有概率触发伤害提升</describe>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <equipmentId>271111001;272111001;273111001;274111001</equipmentId>
+    <equip2BuffId>18100301;18100401</equip2BuffId>
+    <buffId>18002701;18002801</buffId>
+    <describe>八荒2件套装：被攻击有概率触发伤害减免，概率触发反伤提高，可同时触发
+八荒4件套装：攻击有概率触发伤害提升，概率触发敌人晕眩，可同时触发</describe>
+  </RECORD>
+</RECORDS>

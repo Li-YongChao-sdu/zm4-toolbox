@@ -1,0 +1,39 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "rewardId1": "4011",
+      "rewardId2": "4236"
+    },
+    {
+      "id": "2",
+      "rewardId1": "4012",
+      "rewardId2": "4237"
+    },
+    {
+      "id": "3",
+      "rewardId1": "4013",
+      "rewardId2": "4013"
+    },
+    {
+      "id": "4",
+      "rewardId1": "4014",
+      "rewardId2": "4014"
+    },
+    {
+      "id": "5",
+      "rewardId1": "4015",
+      "rewardId2": "4015"
+    },
+    {
+      "id": "6",
+      "rewardId1": "4016",
+      "rewardId2": "4016"
+    },
+    {
+      "id": "7",
+      "rewardId1": "4017",
+      "rewardId2": "4017"
+    }
+  ]
+}

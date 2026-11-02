@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1001</id>
+    <describe>解决突发事件1次（循环任务）</describe>
+    <type>1</type>
+    <target>-1</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2001</id>
+    <describe>总产速达到
+20个每分钟</describe>
+    <type>2</type>
+    <target>20</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2002</id>
+    <describe>总产速达到
+80个每分钟</describe>
+    <type>2</type>
+    <target>80</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2003</id>
+    <describe>总产速达到
+380个每分钟</describe>
+    <type>2</type>
+    <target>380</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2004</id>
+    <describe>总产速达到
+2900个每分钟</describe>
+    <type>2</type>
+    <target>2900</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2005</id>
+    <describe>总产速达到
+1.5万个每分钟</describe>
+    <type>2</type>
+    <target>15000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2006</id>
+    <describe>总产速达到
+4.6万个每分钟</describe>
+    <type>2</type>
+    <target>46000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2007</id>
+    <describe>总产速达到
+10万个每分钟</describe>
+    <type>2</type>
+    <target>100000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2008</id>
+    <describe>总产速达到
+13万个每分钟</describe>
+    <type>2</type>
+    <target>130000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2009</id>
+    <describe>总产速达到
+21万个每分钟</describe>
+    <type>2</type>
+    <target>210000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2010</id>
+    <describe>总产速达到
+31万个每分钟</describe>
+    <type>2</type>
+    <target>310000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>2011</id>
+    <describe>总产速达到
+57万个每分钟</describe>
+    <type>2</type>
+    <target>570000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3001</id>
+    <describe>累计产量达到
+2.1万个仙桃</describe>
+    <type>3</type>
+    <target>21000</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3002</id>
+    <describe>累计产量达到
+11万个仙桃</describe>
+    <type>3</type>
+    <target>110000</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3003</id>
+    <describe>累计产量达到
+78万个仙桃</describe>
+    <type>3</type>
+    <target>780000</target>
+    <getScore>200</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3004</id>
+    <describe>累计产量达到
+600万个仙桃</describe>
+    <type>3</type>
+    <target>6000000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3005</id>
+    <describe>累计产量达到
+3300万个仙桃</describe>
+    <type>3</type>
+    <target>33000000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3006</id>
+    <describe>累计产量达到
+12000万个仙桃</describe>
+    <type>3</type>
+    <target>120000000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3007</id>
+    <describe>累计产量达到
+24000万个仙桃</describe>
+    <type>3</type>
+    <target>240000000</target>
+    <getScore>300</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3008</id>
+    <describe>累计产量达到
+39000万个仙桃</describe>
+    <type>3</type>
+    <target>390000000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3009</id>
+    <describe>累计产量达到
+63000万个仙桃</describe>
+    <type>3</type>
+    <target>630000000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3010</id>
+    <describe>累计产量达到
+130000万个仙桃</describe>
+    <type>3</type>
+    <target>1300000000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>3011</id>
+    <describe>累计产量达到
+230000万个仙桃</describe>
+    <type>3</type>
+    <target>2300000000</target>
+    <getScore>400</getScore>
+    <buffId>-1</buffId>
+  </RECORD>
+  <RECORD>
+    <id>1000</id>
+    <describe>每日buff</describe>
+    <type>0</type>
+    <target>-1</target>
+    <getScore>-1</getScore>
+    <buffId>20031,51028;20032,51029;20033,51030;20034,51031</buffId>
+  </RECORD>
+</RECORDS>

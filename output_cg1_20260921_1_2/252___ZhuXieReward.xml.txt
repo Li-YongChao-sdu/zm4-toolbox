@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <num>1000</num>
+    <describe>净化魔气值达到1000可领取</describe>
+    <item>106100002;131100001</item>
+    <count>1;10</count>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <num>3000</num>
+    <describe>净化魔气值达到3000可领取</describe>
+    <item>150100001;197000004</item>
+    <count>1;1</count>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <num>5000</num>
+    <describe>净化魔气值达到5000可领取</describe>
+    <item>197100006;145300001</item>
+    <count>1;1</count>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <num>7000</num>
+    <describe>净化魔气值达到7000可领取</describe>
+    <item>144300019;197100006</item>
+    <count>1;1</count>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <num>8000</num>
+    <describe>净化魔气值达到8000可领取</describe>
+    <item>197200005;106200003</item>
+    <count>1;1</count>
+  </RECORD>
+</RECORDS>

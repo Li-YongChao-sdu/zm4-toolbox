@@ -1,0 +1,114 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "hpMax": "132",
+      "atk": "13",
+      "hit": "0.01",
+      "dodge": "0.01",
+      "critical": "0.01",
+      "lucky": "1",
+      "magRes": "0.01",
+      "toughness": "0.01"
+    },
+    {
+      "id": "2",
+      "hpMax": "236",
+      "atk": "23",
+      "hit": "0.01",
+      "dodge": "0.01",
+      "critical": "0.01",
+      "lucky": "1",
+      "magRes": "0.01",
+      "toughness": "0.01"
+    },
+    {
+      "id": "3",
+      "hpMax": "436",
+      "atk": "43",
+      "hit": "0.02",
+      "dodge": "0.02",
+      "critical": "0.02",
+      "lucky": "2",
+      "magRes": "0.02",
+      "toughness": "0.02"
+    },
+    {
+      "id": "4",
+      "hpMax": "696",
+      "atk": "69",
+      "hit": "0.02",
+      "dodge": "0.02",
+      "critical": "0.02",
+      "lucky": "2",
+      "magRes": "0.02",
+      "toughness": "0.02"
+    },
+    {
+      "id": "5",
+      "hpMax": "1016",
+      "atk": "101",
+      "hit": "0.03",
+      "dodge": "0.03",
+      "critical": "0.03",
+      "lucky": "3",
+      "magRes": "0.03",
+      "toughness": "0.03"
+    },
+    {
+      "id": "6",
+      "hpMax": "1396",
+      "atk": "139",
+      "hit": "0.03",
+      "dodge": "0.03",
+      "critical": "0.03",
+      "lucky": "3",
+      "magRes": "0.03",
+      "toughness": "0.03"
+    },
+    {
+      "id": "7",
+      "hpMax": "1836",
+      "atk": "183",
+      "hit": "0.04",
+      "dodge": "0.04",
+      "critical": "0.04",
+      "lucky": "4",
+      "magRes": "0.04",
+      "toughness": "0.04"
+    },
+    {
+      "id": "8",
+      "hpMax": "2336",
+      "atk": "233",
+      "hit": "0.04",
+      "dodge": "0.04",
+      "critical": "0.04",
+      "lucky": "4",
+      "magRes": "0.04",
+      "toughness": "0.04"
+    },
+    {
+      "id": "9",
+      "hpMax": "2896",
+      "atk": "289",
+      "hit": "0.05",
+      "dodge": "0.05",
+      "critical": "0.05",
+      "lucky": "5",
+      "magRes": "0.05",
+      "toughness": "0.05"
+    },
+    {
+      "id": "10",
+      "hpMax": "3796",
+      "atk": "379",
+      "hit": "0.05",
+      "dodge": "0.05",
+      "critical": "0.05",
+      "lucky": "5",
+      "magRes": "0.05",
+      "toughness": "0.05"
+    }
+  ]
+}

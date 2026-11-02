@@ -1,0 +1,67 @@
+{
+  "RECORD": [
+    {
+      "ID": "1",
+      "CombineDungeon": "-1;5106;-1;5109;5102;5103;-1;5101;5105;-1;-1;5110",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "3",
+      "GridRow": "4",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "2",
+      "CombineDungeon": "-1;5101;-1;5107;5104;5109;5108;5102;-1;-1;-1;5110",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "4",
+      "GridRow": "3",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "3",
+      "CombineDungeon": "-1;-1;5110;5104;-1;5106;5101;5105;5107;5103;-1;-1",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "3",
+      "GridRow": "4",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "4",
+      "CombineDungeon": "-1;5104;5110;5102;5103;5105;-1;5109;5101",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "3",
+      "GridRow": "3",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "5",
+      "CombineDungeon": "5110;5108;5103;5109;5106;-1;-1;5107;-1;-1;-1;-1;5101;-1;-1",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "5",
+      "GridRow": "3",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "6",
+      "CombineDungeon": "-1;-1;5101;-1;-1;5110;5106;5109;5103;5102;5104;-1",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "4",
+      "GridRow": "3",
+      "nextCombine": "-1"
+    },
+    {
+      "ID": "7",
+      "CombineDungeon": "5109;5108;5110;5104;5101;5105;-1;-1;5102",
+      "StartDungeonID": "5101",
+      "BossDungeonID": "5110",
+      "GridCol": "3",
+      "GridRow": "3",
+      "nextCombine": "-1"
+    }
+  ]
+}

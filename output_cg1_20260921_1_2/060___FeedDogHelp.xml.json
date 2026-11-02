@@ -1,0 +1,58 @@
+{
+  "RECORD": [
+    {
+      "id": "1",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "688",
+      "addLike": "10"
+    },
+    {
+      "id": "2",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "800",
+      "addLike": "10"
+    },
+    {
+      "id": "3",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "921",
+      "addLike": "10"
+    },
+    {
+      "id": "4",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "1053",
+      "addLike": "10"
+    },
+    {
+      "id": "5",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "1194",
+      "addLike": "10"
+    },
+    {
+      "id": "6",
+      "ticket": "1111",
+      "rewardId": "50885",
+      "itemId": "143200011",
+      "like": "3;7",
+      "activityId": "251194",
+      "addLike": "10"
+    }
+  ]
+}

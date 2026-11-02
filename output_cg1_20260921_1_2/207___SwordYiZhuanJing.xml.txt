@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <hpMax>4555;5694</hpMax>
+    <phyDef>133;190</phyDef>
+    <mpMax>804;1073</mpMax>
+    <atk>398;569</atk>
+    <open>hpMax,phyDef;mpMax;atk</open>
+    <luckyT>hpMax</luckyT>
+    <luckyNum>1300</luckyNum>
+    <swordYiZhuanJingReset>185300003;5</swordYiZhuanJingReset>
+    <swordYiZhuanJingSuperReset>185300004;1,2,3,4</swordYiZhuanJingSuperReset>
+  </RECORD>
+</RECORDS>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>20190114</id>
+    <type1>9700001</type1>
+    <type2>9700002</type2>
+    <type3>9700003</type3>
+    <activityId>480</activityId>
+    <continueTime>75</continueTime>
+    <fashionId>301010001,302010001;301020001,302020001;301030001,302030001;301040001,302040001;301050001,302050001;301060001,302060001;301070001,302070001</fashionId>
+  </RECORD>
+</RECORDS>

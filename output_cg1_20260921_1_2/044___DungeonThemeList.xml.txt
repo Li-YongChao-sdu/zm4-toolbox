@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dungeon>2071;2072;2073;2117</dungeon>
+    <dungeonLevel>1;2;3;4</dungeonLevel>
+    <icon>2071V432.png;2072V432.png;2073V432.png;2073V432.png</icon>
+    <rewardId>91002;91006;91010;91014</rewardId>
+    <isLock>1;1;1;0</isLock>
+    <dungeonAll>2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119</dungeonAll>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <dungeon>2068;2069;2070;2116</dungeon>
+    <dungeonLevel>1;2;3;4</dungeonLevel>
+    <icon>2068V432.png;2069V432.png;2070V432.png;2070V432.png</icon>
+    <rewardId>91001;91005;91009;91013</rewardId>
+    <isLock>1;1;1;0</isLock>
+    <dungeonAll>2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119</dungeonAll>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <dungeon>2077;2078;2079;2119</dungeon>
+    <dungeonLevel>1;2;3;4</dungeonLevel>
+    <icon>2077V432.png;2078V432.png;2079V432.png;2079V432.png</icon>
+    <rewardId>91004;91008;91012;91016</rewardId>
+    <isLock>1;1;1;0</isLock>
+    <dungeonAll>2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119</dungeonAll>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <dungeon>2074;2075;2076;2118</dungeon>
+    <dungeonLevel>1;2;3;4</dungeonLevel>
+    <icon>2074V432.png;2075V432.png;2076V432.png;2076V432.png</icon>
+    <rewardId>91003;91007;91011;91015</rewardId>
+    <isLock>1;1;1;0</isLock>
+    <dungeonAll>2068;2069;2070;2071;2072;2073;2074;2075;2076;2077;2078;2079;2116;2117;2118;2119</dungeonAll>
+  </RECORD>
+</RECORDS>

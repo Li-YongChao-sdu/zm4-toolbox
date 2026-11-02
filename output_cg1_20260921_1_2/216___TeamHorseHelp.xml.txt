@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <teamHorseId>200401</teamHorseId>
+    <showItemId>187010001;187010002;187010003;187010004</showItemId>
+    <ticket>700</ticket>
+    <weekRewardNum>3</weekRewardNum>
+    <minMember>3</minMember>
+    <maxMember>3</maxMember>
+    <openTime>00:00:00</openTime>
+    <closeTime>23:59:59</closeTime>
+    <week>0;1;2;3;4;5;6</week>
+  </RECORD>
+</RECORDS>

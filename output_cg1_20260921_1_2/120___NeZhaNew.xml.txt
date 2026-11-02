@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <activityId>1420</activityId>
+    <activityTime>29</activityTime>
+    <dailyTime>1</dailyTime>
+    <buffId>32064;42052;72056</buffId>
+    <icon>60101.png;60102.png;60103.png;60104.png;60105.png;60106.png;60107.png</icon>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <activityId>1406</activityId>
+    <activityTime>29</activityTime>
+    <dailyTime>1</dailyTime>
+    <buffId>32064;42052;72056</buffId>
+    <icon>60101.png;60102.png;60103.png;60104.png;60105.png;60106.png;60107.png</icon>
+  </RECORD>
+</RECORDS>

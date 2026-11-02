@@ -1,0 +1,112 @@
+{
+  "RECORD": [
+    {
+      "id": "710000001",
+      "name": "九佑魂珏",
+      "itemId": "186010011;186010015",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "710000002",
+      "name": "九佑魂锥",
+      "itemId": "186010012;186010015",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "710000003",
+      "name": "九佑魂环",
+      "itemId": "186010013;186010015",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "710000004",
+      "name": "九佑魂铃",
+      "itemId": "186010014;186010015",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "720000001",
+      "name": "湮灭魂珏",
+      "itemId": "186010017;186010016",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "720000002",
+      "name": "湮灭魂锥",
+      "itemId": "186010018;186010016",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "720000003",
+      "name": "湮灭魂环",
+      "itemId": "186010019;186010016",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "720000004",
+      "name": "湮灭魂铃",
+      "itemId": "186010020;186010016",
+      "itemNum": "15;60",
+      "consumeSpirit": "179000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "730000001",
+      "name": "永生魂珏",
+      "itemId": "186010022;186010021",
+      "itemNum": "15;60",
+      "consumeSpirit": "410000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "730000002",
+      "name": "永生魂锥",
+      "itemId": "186010023;186010021",
+      "itemNum": "15;60",
+      "consumeSpirit": "410000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "730000003",
+      "name": "永生魂环",
+      "itemId": "186010024;186010021",
+      "itemNum": "15;60",
+      "consumeSpirit": "410000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    },
+    {
+      "id": "730000004",
+      "name": "永生魂铃",
+      "itemId": "186010025;186010021",
+      "itemNum": "15;60",
+      "consumeSpirit": "410000",
+      "ticketReset": "186020002,1",
+      "ticketSingleReset": "186020002,3"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>我想挑战位置1</id>
+    <type>0</type>
+    <order>1</order>
+  </RECORD>
+  <RECORD>
+    <id>我想挑战位置2</id>
+    <type>0</type>
+    <order>2</order>
+  </RECORD>
+  <RECORD>
+    <id>我想挑战位置3</id>
+    <type>0</type>
+    <order>3</order>
+  </RECORD>
+  <RECORD>
+    <id>我不擅长这个类型</id>
+    <type>0</type>
+    <order>4</order>
+  </RECORD>
+  <RECORD>
+    <id>请大家准备好</id>
+    <type>0</type>
+    <order>5</order>
+  </RECORD>
+  <RECORD>
+    <id>我准备好了，开始吧</id>
+    <type>0</type>
+    <order>6</order>
+  </RECORD>
+</RECORDS>

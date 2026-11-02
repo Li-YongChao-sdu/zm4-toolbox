@@ -1,0 +1,11 @@
+{
+  "RECORD": {
+    "id": "730000001",
+    "name": "永生魂珏",
+    "originate": "1300",
+    "frequency": "100",
+    "probability": "0.005",
+    "final": "2000",
+    "attribute": "hpMax"
+  }
+}

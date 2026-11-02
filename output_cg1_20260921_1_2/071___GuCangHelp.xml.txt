@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dungeonId>2151;2152;2153</dungeonId>
+    <rewardNumTicket>200</rewardNumTicket>
+    <showItemId>143000008,197200027</showItemId>
+    <jifen>55;60;70;80;90;100;110;999</jifen>
+    <itemId>143000008;197200027</itemId>
+    <itemNum>30,1;40,1;50,1;60,1;70,1;80,1;85,1;90,1</itemNum>
+    <activityId>1253</activityId>
+    <dailyCountMax>2</dailyCountMax>
+    <tipUrl>1253.png</tipUrl>
+    <flashUrl>1253.swf</flashUrl>
+    <bagNum />
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <dungeonId>2161</dungeonId>
+    <rewardNumTicket>200</rewardNumTicket>
+    <showItemId>143200001,143200010,199200051</showItemId>
+    <jifen>0;1200;2400;3600;4100</jifen>
+    <itemId>143200001;143200001;143200001,143200010;143200001,143200010,199200051;143200001,143200010,199200051</itemId>
+    <itemNum>0;1;1,1;1,1,1;1,2,1</itemNum>
+    <activityId>1439</activityId>
+    <dailyCountMax>2</dailyCountMax>
+    <tipUrl>-1</tipUrl>
+    <flashUrl>-1</flashUrl>
+    <bagNum>3</bagNum>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <dungeonId>2166</dungeonId>
+    <rewardNumTicket>300</rewardNumTicket>
+    <showItemId>105200005,144000010</showItemId>
+    <jifen>0;200;320;450;600</jifen>
+    <itemId>105200005;105200005;105200005;105200005;105200005,144000010</itemId>
+    <itemNum>18;20;22;26;30,1</itemNum>
+    <activityId>1320</activityId>
+    <dailyCountMax>1</dailyCountMax>
+    <tipUrl>-1</tipUrl>
+    <flashUrl>-1</flashUrl>
+    <bagNum>2</bagNum>
+  </RECORD>
+</RECORDS>

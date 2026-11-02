@@ -1,0 +1,200 @@
+
+1�k<RECORD>
+  <id>1</id>
+  <gushuGenerateId>101</gushuGenerateId>
+  <name>寅将军一阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>284003</hpMax>
+  <atk>1786</atk>
+  <phyDef>273</phyDef>
+  <magRes>0.43</magRes>
+  <reduceMagDef>0.08</reduceMagDef>
+  <hit>0.11</hit>
+  <dodge>0.17</dodge>
+  <critical>0.12</critical>
+  <toughness>0.22</toughness>
+  <lucky>-20</lucky>
+  <guardian>18</guardian>
+  <reHP>468</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>2�k<RECORD>
+  <id>2</id>
+  <gushuGenerateId>102</gushuGenerateId>
+  <name>寅将军二阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>590319</hpMax>
+  <atk>2866</atk>
+  <phyDef>448</phyDef>
+  <magRes>0.45</magRes>
+  <reduceMagDef>0.11</reduceMagDef>
+  <hit>0.15</hit>
+  <dodge>0.25</dodge>
+  <critical>0.16</critical>
+  <toughness>0.31</toughness>
+  <lucky>-20</lucky>
+  <guardian>28</guardian>
+  <reHP>974</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>3�g<RECORD>
+  <id>3</id>
+  <gushuGenerateId>103</gushuGenerateId>
+  <name>寅将军三阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>1303904</hpMax>
+  <atk>4225</atk>
+  <phyDef>670</phyDef>
+  <magRes>0.47</magRes>
+  <reduceMagDef>0.14</reduceMagDef>
+  <hit>0.2</hit>
+  <dodge>0.3</dodge>
+  <critical>0.2</critical>
+  <toughness>0.5</toughness>
+  <lucky>-20</lucky>
+  <guardian>50</guardian>
+  <reHP>2151</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>4�o<RECORD>
+  <id>4</id>
+  <gushuGenerateId>104</gushuGenerateId>
+  <name>寅将军四阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>2082848</hpMax>
+  <atk>5877</atk>
+  <phyDef>941</phyDef>
+  <magRes>0.49</magRes>
+  <reduceMagDef>0.17</reduceMagDef>
+  <hit>0.24</hit>
+  <dodge>0.35</dodge>
+  <critical>0.24</critical>
+  <toughness>0.57</toughness>
+  <lucky>-20</lucky>
+  <guardian>58</guardian>
+  <reHP>3436</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>5�o<RECORD>
+  <id>5</id>
+  <gushuGenerateId>105</gushuGenerateId>
+  <name>寅将军五阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>3245185</hpMax>
+  <atk>7835</atk>
+  <phyDef>1264</phyDef>
+  <magRes>0.51</magRes>
+  <reduceMagDef>0.2</reduceMagDef>
+  <hit>0.29</hit>
+  <dodge>0.42</dodge>
+  <critical>0.28</critical>
+  <toughness>0.65</toughness>
+  <lucky>-20</lucky>
+  <guardian>66</guardian>
+  <reHP>5354</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>6�s<RECORD>
+  <id>6</id>
+  <gushuGenerateId>106</gushuGenerateId>
+  <name>寅将军六阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>4994414</hpMax>
+  <atk>10916</atk>
+  <phyDef>1839</phyDef>
+  <magRes>0.61</magRes>
+  <reduceMagDef>0.48</reduceMagDef>
+  <hit>0.54</hit>
+  <dodge>0.48</dodge>
+  <critical>0.49</critical>
+  <toughness>0.69</toughness>
+  <lucky>-20</lucky>
+  <guardian>81</guardian>
+  <reHP>8240</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>7�u<RECORD>
+  <id>7</id>
+  <gushuGenerateId>107</gushuGenerateId>
+  <name>寅将军七阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>6507077</hpMax>
+  <atk>14141</atk>
+  <phyDef>2237</phyDef>
+  <magRes>0.64</magRes>
+  <reduceMagDef>0.58</reduceMagDef>
+  <hit>0.66</hit>
+  <dodge>0.52</dodge>
+  <critical>0.64</critical>
+  <toughness>0.63</toughness>
+  <lucky>-20</lucky>
+  <guardian>87</guardian>
+  <reHP>10736</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>8�u<RECORD>
+  <id>8</id>
+  <gushuGenerateId>108</gushuGenerateId>
+  <name>寅将军八阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>8146365</hpMax>
+  <atk>16491</atk>
+  <phyDef>2605</phyDef>
+  <magRes>0.64</magRes>
+  <reduceMagDef>0.61</reduceMagDef>
+  <hit>0.67</hit>
+  <dodge>0.58</dodge>
+  <critical>0.65</critical>
+  <toughness>0.66</toughness>
+  <lucky>-20</lucky>
+  <guardian>88</guardian>
+  <reHP>13441</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20188</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>9�o<RECORD>
+  <id>9</id>
+  <gushuGenerateId>109</gushuGenerateId>
+  <name>寅将军九阶</name>
+  <monsterId>4234</monsterId>
+  <hpMax>10068036</hpMax>
+  <atk>18054</atk>
+  <phyDef>3299</phyDef>
+  <magRes>0.64</magRes>
+  <reduceMagDef>0.63</reduceMagDef>
+  <hit>0.68</hit>
+  <dodge>0.66</dodge>
+  <critical>0.66</critical>
+  <toughness>0.68</toughness>
+  <lucky>-20</lucky>
+  <guardian>90</guardian>
+  <reHP>0</reHP>
+  <suckBlood>0</suckBlood>
+  <backLash>0</backLash>
+  <aiId>20398</aiId>
+  <bySuckBlood>0</bySuckBlood>
+  <suckBloodFactor>0</suckBloodFactor>
+</RECORD>

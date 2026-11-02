@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECORDS>
+  <RECORD>
+    <id>1</id>
+    <dungeonId>6021</dungeonId>
+    <npcId>dizang1_baozhu.swf</npcId>
+    <name>宝珠地藏</name>
+    <iconId>2110.png</iconId>
+    <describe>宝珠地藏：
+除饿鬼饥渴贪求无厌苦恼
+
+副本内部分技能将被禁用</describe>
+    <itemId>174600017</itemId>
+    <equips>499110101;499110201</equips>
+    <type>1</type>
+  </RECORD>
+  <RECORD>
+    <id>2</id>
+    <dungeonId>6022</dungeonId>
+    <npcId>dizang1_baoyin.swf</npcId>
+    <name>宝印地藏</name>
+    <iconId>2111.png</iconId>
+    <describe>宝印地藏：
+除饿鬼饥渴贪求无厌苦恼
+
+副本内部分技能将被禁用</describe>
+    <itemId>174600018</itemId>
+    <equips>499210101;499210201</equips>
+    <type>1</type>
+  </RECORD>
+  <RECORD>
+    <id>3</id>
+    <dungeonId>6023</dungeonId>
+    <npcId>dizang1_riguang.swf</npcId>
+    <name>日光地藏</name>
+    <iconId>2112.png</iconId>
+    <describe>日光地藏：
+除天人之五衰相苦恼
+
+副本内部分技能将被禁用</describe>
+    <itemId>174600019</itemId>
+    <equips>499120101;499120201</equips>
+    <type>1</type>
+  </RECORD>
+  <RECORD>
+    <id>4</id>
+    <dungeonId>6024</dungeonId>
+    <npcId>dizang1_tantuo.swf</npcId>
+    <name>檀陀地藏</name>
+    <iconId>2113.png</iconId>
+    <describe>檀陀地藏：
+除地狱炽热无尽折磨痛苦
+
+副本内部分技能将被禁用</describe>
+    <itemId>174600020</itemId>
+    <equips>499130101;499130201</equips>
+    <type>1</type>
+  </RECORD>
+  <RECORD>
+    <id>5</id>
+    <dungeonId>6025</dungeonId>
+    <npcId>dizang1_chidi.swf</npcId>
+    <name>持地地藏</name>
+    <iconId>2114.png</iconId>
+    <describe>持地地藏：
+除阿修罗嗔恨烦恼痛苦
+
+副本内部分技能将被禁用</describe>
+    <itemId>174600021</itemId>
+    <equips>499140101;499140201</equips>
+    <type>1</type>
+  </RECORD>
+  <RECORD>
+    <id>1001</id>
+    <dungeonId>6026</dungeonId>
+    <npcId>xukong1_jingang.swf</npcId>
+    <name>金刚虚空藏</name>
+    <iconId>2210.png</iconId>
+    <describe>金刚虚空藏：
+除愚顽众生我慢坚执之苦
+副本内部分技能将被禁用</describe>
+    <itemId>174600022</itemId>
+    <equips>499150101;499150201</equips>
+    <type>2</type>
+  </RECORD>
+</RECORDS>
