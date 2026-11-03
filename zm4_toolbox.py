@@ -212,13 +212,21 @@ MAINLINE_REQUIRED_HIDDEN = {
 DAILY_TASK_TESTED_ROUTES = {
     20002: ((2132, False),),             # 悲鸣冰川：四头虫
     20004: ((2133, False),),             # 悲鸣冰川：八头虫
+    20006: ((2134, False),),             # 四阶九头虫
     20008: ((2021, False), (2024, False), (2036, False)),  # 神兽森林→森林水底→赤鲤巢穴
-    20006: ((2134, False),),              # 四阶九头虫
-    20018: ((460, True), (461, True)),   # 噩梦不周山及隐藏BOSS；两关都带W
-    20024: ((2102, False), (2103, False)),  # 迷雾沮泽藤蔓层→藤蔓1boss：枯叶螳螂
-    20030: ((2114, False),),             # 空桑谷盘根窟：土魔猿
     20009: ((360, True),),               # 噩梦夙夜径：角木蛟
+    20018: ((460, True), (461, True)),   # 噩梦不周山及隐藏BOSS；两关都带W
+    20020: ((2094, False), (2095, False)),  # 枯月流沙金瓯层→金瓯BOSS：天蝉若虫
+    20022: ((2098, False), (2099, False)),  # 枯月流沙火岩层→火岩BOSS：四翅巨蝉
+    20024: ((2102, False), (2103, False)),  # 迷雾沮泽藤蔓层→藤蔓1boss：枯叶螳螂
+    20026: ((2106, False), (2107, False)),  # 迷雾沮泽藤蔓2层→藤蔓2boss：魔花螳螂
+    20027: ((7005, False),),             # 万灵馆：静幻
+    20028: ((7004, False),),             # 万灵馆：静磐
+    20029: ((2113, False),),             # 空桑谷：雷魔猿
+    20030: ((2114, False),),             # 空桑谷盘根窟：土魔猿
     20032: ((501, True), (10260, True)), # 噩梦通冥铁索及隐藏BOSS
+    20039: ((2128, False),),             # 丰花原野：巨刺螫蜂
+    20040: ((2130, False),),             # 丰花原野：幽灵冥蜂
 }
 DAILY_TASK_BATCH_PICKUP_IDS = {20009, 20030, 20032}
 
@@ -4027,6 +4035,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         if dead.get("code") != 200 or finished.get("code") != 200:
             raise RuntimeError("关卡%d结束失败: boss=%s, finish=%s" %
                                (mid, dead.get("code"), finished.get("code")))
+        if 7002 <= mid <= 7005:
+            time.sleep(0.5)
+            reward = flow.request("scene.playerFourthHandler.petTrainReward", {}, timeout=15)
+            if reward.get("code") != 200:
+                raise RuntimeError("关卡%d万灵馆领奖失败: %s" %
+                                   (mid, reward.get("error", reward.get("code"))))
+            self._log("[日常任务] 关卡%d已结算并领取万灵馆奖励" % mid)
+            return
         p1 = scene.get("curRecord", {}).get("p1", {})
         payload = {
             "copyId": drops.get("copyId", 0), "pickItems": pick_items,
