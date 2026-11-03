@@ -505,7 +505,7 @@ class LimitedActivityPages:
             self._horse_tree.heading(key, text=label); self._horse_tree.column(key, width=220)
         self._horse_tree.pack(fill="both", expand=True)
         self._collect_horses = []
-        self._last_horse_collect = None
+        self._last_horse_collects = []
 
     def _build_xingtian_tab(self):
         tab = self._limited_page("挑战刑天", padding=12)
@@ -641,6 +641,24 @@ class LimitedActivityPages:
             horse = data.get("horse") or {}
             return horse.get("entityId") or slot.get("entityId")
 
+        def slot_source(slot):
+            data = slot.get("data") or {}
+            horse = data.get("horse") or {}
+            prop = data.get("prop") or {}
+            entity = horse.get("entityId") or slot.get("entityId")
+            index = self._horse_prop_index(config, prop)
+            if entity and index:
+                return {"entityId": entity, "prop_index": index}
+            return None
+
+        def current_sources():
+            records = []
+            for slot in slots.values():
+                item = slot_source(slot)
+                if item and item not in records:
+                    records.append(item)
+            return records
+
         def ready_slots():
             return [(pos, s) for pos, s in slots.items()
                     if int(s.get("time", 0)) <= int(state.get("serverTime", 0))]
@@ -663,7 +681,11 @@ class LimitedActivityPages:
                 request(route + "horseCollectBegin", {"data": {"index": pos, "horse": chosen, "prop": prop},
                     "pos": pos, "entityId": horse["entityId"], "index": index})
                 used += 1
-                self._last_horse_collect = {"entityId": horse["entityId"], "prop_index": index}
+                record = {"entityId": horse["entityId"], "prop_index": index}
+                if record not in self._last_horse_collects:
+                    self._last_horse_collects.append(record)
+                slots[str(pos)] = {"time": int(state.get("serverTime", 0)) + 120 * 60 * 1000,
+                                   "data": {"horse": chosen, "prop": prop}}
                 self._log("[骑装加速养成] 已开始采集%s，120分钟后免费领取" % prop["name"])
             finally:
                 if down:
@@ -678,56 +700,60 @@ class LimitedActivityPages:
             ready = ready_slots()
             if not ready: raise RuntimeError("没有已完成的采集，请等待倒计时结束")
             ready.sort(key=lambda item: int(item[1].get("time", 0)))
+            records = []
             for pos, slot in ready:
+                item = slot_source(slot)
+                if item and item not in records:
+                    records.append(item)
                 result = request(route + "horseCollectEnd", {"pos": int(pos), "type": 0})
                 self._log("[骑装加速养成] 免费领奖服务器返回：" + json.dumps(result, ensure_ascii=False))
-            slot = ready[-1][1]
-            data = slot.get("data") or {}
-            last_horse = data.get("horse") or {}
-            last_prop = data.get("prop") or {}
-            last_entity = last_horse.get("entityId") or slot.get("entityId")
-            last_index = self._horse_prop_index(config, last_prop)
-            if last_entity and last_index:
-                self._last_horse_collect = {"entityId": last_entity, "prop_index": last_index}
+            if records:
+                self._last_horse_collects = records
         elif action == "rebegin":
-            source = getattr(self, "_last_horse_collect", None)
-            if not source:
-                if not slots: raise RuntimeError("没有上次采集记录，请先手动采集一次")
-                pos, slot = max(slots.items(), key=lambda item: int(item[1].get("time", 0)))
-                data = slot.get("data") or {}
-                last_horse = data.get("horse") or {}
-                last_prop = data.get("prop") or {}
-                source = {"entityId": last_horse.get("entityId") or slot.get("entityId"),
-                          "prop_index": self._horse_prop_index(config, last_prop)}
+            sources = list(getattr(self, "_last_horse_collects", []) or [])
+            for item in current_sources():
+                if item not in sources:
+                    sources.append(item)
+            sources = [s for s in sources
+                       if s.get("entityId") and int(s.get("prop_index") or 0) >= 1]
+            if not sources:
+                raise RuntimeError("没有上次采集记录，请先手动采集一次")
             ready = ready_slots()
             ready.sort(key=lambda item: int(item[1].get("time", 0)))
             for pos, slot in ready:
                 result = request(route + "horseCollectEnd", {"pos": int(pos), "type": 0})
                 self._log("[骑装加速养成] 免费领奖服务器返回：" + json.dumps(result, ensure_ascii=False))
             if ready:
-                data = ready[-1][1].get("data") or {}
-                last_horse = data.get("horse") or {}
-                last_prop = data.get("prop") or {}
-                last_entity = last_horse.get("entityId") or ready[-1][1].get("entityId")
-                last_index = self._horse_prop_index(config, last_prop)
-                if last_entity and last_index:
-                    self._last_horse_collect = {"entityId": last_entity, "prop_index": last_index}
                 state = request(route + "getHorseCollectData", {})
                 collect = state.get("horseCollect") or {}
                 slots = collect.get("slots") or {}
                 if not isinstance(slots, dict): slots = {str(i): s for i, s in enumerate(slots) if s}
                 used = self._horse_collect_used(entry, scene, state)
-            target = source.get("entityId")
-            index = int(source.get("prop_index") or 0)
-            if not target or index < 1:
-                raise RuntimeError("无法识别上次采集的坐骑或材料")
-            source_slot = next((s for s in slots.values() if slot_entity(s) == target), None)
-            if source_slot and int(source_slot.get("time", 0)) > int(state.get("serverTime", 0)):
-                raise RuntimeError("上次采集的坐骑还未完成，请等倒计时结束后再试")
-            horse = next((h for h in horses if h["entityId"] == target), None)
-            if not horse: raise RuntimeError("上次采集的坐骑已不在坐骑列表")
-            prop = json.loads(config["item%d" % index])
-            start_collect(horse, prop, index)
+            self._last_horse_collects = [dict(s) for s in sources]
+            started = 0; errors = []
+            for source in sources:
+                target = source.get("entityId")
+                index = int(source.get("prop_index") or 0)
+                source_slot = next((s for s in slots.values() if slot_entity(s) == target), None)
+                if source_slot and int(source_slot.get("time", 0)) > int(state.get("serverTime", 0)):
+                    errors.append("坐骑%s还未完成采集" % target)
+                    continue
+                horse = next((h for h in horses if h["entityId"] == target), None)
+                if not horse:
+                    errors.append("坐骑%s已不在坐骑列表" % target)
+                    continue
+                prop = json.loads(config["item%d" % index])
+                try:
+                    start_collect(horse, prop, index)
+                    started += 1
+                except Exception as error:
+                    errors.append(str(error))
+                    if "今日采集次数已用完" in str(error) or "没有空闲采集槽位" in str(error):
+                        break
+            if started == 0:
+                raise RuntimeError(errors[0] if errors else "没有可再次采集的坐骑")
+            for error in errors:
+                self._log("[骑装加速养成] 跳过再次采集：%s" % error)
         state = request(route + "getHorseCollectData", {})
         self.root.after(0, lambda s=state, h=horses, n=names, u=used: self._show_horse_collect(s, h, n, u))
 
