@@ -3584,6 +3584,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             right, text="批量任务：Ctrl/Shift 多选后保存到批量1、2或3。",
             foreground="gray", wraplength=250, justify="left")
         self.lbl_daily_task_batch.pack(anchor="w", pady=(0, 4))
+        ttk.Button(right, text="查看批量详情",
+                   command=lambda: self._show_batch_details(
+                       "日常任务批量详情", self._daily_task_batch_details_text())
+                   ).pack(anchor="w", pady=(0, 6))
         self.btn_daily_task_accept = ttk.Button(right, text="接取所选任务",
                                                 command=lambda: self._daily_task_action("accept"),
                                                 state="disabled")
@@ -3723,6 +3727,127 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.lbl_daily_task_batch.config(
                 text="批量1：%s\n批量2：%s\n批量3：%s\nCtrl/Shift 多选，保存会覆盖该组。" %
                      (summary(1), summary(2), summary(3)))
+
+    def _show_batch_details(self, title, text):
+        win = tk.Toplevel(self.root)
+        win.title(title)
+        win.geometry("760x460")
+        win.transient(self.root)
+        frame = ttk.Frame(win, padding=10)
+        frame.pack(fill="both", expand=True)
+        box = tk.Text(frame, wrap="word", font=("Microsoft YaHei UI", 10))
+        scroll = ttk.Scrollbar(frame, command=box.yview)
+        box.configure(yscrollcommand=scroll.set)
+        box.pack(side="left", fill="both", expand=True)
+        scroll.pack(side="right", fill="y")
+        box.insert("1.0", text)
+        box.configure(state="disabled")
+        buttons = ttk.Frame(win, padding=(10, 0, 10, 10))
+        buttons.pack(fill="x")
+
+        def copy_text():
+            self.root.clipboard_clear()
+            self.root.clipboard_append(text)
+            messagebox.showinfo("提示", "已复制到剪贴板", parent=win)
+
+        ttk.Button(buttons, text="复制", command=copy_text).pack(side="left")
+        ttk.Button(buttons, text="关闭", command=win.destroy).pack(side="right")
+        win.grab_set()
+
+    def _batch_dungeon_name(self, mid):
+        if not hasattr(self, "_batch_dungeon_name_cache"):
+            cache = {}
+            try:
+                with open(os.path.join(CONFIG_DIR, "036___Dungeon.xml.json"),
+                          encoding="utf-8") as file:
+                    for row in _config_records(json.load(file)):
+                        if isinstance(row, dict) and row.get("id") is not None:
+                            cache[int(row["id"])] = row.get("name", "")
+            except Exception:
+                pass
+            self._batch_dungeon_name_cache = cache
+        return self._batch_dungeon_name_cache.get(int(mid), "")
+
+    def _daily_task_batch_details_text(self):
+        key = self._daily_task_batch_key()
+        if not key:
+            return "请先登录并选择存档。"
+        lines = []
+        for group in (1, 2, 3):
+            ids = self._daily_task_batch_ids(group)
+            lines.append("批量%d：%s" % (group, "未设置" if not ids else "%d 个任务" % len(ids)))
+            for task_id in ids:
+                info = self._daily_task_defs.get(task_id, {})
+                route = "已实测" if task_id in DAILY_TASK_TESTED_ROUTES else "待验证"
+                lines.append("  %d  %s  [%s]  副本：%s" % (
+                    task_id, info.get("name", "?"), route,
+                    info.get("dungeon_name") or info.get("dungeonId") or "?"))
+            lines.append("")
+        return "\n".join(lines).rstrip()
+
+    def _pet_batch_details_text(self):
+        key = self._pet_batch_key()
+        if not key:
+            return "请先登录并选择存档。"
+        sections = (("fish", "悲鸣冰川"), ("kong", "空桑谷"), ("yue", "月华境"),
+                    ("yun", "云隐渊"), ("wan", "万灵馆"))
+        lines = []
+        for group in (1, 2, 3):
+            data = self._pet_batch_data(group)
+            lines.append("宠物批量%d：%s" % (group, "未设置" if not data else ""))
+            if not data:
+                lines.append("")
+                continue
+            for section, label in sections:
+                ids = data.get(section) or []
+                if not ids:
+                    continue
+                names = []
+                for mid in ids:
+                    name = self._batch_dungeon_name(mid)
+                    names.append("%d %s" % (mid, name) if name else str(mid))
+                lines.append("  %s：%s" % (label, "、".join(names)))
+            lines.append("  次数：鱼×%d 万×%d 普通×%d" % (
+                data.get("fish_times", 1), data.get("wan_times", 1),
+                data.get("normal_times", 1)))
+            lines.append("")
+        return "\n".join(lines).rstrip()
+
+    def _mount_batch_details_text(self):
+        key = self._mount_batch_key()
+        if not key:
+            return "请先登录并选择存档。"
+        lines = []
+        for group in (1, 2, 3):
+            data = self._mount_batch_data(group)
+            lines.append("坐骑批量%d：%s" % (group, "未设置" if not data else ""))
+            if not data:
+                lines.append("")
+                continue
+            for layer_key in data.get("beiming") or []:
+                info = self.BEIMING_LAYERS.get(layer_key)
+                if not info:
+                    lines.append("  悲鸣·%s" % layer_key)
+                    continue
+                route_a = "/".join(info.get("route_a_names") or [])
+                route_b = "/".join(info.get("route_b_names") or [])
+                lines.append("  悲鸣·%s：%s → %s" % (info.get("name", layer_key), route_a, route_b))
+            for group_key in ("kuyan", "miwu", "fenghua"):
+                ids = data.get(group_key) or []
+                if not ids:
+                    continue
+                info = self.MOUNT_COPY_GROUPS[group_key]
+                pair_map = {normal: (name, boss) for normal, boss, name in info["pairs"]}
+                names = []
+                for mid in ids:
+                    name, boss = pair_map.get(mid, ("?", None))
+                    text = "%d %s" % (mid, name)
+                    if boss:
+                        text += " → %d" % boss
+                    names.append(text)
+                lines.append("  %s：%s" % (info["name"], "、".join(names)))
+            lines.append("")
+        return "\n".join(lines).rstrip()
 
     def _daily_task_save_batch(self, group):
         if self.client is None or self.current_save is None:
@@ -5992,6 +6117,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             settings, text="批量记忆：登录并选择存档后可保存。",
             foreground="gray", wraplength=900, justify="left")
         self.lbl_pet_batch.pack(anchor="w", pady=(4, 0))
+        ttk.Button(settings, text="查看批量详情",
+                   command=lambda: self._show_batch_details(
+                       "宠物副本批量详情", self._pet_batch_details_text())
+                   ).pack(anchor="w", pady=(2, 0))
         self.pet_equip_notebook.bind("<<NotebookTabChanged>>", self._update_pet_settings)
         self._update_pet_settings()
 
@@ -6605,6 +6734,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             tab, text="批量记忆：登录并选择存档后可保存。",
             foreground="gray", wraplength=900, justify="left")
         self.lbl_mount_batch.pack(anchor="w", pady=(2, 4), before=self.mount_notebook)
+        ttk.Button(tab, text="查看批量详情",
+                   command=lambda: self._show_batch_details(
+                       "坐骑副本批量详情", self._mount_batch_details_text())
+                   ).pack(anchor="w", pady=(0, 4), before=self.mount_notebook)
         self.beiming_layer_vars = {}
         self.mount_pair_vars = {}
         self.mount_remain_labels = {}
