@@ -8356,8 +8356,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.root.after(0, self._refresh_shenyu_wanted)
 
     def _wanted_state(self, flow, scene, refresh_board=True):
-        board = flow.request("scene.taskHandler.lookupWantedTask",
-                             {"isRefresh": 1 if refresh_board else 0}, timeout=15)
+        try:
+            board = flow.request("scene.taskHandler.lookupWantedTask",
+                                 {"isRefresh": 1 if refresh_board else 0}, timeout=15)
+        except TimeoutError:
+            if not refresh_board:
+                raise
+            self._log("[悬赏] 刷新榜单超时，改用读取榜单重试一次")
+            board = flow.request("scene.taskHandler.lookupWantedTask",
+                                 {"isRefresh": 0}, timeout=20)
         if board.get("code") != 200:
             raise RuntimeError("查询悬赏榜单失败：%s" % board)
         cur = scene.get("curRecord", {})
@@ -8392,6 +8399,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         threading.Thread(target=self._wanted_refresh_worker, daemon=True).start()
 
     def _wanted_refresh_worker(self):
+        flow = None
         try:
             flow, _, scene = self._connect_and_enter()
             state = self._wanted_state(flow, scene)
@@ -8399,6 +8407,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self._log("[悬赏] 榜单和任务状态已刷新")
         except Exception as e:
             self._log("[悬赏] 刷新失败：%s" % e)
+        finally:
+            if flow:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
 
     def _count_wanted_worker(self):
         """切档刷新复用：只读榜单，不主动刷新（isRefresh=0），避免消耗刷新次数"""
@@ -8463,12 +8477,21 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         threading.Thread(target=self._wanted_action_worker, args=(action, tid), daemon=True).start()
 
     def _wanted_action_worker(self, action, tid):
+        flow = None
         try:
             info = self.wanted_task_defs.get(tid, {})
             if not info.get("supported"):
                 raise RuntimeError("任务配置不符合已确认的免费副本路线")
             flow, _, scene = self._connect_and_enter()
-            ids, active, completed, day_num, double_reward, vip = self._wanted_state(flow, scene)
+            try:
+                ids, active, completed, day_num, double_reward, vip = self._wanted_state(
+                    flow, scene, refresh_board=False)
+            except TimeoutError:
+                self._log("[悬赏] 榜单响应超时，重新连接后重试")
+                flow.disconnect(); flow = None
+                flow, _, scene = self._connect_and_enter()
+                ids, active, completed, day_num, double_reward, vip = self._wanted_state(
+                    flow, scene, refresh_board=False)
             task = active.get(tid)
             if action == "all":
                 if tid not in ids or task or tid in completed:
@@ -8518,8 +8541,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 if result.get("code") != 200:
                     raise RuntimeError("副本结算失败：%s" % result)
                 self._log("[悬赏] 任务 %s 副本结算成功；未领取副本掉落" % tid)
+                flow.disconnect(); flow = None
                 flow, _, scene = self._connect_and_enter()
-                _, active, _, _, _, _ = self._wanted_state(flow, scene)
+                _, active, _, _, _, _ = self._wanted_state(flow, scene, refresh_board=False)
                 task = active.get(tid)
                 if not task or int(task.get("taskState", 0)) != 1:
                     raise RuntimeError("结算已提交，但任务尚未变为可领奖；请刷新状态后检查")
@@ -8533,13 +8557,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self._log("[悬赏] 任务 %s 领奖成功：%s" %
                           (tid, {k: result.get(k) for k in ("items", "equips", "addExp", "addSpirit")}))
                 try:
-                    _, _, after_scene = self._connect_and_enter()
-                    before_record = scene["curRecord"]
+                    baseline_scene = scene
+                    flow.disconnect(); flow = None
+                    flow, _, after_scene = self._connect_and_enter()
+                    before_record = baseline_scene["curRecord"]
                     after_record = after_scene["curRecord"]
                     for reward in result.get("items", []):
                         item_id = reward.get("id")
                         expected = int(reward.get("count", 0))
-                        before_count = self._special_item_count(scene, item_id)
+                        before_count = self._special_item_count(baseline_scene, item_id)
                         after_count = self._special_item_count(after_scene, item_id)
                         delta = after_count - before_count
                         self._log("[悬赏核验] 物品 %s：%d → %d（增加 %d；回包 %d）%s" %
@@ -8568,6 +8594,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         except Exception as e:
             self._log("[悬赏] %s 失败：%s" % (action, e))
         finally:
+            if flow:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
             self._wanted_refresh_worker()
 
     def _do_wanted_drain(self):
@@ -8581,45 +8612,58 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
     def _wanted_run_round(self, tid, info):
         """单轮：接取 → 通关 → 领奖（每轮独立会话，避免使用过期 curRecord）。"""
-        flow, _, scene = self._connect_and_enter()
-        _, active, _, _, _, _ = self._wanted_state(flow, scene)
-        task = active.get(tid)
-        if task is None:
-            started = flow.request("scene.taskHandler.startTask", {"taskId": tid}, timeout=15)
-            if started.get("code") != 200:
-                raise RuntimeError("接取失败：%s" % started.get("error", started.get("code")))
-            task = {"taskState": 0}
-        if int(task.get("taskState", 0)) == 0:
-            p1 = scene["curRecord"]["p1"]
-            mid = info["mid"]
-            created = flow.request("scene.copyHandler.createSinglePlayerCopy",
-                                   {"mid": mid, "costGem": 0}, timeout=15)
-            if created.get("code") != 200:
-                raise RuntimeError("创建副本失败：%s" % created.get("error", created.get("code")))
-            copy_id = (created.get("drops") or {}).get("copyId")
-            if not copy_id:
-                raise RuntimeError("副本未返回 copyId")
-            flow.request("scene.copyHandler.bossDead", None, timeout=15)
-            flow.request("scene.copyHandler.finishDungeon", {"dungeonId": mid}, timeout=15)
-            settled = flow.request("scene.copyHandler.syncDropInfoNew", {
-                "copyId": copy_id, "pickItems": [], "mobIds": [], "killMonsters": [],
-                "completed": 16777217, "currentEXP": p1["experience"], "pickExp": 0, "pickSp": 0,
-                "propertyP1Str": ";".join(str(p1[k]) for k in
-                    ("hpMax", "mpMax", "atk", "phyDef", "reHP", "reMP")),
-                "propertyP2Total": 0, "hitCombo": 100}, timeout=20)
-            if settled.get("code") != 200:
-                raise RuntimeError("副本结算失败：%s" % settled.get("error", settled.get("code")))
-            flow.disconnect()
+        flow = None
+        try:
             flow, _, scene = self._connect_and_enter()
-            _, active, _, _, _, _ = self._wanted_state(flow, scene)
+            _, active, _, _, _, _ = self._wanted_state(flow, scene, refresh_board=False)
             task = active.get(tid)
-            if not task or int(task.get("taskState", 0)) != 1:
-                raise RuntimeError("副本已结算，但任务尚未变为可领奖")
-        claimed = flow.request("scene.taskHandler.handoverTask", {"taskId": tid}, timeout=20)
-        if claimed.get("code") != 200:
-            raise RuntimeError("领奖失败：%s" % claimed.get("error", claimed.get("code")))
-        flow.disconnect()
-        return claimed
+            if task is None:
+                started = flow.request("scene.taskHandler.startTask", {"taskId": tid}, timeout=15)
+                if started.get("code") != 200:
+                    raise RuntimeError("接取失败：%s" % started.get("error", started.get("code")))
+                task = {"taskState": 0}
+            if int(task.get("taskState", 0)) == 0:
+                p1 = scene["curRecord"]["p1"]
+                mid = info["mid"]
+                created = flow.request("scene.copyHandler.createSinglePlayerCopy",
+                                       {"mid": mid, "costGem": 0}, timeout=15)
+                if created.get("code") != 200:
+                    raise RuntimeError("创建副本失败：%s" % created.get("error", created.get("code")))
+                copy_id = (created.get("drops") or {}).get("copyId")
+                if not copy_id:
+                    raise RuntimeError("副本未返回 copyId")
+                flow.request("scene.copyHandler.bossDead", None, timeout=15)
+                flow.request("scene.copyHandler.finishDungeon", {"dungeonId": mid}, timeout=15)
+                settled = flow.request("scene.copyHandler.syncDropInfoNew", {
+                    "copyId": copy_id, "pickItems": [], "mobIds": [], "killMonsters": [],
+                    "completed": 16777217, "currentEXP": p1["experience"], "pickExp": 0, "pickSp": 0,
+                    "propertyP1Str": ";".join(str(p1[k]) for k in
+                        ("hpMax", "mpMax", "atk", "phyDef", "reHP", "reMP")),
+                    "propertyP2Total": 0, "hitCombo": 100}, timeout=20)
+                if settled.get("code") != 200:
+                    raise RuntimeError("副本结算失败：%s" % settled.get("error", settled.get("code")))
+                flow.disconnect(); flow = None
+                flow, _, scene = self._connect_and_enter()
+                try:
+                    _, active, _, _, _, _ = self._wanted_state(flow, scene, refresh_board=False)
+                except TimeoutError:
+                    self._log("[悬赏] 榜单响应超时，重新连接后重试")
+                    flow.disconnect(); flow = None
+                    flow, _, scene = self._connect_and_enter()
+                    _, active, _, _, _, _ = self._wanted_state(flow, scene, refresh_board=False)
+                task = active.get(tid)
+                if not task or int(task.get("taskState", 0)) != 1:
+                    raise RuntimeError("副本已结算，但任务尚未变为可领奖")
+            claimed = flow.request("scene.taskHandler.handoverTask", {"taskId": tid}, timeout=20)
+            if claimed.get("code") != 200:
+                raise RuntimeError("领奖失败：%s" % claimed.get("error", claimed.get("code")))
+            return claimed
+        finally:
+            if flow:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
 
     def _wanted_drain_worker(self):
         try:
