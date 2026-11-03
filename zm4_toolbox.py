@@ -215,7 +215,14 @@ DAILY_TASK_TESTED_ROUTES = {
     20006: ((2134, False),),             # 四阶九头虫
     20008: ((2021, False), (2024, False), (2036, False)),  # 神兽森林→森林水底→赤鲤巢穴
     20009: ((360, True),),               # 噩梦夙夜径：角木蛟
+    20010: ((370, True),),               # 噩梦太虚星河：应龙·鼓
     20011: ((380, True),),               # 噩梦钟晷极地：时间祖巫
+    20012: ((400, True),),               # 噩梦凌云渡：那伽王
+    20013: ((410, True),),               # 噩梦蓝毗尼园：摩呼罗迦王
+    20014: ((420, True),),               # 噩梦菩提道场：罗骞驮
+    20015: ((430, True),),               # 噩梦七叶树窟：婆雅稚
+    20016: ((440, True),),               # 噩梦寒暑水：毗摩智多罗
+    20017: ((450, True),),               # 噩梦幕山：罗喉
     20018: ((460, True), (461, True)),   # 噩梦不周山及隐藏BOSS；两关都带W
     20020: ((2094, False), (2095, False)),  # 枯月流沙金瓯层→金瓯BOSS：天蝉若虫
     20022: ((2098, False), (2099, False)),  # 枯月流沙火岩层→火岩BOSS：四翅巨蝉
@@ -228,11 +235,16 @@ DAILY_TASK_TESTED_ROUTES = {
     20031: ((500, True),),               # 噩梦孤魂岭：獒狠
     20032: ((501, True), (10260, True)), # 噩梦通冥铁索及隐藏BOSS
     20035: ((503, True),),               # 噩梦罗浮山：草鬼婆母
+    20036: ((504, True), (10300, False)),  # 噩梦岁暮荒园→隐藏BOSS：冥蛊师/蛇骨婆母
     20037: ((505, True),),               # 噩梦梦影寺：南方鬼帝
     20039: ((2128, False),),             # 丰花原野：巨刺螫蜂
     20040: ((2130, False),),             # 丰花原野：幽灵冥蜂
     20041: ((506, True),),               # 噩梦抱犊山：拘魂鬼王
+    20042: ((507, True), (10340, False)),  # 噩梦彼岸花海→隐藏BOSS
+    20043: ((508, True),),               # 噩梦往生路：鬼帝周乞和嵇康
     20046: ((509, True),),               # 噩梦罗酆谷：土伯
+    20047: ((510, True), (10360, False)),  # 噩梦九泉→隐藏BOSS
+    20048: ((511, True),),               # 噩梦业火莲台：北方鬼帝
 }
 DAILY_TASK_BATCH_PICKUP_IDS = {20009, 20030, 20032}
 
@@ -752,7 +764,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     QUICK_CONFIG_FILE = os.path.join(BASE_DIR, "zm4_toolbox_config.json")
     QUICK_TASKS = (
         ("daily", "日常助手", "_do_daily", "btn_daily_run"),
-        ("treasure", "造梦寻宝", "_treasure_run", "btn_treasure_run"),
+        # 造梦寻宝：活动 1192 已于 2026/10/14 23:59:59 下线，暂时隐藏入口。
         ("dice", "4399冒险投一次", "_dice_roll", "btn_dice_roll"),
         ("mainfarm", "主线刷取", "_do_mainfarm", "btn_mainfarm_run"),
         ("mainline", "主线通关", "_do_mainline_clear", "btn_mainline_run"),
@@ -760,12 +772,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         ("shenyu", "神域/镜域", "_do_shenyu_jingyu", "btn_sj_run"),
         ("hideboss", "隐藏BOSS", "_do_hideboss", "btn_hide_run"),
         ("taigu", "太古秘境", "_do_taigu_run", "btn_taigu_run"),
-        ("pet", "宠物装备", "_do_pet_equip", "btn_pet_run"),
+        # 宠物装备/坐骑副本由页面内的“批量1/2/3”预设执行，不再提供通用快捷入口。
         ("beiming", "悲鸣冰川", "_do_beiming_run", "btn_beiming_run"),
-        ("mount", "坐骑副本", "_do_mount_run", "btn_mount_run"),
         ("luoxuan", "螺旋地狱", "_do_luoxuan_run", "btn_luoxuan_run"),
         ("luohan", "罗汉堂", "_do_luohan_run", "btn_luohan_run"),
-        ("special", "地藏/虚空藏", "_do_special_run", "btn_special_run"),
+        ("special_dizang", "地藏冥殿", "_do_dizang_run", "btn_special_run_dizang"),
+        ("special_xukong", "虚空藏院", "_do_xukong_run", "btn_special_run_xukong"),
         ("online_dice", "挂机领骰子", "_dice_start", "btn_dice_start"),
     )
     QUICK_PREPARE = {
@@ -774,7 +786,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         "mount": ("_do_mount_check", "btn_mount_check"),
         "luoxuan": ("_do_luoxuan_check", "btn_luoxuan_check"),
         "luohan": ("_do_luohan_check", "btn_luohan_check"),
-        "special": ("_do_special_check", "btn_special_check"),
+        "special_dizang": ("_do_special_check", "btn_special_check"),
+        "special_xukong": ("_do_special_check", "btn_special_check"),
     }
 
     def _build_quick_tab(self):
@@ -1386,7 +1399,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.daily2_notebook = ttk.Notebook(tab)
         self.daily2_notebook.pack(fill="both", expand=True)
         self._build_survival_tab()
-        self._build_treasure_tab()
+        # 造梦寻宝活动 1192 已下线，暂时隐藏该子页。
+        # self._build_treasure_tab()
         self._build_theme_challenge_tab()
         self._build_dice_online_tab()
         self._build_luoxuan_tab()
@@ -2082,8 +2096,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.btn_quick_run.config(state="normal")
         self.btn_load_survival.config(state="normal")
         self.btn_daily_run.config(state="normal")
-        self.btn_treasure_check.config(state="normal")
-        self.btn_treasure_run.config(state="normal")
+        self.btn_daily_partial.config(state="normal")
         self.btn_dice_check.config(state="normal")
         if not self.btn_dice_stop.instate(["!disabled"]):
             self.btn_dice_start.config(state="normal")
@@ -3023,7 +3036,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_dice_roll.pack(side="left", padx=4)
         self.lbl_dice_online = ttk.Label(tab, text="登录并选择存档后读取状态", foreground="gray")
         self.lbl_dice_online.pack(anchor="w", pady=6)
-        ttk.Label(tab, text="挂机期间保持工具箱打开；不会提前领取、自动投骰子或花点券。",
+        ttk.Label(tab, text="挂机期间保持工具箱打开；断线后自动重连继续挂机；不会提前领取、自动投骰子或花点券。",
                   foreground="#666").pack(anchor="w", pady=4)
 
     @staticmethod
@@ -3088,6 +3101,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
         def worker():
             flow = None
+            dice_count = 0
             try:
                 flow, entry, scene = self._connect_and_enter(save_index)
                 record = scene.get("curRecord") or entry.get("record") or {}
@@ -3099,29 +3113,44 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 dice_count = self._dice_item_count(record)
                 self._log("[4399冒险] 槽%d开始协议挂机，当前骰子 %d 个" % (save_index, dice_count))
                 while not self._dice_stop_event.is_set():
-                    info = flow.request("scene.holidayHandler.getGridActiveInfoNew", {"gridKey": 4399}, timeout=15)
-                    if info.get("code") != 200:
-                        raise RuntimeError("读取在线状态失败：%s" % info.get("error", info.get("code")))
-                    grid = info.get("gridInfo") or {}
-                    claimed = grid.get("gridIds") or {}
-                    seconds = int(grid.get("time") or 0)
-                    status = self._dice_online_status(info, dice_count)
-                    self.root.after(0, lambda status=status: self.lbl_dice_online.config(text=status, foreground="green"))
-                    if all(claimed.get(str(i)) for i in range(11, 17)):
-                        self._log("[4399冒险] 今日 6 档骰子已全部领取")
-                        break
-                    due = [i for i in range(11, 17)
-                           if seconds >= (i - 11) * 180 and not claimed.get(str(i))]
-                    if due:
-                        reward = flow.request("scene.holidayHandler.getGridActiveItemNew", {"isAll": 0}, timeout=15)
-                        if reward.get("code") != 200 or reward.get("itemId") != 143200006:
-                            raise RuntimeError("免费领取失败：%s" % reward.get("error", reward.get("code")))
-                        dice_count += int(reward.get("itemNum") or 0)
-                        self._log("[4399冒险] 免费领取骰子 %d 个，背包预计 %d 个" % (
-                            int(reward.get("itemNum") or 0), dice_count))
+                    if flow is None:
+                        flow, dice_count = self._dice_reconnect(save_index, dice_count)
+                        if flow is None:
+                            break
                         continue
-                    if self._dice_stop_event.wait(10):
-                        break
+                    try:
+                        info = flow.request("scene.holidayHandler.getGridActiveInfoNew", {"gridKey": 4399}, timeout=15)
+                        if info.get("code") != 200:
+                            raise RuntimeError("读取在线状态失败：%s" % info.get("error", info.get("code")))
+                        grid = info.get("gridInfo") or {}
+                        claimed = grid.get("gridIds") or {}
+                        seconds = int(grid.get("time") or 0)
+                        status = self._dice_online_status(info, dice_count)
+                        self.root.after(0, lambda status=status: self.lbl_dice_online.config(text=status, foreground="green"))
+                        if all(claimed.get(str(i)) for i in range(11, 17)):
+                            self._log("[4399冒险] 今日 6 档骰子已全部领取")
+                            break
+                        due = [i for i in range(11, 17)
+                               if seconds >= (i - 11) * 180 and not claimed.get(str(i))]
+                        if due:
+                            reward = flow.request("scene.holidayHandler.getGridActiveItemNew", {"isAll": 0}, timeout=15)
+                            if reward.get("code") != 200 or reward.get("itemId") != 143200006:
+                                raise RuntimeError("免费领取失败：%s" % reward.get("error", reward.get("code")))
+                            dice_count += int(reward.get("itemNum") or 0)
+                            self._log("[4399冒险] 免费领取骰子 %d 个，背包预计 %d 个" % (
+                                int(reward.get("itemNum") or 0), dice_count))
+                            continue
+                        if self._dice_stop_event.wait(10):
+                            break
+                    except Exception as exc:
+                        if self._dice_stop_event.is_set():
+                            break
+                        self._log("[4399冒险] 连接异常：%s，准备重连" % exc)
+                        try:
+                            flow.disconnect()
+                        except Exception:
+                            pass
+                        flow = None
                 self._log("[4399冒险] 挂机结束")
             except Exception as exc:
                 self._log("[4399冒险] 挂机停止：%s" % exc)
@@ -3134,6 +3163,32 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self.root.after(0, lambda: self.btn_dice_roll.config(state="normal"))
 
         threading.Thread(target=worker, daemon=True).start()
+
+    def _dice_reconnect(self, save_index, dice_count, attempts=5):
+        for attempt in range(1, attempts + 1):
+            if self._dice_stop_event.is_set():
+                return None, dice_count
+            if attempt > 1 and self._dice_stop_event.wait(min(5 * attempt, 30)):
+                return None, dice_count
+            try:
+                flow, entry, scene = self._connect_and_enter(save_index)
+                record = scene.get("curRecord") or entry.get("record") or {}
+                bag = record.get("itemsBag") or {}
+                capacity = int(bag.get("itemCount") or 0)
+                items = bag.get("items") or []
+                if capacity and len(items) >= capacity:
+                    self._log("[4399冒险] 重连后发现背包已满，停止挂机")
+                    try:
+                        flow.disconnect()
+                    except Exception:
+                        pass
+                    return None, dice_count
+                self._log("[4399冒险] 第 %d 次重连成功，继续挂机" % attempt)
+                return flow, self._dice_item_count(record)
+            except Exception as exc:
+                self._log("[4399冒险] 重连失败（%d/%d）：%s" % (attempt, attempts, exc))
+        self._log("[4399冒险] 连续重连失败 %d 次，停止挂机" % attempts)
+        return None, dice_count
 
     def _dice_roll(self):
         if not self._ensure_login():
@@ -3310,6 +3365,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
         self.btn_daily_run = ttk.Button(action_frame, text="开始一键日常", command=self._do_daily, state="disabled")
         self.btn_daily_run.grid(row=0, column=3, rowspan=4, padx=15)
+        self.btn_daily_partial = ttk.Button(action_frame, text="一键日常（部分）", command=self._do_daily_partial, state="disabled")
+        self.btn_daily_partial.grid(row=4, column=3, sticky="ew", padx=15, pady=(6, 0))
 
         ttk.Label(action_frame, text="⚠ 全部不消耗点券", foreground="green").grid(row=0, column=4, rowspan=4, padx=10)
 
@@ -3354,18 +3411,35 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         )
         ttk.Label(info_frame, text=info_text, justify="left", foreground="#333", wraplength=680).pack(anchor="w")
 
-    def _do_daily(self):
+    def _do_daily_partial(self):
+        self._do_daily({"vip", "union", "mail", "yanwu", "teacher"})
+
+    def _do_daily(self, selection=None):
         if not self.client or self.current_save is None:
             messagebox.showwarning("提示", "请先登录并选择存档")
             return
+        if selection is None:
+            selection = {key for key, var in (
+                ("liveness", self.var_daily_liveness),
+                ("vip", self.var_daily_vip),
+                ("union", self.var_daily_union),
+                ("mail", self.var_daily_mail),
+                ("yanwu", self.var_daily_yanwu),
+                ("forum", self.var_daily_forum),
+                ("teacher", self.var_daily_teacher),
+                ("secret_shop", self.var_daily_secret_shop),
+                ("arena", self.var_daily_arena),
+                ("petarena", self.var_daily_petarena),
+            ) if var.get()}
         forum_credentials = None
-        if self.var_daily_forum.get():
+        if "forum" in selection:
             try:
                 from forum_daily import capture_credentials
                 forum_credentials = capture_credentials(self, require_same_account=True)
             except RuntimeError as error:
                 self._log("[群组签到] 本轮跳过：%s" % error)
         self.btn_daily_run.config(state="disabled")
+        self.btn_daily_partial.config(state="disabled")
         save_index = self.current_save["index"]
 
         def worker():
@@ -3383,7 +3457,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 cur = scene.get("curRecord", {})
                 user = cur.get("user", {})
 
-                if self.var_daily_mail.get():
+                if "mail" in selection:
                     self._log("\n--- 领取邮件奖励 ---")
                     try:
                         from daily_mail import claim_mail_rewards
@@ -3391,21 +3465,21 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                     except Exception as error:
                         self._log("  邮件奖励已停止：%s" % error)
 
-                if self.var_daily_teacher.get():
+                if "teacher" in selection:
                     try:
                         from daily_teacher import learn
                         learn(flow, entry, scene, self._log)
                     except Exception as error:
                         self._log("[师徒学艺] 已停止：%s" % error)
 
-                if self.var_daily_yanwu.get():
+                if "yanwu" in selection:
                     try:
                         from daily_yanwu import give_love
                         give_love(flow, entry, scene, self._log)
                     except Exception as error:
                         self._log("[演武堂] 点赞停止：%s" % error)
 
-                if self.var_daily_secret_shop.get():
+                if "secret_shop" in selection:
                     try:
                         from daily_secret_shop import buy
                         buy(flow, scene, None, self._log, entry=entry)
@@ -3413,7 +3487,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         self._log("[神秘商店] 已停止：%s" % error)
 
                 # 2. VIP每日礼包
-                if self.var_daily_vip.get():
+                if "vip" in selection:
                     self._log("\n--- VIP每日礼包 ---")
                     try:
                         r = flow.request("scene.vipHandler.getDailyReward", {}, timeout=15)
@@ -3427,7 +3501,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         self._log("  VIP礼包异常: %s" % e)
 
                 # 3. 联盟灵气贡献
-                if self.var_daily_union.get():
+                if "union" in selection:
                     self._log("\n--- 联盟灵气贡献 ---")
                     try:
                         r = flow.request("scene.leagueHandler.playerDevoteLeague", {"type": 1}, timeout=15)
@@ -3441,8 +3515,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
                 from arena_daily import automatic
                 for pet, enabled, title in (
-                    (False, self.var_daily_arena.get(), "竞技场"),
-                    (True, self.var_daily_petarena.get(), "斗宠大会"),
+                    (False, "arena" in selection, "竞技场"),
+                    (True, "petarena" in selection, "斗宠大会"),
                 ):
                     if enabled:
                         self._log("\n--- %s ---" % title)
@@ -3452,7 +3526,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                             self._log("  %s停止: %s" % (title, error))
 
                 flow.disconnect()
-                if self.var_daily_liveness.get():
+                if "liveness" in selection:
                     self._log("\n--- 日常收尾：活跃奖励 ---")
                     try:
                         from daily_liveness import execute
@@ -3466,6 +3540,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self._log(traceback.format_exc())
             finally:
                 self.root.after(0, lambda: self.btn_daily_run.config(state="normal"))
+                self.root.after(0, lambda: self.btn_daily_partial.config(state="normal"))
 
         threading.Thread(target=worker, daemon=True).start()
 
@@ -8115,7 +8190,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         sections.add(shenyu_tab, text="神域悬赏")
         ttk.Label(normal_tab, text="选择任务后可一键接取、通关、领奖；副本自身掉落不会领取。",
                   foreground="blue").pack(anchor="w", pady=(0, 8))
-        ttk.Label(normal_tab, text="10148、10151、10153、10154 已逐项实测；双倍任务 10149 尚未逐项实测，接取占两次。",
+        ttk.Label(normal_tab, text="已实测护送小童/公主、守卫太宗/宝烛/小童、追捕鱼精/飞贼；"
+                                   "3010/3011 用唤雨旗/招云旗接取，可在「呼风唤雨」页一键完成；"
+                                   "双倍任务接取占两次。",
                   foreground="brown").pack(anchor="w", pady=(0, 8))
         self.lbl_wanted_summary = ttk.Label(normal_tab, text="待刷新")
         self.lbl_wanted_summary.pack(anchor="w", pady=(0, 8))
@@ -8140,6 +8217,155 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_wanted_drain.pack(side="left", padx=6)
 
         self._build_shenyu_panel(shenyu_tab)
+        weather_tab = ttk.Frame(sections, padding=5)
+        sections.add(weather_tab, text="呼风唤雨")
+        self._build_weather_panel(weather_tab)
+
+    def _build_weather_panel(self, parent):
+        self.weather_flags = {
+            "111300001": {"name": "唤雨旗", "task": "挑战化蛇", "mid": 3010},
+            "111300002": {"name": "招云旗", "task": "捉拿大盗", "mid": 3011},
+        }
+        self.weather_labels = {}
+        ttk.Label(parent, text="读取当前存档背包里的唤雨旗/招云旗；使用会消耗 1 面并接取对应悬赏，随后自动通关领奖。",
+                  foreground="blue").pack(anchor="w", pady=(0, 8))
+        ttk.Label(parent, text="唤雨旗→3010 挑战化蛇；招云旗→3011 捉拿大盗。没有旗帜时不会购买。",
+                  foreground="#666").pack(anchor="w", pady=(0, 8))
+        self.lbl_weather_summary = ttk.Label(parent, text="待读取")
+        self.lbl_weather_summary.pack(anchor="w", pady=(0, 8))
+        for item_id, meta in self.weather_flags.items():
+            row = ttk.Frame(parent)
+            row.pack(fill="x", pady=2)
+            label = ttk.Label(row, text="%s：待读取" % meta["name"], width=48, anchor="w")
+            label.pack(side="left")
+            button = ttk.Button(row, text="使用并完成", state="disabled",
+                                command=lambda iid=item_id: self._do_weather_use(iid))
+            button.pack(side="left", padx=2)
+            self.weather_labels[item_id] = (label, button)
+        actions = ttk.Frame(parent)
+        actions.pack(anchor="w", pady=10)
+        ttk.Button(actions, text="刷新旗帜数量", command=self._refresh_weather).pack(side="left")
+
+        notebook = parent
+        while notebook is not None and not isinstance(notebook, ttk.Notebook):
+            notebook = getattr(notebook, "master", None)
+        if notebook is not None:
+            notebook.bind("<<NotebookTabChanged>>",
+                          lambda event: self._refresh_weather()
+                          if notebook.select() == str(parent)
+                          and self.client and self.current_save is not None else None,
+                          add="+")
+
+    def _refresh_weather(self):
+        if not self._ensure_login():
+            return
+        self.lbl_weather_summary.config(text="正在读取背包…")
+        threading.Thread(target=self._weather_refresh_worker, daemon=True).start()
+
+    def _weather_refresh_worker(self):
+        flow = None
+        try:
+            flow, _, scene = self._connect_and_enter()
+            counts = {item_id: self._special_item_count(scene, item_id)
+                      for item_id in self.weather_flags}
+            active = {}
+            for task in (scene.get("curRecord") or {}).get("curTasks") or []:
+                if not isinstance(task, dict) or "taskId" not in task:
+                    continue
+                info = self.wanted_task_defs.get(int(task["taskId"]))
+                if info and info.get("mid") in (3010, 3011):
+                    active[info["mid"]] = (int(task["taskId"]),
+                                           int(task.get("taskState", 0) or 0))
+            day_num = (((scene.get("curRecord") or {}).get("wantedTask") or {})
+                       .get("wantedDayNum", "?"))
+            completed = {int(tid) for tid in
+                         (((scene.get("curRecord") or {}).get("wantedTask") or {})
+                          .get("completeList") or []) if str(tid).isdigit()}
+            done_mids = {info.get("mid") for tid, info in self.wanted_task_defs.items()
+                         if tid in completed}
+            snapshot = (counts, active, day_num, done_mids)
+            self.root.after(0, lambda data=snapshot: self._show_weather_state(data))
+        except Exception as e:
+            self._log("[呼风唤雨] 读取失败：%s" % e)
+        finally:
+            if flow is not None:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
+
+    def _show_weather_state(self, snapshot):
+        counts, active, day_num, done_mids = snapshot
+        self.lbl_weather_summary.config(
+            text="今日已接取悬赏：%s 次；旗帜数量来自当前存档背包" % day_num)
+        for item_id, meta in self.weather_flags.items():
+            label, button = self.weather_labels[item_id]
+            count = counts.get(item_id, 0)
+            task = active.get(meta["mid"])
+            if task:
+                status = "已有任务 %s（%s）" % (
+                    task[0], "可领奖" if task[1] == 1 else "进行中")
+            elif meta["mid"] in done_mids:
+                status = "今日已完成"
+            elif count:
+                status = "可接取"
+            else:
+                status = "背包无旗帜"
+            label.config(text="%s ×%d → %s(%s)  |  %s" %
+                         (meta["name"], count, meta["task"], meta["mid"], status))
+            button.config(state="normal"
+                          if count and not task and meta["mid"] not in done_mids
+                          else "disabled")
+
+    def _do_weather_use(self, item_id):
+        if not self._ensure_login():
+            return
+        meta = self.weather_flags[item_id]
+        if not messagebox.askyesno(
+                "确认呼风唤雨",
+                "将消耗 1 面%s接取「%s」，并自动通关领奖，继续吗？" %
+                (meta["name"], meta["task"])):
+            return
+        for _, button in self.weather_labels.values():
+            button.config(state="disabled")
+        threading.Thread(target=self._weather_use_worker, args=(item_id,), daemon=True).start()
+
+    def _weather_use_worker(self, item_id):
+        flow = None
+        try:
+            meta = self.weather_flags[item_id]
+            flow, _, scene = self._connect_and_enter()
+            if self._special_item_count(scene, item_id) <= 0:
+                raise RuntimeError("背包里没有%s" % meta["name"])
+            for task in (scene.get("curRecord") or {}).get("curTasks") or []:
+                info = self.wanted_task_defs.get(int(task.get("taskId", 0) or 0))
+                if info and info.get("mid") == meta["mid"]:
+                    raise RuntimeError("已有同副本任务 %s，请先完成它" % task.get("taskId"))
+            started = flow.request("scene.taskHandler.startSpecialTask",
+                                   {"itemId": item_id}, timeout=15)
+            if started.get("code") != 200:
+                raise RuntimeError("使用失败：%s" % started.get("error", started.get("code")))
+            task_id = int((started.get("taskData") or {}).get("taskId") or 0)
+            if not task_id:
+                raise RuntimeError("使用成功但未返回任务ID")
+            info = self.wanted_task_defs.get(task_id) or {}
+            if not info.get("supported"):
+                raise RuntimeError("任务 %s 配置不支持自动完成" % task_id)
+            self._log("[呼风唤雨] 使用%s成功，接取 %s（%s），开始通关" %
+                      (meta["name"], info.get("name", task_id), task_id))
+            flow.disconnect()
+            flow = None
+            self._wanted_action_worker("challenge_claim", task_id)
+        except Exception as e:
+            self._log("[呼风唤雨] 使用%s失败：%s" %
+                      (self.weather_flags[item_id]["name"], e))
+        finally:
+            if flow is not None:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
+            self.root.after(0, self._refresh_weather)
 
     def _build_shenyu_panel(self, parent):
         if not hasattr(self, "shenyu_panels"):
@@ -8455,7 +8681,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 status = "榜单可接取（次数由服务器判定）"
             doubles = double_reward if isinstance(double_reward, list) else [double_reward]
             double_text = "  [双倍，接取占两次]" if str(tid) in [str(x) for x in doubles] else ""
-            test_text = "已实测" if tid in (10148, 10151, 10153, 10154) else "未逐项实测"
+            test_text = "已实测" if tid in (10141, 10146, 10148, 10151, 10152, 10153, 10154,
+                                            10173, 10176, 10178, 10180) else "未逐项实测"
             label.config(text="%s (%s) → %s (%s)  |  %s  [%s]%s" %
                          (info.get("name", "未知任务"), tid, info.get("dungeon_name", "未知副本"),
                           info.get("mid", "?"), status, test_text, double_text))
@@ -9436,12 +9663,16 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
         self.special_groups = {}
         self.special_run_buttons = []
+        pages = ttk.Notebook(tab)
+        pages.pack(fill="both", expand=True, pady=(0, 5))
         for group, title, options in (
-            ("dizang", "地藏冥府", [i for i in SPECIAL_DUNGEONS if i["id"] < 6026]),
+            ("dizang", "地藏冥殿", [i for i in SPECIAL_DUNGEONS if i["id"] < 6026]),
             ("xukong", "虚空藏院", [i for i in SPECIAL_DUNGEONS if i["id"] == 6026]),
         ):
-            panel = ttk.LabelFrame(tab, text=title, padding=10)
-            panel.pack(fill="x", pady=6)
+            page = ttk.Frame(pages, padding=10)
+            pages.add(page, text=title)
+            panel = ttk.Frame(page)
+            panel.pack(fill="x")
             ttk.Label(panel, text="选择BOSS：").grid(row=0, column=0, sticky="w")
             boss_var = tk.StringVar(value=options[0]["boss"])
             choice = ttk.Combobox(panel, textvariable=boss_var, values=[i["boss"] for i in options],
@@ -9455,12 +9686,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             reward.grid(row=1, column=0, columnspan=2, sticky="w", pady=6)
             remaining = ttk.Label(panel, text="剩余次数：待检测", foreground="gray")
             remaining.grid(row=1, column=2, columnspan=2, sticky="w")
-            button = ttk.Button(panel, text="执行所选BOSS", state="disabled",
+            button = ttk.Button(panel, text="执行%s" % title, state="disabled",
                                 command=lambda g=group: self._do_special_run(g))
             button.grid(row=0, column=4, padx=8)
             self.special_run_buttons.append(button)
             self.special_groups[group] = {"options": options, "boss_var": boss_var,
-                                          "count_var": count_var, "remaining": remaining}
+                                          "count_var": count_var, "remaining": remaining,
+                                          "button": button}
             def update_reward(event, items=options, var=boss_var, label=reward):
                 info = next(i for i in items if i["boss"] == var.get())
                 label.config(text="奖励：" + info["item_name"])
@@ -9471,6 +9703,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_special_check.pack(side="left")
         # 一键运行按单按钮等待结束，这里引用第一个执行按钮（无事用时两个按钮同步状态）。
         self.btn_special_run = self.special_run_buttons[0]
+        self.btn_special_run_dizang = self.special_groups["dizang"]["button"]
+        self.btn_special_run_xukong = self.special_groups["xukong"]["button"]
 
         info_frame = ttk.LabelFrame(tab, text="说明", padding=8)
         info_frame.pack(fill="x", pady=5)
@@ -9567,6 +9801,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 except Exception:
                     pass
             self._count_after(_count_generation, 0, lambda: self.btn_special_check.config(state="normal"))
+
+    def _do_dizang_run(self):
+        self._do_special_run("dizang")
+
+    def _do_xukong_run(self):
+        self._do_special_run("xukong")
 
     def _do_special_run(self, group_name=None):
         if not self._ensure_login():
