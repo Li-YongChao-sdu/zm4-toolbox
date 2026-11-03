@@ -3253,7 +3253,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.root.bind("<MouseWheel>", scroll_daily, add="+")
 
         # 一键日常按钮区
-        action_frame = ttk.LabelFrame(tab, text="一键日常（免费，不消耗点券）", padding=10)
+        action_frame = ttk.LabelFrame(tab, text="一键日常（不消耗点券）", padding=10)
         action_frame.pack(fill="x", pady=5)
 
         self.var_daily_liveness = tk.BooleanVar(value=True)
@@ -3276,6 +3276,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         from arena_daily import build_tabs
         build_tabs(self)
 
+        ttk.Checkbutton(action_frame, text="活跃奖励", variable=self.var_daily_liveness).grid(row=0, column=0, sticky="w", padx=5, pady=3)
         ttk.Checkbutton(action_frame, text="VIP每日礼包", variable=self.var_daily_vip).grid(row=0, column=1, sticky="w", padx=5, pady=3)
         ttk.Checkbutton(action_frame, text="联盟灵气贡献", variable=self.var_daily_union).grid(row=0, column=2, sticky="w", padx=5, pady=3)
         ttk.Checkbutton(action_frame, text="领取邮件奖励", variable=self.var_daily_mail).grid(row=1, column=0, sticky="w", padx=5, pady=3)
@@ -3284,11 +3285,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         ttk.Checkbutton(action_frame, text="造四群组签到", variable=self.var_daily_forum).grid(row=1, column=2, sticky="w", padx=5, pady=3)
 
         ttk.Checkbutton(action_frame, text="师徒每日学艺（1000灵魂）", variable=self.var_daily_teacher).grid(row=2, column=0, columnspan=2, sticky="w", padx=5, pady=3)
+        ttk.Checkbutton(action_frame, text="神秘商店（消耗灵魂）", variable=self.var_daily_secret_shop).grid(row=2, column=2, sticky="w", padx=5, pady=3)
+
+        ttk.Checkbutton(action_frame, text="竞技场", variable=self.var_daily_arena).grid(row=3, column=0, sticky="w", padx=5, pady=3)
+        ttk.Checkbutton(action_frame, text="斗宠大会", variable=self.var_daily_petarena).grid(row=3, column=1, sticky="w", padx=5, pady=3)
 
         self.btn_daily_run = ttk.Button(action_frame, text="开始一键日常", command=self._do_daily, state="disabled")
-        self.btn_daily_run.grid(row=0, column=3, rowspan=2, padx=15)
+        self.btn_daily_run.grid(row=0, column=3, rowspan=4, padx=15)
 
-        ttk.Label(action_frame, text="⚠ 全部免费操作，不消耗点券", foreground="green").grid(row=0, column=4, rowspan=2, padx=10)
+        ttk.Label(action_frame, text="⚠ 全部不消耗点券", foreground="green").grid(row=0, column=4, rowspan=4, padx=10)
 
         # 状态显示区
         status_frame = ttk.LabelFrame(tab, text="当前状态", padding=8)
@@ -3320,10 +3325,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             "勾选需要执行的项目，再点击“开始一键日常”。\n"
             "群组签到：先尝试一键接口，等级不足走网页签到；未加入时在群组签到子标签中加入。\n"
             "邮件奖励：领取带附件邮件，领取成功会同时移除邮件；纯文字邮件保留。\n"
-            "活跃奖励在独立子标签中领取；勾选后会在一键日常最后重新读取状态并领取。\n"
+            "活跃奖励、神秘商店、竞技场、斗宠大会的开关已统一放在上方，次数和打法在各自子标签设置。\n"
+            "活跃奖励勾选后会在一键日常最后重新读取状态并领取。\n"
             "竞技场、斗宠大会是否参与、挑战次数和挑战方式，在各自子标签中设置。\n"
             "演武堂点赞：读取各角色榜首，自动赠送一次免费爱心并接收奖励。\n"
-            "神秘商店是否参与，在子标签中设置；次数按VIP自动判断，购买消耗灵魂。\n"
+            "神秘商店次数按VIP自动判断，购买消耗灵魂。\n"
             "师徒每日学艺：有师父且今日未学时执行，仅1000灵魂分支，不使用点券学艺。\n"
             "福禄寿190、三日福利在各自子标签中操作。\n"
             "竞技场和斗宠大会只使用免费次数，不购买额外次数。"

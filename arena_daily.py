@@ -427,14 +427,14 @@ def automatic(flow, cur, pet, log, stop=None, update=None, mode="每把刷新重
 
 
 def build_tabs(app):
-    for pet, title, variable in ((False, '竞技场', app.var_daily_arena), (True, '斗宠大会', app.var_daily_petarena)):
-        build_tab(app, pet, title, variable)
+    for pet, title in ((False, '竞技场'), (True, '斗宠大会')):
+        build_tab(app, pet, title)
 
 
-def build_tab(app, pet, title, variable):
+def build_tab(app, pet, title):
     page = ttk.Frame(app.daily_notebook, padding=10)
     app.daily_notebook.add(page, text=title)
-    ttk.Checkbutton(page, text='纳入一键日常', variable=variable).pack(anchor='w')
+    ttk.Label(page, text='是否纳入一键日常，请在“一键日常”面板勾选。', foreground='gray').pack(anchor='w')
     mode = tk.StringVar(value='每把刷新重选')
     setattr(app, 'var_petarena_mode' if pet else 'var_arena_mode', mode)
     settings = ttk.LabelFrame(page, text='挑战方式', padding=10)

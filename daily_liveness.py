@@ -74,7 +74,7 @@ def build_tab(app):
     tab = ttk.Frame(app.daily_notebook, padding=10)
     app.daily_notebook.add(tab, text='活跃奖励')
     ttk.Label(tab, text='所有活动做完后，再来领取活跃度和档位奖励。', font=('Microsoft YaHei', 12, 'bold')).pack(anchor='w', pady=8)
-    ttk.Checkbutton(tab, text='一键日常结束后领取活跃奖励', variable=app.var_daily_liveness).pack(anchor='w', pady=5)
+    ttk.Label(tab, text='是否纳入一键日常，请在“一键日常”面板勾选。', foreground='gray').pack(anchor='w', pady=5)
     ttk.Label(tab, text='领取已完成任务的活跃度，以及达标且未领取的日奖励、周奖励（包括宝石结晶）。', wraplength=680).pack(anchor='w', pady=8)
     status = ttk.Label(tab, text='待领取；点击后重新读取服务器最新任务状态', wraplength=680)
     status.pack(anchor='w', pady=8)

@@ -82,7 +82,7 @@ def buy(flow,scene,limit,log,entry=None):
 def build_tab(app):
     tab=ttk.Frame(app.daily_notebook,padding=10);app.daily_notebook.add(tab,text='神秘商店')
     ttk.Label(tab,text='优先购买已开启的后排格子',font=('Microsoft YaHei',12,'bold')).pack(anchor='w',pady=8)
-    ttk.Checkbutton(tab,text='纳入一键日常（消耗灵魂）',variable=app.var_daily_secret_shop).pack(anchor='w',pady=5)
+    ttk.Label(tab,text='是否纳入一键日常，请在“一键日常”面板勾选。',foreground='gray').pack(anchor='w',pady=5)
     ttk.Label(tab,text='自动读取VIP：VIP0每天5次，VIP1及以上每天10次（普通5次＋VIP额外5次）。',wraplength=660).pack(anchor='w',pady=6)
     ttk.Label(tab,text='按当前格位号从大到小购买，每次买完重新读取货架；结合今日已用次数，到上限即停。仅买灵魂商品。',wraplength=660).pack(anchor='w',pady=8)
     status=ttk.Label(tab,text='待执行；已实测后排优先、VIP次数及道具入包',wraplength=660);status.pack(anchor='w',pady=8)
