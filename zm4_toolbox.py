@@ -3499,7 +3499,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         left.pack(side="left", fill="both", expand=True, padx=(0, 10))
         filter_row = ttk.Frame(left)
         filter_row.pack(fill="x", pady=(0, 6))
-        ttk.Label(filter_row, text="分类筛选").pack(side="left")
+        ttk.Label(filter_row, text="类型筛选").pack(side="left")
         self.var_daily_task_category = tk.StringVar(value="全部")
         category_box = ttk.Combobox(
             filter_row, textvariable=self.var_daily_task_category,
@@ -3508,6 +3508,16 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         )
         category_box.pack(side="left", padx=(6, 0))
         category_box.bind("<<ComboboxSelected>>", lambda event: self._daily_task_render_tree())
+        ttk.Label(filter_row, text="状态筛选").pack(side="left", padx=(14, 0))
+        self.var_daily_task_state = tk.StringVar(value="全部")
+        state_box = ttk.Combobox(
+            filter_row, textvariable=self.var_daily_task_state,
+            values=("全部", "可接", "进行中", "可领奖", "今日已领",
+                    "未开放/已过期", "等级不足", "前置未完成", "次数用完"),
+            state="readonly", width=14,
+        )
+        state_box.pack(side="left", padx=(6, 0))
+        state_box.bind("<<ComboboxSelected>>", lambda event: self._daily_task_render_tree())
         tree_frame = ttk.Frame(left)
         tree_frame.pack(fill="both", expand=True)
         scroll = ttk.Scrollbar(tree_frame)
@@ -3518,10 +3528,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         )
         scroll.config(command=self.daily_task_tree.yview)
         for column, title, width in (("id", "编号", 65), ("name", "任务", 180),
-                                     ("type", "类别", 80), ("state", "状态", 100),
+                                     ("type", "类别", 80), ("state", "状态", 120),
                                      ("route", "自动路线", 80)):
             self.daily_task_tree.heading(column, text=title)
             self.daily_task_tree.column(column, width=width, anchor="w")
+        self.daily_task_tree.tag_configure("closed", foreground="gray")
         self.daily_task_tree.pack(side="left", fill="both", expand=True)
         self.daily_task_tree.bind("<<TreeviewSelect>>", self._daily_task_on_select)
         self._daily_task_render_tree()
@@ -3590,20 +3601,27 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.daily_task_tree.delete(*self.daily_task_tree.get_children())
         category = {"0": "噩梦", "1": "宠物", "2": "普通"}
         kind_order = {"普通": 0, "宠物": 1, "噩梦": 2, "其他": 3}
-        wanted = self.var_daily_task_category.get()
+        wanted_kind = self.var_daily_task_category.get()
+        wanted_state = self.var_daily_task_state.get()
         states = self._daily_task_snapshot.get("states", {})
         rows = []
         for task_id, row in self._daily_task_defs.items():
             kind = category.get(str(row.get("dailyTaskType")), "其他")
-            if wanted != "全部" and kind != wanted:
+            if wanted_kind != "全部" and kind != wanted_kind:
                 continue
-            rows.append((kind_order.get(kind, 3), task_id, kind, row))
-        for _, task_id, kind, row in sorted(rows, key=lambda item: (item[0], item[1])):
+            state = states.get(task_id, "待读取")
+            if wanted_state != "全部" and state != wanted_state:
+                continue
+            closed = state == "未开放/已过期"
+            rows.append((1 if closed else 0, kind_order.get(kind, 3),
+                         task_id, kind, row, state))
+        for _, _, task_id, kind, row, state in sorted(
+                rows, key=lambda item: (item[0], item[1], item[2])):
             route = "已实测" if task_id in DAILY_TASK_TESTED_ROUTES else "待验证"
             self.daily_task_tree.insert(
                 "", "end", iid=str(task_id),
-                values=(task_id, row.get("name", "?"), kind,
-                        states.get(task_id, "待读取"), route))
+                values=(task_id, row.get("name", "?"), kind, state, route),
+                tags=("closed",) if state == "未开放/已过期" else ())
         for iid in selected:
             if self.daily_task_tree.exists(iid):
                 self.daily_task_tree.selection_add(iid)
@@ -3897,7 +3915,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             elif task_id in claimed:
                 states[task_id] = "今日已领"
             elif str(row.get("isClose", "0")) != "0":
-                states[task_id] = "未开放"
+                states[task_id] = "未开放/已过期"
             elif level < int(row.get("level", 1) or 1):
                 states[task_id] = "等级不足"
             elif any(int(pre) not in old for pre in str(row.get("preTaskId", "1")).split(";")
@@ -3973,7 +3991,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         for task_id, state in snapshot["states"].items():
             if self.daily_task_tree.exists(str(task_id)):
                 self.daily_task_tree.set(str(task_id), "state", state)
-        self._daily_task_on_select()
+        if self.var_daily_task_state.get() != "全部":
+            self._daily_task_render_tree()
+        else:
+            self._daily_task_on_select()
 
     def _do_daily_task_check(self):
         _count_generation = getattr(self, "_count_generation", 0)
