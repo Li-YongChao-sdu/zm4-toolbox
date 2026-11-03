@@ -7719,6 +7719,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             btn = ttk.Button(row_frame, text="重置", width=8, command=lambda r=rid, n=name: self._do_timeboat_reset(r, n))
             btn.pack(side="left", padx=5)
             self.timeboat_buttons[rid] = btn
+            ttk.Button(row_frame, text="打开设置", width=9,
+                       command=lambda r=rid: self._open_timeboat_settings(r)).pack(side="left", padx=5)
 
         # 右侧：重置操作
         right_frame = ttk.Frame(reset_tab, width=200)
@@ -8541,6 +8543,59 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             flow.disconnect()
         except Exception as e:
             self._log("[时光之舟] 刷新异常: %s" % e)
+
+    _TIMEBOAT_PAGE_MAP = {
+        1: ("周本", "守卫须弥山城西"),
+        2: ("坐骑副本", "悲鸣冰川", "冰封层"),
+        3: ("坐骑副本", "悲鸣冰川", "水岩层"),
+        4: ("坐骑副本", "冰川（熔岩层）"),
+        5: ("日常助手", "福禄寿190"),
+        6: ("日常助手2", "螺旋地狱"),
+        7: ("日常任务",),
+        8: ("日常助手2", "悬赏任务"),
+        9: ("日常助手2", "罗汉堂"),
+        10: ("日常助手2", "主题挑战"),
+        11: ("坐骑副本", "枯焰流沙"),
+        12: ("坐骑副本", "迷雾沮泽"),
+        13: ("宠物装备副本", "空桑谷"),
+        14: ("日常助手2", "地藏/虚空藏"),
+        15: ("宠物装备副本", "月华境"),
+        16: ("坐骑副本", "丰花原野"),
+        17: ("宠物装备副本", "云隐渊"),
+        18: ("日常助手2", "太古秘境"),
+        19: ("日常助手2", "地藏/虚空藏"),
+    }
+
+    def _find_notebook_tab(self, parent, title):
+        queue = [parent]
+        while queue:
+            widget = queue.pop(0)
+            if isinstance(widget, ttk.Notebook):
+                for tab_id in widget.tabs():
+                    if str(widget.tab(tab_id, "text")) == title:
+                        return widget, tab_id
+            try:
+                queue.extend(widget.winfo_children())
+            except tk.TclError:
+                continue
+        return None, None
+
+    def _open_timeboat_settings(self, reset_id):
+        titles = self._TIMEBOAT_PAGE_MAP.get(reset_id)
+        if not titles:
+            messagebox.showinfo("时光之舟", "该重置项暂时没有对应的设置页面。", parent=self.root)
+            return
+        parent = self.root
+        for title in titles:
+            notebook, tab_id = self._find_notebook_tab(parent, title)
+            if notebook is None:
+                messagebox.showinfo("时光之舟", "未找到“%s”设置页面。" % title, parent=self.root)
+                return
+            notebook.select(tab_id)
+            parent = notebook.nametowidget(tab_id)
+        self.root.deiconify()
+        self.root.lift()
+        self.root.focus_force()
 
     def _do_timeboat_reset(self, reset_id, name):
         if not self._ensure_login():
