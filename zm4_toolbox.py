@@ -424,14 +424,14 @@ ATTR_NAMES = {
     "wisdom": "智慧", "charm": "魅力", "luck": "运气", "smart": "聪明"
 }
 ROLE_NAME_MAP = {"小唐": "A", "小猴": "B", "小猪": "C", "小沙": "D", "小白": "E", "小玉": "F", "小吒": "G"}
-ROLE_ID_MAP = {1: "A", 2: "B", 3: "C", 4: "D", 5: "E", 6: "F", 7: "G"}
+ROLE_ID_MAP = {1: "B", 2: "A", 3: "C", 4: "D", 5: "E", 6: "F", 7: "G"}
 CODE_NAME_MAP = {v: k for k, v in ROLE_NAME_MAP.items()}
 
 def get_role_code(attr):
-    rid = attr.get("id", 0)
-    if rid in ROLE_ID_MAP:
-        return ROLE_ID_MAP[rid]
-    return ROLE_NAME_MAP.get(attr.get("born", ""), "?")
+    born = attr.get("born", "")
+    if born in ROLE_NAME_MAP:
+        return ROLE_NAME_MAP[born]
+    return ROLE_ID_MAP.get(attr.get("id", 0), "?")
 
 # ========== 活动配置 ==========
 XIJING_ID = 2138

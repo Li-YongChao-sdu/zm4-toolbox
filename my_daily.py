@@ -19,9 +19,9 @@ NON_TASK_WORDS = ("停止", "刷新", "检测", "读取", "查询", "查看", "�
 EXCLUDED_TABS = ("一键运行", "洗练", "主线刷取", "主线通关", "周本",
                  "魔渊诛邪", "魔渊诛邪（前八层）", "打造刷属性", "时光之舟", "超值礼包")
 
-# 个别页面只暴露指定任务，其余按钮不进入收藏目录。
+# 个别页面只暴露指定任务，其余按钮不进入收藏目录；元组顺序即收藏目录中的显示/执行顺序。
 PAGE_TASK_FILTERS = {
-    "日常任务": ("任务批量接取1", "任务批量接取2", "任务批量接取3"),
+    "日常任务": ("任务批量接取1", "任务批量接取2", "任务批量接取3", "一键领取已完成任务"),
 }
 
 SCHEDULE_FILENAME = "my_daily_schedule.json"
@@ -276,7 +276,9 @@ def discover_tree(app, quick_tasks):
             entries.append(DailyEntry(key, label, button, title, ButtonTask(key, label, button)))
         allowed = PAGE_TASK_FILTERS.get(title)
         if allowed is not None:
-            entries = [entry for entry in entries if entry.label in allowed]
+            order = {label: index for index, label in enumerate(allowed)}
+            entries = sorted((entry for entry in entries if entry.label in allowed),
+                             key=lambda entry: order[entry.label])
         children = []
         for child_notebook in child_notebooks(page):
             for child_tab in child_notebook.tabs():
@@ -319,6 +321,7 @@ class MyDailyWindow:
         self.entries = {entry.key: entry for node in walk_nodes(self.nodes)
                         for entry in node["entries"]}
         self.favorites, checked = load_favorites(self.path, self.entries)
+        self._place_claim_after_dungeons(self.favorites)
         self.check_vars = {key: tk.BooleanVar(master=app.root, value=key in checked)
                            for key in self.entries}
         self.schedule = load_schedule(schedule_path(self.path))
@@ -329,6 +332,23 @@ class MyDailyWindow:
         self.btn_start = None
         self.btn_stop = None
         self._run_buttons = []
+
+    # ---------- 收藏顺序 ----------
+    @staticmethod
+    def _place_claim_after_dungeons(favorites):
+        """领取奖励必须等所有副本打完：排在收藏最后；收藏了活跃度奖励时，活跃度最后、领取倒数第二。"""
+        claim = next((key for key in favorites if "一键领取已完成任务" in key), None)
+        if not claim:
+            return favorites
+        liveness = next((key for key in favorites if "领取活跃度" in key), None)
+        favorites.remove(claim)
+        if liveness:
+            favorites.remove(liveness)
+            favorites.append(liveness)
+            favorites.insert(len(favorites) - 1, claim)
+        else:
+            favorites.append(claim)
+        return favorites
 
     # ---------- 窗口 ----------
     def _alive(self):
@@ -646,6 +666,7 @@ class MyDailyWindow:
                       if check_vars[entry.key].get()]
             favorites = [key for key in self.favorites if key in chosen]
             favorites += [key for key in chosen if key not in favorites]
+            self._place_claim_after_dungeons(favorites)
             try:
                 save_favorites(self.path, favorites, self.entries)
             except OSError as exc:
