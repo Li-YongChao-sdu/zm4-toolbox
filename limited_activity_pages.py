@@ -754,18 +754,29 @@ class LimitedActivityPages:
                 raise RuntimeError(errors[0] if errors else "没有可再次采集的坐骑")
             for error in errors:
                 self._log("[骑装加速养成] 跳过再次采集：%s" % error)
+            self._log("[骑装加速养成] 再次采集完成：开始 %s 个槽位（上次记录 %s 只）" % (started, len(sources)))
+            if started == 1 and len(sources) == 1 and int(collect.get("maxSlot", 0)) > 1:
+                self._log("[骑装加速养成] 同一坐骑不能同时占用多个槽位；如需占满其余槽位，"
+                          "请用“开始采集”选择其他坐骑")
         state = request(route + "getHorseCollectData", {})
         self.root.after(0, lambda s=state, h=horses, n=names, u=used: self._show_horse_collect(s, h, n, u))
 
     def _show_horse_collect(self, state, horses, names, used):
         collect = state.get("horseCollect") or {}; slots = collect.get("slots") or {}
         if not isinstance(slots, dict): slots = {str(i): s for i, s in enumerate(slots) if s}
-        busy = {s.get("entityId") for s in slots.values()}
+
+        def slot_entity(slot):
+            data = slot.get("data") or {}
+            horse = data.get("horse") or {}
+            return horse.get("entityId") or slot.get("entityId")
+
+        busy = {slot_entity(s) for s in slots.values()}
         self._collect_horses = [h for h in horses if int(h.get("level", 0)) >= 38 and h["entityId"] not in busy]
         values = ["%s · %s级 · %s" % (h.get("newName") or names.get(str(h["id"]), h["id"]), h["level"], h["entityId"])
                   for h in self._collect_horses]
         self._horse_choice.config(values=values); self._horse_choice.set(values[0] if values else "")
-        self._horse_status.set("本期版本 %s；今日已采集 %s/3 次；占用槽位 %s/%s" % (collect.get("v"), used, len(slots), collect.get("maxSlot", 0)))
+        self._horse_status.set("本期版本 %s；今日已采集 %s/3 次；占用槽位 %s/%s；可采集坐骑 %s 只" % (
+            collect.get("v"), used, len(slots), collect.get("maxSlot", 0), len(self._collect_horses)))
         self._horse_tree.delete(*self._horse_tree.get_children())
         for pos, slot in sorted(slots.items()):
             data = slot.get("data") or {}; horse = data.get("horse") or {}; prop = data.get("prop") or {}
