@@ -3509,7 +3509,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.var_daily_task_category = tk.StringVar(value="全部")
         category_box = ttk.Combobox(
             filter_row, textvariable=self.var_daily_task_category,
-            values=("全部", "普通", "宠物", "噩梦", "其他"),
+            values=("全部", "坐骑", "宠物", "噩梦", "其他"),
             state="readonly", width=10,
         )
         category_box.pack(side="left", padx=(6, 0))
@@ -3605,8 +3605,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     def _daily_task_render_tree(self):
         selected = list(self.daily_task_tree.selection())
         self.daily_task_tree.delete(*self.daily_task_tree.get_children())
-        category = {"0": "噩梦", "1": "宠物", "2": "普通"}
-        kind_order = {"普通": 0, "宠物": 1, "噩梦": 2, "其他": 3}
+        category = {"0": "噩梦", "1": "宠物", "2": "坐骑"}
+        kind_order = {"坐骑": 0, "宠物": 1, "噩梦": 2, "其他": 3}
         wanted_kind = self.var_daily_task_category.get()
         wanted_state = self.var_daily_task_state.get()
         states = self._daily_task_snapshot.get("states", {})
