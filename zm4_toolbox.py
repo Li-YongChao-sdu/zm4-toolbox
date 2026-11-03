@@ -234,19 +234,44 @@ DAILY_TASK_TESTED_ROUTES = {
     20030: ((2114, False),),             # 空桑谷盘根窟：土魔猿
     20031: ((500, True),),               # 噩梦孤魂岭：獒狠
     20032: ((501, True), (10260, True)), # 噩梦通冥铁索及隐藏BOSS
+    20033: ((502, True),),               # 噩梦播冢山巅：西方鬼帝
+    20034: ((2122, False),),             # 炎魔猪（二选一）
     20035: ((503, True),),               # 噩梦罗浮山：草鬼婆母
     20036: ((504, True), (10300, False)),  # 噩梦岁暮荒园→隐藏BOSS：冥蛊师/蛇骨婆母
     20037: ((505, True),),               # 噩梦梦影寺：南方鬼帝
+    20038: ((2124, False),),             # 雪魔猪（二选一）
     20039: ((2128, False),),             # 丰花原野：巨刺螫蜂
     20040: ((2130, False),),             # 丰花原野：幽灵冥蜂
     20041: ((506, True),),               # 噩梦抱犊山：拘魂鬼王
     20042: ((507, True), (10340, False)),  # 噩梦彼岸花海→隐藏BOSS
     20043: ((508, True),),               # 噩梦往生路：鬼帝周乞和嵇康
+    20044: ((2142, False),),             # 金魔虎（二选一）
+    20045: ((2144, False),),             # 石魔虎（二选一）
     20046: ((509, True),),               # 噩梦罗酆谷：土伯
     20047: ((510, True), (10360, False)),  # 噩梦九泉→隐藏BOSS
     20048: ((511, True),),               # 噩梦业火莲台：北方鬼帝
+    20049: ((512, True),),               # 噩梦桃止山：五奇冥鬼
+    20050: ((513, False), (10380, True)),  # 噩梦幽都鬼城→幽冥鬼母BOSS房
+    20051: ((514, True),),               # 噩梦鬼帝郁垒和神荼
+    20052: ((515, True), (516, True)),   # 噩梦血河池→二阶段血海真身
+    20053: ((600, True),),               # 噩梦天禄金山：吞宝魔吏
+    20054: ((601, False), (10400, True)),  # 噩梦伏龙宝树→伏藏龙BOSS房
+    20055: ((602, True),),               # 噩梦金蟾宝宫：贪欲魔主
 }
+DAILY_TASK_EXPIRED_IDS = {20001, 20003, 20005, 20007,
+                          20019, 20021, 20023, 20025}
 DAILY_TASK_BATCH_PICKUP_IDS = {20009, 20030, 20032}
+
+# 普通悬赏 169 条任务只是 9 个副本的不同等级/奖励组合，按副本 mid 判定实测状态。
+WANTED_TESTED_MIDS = {3001, 3002, 3003, 3004, 3005, 3006, 3009, 3010, 3011}
+
+
+def _daily_task_test_label(task_id, state=None):
+    if task_id in DAILY_TASK_EXPIRED_IDS or state == "未开放/已过期":
+        return "已过期"
+    if task_id in DAILY_TASK_TESTED_ROUTES:
+        return "已实测"
+    return "待验证"
 
 # 镜域（周挑战，0体力，每周10次共享，90001-90012）
 JINGYU_LEVELS = [
@@ -3678,7 +3703,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.lbl_daily_task_detail = ttk.Label(right, text="选中任务可查看前置条件和路线。",
                                                 wraplength=250, justify="left")
         self.lbl_daily_task_detail.pack(anchor="w", pady=(16, 10))
-        ttk.Label(right, text="自动完成仅开放已实测路线。接取会占用当日日常任务次数；通关不使用点券。",
+        ttk.Label(right, text="自动完成仅开放已实测路线。接取会占用当日日常任务次数；通关不使用点券。"
+                             "背包不足8格时自动改为不捡掉落结算；领奖仍需背包有空位。",
                   wraplength=250, justify="left", foreground="gray").pack(anchor="w")
 
     def _daily_task_render_tree(self):
@@ -3702,7 +3728,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                          task_id, kind, row, state))
         for _, _, task_id, kind, row, state in sorted(
                 rows, key=lambda item: (item[0], item[1], item[2])):
-            route = "已实测" if task_id in DAILY_TASK_TESTED_ROUTES else "待验证"
+            route = _daily_task_test_label(task_id, state)
             self.daily_task_tree.insert(
                 "", "end", iid=str(task_id),
                 values=(task_id, row.get("name", "?"), kind, state, route),
@@ -3853,7 +3879,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             lines.append("批量%d：%s" % (group, "未设置" if not ids else "%d 个任务" % len(ids)))
             for task_id in ids:
                 info = self._daily_task_defs.get(task_id, {})
-                route = "已实测" if task_id in DAILY_TASK_TESTED_ROUTES else "待验证"
+                route = _daily_task_test_label(task_id)
                 lines.append("  %d  %s  [%s]  副本：%s" % (
                     task_id, info.get("name", "?"), route,
                     info.get("dungeon_name") or info.get("dungeonId") or "?"))
@@ -4087,7 +4113,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             return
         row = self._daily_task_defs.get(task_id, {})
         state = self._daily_task_snapshot.get("states", {}).get(task_id, "待读取")
-        route = "已实测" if task_id in DAILY_TASK_TESTED_ROUTES else "待验证，暂不自动完成"
+        route = _daily_task_test_label(task_id, state)
+        if route == "已过期":
+            route += "，无法接取"
+        elif route == "待验证":
+            route += "，暂不自动完成"
         self.lbl_daily_task_detail.config(
             text="%s（%d）\n状态：%s\n等级要求：%s\n前置任务：%s\n关卡：%s\n自动路线：%s" %
                  (row.get("name", "?"), task_id, state, row.get("level", "?"),
@@ -4232,12 +4262,34 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
         threading.Thread(target=worker, daemon=True).start()
 
+    @staticmethod
+    def _daily_bag_free(scene):
+        """返回道具背包剩余格数；读取不到容量时按充足处理。"""
+        bag = (scene.get("curRecord") or {}).get("itemsBag") or {}
+        items = bag.get("items", [])
+        if isinstance(items, dict):
+            items = list(items.values())
+        capacity = int(bag.get("itemCount", 0) or 0)
+        if capacity <= 0:
+            return 999
+        used = sum(1 for row in items
+                   if isinstance(row, dict) and int(row.get("count", 1) or 0) > 0)
+        return max(0, capacity - used)
+
     def _daily_task_clear_copy(self, flow, scene, mid, use_w, batch_pickups=False):
+        free_slots = self._daily_bag_free(scene)
         created = flow.request("scene.copyHandler.createSinglePlayerCopy",
                                {"mid": mid, "costGem": 0}, timeout=15)
         if created.get("code") != 200:
-            raise RuntimeError("关卡%d进入失败: %s" % (mid, created.get("error", created.get("code"))))
+            error_text = str(created.get("error", created.get("code")))
+            if "背包" in error_text:
+                raise RuntimeError("背包仅剩%d格，无法进入关卡%d；请先清理背包" % (free_slots, mid))
+            raise RuntimeError("关卡%d进入失败: %s" % (mid, error_text))
         drops = created.get("drops", {})
+        skip_picks = free_slots < 8
+        if skip_picks:
+            self._log("[日常任务] 背包仅剩%d格，关卡%d改为不捡掉落结算" % (free_slots, mid))
+            batch_pickups = False
         pick_items, mob_ids, kill_monsters, drop_entries = [], [], [], []
         total_exp = total_sp = 0
         for drop in drops.get("newDrops", []):
@@ -4248,12 +4300,16 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             has_item = False
             for values in drop.get("item", {}).values():
                 has_item = True
+                if skip_picks:
+                    continue
                 for pick_id in (values if isinstance(values, list) else [values]):
                     pick_items.append(pick_id)
                     drop_entries.append((pick_id, monster, index))
             if has_item:
                 mob_ids.append(monster)
                 kill_monsters.append("%s_%d" % (monster, index))
+        if skip_picks:
+            total_exp = total_sp = 0
         time.sleep(2)
         dead = flow.request("scene.copyHandler.bossDead", None, timeout=10)
         time.sleep(0.5)
@@ -4298,13 +4354,27 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 })
                 pickup = flow.request("scene.copyHandler.syncDropInfoNew", pickup_payload, timeout=15)
                 if pickup.get("code") != 200:
+                    error_text = str(pickup.get("error", pickup.get("code")))
+                    if "背包" in error_text:
+                        raise RuntimeError("关卡%d拾取掉落时背包已满，请清理背包后重试" % mid)
                     raise RuntimeError("关卡%d第%d批掉落拾取失败: %s" %
-                                       (mid, start // 4 + 1, pickup.get("error", pickup.get("code"))))
+                                       (mid, start // 4 + 1, error_text))
             payload.update({"pickItems": [], "mobIds": [], "killMonsters": [],
                             "pickExp": 0, "pickSp": 0})
         settled = flow.request("scene.copyHandler.syncDropInfoNew", payload, timeout=15)
         if settled.get("code") != 200:
-            raise RuntimeError("关卡%d结算失败: %s" % (mid, settled.get("error", settled.get("code"))))
+            error_text = str(settled.get("error", settled.get("code")))
+            if not skip_picks and not batch_pickups and "背包" in error_text:
+                self._log("[日常任务] 背包已满，关卡%d改为不捡掉落重试结算" % mid)
+                retry_payload = dict(payload)
+                retry_payload.update({"pickItems": [], "pickExp": 0, "pickSp": 0})
+                settled = flow.request("scene.copyHandler.syncDropInfoNew", retry_payload, timeout=15)
+                if settled.get("code") == 200:
+                    error_text = None
+                else:
+                    error_text = str(settled.get("error", settled.get("code")))
+            if error_text is not None:
+                raise RuntimeError("关卡%d结算失败: %s" % (mid, error_text))
         self._log("[日常任务] 关卡%d已结算" % mid)
 
     def _daily_task_action(self, action):
@@ -4326,6 +4396,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             status = self._daily_task_snapshot.get("states", {}).get(task_id)
             if action == "accept" and status != "可接":
                 messagebox.showwarning("提示", "当前任务状态为%s，不能接取" % (status or "待读取"))
+                return
+            if action == "complete" and (task_id in DAILY_TASK_EXPIRED_IDS
+                                         or status == "未开放/已过期"):
+                messagebox.showwarning("提示", "该任务已过期，无法自动完成")
                 return
             if action == "complete" and task_id not in DAILY_TASK_TESTED_ROUTES:
                 messagebox.showwarning("提示", "该任务的自动通关路线尚未实测")
@@ -4380,8 +4454,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         claimed = flow.request("scene.taskHandler.handoverTask",
                                                {"taskId": cid}, timeout=15)
                         if claimed.get("code") != 200:
-                            self._log("[日常任务] 任务%d领奖失败：%s" %
-                                      (cid, claimed.get("error", claimed.get("code"))))
+                            error_text = str(claimed.get("error", claimed.get("code")))
+                            if "背包" in error_text:
+                                self._log("[日常任务] 任务%d领奖失败：背包已满，清理背包后可重新一键领取" % cid)
+                            else:
+                                self._log("[日常任务] 任务%d领奖失败：%s" % (cid, error_text))
                             continue
                         items = claimed.get("items", [])
                         claimed_items.extend(items)
@@ -4398,8 +4475,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         raise RuntimeError("任务%d尚未达到可领奖状态，保留当前进度" % task_id)
                     claimed = flow.request("scene.taskHandler.handoverTask", {"taskId": task_id}, timeout=15)
                     if claimed.get("code") != 200:
-                        raise RuntimeError("任务%d领奖失败: %s" %
-                                           (task_id, claimed.get("error", claimed.get("code"))))
+                        error_text = str(claimed.get("error", claimed.get("code")))
+                        if "背包" in error_text:
+                            raise RuntimeError("任务%d已完成，但背包已满无法领奖；清理背包后点“一键领取已完成任务”" % task_id)
+                        raise RuntimeError("任务%d领奖失败: %s" % (task_id, error_text))
                     claimed_items = claimed.get("items", [])
                     self._log("[日常任务] 任务%d领奖成功：物品%s，经验%s，灵魂%s" %
                               (task_id, claimed_items, claimed.get("addExp", 0),
@@ -8246,6 +8325,30 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         actions.pack(anchor="w", pady=10)
         ttk.Button(actions, text="刷新旗帜数量", command=self._refresh_weather).pack(side="left")
 
+        schedule_box = ttk.Frame(parent)
+        schedule_box.pack(fill="x", pady=(10, 0))
+        ttk.Label(schedule_box, text="刷新表（服务器时间，整点出现；▶ 为当前小时）",
+                  foreground="blue").pack(anchor="w")
+        self.lbl_weather_today = ttk.Label(schedule_box, text="")
+        self.lbl_weather_today.pack(anchor="w", pady=(2, 6))
+        self.weather_schedule_labels = {}
+        grid = ttk.Frame(schedule_box)
+        grid.pack(anchor="w")
+        for col, (text, width) in enumerate(
+                (("星期", 8), ("挑战化蛇（3010）", 32), ("捉拿大盗（3011）", 32))):
+            ttk.Label(grid, text=text, width=width, anchor="w",
+                      font=("Microsoft YaHei UI", 9, "bold")).grid(row=0, column=col, sticky="w")
+        for row, day in enumerate(("周一", "周二", "周三", "周四", "周五", "周六", "周日"), start=1):
+            day_label = ttk.Label(grid, text=day, width=8, anchor="w")
+            snake_label = ttk.Label(grid, text="", width=32, anchor="w")
+            thief_label = ttk.Label(grid, text="", width=32, anchor="w")
+            day_label.grid(row=row, column=0, sticky="w")
+            snake_label.grid(row=row, column=1, sticky="w")
+            thief_label.grid(row=row, column=2, sticky="w")
+            self.weather_schedule_labels[row - 1] = (day_label, snake_label, thief_label)
+        self._load_wanted_weather_schedule()
+        self._render_weather_schedule()
+
         notebook = parent
         while notebook is not None and not isinstance(notebook, ttk.Notebook):
             notebook = getattr(notebook, "master", None)
@@ -8255,6 +8358,65 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                           if notebook.select() == str(parent)
                           and self.client and self.current_save is not None else None,
                           add="+")
+
+    def _load_wanted_weather_schedule(self):
+        """读取刷新表：id=小时（24→0点），值 3=挑战化蛇，5=捉拿大盗，1=无特殊。"""
+        self.weather_schedule = {}
+        try:
+            path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "output_cg1_20260921_1_2", "240___WantedWeather.xml.json")
+            with open(path, encoding="utf-8") as f:
+                rows = json.load(f)["RECORD"]
+            days = ("monday", "tuesday", "wednesday", "thursday", "friday",
+                    "saturday", "sunday")
+            for record in rows:
+                hour = 0 if int(record.get("id", 0)) == 24 else int(record.get("id", 0))
+                for day_index, key in enumerate(days):
+                    code = int(record.get(key, 1) or 1)
+                    if code in (3, 5):
+                        slots = self.weather_schedule.setdefault(day_index, {}).setdefault(code, [])
+                        if hour not in slots:
+                            slots.append(hour)
+            for slots in self.weather_schedule.values():
+                for hours in slots.values():
+                    hours.sort()
+        except Exception as e:
+            self._log("[呼风唤雨] 读取刷新表失败：%s" % e)
+
+    def _render_weather_schedule(self):
+        if not getattr(self, "weather_schedule", None) or \
+                not getattr(self, "weather_schedule_labels", None):
+            return
+        now = datetime.now()
+        today = now.weekday()
+        for day_index, labels in self.weather_schedule_labels.items():
+            color = "#1a6dff" if day_index == today else "black"
+            slots = self.weather_schedule.get(day_index, {})
+            texts = {}
+            for code in (3, 5):
+                parts = []
+                for hour in slots.get(code, []):
+                    token = "%02d:00" % hour
+                    if day_index == today and hour == now.hour:
+                        token = "▶" + token
+                    parts.append(token)
+                texts[code] = "  ".join(parts) if parts else "无"
+            day_label, snake_label, thief_label = labels
+            day_label.config(foreground=color)
+            snake_label.config(text=texts[3], foreground=color)
+            thief_label.config(text=texts[5], foreground=color)
+        slots = self.weather_schedule.get(today, {})
+        current = [name for code, name in ((3, "化蛇"), (5, "大盗"))
+                   if now.hour in slots.get(code, [])]
+        remain = []
+        for code, name in ((3, "化蛇"), (5, "大盗")):
+            hours = [h for h in slots.get(code, []) if h > now.hour]
+            if hours:
+                remain.append("%s %s" % (name, "、".join("%02d:00" % h for h in hours)))
+        head = "当前 %02d:%02d %s" % (
+            now.hour, now.minute, ("%s出现" % "/".join(current)) if current else "无特殊")
+        tail = ("今日剩余：%s" % "；".join(remain)) if remain else "今日已无特殊时段"
+        self.lbl_weather_today.config(text="%s  |  %s" % (head, tail))
 
     def _refresh_weather(self):
         if not self._ensure_login():
@@ -8295,6 +8457,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                     pass
 
     def _show_weather_state(self, snapshot):
+        self._render_weather_schedule()
         counts, active, day_num, done_mids = snapshot
         self.lbl_weather_summary.config(
             text="今日已接取悬赏：%s 次；旗帜数量来自当前存档背包" % day_num)
@@ -8366,6 +8529,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 except Exception:
                     pass
             self.root.after(0, self._refresh_weather)
+
 
     def _build_shenyu_panel(self, parent):
         if not hasattr(self, "shenyu_panels"):
@@ -8681,8 +8845,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 status = "榜单可接取（次数由服务器判定）"
             doubles = double_reward if isinstance(double_reward, list) else [double_reward]
             double_text = "  [双倍，接取占两次]" if str(tid) in [str(x) for x in doubles] else ""
-            test_text = "已实测" if tid in (10141, 10146, 10148, 10151, 10152, 10153, 10154,
-                                            10173, 10176, 10178, 10180) else "未逐项实测"
+            test_text = "已实测" if info.get("mid") in WANTED_TESTED_MIDS else "未实测"
             label.config(text="%s (%s) → %s (%s)  |  %s  [%s]%s" %
                          (info.get("name", "未知任务"), tid, info.get("dungeon_name", "未知副本"),
                           info.get("mid", "?"), status, test_text, double_text))
@@ -10211,24 +10374,6 @@ def main():
     app.root.after(30_000, app._schedule_check)
     if "--schedule-run" in sys.argv:
         app.root.after(800, app._start_scheduled_task_run)
-    if len(sys.argv) == 3 and sys.argv[1] == "--jiuzhuan-rl-check":
-        # 九转 RL 策略离线检查：加载 torch 与模型权重后退出，不连接游戏。
-        check_path = os.path.abspath(sys.argv[2])
-        def finish_rl_check():
-            report = {"ok": False, "frozen": bool(getattr(sys, "frozen", False))}
-            try:
-                from jiuzhuan_rl import warmup, _MODEL_DIR
-                info = warmup()
-                import torch
-                report.update({"ok": True, "torch": torch.__version__,
-                               "model_dir": str(_MODEL_DIR),
-                               "info": info})
-            except Exception as exc:
-                report["error"] = str(exc)
-            with open(check_path, "w", encoding="utf-8") as check_file:
-                json.dump(report, check_file, ensure_ascii=False, indent=2)
-            root.destroy()
-        root.after(500, finish_rl_check)
     if len(sys.argv) == 3 and sys.argv[1] == "--startup-check":
         # 离线启动检查：实际创建所有页面后自动退出，不登录游戏。
         check_path = os.path.abspath(sys.argv[2])
