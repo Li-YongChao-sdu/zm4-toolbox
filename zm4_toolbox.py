@@ -2059,7 +2059,6 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self.current_save["index"], self.current_save["name"], self.current_save["level"]),
                 foreground="green")
             self._enable_all_buttons()
-            self.lbl_treasure_status.config(text="点击读取寻宝状态", foreground="gray")
             self.lbl_dice_online.config(text="点击读取在线状态", foreground="gray")
             self._mainline_reset_display()
             self._daily_task_reset_display()
@@ -2093,7 +2092,6 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.current_save = self.saves[idx]
             self._main_daily_counts = None
             self.lbl_main_dailycount.config(text="当前dailyCount：正在读取")
-            self.lbl_treasure_status.config(text="点击读取寻宝状态", foreground="gray")
             self.lbl_dice_online.config(text="点击读取在线状态", foreground="gray")
             self.lbl_save_info.config(text="当前: 槽%d %s Lv.%s" % (
                 self.current_save["index"], self.current_save["name"], self.current_save["level"]),
@@ -2195,6 +2193,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             auth = flow.auth(host, port, timeout=15)
             if auth.get('code') != 200 or auth.get('error'):
                 raise RuntimeError('游戏认证失败：%s' % auth.get('error', auth.get('code')))
+            flow.game.set_close_callback(lambda: self._log(
+                "[连接] 游戏连接已断开，下一次操作会自动重连；主动退出/切换存档可忽略"))
             # 魂器独立背包 soulBag 只随登录后的 onSendRecord 推送下发，curRecord 里没有。
             self._soul_bag = None
             try:

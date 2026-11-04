@@ -151,21 +151,28 @@ class PomeloClient:
         self._sock.sendall(package.encode(pkg_type, body))
 
     # ------------------------------------------------------------------ recv loop
-    def _read_exact(self, n: int) -> bytes:
+    def _read_exact(self, n: int, sock=None) -> bytes:
+        if sock is None:
+            sock = self._sock
+        if sock is None:
+            raise ConnectionError("connection closed")
         buf = bytearray()
         while len(buf) < n:
-            chunk = self._sock.recv(n - len(buf))
+            chunk = sock.recv(n - len(buf))
             if not chunk:
                 raise ConnectionError("connection closed")
             buf += chunk
         return bytes(buf)
 
     def _read_loop(self) -> None:
+        sock = self._sock
+        if sock is None:
+            return
         try:
             while self._running:
-                header = self._read_exact(4)
+                header = self._read_exact(4, sock)
                 pkg_type, length = package.decode_header(header)
-                body = self._read_exact(length) if length else b""
+                body = self._read_exact(length, sock) if length else b""
                 self._handle_package(pkg_type, body)
         except (OSError, ConnectionError):
             pass
