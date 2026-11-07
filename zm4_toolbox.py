@@ -564,13 +564,165 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self._quick_restore()
         self.root.protocol("WM_DELETE_WINDOW", self._close_toolbox)
 
+    # 壳层视觉主题（对齐活动助手：浅蓝现代风，仅样式，不改功能布局）
+    UI_PRIMARY = "#1890FF"
+    UI_PRIMARY_SOFT = "#E6F4FF"
+    UI_PRIMARY_HOVER = "#F0F7FF"
+    UI_BG = "#F5F7FA"
+    UI_SURFACE = "#FFFFFF"
+    UI_BORDER = "#D9E2EC"
+    UI_TEXT = "#1F2A37"
+    UI_MUTED = "#8A94A6"
+    UI_SUCCESS = "#52C41A"
+    UI_FONT = ("微软雅黑", 9)
+    UI_FONT_BOLD = ("微软雅黑", 10, "bold")
+
+    def _apply_theme(self):
+        self.root.configure(bg=self.UI_BG)
+        try:
+            self.root.option_add("*Font", self.UI_FONT)
+        except tk.TclError:
+            pass
+
+        style = ttk.Style(self.root)
+        try:
+            style.theme_use("clam")
+        except tk.TclError:
+            pass
+
+        # 壳层统一浅底，避免 clam 下 Label/LabelFrame 背景错位出现色块。
+        style.configure(".", font=self.UI_FONT, foreground=self.UI_TEXT, background=self.UI_BG)
+        style.configure("TFrame", background=self.UI_BG)
+        style.configure("TLabel", background=self.UI_BG, foreground=self.UI_TEXT, font=self.UI_FONT)
+        style.configure("Muted.TLabel", background=self.UI_BG, foreground=self.UI_MUTED, font=self.UI_FONT)
+        style.configure("Success.TLabel", background=self.UI_BG, foreground=self.UI_SUCCESS, font=self.UI_FONT)
+
+        style.configure(
+            "TLabelframe",
+            background=self.UI_BG,
+            foreground=self.UI_TEXT,
+            bordercolor=self.UI_BORDER,
+            lightcolor=self.UI_BORDER,
+            darkcolor=self.UI_BORDER,
+            relief="solid",
+            borderwidth=1,
+        )
+        style.configure(
+            "TLabelframe.Label",
+            background=self.UI_BG,
+            foreground=self.UI_PRIMARY,
+            font=self.UI_FONT_BOLD,
+        )
+
+        style.configure(
+            "TButton",
+            font=self.UI_FONT,
+            foreground=self.UI_TEXT,
+            background=self.UI_SURFACE,
+            bordercolor=self.UI_BORDER,
+            lightcolor=self.UI_SURFACE,
+            darkcolor=self.UI_BORDER,
+            focuscolor=self.UI_PRIMARY_SOFT,
+            padding=(10, 5),
+        )
+        style.map(
+            "TButton",
+            background=[("active", self.UI_PRIMARY_HOVER), ("pressed", self.UI_PRIMARY_SOFT),
+                        ("disabled", self.UI_BG)],
+            foreground=[("disabled", self.UI_MUTED)],
+            bordercolor=[("active", self.UI_PRIMARY), ("focus", self.UI_PRIMARY)],
+        )
+        style.configure(
+            "Primary.TButton",
+            font=self.UI_FONT_BOLD,
+            foreground="#FFFFFF",
+            background=self.UI_PRIMARY,
+            bordercolor=self.UI_PRIMARY,
+            lightcolor=self.UI_PRIMARY,
+            darkcolor=self.UI_PRIMARY,
+            focuscolor=self.UI_PRIMARY,
+            padding=(12, 6),
+        )
+        style.map(
+            "Primary.TButton",
+            background=[("active", "#40A9FF"), ("pressed", "#096DD9"), ("disabled", "#A0CFFF")],
+            foreground=[("disabled", "#F0F7FF")],
+            bordercolor=[("active", "#40A9FF"), ("pressed", "#096DD9"), ("disabled", "#A0CFFF")],
+        )
+
+        style.configure(
+            "TEntry",
+            fieldbackground=self.UI_SURFACE,
+            foreground=self.UI_TEXT,
+            bordercolor=self.UI_BORDER,
+            lightcolor=self.UI_BORDER,
+            darkcolor=self.UI_BORDER,
+            insertcolor=self.UI_TEXT,
+            padding=4,
+        )
+        style.map("TEntry", bordercolor=[("focus", self.UI_PRIMARY)], lightcolor=[("focus", self.UI_PRIMARY)])
+
+        style.configure(
+            "TCombobox",
+            fieldbackground=self.UI_SURFACE,
+            foreground=self.UI_TEXT,
+            bordercolor=self.UI_BORDER,
+            lightcolor=self.UI_BORDER,
+            darkcolor=self.UI_BORDER,
+            arrowcolor=self.UI_MUTED,
+            padding=3,
+        )
+        style.map(
+            "TCombobox",
+            fieldbackground=[("readonly", self.UI_SURFACE)],
+            bordercolor=[("focus", self.UI_PRIMARY)],
+            lightcolor=[("focus", self.UI_PRIMARY)],
+        )
+
+        style.configure("TRadiobutton", background=self.UI_BG, foreground=self.UI_TEXT, font=self.UI_FONT)
+        style.map("TRadiobutton", background=[("active", self.UI_BG)],
+                  indicatorcolor=[("selected", self.UI_PRIMARY), ("!selected", self.UI_BORDER)])
+        style.configure("TCheckbutton", background=self.UI_BG, foreground=self.UI_TEXT, font=self.UI_FONT)
+        style.map("TCheckbutton", background=[("active", self.UI_BG)],
+                  indicatorcolor=[("selected", self.UI_PRIMARY), ("!selected", self.UI_BORDER)])
+
+        style.configure("TNotebook", background=self.UI_BG, borderwidth=0)
+        style.configure("TNotebook.Tab", background=self.UI_SURFACE, foreground=self.UI_TEXT,
+                        padding=(10, 4), font=self.UI_FONT)
+        style.map("TNotebook.Tab",
+                  background=[("selected", self.UI_PRIMARY_SOFT), ("active", self.UI_PRIMARY_HOVER)],
+                  foreground=[("selected", self.UI_PRIMARY)])
+        # 主 Notebook 仍隐藏原生 Tab，由顶部导航按钮切换。
+        style.layout("Toolbox.TNotebook.Tab", [])
+        style.configure("Toolbox.TNotebook", background=self.UI_BG, borderwidth=0)
+
+        style.configure(
+            "Treeview",
+            background=self.UI_SURFACE,
+            fieldbackground=self.UI_SURFACE,
+            foreground=self.UI_TEXT,
+            bordercolor=self.UI_BORDER,
+            rowheight=24,
+            font=self.UI_FONT,
+        )
+        style.configure("Treeview.Heading", background=self.UI_PRIMARY_SOFT, foreground=self.UI_PRIMARY,
+                        font=self.UI_FONT_BOLD, relief="flat")
+        style.map("Treeview",
+                  background=[("selected", self.UI_PRIMARY_SOFT)],
+                  foreground=[("selected", self.UI_PRIMARY)])
+        style.configure("TScrollbar", background=self.UI_SURFACE, troughcolor=self.UI_BG,
+                        bordercolor=self.UI_BORDER, arrowcolor=self.UI_MUTED)
+        self._ttk_style = style
+
     def _build_ui(self):
+        self._apply_theme()
+
         # Full-window viewport: every existing page remains reachable at small sizes.
         viewport = ttk.Frame(self.root)
         viewport.pack(fill='both', expand=True)
         viewport.rowconfigure(0, weight=1)
         viewport.columnconfigure(0, weight=1)
-        self._ui_canvas = tk.Canvas(viewport, highlightthickness=0, borderwidth=0)
+        self._ui_canvas = tk.Canvas(viewport, highlightthickness=0, borderwidth=0, bg=self.UI_BG)
         self._ui_canvas.grid(row=0, column=0, sticky='nsew')
         self._ui_vscroll = ttk.Scrollbar(viewport, orient='vertical', command=self._ui_canvas.yview)
         self._ui_vscroll.grid(row=0, column=1, sticky='ns')
@@ -584,8 +736,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.root.bind('<MouseWheel>', self._scroll_ui_viewport, add='+')
         self.root.bind('<Shift-MouseWheel>', self._scroll_ui_viewport, add='+')
         # 顶部登录区
-        login_frame = ttk.LabelFrame(self._ui_host, text="登录", padding=8)
-        login_frame.pack(fill="x", padx=10, pady=5)
+        login_frame = ttk.LabelFrame(self._ui_host, text="登录", padding=12)
+        login_frame.pack(fill="x", padx=12, pady=(10, 6))
 
         ttk.Label(login_frame, text="账号:").grid(row=0, column=0, sticky="e", padx=3)
         self.entry_user = ttk.Entry(login_frame, width=18)
@@ -595,10 +747,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.entry_pass = ttk.Entry(login_frame, width=18, show="*")
         self.entry_pass.grid(row=0, column=3, padx=3)
 
-        self.btn_login = ttk.Button(login_frame, text="登录并读取存档", command=self._do_login)
+        self.btn_login = ttk.Button(login_frame, text="登录并读取存档", style="Primary.TButton",
+                                    command=self._do_login)
         self.btn_login.grid(row=0, column=4, padx=8)
 
-        self.lbl_status = ttk.Label(login_frame, text="未登录", foreground="gray")
+        self.lbl_status = ttk.Label(login_frame, text="未登录", style="Muted.TLabel")
         self.lbl_status.grid(row=0, column=5, padx=8)
 
         self.var_login_mode = tk.StringVar(value="password")
@@ -616,13 +769,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.entry_cookie.grid(row=0, column=1, sticky="ew", padx=3)
         ttk.Button(self.cookie_login_frame, text="粘贴Cookie", command=self._paste_login_cookie).grid(row=0, column=2, padx=4)
         ttk.Label(self.cookie_login_frame, text="浏览器登录4399后粘贴完整Cookie；仅点击“保存当前账号”时加密保存到本机账号目录。",
-                  foreground="gray").grid(row=1, column=0, columnspan=3, sticky="w", pady=3)
+                  style="Muted.TLabel").grid(row=1, column=0, columnspan=3, sticky="w", pady=3)
         self.cookie_login_frame.grid_remove()
         self._build_account_profiles(login_frame)
 
         # 存档选择区
-        save_frame = ttk.LabelFrame(self._ui_host, text="选择存档（所有功能共享）", padding=8)
-        save_frame.pack(fill="x", padx=10, pady=5)
+        save_frame = ttk.LabelFrame(self._ui_host, text="选择存档（所有功能共享）", padding=12)
+        save_frame.pack(fill="x", padx=12, pady=6)
 
         self.save_var = tk.StringVar()
         self.combo_save = ttk.Combobox(save_frame, textvariable=self.save_var,
@@ -630,7 +783,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.combo_save.pack(side="left", padx=5)
         self.combo_save.bind("<<ComboboxSelected>>", self._on_save_select)
 
-        self.lbl_save_info = ttk.Label(save_frame, text="登录后选择存档", foreground="gray")
+        self.lbl_save_info = ttk.Label(save_frame, text="登录后选择存档", style="Muted.TLabel")
         self.lbl_save_info.pack(side="left", padx=10)
         self.var_auto_daily_before_battle = tk.BooleanVar(value=False)
         self._auto_daily_before_battle = False
@@ -640,13 +793,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         variable=self.var_auto_daily_before_battle).pack(side='left', padx=8)
 
 
-        # 多排导航：主页单独一排，其余页面分两排。
-        self.nav_frame = ttk.Frame(self._ui_host, padding=(10, 2))
-        self.nav_frame.pack(fill="x")
-        style = ttk.Style(self.root)
-        style.layout("Toolbox.TNotebook.Tab", [])
+        # 多排导航：主页单独一排，其余页面响应式分列（保留 toolbox 滚动视口能力）。
+        self.nav_frame = ttk.Frame(self._ui_host, padding=(12, 2))
+        self.nav_frame.pack(fill="x", padx=4)
         self.notebook = ttk.Notebook(self._ui_host, style="Toolbox.TNotebook")
-        self.notebook.pack(fill="both", expand=True, padx=10, pady=5)
+        self.notebook.pack(fill="both", expand=True, padx=12, pady=6)
 
         self._build_quick_tab()
         self._build_weekly_dungeon_tab()
@@ -703,22 +854,27 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self._build_navigation()
 
         # 底部日志区（固定在窗口底部，不随页面滚动）
-        log_frame = ttk.LabelFrame(self.root, text="日志", padding=5)
-        log_frame.pack(side="bottom", fill="x", expand=False, padx=10, pady=5,
+        log_frame = ttk.LabelFrame(self.root, text="运行日志", padding=8)
+        log_frame.pack(side="bottom", fill="x", expand=False, padx=12, pady=(4, 10),
                        before=viewport)
 
-        self.text_log = scrolledtext.ScrolledText(log_frame, wrap="word", font=("Consolas", 9), height=6)
-        self.text_log.pack(fill="both", expand=True)
+        self.text_log = scrolledtext.ScrolledText(
+            log_frame, wrap="word", font=("Consolas", 9), height=6,
+            bg="#FAFBFC", fg=self.UI_TEXT, insertbackground=self.UI_TEXT,
+            relief="flat", borderwidth=0, highlightthickness=1,
+            highlightbackground=self.UI_BORDER, highlightcolor=self.UI_PRIMARY,
+        )
+        self.text_log.pack(fill="both", expand=True, pady=(0, 4))
         ttk.Label(log_frame, text="运行日志及掉落统计自动保存：" + str(audit_directory()),
-                  foreground="gray", wraplength=900).pack(anchor="w")
+                  style="Muted.TLabel", wraplength=900).pack(anchor="w")
 
         # 全局过滤开关（固定在日志上方，不随页面滚动）
         global_bar = ttk.Frame(self.root)
-        global_bar.pack(side="bottom", fill="x", padx=10, before=viewport)
+        global_bar.pack(side="bottom", fill="x", padx=12, before=viewport)
         ttk.Checkbutton(global_bar, text="全局过滤：不拾取桃子 / 萝卜 / 蓝瓶 / 蓝壶",
                         variable=self.var_skip_supply_pickups).pack(side="left")
         ttk.Label(global_bar, text="包括烤熟的桃子和萝卜；对所有副本和一键运行生效。固定领奖不属于可选择拾取。",
-                  foreground="#666").pack(side="left", padx=8)
+                  style="Muted.TLabel").pack(side="left", padx=8)
 
     def _resize_ui_viewport(self, event=None):
         canvas = self._ui_canvas
@@ -759,8 +915,55 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         except tk.TclError:
             return
 
+    def _nav_button_style(self, selected=False, hover=False):
+        if selected:
+            return {
+                "bg": self.UI_PRIMARY_SOFT,
+                "fg": self.UI_PRIMARY,
+                "activebackground": self.UI_PRIMARY_SOFT,
+                "activeforeground": self.UI_PRIMARY,
+                "font": ("微软雅黑", 9, "bold"),
+                "highlightbackground": self.UI_PRIMARY,
+                "highlightcolor": self.UI_PRIMARY,
+                "highlightthickness": 1,
+            }
+        if hover:
+            return {
+                "bg": self.UI_PRIMARY_HOVER,
+                "fg": self.UI_TEXT,
+                "activebackground": self.UI_PRIMARY_HOVER,
+                "activeforeground": self.UI_TEXT,
+                "font": self.UI_FONT,
+                "highlightbackground": self.UI_BORDER,
+                "highlightcolor": self.UI_BORDER,
+                "highlightthickness": 1,
+            }
+        return {
+            "bg": self.UI_SURFACE,
+            "fg": "#334155",
+            "activebackground": self.UI_PRIMARY_HOVER,
+            "activeforeground": self.UI_TEXT,
+            "font": self.UI_FONT,
+            "highlightbackground": self.UI_BORDER,
+            "highlightcolor": self.UI_BORDER,
+            "highlightthickness": 1,
+        }
+
+    def _on_nav_enter(self, index):
+        if getattr(self, "_nav_selected", None) == index:
+            return
+        if 0 <= index < len(self.nav_buttons):
+            self.nav_buttons[index].config(**self._nav_button_style(hover=True))
+
+    def _on_nav_leave(self, index):
+        if getattr(self, "_nav_selected", None) == index:
+            return
+        if 0 <= index < len(self.nav_buttons):
+            self.nav_buttons[index].config(**self._nav_button_style(selected=False))
+
     def _build_navigation(self):
         self.nav_buttons = []
+        self._nav_selected = 0
         tabs = self.notebook.tabs()
         for col in range(13):
             self.nav_frame.columnconfigure(col, weight=1, uniform="nav")
@@ -768,10 +971,18 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             title = self.notebook.tab(tab_id, "text")
             row = 0 if index == 0 else 1 + (index - 1) // 13
             col = 0 if index == 0 else (index - 1) % 13
-            button = tk.Button(self.nav_frame, text=title, font=("微软雅黑", 9),
-                               height=1 if index == 0 else 2,
-                               wraplength=80,
-                               command=lambda i=index: self.notebook.select(i))
+            style = self._nav_button_style(selected=(index == 0))
+            button = tk.Button(
+                self.nav_frame, text=title,
+                height=1 if index == 0 else 2,
+                wraplength=80,
+                relief="flat", bd=0, cursor="hand2",
+                padx=2, pady=2,
+                command=lambda i=index: self.notebook.select(i),
+                **style,
+            )
+            button.bind("<Enter>", lambda _e, i=index: self._on_nav_enter(i))
+            button.bind("<Leave>", lambda _e, i=index: self._on_nav_leave(i))
             button.grid(row=row, column=col, columnspan=13 if index == 0 else 1,
                         sticky="ew", padx=2, pady=2)
             self.nav_buttons.append(button)
@@ -781,9 +992,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
     def _sync_navigation(self, event=None):
         selected = self.notebook.index(self.notebook.select())
+        self._nav_selected = selected
         for index, button in enumerate(self.nav_buttons):
-            button.config(relief="sunken" if index == selected else "raised",
-                          bg="#dcecff" if index == selected else "#f3f3f3")
+            button.config(**self._nav_button_style(selected=(index == selected)))
 
     # ========== 首页配置 ==========
     QUICK_CONFIG_FILE = os.path.join(BASE_DIR, "zm4_toolbox_config.json")
@@ -820,13 +1031,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.notebook.add(page, text="一键运行")
         ttk.Label(page, text="「我的日常」为独立窗口，点击下方按钮打开。",
                   font=("微软雅黑", 11, "bold")).pack(anchor="w", pady=(0, 10))
-        ttk.Button(page, text="打开「我的日常」窗口",
+        ttk.Button(page, text="打开「我的日常」窗口", style="Primary.TButton",
                    command=self._open_my_daily_window).pack(anchor="w")
         ttk.Label(page, text="窗口关闭不会退出工具箱；再次点击本页按钮即可重新打开。",
-                  foreground="#666").pack(anchor="w", pady=(10, 0))
+                  style="Muted.TLabel").pack(anchor="w", pady=(10, 0))
         self.quick_window = tk.Toplevel(self.root)
         self.quick_window.withdraw()
         self.quick_window.title("一键运行 - 造梦西游4 活动工具箱")
+        self.quick_window.configure(bg=self.UI_BG)
         self.quick_window.minsize(720, 480)
         self.quick_window.geometry("900x560")
         self.quick_window.protocol("WM_DELETE_WINDOW", self.quick_window.withdraw)
@@ -848,14 +1060,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         actions = ttk.Frame(tab)
         actions.pack(fill="x", pady=12)
         ttk.Button(actions, text="保存当前配置", command=self._quick_save).pack(side="left", padx=4)
-        self.btn_quick_run = ttk.Button(actions, text="一键运行已勾选", command=self._quick_run, state="disabled")
+        self.btn_quick_run = ttk.Button(actions, text="一键运行已勾选", style="Primary.TButton",
+                                        command=self._quick_run, state="disabled")
         self.btn_quick_run.pack(side="left", padx=4)
         self.btn_quick_stop = ttk.Button(actions, text="停止后续项目", command=self._quick_stop, state="disabled")
         self.btn_quick_stop.pack(side="left", padx=4)
-        self.lbl_quick_status = ttk.Label(tab, text="登录后可运行", foreground="gray")
+        self.lbl_quick_status = ttk.Label(tab, text="登录后可运行", style="Muted.TLabel")
         self.lbl_quick_status.pack(anchor="w", pady=5)
         ttk.Label(tab, text="账号和密码不会保存。执行中的项目先完成；需要确认的操作仍会弹出确认框。",
-                  foreground="#666").pack(anchor="w")
+                  style="Muted.TLabel").pack(anchor="w")
 
     def _update_global_pickup_filter(self, *_):
         self._skip_supply_pickups = bool(self.var_skip_supply_pickups.get())
@@ -3406,15 +3619,20 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         fulushou_frame.pack(fill="x", pady=5)
         self._build_fulushou_panel(fulushou_frame)
 
-        # 三日福利（活动451 周末双倍）
+        # 三日福利（活动451 周末双倍 Buff）
         gift_frame = ttk.LabelFrame(gift_page, text="三日福利（周末双倍 451）", padding=10)
         gift_frame.pack(fill="x", pady=(0, 10))
-        self.lbl_timeboat_gift = ttk.Label(gift_frame, text="状态: 待检测", wraplength=160)
+        self.lbl_timeboat_gift = ttk.Label(gift_frame, text="状态: 待检测", wraplength=320)
         self.lbl_timeboat_gift.pack(pady=5)
-        ttk.Button(gift_frame, text="刷新福利状态", command=self._do_timeboat_check).pack(fill="x", pady=5)
+        ttk.Button(gift_frame, text="刷新福利状态", command=self._do_weekend_gift_check).pack(fill="x", pady=5)
         self.btn_timeboat_gift = ttk.Button(gift_frame, text="领取三日福利", command=self._do_timeboat_gift)
         self.btn_timeboat_gift.pack(fill="x", pady=5)
-        ttk.Label(gift_frame, text="周五~周日可领；活动451，走 rewardGiftByFree", foreground="gray", wraplength=160).pack(pady=(0, 5))
+        ttk.Label(
+            gift_frame,
+            text="周五~周日可领；活动451（type=19 Buff），协议 rewardGiftByFree",
+            foreground="gray",
+            wraplength=320,
+        ).pack(pady=(0, 5))
 
 
         # 说明区
@@ -7906,13 +8124,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                         self._count_after(_count_generation, 0, lambda r=rid: self.time_status_labels[r].config(text=self.time_gift_items[[x[0] for x in self.time_gift_items].index(r)][1] + ": 可重置", foreground="green"))
                         self._count_after(_count_generation, 0, lambda r=rid: self.time_buttons[r].config(state="normal"))
 
-                # 三日福利状态
-                if offline_time and offline_time > 0:
-                    self._count_after(_count_generation, 0, lambda: self.lbl_time_gift.config(text="状态: 可领取(%d分钟)" % offline_time, foreground="green"))
-                    self._count_after(_count_generation, 0, lambda: self.btn_time_gift.config(state="normal"))
-                else:
-                    self._count_after(_count_generation, 0, lambda: self.lbl_time_gift.config(text="状态: 未到时间", foreground="gray"))
-                    self._count_after(_count_generation, 0, lambda: self.btn_time_gift.config(state="disabled"))
+                # 离线时长仅供时光之舟参考；三日福利状态见日常助手子标签
+                if offline_time:
+                    self._log("[时光之舟] 离线时长字段: %s（与三日福利无关）" % offline_time)
             except Exception as e:
                 self._log("[时光之舟] 获取状态异常: %s" % e)
             flow.disconnect()
@@ -7945,34 +8159,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self._log("[时光之舟] 重置异常: %s" % e)
 
     def _do_time_gift(self):
-        """领取三日福利（周末双倍 活动451）"""
-        if not self._ensure_login():
-            return
-        self._log("[三日福利] 领取周末双倍（活动451）...")
-        threading.Thread(target=self._time_gift_worker, daemon=True).start()
+        """兼容旧入口：转调日常助手三日福利领取。"""
+        self._do_timeboat_gift()
 
     def _time_gift_worker(self):
-        try:
-            flow, _, scene = self._connect_and_enter()
-            result = flow.request("scene.playerHandler.rewardGiftByFree", {"activeId": 451}, timeout=15)
-            if result.get('code') == 200:
-                self._log("[三日福利] 领取成功!")
-                add_data = result.get('add', {})
-                if add_data:
-                    for k, v in add_data.items():
-                        if isinstance(v, (int, float)) and v > 0:
-                            self._log("  获得: %s x%d" % (k, v))
-                self.root.after(0, lambda: self.lbl_time_gift.config(text="状态: 已领取", foreground="gray"))
-                self.root.after(0, lambda: self.btn_time_gift.config(state="disabled"))
-            elif "不能重复领取" in str(result.get('error', '')):
-                self._log("[三日福利] 今日已领取，无需重复")
-                self.root.after(0, lambda: self.lbl_time_gift.config(text="状态: 今日已领取", foreground="gray"))
-                self.root.after(0, lambda: self.btn_time_gift.config(state="disabled"))
-            else:
-                self._log("[三日福利] 领取失败: %s" % result.get('error', ''))
-            flow.disconnect()
-        except Exception as e:
-            self._log("[三日福利] 领取异常: %s" % e)
+        self._timeboat_gift_worker()
 
     # ========== 时光之舟标签页 ==========
     def _build_timeboat_tab(self):
@@ -9146,14 +9337,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                                 text="次数已用完" if is_available and x == 0 else "未开放", foreground="gray"))
                             self._count_after(_count_generation, 0, lambda r=rid: self.timeboat_buttons[r].config(state="disabled"))
 
-                # 三日福利（活动451 周末双倍）：无查询接口，按星期与领取返回判断
-                gift_hint = "今日可领（周五/六/日）" if is_available else "未开放（仅周五~周日）"
-                self._count_after(_count_generation, 0, lambda: self.lbl_timeboat_gift.config(
-                    text=gift_hint, foreground="green" if is_available else "gray"))
-                self._count_after(_count_generation, 0, lambda: self.btn_timeboat_gift.config(
-                    state="normal" if is_available else "disabled"))
+                # 三日福利状态不依赖时光之舟接口；同步刷新日常助手标签
+                self._update_weekend_gift_status(weekday, is_available, _count_generation)
             except Exception as e:
                 self._log("[时光之舟] 获取状态异常: %s" % e)
+                self._update_weekend_gift_status(weekday, is_available, _count_generation)
             flow.disconnect()
         except Exception as e:
             self._log("[时光之舟] 刷新异常: %s" % e)
@@ -9235,34 +9423,90 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         except Exception as e:
             self._log("[时光之舟] 重置异常: %s" % e)
 
+    @staticmethod
+    def _weekend_gift_open(now=None):
+        """活动451 week=0;6;5 → 周日/周六/周五；Python weekday: 4/5/6。"""
+        import datetime
+        now = now or datetime.datetime.now()
+        weekday = now.weekday()
+        return weekday, weekday >= 4
+
+    def _update_weekend_gift_status(self, weekday=None, is_available=None, generation=None):
+        week_names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        if weekday is None or is_available is None:
+            weekday, is_available = self._weekend_gift_open()
+        gift_hint = "状态: 今日可领（%s）" % week_names[weekday] if is_available else "状态: 未开放（仅周五~周日）"
+        color = "green" if is_available else "gray"
+        state = "normal" if is_available else "disabled"
+        if generation is None:
+            generation = getattr(self, "_count_generation", 0)
+
+        def apply():
+            if getattr(self, "lbl_timeboat_gift", None) is not None:
+                self.lbl_timeboat_gift.config(text=gift_hint, foreground=color)
+            if getattr(self, "btn_timeboat_gift", None) is not None:
+                self.btn_timeboat_gift.config(state=state)
+
+        self._count_after(generation, 0, apply)
+
+    def _do_weekend_gift_check(self):
+        """仅刷新三日福利状态，不走时光之舟 timeGift 接口。"""
+        weekday, is_available = self._weekend_gift_open()
+        week_names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+        self._log("[三日福利] 今天%s，%s" % (
+            week_names[weekday], "可领取周末双倍Buff" if is_available else "未开放"))
+        self._update_weekend_gift_status(weekday, is_available)
+
     def _do_timeboat_gift(self):
         if not self._ensure_login():
+            return
+        weekday, is_available = self._weekend_gift_open()
+        if not is_available:
+            week_names = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+            self._log("[三日福利] 今天%s，仅周五~周日可领" % week_names[weekday])
+            self._update_weekend_gift_status(weekday, False)
             return
         self._log("[三日福利] 领取周末双倍（活动451）...")
         threading.Thread(target=self._timeboat_gift_worker, daemon=True).start()
 
     def _timeboat_gift_worker(self):
+        flow = None
         try:
             flow, _, scene = self._connect_and_enter()
-            result = flow.request("scene.playerHandler.rewardGiftByFree", {"activeId": 451}, timeout=15)
-            if result.get('code') == 200:
-                self._log("[三日福利] 领取成功!")
-                add_data = result.get('add', {})
-                if add_data:
+            # 对齐官方 WeekendView：cdkey/pNum/activeId/type，缺字段会导致领取失败
+            result = flow.request("scene.playerHandler.rewardGiftByFree", {
+                "cdkey": "",
+                "pNum": 1,
+                "activeId": 451,
+                "type": 19,
+            }, timeout=15)
+            err = str(result.get("error") or "")
+            if result.get("code") == 200 and not err:
+                self._log("[三日福利] 领取成功！周末祝福：掉宝/灵魂/经验各+100%，持续120分钟")
+                add_data = result.get("add", {})
+                if isinstance(add_data, dict):
                     for k, v in add_data.items():
                         if isinstance(v, (int, float)) and v > 0:
                             self._log("  获得: %s x%d" % (k, v))
-                self.root.after(0, lambda: self.lbl_timeboat_gift.config(text="已领取", foreground="gray"))
+                for key in ("buff", "buffList", "buffScene", "sceneBuff"):
+                    if result.get(key):
+                        self._log("  Buff: %s" % result.get(key))
+                self.root.after(0, lambda: self.lbl_timeboat_gift.config(text="状态: 已领取", foreground="gray"))
                 self.root.after(0, lambda: self.btn_timeboat_gift.config(state="disabled"))
-            elif "不能重复领取" in str(result.get('error', '')):
+            elif any(token in err for token in ("不能重复领取", "已领取", "已经领取")):
                 self._log("[三日福利] 今日已领取，无需重复")
-                self.root.after(0, lambda: self.lbl_timeboat_gift.config(text="今日已领取", foreground="gray"))
+                self.root.after(0, lambda: self.lbl_timeboat_gift.config(text="状态: 今日已领取", foreground="gray"))
                 self.root.after(0, lambda: self.btn_timeboat_gift.config(state="disabled"))
             else:
-                self._log("[三日福利] 领取失败: %s" % result.get('error', ''))
-            flow.disconnect()
+                self._log("[三日福利] 领取失败: %s" % (err or result.get("code")))
         except Exception as e:
             self._log("[三日福利] 领取异常: %s" % e)
+        finally:
+            if flow is not None:
+                try:
+                    flow.disconnect()
+                except Exception:
+                    pass
 
     # ========== 螺旋地狱标签页 ==========
     def _build_luoxuan_tab(self):

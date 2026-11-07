@@ -382,13 +382,18 @@ class MyDailyWindow:
         window.title(self.TITLE + " · 造梦西游4 活动工具箱")
         window.geometry("860x600")
         window.minsize(660, 420)
+        try:
+            window.configure(bg=getattr(self.app, "UI_BG", "#F5F7FA"))
+        except tk.TclError:
+            pass
         window.protocol("WM_DELETE_WINDOW", window.destroy)
         self.status = tk.StringVar()
         ttk.Label(window, textvariable=self.status, wraplength=820).pack(anchor="w", padx=12, pady=8)
         bar = ttk.Frame(window)
         bar.pack(fill="x", padx=10)
         ttk.Button(bar, text="管理收藏任务", command=self.manage).pack(side="left", padx=4)
-        self.btn_start = ttk.Button(bar, text="执行本窗口所选", command=self.start_selected)
+        self.btn_start = ttk.Button(bar, text="执行本窗口所选", style="Primary.TButton",
+                                    command=self.start_selected)
         self.btn_start.pack(side="left", padx=4)
         self.btn_stop = ttk.Button(bar, text="停止后续项目", command=self.app._quick_stop, state="disabled")
         self.btn_stop.pack(side="left", padx=4)
@@ -404,7 +409,7 @@ class MyDailyWindow:
         ttk.Button(schedule_bar, text="保存定时", command=self._save_schedule).pack(side="left", padx=6)
         ttk.Button(schedule_bar, text="创建Windows计划任务",
                    command=self._create_windows_task).pack(side="left", padx=6)
-        self.lbl_schedule_info = ttk.Label(window, text="", foreground="#666", wraplength=820)
+        self.lbl_schedule_info = ttk.Label(window, text="", style="Muted.TLabel", wraplength=820)
         self.lbl_schedule_info.pack(anchor="w", padx=12, pady=(2, 0))
         self._refresh_schedule_label()
         ttk.Label(window, text="仅执行收藏且勾选的项目；点击“打开设置”可跳到对应页面调整参数。",
