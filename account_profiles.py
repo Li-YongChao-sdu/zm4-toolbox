@@ -45,14 +45,16 @@ class AccountProfiles:
         self._account_directory = base / 'accounts'
         row = ttk.Frame(parent)
         row.grid(row=3, column=0, columnspan=6, sticky='ew', pady=(6, 0))
+        parent.columnconfigure(0, weight=1)
         ttk.Label(row, text='已存账号：').pack(side='left')
-        self._account_choice = ttk.Combobox(row, state='readonly', width=23)
+        self._account_choice = ttk.Combobox(row, state='readonly', width=18)
         self._account_choice.pack(side='left', padx=4)
         ttk.Button(row, text='载入账号', command=self._load_account_profile).pack(side='left', padx=3)
         ttk.Button(row, text='保存当前账号', command=self._save_account_profile).pack(side='left', padx=3)
         ttk.Button(row, text='删除所选', command=self._delete_account_profile).pack(side='left', padx=3)
         ttk.Button(row, text='刷新', command=self._refresh_account_profiles).pack(side='left', padx=3)
-        ttk.Label(row, text='登录成功后自动加密保存Cookie；密码不落盘', foreground='gray').pack(side='left', padx=6)
+        ttk.Label(row, text='登录成功后自动加密保存Cookie；密码不落盘',
+                  style='Muted.TLabel').pack(side='left', padx=6)
         self._refresh_account_profiles()
 
     def _account_path(self, username):

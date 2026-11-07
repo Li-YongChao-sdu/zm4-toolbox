@@ -547,10 +547,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 screen_w, screen_h = work.right - work.left, work.bottom - work.top
         except (AttributeError, OSError):
             pass
-        self.root.geometry('%dx%d' % (min(1180, max(320, screen_w - 40)),
-                                      min(800, max(240, screen_h - 70))))
-        self.root.minsize(min(640, max(320, screen_w - 40)),
-                          min(420, max(240, screen_h - 70)))
+        # 默认稍宽，减少首屏模块被横向挤压；高度仍受工作区限制。
+        self.root.geometry('%dx%d' % (min(1280, max(960, screen_w - 40)),
+                                      min(860, max(560, screen_h - 70))))
+        self.root.minsize(min(900, max(640, screen_w - 40)),
+                          min(560, max(420, screen_h - 70)))
 
         self.client = None
         self.saves = []
@@ -726,15 +727,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self._ui_canvas.grid(row=0, column=0, sticky='nsew')
         self._ui_vscroll = ttk.Scrollbar(viewport, orient='vertical', command=self._ui_canvas.yview)
         self._ui_vscroll.grid(row=0, column=1, sticky='ns')
-        self._ui_hscroll = ttk.Scrollbar(viewport, orient='horizontal', command=self._ui_canvas.xview)
-        self._ui_hscroll.grid(row=1, column=0, sticky='ew')
-        self._ui_canvas.configure(yscrollcommand=self._ui_vscroll.set, xscrollcommand=self._ui_hscroll.set)
+        # 内容宽度始终贴合视口，不再出现左右滑动；仅保留纵向滚动。
+        self._ui_canvas.configure(yscrollcommand=self._ui_vscroll.set)
         self._ui_host = ttk.Frame(self._ui_canvas)
         self._ui_window = self._ui_canvas.create_window(0, 0, window=self._ui_host, anchor='nw')
+        self._ui_resizing = False
         self._ui_host.bind('<Configure>', self._resize_ui_viewport)
         self._ui_canvas.bind('<Configure>', self._resize_ui_viewport)
         self.root.bind('<MouseWheel>', self._scroll_ui_viewport, add='+')
-        self.root.bind('<Shift-MouseWheel>', self._scroll_ui_viewport, add='+')
+        self.root.after_idle(self._resize_ui_viewport)
         # 顶部登录区
         login_frame = ttk.LabelFrame(self._ui_host, text="登录", padding=12)
         login_frame.pack(fill="x", padx=12, pady=(10, 6))
@@ -765,7 +766,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.cookie_login_frame.grid(row=2, column=0, columnspan=6, sticky="ew", pady=(6, 0))
         self.cookie_login_frame.columnconfigure(1, weight=1)
         ttk.Label(self.cookie_login_frame, text="Cookie：").grid(row=0, column=0, padx=3)
-        self.entry_cookie = ttk.Entry(self.cookie_login_frame, width=80, show="*")
+        # 不写死超宽 width，随登录区拉伸，避免首屏被撑出横向滚动
+        self.entry_cookie = ttk.Entry(self.cookie_login_frame, show="*")
         self.entry_cookie.grid(row=0, column=1, sticky="ew", padx=3)
         ttk.Button(self.cookie_login_frame, text="粘贴Cookie", command=self._paste_login_cookie).grid(row=0, column=2, padx=4)
         ttk.Label(self.cookie_login_frame, text="浏览器登录4399后粘贴完整Cookie；仅点击“保存当前账号”时加密保存到本机账号目录。",
@@ -877,22 +879,47 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                   style="Muted.TLabel").pack(side="left", padx=8)
 
     def _resize_ui_viewport(self, event=None):
-        canvas = self._ui_canvas
-        width, height = max(1, canvas.winfo_width()), max(1, canvas.winfo_height())
-        if hasattr(self, 'nav_buttons'):
-            columns = min(13, max(4, (width - 20) // 100))
-            if columns != getattr(self, '_nav_columns', None):
-                self._nav_columns = columns
-                for col in range(13):
-                    self.nav_frame.columnconfigure(col, weight=1 if col < columns else 0, minsize=0, uniform='nav' if col < columns else '')
-                for index, button in enumerate(self.nav_buttons):
-                    row = 0 if index == 0 else 1 + (index - 1) // columns
-                    col = 0 if index == 0 else (index - 1) % columns
-                    button.grid_configure(row=row, column=col, columnspan=columns if index == 0 else 1)
-        wanted_w = max(width, self._ui_host.winfo_reqwidth())
-        wanted_h = max(height, self._ui_host.winfo_reqheight())
-        canvas.itemconfigure(self._ui_window, width=wanted_w, height=wanted_h)
-        canvas.configure(scrollregion=(0, 0, wanted_w, wanted_h))
+        if getattr(self, '_ui_resizing', False):
+            return
+        canvas = getattr(self, '_ui_canvas', None)
+        host = getattr(self, '_ui_host', None)
+        if canvas is None or host is None:
+            return
+        self._ui_resizing = True
+        try:
+            width = max(1, canvas.winfo_width())
+            height = max(1, canvas.winfo_height())
+            if hasattr(self, 'nav_buttons'):
+                # 按视口宽度算列数，避免导航按 13 列天然宽度撑开整页
+                columns = min(13, max(4, (width - 24) // 96))
+                if columns != getattr(self, '_nav_columns', None):
+                    self._nav_columns = columns
+                    for col in range(13):
+                        self.nav_frame.columnconfigure(
+                            col,
+                            weight=1 if col < columns else 0,
+                            minsize=0,
+                            uniform='nav' if col < columns else '',
+                        )
+                    for index, button in enumerate(self.nav_buttons):
+                        row = 0 if index == 0 else 1 + (index - 1) // columns
+                        col = 0 if index == 0 else (index - 1) % columns
+                        button.grid_configure(
+                            row=row, column=col,
+                            columnspan=columns if index == 0 else 1,
+                        )
+            # 宽度始终等于视口：模块在窗口内排布，只允许上下滚动
+            canvas.itemconfigure(self._ui_window, width=width)
+            host.update_idletasks()
+            needed_h = max(height, host.winfo_reqheight())
+            canvas.itemconfigure(self._ui_window, height=needed_h)
+            canvas.configure(scrollregion=(0, 0, width, needed_h))
+            if canvas.xview() != (0.0, 1.0):
+                canvas.xview_moveto(0)
+        except tk.TclError:
+            pass
+        finally:
+            self._ui_resizing = False
 
     def _scroll_ui_viewport(self, event):
         try:
@@ -907,10 +934,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             if pointer is None:
                 return
             delta = -int(event.delta / 120) if abs(event.delta) >= 120 else (-1 if event.delta > 0 else 1)
-            if event.state & 1:
-                self._ui_canvas.xview_scroll(delta, 'units')
-            else:
-                self._ui_canvas.yview_scroll(delta, 'units')
+            self._ui_canvas.yview_scroll(delta, 'units')
             return 'break'
         except tk.TclError:
             return
@@ -964,18 +988,25 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     def _build_navigation(self):
         self.nav_buttons = []
         self._nav_selected = 0
+        self._nav_columns = None
         tabs = self.notebook.tabs()
+        # 先按较窄默认列数排布，真正列数由 _resize_ui_viewport 按窗口宽度校正
+        initial_columns = 8
         for col in range(13):
-            self.nav_frame.columnconfigure(col, weight=1, uniform="nav")
+            self.nav_frame.columnconfigure(
+                col,
+                weight=1 if col < initial_columns else 0,
+                uniform="nav" if col < initial_columns else "",
+            )
         for index, tab_id in enumerate(tabs):
             title = self.notebook.tab(tab_id, "text")
-            row = 0 if index == 0 else 1 + (index - 1) // 13
-            col = 0 if index == 0 else (index - 1) % 13
+            row = 0 if index == 0 else 1 + (index - 1) // initial_columns
+            col = 0 if index == 0 else (index - 1) % initial_columns
             style = self._nav_button_style(selected=(index == 0))
             button = tk.Button(
                 self.nav_frame, text=title,
                 height=1 if index == 0 else 2,
-                wraplength=80,
+                wraplength=72,
                 relief="flat", bd=0, cursor="hand2",
                 padx=2, pady=2,
                 command=lambda i=index: self.notebook.select(i),
@@ -983,12 +1014,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             )
             button.bind("<Enter>", lambda _e, i=index: self._on_nav_enter(i))
             button.bind("<Leave>", lambda _e, i=index: self._on_nav_leave(i))
-            button.grid(row=row, column=col, columnspan=13 if index == 0 else 1,
+            button.grid(row=row, column=col, columnspan=initial_columns if index == 0 else 1,
                         sticky="ew", padx=2, pady=2)
             self.nav_buttons.append(button)
         self.notebook.bind("<<NotebookTabChanged>>", self._sync_navigation)
         self.notebook.select(0)
         self._sync_navigation()
+        self.root.after_idle(self._resize_ui_viewport)
 
     def _sync_navigation(self, event=None):
         selected = self.notebook.index(self.notebook.select())
