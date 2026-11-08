@@ -12,9 +12,68 @@ REWARD_MODES = {
 def dungeon_rows():
     return {int(r["id"]): r for r in json.loads((BASE / "036___Dungeon.xml.json").read_text(encoding="utf-8"))["RECORD"]}
 
+# 少数早期隐藏房 fromId 写的是后一关；按实际入口关补全，避免误用 prevId 串到无关关卡。
+HIDDEN_ENTRY_OVERRIDES = {
+    7: (1005,),  # 普陀隐藏：配置 fromId=8，入口在普陀山脚
+}
+
 def hidden_choices(mid):
-    return [r for r in dungeon_rows().values() if str(r.get("comefromId")) == str(mid)
-            and str(r.get("isHide")) == "1" and str(r.get("consumePointTicket")) == "0"]
+    """列出本关可进的隐藏/Boss房。早期关多写 fromId/specialDoor，后期才有 comefromId。"""
+    rows = dungeon_rows()
+    key = str(mid)
+    found, seen = [], set()
+
+    def add(row):
+        if not row or str(row.get("isHide")) != "1" or str(row.get("consumePointTicket")) != "0":
+            return
+        rid = int(row["id"])
+        if rid in seen:
+            return
+        seen.add(rid)
+        found.append(row)
+
+    for row in rows.values():
+        linked = (str(row.get("comefromId")), str(row.get("fromId")), str(row.get("specialDoor")))
+        if key in linked:
+            add(row)
+    for rid in HIDDEN_ENTRY_OVERRIDES.get(int(mid), ()):
+        add(rows.get(rid))
+    found.sort(key=lambda row: int(row["id"]))
+    return found
+
+def side_clear_route(entry_id, target_id, need):
+    """支线通关路线：同关计次，或入口关 + 单独隐藏/Boss房计次。"""
+    try:
+        entry_id = int(entry_id)
+        target_id = int(target_id)
+        need = int(need)
+    except (TypeError, ValueError):
+        return None
+    if entry_id <= 0 or target_id <= 0 or need <= 0:
+        return None
+    rows = dungeon_rows()
+    entry = rows.get(entry_id)
+    target = rows.get(target_id)
+    if not entry or not target:
+        return None
+    if str(entry.get("consumePointTicket")) != "0" or str(target.get("consumePointTicket")) != "0":
+        return None
+    if entry_id == target_id:
+        stages = [(entry_id, False)]
+    else:
+        hide_ids = {int(row["id"]) for row in hidden_choices(entry_id)}
+        if target_id not in hide_ids or str(target.get("isHide")) != "1":
+            return None
+        # 与主线刷取勾选隐藏Boss房一致：先打入口关并带 W，再打计次的 Boss 房。
+        stages = [(entry_id, True), (target_id, False)]
+    return {
+        "stages": stages,
+        "need": need,
+        "entry_id": entry_id,
+        "target_id": target_id,
+        "dungeon_name": target.get("name", str(target_id)),
+    }
+
 
 def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mode="all",
                 only_item_ids=None):
@@ -77,14 +136,17 @@ def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mo
     request("bossDead", None)
     request("finishDungeon", {"dungeonId": mid})
     p1 = scene["curRecord"]["p1"]
+    # 与「主线通关 / 悬赏」一致：completed 带 16777216，并带 enterW。
+    # 仅 completed=1 时掉落仍会结算，但支线 taskData.dungeonCnt 往往不涨。
     payload = {"copyId": drops["copyId"], "pickItems": picks, "mobIds": mobs,
-        "killMonsters": kills, "completed": 1, "currentEXP": p1.get("experience", 0),
+        "killMonsters": kills, "completed": 1 | 16777216, "enterW": 1,
+        "currentEXP": p1.get("experience", 0),
         "pickExp": exp, "pickSp": spirit, "propertyP1Str": ";".join(str(p1.get(k, 0))
         for k in ("hpMax", "mpMax", "atk", "phyDef", "reHP", "reMP")),
         "propertyP2Total": 0, "hitCombo": 100}
     if enter_w:
+        # 隐藏房 / W 线入口仍保留原标记；completed 位已包含
         payload["enterW"] = 1
-        payload["completed"] |= 16777216
     settled = request("syncDropInfoNew", payload)
     return {"mid": mid, "counts": counts, "featherCounts": feather_counts,
             "details": details, "settled": settled}

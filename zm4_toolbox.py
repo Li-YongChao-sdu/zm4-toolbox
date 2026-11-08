@@ -812,6 +812,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         from wash_ui import build_tab as build_wash_tab
         build_wash_tab(self)
         self._build_daily_task_tab()
+        self._build_side_task_tab()
         self._build_mainfarm_tab()
         self._build_mainline_clear_tab()
         self._build_nightmare_tab()
@@ -2307,6 +2308,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.lbl_dice_online.config(text="点击读取在线状态", foreground="gray")
             self._mainline_reset_display()
             self._daily_task_reset_display()
+            self._side_task_reset_display()
             from count_states import refresh
             refresh(self)
 
@@ -2344,6 +2346,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self._enable_all_buttons()
             self._mainline_reset_display()
             self._daily_task_reset_display()
+            self._side_task_reset_display()
             from count_states import refresh
             refresh(self)
             if self.client: self._auto_save_account(self.client)
@@ -2379,6 +2382,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_daily_task_save1.config(state="normal")
         self.btn_daily_task_save2.config(state="normal")
         self.btn_daily_task_save3.config(state="normal")
+        self.btn_side_task_check.config(state="normal")
+        self.btn_side_task_accept.config(state="normal")
+        self.btn_side_task_complete.config(state="normal")
+        self.btn_side_task_claim.config(state="normal")
         self.btn_pet_batch1.config(state="normal")
         self.btn_pet_batch2.config(state="normal")
         self.btn_pet_batch3.config(state="normal")
@@ -4756,6 +4763,388 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 if flow:
                     flow.disconnect()
                 for button in self._daily_task_action_buttons():
+                    self.root.after(0, lambda btn=button: btn.config(state="normal"))
+                self.root.after(0, lambda: self.combo_save.config(state="readonly"))
+                self.root.after(0, lambda: self.btn_login.config(state="normal"))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+
+    # ========== 支线任务：接取 / 通关型自动完成 / 领奖 ==========
+    def _build_side_task_tab(self):
+        tab = ttk.Frame(self.notebook, padding=10)
+        self.notebook.add(tab, text="支线任务")
+        config_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                  "output_cg1_20260921_1_2")
+        self._side_task_defs = {}
+        self._side_task_load_error = None
+        try:
+            with open(os.path.join(config_dir, "210___TaskType.xml.json"), "r", encoding="utf-8") as file:
+                records = json.load(file).get("RECORD", [])
+            for row in records:
+                if isinstance(row, dict) and str(row.get("taskClass")) == "1":
+                    self._side_task_defs[int(row["id"])] = row
+        except (OSError, ValueError, KeyError) as exc:
+            self._side_task_load_error = str(exc)
+
+        self._side_task_snapshot = {}
+        self._side_task_filter = "可操作"
+        left = ttk.LabelFrame(tab, text="支线任务列表", padding=8)
+        left.pack(side="left", fill="both", expand=True, padx=(0, 10))
+        filter_row = ttk.Frame(left)
+        filter_row.pack(fill="x", pady=(0, 6))
+        ttk.Label(filter_row, text="筛选：").pack(side="left")
+        self.combo_side_task_filter = ttk.Combobox(
+            filter_row, state="readonly", width=12,
+            values=("可操作", "通关型", "可接", "进行中", "可领奖", "已完成", "全部"))
+        self.combo_side_task_filter.set("可操作")
+        self.combo_side_task_filter.pack(side="left")
+        self.combo_side_task_filter.bind("<<ComboboxSelected>>", self._side_task_apply_filter)
+        tree_frame = ttk.Frame(left)
+        tree_frame.pack(fill="both", expand=True)
+        scroll = ttk.Scrollbar(tree_frame)
+        scroll.pack(side="right", fill="y")
+        self.side_task_tree = ttk.Treeview(
+            tree_frame, columns=("id", "name", "progress", "state", "route"),
+            show="headings", yscrollcommand=scroll.set, height=18,
+        )
+        scroll.config(command=self.side_task_tree.yview)
+        for column, title, width in (("id", "编号", 70), ("name", "任务", 170),
+                                     ("progress", "进度", 60), ("state", "状态", 70),
+                                     ("route", "自动", 70)):
+            self.side_task_tree.heading(column, text=title)
+            self.side_task_tree.column(column, width=width, anchor="w")
+        self.side_task_tree.pack(side="left", fill="both", expand=True)
+        self.side_task_tree.bind("<<TreeviewSelect>>", self._side_task_on_select)
+
+        right = ttk.Frame(tab, width=270)
+        right.pack(side="right", fill="y")
+        right.pack_propagate(False)
+        initial_hint = ("配置读取失败：%s" % self._side_task_load_error
+                        if self._side_task_load_error else "选择存档后请点击刷新任务列表")
+        self.lbl_side_task_summary = ttk.Label(right, text=initial_hint, foreground="blue",
+                                               wraplength=250, justify="left")
+        self.lbl_side_task_summary.pack(anchor="w", pady=(0, 12))
+        self.btn_side_task_check = ttk.Button(right, text="刷新任务列表",
+                                              command=self._do_side_task_check, state="disabled")
+        self.btn_side_task_check.pack(fill="x", pady=3)
+        self.btn_side_task_accept = ttk.Button(right, text="接取所选任务",
+                                               command=lambda: self._side_task_action("accept"),
+                                               state="disabled")
+        self.btn_side_task_accept.pack(fill="x", pady=3)
+        self.btn_side_task_complete = ttk.Button(right, text="自动完成并领奖",
+                                                 command=lambda: self._side_task_action("complete"),
+                                                 state="disabled")
+        self.btn_side_task_complete.pack(fill="x", pady=3)
+        self.btn_side_task_claim = ttk.Button(right, text="领取已完成任务",
+                                              command=lambda: self._side_task_action("claim"),
+                                              state="disabled")
+        self.btn_side_task_claim.pack(fill="x", pady=3)
+        self.lbl_side_task_detail = ttk.Label(right, text="选中任务可查看目标与前置条件。",
+                                              wraplength=250, justify="left")
+        self.lbl_side_task_detail.pack(anchor="w", pady=(16, 10))
+        ttk.Label(right, text="自动完成支持免点券通关型支线：同关计次（如九华山麓），以及入口关+单独Boss房计次（如法华灵洞）。击败怪/合成类暂不自动打。",
+                  wraplength=250, justify="left", foreground="gray").pack(anchor="w")
+
+    def _side_task_selected_id(self):
+        selection = self.side_task_tree.selection()
+        return int(selection[0]) if selection else None
+
+    def _side_task_clear_route(self, task_id):
+        """通关型支线自动路线：同关计次，或入口关 + 隐藏/Boss房计次。"""
+        row = self._side_task_defs.get(task_id) or {}
+        if str(row.get("taskType", "")) != "0":
+            return None
+        from mainfarm_routes import side_clear_route
+        route = side_clear_route(row.get("dungeonId"), row.get("targetId"), row.get("targetNum", 1))
+        if not route:
+            return None
+        route = dict(route)
+        route["name"] = row.get("name", "?")
+        route["mid"] = route["target_id"]
+        return route
+
+    def _side_task_progress_counts(self, task_id, active_row):
+        row = self._side_task_defs.get(task_id, {})
+        need = int(row.get("targetNum", 1) or 1)
+        if not active_row:
+            return 0, need
+        if active_row.get("taskState") == 1:
+            return need, need
+        data = active_row.get("taskData") or {}
+        if not isinstance(data, dict):
+            data = {}
+        current = data.get("dungeonCnt", data.get("cnt", data.get("num")))
+        if current is None:
+            current = active_row.get("cnt", active_row.get("num"))
+        return int(current or 0), need
+
+    def _side_task_progress_text(self, task_id, active_row):
+        current, need = self._side_task_progress_counts(task_id, active_row)
+        if not active_row:
+            return "-/%s" % need
+        return "%s/%s" % (current, need)
+
+    def _side_task_find_cur(self, scene_obj, task_id):
+        return next((row for row in scene_obj.get("curRecord", {}).get("curTasks", [])
+                     if isinstance(row, dict)
+                     and str(row.get("taskId", "")).isdigit()
+                     and int(row.get("taskId")) == task_id), None)
+
+    def _side_task_make_snapshot(self, scene, slot):
+        cur = scene.get("curRecord", {})
+        level = int(cur.get("p1", {}).get("level", 1) or 1)
+        old = {int(row.get("taskId")) for row in cur.get("oldTasks", [])
+               if isinstance(row, dict) and str(row.get("taskId", "")).isdigit()
+               and int(row.get("num", 0) or 0) > 0}
+        active = {int(row.get("taskId")): row for row in cur.get("curTasks", [])
+                  if isinstance(row, dict) and str(row.get("taskId", "")).isdigit()}
+        states, progress = {}, {}
+        for task_id, row in self._side_task_defs.items():
+            active_row = active.get(task_id)
+            progress[task_id] = self._side_task_progress_text(task_id, active_row)
+            if task_id in active:
+                states[task_id] = "可领奖" if active[task_id].get("taskState") == 1 else "进行中"
+            elif task_id in old:
+                states[task_id] = "已完成"
+            elif str(row.get("isClose", "0")) != "0":
+                states[task_id] = "未开放"
+            elif level < int(row.get("level", 1) or 1):
+                states[task_id] = "等级不足"
+            elif any(int(pre) not in old for pre in str(row.get("preTaskId", "-1")).split(";")
+                     if pre.lstrip("-").isdigit() and int(pre) > 0):
+                states[task_id] = "前置未完成"
+            else:
+                states[task_id] = "可接"
+        counts = {
+            "可接": sum(1 for s in states.values() if s == "可接"),
+            "进行中": sum(1 for s in states.values() if s == "进行中"),
+            "可领奖": sum(1 for s in states.values() if s == "可领奖"),
+            "已完成": sum(1 for s in states.values() if s == "已完成"),
+        }
+        return {"slot": slot, "level": level, "states": states, "progress": progress,
+                "active": active, "counts": counts}
+
+    def _side_task_reset_display(self):
+        self._side_task_snapshot = {}
+        if getattr(self, "lbl_side_task_summary", None) is None:
+            return
+        self.lbl_side_task_summary.config(text="请点击刷新任务列表")
+        self._side_task_rebuild_tree({})
+
+    def _side_task_on_select(self, event=None):
+        task_id = self._side_task_selected_id()
+        if task_id is None:
+            return
+        row = self._side_task_defs.get(task_id, {})
+        state = self._side_task_snapshot.get("states", {}).get(task_id, "待读取")
+        progress = self._side_task_snapshot.get("progress", {}).get(task_id, "-")
+        route = self._side_task_clear_route(task_id)
+        if route:
+            stages = route["stages"]
+            if len(stages) == 1:
+                route_text = "可自动：通关%s（%d）×%d" % (
+                    route["dungeon_name"], stages[0][0], route["need"])
+            else:
+                route_text = "可自动：入口%d + Boss房%s（%d）×%d" % (
+                    stages[0][0], route["dungeon_name"], stages[1][0], route["need"])
+        else:
+            route_text = "暂不自动（非通关型或需点券/多关）"
+        self.lbl_side_task_detail.config(
+            text="%s（%d）\n状态：%s\n进度：%s\n%s\n等级要求：%s\n前置任务：%s\n关卡：%s\n目标：%s" %
+                 (row.get("name", "?"), task_id, state, progress, route_text, row.get("level", "?"),
+                  row.get("preTaskId", "?"), row.get("dungeonId", "?"),
+                  row.get("targetDescribe") or row.get("describe") or "?"))
+
+    def _side_task_apply_filter(self, event=None):
+        self._side_task_filter = self.combo_side_task_filter.get() or "可操作"
+        self._side_task_rebuild_tree(self._side_task_snapshot.get("states", {}),
+                                     self._side_task_snapshot.get("progress", {}))
+
+    def _side_task_rebuild_tree(self, states, progress=None):
+        progress = progress or {}
+        selected = self._side_task_selected_id()
+        for item in self.side_task_tree.get_children():
+            self.side_task_tree.delete(item)
+        filt = getattr(self, "_side_task_filter", "可操作")
+        operable = {"可接", "进行中", "可领奖"}
+        for task_id, row in sorted(self._side_task_defs.items()):
+            state = states.get(task_id, "待读取")
+            clearable = bool(self._side_task_clear_route(task_id))
+            is_operable = state in operable or state == "待读取"
+            if filt == "通关型":
+                # 在可操作范围内再筛通关型
+                if not is_operable or not clearable:
+                    continue
+            elif filt == "可操作":
+                if not is_operable:
+                    continue
+            elif filt != "全部" and state != filt:
+                continue
+            route = "通关型" if clearable else "—"
+            self.side_task_tree.insert(
+                "", "end", iid=str(task_id),
+                values=(task_id, row.get("name", "?"), progress.get(task_id, "-"), state, route))
+        if selected is not None and self.side_task_tree.exists(str(selected)):
+            self.side_task_tree.selection_set(str(selected))
+            self.side_task_tree.see(str(selected))
+        self._side_task_on_select()
+
+    def _side_task_display_snapshot(self, snapshot):
+        if self.current_save is None or self.current_save["index"] != snapshot["slot"]:
+            return
+        self._side_task_snapshot = snapshot
+        counts = snapshot["counts"]
+        self.lbl_side_task_summary.config(
+            text="槽%d Lv.%d：可接%d · 进行中%d · 可领奖%d · 已完成%d" %
+                 (snapshot["slot"], snapshot["level"], counts["可接"], counts["进行中"],
+                  counts["可领奖"], counts["已完成"]))
+        self._side_task_rebuild_tree(snapshot["states"], snapshot["progress"])
+
+    def _do_side_task_check(self):
+        if not self.client or self.current_save is None:
+            return
+        slot = self.current_save["index"]
+        self.btn_side_task_check.config(state="disabled")
+        self.lbl_side_task_summary.config(text="正在读取槽%d的支线任务…" % slot)
+
+        def worker():
+            flow = None
+            try:
+                flow, entry, scene = self._connect_and_enter(slot)
+                if entry.get("code") != 200 or not scene.get("curRecord"):
+                    raise RuntimeError("当前槽位没有角色")
+                snapshot = self._side_task_make_snapshot(scene, slot)
+                self.root.after(0, lambda: self._side_task_display_snapshot(snapshot))
+            except Exception as exc:
+                if self.current_save and self.current_save["index"] == slot:
+                    self._log("[支线任务] 读取失败: %s" % exc)
+                    self.root.after(0, self._side_task_reset_display)
+                    self.root.after(0, lambda: self.lbl_side_task_summary.config(text="读取失败，请刷新"))
+            finally:
+                if flow:
+                    flow.disconnect()
+                self.root.after(0, lambda: self.btn_side_task_check.config(state="normal"))
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _side_task_action(self, action):
+        if not self._ensure_login():
+            return
+        task_id = self._side_task_selected_id()
+        if task_id is None:
+            messagebox.showwarning("提示", "请先选择支线任务")
+            return
+        status = self._side_task_snapshot.get("states", {}).get(task_id)
+        route = self._side_task_clear_route(task_id)
+        if action == "accept" and status != "可接":
+            messagebox.showwarning("提示", "当前任务状态为%s，不能接取" % (status or "待读取"))
+            return
+        if action == "claim" and status != "可领奖":
+            messagebox.showwarning("提示", "任务尚未达到可领奖状态")
+            return
+        if action == "complete":
+            if not route:
+                messagebox.showwarning("提示", "该支线不是可自动的通关型任务（或需要点券）")
+                return
+            if status not in ("可接", "进行中", "可领奖"):
+                messagebox.showwarning("提示", "当前任务状态为%s，不能自动完成" % (status or "待读取"))
+                return
+        slot = self.current_save["index"]
+        side_buttons = (self.btn_side_task_check, self.btn_side_task_accept,
+                        self.btn_side_task_complete, self.btn_side_task_claim)
+        for button in side_buttons:
+            button.config(state="disabled")
+        self.combo_save.config(state="disabled")
+        self.btn_login.config(state="disabled")
+
+        def worker():
+            flow = None
+            claimed_items = []
+            try:
+                from mainfarm_routes import clear_stage
+                flow, entry, scene = self._connect_and_enter(slot)
+                if entry.get("code") != 200 or not scene.get("curRecord"):
+                    raise RuntimeError("当前槽位没有角色")
+                if action == "accept":
+                    if self._side_task_find_cur(scene, task_id):
+                        raise RuntimeError("任务%d已在进行中，无需重复接取" % task_id)
+                    started = flow.request("scene.taskHandler.startTask", {"taskId": task_id}, timeout=15)
+                    if started.get("code") != 200:
+                        raise RuntimeError("接取任务%d失败: %s" %
+                                           (task_id, started.get("error", started.get("code"))))
+                    self._log("[支线任务] 已接取 %s（%d）" %
+                              (self._side_task_defs[task_id].get("name", "?"), task_id))
+                if action == "complete":
+                    current = self._side_task_find_cur(scene, task_id)
+                    if current is None:
+                        started = flow.request("scene.taskHandler.startTask", {"taskId": task_id}, timeout=15)
+                        if started.get("code") != 200:
+                            raise RuntimeError("接取任务%d失败: %s" %
+                                               (task_id, started.get("error", started.get("code"))))
+                        self._log("[支线任务] 已接取 %s（%d）" % (route["name"], task_id))
+                        current = {"taskState": 0, "taskData": {"dungeonCnt": 0}}
+                    if current.get("taskState") != 1:
+                        done, need = self._side_task_progress_counts(task_id, current)
+                        remain = max(0, need - done)
+                        stages = route["stages"]
+                        stage_text = " → ".join(str(mid) for mid, _ in stages)
+                        self._log("[支线任务] %s 自动通关：%s，进度%d/%d，剩余%d次（不计副本掉落）" %
+                                  (route["name"], stage_text, done, need, remain))
+                        for index in range(remain):
+                            for mid, enter_w in stages:
+                                clear_stage(flow, scene, mid, enter_w, reward_mode="none")
+                                self._log("[支线任务] 通关关卡%d（第%d/%d轮）" %
+                                          (mid, done + index + 1, need))
+                                time.sleep(0.4)
+                        flow.disconnect()
+                        flow, _, scene = self._connect_and_enter(slot)
+                        current = self._side_task_find_cur(scene, task_id)
+                        if not current or current.get("taskState") != 1:
+                            done2, need2 = self._side_task_progress_counts(task_id, current)
+                            raise RuntimeError(
+                                "已提交通关，但任务未变为可领奖（进度%s/%s）。请刷新后检查结算标记。" %
+                                (done2, need2))
+                    action_claim = True
+                else:
+                    action_claim = action == "claim"
+                if action_claim:
+                    current = self._side_task_find_cur(scene, task_id)
+                    if not current or current.get("taskState") != 1:
+                        flow.disconnect()
+                        flow, _, scene = self._connect_and_enter(slot)
+                        current = self._side_task_find_cur(scene, task_id)
+                    if not current or current.get("taskState") != 1:
+                        raise RuntimeError("任务%d尚未达到可领奖状态，保留当前进度" % task_id)
+                    claimed = flow.request("scene.taskHandler.handoverTask", {"taskId": task_id}, timeout=15)
+                    if claimed.get("code") != 200:
+                        raise RuntimeError("任务%d领奖失败: %s" %
+                                           (task_id, claimed.get("error", claimed.get("code"))))
+                    claimed_items = claimed.get("items", [])
+                    self._log("[支线任务] 任务%d领奖成功：物品%s，经验%s，灵魂%s" %
+                              (task_id, claimed_items, claimed.get("addExp", 0),
+                               claimed.get("addSpirit", 0)))
+                flow.disconnect()
+                flow, _, scene = self._connect_and_enter(slot)
+                snapshot = self._side_task_make_snapshot(scene, slot)
+                self.root.after(0, lambda: self._side_task_display_snapshot(snapshot))
+                if claimed_items:
+                    bag = scene.get("curRecord", {}).get("itemsBag", {}).get("items", [])
+                    if isinstance(bag, dict):
+                        bag = list(bag.values())
+                    for reward in claimed_items:
+                        reward_id = str(reward.get("id"))
+                        count = sum(int(item.get("num", item.get("count", 0)) or 0)
+                                    for item in bag if isinstance(item, dict)
+                                    and str(item.get("id")) == reward_id)
+                        self._log("[支线任务] 背包核对：道具%s当前%d个" % (reward_id, count))
+            except Exception as exc:
+                self._log("[支线任务] 操作停止: %s" % exc)
+                self.root.after(0, self._do_side_task_check)
+            finally:
+                if flow:
+                    flow.disconnect()
+                for button in side_buttons:
                     self.root.after(0, lambda btn=button: btn.config(state="normal"))
                 self.root.after(0, lambda: self.combo_save.config(state="readonly"))
                 self.root.after(0, lambda: self.btn_login.config(state="normal"))
