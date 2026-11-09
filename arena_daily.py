@@ -572,6 +572,8 @@ def build_tab(app, pet, title):
     for label, action in (('开始挑战', 'auto'), ('赛季领奖', 'claim')):
         button = ttk.Button(controls, text=label, command=lambda action=action: run(action),
                             **({'width': 8} if action == 'claim' else {}))
+        # 竞技场和斗宠大会都有“开始挑战”，在“我的日常”里用页签标题区分。
+        button.daily_label = "%s·%s" % (title, label)
         button.pack(side='left', padx=4)
         buttons.append(button)
     stop_button = ttk.Button(controls, text='本局结束后停止', command=stop.set, state='disabled')

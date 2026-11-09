@@ -48,11 +48,12 @@ class AccountProfiles:
         ttk.Label(row, text='已存账号：').pack(side='left')
         self._account_choice = ttk.Combobox(row, state='readonly', width=23)
         self._account_choice.pack(side='left', padx=4)
-        ttk.Button(row, text='载入账号', command=self._load_account_profile).pack(side='left', padx=3)
+        self._account_choice.bind('<<ComboboxSelected>>', self._on_account_selected)
+        ttk.Button(row, text='载入并登录', command=self._on_account_selected).pack(side='left', padx=3)
         ttk.Button(row, text='保存当前账号', command=self._save_account_profile).pack(side='left', padx=3)
         ttk.Button(row, text='删除所选', command=self._delete_account_profile).pack(side='left', padx=3)
         ttk.Button(row, text='刷新', command=self._refresh_account_profiles).pack(side='left', padx=3)
-        ttk.Label(row, text='登录成功后自动加密保存Cookie；密码不落盘', foreground='gray').pack(side='left', padx=6)
+        ttk.Label(row, text='选择已存账号会自动登录；Cookie自动加密更新，密码仅手动保存时加密保留', foreground='gray').pack(side='left', padx=6)
         self._refresh_account_profiles()
 
     def _account_path(self, username):
@@ -111,35 +112,66 @@ class AccountProfiles:
         except Exception as error:
             messagebox.showerror('保存账号失败', str(error))
 
+    def _read_account_payload(self, username):
+        """解密读取已存账号档；失败时返回空字典。"""
+        path = getattr(self, '_account_files', {}).get(username)
+        if path is None: return {}
+        try:
+            record = json.loads(path.read_text(encoding='utf8'))
+            payload = json.loads(_protect(base64.b64decode(record['encrypted'], validate=True), decrypt=True).decode('utf8'))
+            if payload.get('username') != username: return {}
+            return payload
+        except Exception:
+            return {}
+
     def _auto_save_account(self, client=None, slot=None):
-        """登录成功后静默保存该账号的最新Cookie，下次只填账号名即可登录。"""
+        """登录成功后静默保存最新Cookie，并保留此前加密保存的密码。"""
         client = client or getattr(self, 'client', None)
         if not client or not getattr(client, 'username', None) or not getattr(client, 'cookies', None): return
         if slot is None and getattr(self, 'current_save', None): slot = self.current_save.get('index')
-        payload = {'username': client.username, 'mode': 'cookie', 'password': '',
+        previous = self._read_account_payload(client.username)
+        password = previous.get('password') or ''
+        payload = {'username': client.username,
+                   'mode': 'password' if password else 'cookie', 'password': password,
                    'cookie': '; '.join('%s=%s' % pair for pair in client.cookies.items()), 'slot': slot}
         try:
             self._write_profile(payload)
-            self._log('[账号保存] 已自动加密保存账号%s的Cookie' % client.username)
+            self._log('[账号保存] 已自动加密保存账号%s的Cookie%s' %
+                      (client.username, '和密码' if password else ''))
         except Exception as error:
             self._log('[账号保存] 自动保存失败：%s' % error)
 
     def _saved_cookie_for(self, username):
-        path = getattr(self, '_account_files', {}).get(username)
-        if path is None: return ''
-        try:
-            record = json.loads(path.read_text(encoding='utf8'))
-            payload = json.loads(_protect(base64.b64decode(record['encrypted'], validate=True), decrypt=True).decode('utf8'))
-            if payload.get('username') != username: return ''
-            return payload.get('cookie') or ''
-        except Exception:
-            return ''
+        return self._read_account_payload(username).get('cookie') or ''
 
-    def _load_account_profile(self):
-        if str(self.btn_login.cget('state')) == 'disabled': return
+    def _on_account_selected(self, event=None):
+        """在下拉框选中已存账号后自动载入并登录，无需再点按钮。"""
+        if str(self.btn_login.cget('state')) == 'disabled':
+            return
+        if not self._load_account_profile(auto=True):
+            return
+        username = self.entry_user.get().strip()
+        payload = self._read_account_payload(username)
+        has_cookie = bool(self.entry_cookie.get().strip() or payload.get('cookie'))
+        has_password = bool(self.entry_pass.get().strip() or payload.get('password'))
+        if has_cookie:
+            if self.var_login_mode.get() != 'cookie':
+                self.var_login_mode.set('cookie')
+                self._toggle_login_mode()
+            self._log('[账号保存] 已选择账号%s，自动使用本机Cookie登录' % username)
+            self._do_login()
+        elif has_password:
+            self._log('[账号保存] 已选择账号%s，自动使用账号密码登录' % username)
+            self._do_login()
+        else:
+            self.lbl_status.config(text='%s没有保存Cookie或密码，请手动登录' % username,
+                                   foreground='orange')
+
+    def _load_account_profile(self, auto=False):
+        if str(self.btn_login.cget('state')) == 'disabled': return False
         username = self._account_choice.get()
         path = self._account_files.get(username)
-        if path is None: return
+        if path is None: return False
         try:
             record = json.loads(path.read_text(encoding='utf8'))
             payload = json.loads(_protect(base64.b64decode(record['encrypted'], validate=True), decrypt=True).decode('utf8'))
@@ -156,10 +188,13 @@ class AccountProfiles:
             self.client = None; self.current_save = None; self.saves = []
             self.combo_save.config(values=()); self.save_var.set('')
             self.lbl_save_info.config(text='请登录读取此账号存档', foreground='gray')
-            self.lbl_status.config(text='已载入%s，请点击登录' % username, foreground='orange')
+            self.lbl_status.config(text=('正在自动登录%s...' if auto else '已载入%s，请点击登录') % username,
+                                   foreground='orange')
             self._log('[账号保存] 已载入账号%s；Cookie失效时可更新后重新保存' % username)
+            return True
         except Exception:
             messagebox.showerror('载入失败', '账号文件无法解密或格式不正确。请在保存它的Windows用户下使用，或重新输入账号后保存。')
+            return False
 
     def _delete_account_profile(self):
         username = self._account_choice.get()

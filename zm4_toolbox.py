@@ -532,9 +532,12 @@ from my_daily import MyDailyWindow, load_schedule, save_schedule, schedule_path,
 
 from jiuzhuan_ui import JiuZhuanPage
 from halloween_activity import HalloweenPage
+from feed_dog import FeedDogPage
+from feather_bag import FeatherBagPage
 
 
-class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfiles):
+class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
+                LimitedActivityPages, AccountProfiles):
     def __init__(self, root):
         self.root = root
         self.root.title("造梦西游4 - 活动工具箱 v5.0（2026-10-30版）")
@@ -655,11 +658,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         from super_gift import build_tab as build_super_gift_tab
         build_super_gift_tab(self)
         self._build_daily_tab()
+        self._build_garden_tab()
         self._build_daily2_tab()
         from wash_ui import build_tab as build_wash_tab
         build_wash_tab(self)
+        self._build_feather_tab()
         self._build_daily_task_tab()
-        self._build_side_task_tab()
+        from side_tasks import build_tab as build_side_tasks_tab
+        build_side_tasks_tab(self)
         self._build_mainfarm_tab()
         self._build_mainline_clear_tab()
         self._build_nightmare_tab()
@@ -789,7 +795,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     # ========== 首页配置 ==========
     QUICK_CONFIG_FILE = os.path.join(BASE_DIR, "zm4_toolbox_config.json")
     QUICK_TASKS = (
-        ("daily", "日常助手", "_do_daily", "btn_daily_run"),
+        ("daily", "日常助手", "_do_daily", "btn_daily_run",
+         "完整版一键日常：按“日常助手 → 一键日常”面板的勾选，依次执行活跃奖励、VIP、联盟、邮件、"
+         "演武堂、群签到、师徒、神秘商店、竞技场、斗宠大会。与“一键日常（部分）”二选一，避免重复执行。"),
         # 造梦寻宝：活动 1192 已于 2026/10/14 23:59:59 下线，暂时隐藏入口。
         ("dice", "4399冒险投一次", "_dice_roll", "btn_dice_roll"),
         ("mainfarm", "主线刷取", "_do_mainfarm", "btn_mainfarm_run"),
@@ -841,7 +849,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         panel = ttk.LabelFrame(tab, text="运行清单", padding=10)
         panel.pack(fill="x")
         self.quick_task_vars = {}
-        for index, (key, label, _, _) in enumerate(self.QUICK_TASKS):
+        for index, spec in enumerate(self.QUICK_TASKS):
+            key, label = spec[0], spec[1]
             var = tk.BooleanVar(value=False)
             self.quick_task_vars[key] = var
             ttk.Checkbutton(panel, text=label, variable=var).grid(
@@ -1068,6 +1077,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self._quick_queue = list(queue)
         self._quick_source = source
         self._quick_stopping = False
+        self._quick_active = True      # 队列执行期间自动跳过“我的日常”里不必要的确认框
+        self._quick_failures = []
+        self._quick_capture = None
+        self._quick_current = ""
+        self._quick_patch_msgbox()
         self.btn_quick_run.config(state="disabled")
         self.btn_quick_stop.config(state="normal")
         self._log("%s 已选 %d 项，依次执行" % (self._quick_tag(), len(self._quick_queue)))
@@ -1076,6 +1090,27 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
     def _quick_tag(self):
         return "[%s]" % getattr(self, "_quick_source", "一键运行")
+
+    def _quick_patch_msgbox(self):
+        """队列运行期间把信息/警告/错误弹窗降级为日志，避免无人值守时卡住。"""
+        if getattr(self, "_quick_msg_backup", None) is not None:
+            return
+        self._quick_msg_backup = (messagebox.showinfo, messagebox.showwarning, messagebox.showerror)
+        messagebox.showinfo = self._quick_msgbox
+        messagebox.showwarning = self._quick_msgbox
+        messagebox.showerror = self._quick_msgbox
+
+    def _quick_msgbox(self, title, message="", **kwargs):
+        text = str(message).replace("\n", " ").strip()
+        self._log(self._quick_tag() + (" 提示已自动跳过：%s：%s" % (title, text[:300])))
+        return "ok"
+
+    def _quick_restore_msgbox(self):
+        backup = getattr(self, "_quick_msg_backup", None)
+        if backup is None:
+            return
+        messagebox.showinfo, messagebox.showwarning, messagebox.showerror = backup
+        self._quick_msg_backup = None
 
     def _quick_stop(self):
         self._quick_stopping = True
@@ -1086,8 +1121,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             stopped = self._quick_stopping
             self._log(self._quick_tag() + (" 已停止后续项目" if stopped else " 全部结束"))
             self.lbl_quick_status.config(text="已停止" if stopped else "全部结束", foreground="green")
+            self._quick_active = False
             self.btn_quick_run.config(state="normal")
             self.btn_quick_stop.config(state="disabled")
+            self._quick_restore_msgbox()
+            self._quick_report()
             if getattr(self, "_quick_quit_after", False):
                 self._quick_quit_after = False
                 self.root.after(1500, self._close_toolbox)
@@ -1101,6 +1139,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         else:
             key, label, run, button = item.key, item.label, item.run, item.button
             prepare = None
+        self._quick_begin_item(label)
         if button is not None and button.instate(["disabled"]) and prepare:
             prepare_method, _ = prepare
             self._log(self._quick_tag() + (" %s：先检测剩余次数" % label))
@@ -1109,6 +1148,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             return
         if button is None or button.instate(["disabled"]):
             self._log(self._quick_tag() + (" 跳过 %s：当前不可运行" % label))
+            self._quick_end_item(label, "跳过：当前不可运行")
             self.root.after(0, self._quick_next)
             return
         self.lbl_quick_status.config(text="正在执行：%s" % label, foreground="orange")
@@ -1117,6 +1157,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             run()
         except Exception as exc:
             self._log(self._quick_tag() + (" %s 启动失败：%s" % (label, exc)))
+            self._quick_end_item(label, "启动失败：%s" % exc)
             self.root.after(0, self._quick_next)
             return
         # 收藏自其他页面的按钮最多等待 10 分钟，避免按钮一直禁用时卡住队列。
@@ -1134,16 +1175,24 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 run()
             except Exception as exc:
                 self._log(self._quick_tag() + (" %s 启动失败：%s" % (label, exc)))
+                self._quick_end_item(label, "启动失败：%s" % exc)
                 self.root.after(0, self._quick_next)
                 return
             self.root.after(200, lambda: self._quick_wait(label, button))
         elif waited_ms >= 60000:
             self._log(self._quick_tag() + (" 跳过 %s：检测超时或不可运行" % label))
+            self._quick_end_item(label, "跳过：检测超时或不可运行")
             self.root.after(0, self._quick_next)
         else:
             self.root.after(350, lambda: self._quick_after_prepare(label, run, button, waited_ms + 350))
 
     def _quick_wait(self, label, button, remain=None):
+        done_attr = getattr(button, "daily_done_attr", None)
+        if done_attr and getattr(self, done_attr, False):
+            self._quick_end_item(label)
+            self._log(self._quick_tag() + (" 结束：%s" % label))
+            self.root.after(0, self._quick_next)
+            return
         if button.instate(["disabled"]):
             if remain is None:
                 self.root.after(350, lambda: self._quick_wait(label, button))
@@ -1151,10 +1200,60 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self.root.after(350, lambda: self._quick_wait(label, button, remain - 350))
             else:
                 self._log(self._quick_tag() + (" %s：等待超时，继续下一项" % label))
+                self._quick_end_item(label, "等待超时（10 分钟）：任务可能没有真正完成")
                 self.root.after(0, self._quick_next)
         else:
+            self._quick_end_item(label)
             self._log(self._quick_tag() + (" 结束：%s" % label))
             self.root.after(0, self._quick_next)
+
+    _QUICK_FAIL_WORDS = ("失败", "错误", "异常", "超时", "未完成", "无法",
+                         "不可用", "不可运行", "未找到", "未登录", "连接中断")
+
+    def _quick_begin_item(self, label):
+        self._quick_current = label
+        self._quick_capture = []
+
+    def _quick_end_item(self, label, reason=""):
+        lines = self._quick_capture
+        if lines is None:
+            return
+        self._quick_capture = None
+        if reason:
+            if "跳过" in reason:
+                lines = [line for line in lines if "跳过" not in str(line)]
+            lines = [reason] + lines
+        hits = []
+        for line in lines:
+            text = str(line).strip()
+            if not text:
+                continue
+            if " 开始：" in text or " 结束：" in text:
+                continue
+            if any(word in text for word in self._QUICK_FAIL_WORDS) and text not in hits:
+                hits.append(text)
+        if hits:
+            self._quick_failures.append((label, hits[:3]))
+
+    def _quick_report(self):
+        failures = getattr(self, "_quick_failures", [])
+        if not failures:
+            self._log(self._quick_tag() + " 本次没有发现失败项")
+            return
+        self._log(self._quick_tag() + (" 本次有 %d 项需要关注：" % len(failures)))
+        for label, lines in failures:
+            self._log("  - %s" % label)
+            for line in lines:
+                self._log("      %s" % line[:180])
+        if getattr(self, "_quick_quit_after", False):
+            return
+        summary = "\n".join("- %s：%s" % (label, lines[0][:100])
+                            for label, lines in failures[:12])
+        if len(failures) > 12:
+            summary += "\n…"
+        messagebox.showwarning("我的日常 执行结果",
+                               "本次有 %d 项未成功或出现报错：\n\n%s" % (len(failures), summary),
+                               parent=self.root)
 
     # ========== 主题挑战轮换 ===========
     def _build_theme_challenge_tab(self):
@@ -1227,11 +1326,18 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                     next_update.strftime("%Y-%m-%d"),
                 )
             )
+            four_star_item = None
             for level, dungeon_id, name in sorted(THEME_CHALLENGE_GROUPS[group_id]):
                 tags = ("four_star",) if level == 4 else ()
-                self.theme_challenge_tree.insert(
+                item = self.theme_challenge_tree.insert(
                     "", "end", values=("%d 星" % level, name, dungeon_id), tags=tags
                 )
+                if level == 4:
+                    four_star_item = item
+            # 默认选中四星关卡，“我的日常”队列才能直接执行，不需要人工先选。
+            if four_star_item is not None:
+                self.theme_challenge_tree.selection_set(four_star_item)
+                self.theme_challenge_tree.see(four_star_item)
 
         self.lbl_theme_updated.config(text="计算时间：%s（本机时间）" % now.strftime("%Y-%m-%d %H:%M:%S"))
 
@@ -1452,6 +1558,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self._build_nian_tab()
         self._build_pingyi_tab()
         self._build_horse_collect_tab()
+        self._build_feed_dog_tab()
         from moyuan_weekly import build_panel as build_moyuan_panel
         build_moyuan_panel(self, self._limited_page("魔渊诛邪（前八层）"))
         pages = list(self.limited_event_notebook.tabs())
@@ -1465,7 +1572,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                                    "output_cg1_20260921_1_2", "002___Activity.xml.json")
         with open(config_path, encoding="utf-8") as file:
             activities = {int(row['id']): row for row in json.load(file)['RECORD']}
-        self._limited_page_deadlines = {"万圣节": datetime(2026, 11, 15, 23, 59, 59), "九转炼丹": datetime(2026, 11, 11, 23, 59, 59)}
+        self._limited_page_deadlines = {"万圣节": datetime(2026, 11, 15, 23, 59, 59),
+                                        "九转炼丹": datetime(2026, 11, 11, 23, 59, 59),
+                                        "喂狗粮": datetime(2026, 11, 15, 23, 59, 59)}
         self._limited_page_deadlines["挑战屏翳"] = datetime(2026, 11, 1, 23, 59, 59)
         with open(os.path.join(os.path.dirname(config_path), '136___PetCollect.xml.json'), encoding='utf-8') as file:
             collect_rows = {str(row['id']): row for row in json.load(file)['RECORD']}
@@ -1911,6 +2020,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
     # ========== 通用方法 ==========
     def _log(self, msg):
+        capture = getattr(self, "_quick_capture", None)
+        if capture is not None:
+            capture.append(str(msg))
         ui_log(msg)
         audit_error = take_error()
         def _append():
@@ -2124,6 +2236,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_daily_run.config(state="normal")
         self.btn_daily_partial.config(state="normal")
         self.btn_dice_check.config(state="normal")
+        if hasattr(self, "btn_wanted_drain"):
+            self.btn_wanted_drain.config(state="normal")
         if not self.btn_dice_stop.instate(["!disabled"]):
             self.btn_dice_start.config(state="normal")
             self.btn_dice_roll.config(state="normal")
@@ -2137,10 +2251,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.btn_daily_task_save1.config(state="normal")
         self.btn_daily_task_save2.config(state="normal")
         self.btn_daily_task_save3.config(state="normal")
-        self.btn_side_task_check.config(state="normal")
-        self.btn_side_task_accept.config(state="normal")
-        self.btn_side_task_complete.config(state="normal")
-        self.btn_side_task_claim.config(state="normal")
+        from side_tasks import enable_buttons as side_task_enable_buttons
+        side_task_enable_buttons(self)
         self.btn_pet_batch1.config(state="normal")
         self.btn_pet_batch2.config(state="normal")
         self.btn_pet_batch3.config(state="normal")
@@ -2201,7 +2313,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             if auth.get('code') != 200 or auth.get('error'):
                 raise RuntimeError('游戏认证失败：%s' % auth.get('error', auth.get('code')))
             flow.game.set_close_callback(lambda: self._log(
-                "[连接] 游戏连接已断开，下一次操作会自动重连；主动退出/切换存档可忽略"))
+                "[连接] 请求过程中游戏连接中断，本次请求未完成；下一次操作会自动重连"))
             # 魂器独立背包 soulBag 只随登录后的 onSendRecord 推送下发，curRecord 里没有。
             self._soul_bag = None
             try:
@@ -2348,7 +2460,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             messagebox.showinfo("提示", "今日题目已全部答完")
             return
 
-        if not messagebox.askyesno("确认", "从第%d题开始自动答题？\n免费，不消耗点券" % (cur_q + 1)):
+        if getattr(self, "_quick_active", False):
+            # 从“一键运行/我的日常”队列触发时无人值守，直接开始答题。
+            self._log("[生存大冒险] 队列自动执行，跳过确认")
+        elif not messagebox.askyesno("确认", "从第%d题开始自动答题？\n免费，不消耗点券" % (cur_q + 1)):
             return
 
         self.btn_auto_answer.config(state="disabled")
@@ -3294,6 +3409,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         ttk.Button(parent, text="查找历史Python发包文件（不执行）",
                    command=open_gamebox_scripts).pack(anchor="w", pady=(0, 10))
 
+    # ========== 联盟药园标签页 ==========
+    def _build_garden_tab(self):
+        page = self._scroll_notebook_page(self.notebook, "联盟药园")
+        from league_garden import build_panel as build_garden_panel
+        build_garden_panel(self, page)
+
     def _build_daily_tab(self):
         self.var_daily_forum = tk.BooleanVar(value=True)
         group = ttk.Frame(self.notebook, padding=10)
@@ -3313,9 +3434,6 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         gamebox_page = self._scroll_notebook_page(
             self.daily_notebook, "游戏盒签到（实验）")
         self._build_gamebox_sign_info(gamebox_page)
-        garden_page = self._scroll_notebook_page(self.daily_notebook, "联盟药园")
-        from league_garden import build_panel as build_garden_panel
-        build_garden_panel(self, garden_page)
         welfare_page = self._scroll_notebook_page(self.daily_notebook, "联盟Buff")
         from league_welfare import build_panel as build_welfare_panel
         build_welfare_panel(self, welfare_page)
@@ -3444,7 +3562,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         ttk.Label(info_frame, text=info_text, justify="left", foreground="#333", wraplength=680).pack(anchor="w")
 
     def _do_daily_partial(self):
-        self._do_daily({"vip", "union", "mail", "yanwu", "teacher"})
+        selection = {"vip", "union", "mail", "yanwu", "teacher"}
+        if self.var_daily_secret_shop.get():
+            selection.add("secret_shop")
+        self._do_daily(selection)
 
     def _do_daily(self, selection=None):
         if not self.client or self.current_save is None:
@@ -4114,6 +4235,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 self.daily_task_tree.set(str(task_id), "state", "待读取")
         self._daily_task_on_select()
 
+    def _side_task_reset_display(self):
+        from side_tasks import reset_display
+        reset_display(self)
+
     def _daily_task_on_select(self, event=None):
         task_id = self._daily_task_selected_id()
         if task_id is None:
@@ -4388,12 +4513,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         if not self._ensure_login():
             return
         if action == "claim":
-            claimable = [task_id for task_id, state
-                         in self._daily_task_snapshot.get("states", {}).items()
-                         if state == "可领奖"]
-            if not claimable:
-                messagebox.showwarning("提示", "当前没有已完成且未领取的任务")
-                return
+            # 界面快照可能落后于服务器（例如队列刚打完副本，任务已可领奖但快照仍显示“进行中”），
+            # 领奖不再用快照拦截，直接连服务器按 curTasks 的最新 taskState 领取。
             task_id = None
         else:
             task_id = self._daily_task_selected_id()
@@ -4453,6 +4574,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                                  if isinstance(row, dict)
                                  and str(row.get("taskId", "")).isdigit()
                                  and row.get("taskState") == 1]
+                    self._log("[日常任务] 已重新登录刷新任务状态：%d 个可领奖" % len(claim_ids))
                     if not claim_ids:
                         raise RuntimeError("当前没有可领奖的已完成任务")
                     self._log("[日常任务] 一键领取 %d 个已完成任务：%s" %
@@ -4513,388 +4635,6 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 if flow:
                     flow.disconnect()
                 for button in self._daily_task_action_buttons():
-                    self.root.after(0, lambda btn=button: btn.config(state="normal"))
-                self.root.after(0, lambda: self.combo_save.config(state="readonly"))
-                self.root.after(0, lambda: self.btn_login.config(state="normal"))
-
-        threading.Thread(target=worker, daemon=True).start()
-
-
-    # ========== 支线任务：接取 / 通关型自动完成 / 领奖 ==========
-    def _build_side_task_tab(self):
-        tab = ttk.Frame(self.notebook, padding=10)
-        self.notebook.add(tab, text="支线任务")
-        config_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                  "output_cg1_20260921_1_2")
-        self._side_task_defs = {}
-        self._side_task_load_error = None
-        try:
-            with open(os.path.join(config_dir, "210___TaskType.xml.json"), "r", encoding="utf-8") as file:
-                records = json.load(file).get("RECORD", [])
-            for row in records:
-                if isinstance(row, dict) and str(row.get("taskClass")) == "1":
-                    self._side_task_defs[int(row["id"])] = row
-        except (OSError, ValueError, KeyError) as exc:
-            self._side_task_load_error = str(exc)
-
-        self._side_task_snapshot = {}
-        self._side_task_filter = "可操作"
-        left = ttk.LabelFrame(tab, text="支线任务列表", padding=8)
-        left.pack(side="left", fill="both", expand=True, padx=(0, 10))
-        filter_row = ttk.Frame(left)
-        filter_row.pack(fill="x", pady=(0, 6))
-        ttk.Label(filter_row, text="筛选：").pack(side="left")
-        self.combo_side_task_filter = ttk.Combobox(
-            filter_row, state="readonly", width=12,
-            values=("可操作", "通关型", "可接", "进行中", "可领奖", "已完成", "全部"))
-        self.combo_side_task_filter.set("可操作")
-        self.combo_side_task_filter.pack(side="left")
-        self.combo_side_task_filter.bind("<<ComboboxSelected>>", self._side_task_apply_filter)
-        tree_frame = ttk.Frame(left)
-        tree_frame.pack(fill="both", expand=True)
-        scroll = ttk.Scrollbar(tree_frame)
-        scroll.pack(side="right", fill="y")
-        self.side_task_tree = ttk.Treeview(
-            tree_frame, columns=("id", "name", "progress", "state", "route"),
-            show="headings", yscrollcommand=scroll.set, height=18,
-        )
-        scroll.config(command=self.side_task_tree.yview)
-        for column, title, width in (("id", "编号", 70), ("name", "任务", 170),
-                                     ("progress", "进度", 60), ("state", "状态", 70),
-                                     ("route", "自动", 70)):
-            self.side_task_tree.heading(column, text=title)
-            self.side_task_tree.column(column, width=width, anchor="w")
-        self.side_task_tree.pack(side="left", fill="both", expand=True)
-        self.side_task_tree.bind("<<TreeviewSelect>>", self._side_task_on_select)
-
-        right = ttk.Frame(tab, width=270)
-        right.pack(side="right", fill="y")
-        right.pack_propagate(False)
-        initial_hint = ("配置读取失败：%s" % self._side_task_load_error
-                        if self._side_task_load_error else "选择存档后请点击刷新任务列表")
-        self.lbl_side_task_summary = ttk.Label(right, text=initial_hint, foreground="blue",
-                                               wraplength=250, justify="left")
-        self.lbl_side_task_summary.pack(anchor="w", pady=(0, 12))
-        self.btn_side_task_check = ttk.Button(right, text="刷新任务列表",
-                                              command=self._do_side_task_check, state="disabled")
-        self.btn_side_task_check.pack(fill="x", pady=3)
-        self.btn_side_task_accept = ttk.Button(right, text="接取所选任务",
-                                               command=lambda: self._side_task_action("accept"),
-                                               state="disabled")
-        self.btn_side_task_accept.pack(fill="x", pady=3)
-        self.btn_side_task_complete = ttk.Button(right, text="自动完成并领奖",
-                                                 command=lambda: self._side_task_action("complete"),
-                                                 state="disabled")
-        self.btn_side_task_complete.pack(fill="x", pady=3)
-        self.btn_side_task_claim = ttk.Button(right, text="领取已完成任务",
-                                              command=lambda: self._side_task_action("claim"),
-                                              state="disabled")
-        self.btn_side_task_claim.pack(fill="x", pady=3)
-        self.lbl_side_task_detail = ttk.Label(right, text="选中任务可查看目标与前置条件。",
-                                              wraplength=250, justify="left")
-        self.lbl_side_task_detail.pack(anchor="w", pady=(16, 10))
-        ttk.Label(right, text="自动完成支持免点券通关型支线：同关计次（如九华山麓），以及入口关+单独Boss房计次（如法华灵洞）。击败怪/合成类暂不自动打。",
-                  wraplength=250, justify="left", foreground="gray").pack(anchor="w")
-
-    def _side_task_selected_id(self):
-        selection = self.side_task_tree.selection()
-        return int(selection[0]) if selection else None
-
-    def _side_task_clear_route(self, task_id):
-        """通关型支线自动路线：同关计次，或入口关 + 隐藏/Boss房计次。"""
-        row = self._side_task_defs.get(task_id) or {}
-        if str(row.get("taskType", "")) != "0":
-            return None
-        from mainfarm_routes import side_clear_route
-        route = side_clear_route(row.get("dungeonId"), row.get("targetId"), row.get("targetNum", 1))
-        if not route:
-            return None
-        route = dict(route)
-        route["name"] = row.get("name", "?")
-        route["mid"] = route["target_id"]
-        return route
-
-    def _side_task_progress_counts(self, task_id, active_row):
-        row = self._side_task_defs.get(task_id, {})
-        need = int(row.get("targetNum", 1) or 1)
-        if not active_row:
-            return 0, need
-        if active_row.get("taskState") == 1:
-            return need, need
-        data = active_row.get("taskData") or {}
-        if not isinstance(data, dict):
-            data = {}
-        current = data.get("dungeonCnt", data.get("cnt", data.get("num")))
-        if current is None:
-            current = active_row.get("cnt", active_row.get("num"))
-        return int(current or 0), need
-
-    def _side_task_progress_text(self, task_id, active_row):
-        current, need = self._side_task_progress_counts(task_id, active_row)
-        if not active_row:
-            return "-/%s" % need
-        return "%s/%s" % (current, need)
-
-    def _side_task_find_cur(self, scene_obj, task_id):
-        return next((row for row in scene_obj.get("curRecord", {}).get("curTasks", [])
-                     if isinstance(row, dict)
-                     and str(row.get("taskId", "")).isdigit()
-                     and int(row.get("taskId")) == task_id), None)
-
-    def _side_task_make_snapshot(self, scene, slot):
-        cur = scene.get("curRecord", {})
-        level = int(cur.get("p1", {}).get("level", 1) or 1)
-        old = {int(row.get("taskId")) for row in cur.get("oldTasks", [])
-               if isinstance(row, dict) and str(row.get("taskId", "")).isdigit()
-               and int(row.get("num", 0) or 0) > 0}
-        active = {int(row.get("taskId")): row for row in cur.get("curTasks", [])
-                  if isinstance(row, dict) and str(row.get("taskId", "")).isdigit()}
-        states, progress = {}, {}
-        for task_id, row in self._side_task_defs.items():
-            active_row = active.get(task_id)
-            progress[task_id] = self._side_task_progress_text(task_id, active_row)
-            if task_id in active:
-                states[task_id] = "可领奖" if active[task_id].get("taskState") == 1 else "进行中"
-            elif task_id in old:
-                states[task_id] = "已完成"
-            elif str(row.get("isClose", "0")) != "0":
-                states[task_id] = "未开放"
-            elif level < int(row.get("level", 1) or 1):
-                states[task_id] = "等级不足"
-            elif any(int(pre) not in old for pre in str(row.get("preTaskId", "-1")).split(";")
-                     if pre.lstrip("-").isdigit() and int(pre) > 0):
-                states[task_id] = "前置未完成"
-            else:
-                states[task_id] = "可接"
-        counts = {
-            "可接": sum(1 for s in states.values() if s == "可接"),
-            "进行中": sum(1 for s in states.values() if s == "进行中"),
-            "可领奖": sum(1 for s in states.values() if s == "可领奖"),
-            "已完成": sum(1 for s in states.values() if s == "已完成"),
-        }
-        return {"slot": slot, "level": level, "states": states, "progress": progress,
-                "active": active, "counts": counts}
-
-    def _side_task_reset_display(self):
-        self._side_task_snapshot = {}
-        if getattr(self, "lbl_side_task_summary", None) is None:
-            return
-        self.lbl_side_task_summary.config(text="请点击刷新任务列表")
-        self._side_task_rebuild_tree({})
-
-    def _side_task_on_select(self, event=None):
-        task_id = self._side_task_selected_id()
-        if task_id is None:
-            return
-        row = self._side_task_defs.get(task_id, {})
-        state = self._side_task_snapshot.get("states", {}).get(task_id, "待读取")
-        progress = self._side_task_snapshot.get("progress", {}).get(task_id, "-")
-        route = self._side_task_clear_route(task_id)
-        if route:
-            stages = route["stages"]
-            if len(stages) == 1:
-                route_text = "可自动：通关%s（%d）×%d" % (
-                    route["dungeon_name"], stages[0][0], route["need"])
-            else:
-                route_text = "可自动：入口%d + Boss房%s（%d）×%d" % (
-                    stages[0][0], route["dungeon_name"], stages[1][0], route["need"])
-        else:
-            route_text = "暂不自动（非通关型或需点券/多关）"
-        self.lbl_side_task_detail.config(
-            text="%s（%d）\n状态：%s\n进度：%s\n%s\n等级要求：%s\n前置任务：%s\n关卡：%s\n目标：%s" %
-                 (row.get("name", "?"), task_id, state, progress, route_text, row.get("level", "?"),
-                  row.get("preTaskId", "?"), row.get("dungeonId", "?"),
-                  row.get("targetDescribe") or row.get("describe") or "?"))
-
-    def _side_task_apply_filter(self, event=None):
-        self._side_task_filter = self.combo_side_task_filter.get() or "可操作"
-        self._side_task_rebuild_tree(self._side_task_snapshot.get("states", {}),
-                                     self._side_task_snapshot.get("progress", {}))
-
-    def _side_task_rebuild_tree(self, states, progress=None):
-        progress = progress or {}
-        selected = self._side_task_selected_id()
-        for item in self.side_task_tree.get_children():
-            self.side_task_tree.delete(item)
-        filt = getattr(self, "_side_task_filter", "可操作")
-        operable = {"可接", "进行中", "可领奖"}
-        for task_id, row in sorted(self._side_task_defs.items()):
-            state = states.get(task_id, "待读取")
-            clearable = bool(self._side_task_clear_route(task_id))
-            is_operable = state in operable or state == "待读取"
-            if filt == "通关型":
-                # 在可操作范围内再筛通关型
-                if not is_operable or not clearable:
-                    continue
-            elif filt == "可操作":
-                if not is_operable:
-                    continue
-            elif filt != "全部" and state != filt:
-                continue
-            route = "通关型" if clearable else "—"
-            self.side_task_tree.insert(
-                "", "end", iid=str(task_id),
-                values=(task_id, row.get("name", "?"), progress.get(task_id, "-"), state, route))
-        if selected is not None and self.side_task_tree.exists(str(selected)):
-            self.side_task_tree.selection_set(str(selected))
-            self.side_task_tree.see(str(selected))
-        self._side_task_on_select()
-
-    def _side_task_display_snapshot(self, snapshot):
-        if self.current_save is None or self.current_save["index"] != snapshot["slot"]:
-            return
-        self._side_task_snapshot = snapshot
-        counts = snapshot["counts"]
-        self.lbl_side_task_summary.config(
-            text="槽%d Lv.%d：可接%d · 进行中%d · 可领奖%d · 已完成%d" %
-                 (snapshot["slot"], snapshot["level"], counts["可接"], counts["进行中"],
-                  counts["可领奖"], counts["已完成"]))
-        self._side_task_rebuild_tree(snapshot["states"], snapshot["progress"])
-
-    def _do_side_task_check(self):
-        if not self.client or self.current_save is None:
-            return
-        slot = self.current_save["index"]
-        self.btn_side_task_check.config(state="disabled")
-        self.lbl_side_task_summary.config(text="正在读取槽%d的支线任务…" % slot)
-
-        def worker():
-            flow = None
-            try:
-                flow, entry, scene = self._connect_and_enter(slot)
-                if entry.get("code") != 200 or not scene.get("curRecord"):
-                    raise RuntimeError("当前槽位没有角色")
-                snapshot = self._side_task_make_snapshot(scene, slot)
-                self.root.after(0, lambda: self._side_task_display_snapshot(snapshot))
-            except Exception as exc:
-                if self.current_save and self.current_save["index"] == slot:
-                    self._log("[支线任务] 读取失败: %s" % exc)
-                    self.root.after(0, self._side_task_reset_display)
-                    self.root.after(0, lambda: self.lbl_side_task_summary.config(text="读取失败，请刷新"))
-            finally:
-                if flow:
-                    flow.disconnect()
-                self.root.after(0, lambda: self.btn_side_task_check.config(state="normal"))
-
-        threading.Thread(target=worker, daemon=True).start()
-
-    def _side_task_action(self, action):
-        if not self._ensure_login():
-            return
-        task_id = self._side_task_selected_id()
-        if task_id is None:
-            messagebox.showwarning("提示", "请先选择支线任务")
-            return
-        status = self._side_task_snapshot.get("states", {}).get(task_id)
-        route = self._side_task_clear_route(task_id)
-        if action == "accept" and status != "可接":
-            messagebox.showwarning("提示", "当前任务状态为%s，不能接取" % (status or "待读取"))
-            return
-        if action == "claim" and status != "可领奖":
-            messagebox.showwarning("提示", "任务尚未达到可领奖状态")
-            return
-        if action == "complete":
-            if not route:
-                messagebox.showwarning("提示", "该支线不是可自动的通关型任务（或需要点券）")
-                return
-            if status not in ("可接", "进行中", "可领奖"):
-                messagebox.showwarning("提示", "当前任务状态为%s，不能自动完成" % (status or "待读取"))
-                return
-        slot = self.current_save["index"]
-        side_buttons = (self.btn_side_task_check, self.btn_side_task_accept,
-                        self.btn_side_task_complete, self.btn_side_task_claim)
-        for button in side_buttons:
-            button.config(state="disabled")
-        self.combo_save.config(state="disabled")
-        self.btn_login.config(state="disabled")
-
-        def worker():
-            flow = None
-            claimed_items = []
-            try:
-                from mainfarm_routes import clear_stage
-                flow, entry, scene = self._connect_and_enter(slot)
-                if entry.get("code") != 200 or not scene.get("curRecord"):
-                    raise RuntimeError("当前槽位没有角色")
-                if action == "accept":
-                    if self._side_task_find_cur(scene, task_id):
-                        raise RuntimeError("任务%d已在进行中，无需重复接取" % task_id)
-                    started = flow.request("scene.taskHandler.startTask", {"taskId": task_id}, timeout=15)
-                    if started.get("code") != 200:
-                        raise RuntimeError("接取任务%d失败: %s" %
-                                           (task_id, started.get("error", started.get("code"))))
-                    self._log("[支线任务] 已接取 %s（%d）" %
-                              (self._side_task_defs[task_id].get("name", "?"), task_id))
-                if action == "complete":
-                    current = self._side_task_find_cur(scene, task_id)
-                    if current is None:
-                        started = flow.request("scene.taskHandler.startTask", {"taskId": task_id}, timeout=15)
-                        if started.get("code") != 200:
-                            raise RuntimeError("接取任务%d失败: %s" %
-                                               (task_id, started.get("error", started.get("code"))))
-                        self._log("[支线任务] 已接取 %s（%d）" % (route["name"], task_id))
-                        current = {"taskState": 0, "taskData": {"dungeonCnt": 0}}
-                    if current.get("taskState") != 1:
-                        done, need = self._side_task_progress_counts(task_id, current)
-                        remain = max(0, need - done)
-                        stages = route["stages"]
-                        stage_text = " → ".join(str(mid) for mid, _ in stages)
-                        self._log("[支线任务] %s 自动通关：%s，进度%d/%d，剩余%d次（不计副本掉落）" %
-                                  (route["name"], stage_text, done, need, remain))
-                        for index in range(remain):
-                            for mid, enter_w in stages:
-                                clear_stage(flow, scene, mid, enter_w, reward_mode="none")
-                                self._log("[支线任务] 通关关卡%d（第%d/%d轮）" %
-                                          (mid, done + index + 1, need))
-                                time.sleep(0.4)
-                        flow.disconnect()
-                        flow, _, scene = self._connect_and_enter(slot)
-                        current = self._side_task_find_cur(scene, task_id)
-                        if not current or current.get("taskState") != 1:
-                            done2, need2 = self._side_task_progress_counts(task_id, current)
-                            raise RuntimeError(
-                                "已提交通关，但任务未变为可领奖（进度%s/%s）。请刷新后检查结算标记。" %
-                                (done2, need2))
-                    action_claim = True
-                else:
-                    action_claim = action == "claim"
-                if action_claim:
-                    current = self._side_task_find_cur(scene, task_id)
-                    if not current or current.get("taskState") != 1:
-                        flow.disconnect()
-                        flow, _, scene = self._connect_and_enter(slot)
-                        current = self._side_task_find_cur(scene, task_id)
-                    if not current or current.get("taskState") != 1:
-                        raise RuntimeError("任务%d尚未达到可领奖状态，保留当前进度" % task_id)
-                    claimed = flow.request("scene.taskHandler.handoverTask", {"taskId": task_id}, timeout=15)
-                    if claimed.get("code") != 200:
-                        raise RuntimeError("任务%d领奖失败: %s" %
-                                           (task_id, claimed.get("error", claimed.get("code"))))
-                    claimed_items = claimed.get("items", [])
-                    self._log("[支线任务] 任务%d领奖成功：物品%s，经验%s，灵魂%s" %
-                              (task_id, claimed_items, claimed.get("addExp", 0),
-                               claimed.get("addSpirit", 0)))
-                flow.disconnect()
-                flow, _, scene = self._connect_and_enter(slot)
-                snapshot = self._side_task_make_snapshot(scene, slot)
-                self.root.after(0, lambda: self._side_task_display_snapshot(snapshot))
-                if claimed_items:
-                    bag = scene.get("curRecord", {}).get("itemsBag", {}).get("items", [])
-                    if isinstance(bag, dict):
-                        bag = list(bag.values())
-                    for reward in claimed_items:
-                        reward_id = str(reward.get("id"))
-                        count = sum(int(item.get("num", item.get("count", 0)) or 0)
-                                    for item in bag if isinstance(item, dict)
-                                    and str(item.get("id")) == reward_id)
-                        self._log("[支线任务] 背包核对：道具%s当前%d个" % (reward_id, count))
-            except Exception as exc:
-                self._log("[支线任务] 操作停止: %s" % exc)
-                self.root.after(0, self._do_side_task_check)
-            finally:
-                if flow:
-                    flow.disconnect()
-                for button in side_buttons:
                     self.root.after(0, lambda btn=button: btn.config(state="normal"))
                 self.root.after(0, lambda: self.combo_save.config(state="readonly"))
                 self.root.after(0, lambda: self.btn_login.config(state="normal"))
@@ -5458,6 +5198,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.nm_listbox.bind("<<ListboxSelect>>", self._update_nm_boss_choices)
         self.nm_boss_choice.bind("<<ComboboxSelected>>", self._update_nm_boss_hint)
 
+        # 默认选中第一关（602 噩梦金蟾宝宫），一键运行/我的日常无需先手动选关。
+        if self.nm_listbox.size():
+            self.nm_listbox.selection_set(0)
+            self.nm_listbox.activate(0)
+            self._update_nm_boss_choices()
+
         # 掉落统计
         drop_frame = ttk.LabelFrame(right_frame, text="掉落统计", padding=10)
         drop_frame.pack(fill="both", expand=True)
@@ -5466,11 +5212,26 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
 
     def _filter_nm_levels(self):
         keyword = self.var_nm_search.get().lower()
+        previous = None
+        selection = self.nm_listbox.curselection()
+        if selection:
+            previous = self.nm_listbox.get(selection[0]).split(" - ", 1)[0]
         self.nm_listbox.delete(0, tk.END)
         for mid, name, power in self._all_nm_levels:
             text = "%d - %s (%d体力)" % (mid, name, power)
             if keyword in name.lower() or keyword in str(mid):
                 self.nm_listbox.insert(tk.END, text)
+        # 尽量保留原选择；原关卡被过滤掉时落到第一项，保证队列始终有默认关卡。
+        target = None
+        for index in range(self.nm_listbox.size()):
+            if previous and self.nm_listbox.get(index).split(" - ", 1)[0] == previous:
+                target = index
+                break
+        if target is None and self.nm_listbox.size():
+            target = 0
+        if target is not None:
+            self.nm_listbox.selection_set(target)
+            self.nm_listbox.activate(target)
         if hasattr(self, "nm_boss_choice"):
             self._update_nm_boss_choices()
 
@@ -5521,13 +5282,27 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             text = "BOSS在本关内，直接通关；不进入配置标为废弃的独立房间。"
         self.lbl_nm_boss_hint.config(text=text)
 
+    def _pick_nightmare_level(self):
+        """返回选中的噩梦关卡；未选中时自动落到当前列表第一项。"""
+        selection = self.nm_listbox.curselection()
+        if selection or not self.nm_listbox.size():
+            return selection
+        self.nm_listbox.selection_set(0)
+        self.nm_listbox.activate(0)
+        text = self.nm_listbox.get(0)
+        mid = int(text.split(" - ", 1)[0])
+        if getattr(self, "_nm_boss_mid", None) != mid:
+            self._update_nm_boss_choices()
+        self._log("[噩梦刷取] 未选择关卡，已默认使用 %s" % text)
+        return self.nm_listbox.curselection()
+
     def _do_nightmare(self):
         if not self.current_save:
             messagebox.showwarning("提示", "请先选择存档")
             return
-        selection = self.nm_listbox.curselection()
+        selection = self._pick_nightmare_level()
         if not selection:
-            messagebox.showwarning("提示", "请选择关卡")
+            messagebox.showwarning("提示", "没有可用的噩梦关卡")
             return
         mid = int(self.nm_listbox.get(selection[0]).split(" - ", 1)[0])
         level_name, power_cost = next((name, power) for bid, name, power in self._all_nm_levels if bid == mid)
@@ -5671,7 +5446,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         setting_frame.pack(fill="x", pady=(0, 10))
 
         ttk.Label(setting_frame, text="刷取次数:").grid(row=0, column=0, sticky="w", pady=5)
-        self.var_sj_times = tk.IntVar(value=1)
+        # 默认按用户常用次数6次；重启后仍以配置文件里的上次值为准。
+        self.var_sj_times = tk.IntVar(value=6)
         ttk.Spinbox(setting_frame, from_=1, to=50, textvariable=self.var_sj_times, width=10).grid(row=0, column=1, pady=5)
 
         ttk.Label(setting_frame, text="间隔(秒):").grid(row=1, column=0, sticky="w", pady=5)
@@ -5693,6 +5469,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         self.jy_listbox.bind("<<ListboxSelect>>", self._select_sj_mirror)
         self.sj_boss_choice.bind("<<ComboboxSelected>>", self._update_sj_boss_hint)
         self._sj_boss_targets = []
+
+        # 默认选中第一个神域关卡并带出BOSS选项，“我的日常”队列才能直接执行。
+        if SHENYU_LEVELS:
+            self.sy_listbox.selection_set(0)
+            self.sy_listbox.activate(0)
+            self._update_sj_boss_choices()
 
         # 掉落统计
         drop_frame = ttk.LabelFrame(right_frame, text="掉落统计", padding=10)
@@ -5761,20 +5543,32 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                     used += int(h.get("num", 0))
         return max(0, 10 - used)
 
+    def _pick_shenyu_level(self):
+        """返回(神域选中项, 镜域选中项)；两者都未选中时自动落到第一个神域关卡。"""
+        sy_sel = self.sy_listbox.curselection()
+        jy_sel = self.jy_listbox.curselection()
+        if not sy_sel and not jy_sel and SHENYU_LEVELS:
+            self.sy_listbox.selection_set(0)
+            self.sy_listbox.activate(0)
+            self._update_sj_boss_choices()
+            mid, name = SHENYU_LEVELS[0]
+            self._log("[神域刷取] 未选择关卡，已默认使用 %s (%d)" % (name, mid))
+            sy_sel = self.sy_listbox.curselection()
+        return sy_sel, jy_sel
+
     def _do_shenyu_jingyu(self):
         if not self.current_save:
             messagebox.showwarning("提示", "请先选择存档")
             return
 
-        # 判断选的是神域还是镜域
-        sy_sel = self.sy_listbox.curselection()
-        jy_sel = self.jy_listbox.curselection()
+        # 判断选的是神域还是镜域；两者都未选中时自动落到第一个神域关卡。
+        sy_sel, jy_sel = self._pick_shenyu_level()
 
         if sy_sel and jy_sel:
             messagebox.showwarning("提示", "只能选择神域或镜域中的一个关卡")
             return
         if not sy_sel and not jy_sel:
-            messagebox.showwarning("提示", "请选择关卡")
+            messagebox.showwarning("提示", "没有可用的神域/镜域关卡")
             return
 
         if sy_sel:
@@ -7350,6 +7144,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             run.pack(side="left", padx=6)
             setattr(self, "btn_%s_check" % mode, check)
             setattr(self, "btn_%s_run" % mode, run)
+            if mode == "beiming":
+                # 只在“一键运行”里保留快捷入口，不再进入“我的日常”收藏目录。
+                run.daily_hidden = True
         lava_controls = ttk.LabelFrame(self._beiming_lava_page, text="熔岩层刷取设置", padding=10)
         lava_controls.pack(fill="x", pady=12)
         for title, value in (("路线A（前四层）", "A"), ("路线B（BOSS层）", "B")):
@@ -8483,8 +8280,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             status = ttk.Label(row, text="待刷新", width=20)
             status.pack(side="left", padx=8)
             self.fls_status[mid] = status
-            button = ttk.Button(row, text="挑战并结算", state="disabled",
+            # 默认可用：点击/队列执行时会先登录核对今日次数，避免必须先点“刷新挑战次数”才能运行。
+            button = ttk.Button(row, text="挑战并结算", state="normal",
                                 command=lambda m=mid, n=name: self._do_fulushou(m, n))
+            # 供“我的日常”收藏目录显示具体星君，按钮文案本身保持不变以兼容已保存的收藏键。
+            button.daily_label = "%s·挑战并结算" % name
+            # 打完当天次数后按钮会被刷新为禁用；队列改用完成标记判断结束，避免误以为还在运行。
+            button.daily_done_attr = "_fulushou_done"
             button.pack(side="left")
             self.fls_buttons[mid] = button
         ttk.Button(parent, text="刷新挑战次数", command=self._refresh_fulushou).pack(anchor="w", pady=10)
@@ -8517,8 +8319,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     def _do_fulushou(self, mid, name):
         if not self._ensure_login():
             return
+        self._fulushou_done = False
         self.fls_buttons[mid].config(state="disabled")
         threading.Thread(target=self._fulushou_worker, args=(mid, name), daemon=True).start()
+
+    def _fulushou_mark_done(self):
+        self._fulushou_done = True
 
     def _fulushou_worker(self, mid, name):
         try:
@@ -8560,6 +8366,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self._log("[福禄寿] %s 挑战失败：%s" % (name, e))
         finally:
             self._fulushou_refresh_worker()
+            self.root.after(0, self._fulushou_mark_done)
 
     def _build_wanted_panel(self, parent):
         config_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output_cg1_20260921_1_2")
@@ -8679,7 +8486,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self.wanted_rows[_] = (label, accept, challenge, claim)
         quick_row = ttk.Frame(normal_tab)
         quick_row.pack(anchor="w", pady=10)
-        ttk.Button(quick_row, text="刷新悬赏状态", command=self._refresh_wanted).pack(side="left")
+        self.btn_wanted_refresh = ttk.Button(quick_row, text="刷新悬赏状态",
+                                             command=self._refresh_wanted)
+        self.btn_wanted_refresh.pack(side="left")
         self.btn_wanted_drain = ttk.Button(quick_row, text="打满今日次数（自动接取/通关/领奖）",
                                            command=self._do_wanted_drain)
         self.btn_wanted_drain.pack(side="left", padx=6)
@@ -9134,12 +8943,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                     pass
             self.root.after(0, self._refresh_shenyu_wanted)
 
-    def _wanted_state(self, flow, scene, refresh_board=True):
+    def _wanted_state(self, flow, scene, refresh_board=True, retry_read=True):
         try:
             board = flow.request("scene.taskHandler.lookupWantedTask",
                                  {"isRefresh": 1 if refresh_board else 0}, timeout=15)
         except TimeoutError:
-            if not refresh_board:
+            if not refresh_board or not retry_read:
                 raise
             self._log("[悬赏] 刷新榜单超时，改用读取榜单重试一次")
             board = flow.request("scene.taskHandler.lookupWantedTask",
@@ -9175,18 +8984,44 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
     def _refresh_wanted(self):
         if not self._ensure_login():
             return
+        if getattr(self, "_wanted_refreshing", False):
+            self._log("[悬赏] 正在刷新，已忽略重复请求")
+            return
+        if str(self.btn_wanted_drain.cget("state")) == "disabled":
+            self._log("[悬赏] 悬赏任务执行中，请稍后再刷新")
+            return
+        self._wanted_refreshing = True
+        if hasattr(self, "btn_wanted_refresh"):
+            self.btn_wanted_refresh.config(state="disabled")
         threading.Thread(target=self._wanted_refresh_worker, daemon=True).start()
 
     def _wanted_refresh_worker(self):
         flow = None
         try:
-            flow, _, scene = self._connect_and_enter()
-            state = self._wanted_state(flow, scene)
+            for attempt in (1, 2):
+                flow, _, scene = self._connect_and_enter()
+                try:
+                    # 首次尝试刷新榜单；超时多为会话被新登录顶掉，重连后改为只读重试。
+                    state = self._wanted_state(flow, scene, refresh_board=(attempt == 1),
+                                               retry_read=False)
+                    break
+                except (TimeoutError, ConnectionError):
+                    if attempt == 2:
+                        raise
+                    self._log("[悬赏] 榜单读取超时，重连后改为只读重试")
+                    try:
+                        flow.disconnect()
+                    except Exception:
+                        pass
+                    flow = None
             self.root.after(0, lambda: self._show_wanted_state(state))
             self._log("[悬赏] 榜单和任务状态已刷新")
         except Exception as e:
             self._log("[悬赏] 刷新失败：%s" % e)
         finally:
+            self._wanted_refreshing = False
+            if hasattr(self, "btn_wanted_refresh"):
+                self.root.after(0, lambda: self.btn_wanted_refresh.config(state="normal"))
             if flow:
                 try:
                     flow.disconnect()
@@ -9246,6 +9081,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
                 challenge.config(state="normal", command=lambda t=tid: self._wanted_action("challenge_claim", t))
             elif tid not in completed:
                 accept.config(state="normal", command=lambda t=tid: self._wanted_action("all", t))
+        self.btn_wanted_drain.config(state="normal")
 
     def _wanted_action(self, action, tid):
         if not self._ensure_login():
@@ -9490,6 +9326,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
             self._log("[悬赏] 打满失败：%s" % e)
         finally:
             self._wanted_refresh_worker()
+            self.root.after(0, lambda: self.btn_wanted_drain.config(state="normal"))
 
     def _do_timeboat_check(self):
         if not self._ensure_login():
@@ -10735,7 +10572,43 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, LimitedActivityPages, AccountProfi
         return flow.request("scene.copyHandler.syncDropInfoNew", payload, timeout=20)
 
 
+_INSTANCE_HANDLE = None
+
+
+def _acquire_single_instance():
+    """Windows 命名互斥体，按程序目录区分，防止多开导致串号/覆盖存档槽。"""
+    global _INSTANCE_HANDLE
+    if os.name != "nt":
+        return True
+    import ctypes
+    import hashlib
+    kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+    kernel32.CreateMutexW.restype = ctypes.c_void_p
+    kernel32.CreateMutexW.argtypes = (ctypes.c_void_p, ctypes.c_bool, ctypes.c_wchar_p)
+    kernel32.CloseHandle.argtypes = (ctypes.c_void_p,)
+    base = os.path.dirname(sys.executable) if getattr(sys, "frozen", False) else BASE_DIR
+    name = "Local\\zm4_toolbox_gui_" + hashlib.md5(base.lower().encode("utf-8")).hexdigest()[:12]
+    handle = kernel32.CreateMutexW(None, False, name)
+    if not handle:
+        return True
+    if ctypes.get_last_error() == 183:
+        kernel32.CloseHandle(handle)
+        return False
+    _INSTANCE_HANDLE = handle
+    return True
+
+
 def main():
+    if "--startup-check" not in sys.argv and not _acquire_single_instance():
+        if "--schedule-run" in sys.argv:
+            return
+        import ctypes
+        ctypes.windll.user32.MessageBoxW(
+            0,
+            "造梦西游4工具箱已在运行。\n\n"
+            "为避免多实例串号或覆盖存档槽，请只保留一个程序窗口。",
+            "提示", 0x40)
+        return
     root = tk.Tk()
     try:
         style = ttk.Style()
@@ -10788,11 +10661,36 @@ def main():
                     raise RuntimeError('Boss通关记录映射失败')
             except Exception as exc:
                 callback_errors.append('主线自检：'+str(exc))
+            default_check = {}
+            try:
+                # 噩梦/神域页面必须自带默认关卡，避免队列因“未选关卡”被拦截。
+                nm_sel = app.nm_listbox.curselection()
+                sy_sel_default = app.sy_listbox.curselection()
+                default_check['nightmare_default'] = bool(nm_sel)
+                default_check['shenyu_default'] = tuple(sy_sel_default) == (0,)
+                if nm_sel:
+                    default_check['nightmare_level'] = app.nm_listbox.get(nm_sel[0]).split(" - ", 1)[0]
+                if sy_sel_default:
+                    default_check['shenyu_level'] = SHENYU_LEVELS[sy_sel_default[0]][0]
+                app.nm_listbox.selection_clear(0, tk.END)
+                app._nm_boss_mid = None
+                app.sy_listbox.selection_clear(0, tk.END)
+                app.jy_listbox.selection_clear(0, tk.END)
+                original_log = app._log
+                app._log = lambda message: None      # 自检不写入真实运行日志
+                try:
+                    default_check['nightmare_fallback'] = bool(app._pick_nightmare_level())
+                    sy_sel, jy_sel = app._pick_shenyu_level()
+                    default_check['shenyu_fallback'] = bool(sy_sel or jy_sel)
+                finally:
+                    app._log = original_log
+            except Exception as exc:
+                callback_errors.append('默认关卡自检：'+str(exc))
             report = {"ok": not callback_errors, "frozen": bool(getattr(sys, "frozen", False)),
                       "tabs": [app.notebook.tab(t, "text") for t in app.notebook.tabs()],
                       "wash_pages": len(app.wash_pages), "solver_loaded": Solver is not None,
                       "config_loaded": os.path.isdir(CONFIG_DIR), "errors": callback_errors,
-                      "mainfarm_check": mainfarm_check}
+                      "mainfarm_check": mainfarm_check, "default_check": default_check}
             with open(check_path, "w", encoding="utf-8") as check_file:
                 json.dump(report, check_file, ensure_ascii=False, indent=2)
             root.destroy()

@@ -9,13 +9,23 @@ REWARD_MODES = {
     "只通关，全部不领取": "none",
 }
 
+_DUNGEON_ROWS = None
+
 def dungeon_rows():
-    return {int(r["id"]): r for r in json.loads((BASE / "036___Dungeon.xml.json").read_text(encoding="utf-8"))["RECORD"]}
+    global _DUNGEON_ROWS
+    if _DUNGEON_ROWS is None:
+        _DUNGEON_ROWS = {int(r["id"]): r for r in json.loads(
+            (BASE / "036___Dungeon.xml.json").read_text(encoding="utf-8"))["RECORD"]}
+    return _DUNGEON_ROWS
 
 # 少数早期隐藏房 fromId 写的是后一关；按实际入口关补全，避免误用 prevId 串到无关关卡。
 HIDDEN_ENTRY_OVERRIDES = {
     7: (1005,),  # 普陀隐藏：配置 fromId=8，入口在普陀山脚
 }
+
+def free_ticket(row):
+    """ticket 为 300 等数值时代表每次进入消耗点券，自动路线一律拒绝。"""
+    return (row or {}).get("ticket") in (None, "", 0, "0", {}, [])
 
 def hidden_choices(mid):
     """列出本关可进的隐藏/Boss房。早期关多写 fromId/specialDoor，后期才有 comefromId。"""
@@ -56,6 +66,8 @@ def side_clear_route(entry_id, target_id, need):
     target = rows.get(target_id)
     if not entry or not target:
         return None
+    if not free_ticket(entry) or not free_ticket(target):
+        return None
     if str(entry.get("consumePointTicket")) != "0" or str(target.get("consumePointTicket")) != "0":
         return None
     if entry_id == target_id:
@@ -74,9 +86,43 @@ def side_clear_route(entry_id, target_id, need):
         "dungeon_name": target.get("name", str(target_id)),
     }
 
+def boss_clear_route(dungeon_id, target_id, need):
+    """击败型支线：目标怪就是该副本 Boss 时，通关 need 次即可。"""
+    try:
+        dungeon_id = int(dungeon_id)
+        target_id = int(target_id)
+        need = int(need)
+    except (TypeError, ValueError):
+        return None
+    if dungeon_id <= 0 or target_id <= 0 or need <= 0:
+        return None
+    dungeon = dungeon_rows().get(dungeon_id)
+    if not dungeon or str(dungeon.get("consumePointTicket")) != "0":
+        return None
+    if not free_ticket(dungeon):
+        return None
+    follow = None
+    if str(dungeon.get("bossId")) == str(target_id):
+        stages = [(dungeon_id, False)]
+    else:
+        # 二阶段 Boss：入口关带 W 通关后，再打后续隐藏/Boss 房。
+        for row in hidden_choices(dungeon_id):
+            if str(row.get("bossId")) == str(target_id) and free_ticket(row):
+                follow = row
+                break
+        if not follow:
+            return None
+        stages = [(dungeon_id, True), (int(follow["id"]), False)]
+    return {
+        "stages": stages,
+        "need": need,
+        "entry_id": dungeon_id,
+        "target_id": target_id,
+        "dungeon_name": (follow or dungeon).get("name", str(dungeon_id)),
+    }
 
 def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mode="all",
-                only_item_ids=None):
+                only_item_ids=None, quest_count=False, report_kills=False):
     if reward_mode not in REWARD_MODES.values():
         raise ValueError("未知的奖励领取模式")
     row = dungeon_rows().get(mid)
@@ -114,8 +160,9 @@ def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mo
         if allow is not None:
             # 只拾取指定道具（如年兽断角），其余掉落留在原地
             pickup_groups = {iid: values for iid, values in pickup_groups.items() if str(iid) in allow}
-        if pickup_groups:
+        if pickup_groups or (report_kills and monster != "0"):
             mobs.append(monster); kills.append("%s_%s" % (monster, index))
+        if pickup_groups:
             for iid, values in pickup_groups.items():
                 for value in values:
                     picks.append(value)
@@ -129,23 +176,23 @@ def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mo
         picks, counts, details = [], {}, []
         feather_counts = {}
         exp = spirit = 0
-    if reward_mode == "none":
+    if reward_mode == "none" and not report_kills:
         mobs, kills = [], []
     import time
     time.sleep(0.5)
     request("bossDead", None)
     request("finishDungeon", {"dungeonId": mid})
     p1 = scene["curRecord"]["p1"]
-    # 与「主线通关 / 悬赏」一致：completed 带 16777216，并带 enterW。
-    # 仅 completed=1 时掉落仍会结算，但支线 taskData.dungeonCnt 往往不涨。
+    # quest_count：支线任务计次需要 completed 带 16777216 且带 enterW，由支线模块显式开启；
+    # 其它调用方保持原行为，避免影响限时活动等结算。
+    counted = enter_w or quest_count
     payload = {"copyId": drops["copyId"], "pickItems": picks, "mobIds": mobs,
-        "killMonsters": kills, "completed": 1 | 16777216, "enterW": 1,
+        "killMonsters": kills, "completed": (1 | 16777216) if counted else 1,
         "currentEXP": p1.get("experience", 0),
         "pickExp": exp, "pickSp": spirit, "propertyP1Str": ";".join(str(p1.get(k, 0))
         for k in ("hpMax", "mpMax", "atk", "phyDef", "reHP", "reMP")),
         "propertyP2Total": 0, "hitCombo": 100}
-    if enter_w:
-        # 隐藏房 / W 线入口仍保留原标记；completed 位已包含
+    if counted:
         payload["enterW"] = 1
     settled = request("syncDropInfoNew", payload)
     return {"mid": mid, "counts": counts, "featherCounts": feather_counts,

@@ -215,6 +215,8 @@ def build_panel(app, parent):
             totals[kind] += 1
             seconds = max(0, math.ceil(land['remaining'] / 1000 - elapsed))
             cd = '%02d:%02d:%02d' % (seconds // 3600, seconds // 60 % 60, seconds % 60)
+            lock = '、'.join(state['config'].get(x, {}).get('name', str(x))
+                             for x in land['allowedSeeds']) or '不限'
             if kind == '冷却中':
                 text = '空地 · 冷却中\n剩余 ' + cd if seconds else '空地 · 冷却预计结束\n等待服务器确认'
                 expired = expired or seconds == 0
@@ -226,6 +228,7 @@ def build_panel(app, parent):
                 target = state['config'].get(int(seed.get('makeId') or 0), {})
                 crop = target.get('name') or land['crop'].removesuffix('种子')
                 text = '%s　%d/10\n%s · %s' % (crop, land['grow'], kind, land['farmer'] or '种植者未知')
+            text += '\n限种：' + lock
             button = state['cards'].get(index)
             if button:
                 button.configure(text='第%d块地\n%s' % (index + 1, text), bg=colors[kind],
