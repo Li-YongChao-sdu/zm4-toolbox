@@ -27,6 +27,11 @@ def free_ticket(row):
     """ticket 为 300 等数值时代表每次进入消耗点券，自动路线一律拒绝。"""
     return (row or {}).get("ticket") in (None, "", 0, "0", {}, [])
 
+# 少数早期隐藏房 fromId 写的是后一关；按实际入口关补全，避免误用 prevId 串到无关关卡。
+HIDDEN_ENTRY_OVERRIDES = {
+    7: (1005,),  # 普陀隐藏：配置 fromId=8，入口在普陀山脚
+}
+
 def hidden_choices(mid):
     """列出本关可进的隐藏/Boss房。早期关多写 fromId/specialDoor，后期才有 comefromId。"""
     rows = dungeon_rows()
