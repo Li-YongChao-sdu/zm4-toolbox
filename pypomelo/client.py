@@ -49,6 +49,7 @@ class PomeloClient:
         self._handshake_cb = None
         self._close_cb = None
         self._kicked_cb = None
+        self._closing = False
 
         self.heartbeat = 0.0
         self._hb_timer: threading.Timer | None = None
@@ -98,6 +99,7 @@ class PomeloClient:
         self._send_package(package.TYPE_HANDSHAKE, body)
 
         self._running = True
+        self._closing = False
         self._reader = threading.Thread(target=self._read_loop, daemon=True)
         self._reader.start()
 
@@ -118,7 +120,7 @@ class PomeloClient:
     def set_kicked_callback(self, cb) -> None:
         self._kicked_cb = cb
 
-    def request(self, route: str, data, callback=None) -> None:
+    def request(self, route: str, data, callback=None, on_closed=None) -> None:
         """发请求; callback(resp_body)。callback 为空则按 notify 发。"""
         if callback is None:
             self.notify(route, data)
@@ -126,7 +128,8 @@ class PomeloClient:
         with self._lock:
             self._req_id += 1
             rid = self._req_id
-            self._pending[rid] = {"route": route, "callback": callback}
+            self._pending[rid] = {"route": route, "callback": callback,
+                                  "on_closed": on_closed}
         payload = self.codec.encode(rid, route, data or {})
         self._send_package(package.TYPE_DATA, payload)
 
@@ -136,6 +139,7 @@ class PomeloClient:
 
     def disconnect(self) -> None:
         self._running = False
+        self._closing = True
         self._cancel_heartbeat()
         try:
             if self._sock:
@@ -179,7 +183,20 @@ class PomeloClient:
         finally:
             self._running = False
             self._cancel_heartbeat()
-            if self._close_cb:
+            with self._lock:
+                pending = list(self._pending.values())
+                self._pending.clear()
+            # 让正在等待回包的调用立即失败，避免白等一整个超时。
+            for item in pending:
+                cb = item.get("on_closed")
+                if cb:
+                    try:
+                        cb()
+                    except Exception:
+                        pass
+            # 只有「请求还在等待回包时被断开」才算异常；空闲期断开（退出、切换存档、
+            # 新连接顶掉旧会话等）属于正常收尾，不触发提示。
+            if self._close_cb and not self._closing and pending:
                 try:
                     self._close_cb()
                 except Exception:

@@ -7,6 +7,22 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 
 
+def server_time(entry, scene):
+    """Accept server timestamps from both the outer reply and the record."""
+    candidates = (scene.get('serverTime'), entry.get('serverTime'),
+                  (scene.get('curRecord') or {}).get('time'))
+    for value in candidates:
+        if isinstance(value, bool):
+            continue
+        try:
+            timestamp = int(value)
+        except (ValueError, TypeError, OverflowError):
+            continue
+        if timestamp > 0:
+            return timestamp
+    return 0
+
+
 def build_tab(app):
     rows = json.loads((Path(__file__).parent / 'output_cg1_20260921_1_2/025___Collect.xml.json').read_text(encoding='utf-8'))['RECORD']
     rows = [r for r in rows if r.get('propType') in ('2', '3', '4')]
@@ -64,7 +80,7 @@ def build_tab(app):
                     if result.get('code') != 200 or result.get('error'):
                         raise RuntimeError(result.get('error') or str(result))
                     return result
-                result = {'collectInfo':(entry.get('record') or {}).get('collectInfo') or {}, 'serverTime':scene.get('serverTime') or entry.get('serverTime'), 'collectPower':cur.get('collectPower', 0)}
+                result = {'collectInfo':(entry.get('record') or {}).get('collectInfo') or {}, 'serverTime':server_time(entry, scene), 'collectPower':cur.get('collectPower', 0)}
                 info = result.get('collectInfo') or {}
                 slots = info.get('slots') if isinstance(info, dict) else None
                 tasks = list(slots.values()) if isinstance(slots, dict) else ([info] if info.get('id') else [])

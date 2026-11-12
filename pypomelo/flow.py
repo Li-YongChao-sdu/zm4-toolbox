@@ -19,6 +19,25 @@ from .client import PomeloClient
 from .login4399 import DEFAULT_UA
 
 
+# 同进程内按账号共享，换存档/重建连接也不重置发送间隔。
+_COPY_REQUEST_INTERVAL = 1.0
+_COPY_REQUEST_NAMES = frozenset({
+    'createSinglePlayerCopy', 'createPetOnlineCopy', 'bossDead',
+    'finishDungeon', 'syncDropInfoNew', 'syncDropInfo1', 'quitCopy',
+    'sweep', 'getDumpActRewards', 'getXianJinDungeonRewards',
+    'getTeamHorseBossReward', 'getDungeonTreasure', 'getSpecialDrop',
+})
+_COPY_SEND_STATES = {}
+_COPY_SEND_STATES_LOCK = threading.Lock()
+
+
+def _copy_send_state(uid):
+    with _COPY_SEND_STATES_LOCK:
+        return _COPY_SEND_STATES.setdefault(str(uid), {
+            'lock': threading.Lock(), 'last_sent': None,
+        })
+
+
 class GameLoginFlow:
     def __init__(self, uid, token, user_agent=DEFAULT_UA,
                  proto_cache_path=None):
@@ -39,9 +58,32 @@ class GameLoginFlow:
             box["body"] = body
             done.set()
 
-        client.request(route, data, cb)
+        def fail():
+            box["closed"] = True
+            done.set()
+
+        # 在实际发送位置限速，统一覆盖首次发送和上层/底层重试。
+        if (route.startswith('scene.copyHandler.')
+                and route.rsplit('.', 1)[-1] in _COPY_REQUEST_NAMES):
+            state = _copy_send_state(self.uid)
+            with state['lock']:
+                if state['last_sent'] is not None:
+                    while True:
+                        remaining = _COPY_REQUEST_INTERVAL - (time.monotonic() - state['last_sent'])
+                        if remaining <= 0:
+                            break
+                        time.sleep(remaining)
+                try:
+                    client.request(route, data, cb, on_closed=fail)
+                finally:
+                    # 即使发送抛异常也保留时间，避免下一次调用紧接着重发。
+                    state['last_sent'] = time.monotonic()
+        else:
+            client.request(route, data, cb, on_closed=fail)
         if not done.wait(timeout):
             raise TimeoutError("等待 %s 响应超时" % route)
+        if box.get("closed"):
+            raise ConnectionError("连接已断开，%s 未完成" % route)
         return box["body"]
 
     # ---- 阶段1: gate 服 queryEntry ----

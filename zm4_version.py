@@ -10,7 +10,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 PAGE = 'https://www.4399.com/flash/151038.htm'
-BOOTSTRAP_VERSION = 587
+BOOTSTRAP_VERSION = 590
 _BASE = Path(sys.executable).parent if getattr(sys, 'frozen', False) else Path(__file__).resolve().parent
 _CACHE = _BASE / 'zm4_version_cache.json'
 _LOCK = threading.RLock()
@@ -33,17 +33,28 @@ def _cached_version():
         pass
     return BOOTSTRAP_VERSION
 
+def _fetch(session, url, headers):
+    try:
+        return session.get(url, headers=headers, timeout=(5, 8))
+    except requests.exceptions.SSLError:
+        return session.get(url, headers=headers, timeout=(5, 8), verify=False)
+
 def _discover():
     headers = {'User-Agent': 'Mozilla/5.0', 'Referer': PAGE}
     with requests.Session() as session:
-        page = session.get(PAGE, headers=headers, timeout=(5, 8))
+        page = _fetch(session, PAGE, headers)
         page.raise_for_status()
         # Match ZM4's exact official directory, not other games on this shared page.
         links = re.findall(r'https://sda\.4399\.com/4399swf/upload_swf/ftp15/csya/20150127/1/v\d+[^\s\x22\x27<>]*\.htm', page.text)
         links = list(dict.fromkeys(links))
         if len(links) != 1:
             raise ValueError('官网造四客户端入口不唯一或格式已变化')
-        launcher = session.get(links[0], headers=headers, timeout=(5, 8))
+        # 新版入口文件名直接带客户端构建号，例如 v5900a.htm -> 590。
+        build = re.search(r'/v(\d{4,5})[a-z]?\.htm(?:[?#].*)?$', links[0], re.I)
+        if build:
+            version = int(build.group(1)) // 10
+            return version, {'page': PAGE, 'launcher': links[0], 'movie': links[0]}
+        launcher = _fetch(session, links[0], headers)
         launcher.raise_for_status()
         movies = re.findall(r'(?:src|value)\s*=\s*[\x22\x27]([^\x22\x27]*v(\d{4,5})\.swf)[\x22\x27]', launcher.text, re.I)
         builds = {int(build) for _, build in movies}

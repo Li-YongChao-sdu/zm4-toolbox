@@ -1,0 +1,16 @@
+{
+  "author": "花崎桜雪",
+  "program": "炼丹助手1.1",
+  "original_core_files_sha256": {
+    "planner.mjs": "d3a7f42ebc64f2caaad743a8e9baa31943cc8cb9e855a7da1f8946f8b085c7de",
+    "policy.mjs": "781ee586e2cb9fb768f18e80c442697b74c7d02c41bf1e0de7e27b8d7af14370",
+    "layout_search.mjs": "212019e7e483ec64399e6f0bcd15b4eff78dcba7aa9a6207672a936312301008",
+    "rules.mjs": "d8d8ae886f7c2c957fc72b1ad6edfa557c398195d99a9e50c61110f016f890c3",
+    "opening_book.mjs": "f332c685dfde06ae804637621638393a6f2375c95ca15842cdb40e3660fea1cb",
+    "opening_book.json": "99ffdc2f2ad57783e77e9285127c9d22a40af475290bb32b6866af8283e3a237",
+    "build_opening_book.mjs": "8bd7f10bb2a317792966975a09e26dd5a8a0dcbec2d55914ea2306748b6d4f21"
+  },
+  "algorithm_modified": false,
+  "runtime_version": "24.19.0",
+  "runtime_sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237"
+}

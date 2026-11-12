@@ -19,12 +19,12 @@ def capture_once(flow, mid):
     if mid not in {row[0] for row in TARGETS}:
         raise ValueError("未确认的坐骑隐藏关")
     created = flow.request("scene.copyHandler.createSinglePlayerCopy", {"mid": mid, "costGem": 0}, timeout=20)
-    if created.get("code") != 200:
-        raise RuntimeError(created.get("error", "进入坐骑隐藏关失败"))
+    if not isinstance(created, dict) or created.get("code") != 200 or created.get("error"):
+        raise RuntimeError(created.get("error", "进入坐骑隐藏关失败") if isinstance(created, dict) else "进入坐骑隐藏关返回格式异常")
     time.sleep(1)
     response = flow.request("scene.animalHandler.catchHorse", {"cType": 1, "copyId": mid}, timeout=20)
-    if response.get("code") != 200:
-        raise RuntimeError(response.get("error", "捕获请求失败"))
+    if not isinstance(response, dict) or response.get("code") != 200 or response.get("error"):
+        raise RuntimeError(response.get("error", "捕获请求失败") if isinstance(response, dict) else "捕获请求返回格式异常")
     return response
 
 def meets_qualifications(horse, minimums):

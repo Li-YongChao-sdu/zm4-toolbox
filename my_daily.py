@@ -16,9 +16,9 @@ NON_TASK_WORDS = ("停止", "刷新", "检测", "读取", "查询", "查看", "�
                   "购买", "替换", "保留", "洗练", "载入", "粘贴", "删除", "查")
 
 # 不纳入“我的日常”收藏的大标签：入口页、洗练/主线、周本、魔渊、打造刷属性、时光之舟、超值礼包。
-EXCLUDED_TABS = ("一键运行", "洗练", "主线刷取", "主线通关", "周本",
+EXCLUDED_TABS = ("一键运行", "洗练", "支线任务", "主线刷取", "主线通关", "周本",
                  "魔渊诛邪", "魔渊诛邪（前八层）", "打造刷属性", "时光之舟", "超值礼包",
-                 "冰川（熔岩层）", "商店购买", "游戏盒签到（实验）", "联盟药园")
+                 "冰川（熔岩层）", "商店购买", "游戏盒签到（实验）", "联盟药园", "羽毛背包")
 
 # 个别页面只暴露指定任务，其余按钮不进入收藏目录；元组顺序即收藏目录中的显示/执行顺序。
 PAGE_TASK_FILTERS = {
@@ -130,13 +130,14 @@ class ButtonTask:
 
 
 class DailyEntry:
-    """收藏目录中的一项：显示名、所属标签、队列项。"""
-    def __init__(self, key, label, button, page, queue_item):
+    """收藏目录中的一项：显示名、所属标签、队列项、补充说明。"""
+    def __init__(self, key, label, button, page, queue_item, description=""):
         self.key = key
         self.label = label
         self.button = button
         self.page = page
         self.queue_item = queue_item
+        self.description = description
 
 
 class CollapsiblePanel:
@@ -242,6 +243,7 @@ def discover_tree(app, quick_tasks):
 
     tasks = [spec for spec in quick_tasks
              if getattr(app, spec[3], None) is not None
+             and not getattr(getattr(app, spec[3]), "daily_hidden", False)
              and not under_excluded(getattr(app, spec[3]))]
     quick_by_widget = {}
     for spec in tasks:
@@ -264,13 +266,15 @@ def discover_tree(app, quick_tasks):
         path = " / ".join(parts)
         entries = []
         counts = {}
+        labels = {}
         for button in page_buttons(page):
             text = str(button.cget("text")).strip()
             spec = quick_by_widget.get(str(button))
             if spec is not None:
-                entries.append(DailyEntry(spec[0], spec[1], button, title, spec))
+                entries.append(DailyEntry(spec[0], spec[1], button, title, spec,
+                                          spec[4] if len(spec) > 4 else ""))
                 continue
-            if not is_task_label(text):
+            if not is_task_label(text) and not getattr(button, "daily_visible", False):
                 continue
             occurrence = counts.get(text, 0)
             counts[text] = occurrence + 1
@@ -278,7 +282,10 @@ def discover_tree(app, quick_tasks):
             if key in used_keys:
                 key = "%s|%s#%d" % (key, str(page), occurrence)
             used_keys.add(key)
-            label = text if occurrence == 0 else "%s（%d）" % (text, occurrence + 1)
+            display = str(getattr(button, "daily_label", "") or text)
+            seen = labels.get(display, 0)
+            labels[display] = seen + 1
+            label = display if seen == 0 else "%s（%d）" % (display, seen + 1)
             entries.append(DailyEntry(key, label, button, title, ButtonTask(key, label, button)))
         allowed = PAGE_TASK_FILTERS.get(title)
         if allowed is not None:
@@ -310,7 +317,8 @@ def discover_tree(app, quick_tasks):
     found = {entry.key for node in walk_nodes(nodes) for entry in node["entries"]}
     missing = [spec for spec in tasks if spec[0] not in found]
     if missing:
-        entries = [DailyEntry(spec[0], spec[1], getattr(app, spec[3], None), "其他任务", spec)
+        entries = [DailyEntry(spec[0], spec[1], getattr(app, spec[3], None), "其他任务", spec,
+                              spec[4] if len(spec) > 4 else "")
                    for spec in missing]
         nodes.append({"title": "其他任务", "path": "其他任务", "entries": entries, "children": []})
     return nodes
@@ -327,6 +335,7 @@ class MyDailyWindow:
         self.entries = {entry.key: entry for node in walk_nodes(self.nodes)
                         for entry in node["entries"]}
         self.favorites, checked = load_favorites(self.path, self.entries)
+        self._place_priority_front(self.favorites)
         self._place_claim_after_dungeons(self.favorites)
         self.check_vars = {key: tk.BooleanVar(master=app.root, value=key in checked)
                            for key in self.entries}
@@ -340,6 +349,19 @@ class MyDailyWindow:
         self._run_buttons = []
 
     # ---------- 收藏顺序 ----------
+    # 固定优先级：福星（福禄寿190）最前，其次三日福利，再次联盟Buff；同组保持原相对顺序。
+    PRIORITY_KEYWORDS = ("福禄寿190", "三日福利", "联盟Buff")
+
+    @classmethod
+    def _place_priority_front(cls, favorites):
+        """把福星、三日福利、联盟Buff依次提到最前；未收藏的自动跳过。"""
+        pinned = []
+        for word in cls.PRIORITY_KEYWORDS:
+            pinned.extend(key for key in favorites if word in key and key not in pinned)
+        if pinned:
+            favorites[:] = pinned + [key for key in favorites if key not in pinned]
+        return favorites
+
     @staticmethod
     def _place_claim_after_dungeons(favorites):
         """领取奖励必须等所有副本打完：排在收藏最后；收藏了活跃度奖励时，活跃度最后、领取倒数第二。"""
@@ -464,6 +486,9 @@ class MyDailyWindow:
             page = self._page_title(key) or entry.page
             ttk.Label(row, text="设置页：%s" % (page or "未找到对应页面"),
                       foreground="#666").pack(anchor="w", padx=28, pady=(2, 0))
+            if entry.description:
+                ttk.Label(row, text=entry.description, foreground="#666",
+                          wraplength=780, justify="left").pack(anchor="w", padx=28, pady=(2, 0))
 
     # ---------- 设置页导航 ----------
     def _page_chain(self, key):
@@ -643,11 +668,23 @@ class MyDailyWindow:
             if node["entries"]:
                 grid = ttk.Frame(frame)
                 grid.pack(fill="x")
-                for index, entry in enumerate(node["entries"]):
-                    variable = tk.BooleanVar(master=dialog, value=entry.key in self.favorites)
-                    check_vars[entry.key] = variable
-                    ttk.Checkbutton(grid, text=entry.label, variable=variable).grid(
-                        row=index // 2, column=index % 2, sticky="w", padx=8, pady=4)
+                if any(entry.description for entry in node["entries"]):
+                    # 带说明的条目改用单列，说明文字换行显示在勾选框下方。
+                    for entry in node["entries"]:
+                        variable = tk.BooleanVar(master=dialog, value=entry.key in self.favorites)
+                        check_vars[entry.key] = variable
+                        holder = ttk.Frame(grid)
+                        holder.pack(fill="x", padx=8, pady=4)
+                        ttk.Checkbutton(holder, text=entry.label, variable=variable).pack(anchor="w")
+                        if entry.description:
+                            ttk.Label(holder, text=entry.description, foreground="#666",
+                                      wraplength=620, justify="left").pack(anchor="w", padx=22)
+                else:
+                    for index, entry in enumerate(node["entries"]):
+                        variable = tk.BooleanVar(master=dialog, value=entry.key in self.favorites)
+                        check_vars[entry.key] = variable
+                        ttk.Checkbutton(grid, text=entry.label, variable=variable).grid(
+                            row=index // 2, column=index % 2, sticky="w", padx=8, pady=4)
             elif not node["children"]:
                 ttk.Label(frame, text="（暂无可收藏任务）", foreground="#999").pack(anchor="w", padx=6)
             for child in node["children"]:

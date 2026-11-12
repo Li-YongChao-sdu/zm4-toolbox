@@ -1,16 +1,46 @@
 # -*- mode: python ; coding: utf-8 -*-
+"""造梦西游4活动工具箱 打包配置。
+
+统一入口：run.py
+构建命令：python -m PyInstaller --noconfirm --clean "造梦西游4活动工具箱.spec"
+产物目录：dist/造梦西游4活动工具箱/
+"""
+import os
+
 from PyInstaller.utils.hooks import collect_all
 
-datas = [('output_cg1_20260921_1_2', 'output_cg1_20260921_1_2'), ('question-model-solver-3.py', '.'), ('craft_books.json', '.'), ('book_equip_attrs.json', '.'), ('moyuan_weekly_config.json', '.')]
-binaries = [('C:/ProgramData/miniconda3/Library/bin/' + dll, '.') for dll in ['tcl86t.dll', 'tk86t.dll', 'ffi.dll', 'libmpdec-4.dll']]
-hiddenimports = []
-tmp_ret = collect_all('Crypto')
-datas += tmp_ret[0]; binaries += tmp_ret[1]; hiddenimports += tmp_ret[2]
+ROOT = SPECPATH
 
+# 运行时需要随包发布的资源；不存在的目录自动跳过，方便在开发目录和仓库目录复用。
+DATA_ITEMS = [
+    ('output_cg1_20260921_1_2', 'output_cg1_20260921_1_2'),
+    ('config_review_20261012_2', 'config_review_20261012_2'),
+    ('jiuzhuan_rl_model', 'jiuzhuan_rl_model'),
+    ('独立附件', '独立附件'),
+    ('question-model-solver-3.py', '.'),
+    ('craft_books.json', '.'),
+    ('book_equip_attrs.json', '.'),
+    ('moyuan_weekly_config.json', '.'),
+]
+
+datas = [(os.path.join(ROOT, source), target)
+         for source, target in DATA_ITEMS
+         if os.path.exists(os.path.join(ROOT, source))]
+binaries = []
+hiddenimports = []
+
+for package in ('Crypto', 'certifi', 'charset_normalizer'):
+    try:
+        package_datas, package_binaries, package_hidden = collect_all(package)
+    except Exception:
+        continue
+    datas += package_datas
+    binaries += package_binaries
+    hiddenimports += package_hidden
 
 a = Analysis(
-    ['zm4_toolbox.py'],
-    pathex=[],
+    ['run.py'],
+    pathex=[ROOT],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
@@ -49,5 +79,3 @@ coll = COLLECT(
     upx_exclude=[],
     name='造梦西游4活动工具箱',
 )
-
-

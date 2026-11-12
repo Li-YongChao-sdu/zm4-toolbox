@@ -7,6 +7,13 @@ __pycache__/
 # 本地运行配置与日志
 zm4_toolbox_config.json
 my_daily_favorites.json
+my_daily_schedule.json
+pet_collect_history.json
+moyuan_front_profiles.json
+super_gift_cache.json
+zm4_version_cache.json
+startup_check_*.json
+logs/
 toolbox_errors.log
 *.log
 

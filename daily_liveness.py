@@ -20,14 +20,14 @@ def claim(flow, entry, scene, log):
     for tid, task in tasks.items():
         if task.get("isCompleted") == 1:
             r2 = flow.request("scene.livenessHandler.getLivenessPoint", {"id": int(tid)}, timeout=15)
-            if r2.get("code") == 200 and r2.get("liveness"):
+            if isinstance(r2, dict) and r2.get("code") == 200 and not r2.get("error") and r2.get("liveness"):
                 liveness = r2["liveness"]
                 day_point = int(liveness.get("dayActivePoint", day_point))
                 total_point = int(liveness.get("activePoint", total_point))
                 claimed += 1
                 log("  任务%s活跃度领取成功" % tid)
             else:
-                log("  任务%s活跃度领取失败: %s" % (tid, r2.get("error", r2.get("code"))))
+                log("  任务%s活跃度领取失败: %s" % (tid, (r2.get("error", r2.get("code")) if isinstance(r2, dict) else "返回格式异常")))
             time.sleep(0.3)
     if claimed > 0:
         log("  领取了%d个任务活跃度，当前日活跃度: %d" % (claimed, day_point))
@@ -40,20 +40,20 @@ def claim(flow, entry, scene, log):
     for lv in LIVENESS_DAY:
         if day_point >= lv and not (liveness.get("dayRewardHistory") or {}).get(str(lv)):
             r3 = flow.request("scene.livenessHandler.getReward", {"type": 0, "id": lv}, timeout=15)
-            if r3.get("code") == 200:
+            if isinstance(r3, dict) and r3.get("code") == 200 and not (r3.get("error") if isinstance(r3, dict) else "返回格式异常"):
                 liveness = r3.get("liveness") or liveness
                 log("  领取日奖励%d: %s" % (lv, json.dumps(r3.get("add", r3.get("items", [])), ensure_ascii=False)))
             else:
-                log("  日奖励%d领取失败: %s" % (lv, r3.get("error")))
+                log("  日奖励%d领取失败: %s" % (lv, (r3.get("error") if isinstance(r3, dict) else "返回格式异常")))
             time.sleep(0.3)
     for lv in LIVENESS_WEEK:
         if total_point >= lv and not (liveness.get("weekRewardHistory") or {}).get(str(lv)):
             r3 = flow.request("scene.livenessHandler.getReward", {"type": 1, "id": lv}, timeout=15)
-            if r3.get("code") == 200:
+            if isinstance(r3, dict) and r3.get("code") == 200 and not (r3.get("error") if isinstance(r3, dict) else "返回格式异常"):
                 liveness = r3.get("liveness") or liveness
                 log("  领取周奖励%d: %s" % (lv, json.dumps(r3.get("add", r3.get("items", [])), ensure_ascii=False)))
             else:
-                log("  周奖励%d领取失败: %s" % (lv, r3.get("error")))
+                log("  周奖励%d领取失败: %s" % (lv, (r3.get("error") if isinstance(r3, dict) else "返回格式异常")))
             time.sleep(0.3)
 
     return liveness

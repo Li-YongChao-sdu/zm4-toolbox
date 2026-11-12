@@ -35,11 +35,12 @@ class LimitedActivityPages:
 
     def _build_pet_collect_tab(self):
         tab = self._limited_page("宠物加速养成", padding=12)
-        ttk.Label(tab, text="宠物采集宠装强化材料：每天最多3次，每次120分钟，完成后免费领取。",
+        ttk.Label(tab, text="宠物采集宠装强化材料：每天最多3次，每次120分钟，完成后免费领取。\n"
+                            "「按上次宠物再次派遣」会先免费领取全部已完成采集，再按上次记录派遣最多3只（可自动补位）。",
                   wraplength=850).pack(anchor="w", pady=8)
         bar = ttk.Frame(tab); bar.pack(fill="x", pady=8)
         self._pet_collect_buttons = []
-        for title, action in (("刷新宠物与采集", "refresh"), ("开始采集", "begin"), ("领取已完成采集", "claim")):
+        for title, action in (("刷新宠物与采集", "refresh"), ("派遣采集", "begin"), ("领取选中采集", "claim"), ("一键领取", "claimall"), ("按上次宠物再次派遣", "rebegin")):
             button = ttk.Button(bar, text=title, command=lambda a=action: self._limited_action("petcollect", a))
             button.pack(side="left", padx=5); self._pet_collect_buttons.append(button)
         form = ttk.Frame(tab); form.pack(fill="x", pady=8)
@@ -57,14 +58,16 @@ class LimitedActivityPages:
         for key, label in (("pet", "宠物"), ("material", "采集材料"), ("status", "剩余时间 / 状态")):
             self._collect_tree.heading(key, text=label); self._collect_tree.column(key, width=220)
         self._collect_tree.pack(fill="both", expand=True)
+        self._collect_tree.bind("<<TreeviewSelect>>", lambda event: setattr(self, "_collect_selected_slot", next(iter(self._collect_tree.selection()), None)))
         self._collect_pets = []
+        self._collect_selected_slot = None
 
     def _limited_action(self, page, action):
         if not self._ensure_login() or getattr(self, "_limited_activity_busy", False):
             return
         title = "国庆签到·千万灵魂" if page == 'million' else '宠物加速养成'
         if ((page == 'million' and action != 'refresh') or
-                (page == 'petcollect' and action == 'begin')) and self._limited_config_expired(title):
+                (page == 'petcollect' and action in ('begin', 'rebegin'))) and self._limited_config_expired(title):
             self._log('[%s] 活动配置已过期，停止执行' % title)
             messagebox.showinfo('活动已过期', title + '已超过配置截止时间')
             return
@@ -85,21 +88,26 @@ class LimitedActivityPages:
         for button in self._activity_buttons():
             button.config(state="disabled")
         threading.Thread(target=self._limited_activity_worker,
-            args=(page, action, pet_id, prop_index), daemon=True).start()
+            args=(page, action, pet_id, prop_index, self.client, self.current_save["index"]), daemon=True).start()
 
     @staticmethod
     def _limited_request(flow, route, payload):
         result = flow.request(route, payload, timeout=20)
-        if result.get("code") != 200:
-            raise RuntimeError(str(result.get("error") or result.get("message") or result))
+        if not isinstance(result, dict) or result.get("code") != 200 or result.get("error"):
+            raise RuntimeError(str(result.get("error") or result.get("message") or result) if isinstance(result, dict) else "请求回包不是对象：" + route)
         return result
 
-    def _limited_activity_worker(self, page, action, pet_id, prop_index):
+    def _limited_activity_worker(self, page, action, pet_id, prop_index, expected_client=None, expected_slot=None):
         flow = None
         prefix = "[千万灵魂]" if page == "million" else "[宠物加速养成]"
         try:
-            flow, entry, scene = self._connect_and_enter()
-            request = lambda route, data: self._limited_request(flow, route, data)
+            client = expected_client or self.client
+            slot = expected_slot if expected_slot is not None else self.current_save['index']
+            flow, entry, scene = self._connect_and_enter(slot, expected_client=client)
+            def request(route, data):
+                if self.client is not client or self.current_save['index'] != slot:
+                    raise RuntimeError('账号或存档已切换，停止采集操作')
+                return self._limited_request(flow, route, data)
             if page == "million":
                 route = "scene.holidayHandler."
                 state = request(route + "getMillionSoulInfo", {})["millionSoul"]
@@ -144,52 +152,8 @@ class LimitedActivityPages:
             button.config(state="normal")
 
     def _pet_collect_work(self, request, entry, scene, action, pet_id, prop_index):
-        base = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output_cg1_20260921_1_2")
-        with open(os.path.join(base, "136___PetCollect.xml.json"), encoding="utf-8") as file:
-            config = next(r for r in json.load(file)["RECORD"] if str(r["id"]) == "1")
-        with open(os.path.join(base, "132___Pet.xml.json"), encoding="utf-8") as file:
-            names = {str(r["id"]): r.get("name", r["id"]) for r in json.load(file)["RECORD"]}
-        props = {i: json.loads(config["item%d" % i]) for i in range(1, 6)}
-        route = "scene.playerFourthHandler."
-        state = request(route + "getPetCollectData", {})
-        collect = state.get("petCollect") or {}
-        if int(collect.get("v", -1)) != int(config["activeId"]):
-            raise RuntimeError("本期宠物采集配置与服务器不一致，请更新配置")
-        slots = collect.get("slots") or {}
-        if not isinstance(slots, dict):
-            slots = {str(i): s for i, s in enumerate(slots) if s}
-        pets = (scene.get("curRecord", {}).get("petList") or {}).get("pets") or []
-        if isinstance(pets, dict):
-            pets = list(pets.values())
-        weekly = entry.get("record", {}).get("everyWeekSetting", {})
-        counts = [int(v) for k, v in weekly.items() if str(k).endswith("_1_petCollect") and not str(k).startswith("attrlog_")]
-        used = max(counts, default=0)
-        if action == "begin":
-            if used >= int(config["dayMax"]):
-                raise RuntimeError("今日采集次数已用完")
-            pet = next((p for p in pets if p.get("entityId") == pet_id), None)
-            prop = props[prop_index]
-            if not pet or int(pet.get("level", 0)) < int(prop["level"]):
-                raise RuntimeError("宠物等级不足，不能采集此材料")
-            if int(pet.get("status", 0)) != 0 or any(s.get("entityId") == pet_id for s in slots.values()):
-                raise RuntimeError("请选择未出战且未在采集的宠物")
-            pos = next((i for i in range(int(collect.get("maxSlot", 0))) if not slots.get(str(i))), None)
-            if pos is None:
-                raise RuntimeError("没有空闲采集槽位")
-            result = request(route + "petCollectBegin", {"data": {"index": pos, "pet": pet, "prop": prop},
-                "pos": pos, "entityId": pet_id, "index": prop_index})
-            used += 1
-            self._log("[宠物加速养成] 已开始采集" + prop["name"] + "，120分钟后免费领取")
-        elif action == "claim":
-            now = int(state.get("serverTime", 0))
-            ready = [int(pos) for pos, s in slots.items() if s and int(s.get("time", 0)) <= now]
-            if not ready:
-                raise RuntimeError("没有已完成的采集，请等待倒计时结束")
-            for pos in ready:
-                result = request(route + "petCollectEnd", {"pos": pos, "type": 0})
-                self._log("[宠物加速养成] 免费领奖服务器返回：" + json.dumps(result, ensure_ascii=False))
-        state = request(route + "getPetCollectData", {})
-        self.root.after(0, lambda s=state, p=pets, n=names, u=used: self._show_pet_collect(s, p, n, u))
+        from pet_collect_routes import work
+        return work(self, request, entry, scene, action, pet_id, prop_index)
 
     def _show_pet_collect(self, state, pets, names, used):
         slots = (state.get("petCollect") or {}).get("slots") or {}
@@ -202,7 +166,7 @@ class LimitedActivityPages:
                   p.get("level"), p["entityId"]) for p in self._collect_pets]
         self._collect_pet_choice.config(values=values)
         self._collect_pet_choice.set(values[0] if values else "")
-        self._collect_status.set("今日已采集 %s/3 次；占用槽位 %s/%s" % (
+        self._collect_status.set("本工具今日已确认采集 %s/3 次（服务器仍校验上限）；占用槽位 %s/%s" % (
             used, len(slots), (state.get("petCollect") or {}).get("maxSlot", 0)))
         self._collect_tree.delete(*self._collect_tree.get_children())
         now = int(state.get("serverTime", 0))
@@ -665,7 +629,7 @@ class LimitedActivityPages:
 
         def start_collect(horse, prop, index):
             nonlocal used
-            if int(collect.get("v", -1)) != 1449: raise RuntimeError("本期采集配置已变化，请更新配置后开始")
+            if int(collect.get("v", -1)) != int(config["activeId"]): raise RuntimeError("本期采集配置已变化，请更新配置后开始")
             if used >= int(config["dayMax"]): raise RuntimeError("今日采集次数已用完")
             if not horse or int(horse["level"]) < int(prop["level"]): raise RuntimeError("坐骑等级不足")
             if any(slot_entity(s) == horse["entityId"] for s in slots.values()):

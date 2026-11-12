@@ -199,6 +199,10 @@ def load_cache():
 def cache_valid(cache):
     if not cache:
         return False
+    if (cache.get('freeSchema') != 2 or not isinstance(cache.get('freeActivities'), list)
+            or not isinstance(cache.get('freeRewards'), dict)
+            or cache.get('argotSchema') != 1 or not isinstance(cache.get('argotRows'), list)):
+        return False
     age = time.time() - float(cache.get('checkedAt') or 0)
     if age > (MAX_AGE if cache['gifts'] else EMPTY_AGE):
         return False
@@ -207,9 +211,51 @@ def cache_valid(cache):
     return not ends or _now() <= min(ends)
 
 
+def update_cycle_start(now=None):
+    """返回最近一次周四11:00（GMT+8），作为本次配置更新周期起点。"""
+    now = now or _now()
+    if now.tzinfo is not None:
+        now = now.astimezone(datetime.timezone(datetime.timedelta(hours=8))).replace(tzinfo=None)
+    start = (now - datetime.timedelta(days=(now.weekday() - 3) % 7)).replace(hour=11, minute=0, second=0, microsecond=0)
+    return start if now >= start else start - datetime.timedelta(days=7)
+
+
+def update_cycle_key(now=None):
+    return update_cycle_start(now).isoformat(timespec='seconds') + '+08:00'
+
+
+def automatic_update_due(cache, now=None):
+    """本周期任意一天首次打开都可补更；只有成功过才跳过。"""
+    now = now or _now()
+    if now.tzinfo is not None:
+        now = now.astimezone(datetime.timezone(datetime.timedelta(hours=8))).replace(tzinfo=None)
+    cache = cache or {}
+    last_time = None
+    try:
+        last_time = datetime.datetime.fromisoformat(str(cache.get('lastSuccessfulUpdateAt', '')))
+        if last_time.tzinfo is not None:
+            last_time = last_time.astimezone(datetime.timezone(datetime.timedelta(hours=8))).replace(tzinfo=None)
+    except (TypeError, ValueError):
+        pass
+    if last_time is None:
+        # 兼容旧缓存；仅有日期而没有可核实时间时，本周期允许补更一次。
+        try:
+            last_time = datetime.datetime.fromtimestamp(
+                float(cache.get('checkedAt')), datetime.timezone(datetime.timedelta(hours=8))).replace(tzinfo=None)
+        except (ValueError, TypeError, OverflowError, OSError):
+            pass
+    if last_time is not None:
+        return not (update_cycle_start(now) <= last_time <= now)
+    return cache.get('lastSuccessfulUpdateCycle') != update_cycle_key(now)
+
+
 def save_cache(result):
     body = dict(result)
     body['checkedAt'] = time.time()
+    checked = _now()
+    body['lastSuccessfulUpdateDate'] = checked.date().isoformat()
+    body['lastSuccessfulUpdateAt'] = checked.isoformat(timespec='seconds') + '+08:00'
+    body['lastSuccessfulUpdateCycle'] = update_cycle_key(checked)
     temporary = CACHE_FILE.with_suffix('.tmp')
     temporary.write_text(json.dumps(body, ensure_ascii=False, indent=2), encoding='utf-8')
     temporary.replace(CACHE_FILE)
@@ -234,7 +280,33 @@ def refresh(force=False):
                 'gifts': gifts,
             }
             if newest is None:
+                blocks = {_clean_name(block): content for block, content in _swf_blocks(data)
+                          if _clean_name(block) in ('Activity.xml', 'Reward.xml', 'Argot.xml')}
+                activity = blocks.get('Activity.xml')
+                if activity is None:
+                    raise RuntimeError('官方配置缺少Activity.xml，无法核实免费礼包')
+                if 'Reward.xml' not in blocks:
+                    raise RuntimeError('官方配置缺少Reward.xml，无法核实类型12免费奖励')
+                if 'Argot.xml' not in blocks:
+                    raise RuntimeError('官方配置缺少Argot.xml，无法核实暗语礼包')
+                result['argotRows'] = _records(blocks['Argot.xml'])
+                result['argotSchema'] = 1
+                result['argotVersion'] = version
+                result['freeActivities'] = [row for row in _records(activity) if str(row.get('type')) in ('6', '12')]
+                reward_ids = {str(row.get('rewardId')) for row in result['freeActivities'] if row.get('type') == '12'}
+                result['freeRewards'] = {str(row['id']): row for row in _records(blocks['Reward.xml']) if str(row.get('id')) in reward_ids}
+                result['freeSchema'] = 2
+                result['freeVersion'] = version
                 newest = result
+            else:
+                # 灵魂礼包可能回溯旧包；免费活动始终以最新包为准。
+                result['freeActivities'] = newest['freeActivities']
+                result['freeVersion'] = newest['freeVersion']
+                result['freeRewards'] = newest['freeRewards']
+                result['freeSchema'] = newest['freeSchema']
+                result['argotRows'] = newest['argotRows']
+                result['argotSchema'] = newest['argotSchema']
+                result['argotVersion'] = newest['argotVersion']
             if gifts:
                 return save_cache(result)
             checked += 1
@@ -325,13 +397,12 @@ def build_tab(app):
     note = ttk.Label(page, text='限购次数按账号计算；已购满的礼包会自动跳过，购买前请确认灵魂余额。',
                      foreground='orange', wraplength=900)
     note.pack(anchor='w', pady=(6, 0))
+    ttk.Label(page, text='配置更新周期：每周四11:00（GMT+8）起；本周期首次打开自动补更，成功后不重复。可随时手动检查更新。',
+              foreground='#666', wraplength=900).pack(anchor='w', pady=(4, 0))
 
-    free = ttk.LabelFrame(page, text='官方免费节日奖励', padding=8)
-    free.pack(fill='x', pady=(12, 0))
-    ttk.Label(free, text='节日签到与免费礼包需要按活动逐个验证领取协议，本页暂不自动领取，'
-                         '以免重复请求或误消耗次数。已接入的签到活动请在「限时活动」或'
-                         '「日常助手」中使用。', wraplength=880, foreground='#666').pack(anchor='w')
-    ttk.Button(free, text='领取节日免费奖励（待接入）', state='disabled').pack(anchor='w', pady=(6, 0))
+    from free_activity_gifts import build_panel
+    update_free_gifts = build_panel(app, page, state,
+                                   lambda busy: set_busy(busy), lambda: refresh_clicked())
 
     def gifts_by_selection():
         result = []
@@ -381,6 +452,7 @@ def build_tab(app):
         lbl_status.config(text=status_text())
         update_total()
         set_busy(False)
+        update_free_gifts(cache)
 
     def fail(error, prefix=''):
         lbl_status.config(text=prefix + '读取官方配置失败：%s；可稍后点击「检查更新」重试。' % error)
@@ -396,7 +468,7 @@ def build_tab(app):
                 cache = refresh(force=True)
                 app.root.after(0, lambda: apply_cache(cache))
             except Exception as error:
-                app.root.after(0, lambda: fail(str(error)))
+                app.root.after(0, lambda text=str(error): fail(text))
         threading.Thread(target=worker, daemon=True).start()
 
     def buy_selected():
@@ -512,7 +584,10 @@ def build_tab(app):
     cache = load_cache()
     if cache:
         apply_cache(cache)
-        if not cache_valid(cache):
-            app.root.after(300, refresh_clicked)
     else:
-        app.root.after(300, refresh_clicked)
+        lbl_status.config(text='暂无本地配置，正在检查本周期配置；也可点击「检查更新」手动获取。')
+    def automatic_refresh():
+        # 真正开始前重读文件，兼容等待期间另一次手动更新已经完成。
+        if automatic_update_due(load_cache()): refresh_clicked()
+    if automatic_update_due(cache):
+        app.root.after(300, automatic_refresh)
