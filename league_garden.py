@@ -133,6 +133,10 @@ def build_panel(app, parent):
              'cards': {}, 'timer': None, 'expiry_requested': False, 'columns': 0}
     status = tk.StringVar(value='先登录、选择存档，再点击检测土地。土地读取及仙露浇水已实测；种植、收获尚待验证。')
     ttk.Label(parent, textvariable=status, wraplength=850).pack(anchor='w', pady=5)
+    # 操作按钮固定在页面顶部，避免土地列表变长或切换存档后按钮被挤出可视区域。
+    buttons = []
+    actions = ttk.Frame(parent)
+    actions.pack(anchor='w', pady=5)
     overview = ttk.LabelFrame(parent, text='土地状况', padding=8)
     overview.pack(fill='x', pady=5)
     summary = tk.StringVar(value='等待检测土地')
@@ -168,9 +172,6 @@ def build_panel(app, parent):
     ttk.Label(parent, textvariable=detail, wraplength=850).pack(anchor='w', pady=5)
     storage = tk.Text(parent, height=3, wrap='word', state='disabled')
     storage.pack(fill='x', pady=5)
-    buttons = []
-    actions = ttk.Frame(parent)
-    actions.pack(anchor='w', pady=5)
 
     def show_detail(event=None):
         selected = tree.selection()

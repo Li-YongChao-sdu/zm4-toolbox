@@ -1,6 +1,7 @@
 """魔渊前八层：复用2026-10-22实测请求，重登核验进度、领奖和背包。"""
 from collections import Counter
 from functools import lru_cache
+from datetime import datetime, timezone, timedelta
 import json
 from pathlib import Path
 import threading
@@ -20,6 +21,37 @@ def load_config():
     if any(int(x['score']) > 8000 for x in config['rewards']):
         raise RuntimeError('魔渊奖励超出8000分范围')
     return config
+
+
+@lru_cache(maxsize=1)
+def activity_deadline():
+    """启动时读取本地本期配置；ZhuXie.activityId 关联 Activity.underTime，不联网轮询。"""
+    try:
+        folder = BASE / 'output_cg1_20260921_1_2'
+        rows = json.loads((folder / '250___ZhuXie.xml.json').read_text(encoding='utf-8-sig'))['RECORD']
+        rows = [rows] if isinstance(rows, dict) else rows
+        period = int(load_config()['actId'])
+        row = next(r for r in rows if int(r['ZhuXieNum']) == period)
+        activities = json.loads((folder / '002___Activity.xml.json').read_text(encoding='utf-8-sig'))['RECORD']
+        activities = [activities] if isinstance(activities, dict) else activities
+        activity = next(r for r in activities if str(r['id']) == str(row['activityId']))
+        return datetime.strptime(activity['underTime'], '%Y/%m/%d-%H:%M:%S')
+    except (OSError, ValueError, KeyError, TypeError, StopIteration):
+        return None
+
+
+def activity_expired(now=None):
+    deadline = activity_deadline()
+    now = now if now is not None else datetime.now(timezone(timedelta(hours=8))).replace(tzinfo=None)
+    return deadline is None or now > deadline
+
+
+def ensure_activity_open():
+    deadline = activity_deadline()
+    if deadline is None:
+        raise RuntimeError('无法确认本期魔渊活动期限或期数，请先更新配置')
+    if activity_expired():
+        raise RuntimeError('本期魔渊诛邪已于%s（北京时间）结束，不发送挑战或领奖请求' % deadline)
 
 
 def progress(scene, config):
@@ -107,11 +139,13 @@ class MoyuanRun:
                 self.flow = None
 
     def reconnect(self):
+        ensure_activity_open()
         self.close()
         self.flow, _, scene = self.connect()
         return scene, progress(scene, self.config)
 
     def request(self, route, body):
+        ensure_activity_open()
         reply = self.flow.request(route, body, timeout=25)
         if not isinstance(reply, dict) or reply.get('code') != 200 or reply.get('error'):
             detail = reply.get('error', reply) if isinstance(reply, dict) else reply
@@ -221,6 +255,12 @@ class MoyuanRun:
 
 
 def build_panel(app, parent):
+    if activity_expired():
+        deadline = activity_deadline()
+        text = ('本期魔渊诛邪已于%s（北京时间）结束。' % deadline if deadline else
+                '本期魔渊配置或活动期限无法确认。')
+        ttk.Label(parent, text=text + '挑战及领奖入口已停用。', wraplength=720).pack(anchor='w', pady=8)
+        return
     config = load_config()
     ttk.Label(parent, text='魔渊诛邪·前八层：达到8000分后领取五档阶段奖励。',
               wraplength=720).pack(anchor='w', pady=8)
@@ -253,6 +293,10 @@ def build_panel(app, parent):
     def start(mode):
         nonlocal busy
         if busy or not app._ensure_login():
+            return
+        if activity_expired():
+            status.config(text='本期魔渊诛邪已过期，不能执行。')
+            app._log('[魔渊前八层] 活动已过期，停止执行')
             return
         slot = app.current_save['index']
         busy = True

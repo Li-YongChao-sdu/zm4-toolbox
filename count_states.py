@@ -4,6 +4,7 @@ import copy
 import inspect
 import textwrap
 import threading
+import time
 import types
 
 class Cancelled(Exception): pass
@@ -82,7 +83,17 @@ def refresh(app):
     def worker():
         nonlocal flow, entry, scene
         try:
-            flow, entry, raw = app._connect_and_enter(slot)
+            try:
+                flow, entry, raw = app._connect_and_enter(slot)
+            except Exception as error:
+                text = str(error)
+                if '连接已断开' not in text and '未完成' not in text:
+                    raise
+                # 上一个任务刚断开时偶发被服务器踢线，稍等后重试一次
+                if not current(): return
+                time.sleep(2)
+                if not current(): return
+                flow, entry, raw = app._connect_and_enter(slot)
             if not current(): return
             scene = copy.deepcopy(raw)
             cur = scene.get('curRecord') or {}

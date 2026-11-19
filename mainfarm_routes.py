@@ -9,6 +9,9 @@ REWARD_MODES = {
     "只通关，全部不领取": "none",
 }
 
+# 缉妖令只领取活动面板展示的四种奖励，场内恢复道具和能量飞球不入包。
+JIYAO_REWARD_IDS = frozenset(("197200005", "197100006", "106100002", "107100002"))
+
 _DUNGEON_ROWS = None
 
 def dungeon_rows():
@@ -127,7 +130,7 @@ def boss_clear_route(dungeon_id, target_id, need):
     }
 
 def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mode="all",
-                only_item_ids=None, quest_count=False, report_kills=False):
+                only_item_ids=None, quest_count=False, report_kills=False, filter_jiyao_rewards=True):
     if reward_mode not in REWARD_MODES.values():
         raise ValueError("未知的奖励领取模式")
     row = dungeon_rows().get(mid)
@@ -151,6 +154,8 @@ def clear_stage(flow, scene, mid, enter_w=False, pick_equips=False, *, reward_mo
     feather_counts = {}
     exp = spirit = 0
     allow = {str(x) for x in only_item_ids} if only_item_ids else None
+    if filter_jiyao_rewards and row.get("classType") == "Zhudongfuyao":
+        allow = JIYAO_REWARD_IDS if allow is None else allow & JIYAO_REWARD_IDS
     for drop in drops.get("newDrops") or []:
         monster = str(drop.get("monsterId", "0")); index = drop.get("index", 0)
         exp += int(drop.get("exp", 0) or 0); spirit += int(drop.get("spirit", 0) or 0)

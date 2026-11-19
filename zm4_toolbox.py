@@ -11,9 +11,10 @@ import copy
 from datetime import datetime, timedelta
 from toolbox_audit import AuditFlow, ui_log, take_error, directory as audit_directory, flush_now as flush_audit
 
-# 配置中的普通补给，包含烤熟的桃子和萝卜；活动蟠桃不在此列。
+# 按ID过滤普通补给、会飞的萝卜/蟠桃、能量飞球、航海四种部件及临时增益蛇胆。
 SUPPLY_DROP_IDS = frozenset({"120100001", "120200001", "120100002",
-                             "120200002", "120100003", "120200003"})
+                             "120200002", "120100003", "120200003", "181000001",
+                             "120000001", "120000002", "120000003", "120000004", "120300001"})
 
 
 def _load_soul_name_map():
@@ -722,9 +723,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         # 全局过滤开关（固定在日志上方，不随页面滚动）
         global_bar = ttk.Frame(self.root)
         global_bar.pack(side="bottom", fill="x", padx=10, before=viewport)
-        ttk.Checkbutton(global_bar, text="全局过滤：不拾取桃子 / 萝卜 / 蓝瓶 / 蓝壶",
+        ttk.Checkbutton(global_bar, text="全局过滤：不拾取补给 / 能量飞球 / 航海部件 / 蛇胆",
                         variable=self.var_skip_supply_pickups).pack(side="left")
-        ttk.Label(global_bar, text="包括烤熟的桃子和萝卜；对所有副本和一键运行生效。固定领奖不属于可选择拾取。",
+        ttk.Label(global_bar, text="补给含普通及会飞的萝卜/蟠桃、蓝瓶/蓝壶；航海含炮台/炮弹/船帆/护甲。蛇胆仅过滤120300001，保留材料蛇胆。所有副本和一键运行生效，固定领奖除外。",
                   foreground="#666").pack(side="left", padx=8)
 
     def _resize_ui_viewport(self, event=None):
@@ -809,6 +810,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         # 宠物装备/坐骑副本由页面内的“批量1/2/3”预设执行，不再提供通用快捷入口。
         ("beiming", "悲鸣冰川", "_do_beiming_run", "btn_beiming_run"),
         ("luoxuan", "螺旋地狱", "_do_luoxuan_run", "btn_luoxuan_run"),
+        ("jiyao", "缉妖令", "_do_jiyao_run", "btn_jiyao_run"),
         ("luohan", "罗汉堂", "_do_luohan_run", "btn_luohan_run"),
         ("special_dizang", "地藏冥殿", "_do_dizang_run", "btn_special_run_dizang"),
         ("special_xukong", "虚空藏院", "_do_xukong_run", "btn_special_run_xukong"),
@@ -843,8 +845,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         tab.pack(fill="both", expand=True)
         ttk.Label(tab, text="保存各页面设置，勾选要依次运行的项目。",
                   font=("微软雅黑", 11, "bold")).pack(anchor="w", pady=(0, 10))
-        self._skip_supply_pickups = False
-        self.var_skip_supply_pickups = tk.BooleanVar(value=False)
+        self._skip_supply_pickups = True
+        self.var_skip_supply_pickups = tk.BooleanVar(value=True)
         self.var_skip_supply_pickups.trace_add("write", self._update_global_pickup_filter)
         panel = ttk.LabelFrame(tab, text="运行清单", padding=10)
         panel.pack(fill="x")
@@ -1030,6 +1032,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         legacy_before_battle = int(data.get("version") or 1) < 2
         for row in data.get("variables") or []:
             path = row.get("path") or []
+            # 全局过滤每次启动默认开启，旧配置中的关闭值不覆盖此默认。
+            if path == ["var_skip_supply_pickups"]:
+                continue
             if not path or path[0] in ("save_var", "quick_task_vars"):
                 continue
             if legacy_before_battle and path == ["var_auto_daily_before_battle"]:
@@ -1079,6 +1084,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         self._quick_stopping = False
         self._quick_active = True      # 队列执行期间自动跳过“我的日常”里不必要的确认框
         self._quick_failures = []
+        self._quick_results = []
         self._quick_capture = None
         self._quick_current = ""
         self._quick_patch_msgbox()
@@ -1126,6 +1132,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self.btn_quick_stop.config(state="disabled")
             self._quick_restore_msgbox()
             self._quick_report()
+            pending = getattr(self, "_count_refresh_pending", None)
+            self._count_refresh_pending = None
+            if pending:
+                self.root.after(0, lambda: self._refresh_finished_counts(*pending))
             if getattr(self, "_quick_quit_after", False):
                 self._quick_quit_after = False
                 self.root.after(1500, self._close_toolbox)
@@ -1230,13 +1240,44 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                 continue
             if " 开始：" in text or " 结束：" in text:
                 continue
-            if any(word in text for word in self._QUICK_FAIL_WORDS) and text not in hits:
+            # "失败0"是成功轮次的统计字样，不能当作失败命中。
+            probe = text.replace("失败0", "").replace("失败 0", "")
+            if any(word in probe for word in self._QUICK_FAIL_WORDS) and text not in hits:
                 hits.append(text)
         if hits:
             self._quick_failures.append((label, hits[:3]))
+        summary = self._quick_summary(lines)
+        if summary:
+            self._quick_results.append((label, summary))
+            self._log(self._quick_tag() + (" 结果：%s %s" % (label, summary)))
+
+    @staticmethod
+    def _quick_summary(lines):
+        """从任务日志提取“成功 X/Y”，Y 优先取设置的次数。"""
+        import re
+        success = total = None
+        for line in lines:
+            text = str(line)
+            match = re.search(r"成功\s*(\d+)\s*[，,]?\s*失败\s*(\d+)", text)
+            if match:
+                success = max(success or 0, int(match.group(1)))
+            match = re.search(r"\[(\d+)/(\d+)\]", text)
+            if match:
+                total = max(total or 0, int(match.group(2)))
+            match = re.search(r"[，,]\s*(\d+)\s*次", text)
+            if match:
+                total = max(total or 0, int(match.group(1)))
+        if success is None:
+            return ""
+        return "成功 %d/%s" % (success, total if total else "?")
 
     def _quick_report(self):
+        results = getattr(self, "_quick_results", [])
         failures = getattr(self, "_quick_failures", [])
+        if results:
+            self._log(self._quick_tag() + (" 成功统计（%d 项）：" % len(results)))
+            for label, summary in results:
+                self._log("  - %s：%s" % (label, summary))
         if not failures:
             self._log(self._quick_tag() + " 本次没有发现失败项")
             return
@@ -1251,8 +1292,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                             for label, lines in failures[:12])
         if len(failures) > 12:
             summary += "\n…"
+        success_text = ""
+        if results:
+            success_text = "成功统计：\n%s\n\n" % "\n".join(
+                "- %s：%s" % (label, text) for label, text in results[:12])
         messagebox.showwarning("我的日常 执行结果",
-                               "本次有 %d 项未成功或出现报错：\n\n%s" % (len(failures), summary),
+                               "%s本次有 %d 项未成功或出现报错：\n\n%s"
+                               % (success_text, len(failures), summary),
                                parent=self.root)
 
     # ========== 主题挑战轮换 ===========
@@ -1543,6 +1589,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         self.daily2_notebook.add(wanted_tab, text="悬赏任务")
         self._build_wanted_panel(wanted_tab)
 
+    def _do_thanksgiving_free(self):
+        from thanksgiving_activity import start
+        start(self)
+
+    def _do_jiyao_run(self):
+        from jiyao_activity import start
+        start(self)
+
     def _build_limited_events_tab(self):
         tab = ttk.Frame(self.notebook, padding=10)
         self.notebook.add(tab, text="限时活动")
@@ -1564,6 +1618,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         self._build_pet_collect_tab()
         from monkey_activity import build_tab as build_monkey_tab
         build_monkey_tab(self)
+        from jiyao_activity import build_tab as build_jiyao_tab
+        build_jiyao_tab(self)
+        from thanksgiving_activity import build_tab as build_thanksgiving_tab
+        build_thanksgiving_tab(self)
         pages = list(self.limited_event_notebook.tabs())
         # 已下线活动仍构建控件（保持按钮属性存在），但页面固定隐藏、不进入活动下拉框
         self._build_million_soul_tab()
@@ -1581,7 +1639,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         with open(os.path.join(os.path.dirname(config_path), '136___PetCollect.xml.json'), encoding='utf-8') as file:
             collect_rows = {str(row['id']): row for row in json.load(file)['RECORD']}
             pet_collect = collect_rows['1']
-        for title, ids in {"抓捕金甲战猿": (885, 886), "宠物加速养成": (int(pet_collect['activeId']),),
+        for title, ids in {"感恩节免费领取": (26690,), "缉妖令": (1259, 1260), "抓捕金甲战猿": (885, 886), "宠物加速养成": (int(pet_collect['activeId']),),
                            "骑装加速养成": (int(collect_rows['2']['activeId']),),
                            "重阳签到": (904,), "挑战年兽": (262, 263, 869),
                            "挑战刑天": (101, 106, 599),
@@ -1591,6 +1649,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             ends = [datetime.strptime(activities[i]['underTime'], '%Y/%m/%d-%H:%M:%S')
                     for i in ids if i in activities]
             if ends: self._limited_page_deadlines[title] = max(ends)
+        from moyuan_weekly import activity_deadline as moyuan_activity_deadline
+        self._limited_page_deadlines["魔渊诛邪（前八层）"] = moyuan_activity_deadline() or datetime.min
         show_expired = tk.BooleanVar(value=False)
         visible = []
         def update_pages():
@@ -1617,7 +1677,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             if visible: selector.current(visible.index(self.limited_event_notebook.select()))
         ttk.Checkbutton(navigation, text="显示已过期活动", variable=show_expired,
                         command=update_pages).pack(side="left", padx=8)
-        ttk.Label(tab, text="活动时间使用本地官方配置（本次更新2026年11月9日），按北京时间判断；过期活动默认隐藏。",
+        ttk.Label(tab, text="活动时间使用本地官方配置，按北京时间判断；过期活动默认隐藏。",
                   foreground='gray', wraplength=900).pack(side='bottom', anchor='w', pady=4)
         selector.bind("<<ComboboxSelected>>", lambda event: self.limited_event_notebook.select(visible[selector.current()]))
         def sync_selector(event):
@@ -2222,6 +2282,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
     def _refresh_finished_counts(self, slot, client):
         if self.client is client and self.current_save and self.current_save['index'] == slot:
+            if getattr(self, "_quick_active", False):
+                # 队列执行中不另开连接刷新，否则会和下一项任务的连接互相踢线
+                self._count_refresh_pending = (slot, client)
+                return
             from count_states import refresh
             refresh(self)
 
@@ -2302,7 +2366,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                                  client.cookies, game_id=ZM4_GAME_ID)
         flow = GlobalPickupFilter(AuditFlow(GameLoginFlow(client.uid, token), client.uid,
                                   selected_slot),
-                                  lambda: getattr(self, "_skip_supply_pickups", False))
+                                  lambda: getattr(self, "_skip_supply_pickups", True))
         host = port = None
         for ip in ZM4_GATE_IPS:
             try:
@@ -9861,19 +9925,25 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self._timeboat_gift_done = True
             return
         self._timeboat_gift_done = False
+        # 执行期间禁用按钮，否则"我的日常"看到按钮可用会立刻执行下一项，两个连接同时进场景被服务端踢掉
+        self.btn_timeboat_gift.config(state="disabled")
         self._log("[三日福利] 领取周末双倍（活动451）...")
         threading.Thread(target=self._timeboat_gift_worker, daemon=True).start()
 
-    def _mark_timeboat_gift_done(self):
+    def _finish_timeboat_gift(self, claimed=False):
         self._timeboat_gift_done = True
+        if not claimed:
+            self.btn_timeboat_gift.config(state="normal")
 
     def _timeboat_gift_worker(self):
         flow = None
+        claimed = False
         try:
             flow, _, scene = self._connect_and_enter()
             result = flow.request("scene.playerHandler.rewardGiftByFree", {"activeId": 451}, timeout=15)
             if result.get('code') == 200:
                 self._log("[三日福利] 领取成功!")
+                claimed = True
                 add_data = result.get('add', {})
                 if add_data:
                     for k, v in add_data.items():
@@ -9883,6 +9953,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                 self.root.after(0, lambda: self.btn_timeboat_gift.config(state="disabled"))
             elif "不能重复领取" in str(result.get('error', '')):
                 self._log("[三日福利] 今日已领取，无需重复")
+                claimed = True
                 self.root.after(0, lambda: self.lbl_timeboat_gift.config(text="今日已领取", foreground="gray"))
                 self.root.after(0, lambda: self.btn_timeboat_gift.config(state="disabled"))
             else:
@@ -9892,7 +9963,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         finally:
             if flow is not None:
                 flow.disconnect()
-            self.root.after(0, self._mark_timeboat_gift_done)
+            self.root.after(0, self._finish_timeboat_gift, claimed)
 
     # ========== 螺旋地狱标签页 ==========
     def _build_luoxuan_tab(self):
@@ -10818,6 +10889,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         self._build_shenyu_panel(page("神域悬赏"))
 
     def _build_moyuan_tab(self):
+        from moyuan_weekly import activity_expired
+        if activity_expired():
+            return
         group = ttk.Frame(self.notebook, padding=10)
         self.notebook.add(group, text="魔渊诛邪")
         pages = ttk.Notebook(group)
