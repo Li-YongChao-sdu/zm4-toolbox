@@ -39,39 +39,41 @@ def checked(flow, route, body):
     return result
 
 
-def targets(scene, names):
+def targets(scene, names, kind=None):
     record = scene['curRecord']; result = []; seen = set()
-    for pkey in ('p1', 'p2', 'p3', 'p4'):
-        player = record.get(pkey) or {}
-        for item in values(player.get('equipments')):
-            if not isinstance(item, dict) or not item.get('entityId'):
-                continue
-            if 'growthRate' in item and 'fiveElements' in item:
-                key = ('magic', item['entityId'])
-                if key not in seen:
-                    seen.add(key)
-                    result.append(dict(kind='magic', item=item, pNum=int(pkey[1:]),
-                                       label='法宝 · %s · 角色%s · %s' %
-                                       (names.get(str(item['id']), item['id']), pkey[1:], item['entityId'])))
-    for pkey, wings in (record.get('wingList') or {}).items():
-        if not pkey.startswith('p') or not pkey[1:].isdigit():
-            continue
-        for wing in values(wings):
-            for item in values(wing.get('featherInfo')):
-                key = ('feather', item['entityId'])
-                if key in seen:
+    if kind in (None, 'magic'):
+        for pkey in ('p1', 'p2', 'p3', 'p4'):
+            player = record.get(pkey) or {}
+            for item in values(player.get('equipments')):
+                if not isinstance(item, dict) or not item.get('entityId'):
                     continue
-                seen.add(key)
-                result.append(dict(kind='feather', item=item, pNum=int(pkey[1:]), wingId=wing['id'],
-                                   label='羽毛 · %s · %s/%s号位 · %s' %
-                                   (names.get(str(item['id']), item['id']),
-                                    names.get(str(wing['id']), wing['id']), item['pos'], item['entityId'])))
+                if 'growthRate' in item and 'fiveElements' in item:
+                    key = ('magic', item['entityId'])
+                    if key not in seen:
+                        seen.add(key)
+                        result.append(dict(kind='magic', item=item, pNum=int(pkey[1:]),
+                                           label='法宝 · %s · 角色%s · %s' %
+                                           (names.get(str(item['id']), item['id']), pkey[1:], item['entityId'])))
+    if kind in (None, 'feather'):
+        for pkey, wings in (record.get('wingList') or {}).items():
+            if not pkey.startswith('p') or not pkey[1:].isdigit():
+                continue
+            for wing in values(wings):
+                for item in values(wing.get('featherInfo')):
+                    key = ('feather', item['entityId'])
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    result.append(dict(kind='feather', item=item, pNum=int(pkey[1:]), wingId=wing['id'],
+                                       label='羽毛 · %s · %s/%s号位 · %s' %
+                                       (names.get(str(item['id']), item['id']),
+                                        names.get(str(wing['id']), wing['id']), item['pos'], item['entityId'])))
     return result
 
 
 class WashPage:
-    def __init__(self, app, parent, keep):
-        self.app = app; self.keep = keep; self.data = []; self.scene = None
+    def __init__(self, app, parent, keep, kind=None):
+        self.app = app; self.keep = keep; self.kind = kind; self.data = []; self.scene = None
         self.identity = None; self.flow = None; self.pending = None; self.busy = False
         self.names = {}; self.lock_vars = {}
         self.feathers = {str(r['id']):r for r in rows('057___Feather.xml.json')}
@@ -90,8 +92,13 @@ class WashPage:
         panel = ttk.Frame(canvas, padding=12); window = canvas.create_window((0,0), window=panel, anchor='nw')
         panel.bind('<Configure>', lambda e:canvas.configure(scrollregion=canvas.bbox('all')))
         canvas.bind('<Configure>', lambda e:canvas.itemconfigure(window, width=e.width))
-        ttk.Label(panel, text='先读取存档，再选择要洗练的法宝或羽毛。法宝需先装备，羽毛需先镶嵌。',
-                  wraplength=650).pack(anchor='w', pady=4)
+        if kind == 'feather':
+            hint = '先读取存档，再选择要洗练的羽毛。羽毛需先镶嵌。'
+        elif kind == 'magic':
+            hint = '先读取存档，再选择要洗练的法宝。法宝需先装备。'
+        else:
+            hint = '先读取存档，再选择要洗练的法宝或羽毛。法宝需先装备，羽毛需先镶嵌。'
+        ttk.Label(panel, text=hint, wraplength=650).pack(anchor='w', pady=4)
         ttk.Label(panel, text=('先预览新旧属性，再选择替换或保留；预览消耗次数，保留不返还。' if keep else
                               '直接洗练会立即覆盖原属性，无法保留。'), foreground='#b05020',
                   wraplength=650).pack(anchor='w', pady=4)
@@ -100,9 +107,13 @@ class WashPage:
         self.info = ttk.Label(panel, text='尚未读取', wraplength=650); self.info.pack(anchor='w', pady=4)
         self.selection = ttk.Combobox(panel, state='readonly', width=78)
         self.selection.pack(fill='x', pady=5); self.selection.bind('<<ComboboxSelected>>', self.select)
+        if keep:
+            sources = ['免费次数', '法宝词条材料洗练' if kind == 'magic' else '羽毛材料洗练']
+        else:
+            sources = ['免费次数']
         self.source = tk.StringVar(value='免费次数')
         self.source_box = ttk.Combobox(panel, state='readonly', textvariable=self.source,
-                                      values=['免费次数', '羽毛材料洗练'] if keep else ['免费次数'], width=24)
+                                      values=sources, width=24)
         self.source_box.pack(anchor='w', pady=4)
         self.source_box.bind('<<ComboboxSelected>>', lambda e:self.cost())
         self.lock_frame = ttk.LabelFrame(panel, text='锁定词条（至少留一项不锁）', padding=7)
@@ -121,6 +132,9 @@ class WashPage:
             self.replace_button.pack(side='left', padx=3); self.old_button.pack(side='left', padx=3)
         self.status = ttk.Label(panel, text='每次仅洗练一次；免费用完即停，材料洗练不自动购买材料。', wraplength=650)
         self.status.pack(anchor='w', pady=5)
+        self.roll_hint = ttk.Label(panel, text='', foreground='#c00000',
+                                   font=('Microsoft YaHei', 12, 'bold'), wraplength=650)
+        self.roll_hint.pack(anchor='w', pady=4)
 
     def current_identity(self):
         return (id(self.app.client), self.app.current_save['index'])
@@ -168,17 +182,37 @@ class WashPage:
                 if flow:flow.disconnect()
         def done(scene):
             self.scene = scene; self.identity = identity
-            self.data = targets(scene, self.names)
+            self.data = targets(scene, self.names, self.kind)
             self.selection.configure(values=[t['label'] for t in self.data])
             self.selection.set('')
-            vip = int(scene['user'].get('vipLevel',0)); cfg = self.vips[vip]; rec = scene['curRecord']
-            self.info.configure(text='VIP%d；法宝免费剩余%d次，羽毛免费剩余%d次。' %
-                (vip, max(0,int(cfg['amuletResetNum'])-int((rec.get('vipInfo')or{}).get('magicEquipNum',0))),
-                 max(0,int(cfg['feaResetNum'])-int(rec.get('resetFeatherNum',0)))))
+            self.update_info()
             self.status.configure(text='已读取%d个可洗练对象。'%len(self.data))
             if self.data:self.selection.current(0)
             self.select()
         self.async_work(work, done)
+
+    def update_info(self):
+        if not self.scene:return
+        vip = int(self.scene['user'].get('vipLevel',0)); cfg = self.vips[vip]; rec = self.scene['curRecord']
+        if self.kind == 'feather':
+            free = '羽毛免费剩余%d次。' % max(0,int(cfg['feaResetNum'])-int(rec.get('resetFeatherNum',0)))
+        elif self.kind == 'magic':
+            free = '法宝免费剩余%d次。' % max(0,int(cfg['amuletResetNum'])-int((rec.get('vipInfo')or{}).get('magicEquipNum',0)))
+        else:
+            free = '法宝免费剩余%d次，羽毛免费剩余%d次。' % (
+                max(0,int(cfg['amuletResetNum'])-int((rec.get('vipInfo')or{}).get('magicEquipNum',0))),
+                max(0,int(cfg['feaResetNum'])-int(rec.get('resetFeatherNum',0))))
+        self.info.configure(text='VIP%d；%s' % (vip, free))
+
+    def sync_scene(self, actual, reply):
+        # 预览回包已经带回消耗后的次数，直接同步到本地，避免保留后强制重读。
+        if not self.scene or not isinstance(reply, dict):return
+        rec = self.scene.setdefault('curRecord', {})
+        if actual['kind'] == 'feather' and 'resetFeatherNum' in reply:
+            rec['resetFeatherNum'] = reply['resetFeatherNum']
+        elif actual['kind'] == 'magic' and 'magicEquipNum' in reply:
+            rec.setdefault('vipInfo', {})['magicEquipNum'] = reply['magicEquipNum']
+        self.update_info()
 
     def target(self):
         index = self.selection.current()
@@ -191,6 +225,7 @@ class WashPage:
                 self.tree.insert('', 'end', values=(label, old.get(key,'—'), new.get(key,'—') if new is not None else '—'))
 
     def select(self, event=None):
+        self.roll_hint.configure(text='')
         for child in self.lock_frame.winfo_children():child.destroy()
         self.lock_vars = {}; target = self.target()
         if not target:
@@ -251,12 +286,13 @@ class WashPage:
             messagebox.showinfo('洗练','法宝锁词条需要选择“法宝词条材料洗练”，免费整体洗练不支持锁定');return
         if not self.keep and not messagebox.askyesno('直接覆盖', '本次洗练将立即覆盖所选对象的原属性，是否继续？'):return
         if material and not messagebox.askyesno('材料洗练', self.cost_label.cget('text')+'\n确认使用已有材料洗练一次？'):return
+        self.roll_hint.configure(text='')
         save = self.identity[1]
         def work():
             flow = None; retain = False
             try:
                 flow, _, scene = self.app._connect_and_enter(save)
-                candidates = targets(scene, self.names)
+                candidates = targets(scene, self.names, self.kind)
                 actual = next((t for t in candidates if t['kind']==target['kind'] and
                                t['pNum']==target['pNum'] and t['item']['entityId']==target['item']['entityId'] and
                                t.get('wingId')==target.get('wingId')), None)
@@ -299,17 +335,26 @@ class WashPage:
                 new = reply.get('newFeather') if self.keep and target['kind']=='feather' else reply.get('feather' if target['kind']=='feather' else 'magicEquip')
                 if self.keep:
                     # 即使服务器返回异常，也留住本连接供用户选择保留。
-                    self.flow = flow; self.pending = dict(target=actual, body=body, new=new)
+                    self.flow = flow; self.pending = dict(target=actual, body=body, new=new, reply=reply)
                     retain = True
                 if not isinstance(new,dict):raise RuntimeError('洗练已提交，但回包缺少属性；请保留并刷新核对')
                 for key in locks:
                     if new.get(key)!=item.get(key):raise RuntimeError('锁定词条与原属性不符，请保留并刷新核对')
                 self.app._log('[洗练] %s；%s'%(actual['label'], json.dumps(reply,ensure_ascii=False)))
-                return actual, new
+                return actual, new, reply
             finally:
                 if flow and not retain:flow.disconnect()
         def done(result):
-            actual,new = result; self.show(actual['item'],new)
+            actual,new,reply = result; self.show(actual['item'],new); self.sync_scene(actual, reply)
+            special = (actual['kind']=='feather' and str(actual['item'].get('id'))=='696000001'
+                       and int(new.get('atk') or 0)==220)
+            if special:
+                text = '★ 彤鹤之羽洗出满攻击 220！★'
+                self.roll_hint.configure(text=text)
+                self.app._log('[洗练] %s' % text)
+                messagebox.showinfo('极品洗练', text + ('\n\n请确认是否替换。' if self.keep else ''))
+            else:
+                self.roll_hint.configure(text='')
             self.status.configure(text='已生成新属性，请选择替换或保留。' if self.keep else '已直接覆盖原属性；再次洗练前请刷新。')
             if not self.keep:self.scene=None
         self.async_work(work, done)
@@ -334,16 +379,26 @@ class WashPage:
             flow.disconnect(); self.flow=None; self.pending=None
             return replace
         def done(replaced):
-            self.scene=None
-            self.status.configure(text=('已替换为新属性。' if replaced else '已保留原属性。')+'请刷新读取服务器状态。')
+            target = pending['target']; new = pending.get('new')
+            if replaced and isinstance(new, dict):
+                key = (target['kind'], target['pNum'], target['item'].get('entityId'), target.get('wingId'))
+                target['item'].update(new)
+                for row in self.data:
+                    if (row['kind'], row['pNum'], row['item'].get('entityId'), row.get('wingId')) == key:
+                        row['item'].update(new); break
+            self.show(target['item'])
+            self.status.configure(text=('已替换为新属性。' if replaced else '已保留原属性。')+'可继续洗练。')
             self.app._log('[洗练] '+self.status.cget('text'))
         self.async_work(work, done)
 
 
 def build_tab(app):
     group = ttk.Frame(app.notebook); app.notebook.add(group,text='洗练')
-    notebook = ttk.Notebook(group); notebook.pack(fill='both',expand=True)
+    kinds = ttk.Notebook(group); kinds.pack(fill='both',expand=True)
     app.wash_pages=[]
-    for title,keep in [('高VIP保留洗练',True),('低VIP直接洗练',False)]:
-        panel=ttk.Frame(notebook); notebook.add(panel,text=title)
-        app.wash_pages.append(WashPage(app,panel,keep))
+    for kind, kind_title in (('feather', '羽毛洗练'), ('magic', '法宝洗练')):
+        kind_panel = ttk.Frame(kinds); kinds.add(kind_panel, text=kind_title)
+        modes = ttk.Notebook(kind_panel); modes.pack(fill='both',expand=True)
+        for title, keep in [('高VIP保留洗练',True),('低VIP直接洗练',False)]:
+            panel=ttk.Frame(modes); modes.add(panel,text=title)
+            app.wash_pages.append(WashPage(app,panel,keep,kind))
