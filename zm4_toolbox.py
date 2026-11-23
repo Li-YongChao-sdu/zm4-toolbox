@@ -799,6 +799,9 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         ("daily", "日常助手", "_do_daily", "btn_daily_run",
          "完整版一键日常：按“日常助手 → 一键日常”面板的勾选，依次执行活跃奖励、VIP、联盟、邮件、"
          "演武堂、群签到、师徒、神秘商店、竞技场、斗宠大会。与“一键日常（部分）”二选一，避免重复执行。"),
+        ("survival", "生存大冒险", "_do_survival_quick", "btn_load_survival",
+         "按“一键运行”窗口中选定的策略自动答完今日剩余题目（保命优先 / 积分最大化）。"
+         "免费答题，不消耗点券。"),
         # 造梦寻宝：活动 1192 已于 2026/10/14 23:59:59 下线，暂时隐藏入口。
         ("dice", "4399冒险投一次", "_dice_roll", "btn_dice_roll"),
         ("mainfarm", "主线刷取", "_do_mainfarm", "btn_mainfarm_run"),
@@ -857,6 +860,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self.quick_task_vars[key] = var
             ttk.Checkbutton(panel, text=label, variable=var).grid(
                 row=index // 4, column=index % 4, sticky="w", padx=14, pady=5)
+        strategy = ttk.LabelFrame(tab, text="生存大冒险答题策略", padding=8)
+        strategy.pack(fill="x", pady=(10, 0))
+        self.quick_survival_mode = tk.StringVar(value="safe")
+        ttk.Radiobutton(strategy, text="保命优先（原算法）", variable=self.quick_survival_mode,
+                        value="safe").pack(side="left", padx=8)
+        ttk.Radiobutton(strategy, text="积分最大化（死亡后继续）", variable=self.quick_survival_mode,
+                        value="score").pack(side="left", padx=8)
         actions = ttk.Frame(tab)
         actions.pack(fill="x", pady=12)
         ttk.Button(actions, text="保存当前配置", command=self._quick_save).pack(side="left", padx=4)
@@ -1515,10 +1525,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                                           command=self._auto_answer, state="disabled")
         self.btn_auto_answer.pack(side="left", padx=3)
 
+        self.btn_auto_answer_score = ttk.Button(btn_frame, text="积分最大化答题(死亡后继续)",
+                                                command=self._auto_answer_score, state="disabled")
+        self.btn_auto_answer_score.pack(side="left", padx=3)
+
         ttk.Label(btn_frame, text="⚠ 免费答题，不消耗点券", foreground="green").pack(side="left", padx=10)
 
         # 结果区
-        result_frame = ttk.LabelFrame(tab, text="最优答题序列", padding=5)
+        result_frame = ttk.LabelFrame(tab, text="答题方案对比", padding=5)
         result_frame.pack(fill="both", expand=True, pady=5)
 
         self.text_survival = scrolledtext.ScrolledText(result_frame, wrap="word", font=("Consolas", 9))
@@ -2438,6 +2452,94 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         return n
 
     # ========== 生存大冒险 ==========
+    def _do_survival_quick(self):
+        """一键运行/我的日常：按当前选择的策略自动答完今日剩余题目。"""
+        if not self.client or self.current_save is None:
+            self._log("[生存大冒险] 跳过：请先登录并选择存档")
+            return
+        mode = self.quick_survival_mode.get() if getattr(self, "quick_survival_mode", None) else "safe"
+        self.btn_load_survival.config(state="disabled")
+        self.btn_auto_answer.config(state="disabled")
+        self.btn_auto_answer_score.config(state="disabled")
+
+        def worker():
+            flow = None
+            try:
+                flow, entry, scene = self._connect_and_enter()
+                info = flow.request("scene.holidayHandler.getSurvivalInfo", {})
+                day = int(info.get("day") or 1)
+                attr = info.get("survivalAttr") or {}
+                qinfo = info.get("survivalInfo") or {}
+                qids = [str(q) for q in qinfo.get("question") or []]
+                cur_q = int(qinfo.get("curQ") or 0)
+                if cur_q == 0:
+                    begin = flow.request("scene.holidayHandler.beginSurvival", {"day": day, "type": 1})
+                    if begin.get("code") != 200:
+                        self._log("[生存大冒险] 开始失败：%s" % begin.get("error"))
+                        return
+                    attr = begin.get("survivalAttr") or attr
+                    qinfo = begin.get("survivalInfo") or qinfo
+                    qids = [str(q) for q in qinfo.get("question") or qids]
+                    cur_q = int(qinfo.get("curQ") or 0)
+
+                remaining = qids[cur_q:]
+                if not remaining:
+                    self._log("[生存大冒险] 今日已答完，跳过")
+                    return
+
+                initial = {k: attr.get(k, 0) for k in ["health", "power", "wisdom", "charm", "luck", "smart"]}
+                solver = Solver(self._solver_db)
+                score_max, score_path = solver.solve_max_score(initial, remaining)
+                safe_score = None
+                safe_path = []
+                if initial.get("health", 0) > 0:
+                    safe_score, safe_path, _ = solver.solve(initial, remaining, survive_questions=9)
+                self._log("[生存大冒险] 方案: 保命优先 %s 分 | 积分最大化 %d 分" % (
+                    safe_score if safe_score is not None else "-", score_max))
+
+                run_mode = mode
+                if run_mode == "safe" and safe_score is None:
+                    self._log("[生存大冒险] 生命已归零，保命策略不适用，改用积分最大化")
+                    run_mode = "score"
+                path = score_path if run_mode == "score" else safe_path
+                label = "积分最大化" if run_mode == "score" else "保命优先"
+                self._log("[生存大冒险] 按【%s】从第%d题开始" % (label, cur_q + 1))
+
+                total = 0
+                for i, step in enumerate(path):
+                    question_no = cur_q + i + 1
+                    result = flow.request("scene.holidayHandler.answerSurvival", {
+                        "answer": step["opt_idx"], "day": day
+                    })
+                    if result.get("code") != 200:
+                        self._log("  第%d题失败：%s" % (question_no, result.get("error")))
+                        break
+                    score = result.get("rewardTip", {}).get("integral", 0)
+                    total += int(score) if score else 0
+                    self._log("  第%d题 选%d → +%s (累计%d)" % (
+                        question_no, step["opt_idx"], score, total))
+                    if run_mode == "safe" and step["died"]:
+                        self._log("  角色死亡，保命算法停止")
+                        break
+                self._log("[生存大冒险] 完成，总积分：%d" % total)
+            except Exception as exc:
+                self._log("[生存大冒险] 异常：%s" % exc)
+            finally:
+                if flow:
+                    try:
+                        flow.disconnect()
+                    except Exception:
+                        pass
+                self.root.after(0, self._survival_quick_done)
+
+        threading.Thread(target=worker, daemon=True).start()
+
+    def _survival_quick_done(self):
+        self._survival_data = None
+        self.btn_load_survival.config(state="normal")
+        self.btn_auto_answer.config(state="disabled")
+        self.btn_auto_answer_score.config(state="disabled")
+
     def _load_survival(self):
         if not self.client or self.current_save is None:
             return
@@ -2478,6 +2580,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
     def _on_survival_loaded(self, attr, qids, day, cur_q=0):
         self.btn_load_survival.config(state="normal")
+        self.btn_auto_answer.config(state="disabled")
+        self.btn_auto_answer_score.config(state="disabled")
         role_code = get_role_code(attr)
         role_name = CODE_NAME_MAP.get(role_code, attr.get("born", "未知"))
         progress = "（已答%d题）" % cur_q if cur_q > 0 else ""
@@ -2497,21 +2601,62 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         try:
             solver = Solver(self._solver_db)
             initial = {k: attr.get(k, 0) for k in ["health", "power", "wisdom", "charm", "luck", "smart"]}
-            max_score, path, died_early = solver.solve(initial, qids, survive_questions=9)
+            remaining = qids[cur_q:]
+            if not remaining:
+                self.text_survival.insert("end", "\n今日题目已全部答完，无需再计算。\n")
+                return
 
-            self.text_survival.insert("end", "\n【最优解】总分: %d 分\n" % max_score)
-            died_step = next((s["step"] for s in path if s["died"]), None)
-            self.text_survival.insert("end", "存活: %s\n" % ("第%d题后死亡" % died_step if died_step else "全程存活"))
+            # 积分最大化算法：不考虑生命值，死亡后继续答完剩余题目
+            score_max, score_path = solver.solve_max_score(initial, remaining)
+
+            # 原有保命优先算法：前9题尽量不死
+            safe_score = None
+            safe_path = []
+            if initial.get("health", 0) > 0:
+                safe_score, safe_path, _ = solver.solve(initial, remaining, survive_questions=9)
+
+            self.text_survival.insert("end", "\n方案对比: 保命优先 %s 分 | 积分最大化 %d 分\n" % (
+                safe_score if safe_score is not None else "不可用", score_max))
+
+            if safe_score is not None:
+                died_step = next((cur_q + s["step"] for s in safe_path if s["died"]), None)
+
+                self.text_survival.insert("end", "\n【保命优先】总分: %d 分\n" % safe_score)
+                self.text_survival.insert("end", "存活: %s\n" % (
+                    "第%d题后死亡" % died_step if died_step else "全程存活"))
+                self.text_survival.insert("end", "-" * 50 + "\n")
+                for step in safe_path:
+                    death_mark = " 【死亡】" if step["died"] else ""
+                    self.text_survival.insert("end", "第%d题 选%d: %s%s\n" % (
+                        cur_q + step["step"], step["opt_idx"], step["opt_text"][:25], death_mark))
+                    self.text_survival.insert("end", "  判定: %s, +%d分\n" % (step["result"], step["gain"]))
+            else:
+                self.text_survival.insert("end", "\n【保命优先】当前生命已归零，无法计算。\n")
+
+            # 新算法结果
+            self.text_survival.insert("end", "\n【积分最大化（死亡后继续）】总分: %d 分\n" % score_max)
+            first_death = next((cur_q + s["step"] for s in score_path if s["died"]), None)
+            self.text_survival.insert("end", "首次死亡: %s\n" % (
+                ("当前已死亡" if initial.get("health", 0) <= 0 else "第%d题后死亡" % first_death)
+                if first_death else "全程存活"))
             self.text_survival.insert("end", "-" * 50 + "\n")
-
-            for step in path:
-                death_mark = " 【死亡】" if step["died"] else ""
+            seen_death = initial.get("health", 0) <= 0
+            for step in score_path:
+                if step["died"] and not seen_death:
+                    death_mark = " 【死亡】"
+                    seen_death = True
+                elif seen_death:
+                    death_mark = " 【死后继续】"
+                else:
+                    death_mark = ""
                 self.text_survival.insert("end", "第%d题 选%d: %s%s\n" % (
-                    step["step"], step["opt_idx"], step["opt_text"][:25], death_mark))
+                    cur_q + step["step"], step["opt_idx"], step["opt_text"][:25], death_mark))
                 self.text_survival.insert("end", "  判定: %s, +%d分\n" % (step["result"], step["gain"]))
 
-            self.btn_auto_answer.config(state="normal")
-            self._log("[生存大冒险] 加载成功，角色=%s，最优=%d分" % (role_name, max_score))
+            self.btn_auto_answer.config(state="normal" if safe_score is not None else "disabled")
+            self.btn_auto_answer_score.config(state="normal")
+            self._log("[生存大冒险] 加载成功，角色=%s，保命=%s，积分最大化=%d分" % (
+                role_name, safe_score if safe_score is not None else "-", score_max))
         except Exception as e:
             self.text_survival.insert("end", "计算失败: %s\n" % e)
 
@@ -2521,6 +2666,12 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         messagebox.showerror("错误", error)
 
     def _auto_answer(self):
+        self._run_survival_auto("safe")
+
+    def _auto_answer_score(self):
+        self._run_survival_auto("score")
+
+    def _run_survival_auto(self, mode):
         if not self._survival_data:
             return
         data = self._survival_data
@@ -2529,44 +2680,64 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             messagebox.showinfo("提示", "今日题目已全部答完")
             return
 
+        label = "保命优先" if mode == "safe" else "积分最大化（死亡后继续）"
         if getattr(self, "_quick_active", False):
             # 从“一键运行/我的日常”队列触发时无人值守，直接开始答题。
             self._log("[生存大冒险] 队列自动执行，跳过确认")
-        elif not messagebox.askyesno("确认", "从第%d题开始自动答题？\n免费，不消耗点券" % (cur_q + 1)):
+        elif not messagebox.askyesno("确认", "按【%s】从第%d题开始自动答题？\n免费，不消耗点券" % (label, cur_q + 1)):
             return
 
         self.btn_auto_answer.config(state="disabled")
+        self.btn_auto_answer_score.config(state="disabled")
         solver = Solver(self._solver_db)
         attr = data["attr"]
         initial = {k: attr.get(k, 0) for k in ["health", "power", "wisdom", "charm", "luck", "smart"]}
-        max_score, path, died_early = solver.solve(initial, data["qids"], survive_questions=9)
+        remaining = data["qids"][cur_q:]
+        if mode == "score":
+            max_score, path = solver.solve_max_score(initial, remaining)
+        else:
+            max_score, path, died_early = solver.solve(initial, remaining, survive_questions=9)
 
         def worker():
             flow = data["flow"]
             day = data["day"]
-            self._log("[生存大冒险] 开始自动答题（从第%d题）" % (cur_q + 1))
+            self._log("[生存大冒险] 开始%s答题（从第%d题）" % (label, cur_q + 1))
             total = 0
+            answered = 0
             for i, step in enumerate(path):
-                if i < cur_q:
-                    continue
+                question_no = cur_q + i + 1
                 try:
                     result = flow.request("scene.holidayHandler.answerSurvival", {
                         "answer": step["opt_idx"], "day": day
                     })
                     if result.get("code") != 200:
-                        self._log("  第%d题失败: %s" % (i + 1, result.get("error")))
+                        self._log("  第%d题失败: %s" % (question_no, result.get("error")))
                         break
                     score = result.get("rewardTip", {}).get("integral", 0)
                     total += int(score) if score else 0
-                    self._log("  第%d题 选%d → +%s (累计%d)" % (i + 1, step["opt_idx"], score, total))
-                    if step["died"]:
-                        self._log("  角色死亡，停止")
+                    answered += 1
+                    self._log("  第%d题 选%d → +%s (累计%d)" % (
+                        question_no, step["opt_idx"], score, total))
+                    if mode == "safe" and step["died"]:
+                        self._log("  角色死亡，保命算法停止")
                         break
                 except Exception as e:
-                    self._log("  第%d题异常: %s" % (i + 1, e))
+                    self._log("  第%d题异常: %s" % (question_no, e))
                     break
-            self._log("[生存大冒险] 完成，总积分: %d" % total)
-            self.root.after(0, lambda: self.btn_auto_answer.config(state="normal"))
+
+            # 同步服务器最新状态，避免重复点击时按旧属性计算
+            data["cur_q"] = cur_q + answered
+            try:
+                info = flow.request("scene.holidayHandler.getSurvivalInfo", {})
+                data["attr"] = info.get("survivalAttr") or data["attr"]
+                data["cur_q"] = int((info.get("survivalInfo") or {}).get("curQ") or data["cur_q"])
+            except Exception:
+                pass
+
+            self._log("[生存大冒险] %s完成，总积分: %d" % (label, total))
+            self.root.after(0, lambda: (
+                self.btn_auto_answer.config(state="normal"),
+                self.btn_auto_answer_score.config(state="normal")))
 
         threading.Thread(target=worker, daemon=True).start()
 

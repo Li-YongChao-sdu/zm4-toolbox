@@ -461,6 +461,75 @@ class Solver:
 
         return max_score, detailed_path, died_early
 
+    def solve_max_score(self, initial: Dict[str, int], question_ids: List[str]):
+        """
+        不考虑生命值：即使 health 归零，也继续答完剩余题目，求总分最高的路径。
+        返回 (max_score, detailed_path)，detailed_path 包含全部题目，死亡步骤标记 died=True。
+        """
+        init_tuple = tuple(initial.get(attr, 0) for attr in self.attr_names)
+
+        @lru_cache(None)
+        def dfs(idx: int, state_tuple: Tuple[int, ...]):
+            if idx >= len(question_ids):
+                return 0, ()
+
+            current_state = dict(zip(self.attr_names, state_tuple))
+            q_id = question_ids[idx]
+            best = None  # (score, path)
+
+            for opt in self.db.get(q_id, []):
+                is_success = self.check_condition(opt["cond"], current_state)
+                if is_success:
+                    gain = opt["succ_score"]
+                    eff = opt["succ_eff"]
+                    result = "成功"
+                else:
+                    gain = opt["fail_score"]
+                    eff = opt["fail_eff"]
+                    result = "失败"
+
+                new_state = self.apply_effect(current_state, eff)
+                new_tuple = tuple(new_state.get(attr, 0) for attr in self.attr_names)
+                sub_score, sub_path = dfs(idx + 1, new_tuple)
+                total = gain + sub_score
+                this_path = ((opt["opt_idx"], result, gain, new_tuple),) + sub_path
+
+                if best is None or total > best[0]:
+                    best = (total, this_path)
+
+            if best is None:
+                return 0, ()
+            return best
+
+        max_score, path = dfs(0, init_tuple)
+
+        detailed_path = []
+        state = initial.copy()
+        for step, (q_id, (opt_idx, result, gain, new_tuple)) in enumerate(zip(question_ids, path)):
+            opt_text = ""
+            for o in self.db.get(q_id, []):
+                if o["opt_idx"] == opt_idx:
+                    opt_text = o["text"]
+                    break
+
+            state_after = dict(zip(self.attr_names, new_tuple))
+            detailed_path.append(
+                {
+                    "step": step + 1,
+                    "q_id": q_id,
+                    "opt_idx": opt_idx,
+                    "opt_text": opt_text,
+                    "result": result,
+                    "gain": gain,
+                    "state_before": state.copy(),
+                    "state_after": state_after.copy(),
+                    "died": state_after.get("health", 0) <= 0,
+                }
+            )
+            state = state_after
+
+        return max_score, detailed_path
+
 
 # ==================== 4. 运行入口 ====================
 if __name__ == "__main__":
