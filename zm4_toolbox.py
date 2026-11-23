@@ -1531,6 +1531,14 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
         ttk.Label(btn_frame, text="⚠ 免费答题，不消耗点券", foreground="green").pack(side="left", padx=10)
 
+        # 蒙特卡洛参考结果（survival_monte_carlo.py，1万周，种子 20261123）
+        ttk.Label(
+            tab,
+            text="蒙特卡洛参考（1万周模拟）：480线 保命优先 99.63% / 积分最大化 99.66%；"
+                 "620线 保命优先 6.31% / 积分最大化 6.46%。",
+            foreground="#555", wraplength=760, justify="left",
+        ).pack(fill="x", pady=(0, 5))
+
         # 结果区
         result_frame = ttk.LabelFrame(tab, text="答题方案对比", padding=5)
         result_frame.pack(fill="both", expand=True, pady=5)
