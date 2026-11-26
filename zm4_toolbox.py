@@ -1150,7 +1150,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             return
         item = self._quick_queue.pop(0)
         if isinstance(item, tuple):
-            key, label, method_name, button_name = item
+            key, label, method_name, button_name = item[:4]
             run = getattr(self, method_name)
             button = getattr(self, button_name, None)
             prepare = self.QUICK_PREPARE.get(key)
