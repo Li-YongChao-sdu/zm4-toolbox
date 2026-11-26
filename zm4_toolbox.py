@@ -561,6 +561,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         self.current_save = None
         self._solver_db = parse_markdown(MARKDOWN_CONTENT) if Solver else None
         self._survival_data = None
+        self._survival_loading = False
+        self._survival_finished_today = False
         self._dice_stop_event = threading.Event()
         self._forest_stop_event = threading.Event()
 
@@ -800,7 +802,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
          "完整版一键日常：按“日常助手 → 一键日常”面板的勾选，依次执行活跃奖励、VIP、联盟、邮件、"
          "演武堂、群签到、师徒、神秘商店、竞技场、斗宠大会。与“一键日常（部分）”二选一，避免重复执行。"),
         ("survival", "生存大冒险", "_do_survival_quick", "btn_load_survival",
-         "按“一键运行”窗口中选定的策略自动答完今日剩余题目（保命优先 / 积分最大化）。"
+         "按保命优先算法自动答完今日剩余题目；如需积分最大化，请在本页直接点“积分最大化答题(死亡后继续)”。"
          "免费答题，不消耗点券。"),
         # 造梦寻宝：活动 1192 已于 2026/10/14 23:59:59 下线，暂时隐藏入口。
         ("dice", "4399冒险投一次", "_dice_roll", "btn_dice_roll"),
@@ -814,12 +816,15 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         ("beiming", "悲鸣冰川", "_do_beiming_run", "btn_beiming_run"),
         ("luoxuan", "螺旋地狱", "_do_luoxuan_run", "btn_luoxuan_run"),
         ("jiyao", "缉妖令", "_do_jiyao_run", "btn_jiyao_run"),
+        ("fuguolai", "福果来（600分）", "_do_fuguolai_run", "btn_fuguolai_run",
+         "开图等待10秒后完成600分结算并领取；每天1次免费，次数用完跳过，不花点券。"),
         ("luohan", "罗汉堂", "_do_luohan_run", "btn_luohan_run"),
         ("special_dizang", "地藏冥殿", "_do_dizang_run", "btn_special_run_dizang"),
         ("special_xukong", "虚空藏院", "_do_xukong_run", "btn_special_run_xukong"),
         ("online_dice", "挂机领骰子", "_dice_start", "btn_dice_start"),
     )
     QUICK_PREPARE = {
+        "survival": ("_prepare_survival", "btn_load_survival"),
         "pet": ("_do_pet_check", "btn_pet_check"),
         "beiming": ("_do_beiming_check", "btn_beiming_check"),
         "mount": ("_do_mount_check", "btn_mount_check"),
@@ -860,13 +865,6 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self.quick_task_vars[key] = var
             ttk.Checkbutton(panel, text=label, variable=var).grid(
                 row=index // 4, column=index % 4, sticky="w", padx=14, pady=5)
-        strategy = ttk.LabelFrame(tab, text="生存大冒险答题策略", padding=8)
-        strategy.pack(fill="x", pady=(10, 0))
-        self.quick_survival_mode = tk.StringVar(value="safe")
-        ttk.Radiobutton(strategy, text="保命优先（原算法）", variable=self.quick_survival_mode,
-                        value="safe").pack(side="left", padx=8)
-        ttk.Radiobutton(strategy, text="积分最大化（死亡后继续）", variable=self.quick_survival_mode,
-                        value="score").pack(side="left", padx=8)
         actions = ttk.Frame(tab)
         actions.pack(fill="x", pady=12)
         ttk.Button(actions, text="保存当前配置", command=self._quick_save).pack(side="left", padx=4)
@@ -1158,12 +1156,23 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             prepare = self.QUICK_PREPARE.get(key)
         else:
             key, label, run, button = item.key, item.label, item.run, item.button
-            prepare = None
+            prepare = getattr(button, "daily_prepare", None)
         self._quick_begin_item(label)
+        if button is not None and button.instate(["disabled"]):
+            done_check = getattr(button, "daily_is_done", None)
+            if callable(done_check) and done_check():
+                self._log(self._quick_tag() + (" 跳过 %s：今日已完成" % label))
+                self._quick_end_item(label)
+                self.root.after(0, self._quick_next)
+                return
         if button is not None and button.instate(["disabled"]) and prepare:
-            prepare_method, _ = prepare
-            self._log(self._quick_tag() + (" %s：先检测剩余次数" % label))
-            getattr(self, prepare_method)()
+            if isinstance(prepare, tuple):
+                prepare_method, _ = prepare
+                self._log(self._quick_tag() + (" %s：先检测剩余次数" % label))
+                getattr(self, prepare_method)()
+            else:
+                self._log(self._quick_tag() + (" %s：先准备运行条件" % label))
+                prepare()
             self.root.after(300, lambda: self._quick_after_prepare(label, run, button, 0))
             return
         if button is None or (button.instate(["disabled"]) and not getattr(button, "daily_always_run", False)):
@@ -1186,6 +1195,13 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
     def _quick_after_prepare(self, label, run, button, waited_ms):
         if self._quick_stopping:
+            self.root.after(0, self._quick_next)
+            return
+        done_attr = getattr(button, "daily_done_attr", None)
+        done_check = getattr(button, "daily_is_done", None)
+        if (done_attr and getattr(self, done_attr, False)) or (callable(done_check) and done_check()):
+            self._quick_end_item(label)
+            self._log(self._quick_tag() + (" 结束：%s（今日已完成）" % label))
             self.root.after(0, self._quick_next)
             return
         if not button.instate(["disabled"]):
@@ -1523,11 +1539,17 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
         self.btn_auto_answer = ttk.Button(btn_frame, text="一键自动答题(免费)",
                                           command=self._auto_answer, state="disabled")
+        # 我的日常只保留“生存大冒险（默认保命）”和“积分最大化答题”，避免同策略重复入口。
+        self.btn_auto_answer.daily_hidden = True
+        ttk.Label(btn_frame, text="答题策略：", foreground="#555").pack(side="left", padx=(12, 0))
         self.btn_auto_answer.pack(side="left", padx=3)
 
         self.btn_auto_answer_score = ttk.Button(btn_frame, text="积分最大化答题(死亡后继续)",
                                                 command=self._auto_answer_score, state="disabled")
         self.btn_auto_answer_score.pack(side="left", padx=3)
+        for _answer_btn in (self.btn_auto_answer, self.btn_auto_answer_score):
+            _answer_btn.daily_prepare = self._prepare_survival_answer
+            _answer_btn.daily_is_done = self._survival_answers_done
 
         ttk.Label(btn_frame, text="⚠ 免费答题，不消耗点券", foreground="green").pack(side="left", padx=10)
 
@@ -1615,6 +1637,10 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         from thanksgiving_activity import start
         start(self)
 
+    def _do_fuguolai_run(self):
+        from fuguolai_activity import start
+        start(self)
+
     def _do_jiyao_run(self):
         from jiyao_activity import start
         start(self)
@@ -1644,6 +1670,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         build_jiyao_tab(self)
         from thanksgiving_activity import build_tab as build_thanksgiving_tab
         build_thanksgiving_tab(self)
+        from fuguolai_activity import build_tab as build_fuguolai_tab
+        build_fuguolai_tab(self)
         pages = list(self.limited_event_notebook.tabs())
         # 已下线活动仍构建控件（保持按钮属性存在），但页面固定隐藏、不进入活动下拉框
         self._build_million_soul_tab()
@@ -1673,6 +1701,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             if ends: self._limited_page_deadlines[title] = max(ends)
         from moyuan_weekly import activity_deadline as moyuan_activity_deadline
         self._limited_page_deadlines["魔渊诛邪（前八层）"] = moyuan_activity_deadline() or datetime.min
+        from fuguolai_activity import activity_deadline as fuguolai_deadline
+        self._limited_page_deadlines["福果来"] = fuguolai_deadline() or datetime.min
         show_expired = tk.BooleanVar(value=False)
         visible = []
         def update_pages():
@@ -2318,6 +2348,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         return self.root.after(delay, guarded)
 
     def _enable_all_buttons(self):
+        self._survival_finished_today = False
         if self.btn_quick_stop.instate(["disabled"]):
             self.btn_quick_run.config(state="normal")
         self.btn_load_survival.config(state="normal")
@@ -2460,12 +2491,46 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         return n
 
     # ========== 生存大冒险 ==========
+    def _survival_answers_done(self):
+        if getattr(self, "_survival_finished_today", False):
+            return True
+        data = self._survival_data
+        if not data:
+            return False
+        return data.get("cur_q", 0) >= len(data.get("qids") or [])
+
+    def _prepare_survival_answer(self):
+        """我的日常里单独收藏答题按钮时，先自动加载今日题目。"""
+        if not self.client or self.current_save is None:
+            self._log("[生存大冒险] 请先登录并选择存档")
+            return
+        if getattr(self, "_survival_loading", False):
+            self._log("[生存大冒险] 正在加载今日题目，等待加载完成")
+            return
+        if not self._survival_data:
+            self._log("[生存大冒险] 自动加载今日题目...")
+            self._load_survival()
+            return
+        self._log("[生存大冒险] 题目已加载，但答题按钮不可用；保命方案可能不存在，请改用积分最大化")
+
+    def _prepare_survival(self):
+        """一键运行/我的日常：等待加载完成，或恢复被遗留为禁用的按钮。"""
+        if not self.client or self.current_save is None:
+            self._log("[生存大冒险] 请先登录并选择存档")
+            return
+        if getattr(self, "_survival_loading", False):
+            self._log("[生存大冒险] 正在加载今日题目，等待加载完成")
+            return
+        if self.btn_load_survival.instate(["disabled"]):
+            self._log("[生存大冒险] 加载按钮未就绪，已重新启用")
+            self.btn_load_survival.config(state="normal")
+
     def _do_survival_quick(self):
         """一键运行/我的日常：按当前选择的策略自动答完今日剩余题目。"""
         if not self.client or self.current_save is None:
             self._log("[生存大冒险] 跳过：请先登录并选择存档")
             return
-        mode = self.quick_survival_mode.get() if getattr(self, "quick_survival_mode", None) else "safe"
+        mode = "safe"
         self.btn_load_survival.config(state="disabled")
         self.btn_auto_answer.config(state="disabled")
         self.btn_auto_answer_score.config(state="disabled")
@@ -2492,6 +2557,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
 
                 remaining = qids[cur_q:]
                 if not remaining:
+                    self._survival_finished_today = True
                     self._log("[生存大冒险] 今日已答完，跳过")
                     return
 
@@ -2514,6 +2580,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                 self._log("[生存大冒险] 按【%s】从第%d题开始" % (label, cur_q + 1))
 
                 total = 0
+                answered = 0
                 for i, step in enumerate(path):
                     question_no = cur_q + i + 1
                     result = flow.request("scene.holidayHandler.answerSurvival", {
@@ -2522,6 +2589,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                     if result.get("code") != 200:
                         self._log("  第%d题失败：%s" % (question_no, result.get("error")))
                         break
+                    answered += 1
                     score = result.get("rewardTip", {}).get("integral", 0)
                     total += int(score) if score else 0
                     self._log("  第%d题 选%d → +%s (累计%d)" % (
@@ -2529,6 +2597,8 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
                     if run_mode == "safe" and step["died"]:
                         self._log("  角色死亡，保命算法停止")
                         break
+                if cur_q + answered >= len(qids):
+                    self._survival_finished_today = True
                 self._log("[生存大冒险] 完成，总积分：%d" % total)
             except Exception as exc:
                 self._log("[生存大冒险] 异常：%s" % exc)
@@ -2552,6 +2622,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         if not self.client or self.current_save is None:
             return
         self.btn_load_survival.config(state="disabled")
+        self._survival_loading = True
         self.text_survival.delete("1.0", "end")
         self._log("[生存大冒险] 加载题目中...")
 
@@ -2587,9 +2658,11 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         threading.Thread(target=worker, daemon=True).start()
 
     def _on_survival_loaded(self, attr, qids, day, cur_q=0):
+        self._survival_loading = False
         self.btn_load_survival.config(state="normal")
         self.btn_auto_answer.config(state="disabled")
         self.btn_auto_answer_score.config(state="disabled")
+        self._survival_finished_today = bool(qids) and cur_q >= len(qids)
         role_code = get_role_code(attr)
         role_name = CODE_NAME_MAP.get(role_code, attr.get("born", "未知"))
         progress = "（已答%d题）" % cur_q if cur_q > 0 else ""
@@ -2669,6 +2742,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self.text_survival.insert("end", "计算失败: %s\n" % e)
 
     def _on_survival_fail(self, error):
+        self._survival_loading = False
         self.btn_load_survival.config(state="normal")
         self._log("[生存大冒险] 失败: %s" % error[:100])
         messagebox.showerror("错误", error)
@@ -8907,6 +8981,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
         ttk.Label(parent, text="福禄寿每日各可挑战一次；结算分数固定为 190。", foreground="blue").pack(anchor="w", pady=(0, 10))
         self.fls_status = {}
         self.fls_buttons = {}
+        self._fulushou_counts_cache = {2003: 0, 2020: 0, 2046: 0}
         for mid, name in ((2003, "福星"), (2020, "禄星"), (2046, "寿星")):
             row = ttk.Frame(parent)
             row.pack(fill="x", pady=4)
@@ -8921,6 +8996,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             button.daily_label = "%s·挑战并结算" % name
             # 打完当天次数后按钮会被刷新为禁用；队列改用完成标记判断结束，避免误以为还在运行。
             button.daily_done_attr = "_fulushou_done"
+            button.daily_is_done = lambda m=mid: self._fulushou_counts_cache.get(m, 0) >= 1
             button.pack(side="left")
             self.fls_buttons[mid] = button
         ttk.Button(parent, text="刷新挑战次数", command=self._refresh_fulushou).pack(anchor="w", pady=10)
@@ -8946,6 +9022,7 @@ class ToolBoxApp(HalloweenPage, JiuZhuanPage, FeedDogPage, FeatherBagPage,
             self._log("[福禄寿] 刷新失败：%s" % e)
 
     def _show_fulushou_counts(self, counts):
+        self._fulushou_counts_cache.update(counts)
         for mid, count in counts.items():
             self.fls_status[mid].config(text="今日 %d/1" % count)
             self.fls_buttons[mid].config(state="normal" if count < 1 else "disabled")

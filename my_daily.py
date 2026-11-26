@@ -268,6 +268,8 @@ def discover_tree(app, quick_tasks):
         counts = {}
         labels = {}
         for button in page_buttons(page):
+            if getattr(button, "daily_hidden", False):
+                continue
             text = str(button.cget("text")).strip()
             spec = quick_by_widget.get(str(button))
             if spec is not None:
@@ -414,13 +416,6 @@ class MyDailyWindow:
         self.btn_start.pack(side="left", padx=4)
         self.btn_stop = ttk.Button(bar, text="停止后续项目", command=self.app._quick_stop, state="disabled")
         self.btn_stop.pack(side="left", padx=4)
-        strategy_bar = ttk.Frame(window)
-        strategy_bar.pack(fill="x", padx=10, pady=(6, 0))
-        ttk.Label(strategy_bar, text="生存大冒险答题策略：").pack(side="left", padx=(4, 2))
-        ttk.Radiobutton(strategy_bar, text="保命优先（原算法）",
-                        variable=self.app.quick_survival_mode, value="safe").pack(side="left", padx=4)
-        ttk.Radiobutton(strategy_bar, text="积分最大化（死亡后继续）",
-                        variable=self.app.quick_survival_mode, value="score").pack(side="left", padx=4)
         schedule_bar = ttk.Frame(window)
         schedule_bar.pack(fill="x", padx=10, pady=(6, 0))
         self.var_schedule_enabled = tk.BooleanVar(master=window, value=self.schedule["enabled"])
